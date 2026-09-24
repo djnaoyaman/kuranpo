@@ -160,6 +160,36 @@
   /* ---------- chapters overview ---------- */
   section.season{max-width:var(--max); margin:0 auto; padding:0 20px 24px;}
   section.areamap{max-width:var(--max); margin:0 auto; padding:0 20px 24px;}
+
+  /* ---------- 迷ったら、これ（証拠つき単一推奨） ---------- */
+  section.first-timer{max-width:var(--max); margin:0 auto; padding:0 20px 36px;}
+  .ft-label{font-size:13px; color:var(--ink-soft); letter-spacing:.05em; margin:0 0 10px;}
+  a.ft-card{display:flex; align-items:center; justify-content:space-between; gap:20px; background:var(--card); border:1.5px solid var(--ink); padding:24px 26px; text-decoration:none; color:var(--ink);}
+  .ft-tag{display:inline-block; font-size:12px; color:#fff; background:var(--vermilion); padding:3px 10px; margin:0 0 10px;}
+  .ft-body h3{font-family:"Shippori Mincho", serif; font-size:22px; margin:0 0 8px;}
+  .ft-hook{font-size:16px; line-height:1.7; margin:0 0 10px; max-width:560px;}
+  .ft-meta{font-size:13px; color:var(--ink-soft); margin:0;}
+  .ft-arrow{font-size:28px; color:var(--vermilion); flex:0 0 auto;}
+  @media (max-width:640px){
+    a.ft-card{flex-direction:column; align-items:flex-start;}
+    .ft-arrow{display:none;}
+  }
+
+  /* ---------- 現在地から探す（エリア横断） ---------- */
+  section.locator{max-width:var(--max); margin:0 auto; padding:0 20px 36px;}
+  .locator-chips{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 0;}
+  .locator-chip{font-size:14.5px; padding:9px 16px; border:1.5px solid var(--line); background:var(--card); cursor:pointer; color:var(--ink); transition:border-color .15s ease;}
+  .locator-chip.active{border-color:var(--ink); font-weight:700;}
+  .locator-panel{display:none; margin:16px 0 0; padding:20px; background:var(--card); border-left:4px solid var(--vermilion);}
+  .locator-panel.open{display:block;}
+  .locator-panel h4{font-family:"Shippori Mincho", serif; font-size:17px; margin:0 0 12px;}
+  .locator-group{margin:0 0 12px;}
+  .locator-group:last-child{margin-bottom:0;}
+  .locator-group-label{font-size:12px; color:var(--ink-soft); margin:0 0 6px;}
+  .locator-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .locator-links a{font-size:13.5px; padding:5px 11px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .locator-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+
   .areamap-note{font-size:14px; color:var(--ink-soft); margin:0 0 16px;}
   .areamap-svg{width:100%; max-width:760px; height:auto; display:block; margin:0 auto;}
   .am-line{stroke:var(--line); stroke-width:1.5;}
@@ -392,8 +422,8 @@
   .spot-list li:last-child{border-bottom:none;}
   .spot-list .leg{display:block; font-size:13px; color:var(--ink-soft); margin-bottom:2px;}
   .spot-list .leg::before{content:"→ ";}
-  .spot-list .row{display:flex; justify-content:space-between; gap:10px; align-items:baseline;}
-  .spot-list .sname{flex:1;}
+  .spot-list .row{display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 10px; align-items:baseline;}
+  .spot-list .sname{flex:1 1 140px; min-width:140px;}
   .spot-list .snote{display:block; color:var(--ink-soft); font-size:13.5px; margin-top:2px;}
   .spot-list .sfee{flex:0 0 auto; text-align:right; color:var(--ink-soft); font-size:14.5px; white-space:nowrap;}
   .spot-list .sfee .opt{display:block; font-size:13px; margin-top:2px;}
@@ -554,6 +584,26 @@
     </div>
   </div>
 </header>
+
+<section class="first-timer">
+  <p class="ft-label">迷ったら、これ</p>
+  <a class="ft-card" href="knowledge/g1.html">
+    <div class="ft-body">
+      <span class="ft-tag">はじめての方に</span>
+      <h3 class="mincho">古代信仰の基層</h3>
+      <p class="ft-hook">杉本寺の石段には、今も足を乗せられません。頼朝が鎌倉に来るより450年も前——この土地には、もう祈りの場所がありました。</p>
+      <p class="ft-meta">杉本寺・大巧寺　約1時間　拝観料300円〜</p>
+    </div>
+    <span class="ft-arrow">→</span>
+  </a>
+</section>
+
+<section class="locator" id="locator">
+  <p class="chapters-label">今どこにいますか</p>
+  <p class="areamap-note">今いる場所を選ぶと、エリア・宗教・人物・年表、4つの軸を横断したその土地の物語がまとめて見つかります。</p>
+  <div class="locator-chips" id="locatorChips"></div>
+  <div id="locatorPanels"></div>
+</section>
 
 <section class="areamap" id="areamap">
   <p class="chapters-label" data-i18n="areamap.label">エリアの位置関係（模式図）</p>
@@ -1610,6 +1660,65 @@ document.getElementById("complete-list").innerHTML = COMPLETE.map(renderGeoCard)
 document.getElementById("religion-list").innerHTML = renderGroupedAxis(RELIGION, "axis-religion", "religion");
 document.getElementById("person-list").innerHTML = renderGroupedAxis(PERSON, "axis-person", "person");
 document.getElementById("timeline-list").innerHTML = renderGroupedAxis(TIMELINE, "axis-timeline", "timeline");
+
+/* ===================== LOCATOR（現在地から探す） ===================== */
+(function locator(){
+  const AREAS = [
+    {key:"station",   label:"鎌倉駅にいる",     geo:["g1","g2","g3","g8"], re:[10], pe:[0,13], ti:[0,1,6]},
+    {key:"kitakamakura", label:"北鎌倉にいる",  geo:["g4","g5"],           re:[0,1], pe:[3],    ti:[4]},
+    {key:"hase",       label:"長谷・極楽寺にいる", geo:["g6","g11","g13"], re:[7,9], pe:[5,7,14], ti:[5,7]},
+    {key:"omachi",     label:"大町・材木座にいる", geo:["g7","g10"],       re:[3,5], pe:[1,2,8], ti:[2]},
+    {key:"kanazawa",   label:"金沢街道にいる",   geo:["g9"],               re:[2],   pe:[10,11,12], ti:[8]},
+    {key:"ofuna",      label:"大船・玉縄にいる", geo:["g12"],              re:[],    pe:[4,6],  ti:[3,9]},
+    {key:"koshigoe",   label:"腰越・江の島にいる", geo:["g14"],            re:[4],   pe:[9],    ti:[]},
+  ];
+  function geoTitle(id){
+    let c;
+    if(id[0] === "g"){
+      const num = parseInt(id.slice(1), 10);
+      c = GEO.find(x => x.id === num);
+    } else {
+      const upper = id.toUpperCase();
+      c = COMPLETE.find(x => x.id === upper);
+    }
+    return c ? c.title.replace(/<[^>]+>/g,"") : id.toUpperCase();
+  }
+  function axisTitle(arr, idx){ return arr[idx] ? arr[idx].title.replace(/<[^>]+>/g,"") : ""; }
+
+  const chipsEl = document.getElementById("locatorChips");
+  const panelsEl = document.getElementById("locatorPanels");
+  if(!chipsEl) return;
+
+  chipsEl.innerHTML = AREAS.map(a => `<button class="locator-chip" data-key="${a.key}">${a.label}</button>`).join("");
+
+  panelsEl.innerHTML = AREAS.map(a => {
+    const geoLinks = a.geo.map(id => `<a href="knowledge/${id}.html">${geoTitle(id)}</a>`).join("");
+    const reLinks = a.re.map(i => `<a href="knowledge/re${i+1}.html">${axisTitle(RELIGION,i)}</a>`).join("");
+    const peLinks = a.pe.map(i => `<a href="knowledge/pe${i+1}.html">${axisTitle(PERSON,i)}</a>`).join("");
+    const tiLinks = a.ti.map(i => `<a href="knowledge/ti${i+1}.html">${axisTitle(TIMELINE,i)}</a>`).join("");
+    return `<div class="locator-panel" id="loc-${a.key}">
+      <h4>${a.label.replace("にいる","")}の物語</h4>
+      ${geoLinks ? `<div class="locator-group"><p class="locator-group-label">歩くなら</p><div class="locator-links">${geoLinks}</div></div>` : ""}
+      ${reLinks ? `<div class="locator-group"><p class="locator-group-label">宗教でめぐる</p><div class="locator-links">${reLinks}</div></div>` : ""}
+      ${peLinks ? `<div class="locator-group"><p class="locator-group-label">人物でめぐる</p><div class="locator-links">${peLinks}</div></div>` : ""}
+      ${tiLinks ? `<div class="locator-group"><p class="locator-group-label">年表でめぐる</p><div class="locator-links">${tiLinks}</div></div>` : ""}
+    </div>`;
+  }).join("");
+
+  chipsEl.querySelectorAll(".locator-chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      const key = chip.dataset.key;
+      const isOpen = chip.classList.contains("active");
+      chipsEl.querySelectorAll(".locator-chip").forEach(c => c.classList.remove("active"));
+      panelsEl.querySelectorAll(".locator-panel").forEach(p => p.classList.remove("open"));
+      if(!isOpen){
+        chip.classList.add("active");
+        document.getElementById(`loc-${key}`).classList.add("open");
+      }
+    });
+  });
+})();
+
 
 
 /* ===================== TABS ===================== */

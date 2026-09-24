@@ -30,16 +30,16 @@
 <meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FFFF00; --card:#FFFFFF; --ink:#111111; --ink-soft:#3A3A3A; --line:#111111;
-    --vermilion:#E8171F; --moss:#00A651; --max:1120px;
+    --bg:#EFECE7; --card:#F7F4EE; --ink:#262220; --ink-soft:#6B6058; --line:#D8D0BF;
+    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Zen Kaku Gothic New", sans-serif;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Shippori Mincho", serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho", serif;}
   a{color:inherit;}
   ruby rt{font-size:0.6em;}
 
@@ -47,7 +47,7 @@
   header.site .inner{max-width:var(--max); margin:0 auto;}
   header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
-  header.site h1{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
 
   @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
   .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
@@ -74,20 +74,20 @@
   section.framework > .fw-intro{font-size:16px; color:var(--ink-soft); margin:0 0 24px;}
   .fw-item{padding:20px 0; border-top:1px solid var(--line);}
   .fw-item:first-child{border-top:none;}
-  .fw-item .fw-no{font-family:"Zen Kaku Gothic New", sans-serif; font-size:15px; color:var(--vermilion); margin:0 0 4px;}
-  .fw-item h3{font-family:"Zen Kaku Gothic New", sans-serif; font-size:20.5px; margin:0 0 8px;}
+  .fw-item .fw-no{font-family:"Shippori Mincho", serif; font-size:15px; color:var(--vermilion); margin:0 0 4px;}
+  .fw-item h3{font-family:"Shippori Mincho", serif; font-size:20.5px; margin:0 0 8px;}
   .fw-item p{font-size:15.5px; margin:0 0 8px; color:var(--ink);}
   .fw-item .fw-example{font-size:14.5px; color:var(--ink-soft); padding:10px 12px; background:var(--card); border-left:3px solid var(--line); margin-top:8px;}
   .fw-closing{margin-top:30px; padding:20px 22px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
-  .fw-closing p{font-family:"Zen Kaku Gothic New", sans-serif; font-size:17.5px; line-height:2; margin:0;}
+  .fw-closing p{font-family:"Shippori Mincho", serif; font-size:17.5px; line-height:2; margin:0;}
 
   .section-head{max-width:760px; margin:56px 0 4px;}
-  .section-head h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:24.5px; margin:0 0 6px;}
+  .section-head h2{font-family:"Shippori Mincho", serif; font-size:24.5px; margin:0 0 6px;}
   .section-head p{font-size:15px; color:var(--ink-soft); margin:0 0 20px;}
 
   article.course{max-width:760px; margin:0 0 34px; padding:22px 22px 20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
   article.course.complete{border-left-color:var(--moss);}
-  article.course h3{font-family:"Zen Kaku Gothic New", sans-serif; font-size:19.5px; margin:0 0 4px;}
+  article.course h3{font-family:"Shippori Mincho", serif; font-size:19.5px; margin:0 0 4px;}
   article.course h3 .no{font-size:14px; color:var(--ink-soft); margin-right:8px;}
   article.course .spots-line{font-size:14px; color:var(--ink-soft); margin:0 0 6px;}
   article.course .lens-tags{margin:0 0 14px; display:flex; gap:6px; flex-wrap:wrap;}
@@ -102,8 +102,8 @@
     display:block; padding:22px 22px 20px; text-decoration:none; color:inherit;
     transition:background-color .2s ease;
   }
-  article.course.link-card .card-link:hover{background:rgba(17,17,17,0.08);}
-  article.course.link-card h3{font-family:"Zen Kaku Gothic New", sans-serif; font-size:19.5px; margin:0 0 6px;}
+  article.course.link-card .card-link:hover{background:rgba(38,34,32,0.08);}
+  article.course.link-card h3{font-family:"Shippori Mincho", serif; font-size:19.5px; margin:0 0 6px;}
   article.course.link-card .read-more{
     display:inline-block; margin-top:12px; font-size:14px; color:var(--vermilion);
   }
@@ -111,9 +111,9 @@
   dl.terms{margin:0;}
   .term{padding:12px 0; border-top:1px solid var(--line);}
   .term:first-child{border-top:none; padding-top:0;}
-  .term dt{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:16.5px; margin:0 0 4px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
-  .term dt .yomi{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:400; font-size:13px; color:var(--ink-soft);}
-  .term dt .cat{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:400; font-size:12px; color:var(--vermilion); border:1px solid var(--line); border-radius:8px; padding:1px 6px;}
+  .term dt{font-family:"Shippori Mincho", serif; font-weight:700; font-size:16.5px; margin:0 0 4px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .term dt .yomi{font-family:"Shippori Mincho", serif; font-weight:400; font-size:13px; color:var(--ink-soft);}
+  .term dt .cat{font-family:"Shippori Mincho", serif; font-weight:400; font-size:12px; color:var(--vermilion); border:1px solid var(--line); border-radius:8px; padding:1px 6px;}
   .term dd{margin:0; font-size:15px; color:var(--ink);}
 
   footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft); font-size:14px; border-top:1px solid var(--line);}
@@ -136,7 +136,7 @@
   /* ---------- topbar ---------- */
   .topbar{
     position:sticky; top:0; z-index:100;
-    background:rgba(255,255,0,0.92); backdrop-filter:blur(6px);
+    background:rgba(239,236,231,0.92); backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
   .topbar-inner{
@@ -172,7 +172,7 @@
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
   .drawer-link:hover{color:var(--vermilion);}
   .drawer-overlay{
-    position:fixed; inset:0; z-index:150; background:rgba(17,17,17,0.35);
+    position:fixed; inset:0; z-index:150; background:rgba(38,34,32,0.35);
     opacity:0; visibility:hidden; transition:opacity .3s ease;
   }
   .drawer-overlay.open{opacity:1; visibility:visible;}
@@ -188,12 +188,12 @@
     background:var(--vermilion); color:#fff; border:none;
     display:flex; align-items:center; justify-content:center;
     font-size:22.5px; line-height:1; cursor:pointer;
-    box-shadow:0 3px 10px rgba(17,17,17,0.25);
+    box-shadow:0 3px 10px rgba(38,34,32,0.25);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:#B01018;}
+  .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
 
   .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
@@ -207,6 +207,18 @@
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
   }
+
+  .editor-mark-section{
+    min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    border-top:3px solid var(--ink);
+  }
+  .editor-mark{
+    color:var(--ink); text-decoration:none; display:flex; flex-direction:column;
+    align-items:center; gap:10px; transition:color .2s ease;
+  }
+  .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark .em-label{font-size:15px; opacity:.6;}
+  .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
 </style>
 <script type="application/ld+json">
 {
@@ -637,6 +649,10 @@
     <p><a href="basics.html">用語集（歩く前の基礎知識）を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
   </div>
 </footer>
+<section class="editor-mark-section">
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+</section>
+
 
 <script>
 const TRANSLATIONS = {
@@ -679,8 +695,7 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
 
   const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
 
-  const COLORS = ["var(--vermilion, #E8171F)","var(--indigo, #0066CC)","var(--moss, #00A651)","var(--ochre, #9B4DCC)"];
-  let last = null, leftFoot = true, lastStamp = 0, colorIdx = 0;
+  let last = null, leftFoot = true, lastStamp = 0;
   document.addEventListener("mousemove", (e)=>{
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
@@ -695,9 +710,8 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
     const step = document.createElement("div");
     step.innerHTML = FOOT;
     const sideOffset = leftFoot ? -7 : 7;
-    if(leftFoot) colorIdx = (colorIdx + 1) % COLORS.length; // 一歩（左右セット）ごとに色を巡らせる
     leftFoot = !leftFoot;
-    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:${COLORS[colorIdx]}; opacity:.55; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--ink, #111); opacity:.28; transform:rotate(${angle}deg); transition:opacity 2.2s ease, transform 2.2s ease;`;
     layer.appendChild(step);
     requestAnimationFrame(()=>{
       step.style.opacity = "0";

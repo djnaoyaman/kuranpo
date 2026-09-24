@@ -30,23 +30,23 @@
 <meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FFFF00; --card:#FFFFFF; --ink:#111111; --ink-soft:#3A3A3A; --line:#111111;
-    --vermilion:#E8171F; --moss:#00A651; --max:1120px;
+    --bg:#EFECE7; --card:#F7F4EE; --ink:#262220; --ink-soft:#6B6058; --line:#D8D0BF;
+    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Zen Kaku Gothic New", sans-serif;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Shippori Mincho", serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho", serif;}
   a{color:inherit;}
 
   header.site{padding:40px 20px 28px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);}
   header.site .inner{max-width:var(--max); margin:0 auto;}
   header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
-  header.site h1{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
   header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
   header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
 
@@ -67,7 +67,7 @@
   }
 
   section.guard{max-width:760px; margin:0 0 56px;}
-  section.guard h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:22.5px; margin:0 0 8px;}
+  section.guard h2{font-family:"Shippori Mincho", serif; font-size:22.5px; margin:0 0 8px;}
   section.guard > p{font-size:15px; color:var(--ink-soft); margin:0 0 20px;}
   .guard-item{padding:14px 16px; margin:0 0 10px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
   .guard-item .g-wrong{font-size:14.5px; color:var(--ink-soft); text-decoration:line-through; margin:0 0 4px;}
@@ -75,7 +75,7 @@
   .guard-item .g-right::before{content:"→ ";color:var(--vermilion);}
 
   section.log{max-width:760px;}
-  section.log h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:22.5px; margin:0 0 4px;}
+  section.log h2{font-family:"Shippori Mincho", serif; font-size:22.5px; margin:0 0 4px;}
   .log-date{font-size:14px; color:var(--ink-soft); letter-spacing:.06em; margin:0 0 20px; padding-bottom:12px; border-bottom:1px solid var(--line);}
   ol.log-list{list-style:none; margin:0; padding:0; counter-reset:rev;}
   ol.log-list li{
@@ -85,7 +85,7 @@
   ol.log-list li:first-child{border-top:none;}
   ol.log-list li::before{
     content:counter(rev, decimal-leading-zero);
-    font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:15px; color:var(--vermilion);
+    font-family:"Shippori Mincho", serif; font-weight:700; font-size:15px; color:var(--vermilion);
     position:absolute; left:0; top:14px;
   }
   ol.log-list .tag{
@@ -111,7 +111,7 @@
   /* ---------- topbar ---------- */
   .topbar{
     position:sticky; top:0; z-index:100;
-    background:rgba(255,255,0,0.92); backdrop-filter:blur(6px);
+    background:rgba(239,236,231,0.92); backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
   .topbar-inner{
@@ -147,7 +147,7 @@
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
   .drawer-link:hover{color:var(--vermilion);}
   .drawer-overlay{
-    position:fixed; inset:0; z-index:150; background:rgba(17,17,17,0.35);
+    position:fixed; inset:0; z-index:150; background:rgba(38,34,32,0.35);
     opacity:0; visibility:hidden; transition:opacity .3s ease;
   }
   .drawer-overlay.open{opacity:1; visibility:visible;}
@@ -163,12 +163,12 @@
     background:var(--vermilion); color:#fff; border:none;
     display:flex; align-items:center; justify-content:center;
     font-size:22.5px; line-height:1; cursor:pointer;
-    box-shadow:0 3px 10px rgba(17,17,17,0.25);
+    box-shadow:0 3px 10px rgba(38,34,32,0.25);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:#B01018;}
+  .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
 
   .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
@@ -182,6 +182,18 @@
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
   }
+
+  .editor-mark-section{
+    min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    border-top:3px solid var(--ink);
+  }
+  .editor-mark{
+    color:var(--ink); text-decoration:none; display:flex; flex-direction:column;
+    align-items:center; gap:10px; transition:color .2s ease;
+  }
+  .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark .em-label{font-size:15px; opacity:.6;}
+  .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
 </style>
 <script type="application/ld+json">
 {
@@ -288,7 +300,21 @@
   <b style="color:var(--ink)">v2.8.0（2026-09-24）</b>：①コースカード・章カードのグリッドを、1024px以上でも3列にせず最大2列で固定。②カードの高さがテキスト量によってバラバラに見えていたのを解消：グリッドの<code>align-items</code>を<code>stretch</code>にして同じ行のカードの高さを揃え、カード自体もflexの縦積みに変更。「くわしく読む」リンクを各カードの下端に固定し、本文の長さに関わらず読み終わりの位置が揃うようにした。<br>
   <b style="color:var(--ink)">v2.9.0（2026-09-24）</b>：これまでの度重なる配色変更の過程で、一部の色指定が古いバージョンのまま置き去りになっていたのを、全ファイルにわたって洗い出して修正。①足跡カーソルの色配列（フォールバック値）が、2世代前の配色（朱#E0391D・藍#17427E・苔#1B7A3D・黄土#D99A1B）のまま止まっていた箇所を、全36ページで現行配色に更新。②「トップに戻る」ボタンのホバー色が、最初期バージョンから一度も更新されずに残っていた（#7a2e1a／#7a2b1dの表記ゆれ含む）のを、現在の朱色に合わせて修正。③theme-colorメタタグが1世代前の朱色のままだったのを修正。④統計ボックスの文字色が、暖色系だった旧世代パレットの色（#F0DAC8等）のまま更新されておらず、現在のポップな配色から浮いていたのを、サイトの主色である黄色を軸にした配色に刷新。全ファイルでhex色・rgba値を総点検し、現行パレット以外の値がchangelogの過去バージョン記述を除いて残っていないことを確認済み。<br>
   <b style="color:var(--ink)">v3.0.0（2026-09-24）</b>：①エリアの位置関係模式図を再設計。円のノードが5〜6文字のラベルに対して小さすぎ、文字がはみ出していたのを、角丸長方形（ピル型）に変更してラベル・コースコードが必ず収まるサイズを個別に計算。文字サイズも11px→16px、8px→11.5pxに拡大し、線・枠も太くしてサイト全体のポップな印象に合わせた。②サイト全体の文字サイズが、ポップで力強いトーン＆マナーに対して小さすぎるとの指摘を受け、本文・説明文・用語解説など読み物として使われる文字サイズを一律で約2px前後拡大（全36ページ・1199箇所）。コース別知識ページの見出しサイズも合わせて拡大。<br>
-  <b style="color:var(--ink)">v3.1.0（2026-09-24）</b>：以前の面白法人カヤックのWEBサイト（漫画的表現・ハーフトーン・星の爆発・ネイティブ感のあるアニメーション）を参照し、以下を実施。①「基礎知識・歴史知識」が6つのコース別チャプターと並列のカードとして並んでいたのを分離。コースを選ぶための入口ではなく読み物であることを示すため、破線囲みの横長バナーとして独立配置に変更。②トップのヒーローに、鎌倉大仏の簡略シルエット・ハーフトーンドット・きらめく星の爆発を追加。作者が歩いて確かめている土地の象徴を、抽象的な等高線モチーフから具体的な大仏モチーフへ転換。③OG画像の署名表記を、実URLに使われる技術的なGitHubアカウント名（NAOYAMAN）ではなく、このサイトの編者ペルソナである「切通歩」に修正。④コース別カード・章カードのホバー時の動きを、バネのように少し弾んでから収まる動き（オーバーシュートするイージング）に変更し、クリック時にもタップした感覚が伝わるフィードバックを追加。ゲームアプリに近いネイティブな触感を意識した。全ファイルの一括ダウンロードは<a href="kuranpo_v3.1.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v3.1.0.zip</a>から。
+  <b style="color:var(--ink)">v3.1.0（2026-09-24）</b>：以前の面白法人カヤックのWEBサイト（漫画的表現・ハーフトーン・星の爆発・ネイティブ感のあるアニメーション）を参照し、以下を実施。①「基礎知識・歴史知識」が6つのコース別チャプターと並列のカードとして並んでいたのを分離。コースを選ぶための入口ではなく読み物であることを示すため、破線囲みの横長バナーとして独立配置に変更。②トップのヒーローに、鎌倉大仏の簡略シルエット・ハーフトーンドット・きらめく星の爆発を追加。作者が歩いて確かめている土地の象徴を、抽象的な等高線モチーフから具体的な大仏モチーフへ転換。③OG画像の署名表記を、実URLに使われる技術的なGitHubアカウント名（NAOYAMAN）ではなく、このサイトの編者ペルソナである「切通歩」に修正。④コース別カード・章カードのホバー時の動きを、バネのように少し弾んでから収まる動き（オーバーシュートするイージング）に変更し、クリック時にもタップした感覚が伝わるフィードバックを追加。ゲームアプリに近いネイティブな触感を意識した。<br>
+  <b style="color:var(--ink)">v3.2.0（2026-09-24）</b>：「宗教でめぐる」「人物でめぐる」「年表でめぐる」の37レッグには、これまでカード内の折りたたみ表示しかなく、コース別知識ページのような専用記事が存在しなかった。今回、既存のg1〜g30系ページと同じ形式（ヒーロー・実務情報・スポット一覧・パンくず・ページャー・JSON-LD）で、37本の記事を新規に作成した（宗教：re1〜re12、人物：pe1〜pe15、年表：ti1〜ti10）。取り急ぎ日本語のみ対応（英語・中国語・韓国語は未着手）。トップページの各レッグの折りたたみを開くと「くわしく読む」リンクが表示され、専用記事に移動できるようにした。パンくず・一覧リンクは、これまでの「コース別・歴史の基本知識（history.html）」ではなく、各軸のタブ（例：宗教でめぐる → #tab-religion）を指すようにしている。sitemap.xml・llms.txtも新規37ページを含めて更新（sitemap.xmlは35件→72件に）。用語集（dl.terms）は、既存30ページと違い今回は含めていない。<br>
+  <b style="color:var(--ink)">v3.3.0（2026-09-24）</b>：ヒーローの鎌倉大仏シルエットを撤回し、なおちゃん提供の江ノ電イラスト（線画）に変更。アップロードされた画像の背景色（クリーム色）を明度ベースの解析で透明化し、線画部分だけを残した画像をサイトの黄色背景に直接重ねられるようにした。星の爆発の装飾は維持し、イラストとは別レイヤーとして残している。<br>
+  <b style="color:var(--ink)">v3.4.0（2026-09-24）</b>：フッターの「編集・文責：切通歩」を、画面いっぱい（1スクロール分）を使い、リンクだけを上下左右中央にぽつんと置く形に変更。広い余白の中に一つだけ置くことで、あえて目立たせる意図。全73ページに適用。基礎知識・歴史知識・プロフィール・修正履歴の4ページは、既存の免責事項・ナビゲーションリンクは残したまま、その下にこの署名セクションを新設。index.htmlは、フッター内にあった「編集・文責／修正履歴／最終更新」の1行を、フッター本体から独立した専用セクションに移動し、修正履歴へのリンクは「読みもの」列に既にあるため重複を避けて省略、最終更新日は署名の下に小さく添えた。<br>
+  <b style="color:var(--ink)">v3.5.0（2026-09-24）</b>：背景色を黄色（#FFFF00）から緑（#00A968）に変更。新しい緑が「宗教でめぐる」の軸色である苔色（#00A651）とほぼ同一で背景に溶けてしまうため、宗教の軸色を橙（#F2761C）に差し替えた。黄→紫の変更時と同じ理屈。あわせて、足跡カーソルのフォールバック色・統計ボックスの強調色（旧背景色に合わせていた黄色）・OG画像も新配色で更新。<br>
+  <b style="color:var(--ink)">v3.6.0（2026-09-24）</b>：全画面中央に置いた「編集・文責：切通歩」の見た目を調整。①周囲の枠（角丸のピル型ボーダー）を撤去し、リンクそのものだけが余白の中に浮くようにした。②「編集・文責：」のラベルは小さいまま残し、「切通歩」の文字サイズをトップページの見出し（鎌・くらんぽ）と同じ大きさ（clamp(36px,9vw,58px)）に拡大。ホバー時は枠の色反転ではなく、文字色が朱色に変わる形に変更。全73ページに適用。<br>
+  <b style="color:var(--ink)">v3.7.0（2026-09-24）</b>：①「切通歩」にふりがなを追加（署名部分・プロフィールページの名義解説文）。②アニメーションを、跳ねる・傾く・拡大するといったアニメ・ゲーム的な動きから、ゆっくり持ち上がるだけの映画的な動きに変更（カード・章タイルのホバー、足跡カーソルの単色化、きらめく星の装飾を撤去）。③サイト全体をゴシック体から明朝体に書き直し。フォント読み込みを復元し、本文の既定フォントを明朝体に。数字・距離・拝観料など測定値の表示のみ、意図的にIBM Plex Mono（等幅）のまま残した。ゴシック体は現在どこにも使用していない。④SEO・LLMO・SNS対策を総点検：必須メタタグ（description・canonical・OGP・Twitter Card・robots・author）の欠落が全73ページで無いことを確認、JSON-LD構造化データ139ブロック全て妥当性を確認、sitemap.xml（72件）と実ファイル数の整合を確認、内部リンクの破損なしを確認、llms-full.txtに宗教・人物・年表37本の存在（日本語のみ・用語集未収録である旨）を補記。<br>
+  <b style="color:var(--ink)">v4.0.0（2026-09-24）</b>：これまでのポップアート的・カヤック漫画的な方向性を撤回し、提供された本草学チャート（伝統的な中医学の生薬解説図）を参照して配色を全面的に作り直した。①背景を鮮やかな緑から、本草学チャートと同じ落ち着いた生成り紙色（#EFECE7）に変更。②朱・苔・藍・黄土の4色を、参考画像から実際に色を抽出して差し替え：朱→煉瓦色の印章赤（辛の生薬に使われる色）、苔→オリーブ色（苦の生薬の色）、藍→深い紺（寒の生薬の色）、黄土→タン色（温の生薬の色）。中医学の性状分類の配色をそのまま4軸に転用した形。③カード・章タイルを、太い黒縁と強い影を持つ「シール」のような見た目から、細い罫線と控えめな影による繊細な見た目に変更。角丸も直角に近づけた。番号バッジもピル型から角のない箱型に。④OG画像も新配色・明朝体で再生成。<br>
+  <b style="color:var(--ink)">v4.1.0（2026-09-24）</b>：コースカードの出現アニメーションを、単純なフェードインから「葉が落ちる」ような動きに変更。カードは少し上・少し傾いた状態から始まり、ゆっくり回転を戻しながら着地する（1.1秒、なめらかな減速のイージング）。隣り合うカードは傾く方向を互い違いにし、複数枚が同時に画面に入る場面では着地のタイミングにも少しずつ差をつけて、何枚もの葉が順にふわりと落ちてくるような印象にした。ホバー時の動きは従来通り素早い反応を保っている。<br>
+  <b style="color:var(--ink)">v4.2.0（2026-09-24）</b>：エリアの位置関係模式図を見直し。①英語表示時、"Around Kamakura Sta."のような長い訳語がピル型の枠からはみ出す不具合があった。②「そもそも丸枠は必要か、線だけで位置関係は伝わるのでは」との指摘を受け、枠自体を撤去。各地点は小さな点だけにし、ラベルは点の上下に自由な文字列として配置。線は点と点を直接つなぐ形にした。枠という「容器」がなくなったことで、日本語・英語・中国語・韓国語のどの言語でも、文字の長さに関わらずはみ出さない構成になった。<br>
+  <b style="color:var(--ink)">v4.3.0（2026-09-24）</b>：カードの出現アニメーションを調整。①回転しながら着地する動きをやめ、まっすぐ上から下へ、回転なしで滑らかに落ちる動きに変更（「スルリと」というイメージに合わせた）。②これまでコース一覧の6つの章タイルには出現アニメーションが付いていなかったが、これも同じ「カード」として扱い、同じ動きを追加。<br>
+  <b style="color:var(--ink)">v4.3.1（2026-09-24）</b>：エリア模式図の「大船・玉縄」付近に、線が2本重なって表示される不具合を修正。v4.2.0で丸枠を撤去して点＋線の構成に作り直した際、旧バージョン（丸枠時代）の線が1本、削除し忘れて残っていた。座標の古い線を削除し、現在の点の位置に対応する線だけが表示されるようにした。<br>
+  <b style="color:var(--ink)">v4.4.0（2026-09-24）</b>：「見方について」以下の構成を見直した。①「コース別・歴史の基本知識」カードで見出しが「識」の1文字だけ次の行に孤立して折れる不具合があった。調査の結果、この3枚のカード（歩く前の基礎知識／コース別・歴史の基本知識／修正履歴）は、章タイル一覧のところに既に用意していた「基礎知識・歴史知識」バナーと行き先が重複していた（修正履歴はドロワーメニューにも別途ある）ことが分かったため、カード自体を削除し「見方について」を4段落で簡潔に終える形にした。折れの不具合は、重複の解消によって併せて解消している。②フッターの「読みもの」「このサイトについて」の2列の間に、細い区切り線を追加。2つの独立したリストが並んでいるだけという印象を少し和らげた。<br>
+  <b style="color:var(--ink)">v4.5.0（2026-09-24）</b>：単純な見た目の調整ではなく、根本原因を修正。「見方について」の本文・タブの説明文・統計ボックス・子供向けコースの注記・脚注ブロックに、それぞれ<code>max-width:640px</code>という制約がかかっており、これらのブロックが1カラム構成であるにも関わらず、周囲のコンテナ幅（最大1120px）よりずっと狭い幅で左に寄って表示され、右側に無駄な余白ができていた。この制約を全て撤去し、各ブロックが1カラムとして周囲の幅をそのまま使うように修正。フッターの2列レイアウトにかかっていた同様の幅制限（900px・480px）も撤去した。ヒーロー部分の非対称レイアウト（右にイラストがある構造）だけは意図的なものとして残している。<br>
+  <b style="color:var(--ink)">v4.6.0（2026-09-24）</b>：ヒーローの江ノ電イラストを削除。画像が無くなった分、見出し・リード文の列の幅を640px→820px（リード文自体は36em→44em）に広げ、右側に余白が残らないよう調整した。不要になった画像ファイル（enoden-hero.png）自体も削除。全ファイルの一括ダウンロードは<a href="kuranpo_v4.6.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v4.6.0.zip</a>から。
   <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kuranpo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v1.9.0.zip</a>から。
 </div>
 
@@ -388,6 +414,20 @@
     <li><span class="tag fix">v2.9.0</span>度重なる配色変更の過程で置き去りになっていた古い色指定を全ファイルで洗い出し修正：足跡カーソルの色配列、戻るボタンのホバー色、theme-colorメタタグ、統計ボックスの文字色。全て現行パレットに統一。</li>
     <li><span class="tag major">v3.0.0</span>エリア模式図を円からピル型に再設計し、文字はみ出しを解消。サイト全体の文字サイズをポップなトーンに合わせて一律拡大（約2px、全36ページ・1199箇所）。</li>
     <li><span class="tag major">v3.1.0</span>面白法人カヤックの旧WEBサイトを参照。「基礎知識・歴史知識」をコースカードから分離し破線バナーに。ヒーローに大仏シルエット・ハーフトーン・星の爆発を追加。OG画像の署名を「切通歩」に修正。カード類のホバーをバネのように弾む動きに変更。</li>
+    <li><span class="tag major">v3.2.0</span>宗教・人物・年表の37レッグに、専用の記事ページを新規作成（re1〜re12・pe1〜pe15・ti1〜ti10、日本語のみ）。各レッグの折りたたみに「くわしく読む」リンクを追加。sitemap.xml・llms.txtを更新（72件に）。</li>
+    <li><span class="tag fix">v3.3.0</span>ヒーローの大仏シルエットを、提供された江ノ電の線画イラストに変更。背景色を透明化して黄色背景に直接重ねられるようにした。</li>
+    <li><span class="tag major">v3.4.0</span>フッターの「編集・文責：切通歩」を、画面いっぱいを使い中央にぽつんと置く形に変更。全73ページに適用。</li>
+    <li><span class="tag major">v3.5.0</span>背景を黄色から緑（#00A968）に変更。背景に埋没する宗教の軸色（苔色）を橙に差し替え。足跡カーソル・統計ボックス・OG画像も新配色に統一。</li>
+    <li><span class="tag fix">v3.6.0</span>「編集・文責：切通歩」の枠を撤去し、「切通歩」の文字をトップページ見出しと同じ大きさに拡大。全73ページに適用。</li>
+    <li><span class="tag major">v3.7.0</span>「切通歩」にふりがなを追加。アニメーションをアニメ・ゲーム的な動きから映画的な動きに変更（星の装飾撤去・足跡単色化・カードのバウンス廃止）。サイト全体をゴシック体から明朝体に書き直し（数字のみ意図的に等幅フォント）。SEO・LLMO・SNS対策を総点検（メタタグ・JSON-LD・sitemap・内部リンクに問題なし）。</li>
+    <li><span class="tag major">v4.0.0</span>ポップアート・カヤック漫画調を撤回し、本草学チャートを参照して配色を全面刷新（生成り紙色の背景＋煉瓦赤・オリーブ・紺・タンの4軸色）。カード・章タイルを太い黒縁の「シール」風から、細い罫線の繊細な見た目に変更。</li>
+    <li><span class="tag add">v4.1.0</span>コースカードの出現アニメーションを、フェードインから「葉が落ちる」ような動き（少し傾いた状態から回転しつつ着地、カードごとにタイミングをずらす）に変更。</li>
+    <li><span class="tag fix">v4.2.0</span>エリア模式図の丸枠を撤去し、点と線だけの構成に変更。英語表示時に長い訳語が枠からはみ出す不具合を解消。</li>
+    <li><span class="tag fix">v4.3.0</span>カードの出現アニメーションから回転を除去し、まっすぐ滑らかに落ちる動きに変更。6つの章タイルにも同じアニメーションを追加。</li>
+    <li><span class="tag fix">v4.3.1</span>エリア模式図の「大船・玉縄」付近で線が2本重なって表示されていた不具合を修正（v4.2.0の作り直し時の削除漏れ）。</li>
+    <li><span class="tag fix">v4.4.0</span>「見方について」の3枚のリンクカードが、章タイル一覧の「基礎知識・歴史知識」バナーと行き先重複だったため削除（見出し折れの不具合も併せて解消）。フッター2列の間に区切り線を追加。</li>
+    <li><span class="tag fix">v4.5.0</span>1カラムのはずのブロック（見方について本文・統計ボックス・タブ説明文・脚注等）に不要なmax-width:640pxがかかっており、右側に無駄な余白ができていた。制約を撤去し、周囲の幅をそのまま使うように修正。</li>
+    <li><span class="tag fix">v4.6.0</span>ヒーローの江ノ電イラストを削除。見出し・リード文の幅を広げて余白を調整し、不要になった画像ファイルも削除。</li>
   </ol>
 </section>
 
@@ -398,6 +438,10 @@
     <p><a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
   </div>
 </footer>
+<section class="editor-mark-section">
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+</section>
+
 
 <script>
 const TRANSLATIONS = {
@@ -439,8 +483,7 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
 
   const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
 
-  const COLORS = ["var(--vermilion, #E8171F)","var(--indigo, #0066CC)","var(--moss, #00A651)","var(--ochre, #9B4DCC)"];
-  let last = null, leftFoot = true, lastStamp = 0, colorIdx = 0;
+  let last = null, leftFoot = true, lastStamp = 0;
   document.addEventListener("mousemove", (e)=>{
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
@@ -455,9 +498,8 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
     const step = document.createElement("div");
     step.innerHTML = FOOT;
     const sideOffset = leftFoot ? -7 : 7;
-    if(leftFoot) colorIdx = (colorIdx + 1) % COLORS.length; // 一歩（左右セット）ごとに色を巡らせる
     leftFoot = !leftFoot;
-    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:${COLORS[colorIdx]}; opacity:.55; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--ink, #111); opacity:.28; transform:rotate(${angle}deg); transition:opacity 2.2s ease, transform 2.2s ease;`;
     layer.appendChild(step);
     requestAnimationFrame(()=>{
       step.style.opacity = "0";

@@ -26,24 +26,24 @@
 <meta name="twitter:title" content="鎌・くらんぽ ― 鎌倉散歩、まるごと">
 <meta name="twitter:description" content="鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅。拝観料・徒歩距離・歴史知識つき。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
-<meta name="theme-color" content="#E8171F">
+<meta name="theme-color" content="#A8402E">
 <meta name="robots" content="index,follow">
 <meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#FFFF00;
-    --card:#FFFFFF;
-    --ink:#111111;
-    --ink-soft:#3A3A3A;
-    --line:#111111;
-    --vermilion:#E8171F;
-    --vermilion-bg:#FFE1E1;
-    --moss:#00A651;
-    --indigo:#0066CC;
-    --ochre:#9B4DCC;
+    --bg:#EFECE7;
+    --card:#F7F4EE;
+    --ink:#262220;
+    --ink-soft:#6B6058;
+    --line:#D8D0BF;
+    --vermilion:#A8402E;
+    --vermilion-bg:#EEDCCF;
+    --moss:#6E6D1C;
+    --indigo:#2E4A63;
+    --ochre:#B8935A;
     --max:1120px;
   }
   *{box-sizing:border-box;}
@@ -52,18 +52,18 @@
     margin:0;
     background:var(--bg);
     color:var(--ink);
-    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-family:"Shippori Mincho", serif;
     line-height:1.7;
     -webkit-font-smoothing:antialiased;
   }
-  .mincho{font-family:"Zen Kaku Gothic New", sans-serif;}
+  .mincho{font-family:"Shippori Mincho", serif;}
   .num, .mono, time, [data-num]{font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums;}
   a{color:inherit;}
 
   /* ---------- topbar ---------- */
   .topbar{
     position:sticky; top:0; z-index:100;
-    background:rgba(255,255,0,0.92); backdrop-filter:blur(6px);
+    background:rgba(239,236,231,0.92); backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
   .topbar-inner{
@@ -106,21 +106,10 @@
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
   .drawer-link:hover{color:var(--vermilion);}
   .drawer-overlay{
-    position:fixed; inset:0; z-index:150; background:rgba(17,17,17,0.35);
+    position:fixed; inset:0; z-index:150; background:rgba(38,34,32,0.35);
     opacity:0; visibility:hidden; transition:opacity .3s ease;
   }
   .drawer-overlay.open{opacity:1; visibility:visible;}
-
-  .contour-motif{
-    position:absolute; top:0; right:0; height:100%; width:56%; max-width:640px;
-    color:var(--ink); opacity:.9; pointer-events:none;
-  }
-  .am-star{color:var(--vermilion); animation:starTwinkle 2.4s ease-in-out infinite;}
-  @keyframes starTwinkle{
-    0%,100%{opacity:.5; transform-origin:center;}
-    50%{opacity:1;}
-  }
-  @media (prefers-reduced-motion: reduce){ .am-star{animation:none;} }
 
   /* ---------- back to top ---------- */
   .back-to-top{
@@ -129,12 +118,12 @@
     background:var(--vermilion); color:#fff; border:none;
     display:flex; align-items:center; justify-content:center;
     font-size:22.5px; line-height:1; cursor:pointer;
-    box-shadow:0 3px 10px rgba(17,17,17,0.25);
+    box-shadow:0 3px 10px rgba(38,34,32,0.25);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:#B01018;}
+  .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
 
   header.site{
@@ -142,19 +131,19 @@
     padding:56px 20px 36px;
     border-bottom:1px solid var(--line);
   }
-  header.site .inner{max-width:640px; margin:0; position:relative; z-index:1;}
+  header.site .inner{max-width:820px; margin:0; position:relative; z-index:1;}
   header.site .kicker{font-size:14.5px; color:var(--ink-soft); margin:0 0 16px;}
   header.site h1{
-    font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700;
+    font-family:"Shippori Mincho", serif; font-weight:700;
     font-size:clamp(36px,9vw,58px); line-height:1.1; margin:0 0 10px; letter-spacing:.02em;
   }
   header.site .yomi{font-size:14.5px; color:var(--ink-soft); margin:0 0 18px;}
   header.site .tagline{
-    font-family:"Zen Kaku Gothic New", sans-serif; font-size:clamp(16px,2.4vw,20px);
+    font-family:"Shippori Mincho", serif; font-size:clamp(16px,2.4vw,20px);
     margin:0 0 20px; color:var(--ink-soft);
   }
   header.site .tagline .accent{color:var(--vermilion); font-weight:700;}
-  header.site p.lead{max-width:36em; margin:0 0 24px; color:var(--ink-soft); font-size:18px; line-height:1.85;}
+  header.site p.lead{max-width:44em; margin:0 0 24px; color:var(--ink-soft); font-size:18px; line-height:1.85;}
 
   .hero-legend{display:flex; flex-wrap:wrap; gap:10px 18px;}
   .hero-legend span{display:inline-flex; align-items:center; gap:7px; font-size:14px; color:var(--ink-soft);}
@@ -177,12 +166,14 @@
   section.areamap{max-width:var(--max); margin:0 auto; padding:0 20px 24px;}
   .areamap-note{font-size:14px; color:var(--ink-soft); margin:0 0 16px;}
   .areamap-svg{width:100%; max-width:600px; height:auto; display:block; margin:0 auto;}
-  .am-line{stroke:var(--ink); stroke-width:2.5;}
-  .am-node{fill:var(--card); stroke:var(--ink); stroke-width:3; transition:fill .2s ease;}
-  .am-node.am-center{fill:#fff; stroke:var(--vermilion); stroke-width:3.5;}
-  .areamap-svg a:hover .am-node{fill:var(--vermilion-bg);}
-  .am-label{font-family:"Zen Kaku Gothic New", sans-serif; font-size:18.5px; fill:var(--ink); text-anchor:middle; font-weight:700;}
-  .am-sub{font-family:"IBM Plex Mono", monospace; font-size:13.5px; fill:var(--ink-soft); text-anchor:middle;}
+  .am-line{stroke:var(--line); stroke-width:1.5;}
+  .am-dot{fill:var(--card); stroke:var(--ink); stroke-width:1.5; transition:fill .2s ease, stroke .2s ease;}
+  .am-dot-center{stroke:var(--vermilion); stroke-width:2;}
+  .areamap-svg a:hover .am-dot{fill:var(--vermilion); stroke:var(--vermilion);}
+  .areamap-svg a:hover .am-label{fill:var(--vermilion);}
+  .am-label{font-family:"Shippori Mincho", serif; font-size:16px; fill:var(--ink); text-anchor:middle; font-weight:700; transition:fill .2s ease;}
+  .am-label-center{font-size:17px;}
+  .am-sub{font-family:"IBM Plex Mono", monospace; font-size:12px; fill:var(--ink-soft); text-anchor:middle;}
   .areamap-svg a{cursor:pointer;}
   .season-label{
     font-size:15px; color:var(--ink-soft);
@@ -193,9 +184,9 @@
     border-left:4px solid var(--moss); text-decoration:none; color:inherit; margin:0 0 10px;
     transition:border-color .2s ease;
   }
-  .season-card:hover{border-color:var(--moss); background:rgba(0,166,81,0.06);}
+  .season-card:hover{border-color:var(--moss); background:rgba(110,109,28,0.06);}
   .season-card .sc-when{font-size:13px; color:var(--moss); font-weight:700; margin:0 0 4px;}
-  .season-card h4{font-family:"Zen Kaku Gothic New", sans-serif; font-size:18px; margin:0 0 6px;}
+  .season-card h4{font-family:"Shippori Mincho", serif; font-size:18px; margin:0 0 6px;}
   .season-card p{font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.7;}
   .season-toggle{
     appearance:none; background:none; border:1px solid var(--line); color:var(--ink-soft);
@@ -218,20 +209,29 @@
   .ch-grid{display:grid; grid-template-columns:1fr; gap:16px;}
   .ch{
     display:block; background:var(--card); padding:26px 22px 24px; cursor:pointer;
-    border:3px solid var(--ink); border-radius:18px;
-    transition:transform .28s cubic-bezier(.34,1.56,.64,1), box-shadow .28s cubic-bezier(.34,1.56,.64,1);
+    border:1px solid var(--line); border-radius:2px;
     text-decoration:none; color:inherit;
-    box-shadow:5px 5px 0 rgba(17,17,17,0.14);
+    box-shadow:0 1px 2px rgba(38,34,32,0.06);
+    opacity:0; transform:translateY(-30px);
+    transition:opacity 1s cubic-bezier(.22,.68,.36,1), transform 1s cubic-bezier(.22,.68,.36,1);
   }
-  .ch:hover{transform:rotate(-1deg) translateY(-5px) scale(1.02); box-shadow:9px 10px 0 rgba(17,17,17,0.2);}
-  .ch:active{transform:rotate(-0.3deg) translateY(-1px) scale(.99); transition-duration:.05s;}
+  .ch:nth-child(3n){transform:translateY(-38px);}
+  .ch.in-view{opacity:1; transform:translateY(0);}
+  .ch.in-view:nth-child(2){transition-delay:.08s;}
+  .ch.in-view:nth-child(3){transition-delay:.16s;}
+  .ch.in-view:nth-child(4){transition-delay:.24s;}
+  .ch.in-view:nth-child(5){transition-delay:.32s;}
+  .ch.in-view:nth-child(6){transition-delay:.4s;}
+  .ch.in-view:nth-child(7){transition-delay:.48s;}
+  .ch:hover{transform:translateY(-3px); box-shadow:0 10px 24px rgba(38,34,32,0.12); border-color:var(--ink-soft); transition:transform .3s cubic-bezier(.16,.6,.2,1), box-shadow .3s ease, border-color .3s ease;}
+  .ch:active{transform:translateY(-1px); transition-duration:.3s;}
   .ch[data-tab="geo"] .ch-no, .ch[data-tab="kids"] .ch-no, .ch[data-tab="complete"] .ch-no{background:var(--vermilion);}
   .ch[data-tab="religion"] .ch-no{background:var(--moss);}
   .ch[data-tab="person"] .ch-no{background:var(--indigo);}
   .ch[data-tab="timeline"] .ch-no{background:var(--ochre);}
   .ch .ch-no{
     font-family:"IBM Plex Mono", monospace; font-size:15px; font-weight:700; color:#fff; background:var(--ink);
-    display:inline-block; padding:4px 11px; margin:0 0 12px; letter-spacing:.02em; border-radius:20px;
+    display:inline-block; padding:4px 11px; margin:0 0 12px; letter-spacing:.02em;
   }
   .ch .ch-en{font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--ink-soft); margin:0 0 4px; opacity:.7;}
   .ch h3{font-size:21.5px; margin:0 0 4px;}
@@ -239,7 +239,7 @@
   .ch p{font-size:14.5px; color:var(--ink-soft); margin:0 0 14px; line-height:1.7;}
   .ch-kids{
     margin:0 0 14px; padding:9px 11px; font-size:13px; line-height:1.7; color:var(--ink-soft);
-    background:rgba(0,166,81,0.08); border-left:2px solid var(--moss);
+    background:rgba(110,109,28,0.08); border-left:2px solid var(--moss);
   }
   .ch-kids b{color:var(--moss); display:block; margin-bottom:2px; font-size:13.5px;}
   .ch .ch-link{
@@ -250,8 +250,8 @@
 
   .ref-banner{
     display:flex; align-items:center; gap:14px; margin-top:18px; padding:16px 18px;
-    background:#fff; border:3px dashed var(--ink); border-radius:14px;
-    text-decoration:none; color:inherit; transition:transform .15s ease, background .15s ease;
+    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--ink-soft);
+    text-decoration:none; color:inherit; transition:transform .3s cubic-bezier(.16,.6,.2,1), background .3s ease;
   }
   .ref-banner:hover{transform:translateY(-2px); background:var(--vermilion-bg);}
   .ref-banner-icon{font-size:28px; flex:0 0 auto;}
@@ -277,28 +277,18 @@
   }
 
   .intro{padding:22px 20px 6px; max-width:var(--max); margin:0 auto;}
-  .intro h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:19.5px; margin:0 0 8px;}
-  .intro p{font-size:15.5px; color:var(--ink-soft); margin:0 0 10px; max-width:640px;}
-
-  .ref-links{display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 24px; max-width:640px;}
-  .ref-links a{
-    flex:1 1 180px; display:flex; flex-direction:column; gap:4px;
-    padding:13px 15px; background:var(--card); border:1px solid var(--line); border-left:3px solid var(--vermilion);
-    text-decoration:none; color:var(--ink); transition:border-color .2s ease, background-color .2s ease;
-  }
-  .ref-links a:hover{border-color:var(--vermilion); background:var(--vermilion-bg);}
-  .ref-links .rl-title{font-size:15.5px; font-weight:700;}
-  .ref-links .rl-desc{font-size:13px; color:var(--ink-soft); line-height:1.5;}
+  .intro h2{font-family:"Shippori Mincho", serif; font-size:19.5px; margin:0 0 8px;}
+  .intro p{font-size:15.5px; color:var(--ink-soft); margin:0 0 10px;}
 
   .stats{
-    margin:16px 0 20px; padding:20px 22px; max-width:640px;
+    margin:16px 0 20px; padding:20px 22px;
     background:var(--ink); border:1px solid var(--ink); border-top:2px solid var(--vermilion);
   }
-  .stats .num{font-family:"IBM Plex Mono", monospace; font-size:35px; font-weight:600; color:#FFFF00;}
-  .stats .num small{font-family:"Zen Kaku Gothic New", sans-serif; font-size:15px; font-weight:500; margin-left:6px; color:#E5E5E5;}
+  .stats .num{font-family:"IBM Plex Mono", monospace; font-size:35px; font-weight:600; color:#A8402E;}
+  .stats .num small{font-family:"Shippori Mincho", serif; font-size:15px; font-weight:500; margin-left:6px; color:#E5E5E5;}
   .stats .breakdown{font-family:"IBM Plex Mono", monospace; font-size:14px; color:#E5E5E5; margin-top:8px;}
-  .stats .rate{font-size:14px; color:#CCCCCC; margin-top:12px; padding-top:12px; border-top:1px solid rgba(255,255,0,0.25);}
-  .stats .rate b{font-family:"IBM Plex Mono", monospace; color:#FFFF00;}
+  .stats .rate{font-size:14px; color:#CCCCCC; margin-top:12px; padding-top:12px; border-top:1px solid rgba(239,236,231,0.25);}
+  .stats .rate b{font-family:"IBM Plex Mono", monospace; color:#A8402E;}
 
   nav.tabs{
     position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
@@ -306,16 +296,16 @@
   }
   nav.tabs .inner{display:flex; align-items:center; max-width:var(--max); margin:0 auto; width:100%;}
   nav.tabs .brand{
-    flex:0 0 auto; font-family:"Zen Kaku Gothic New", sans-serif; font-size:16px; font-weight:700;
+    flex:0 0 auto; font-family:"Shippori Mincho", serif; font-size:16px; font-weight:700;
     padding:0 16px 0 0; margin-right:8px; border-right:1px solid var(--line); white-space:nowrap;
   }
   nav.tabs::-webkit-scrollbar{display:none;}
   nav.tabs button{
     flex:0 0 auto; appearance:none; background:none; border:none; padding:16px 16px 13px;
-    font-family:"Zen Kaku Gothic New", sans-serif; font-size:16px; font-weight:500;
+    font-family:"Shippori Mincho", serif; font-size:16px; font-weight:500;
     color:var(--ink-soft); border-bottom:2px solid transparent; cursor:pointer; white-space:nowrap;
   }
-  nav.tabs button .no{font-family:"Zen Kaku Gothic New", sans-serif; font-size:13px; color:var(--ink-soft); margin-right:6px;}
+  nav.tabs button .no{font-family:"Shippori Mincho", serif; font-size:13px; color:var(--ink-soft); margin-right:6px;}
   nav.tabs button.active{color:var(--ink); border-bottom-color:var(--vermilion);}
   nav.tabs button.active .no{color:var(--vermilion);}
   nav.tabs button:focus-visible{outline:2px solid var(--indigo); outline-offset:2px;}
@@ -326,18 +316,18 @@
 
   .panel-note{
     font-size:15.5px; color:var(--ink-soft); margin:16px 0 18px;
-    padding:12px 14px; background:var(--card); border-left:3px solid var(--line); max-width:640px;
+    padding:12px 14px; background:var(--card); border-left:3px solid var(--line);
   }
 
   .filter-row{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 4px;}
 
-  .kids-why{max-width:640px; margin:16px 0 24px; border:1px solid var(--line); background:var(--line);}
+  .kids-why{margin:16px 0 24px; border:1px solid var(--line); background:var(--line);}
   .kw-item{background:var(--card); padding:12px 15px; font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin:0;}
   .kw-item + .kw-item{margin-top:1px;}
   .kw-item b{color:var(--moss);}
   .filter-row button{
     appearance:none; border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
-    font-family:"Zen Kaku Gothic New", sans-serif; font-size:14.5px; padding:6px 12px; border-radius:3px; cursor:pointer;
+    font-family:"Shippori Mincho", serif; font-size:14.5px; padding:6px 12px; border-radius:3px; cursor:pointer;
   }
   .filter-row button.active{border-color:var(--vermilion); color:var(--vermilion); background:var(--vermilion-bg);}
 
@@ -347,20 +337,25 @@
 
   .group-head{margin:26px 2px 8px; padding-top:14px; border-top:1px solid var(--line);}
   .group-head:first-of-type{border-top:none; padding-top:0; margin-top:16px;}
-  .group-head .label{font-family:"Zen Kaku Gothic New", sans-serif; font-size:18.5px; font-weight:700;}
+  .group-head .label{font-family:"Shippori Mincho", serif; font-size:18.5px; font-weight:700;}
 
   .card{
     display:flex; flex-direction:column;
-    background:var(--card); border:3px solid var(--ink); border-radius:16px;
+    background:var(--card); border:1px solid var(--line); border-radius:2px;
     margin:0 0 14px; padding:16px 18px 16px;
     text-decoration:none; color:inherit;
-    opacity:0;
-    transition:opacity .5s ease, transform .28s cubic-bezier(.34,1.56,.64,1), box-shadow .28s cubic-bezier(.34,1.56,.64,1);
-    box-shadow:4px 4px 0 rgba(17,17,17,0.12);
+    opacity:0; transform:translateY(-30px);
+    transition:opacity 1s cubic-bezier(.22,.68,.36,1), transform 1s cubic-bezier(.22,.68,.36,1);
+    box-shadow:0 1px 2px rgba(38,34,32,0.05);
   }
-  .card.in-view{opacity:1;}
-  .card:hover{transform:rotate(-1.2deg) translateY(-5px) scale(1.02); box-shadow:8px 9px 0 rgba(17,17,17,0.18);}
-  .card:active{transform:rotate(-0.3deg) translateY(-1px) scale(.99); transition-duration:.05s;}
+  .card:nth-child(3n){transform:translateY(-38px);}
+  .card.in-view{opacity:1; transform:translateY(0);}
+  .card.in-view:nth-child(2){transition-delay:.08s;}
+  .card.in-view:nth-child(3){transition-delay:.16s;}
+  .card.in-view:nth-child(4){transition-delay:.24s;}
+  .card.in-view:nth-child(5){transition-delay:.32s;}
+  .card:hover{transform:translateY(-3px); box-shadow:0 8px 20px rgba(38,34,32,0.1); border-color:var(--ink-soft); transition:transform .3s cubic-bezier(.16,.6,.2,1), box-shadow .3s ease, border-color .3s ease;}
+  .card:active{transform:translateY(-1px); transition-duration:.2s;}
 
   .card{position:relative;}
   .progress-note{
@@ -371,19 +366,19 @@
     position:absolute; top:-10px; right:-10px; z-index:2;
     width:30px; height:30px; border-radius:50%; border:2.5px solid var(--ink);
     background:#fff; color:transparent; font-size:17.5px; line-height:1;
-    cursor:pointer; transition:all .2s ease; box-shadow:2px 2px 0 rgba(17,17,17,0.15);
+    cursor:pointer; transition:all .2s ease; box-shadow:2px 2px 0 rgba(38,34,32,0.15);
   }
   .stamp-btn:hover{transform:scale(1.1);}
   .stamp-btn.walked{background:var(--moss); border-color:var(--ink); color:#fff;}
   .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding-right:14px;}
   .card .num{
     font-family:"IBM Plex Mono", monospace; font-size:13.5px; font-weight:700; color:#fff; background:var(--vermilion);
-    margin-right:8px; padding:4px 9px; border-radius:20px;
+    margin-right:8px; padding:4px 9px;
   }
   .card.axis-religion .num{background:var(--moss);}
   .card.axis-person .num{background:var(--indigo);}
   .card.axis-timeline .num{background:var(--ochre);}
-  .card h3{font-family:"Zen Kaku Gothic New", sans-serif; font-size:19.5px; font-weight:700; margin:0; line-height:1.4;}
+  .card h3{font-family:"Shippori Mincho", serif; font-size:19.5px; font-weight:700; margin:0; line-height:1.4;}
   .card .chev{flex:0 0 auto; color:var(--ink-soft); font-size:15px; line-height:1.4; transition:transform .18s ease;}
   .card:hover .chev{transform:translateX(3px);}
   .card.open .chev{transform:rotate(180deg);}
@@ -402,7 +397,7 @@
   .card.open .detail{display:block;}
 
   .story{
-    font-family:"Zen Kaku Gothic New", sans-serif;
+    font-family:"Shippori Mincho", serif;
     font-size:16.5px;
     line-height:1.9;
     color:var(--ink);
@@ -431,19 +426,30 @@
   footer.site .inner-wide{max-width:100%;}
   footer.site p{margin:0 0 8px;}
 
-  .footer-links{display:grid; grid-template-columns:1fr; gap:28px; margin:0 0 36px; max-width:900px;}
+  .footer-links{display:grid; grid-template-columns:1fr; gap:28px; margin:0 0 36px;}
   .fl-col{display:flex; flex-direction:column;}
   .fl-head{font-size:15px; font-weight:700; color:var(--ink); margin:0 0 10px;}
   .fl-col a{font-size:14.5px; color:var(--ink-soft); text-decoration:none; padding:5px 0; transition:color .2s ease;}
   .fl-col a:hover{color:var(--vermilion);}
   .fl-tagline{font-size:15px; color:var(--ink); margin-top:16px; line-height:1.8;}
 
-  .footnotes{max-width:640px; margin:0 0 20px; border:1px solid var(--line); background:var(--line);}
+  .footnotes{margin:0 0 20px; border:1px solid var(--line); background:var(--line);}
   .footnotes .fn-item{background:var(--bg); padding:14px 16px;}
   .footnotes .fn-item + .fn-item{margin-top:1px;}
   .footnotes .fn-label{font-size:14.5px; font-weight:700; color:var(--vermilion); margin:0 0 4px;}
   .footnotes .fn-text{font-size:14px; color:var(--ink-soft); line-height:1.7; margin:0;}
-  footer.site .credit{margin-top:16px; padding-top:12px; border-top:1px solid var(--line); font-size:14px;}
+  .editor-mark-section{
+    min-height:100vh; min-height:100dvh; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:16px;
+  }
+  .editor-mark{
+    color:var(--ink); text-decoration:none; display:flex; flex-direction:column;
+    align-items:center; gap:10px; transition:color .2s ease;
+  }
+  .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark .em-label{font-size:15px; opacity:.6;}
+  .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .editor-mark-sub{font-size:12.5px; color:var(--ink-soft); margin:0;}
   footer.site .credit a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
 
   /* ---------- responsive breakpoints ---------- */
@@ -455,7 +461,8 @@
     .topbar-inner{padding:0 32px;}
     .topbar-nav{display:flex;}
     .hamburger{display:none;}
-    .footer-links{grid-template-columns:repeat(2, 1fr); max-width:480px;}
+    .footer-links{grid-template-columns:repeat(2, 1fr);}
+    .fl-col:nth-child(2){padding-left:28px; border-left:1px solid var(--line);}
   }
   @media (min-width:1024px){
     header.site{padding:80px 40px 48px;}
@@ -553,26 +560,6 @@
 
 
 <header class="site" id="top">
-  <svg class="contour-motif" viewBox="0 0 640 640" aria-hidden="true" preserveAspectRatio="xMaxYMid slice">
-    <defs>
-      <pattern id="halftone" width="14" height="14" patternUnits="userSpaceOnUse">
-        <circle cx="7" cy="7" r="3" fill="currentColor"/>
-      </pattern>
-      <clipPath id="buddhaClip"><circle cx="430" cy="330" r="230"/></clipPath>
-    </defs>
-    <circle cx="430" cy="330" r="230" fill="url(#halftone)" opacity=".14" clip-path="url(#buddhaClip)"/>
-    <circle cx="430" cy="330" r="230" fill="none" stroke="currentColor" stroke-width="4"/>
-    <!-- 鎌倉大仏（簡略シルエット） -->
-    <g transform="translate(430,330)" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
-      <path d="M -95 120 C -95 40 -70 -30 0 -30 C 70 -30 95 40 95 120 Z"/>
-      <circle cx="0" cy="-95" r="52"/>
-      <path d="M -60 60 C -40 90 40 90 60 60"/>
-      <path d="M -95 120 L -125 130 L 125 130 L 95 120"/>
-    </g>
-    <g class="am-star" style="animation-delay:0s" transform="translate(560,110) rotate(12)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
-    <g class="am-star" style="animation-delay:.5s" transform="translate(150,90) rotate(-8) scale(.6)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
-    <g class="am-star" style="animation-delay:1s" transform="translate(590,480) rotate(20) scale(.75)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
-  </svg>
   <div class="inner">
     <p class="kicker reveal-line" data-i18n="site.kicker">鎌倉さんぽ、まるごと</p>
     <h1 class="mincho reveal-line">鎌・くらんぽ</h1>
@@ -591,21 +578,21 @@
 <section class="areamap" id="areamap">
   <p class="chapters-label" data-i18n="areamap.label">エリアの位置関係（模式図）</p>
   <p class="areamap-note" data-i18n="areamap.note">実際の地図ではなく、位置関係を分かりやすくした模式図。ノードをタップすると代表コースに飛ぶ。</p>
-  <svg class="areamap-svg" viewBox="0 0 480 410" role="img" aria-label="鎌倉エリアの位置関係模式図">
-    <line x1="225" y1="137" x2="130" y2="74" class="am-line"/>
-    <line x1="225" y1="137" x2="320" y2="74" class="am-line"/>
-    <line x1="225" y1="193" x2="90" y2="256" class="am-line"/>
-    <line x1="225" y1="193" x2="245" y2="256" class="am-line"/>
-    <line x1="225" y1="193" x2="400" y2="256" class="am-line"/>
-    <line x1="90" y1="304" x2="90" y2="346" class="am-line"/>
+  <svg class="areamap-svg" viewBox="0 0 500 460" role="img" aria-label="鎌倉エリアの位置関係模式図">
+    <line x1="225" y1="150" x2="130" y2="40" class="am-line"/>
+    <line x1="225" y1="150" x2="320" y2="40" class="am-line"/>
+    <line x1="225" y1="150" x2="110" y2="280" class="am-line"/>
+    <line x1="225" y1="150" x2="250" y2="340" class="am-line"/>
+    <line x1="225" y1="150" x2="390" y2="280" class="am-line"/>
+    <line x1="110" y1="280" x2="110" y2="420" class="am-line"/>
 
-    <a href="knowledge/g12.html"><rect x="70" y="26" width="120" height="48" rx="24" class="am-node"/><text x="130" y="46" class="am-label" data-i18n="am.ofuna">大船・玉縄</text><text x="130" y="62" class="am-sub">G12</text></a>
-    <a href="knowledge/g4.html"><rect x="270" y="26" width="100" height="48" rx="24" class="am-node"/><text x="320" y="46" class="am-label" data-i18n="am.kitakamakura">北鎌倉</text><text x="320" y="62" class="am-sub">G4・G5</text></a>
-    <a href="knowledge/g2.html"><rect x="150" y="137" width="150" height="56" rx="28" class="am-node am-center"/><text x="225" y="159" class="am-label" data-i18n="am.station">鎌倉駅周辺</text><text x="225" y="177" class="am-sub">G1・G2・G3・G8</text></a>
-    <a href="knowledge/g11.html"><rect x="20" y="256" width="140" height="48" rx="24" class="am-node"/><text x="90" y="276" class="am-label" data-i18n="am.hase">長谷・極楽寺</text><text x="90" y="292" class="am-sub">G6・G11・G13</text></a>
-    <a href="knowledge/g7.html"><rect x="175" y="256" width="140" height="48" rx="24" class="am-node"/><text x="245" y="276" class="am-label" data-i18n="am.omachi">大町・材木座</text><text x="245" y="292" class="am-sub">G7・G10</text></a>
-    <a href="knowledge/g9.html"><rect x="345" y="256" width="110" height="48" rx="24" class="am-node"/><text x="400" y="276" class="am-label" data-i18n="am.kanazawa">金沢街道</text><text x="400" y="292" class="am-sub">G9</text></a>
-    <a href="knowledge/g14.html"><rect x="20" y="346" width="140" height="48" rx="24" class="am-node"/><text x="90" y="366" class="am-label" data-i18n="am.koshigoe">腰越・江の島</text><text x="90" y="382" class="am-sub">G14</text></a>
+    <a href="knowledge/g12.html"><circle cx="130" cy="40" r="5" class="am-dot"/><text x="130" y="20" class="am-label" data-i18n="am.ofuna">大船・玉縄</text><text x="130" y="60" class="am-sub">G12</text></a>
+    <a href="knowledge/g4.html"><circle cx="320" cy="40" r="5" class="am-dot"/><text x="320" y="20" class="am-label" data-i18n="am.kitakamakura">北鎌倉</text><text x="320" y="60" class="am-sub">G4・G5</text></a>
+    <a href="knowledge/g2.html"><circle cx="225" cy="150" r="6" class="am-dot am-dot-center"/><text x="225" y="128" class="am-label am-label-center" data-i18n="am.station">鎌倉駅周辺</text><text x="225" y="170" class="am-sub">G1・G2・G3・G8</text></a>
+    <a href="knowledge/g11.html"><circle cx="110" cy="280" r="5" class="am-dot"/><text x="110" y="260" class="am-label" data-i18n="am.hase">長谷・極楽寺</text><text x="110" y="300" class="am-sub">G6・G11・G13</text></a>
+    <a href="knowledge/g7.html"><circle cx="250" cy="340" r="5" class="am-dot"/><text x="250" y="320" class="am-label" data-i18n="am.omachi">大町・材木座</text><text x="250" y="360" class="am-sub">G7・G10</text></a>
+    <a href="knowledge/g9.html"><circle cx="390" cy="280" r="5" class="am-dot"/><text x="390" y="260" class="am-label" data-i18n="am.kanazawa">金沢街道</text><text x="390" y="300" class="am-sub">G9</text></a>
+    <a href="knowledge/g14.html"><circle cx="110" cy="420" r="5" class="am-dot"/><text x="110" y="400" class="am-label" data-i18n="am.koshigoe">腰越・江の島</text><text x="110" y="440" class="am-sub">G14</text></a>
   </svg>
 </section>
 
@@ -681,24 +668,10 @@
 
 <div class="intro">
   <h2 class="mincho">見方について</h2>
-  <p>社寺は町中に散らばっているので、テーマ別に新ルートを作ると1日で歩くには遠すぎることがある。だから「エリア別コース」を基本の歩く単位にし、宗教・人物・年表は複数日に分けて巡るプラン用にした。同じ社寺が何度も出てくるのは、見る角度が違うだけ。拝観料は寺社ごとに一元管理しているので、どのタブで見ても同じ金額。</p>
-  <p>距離は、施設（駅・バス停含む）から次の施設までの区間距離。境内を歩き回る分は含まない。観光ガイドの実測値をベースに、ないところは地図上の概算。目安として見てほしい。</p>
-  <p>コースはすべて3時間未満。体力があれば1日3セットも可能。</p>
-  <p>今後は実際に歩いた写真も載せていく予定。</p>
-  <div class="ref-links">
-    <a href="basics.html">
-      <span class="rl-title mincho">歩く前の基礎知識</span>
-      <span class="rl-desc">切通・谷戸・鎌倉五山・拝観の実務など</span>
-    </a>
-    <a href="history.html">
-      <span class="rl-title mincho">コース別・歴史の基本知識</span>
-      <span class="rl-desc">全30コースの人物・出来事・おさらい</span>
-    </a>
-    <a href="changelog.html">
-      <span class="rl-title mincho">修正履歴</span>
-      <span class="rl-desc">サイトの更新記録・バージョン管理</span>
-    </a>
-  </div>
+  <p>社寺は町中に散らばっているので、テーマ別に新ルートを作ると1日で歩くには遠すぎることがあります。そのため「エリア別コース」を基本の歩く単位とし、宗教・人物・年表は複数日に分けて巡っていただくプランとしています。同じ社寺が何度も出てくるのは、見る角度が違うだけです。拝観料は寺社ごとに一元管理していますので、どのタブでご覧いただいても同じ金額です。</p>
+  <p>距離は、施設（駅・バス停含む）から次の施設までの区間距離です。境内を歩き回る分は含みません。観光ガイドの実測値をベースに、記載のない区間は地図上の概算で補っています。目安としてご覧ください。</p>
+  <p>コースはすべて3時間未満です。体力のある方であれば、1日3セットも歩いていただけます。</p>
+  <p>今後は、実際に歩いた際の写真も掲載していく予定です。</p>
 </div>
 
 <nav class="tabs" role="tablist">
@@ -809,9 +782,13 @@
       <p class="fn-text">鎌倉観光文化検定公式ガイド（かまくら春秋社）・かまくらこども風土記（鎌倉市教育委員会）等の複数出典から、寺院約110・神社約50、合計約150〜160件が妥当な推定値。</p>
     </div>
   </div>
-  <p class="credit">編集・文責：<a href="profile.html">切通歩</a> ／ <a href="changelog.html">修正履歴</a> ／ 最終更新：2026年9月24日</p>
   </div>
 </footer>
+
+<section class="editor-mark-section">
+  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+  <p class="editor-mark-sub">最終更新：2026年9月24日</p>
+</section>
 
 
 <script>
@@ -1393,6 +1370,9 @@ function renderAxisCard(leg, axisClass, legKey){
   const dist = totalDist(leg.spots, leg.endDist);
   const warn = leg.footnote && leg.footnote.includes("2時間では厳しく");
   const startKey = stripRuby(leg.start), endKey = stripRuby(leg.end);
+  const AXIS_PREFIX = {religion:"re", person:"pe", timeline:"ti"};
+  const m = legKey.match(/^(\w+)\.leg(\d+)$/);
+  const pageHref = m ? `knowledge/${AXIS_PREFIX[m[1]]}${Number(m[2])+1}.html` : null;
   return `
   <div class="card ${axisClass}">
     <div class="top" onclick="this.closest('.card').classList.toggle('open')">
@@ -1409,6 +1389,7 @@ function renderAxisCard(leg, axisClass, legKey){
       ${leg.story ? `<p class="story" data-i18n="${legKey}.story">${leg.story}</p>` : ""}
       ${renderSpots(leg.spots, leg.start, leg.end, leg.endDist)}
       ${leg.footnote ? `<p class="card-footnote ${warn?'warn':''}">${leg.footnote}</p>` : ""}
+      ${pageHref ? `<a class="read-more axis-read-more" href="${pageHref}">くわしく読む（歴史知識・地図）</a>` : ""}
     </div>
   </div>`;
 }
@@ -1558,7 +1539,7 @@ function toggleLabel(state){
   const combinedTotal = ct+cs;
   const cRateMin = Math.round(combinedTotal/estMax*100);
   const cRateMax = Math.round(combinedTotal/estMin*100);
-  const combinedHtml = `<p class="rate"><b style="color:#FFFF00">エリア別14コース＋コンプリート版16コースの合計：${combinedTotal}件</b>（寺${ct}・社${cs}）。史跡等${ch}ヶ所を含めて実質${combinedTotal+ch}ヶ所。充足率は約${cRateMin}〜${cRateMax}％。残る差分は主に円覚寺・建長寺の非公開塔頭（合計27院）と、確認しきれなかった数社。</p>`;
+  const combinedHtml = `<p class="rate"><b style="color:#A8402E">エリア別14コース＋コンプリート版16コースの合計：${combinedTotal}件</b>（寺${ct}・社${cs}）。史跡等${ch}ヶ所を含めて実質${combinedTotal+ch}ヶ所。充足率は約${cRateMin}〜${cRateMax}％。残る差分は主に円覚寺・建長寺の非公開塔頭（合計27院）と、確認しきれなかった数社。</p>`;
 
   const tabs = {
     geo: {data:GEO, label:"エリア別14コース", noteOther:"コンプリート版"},
@@ -2035,8 +2016,7 @@ window.addEventListener("hashchange", ()=>{
 
   const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
 
-  const COLORS = ["var(--vermilion, #E8171F)","var(--indigo, #0066CC)","var(--moss, #00A651)","var(--ochre, #9B4DCC)"];
-  let last = null, leftFoot = true, lastStamp = 0, colorIdx = 0;
+  let last = null, leftFoot = true, lastStamp = 0;
   document.addEventListener("mousemove", (e)=>{
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
@@ -2051,9 +2031,8 @@ window.addEventListener("hashchange", ()=>{
     const step = document.createElement("div");
     step.innerHTML = FOOT;
     const sideOffset = leftFoot ? -7 : 7;
-    if(leftFoot) colorIdx = (colorIdx + 1) % COLORS.length; // 一歩（左右セット）ごとに色を巡らせる
     leftFoot = !leftFoot;
-    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:${COLORS[colorIdx]}; opacity:.55; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--ink, #111); opacity:.28; transform:rotate(${angle}deg); transition:opacity 2.2s ease, transform 2.2s ease;`;
     layer.appendChild(step);
     requestAnimationFrame(()=>{
       step.style.opacity = "0";
@@ -2122,7 +2101,7 @@ window.addEventListener("hashchange", ()=>{
 try {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if(reduceMotion || typeof IntersectionObserver === "undefined"){
-    document.querySelectorAll(".card").forEach(c=>c.classList.add("in-view"));
+    document.querySelectorAll(".card, .ch").forEach(c=>c.classList.add("in-view"));
   } else {
     const revealObserver = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
@@ -2132,11 +2111,11 @@ try {
         }
       });
     }, {threshold:0.1, rootMargin:"0px 0px -40px 0px"});
-    document.querySelectorAll(".card").forEach(c=>revealObserver.observe(c));
+    document.querySelectorAll(".card, .ch").forEach(c=>revealObserver.observe(c));
   }
 } catch(e) {
   // 何らかの理由でアニメーション設定が失敗しても、カードは必ず表示する
-  document.querySelectorAll(".card").forEach(c=>c.classList.add("in-view"));
+  document.querySelectorAll(".card, .ch").forEach(c=>c.classList.add("in-view"));
 }
 
 /* ===================== DURATION FILTER (複数タブ対応) ===================== */

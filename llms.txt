@@ -14,6 +14,10 @@
 
 各コースの祭神・本尊・関連人物・出来事を専用ページで解説。一覧は [history.html](https://djnaoyaman.github.io/kuranpo/history.html) を参照。個別ページは `https://djnaoyaman.github.io/kuranpo/knowledge/{id}.html` の形式（例：`g1.html`〜`g14.html`＝エリア別コース、`c1.html`〜`c16.html`＝コンプリート版）。
 
+## 宗教・人物・年表でめぐるページ（全37本）
+
+トップページの「宗教でめぐる」「人物でめぐる」「年表でめぐる」タブそれぞれのレッグに対応する記事。`https://djnaoyaman.github.io/kuranpo/knowledge/{id}.html` の形式（`re1.html`〜`re12.html`＝宗教、`pe1.html`〜`pe15.html`＝人物、`ti1.html`〜`ti10.html`＝年表）。エリア別コースと同じ社寺を、異なる軸から再構成した内容。
+
 ## Optional
 
 - [sitemap.xml](https://djnaoyaman.github.io/kuranpo/sitemap.xml): 全ページのURL一覧。

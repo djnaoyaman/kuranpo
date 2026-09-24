@@ -213,6 +213,29 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .related-drills{margin:20px 0 0;}
+  .related-drills-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .related-drills-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .rd-link{font-size:13px; padding:6px 12px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .rd-link:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -338,6 +361,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -396,7 +420,59 @@
     <div class="term"><dt><ruby>天照大神<rt>あまてらすおおみかみ</rt></ruby><span class="cat">03</span></dt><dd>甘縄神明神社の祭神。染谷時忠という豪族が創建したと伝わる、鎌倉最古の神社という伝承を持つ。</dd></div>
   </dl>
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="related-drills">
+      <p class="related-drills-label">関連するドリルに挑戦</p>
+      <div class="related-drills-links"><a class="rd-link" href="../quiz.html#temple:kotokuin">お寺：高徳院（大仏）編</a><a class="rd-link" href="../quiz.html#religion:tendai_tanritsu">宗教：天台宗・単立編</a></div>
+    </div>
+    <div class="mini-drill" id="miniDrill_g11">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#temple:kotokuin">お寺：高徳院（大仏）編</a><a href="../quiz.html#person:yasutoki">人物：北条泰時編</a><a href="../quiz.html#religion:tendai_tanritsu">宗教：天台宗・単立編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_g11", [{"q": "大仏が「鎌倉が寂れてからも、ずっとそこに座り続けていた」という一文は、何との対比で意味を持つ？", "choices": ["大仏の大きさとの対比", "鎌倉が武士の都として栄えていた時代との対比", "他の仏像との対比", "現代の鎌倉との対比"], "answer": 1, "note": "都市としての繁栄が終わっても、大仏という存在は変わらずそこにあり続けた、という時間の対比です。"}, {"q": "江戸時代に鎌倉が「見どころの多い場所」として人を集めるようになったことは、今の鎌倉観光とどうつながっている？", "choices": ["全く無関係", "今の鎌倉観光の元の形が、すでに江戸時代にできあがっていた", "江戸時代の方が観光客は多かった", "観光地化は近代以降の現象"], "answer": 1, "note": "江戸時代にはすでに、今につながる観光地としての鎌倉の姿ができあがっていました。"}, {"q": "大仏の大きさについて、写真と実物でどう違うと本文は述べている？", "choices": ["写真の方が大きく見える", "写真で見るのと真下に立つのとでは、まったく違う", "違いはない", "真下からは見えない"], "answer": 1, "note": "実際に真下に立つことでしか分からない、大きさの実感があるとされています。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

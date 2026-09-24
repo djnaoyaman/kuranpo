@@ -206,6 +206,29 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .related-drills{margin:20px 0 0;}
+  .related-drills-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .related-drills-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .rd-link{font-size:13px; padding:6px 12px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .rd-link:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -331,6 +354,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -393,7 +417,59 @@
     <div class="term"><dt>おんめさま<span class="cat">06</span></dt><dd>大巧寺の通称。安産・安胎の守り神として親しまれてきた、庶民の願いに直結した信仰。</dd></div>
   </dl>
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="related-drills">
+      <p class="related-drills-label">関連するドリルに挑戦</p>
+      <div class="related-drills-links"><a class="rd-link" href="../quiz.html#temple:sugimoto">お寺：杉本寺編</a><a class="rd-link" href="../quiz.html#history:ancient">歴史：古代編</a></div>
+    </div>
+    <div class="mini-drill" id="miniDrill_g1">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#history:ancient">歴史：古代編</a><a href="../quiz.html#temple:sugimoto">お寺：杉本寺編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_g1", [{"q": "杉本寺が734年に開かれたとすると、頼朝が鎌倉に来た1180年との差は約何年？　この数字が「途方もない」と感じられるとしたら、なぜだと思う？", "choices": ["約450年。人間の一生の5〜6倍という、実感しにくい長さだから", "約200年。江戸時代から今までとほぼ同じ長さだから", "約50年。祖父母の代から続いているという長さだから", "約900年。文字が生まれる前からという長さだから"], "answer": 0, "note": "約450年。人の一生を80年とすると5〜6回分。「頼朝より前」と言われてもピンとこないのは、この長さが人間の感覚を超えているからです。"}, {"q": "杉本寺の開山と伝わる行基は、実は日本各地の多くの寺でも「開山者」として名前が残っている。このことを知ると、杉本寺の「734年」という年代の意味は、どう見え方が変わる？", "choices": ["行基が杉本寺だけを特別扱いした証拠になる", "奈良時代、仏教が国中に広がっていった大きな流れの、鎌倉での一コマとして見えてくる", "行基が実在しなかった可能性が高まる", "特に見え方は変わらない"], "answer": 1, "note": "行基は全国あちこちの寺の開山伝承に名を残す、奈良時代を代表する僧です。杉本寺だけの特別な話ではなく、当時の全国的な仏教興隆の一コマとして捉えると、鎌倉という土地の古さが日本全体の歴史とつながって見えてきます。"}, {"q": "本文は「行基が開いたと伝わる」「鎌倉で一番古い」という言い方をしていて、「行基が開いた（事実）」「鎌倉で一番古い（事実）」とは言い切っていない。この「伝わる」という言葉づかいから、読み取るべきことは？", "choices": ["証明されていないので、この話自体を信じない方がいい", "史料で確定した事実ではなく、語り継がれてきた伝承であることを、書き手が誠実に示している", "単なる文章の癖で、特に意味はない", "本当は違う年代が正しいと暗に示している"], "answer": 1, "note": "「伝わる」「とされる」は、このサイト全体で事実と伝承を分けるために使われている言葉です。証明された事実ではないが、大切に語り継がれてきた話として扱う、という書き手の姿勢が表れています。"}, {"q": "本尊が自ら杉の根元に逃げた、という伝承。もしこれが「誰かが運び出した」という記録だったら、この寺の物語の印象はどう変わると思う？", "choices": ["ほとんど変わらない。避難した事実は同じだから", "大きく変わる。「意志を持って動いた」という部分が、この伝承の一番の芯だから", "むしろ運び出した人の話の方が有名になっていた", "火事の被害の大きさの方が重要なので変わらない"], "answer": 1, "note": "「誰かが運んだ」なら普通の記録です。「自ら逃げた」からこそ、動かないはずのものに意志を感じ、語り継がれてきたのだと考えられます。"}, {"q": "苔むした石段の写真を先に見てから、実際に現地でその前に立ったとする。多くの人が「思っていたのと違う」と感じるとしたら、それはどんな理由だと考えられる？", "choices": ["写真より石段が短く見えるから", "苔の緑の濃さや、周囲の静けさは、写真の情報量では伝わらないから", "実物は石でなくコンクリートだと分かるから", "観光客が多くて写真と違う印象になるから"], "answer": 1, "note": "色・空気・静けさのような、写真の解像度に収まらない情報は、現地でしか感じられません。本文が「行ってみないと伝わらない」と書いているのはこのためです。"}, {"q": "杉本寺（734年創建・古さの物語）と大巧寺（おんめさま・安産祈願で今も参拝者がいる）。この2つを同じコースで歩くことに、どんな意味があると考えられる？", "choices": ["単に近いから効率的に回れるだけ", "「大昔の伝説」と「今も生きている祈り」を、同じ1時間の中で両方感じられるから", "どちらも入場無料だから", "特に意味はなく、たまたま選ばれただけ"], "answer": 1, "note": "734年の伝説と、今も安産を願う人が訪れる大巧寺。「古い歴史」と「今も続く信仰」が、同じ谷に共存していることを歩いて確かめられます。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

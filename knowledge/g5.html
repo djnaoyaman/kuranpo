@@ -213,6 +213,29 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .related-drills{margin:20px 0 0;}
+  .related-drills-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .related-drills-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .rd-link{font-size:13px; padding:6px 12px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .rd-link:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -338,6 +361,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -396,7 +420,59 @@
     <div class="term"><dt><ruby>縁切寺<rt>えんきりでら</rt></ruby><span class="cat">06</span></dt><dd>離婚を望む女性が駆け込んだ寺。東慶寺はその代表格で、正式な法制度の外にあった庶民女性の救済策として知られる。</dd></div>
   </dl>
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="related-drills">
+      <p class="related-drills-label">関連するドリルに挑戦</p>
+      <div class="related-drills-links"><a class="rd-link" href="../quiz.html#person:tokimune">人物：北条時宗編</a><a class="rd-link" href="../quiz.html#temple:engakuji">お寺：円覚寺編</a><a class="rd-link" href="../quiz.html#religion:rinzai">宗教：禅宗編</a></div>
+    </div>
+    <div class="mini-drill" id="miniDrill_g5">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#temple:engakuji">お寺：円覚寺編</a><a href="../quiz.html#person:tokimune">人物：北条時宗編</a><a href="../quiz.html#religion:rinzai">宗教：禅宗編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_g5", [{"q": "円覚寺を建てた目的である「戦って死んだ人たちの霊を慰める」ことについて、これは誰と誰、どちらの戦没者を指す？", "choices": ["日本人だけ", "日本側だけでなく、攻めてきた元側の犠牲者も含む", "元側の兵士のみ", "一般庶民のみ"], "answer": 1, "note": "円覚寺は敵味方を問わず、元寇で亡くなった人々の霊を慰めるために建てられたと伝わります。"}, {"q": "円覚寺に招かれた無学祖元について、本文が伝える人物像は？", "choices": ["温厚で争いを避けた人", "中国の寺が元軍に襲われても動じなかった人", "日本に来ることを拒んだ人", "武術に優れた僧"], "answer": 1, "note": "元軍の襲撃にも動じなかったという逸話を持つ、胆力のある僧として伝わっています。"}, {"q": "円覚寺・東慶寺・浄智寺、「国を守る」「死者を慰める」「後に女性を救う」という3つの役割の違いは、何を示している？", "choices": ["優劣がある", "同じ禅宗でも、寺が担った社会的な機能はそれぞれ異なっていたこと", "矛盾しており誤りである", "3寺は無関係"], "answer": 1, "note": "同じ宗派の中でも、時代や事情によって全く異なる役割を担っていたことが分かります。"}, {"q": "「歩く順番によって印象が変わる」とは、どういうことを示唆している？", "choices": ["道が毎回変わる", "3つの寺の性格の違いを、体験する順序次第で異なる形で実感できること", "順番を間違えると入れない", "印象は誰でも同じになる"], "answer": 1, "note": "性格の違う3寺を歩く順序によって、感じ方や気づきが変わってくる、という体験の多様性です。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

@@ -213,6 +213,24 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -338,6 +356,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -395,7 +414,55 @@
     <div class="term"><dt><ruby>日野俊基<rt>ひのとしもと</rt></ruby><span class="cat">03</span></dt><dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の側近。倒幕計画に加わり処刑された。葛原岡神社の祭神で、この地にも人神信仰の例が見られる。</dd></div>
   </dl>
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="mini-drill" id="miniDrill_c1">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#history:ancient">歴史：古代編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_c1", [{"q": "佐助稲荷（頼朝の占い）、銭洗弁財天（お金を洗う）、葛原岡神社（縁結び）。この3つに共通する「ご利益」への信仰は、正史とどう違うと本文は位置づける？", "choices": ["正史と全く同じ", "歴史の教科書には出てこない、もう一つの層の信仰", "正史より重要", "正史の間違いを正すもの"], "answer": 1, "note": "教科書に載る正史とは別に、庶民の願いに根ざした信仰の層があることを示しています。"}, {"q": "葛原岡神社が「幕府をたおす計画で処刑された日野俊基」を祀りながら、今は縁結びの神社として知られていることは、何を示す？", "choices": ["矛盾しており誤り", "神社の由緒とご利益は、時代とともに変化・付加されうること", "処刑と縁結びは元々関係が深い", "縁結びの話は嘘である"], "answer": 1, "note": "政治犯を弔う神社が、後に別のご利益（縁結び）で知られるようになる、信仰の変遷が見えます。"}, {"q": "「観光と信仰が入り混じったまま歩くコース」という表現は、このエリアの何を表している？", "choices": ["観光地化されすぎて信仰が失われた", "観光名所でありながら、今も実際の信仰の対象でもあり続けていること", "信仰は完全に廃れた", "観光客には信仰は無関係"], "answer": 1, "note": "観光スポットとして有名でありながら、今も実際に願掛けに訪れる人がいる、という二重性です。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

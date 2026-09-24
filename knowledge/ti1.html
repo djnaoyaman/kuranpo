@@ -196,6 +196,29 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .related-drills{margin:20px 0 0;}
+  .related-drills-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .related-drills-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .rd-link{font-size:13px; padding:6px 12px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .rd-link:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -321,6 +344,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -363,7 +387,59 @@
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85%E6%9D%B1%E5%8F%A3" target="_blank" rel="noopener">出発：鎌倉駅東口</a></div>
   
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="related-drills">
+      <p class="related-drills-label">関連するドリルに挑戦</p>
+      <div class="related-drills-links"><a class="rd-link" href="../quiz.html#history:ancient">歴史：古代編</a></div>
+    </div>
+    <div class="mini-drill" id="miniDrill_ti1">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#history:ancient">歴史：古代編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_ti1", [{"q": "杉本寺・由比若宮は、頼朝が来るよりどれくらい前からあった？", "choices": ["100年前", "250年前", "450年前", "600年前"], "answer": 2, "note": "450年近く前からこの土地に祈りの場がありました。"}, {"q": "由比若宮の創建者は誰？", "choices": ["源頼朝", "源頼義", "北条泰時", "行基"], "answer": 1, "note": "源頼義が石清水八幡宮を勧請して創建しました。"}, {"q": "由比若宮の小さな境内が、かえって何を実感させると本文は述べる？", "choices": ["寂しさ", "古さ", "豪華さ", "近代性"], "answer": 1, "note": "その小ささが、かえって古さを実感させてくれる、という逆説です。"}, {"q": "由比若宮が「頼義から5代目の子孫にあたる頼朝」によって、今の鶴岡八幡宮の場所へ遷された。この「5代目」という世代の隔たりは、由比若宮の物語にどんな重みを加えている？", "choices": ["世代の数に特に意味はない", "一つの信仰が、5世代・約120年という長い時間を経て、子孫の手で新しい形に発展させられたこと", "5代目という数字は誇張である", "頼義と頼朝は直接の親子である"], "answer": 1, "note": "創建者から5代を経た子孫が、その信仰を新しい場所へ発展的に移した、という世代を超えた継承です。"}, {"q": "由比若宮の役割が鶴岡八幡宮に移った後、元の場所（元八幡）は完全に忘れられ、消えてしまったと考えるべきか？", "choices": ["その通り。移転後は完全に廃絶した", "いいえ。今も小さな社として、その土地の信仰は続いている", "移転自体が誤りだった記録", "元八幡は最初から存在しなかった"], "answer": 1, "note": "中心的な役割は移っても、元の場所自体への信仰は途切れずに、今も小さな社として続いています。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDXKF3Y622"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDXKF3Y622');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鎌・くらんぽクイズ｜鎌・くらんぽ</title>
+<meta name="description" content="鎌倉の歴史・お寺・宗教・人物にまつわる4種類のドリル。源頼朝編・古代編など、テーマごとに1つずつ確実に学べる。全編を終えたら総合テストで力試し。">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/quiz.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="鎌・くらんぽ">
+<meta property="og:title" content="鎌・くらんぽクイズ｜鎌・くらんぽ">
+<meta property="og:description" content="鎌倉の歴史・お寺・宗教・人物にまつわる4種類のドリル。源頼朝編・古代編など、テーマごとに1つずつ確実に学べる。全編を終えたら総合テストで力試し。">
+<meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/quiz.html">
+<meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/basics.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="鎌・くらんぽクイズ｜鎌・くらんぽ">
+<meta name="twitter:description" content="鎌倉の歴史・お寺・宗教・人物にまつわる4種類のドリル。源頼朝編・古代編など、テーマごとに1つずつ確実に学べる。全編を終えたら総合テストで力試し。">
+<meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/ogp/basics.png">
+<meta name="robots" content="index,follow">
+<meta name="author" content="クランポック">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFECE7;
+    --card:#F7F4EE;
+    --ink:#262220;
+    --ink-soft:#6B6058;
+    --line:#D8D0BF;
+    --vermilion:#A8402E;
+    --vermilion-bg:#EEDCCF;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Shippori Mincho", serif; line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  header.site{
+    padding:40px 20px 28px; border-bottom:1px solid var(--line);
+    background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);
+  }
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back::before{content:"← ";}
+  header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  header.site .back.reveal-line{animation-delay:0s;}
+  header.site .kicker.reveal-line{animation-delay:.08s;}
+  header.site h1.reveal-line{animation-delay:.18s;}
+  header.site p.reveal-line{animation-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
+
+  nav.jump{
+    position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
+    background:var(--bg); border-bottom:1px solid var(--line); padding:0 20px; scrollbar-width:none;
+  }
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump .inner{display:flex; max-width:var(--max); margin:0 auto; width:100%;}
+  nav.jump a{
+    flex:0 0 auto; padding:14px 14px 12px; font-size:15px; color:var(--ink-soft);
+    text-decoration:none; border-bottom:2px solid transparent; white-space:nowrap;
+  }
+  nav.jump a:hover{color:var(--ink); border-bottom-color:var(--vermilion);}
+
+  main{max-width:var(--max); margin:0 auto; padding:32px 20px 60px;}
+
+  section.group{max-width:760px; margin:0 0 44px; padding-top:26px; border-top:1px solid var(--line);}
+  section.group:first-of-type{border-top:none; padding-top:0;}
+  section.group h2{font-family:"Shippori Mincho", serif; font-size:21.5px; margin:0 0 6px;}
+  section.group .group-note{font-size:14.5px; color:var(--ink-soft); margin:0 0 18px;}
+
+  dl.terms{margin:0;}
+  .term{
+    display:block; padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .term:last-child{border-bottom:none;}
+  .term dt{
+    font-family:"Shippori Mincho", serif; font-weight:700; font-size:18px; margin:0 0 6px;
+    display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  }
+  .term dt .yomi{font-family:"Shippori Mincho", serif; font-weight:400; font-size:13.5px; color:var(--ink-soft);}
+  .term dd{margin:0; font-size:15.5px; color:var(--ink);}
+  .term dd .map{
+    display:inline-block; margin-top:8px; font-size:14px; color:var(--vermilion);
+    text-decoration:underline; text-decoration-color:var(--line);
+  }
+  .term dd .map::before{content:"📍 ";}
+
+  footer.site{
+    max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft);
+    font-size:14px; border-top:1px solid var(--line);
+  }
+  footer.site .inner{max-width:640px;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+  footer.site .last-updated{display:block; margin-top:6px; font-size:13px; color:var(--ink-soft);}
+
+  @media (min-width:768px){
+    header.site{padding:64px 32px 40px;}
+    main, footer.site{padding-left:32px; padding-right:32px;}
+    section.group dl.terms{column-count:2; column-gap:32px;}
+    section.group .term{break-inside:avoid;}
+  }
+  @media (min-width:1024px){
+    header.site{padding:80px 40px 48px;}
+    main, footer.site{padding-left:40px; padding-right:40px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,236,231,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; gap:20px; height:56px;
+  }
+  .topbar-brand{font-size:17.5px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:15px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:18.5px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(38,34,32,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:22.5px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(38,34,32,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7A2E1E;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
+}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+
+  .editor-mark-section{
+    min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    border-top:3px solid var(--ink);
+  }
+  .editor-mark{
+    color:var(--ink); text-decoration:none; display:flex; flex-direction:column;
+    align-items:center; gap:10px; transition:color .2s ease;
+  }
+  .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark .em-label{font-size:15px; opacity:.6;}
+  .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .share-buttons{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
+  .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
+  .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+
+  /* ---------- クイズ ---------- */
+  .quiz-intro{font-size:15.5px; color:var(--ink-soft); margin:0 0 28px; max-width:640px;}
+  .quiz-select{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin:0 0 20px;}
+  @media (max-width:600px){.quiz-select{grid-template-columns:1fr;}}
+  .quiz-cat{padding:22px; border:1.5px solid var(--line); background:var(--card); cursor:pointer; text-align:left; font-family:inherit;}
+  .quiz-cat:hover{border-color:var(--ink);}
+  .quiz-cat .qc-label{font-size:12px; color:#fff; display:inline-block; padding:3px 10px; margin:0 0 10px;}
+  .quiz-cat.history .qc-label{background:var(--vermilion);}
+  .quiz-cat.temple .qc-label{background:var(--moss);}
+  .quiz-cat.religion .qc-label{background:var(--indigo);}
+  .quiz-cat.person .qc-label{background:var(--ochre);}
+  .quiz-cat h3{font-family:"Shippori Mincho", serif; font-size:19px; margin:0 0 6px;}
+  .quiz-cat p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+
+  #quizArea{display:none;}
+  #quizArea.active{display:block;}
+
+  .qcl-title{font-family:"Shippori Mincho", serif; font-size:22px; margin:0 0 6px;}
+  .qcl-desc{font-size:14px; color:var(--ink-soft); margin:0 0 20px;}
+  .qcl-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin:0 0 24px;}
+  .qcl-item{padding:16px 14px; border:1.5px solid var(--line); background:var(--card); cursor:pointer; text-align:left; font-family:inherit; position:relative;}
+  .qcl-item:hover{border-color:var(--ink);}
+  .qcl-item.done{border-color:var(--moss);}
+  .qcl-item .qi-title{font-size:15px; font-weight:700; display:block; margin:0 0 4px;}
+  .qcl-item .qi-count{font-size:12px; color:var(--ink-soft);}
+  .qcl-item .qi-check{position:absolute; top:10px; right:10px; color:var(--moss); font-size:14px; display:none;}
+  .qcl-item.done .qi-check{display:block;}
+  .quiz-final-btn{display:block; width:100%; text-align:left; padding:20px 22px; background:var(--ink); color:#fff; border:none; cursor:pointer; font-family:inherit;}
+  .quiz-final-btn .qf-label{font-family:"Shippori Mincho", serif; font-size:18px; display:block; margin:0 0 4px;}
+  .quiz-final-btn .qf-desc{font-size:13px; color:#cfc9c2;}
+  .quiz-progress{font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--ink-soft); margin:0 0 16px;}
+  .quiz-q{font-family:"Shippori Mincho", serif; font-size:19px; line-height:1.7; margin:0 0 20px;}
+  .quiz-choices{display:flex; flex-direction:column; gap:10px; margin:0 0 20px;}
+  .quiz-choice{display:block; width:100%; text-align:left; padding:14px 18px; border:1.5px solid var(--line); background:var(--card); font-size:15.5px; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .quiz-choice:hover{border-color:var(--ink);}
+  .quiz-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .quiz-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .quiz-choice[disabled]{cursor:default;}
+  .quiz-feedback{padding:16px 18px; background:var(--card); border-left:4px solid var(--line); font-size:14.5px; line-height:1.8; margin:0 0 20px; display:none;}
+  .quiz-feedback.show{display:block;}
+  .quiz-feedback.is-correct{border-left-color:var(--moss);}
+  .quiz-feedback.is-wrong{border-left-color:var(--vermilion);}
+  .quiz-next{padding:10px 22px; background:var(--ink); color:#fff; border:none; font-size:14.5px; cursor:pointer; font-family:inherit;}
+  .quiz-result{text-align:center; padding:30px 20px;}
+  .quiz-result .qr-score{font-family:"Shippori Mincho", serif; font-size:38px; margin:0 0 8px;}
+  .quiz-result .qr-label{font-size:14px; color:var(--ink-soft); margin:0 0 24px;}
+  .quiz-result .qr-actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap;}
+  .quiz-btn{padding:11px 22px; border:1.5px solid var(--ink); background:#fff; color:var(--ink); font-size:14.5px; cursor:pointer; font-family:inherit; text-decoration:none; display:inline-block;}
+  .quiz-btn.primary{background:var(--ink); color:#fff;}
+  .quiz-back{background:none; border:none; color:var(--ink-soft); font-size:13.5px; cursor:pointer; padding:0; margin:0 0 16px; text-decoration:underline; font-family:inherit;}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "鎌・くらんぽクイズ",
+ "description": "鎌倉の歴史・お寺・宗教・人物にまつわる4種類のドリル。源頼朝編・古代編など、テーマごとに1つずつ確実に学べる。全編を終えたら総合テストで力試し。",
+ "url": "https://djnaoyaman.github.io/kuranpo/quiz.html",
+ "inLanguage": "ja",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "鎌・くらんぽ",
+  "url": "https://djnaoyaman.github.io/kuranpo/"
+ }
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
+  <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
+  <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="quiz.html">鎌・くらんぽクイズ</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
+    <p class="kicker reveal-line">歩いた後の、腕試し</p>
+    <h1 class="mincho reveal-line">鎌・くらんぽクイズ</h1>
+    <p class="lead reveal-line">このサイトに書かれている情報だけで解ける、4種類のドリルです。大人も子供も、歩いた道とその歴史・人物を、1つずつ確実に理解できるように、テーマごとの「編」に分けました。全編を終えたら、総合テストで力試しができます。</p>
+  </div>
+</header>
+
+<main>
+
+  <section id="quizSelect">
+    <div class="quiz-select">
+      <button class="quiz-cat history" data-cat="history">
+        <span class="qc-label">歴史</span>
+        <h3 class="mincho">歴史ドリル</h3>
+        <p>古代編から戦国〜昭和編まで、7つの時代を順番に。</p>
+      </button>
+      <button class="quiz-cat temple" data-cat="temple">
+        <span class="qc-label">お寺</span>
+        <h3 class="mincho">お寺ドリル</h3>
+        <p>杉本寺編・報国寺編など、11の寺社を1つずつ。</p>
+      </button>
+      <button class="quiz-cat religion" data-cat="religion">
+        <span class="qc-label">宗教</span>
+        <h3 class="mincho">宗教ドリル</h3>
+        <p>禅宗編・日蓮宗編など、6つの宗派を1つずつ。</p>
+      </button>
+      <button class="quiz-cat person" data-cat="person">
+        <span class="qc-label">人物</span>
+        <h3 class="mincho">人物ドリル</h3>
+        <p>源頼朝編・北条政子編など、12人を1人ずつ。</p>
+      </button>
+    </div>
+  </section>
+
+  <section id="quizChapterList" style="display:none;">
+    <button class="quiz-back" id="quizBackFromChapters">← カテゴリ選択に戻る</button>
+    <p class="qcl-title mincho" id="qclTitle"></p>
+    <p class="qcl-desc" id="qclDesc">1つずつ順番に進めると、確実に理解できます。全編を終えたら、下の総合テストで力試しを。</p>
+    <div class="qcl-grid" id="qclGrid"></div>
+    <button class="quiz-final-btn" id="quizFinalBtn">
+      <span class="qf-label">総合テスト</span>
+      <span class="qf-desc">全編から10問ランダム出題</span>
+    </button>
+  </section>
+
+  <section id="quizArea">
+    <button class="quiz-back" id="quizBack">← 編の一覧に戻る</button>
+    <p class="quiz-progress" id="quizProgress"></p>
+    <div id="quizQuestionWrap">
+      <p class="quiz-q" id="quizQ"></p>
+      <div class="quiz-choices" id="quizChoices"></div>
+      <div class="quiz-feedback" id="quizFeedback"></div>
+      <button class="quiz-next" id="quizNext" style="display:none;">次の問題へ</button>
+    </div>
+    <div class="quiz-result" id="quizResult" style="display:none;"></div>
+  </section>
+
+
+
+  <div class="share-buttons">
+    <span class="share-label">この記事をシェア</span>
+    <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
+    <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>
+    <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p>問題はすべて、このサイトの知識ページ・年表・人物相関図・宗教関係図に基づいています。解説の中でさらに詳しく知りたい場合は、各コースページを参照してください。</p><p><span class="last-updated">最終更新日：2026年9月24日</span></p>
+    <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+  </div>
+</footer>
+<section class="editor-mark-section">
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
+</section>
+
+
+<script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
+(function footprintTrail(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(!window.matchMedia("(pointer:fine)").matches) return; // タッチ端末では発火しない
+
+  const layer = document.createElement("div");
+  layer.style.cssText = "position:fixed; inset:0; pointer-events:none; z-index:9999; overflow:hidden;";
+  document.body.appendChild(layer);
+
+  const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
+
+  let last = null, leftFoot = true, lastStamp = 0;
+  document.addEventListener("mousemove", (e)=>{
+    if(!e.target.closest(".card, .ch, a, button")) return; // カード等の上にある時だけ発火
+    const now = performance.now();
+    if(now - lastStamp < 140) return; // 間引き
+    if(last){
+      const dx = e.clientX - last.x, dy = e.clientY - last.y;
+      if(Math.hypot(dx,dy) < 26) return; // 一定距離動いた時だけ
+    }
+    lastStamp = now;
+    const angle = last ? Math.atan2(e.clientY-last.y, e.clientX-last.x) * 180/Math.PI + 90 : 0;
+    last = {x:e.clientX, y:e.clientY};
+
+    const step = document.createElement("div");
+    step.innerHTML = FOOT;
+    const sideOffset = leftFoot ? -7 : 7;
+    leftFoot = !leftFoot;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--ink, #111); opacity:.28; transform:rotate(${angle}deg); transition:opacity 2.2s ease, transform 2.2s ease;`;
+    layer.appendChild(step);
+    requestAnimationFrame(()=>{
+      step.style.opacity = "0";
+      step.style.transform += " translateY(4px)";
+    });
+    setTimeout(()=> step.remove(), 1900);
+  }, {passive:true});
+})();
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
+<script>
+/* ===================== QUIZ ENGINE (drill + final test) ===================== */
+(function quizEngine(){
+  const CHAPTERS = {"history": [{"id": "ancient", "title": "古代編", "q": [{"q": "鎌倉最古と伝わる寺・杉本寺の創建年は？", "choices": ["734年", "1063年", "1180年", "1251年"], "answer": 0, "note": "734年、行基の開山と伝わります。"}, {"q": "由比若宮が創建されたのは西暦何年？", "choices": ["734年", "1063年", "1180年", "1251年"], "answer": 1, "note": "1063年、源頼義が石清水八幡宮を勧請して創建しました。"}]}, {"id": "yoritomo_era", "title": "頼朝期編", "q": [{"q": "源頼朝が鎌倉に入ったのは西暦何年？", "choices": ["1063年", "1180年", "1253年", "1333年"], "answer": 1, "note": "1180年の鎌倉入りから、都市の骨格作りが始まりました。"}, {"q": "鶴岡八幡宮を最初に祀ったのは、頼朝から何代前の先祖？", "choices": ["3代前", "4代前", "5代前", "6代前"], "answer": 2, "note": "由比若宮を創建した源頼義から、頼朝は5代目の子孫です。"}]}, {"id": "shikken_era", "title": "執権確立期編", "q": [{"q": "御成敗式目を制定したのは誰？", "choices": ["北条政子", "北条泰時", "北条時頼", "北条時宗"], "answer": 1, "note": "3代執権・北条泰時が、武士のための法律を初めて作りました。"}]}, {"id": "mongol_era", "title": "蒙古襲来期編", "q": [{"q": "建長寺と円覚寺、先に建てられたのはどちら？", "choices": ["建長寺", "円覚寺", "同時", "記録なし"], "answer": 0, "note": "建長寺は1253年、円覚寺はその29年後の1282年です。"}, {"q": "日本初の徳政令を発したのは誰？", "choices": ["北条時宗", "北条貞時", "北条高時", "足利尊氏"], "answer": 1, "note": "9代執権・北条貞時が1297年に永仁の徳政令を出しました。"}]}, {"id": "fall_era", "title": "幕府動揺・滅亡期編", "q": [{"q": "鎌倉幕府が滅亡したのは西暦何年？", "choices": ["1297年", "1301年", "1333年", "1336年"], "answer": 2, "note": "1333年、新田義貞の攻撃で北条高時が自害し、幕府は滅亡しました。"}, {"q": "新田義貞が剣を投じて潮を退けたという伝説の舞台は？", "choices": ["由比ヶ浜", "稲村ヶ崎", "七里ヶ浜", "材木座海岸"], "answer": 1, "note": "『太平記』に記された、稲村ヶ崎での伝説です。"}]}, {"id": "nanboku_era", "title": "南北朝・室町期編", "q": [{"q": "新田義貞と足利尊氏は、倒幕の時点でどんな関係だった？", "choices": ["最初から敵対", "共に倒幕を目指す同志", "無関係", "主従関係"], "answer": 1, "note": "共に清和源氏の遠戚で、倒幕では共闘していました。"}, {"q": "足利尊氏が室町幕府を開くきっかけとなった戦いは？", "choices": ["霜月騒動", "湊川の戦い", "中先代の乱", "平禅門の乱"], "answer": 1, "note": "1336年の湊川の戦いで、尊氏が義貞を破りました。"}]}, {"id": "modern_era", "title": "戦国〜昭和編", "q": [{"q": "戦国時代の玉縄城主・北条綱成は、鎌倉北条氏とどんな関係？", "choices": ["直系の子孫", "血のつながりのない別系統", "政子の子孫", "頼朝の子孫"], "answer": 1, "note": "同じ「北条」姓ですが、血のつながりのない後北条氏です。"}, {"q": "大船観音寺が完成したのはいつ頃？", "choices": ["鎌倉時代", "江戸時代", "明治時代", "昭和時代"], "answer": 3, "note": "鎌倉時代から何百年も経った昭和になって加わった祈りの場です。"}]}], "temple": [{"id": "sugimoto", "title": "杉本寺編", "q": [{"q": "鎌倉最古と伝わる寺は？", "choices": ["建長寺", "杉本寺", "円覚寺", "高徳院"], "answer": 1, "note": "杉本寺は734年、行基の開山と伝わります。"}, {"q": "杉本寺の石段は、現在どうなっている？", "choices": ["自由に上れる", "通行止め", "有料で上れる", "夜間のみ通行可"], "answer": 1, "note": "苔むした石段は、今も歩行が禁止されています。"}]}, {"id": "hokokuji", "title": "報国寺編", "q": [{"q": "報国寺といえば、何で知られている？", "choices": ["大仏", "竹林", "五重塔", "あじさい"], "answer": 1, "note": "報国寺の竹林は、ミシュランガイドで高評価を得たこともあります。"}]}, {"id": "gokurakuji", "title": "極楽寺編", "q": [{"q": "極楽寺で貧民救済・医療事業を行った僧は？", "choices": ["日蓮", "忍性", "夢窓疎石", "行基"], "answer": 1, "note": "律宗の僧・忍性が、極楽寺を拠点に社会事業を展開しました。"}, {"q": "極楽寺が属する宗派は？", "choices": ["日蓮宗", "律宗", "浄土宗", "臨済宗"], "answer": 1, "note": "極楽寺は律宗に属し、真言宗と重なる系譜も持ちます。"}]}, {"id": "kotokuin", "title": "高徳院（大仏）編", "q": [{"q": "鎌倉大仏があるお寺の正式名称は？", "choices": ["長谷寺", "高徳院", "極楽寺", "建長寺"], "answer": 1, "note": "長谷寺とは別の、高徳院という単立の寺にあります。"}]}, {"id": "meigetsuin", "title": "明月院編", "q": [{"q": "あじさいで特に知られる、北条時頼ゆかりの寺は？", "choices": ["円覚寺", "明月院", "東慶寺", "浄智寺"], "answer": 1, "note": "明月院ブルーと呼ばれるあじさいで有名で、前身は時頼創建の最明寺です。"}]}, {"id": "kenchoji", "title": "建長寺編", "q": [{"q": "建長寺を開くために北条時頼が中国から招いた僧は？", "choices": ["蘭渓道隆", "無学祖元", "夢窓疎石", "忍性"], "answer": 0, "note": "蘭渓道隆を招いたことで、鎌倉に禅が本格的に根づきました。"}]}, {"id": "engakuji", "title": "円覚寺編", "q": [{"q": "円覚寺は、誰が何のために建てた？", "choices": ["頼朝が武運祈願のため", "時宗が元寇の戦没者供養のため", "政子が息子の供養のため", "日蓮が布教のため"], "answer": 1, "note": "北条時宗が、2度の元寇の戦没者を弔うために建てました。"}]}, {"id": "daigyoji", "title": "大巧寺編", "q": [{"q": "「おんめさま」の通称で親しまれる寺は？", "choices": ["寿福寺", "大巧寺", "浄妙寺", "安養院"], "answer": 1, "note": "大巧寺は安産祈願の寺として、今も参拝者が絶えません。"}]}, {"id": "manpukuji", "title": "満福寺編", "q": [{"q": "腰越にあり、義経の「腰越状」ゆかりの寺は？", "choices": ["龍口寺", "満福寺", "光明寺", "九品寺"], "answer": 1, "note": "満福寺には、弁慶が下書きをしたと伝わる腰越状の逸話が残ります。"}]}, {"id": "eishoji", "title": "英勝寺編", "q": [{"q": "水戸徳川家の姫が開いた、鎌倉唯一の尼寺御所は？", "choices": ["東慶寺", "英勝寺", "安養院", "教恩寺"], "answer": 1, "note": "英勝寺は江戸期に、水戸徳川家の姫によって開かれました。"}]}, {"id": "amanawa", "title": "甘縄神明神社編", "q": [{"q": "鎌倉最古と伝わる神社は？", "choices": ["鶴岡八幡宮", "甘縄神明神社", "荏柄天神社", "鎌倉宮"], "answer": 1, "note": "甘縄神明神社は、鎌倉最古と伝わる神社です。"}]}], "religion": [{"id": "rinzai", "title": "禅宗編", "q": [{"q": "建長寺の宗派は？", "choices": ["日蓮宗", "浄土宗", "臨済宗建長寺派", "真言宗"], "answer": 2, "note": "建長寺・明月院・円応寺・浄妙寺・報国寺などが臨済宗建長寺派です。"}, {"q": "円覚寺・東慶寺・浄智寺が属する宗派は？", "choices": ["臨済宗建長寺派", "臨済宗円覚寺派", "日蓮宗", "律宗"], "answer": 1, "note": "この3寺は臨済宗円覚寺派に属し、北鎌倉に集まっています。"}]}, {"id": "nichirenshu", "title": "日蓮宗編", "q": [{"q": "日蓮宗の寺が特に密集しているのはどのエリア？", "choices": ["北鎌倉", "大町・材木座", "金沢街道", "大船・玉縄"], "answer": 1, "note": "日蓮への迫害の記憶が集まる大町・材木座に、日蓮宗の寺が密集しています。"}, {"q": "龍口寺を中心とする腰越の日蓮宗寺院群の呼び方は？", "choices": ["輪番八ヶ寺", "鎌倉五山", "坂東三十三観音", "関東十刹"], "answer": 0, "note": "龍口寺と輪番で法要を担う八ヶ寺が、腰越に残っています。"}]}, {"id": "jodoshu", "title": "浄土宗編", "q": [{"q": "光明寺・九品寺・安養院が属する宗派は？", "choices": ["日蓮宗", "浄土宗", "律宗", "臨済宗"], "answer": 1, "note": "対立していた北条氏と新田義貞、それぞれが浄土宗の建立に関わっています。"}]}, {"id": "risshu_shingon", "title": "律宗・真言宗編", "q": [{"q": "忍性の律宗と重なる系譜を持つ、極楽寺周辺のもう一つの宗派は？", "choices": ["浄土宗", "日蓮宗", "真言宗", "臨済宗"], "answer": 2, "note": "極楽寺周辺は、律宗と古くからの真言宗が重なる系譜を持ちます。"}, {"q": "浄光明寺と海蔵寺が属する宗派は？", "choices": ["真言宗", "天台宗", "日蓮宗", "律宗"], "answer": 0, "note": "この2寺は真言宗泉涌寺派に属し、禅宗導入以前からの古い系譜です。"}]}, {"id": "tendai_tanritsu", "title": "天台宗・単立編", "q": [{"q": "杉本寺が属する宗派は？", "choices": ["天台宗", "真言宗", "日蓮宗", "臨済宗"], "answer": 0, "note": "鎌倉最古の寺である杉本寺は、天台宗に属します。"}, {"q": "大仏（高徳院）と長谷寺は、宗派上どんな立場？", "choices": ["臨済宗", "日蓮宗", "単立", "浄土宗"], "answer": 2, "note": "高徳院・長谷寺はいずれも単立で、特定の宗派に属していません。"}]}, {"id": "shinto", "title": "神道編", "q": [{"q": "鶴岡八幡宮・荏柄天神社・鎌倉宮に共通するのは？", "choices": ["いずれも仏教寺院", "いずれも神道の神社", "いずれも尼寺", "いずれも単立"], "answer": 1, "note": "3社とも神道ですが、祀られている理由はそれぞれ異なります。"}, {"q": "御霊神社は、いつの時代から続くと伝わる？", "choices": ["奈良時代", "平安時代", "鎌倉時代", "室町時代"], "answer": 1, "note": "御霊神社は平安時代から続くと伝わります。"}]}], "person": [{"id": "yoritomo", "title": "源頼朝編", "q": [{"q": "鎌倉に武家政権を開いた、初代将軍は誰？", "choices": ["源義経", "源頼朝", "北条時政", "足利尊氏"], "answer": 1, "note": "源頼朝が1180年に鎌倉入りし、都市の骨格を作りました。"}, {"q": "頼朝が最初に建て、源氏の氏神として祀った神社は？", "choices": ["荏柄天神社", "鶴岡八幡宮", "甘縄神明神社", "鎌倉宮"], "answer": 1, "note": "鶴岡八幡宮は、頼朝が鎌倉入りしてすぐに整えた、都市の中心となる神社です。"}, {"q": "頼朝が父・源義朝の菩提を弔うために建てた寺は？", "choices": ["杉本寺", "勝長寿院", "寿福寺", "浄妙寺"], "answer": 1, "note": "勝長寿院は現在跡地のみが残り、頼朝没後の鎌倉最初の大寺院群の一つでした。"}]}, {"id": "masako", "title": "北条政子編", "q": [{"q": "頼朝の死後、実権を握った北条政子は何と呼ばれた？", "choices": ["尼将軍", "女帝", "女執権", "尼公方"], "answer": 0, "note": "政子は夫の死後、実質的に権力を握り、尼将軍と呼ばれました。"}, {"q": "北条政子が明菴栄西を招いて開いた寺は？", "choices": ["寿福寺", "安養院", "東慶寺", "英勝寺"], "answer": 0, "note": "寿福寺は政子が開いた寺で、政子のもう一つの側面を伝えています。"}]}, {"id": "yasutoki", "title": "北条泰時編", "q": [{"q": "北条泰時は鎌倉幕府の何代執権？", "choices": ["2代", "3代", "4代", "5代"], "answer": 1, "note": "泰時は3代執権として、御成敗式目を整えました。"}, {"q": "泰時が武士のために初めて整えた法律の名前は？", "choices": ["建武式目", "御成敗式目", "公事方御定書", "禁中並公家諸法度"], "answer": 1, "note": "御成敗式目は、武士のための法律として日本で初めて体系的に整えられたものです。"}]}, {"id": "tokiyori", "title": "北条時頼編", "q": [{"q": "北条時頼は鎌倉幕府の何代執権？", "choices": ["4代", "5代", "6代", "7代"], "answer": 1, "note": "時頼は5代執権として、蘭渓道隆を招き禅を根づかせました。"}, {"q": "時頼が出家した後の寺の前身となったのは？", "choices": ["最明寺", "円応寺", "浄智寺", "東慶寺"], "answer": 0, "note": "時頼が出家してもなお実権を握った最明寺は、後の明月院の前身です。"}]}, {"id": "tokimune", "title": "北条時宗編", "q": [{"q": "2度の元寇を退けた鎌倉幕府8代執権は？", "choices": ["北条泰時", "北条時頼", "北条時宗", "北条貞時"], "answer": 2, "note": "北条時宗は、北条氏の絶頂期を築いた執権です。"}, {"q": "時宗が元寇の戦没者供養のために建てた寺は？", "choices": ["建長寺", "円覚寺", "極楽寺", "高徳院"], "answer": 1, "note": "円覚寺は建長寺の29年後、実際の元寇の戦没者を弔うために建てられました。"}, {"q": "時宗の妻で、東慶寺を開いた人物は？", "choices": ["北条政子", "覚山尼", "日野富子", "静御前"], "answer": 1, "note": "覚山尼は時宗の妻で、後の執権・貞時の母でもあります。"}]}, {"id": "sadatoki", "title": "北条貞時編", "q": [{"q": "北条貞時は鎌倉幕府の何代執権？", "choices": ["8代", "9代", "10代", "11代"], "answer": 1, "note": "貞時は9代執権として、時宗と覚山尼の子にあたります。"}, {"q": "貞時が1297年に発し、日本初とされる法令は？", "choices": ["御成敗式目", "永仁の徳政令", "建武式目", "撰銭令"], "answer": 1, "note": "永仁の徳政令は、御家人の借金を帳消しにする法令でしたが、翌年撤回されました。"}]}, {"id": "takatoki", "title": "北条高時編", "q": [{"q": "鎌倉幕府最後の執権となったのは何代目？", "choices": ["12代", "13代", "14代", "15代"], "answer": 2, "note": "北条高時は14代執権として、鎌倉幕府の終わりを迎えました。"}, {"q": "高時が一族と共に自害した場所は？", "choices": ["東勝寺", "建長寺", "円覚寺", "覚園寺"], "answer": 0, "note": "1333年、新田義貞の攻撃を受け、高時は東勝寺で一族と共に自害しました。"}]}, {"id": "nichiren", "title": "日蓮編", "q": [{"q": "日蓮が開いた宗派は？", "choices": ["浄土宗", "臨済宗", "日蓮宗", "律宗"], "answer": 2, "note": "日蓮は法華経を説き、日蓮宗の開祖となりました。"}, {"q": "日蓮が受けた二度の法難は、松葉ヶ谷ともう一つはどこ？", "choices": ["龍口", "極楽寺坂", "稲村ヶ崎", "名越"], "answer": 0, "note": "松葉ヶ谷と龍口、二度の法難を受けてなお、日蓮は教えを曲げませんでした。"}]}, {"id": "ninsho", "title": "忍性編", "q": [{"q": "忍性が属した宗派は？", "choices": ["日蓮宗", "律宗", "浄土宗", "天台宗"], "answer": 1, "note": "忍性は律宗の僧として、極楽寺を拠点に活動しました。"}, {"q": "忍性が極楽寺で行ったことは？", "choices": ["布教活動のみ", "貧民救済・医療事業", "作庭", "写経"], "answer": 1, "note": "祈ることと助けることが分かれていなかった時代、忍性は社会事業に生涯を捧げました。"}]}, {"id": "muso", "title": "夢窓疎石編", "q": [{"q": "南朝・北朝の歴代天皇から国師号を賜り「七朝帝師」と呼ばれた禅僧は？", "choices": ["蘭渓道隆", "無学祖元", "夢窓疎石", "忍性"], "answer": 2, "note": "夢窓疎石は計7度国師号を賜り、七朝帝師と呼ばれました。"}, {"q": "夢窓疎石が手がけたことで知られる、瑞泉寺の見どころは？", "choices": ["竹林", "庭園", "五重塔", "仁王門"], "answer": 1, "note": "瑞泉寺の庭園は夢窓疎石が手がけ、政治から距離を置いた仕事として名を残しました。"}]}, {"id": "nitta_ashikaga", "title": "新田義貞・足利氏編", "q": [{"q": "新田義貞と足利尊氏は、鎌倉幕府打倒の時点でどんな関係だった？", "choices": ["最初から敵対", "共に倒幕を目指す同志", "無関係", "主従関係"], "answer": 1, "note": "二人は共に清和源氏の血を引く遠戚で、倒幕では共闘していました。"}, {"q": "足利尊氏が新田義貞を破り、室町幕府成立のきっかけとなった戦いは？", "choices": ["霜月騒動", "湊川の戦い", "中先代の乱", "平禅門の乱"], "answer": 1, "note": "1336年の湊川の戦いで尊氏が義貞を破り、征夷大将軍として室町幕府を開きました。"}, {"q": "新田義貞が稲村ヶ崎で剣を海に投じたという伝説は、何のため？", "choices": ["願掛けのため", "潮を退けるため", "武運を占うため", "供養のため"], "answer": 1, "note": "『太平記』に記された、潮を退けて鎌倉に攻め入ったという伝説です。"}]}, {"id": "tsunashige", "title": "北条綱成編", "q": [{"q": "戦国時代の玉縄城主・北条綱成は、鎌倉幕府の北条氏とどんな関係？", "choices": ["直系の子孫", "血のつながりのない別系統", "政子の子孫", "頼朝の子孫"], "answer": 1, "note": "同じ「北条」姓ですが、後北条氏という血のつながりのない別系統です。"}]}]};
+
+  const selectEl = document.getElementById("quizSelect");
+  const chapterListEl = document.getElementById("quizChapterList");
+  const qclTitle = document.getElementById("qclTitle");
+  const qclGrid = document.getElementById("qclGrid");
+  const finalBtn = document.getElementById("quizFinalBtn");
+  const backFromChapters = document.getElementById("quizBackFromChapters");
+
+  const areaEl = document.getElementById("quizArea");
+  const progressEl = document.getElementById("quizProgress");
+  const qWrapEl = document.getElementById("quizQuestionWrap");
+  const qEl = document.getElementById("quizQ");
+  const choicesEl = document.getElementById("quizChoices");
+  const feedbackEl = document.getElementById("quizFeedback");
+  const nextBtn = document.getElementById("quizNext");
+  const resultEl = document.getElementById("quizResult");
+  const backBtn = document.getElementById("quizBack");
+
+  let currentCat = null;
+  let mode = "chapter"; // "chapter" or "final"
+  let queue = [];
+  let idx = 0;
+  let wrongList = [];
+  let totalCount = 0;
+  let correctCount = 0;
+  const doneChapters = {}; // {cat: Set(chapterId)}
+
+  function shuffle(arr){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]]=[a[j],a[i]];
+    }
+    return a;
+  }
+
+  function allQuestions(cat){
+    return CHAPTERS[cat].flatMap(ch => ch.q);
+  }
+
+  function openCategory(cat){
+    currentCat = cat;
+    if(!doneChapters[cat]) doneChapters[cat] = new Set();
+    selectEl.style.display = "none";
+    chapterListEl.style.display = "block";
+    renderChapterList();
+  }
+
+  function renderChapterList(){
+    const catLabel = {history:"歴史ドリル", temple:"お寺ドリル", religion:"宗教ドリル", person:"人物ドリル"}[currentCat];
+    qclTitle.textContent = catLabel;
+    qclGrid.innerHTML = "";
+    CHAPTERS[currentCat].forEach(ch => {
+      const done = doneChapters[currentCat].has(ch.id);
+      const item = document.createElement("button");
+      item.className = "qcl-item" + (done ? " done" : "");
+      item.innerHTML = '<span class="qi-check">✓</span><span class="qi-title">' + ch.title + '</span><span class="qi-count">' + ch.q.length + '問</span>';
+      item.addEventListener("click", () => startChapter(ch));
+      qclGrid.appendChild(item);
+    });
+  }
+
+  function startChapter(chapter){
+    mode = "chapter";
+    queue = chapter.q.slice(); // 順番通り、シャッフルしない
+    idx = 0; wrongList = []; totalCount = queue.length; correctCount = 0;
+    chapterListEl.style.display = "none";
+    areaEl.classList.add("active");
+    resultEl.style.display = "none";
+    qWrapEl.style.display = "block";
+    currentChapterId = chapter.id;
+    showQuestion();
+  }
+  let currentChapterId = null;
+
+  function startFinalTest(){
+    mode = "final";
+    const pool = allQuestions(currentCat);
+    const n = Math.min(10, pool.length);
+    queue = shuffle(pool).slice(0, n);
+    idx = 0; wrongList = []; totalCount = queue.length; correctCount = 0;
+    chapterListEl.style.display = "none";
+    areaEl.classList.add("active");
+    resultEl.style.display = "none";
+    qWrapEl.style.display = "block";
+    showQuestion();
+  }
+
+  function showQuestion(){
+    const q = queue[idx];
+    const modeLabel = mode === "final" ? "総合テスト " : "";
+    progressEl.textContent = modeLabel + (idx+1) + " / " + queue.length;
+    qEl.textContent = q.q;
+    feedbackEl.className = "quiz-feedback";
+    feedbackEl.textContent = "";
+    nextBtn.style.display = "none";
+
+    const order = shuffle(q.choices.map((c,i)=>i));
+    choicesEl.innerHTML = "";
+    order.forEach(origIdx => {
+      const btn = document.createElement("button");
+      btn.className = "quiz-choice";
+      btn.textContent = q.choices[origIdx];
+      btn.addEventListener("click", () => selectAnswer(origIdx, q, btn));
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  function selectAnswer(chosenIdx, q, btnEl){
+    const buttons = choicesEl.querySelectorAll(".quiz-choice");
+    buttons.forEach(b => b.disabled = true);
+    const isCorrect = chosenIdx === q.answer;
+    if(isCorrect){
+      btnEl.classList.add("correct");
+      correctCount++;
+    } else {
+      btnEl.classList.add("wrong");
+      choicesEl.querySelectorAll(".quiz-choice").forEach((b)=>{
+        if(b.textContent === q.choices[q.answer]) b.classList.add("correct");
+      });
+      if(!wrongList.includes(q)) wrongList.push(q);
+    }
+    feedbackEl.classList.add("show", isCorrect ? "is-correct" : "is-wrong");
+    feedbackEl.textContent = (isCorrect ? "正解。" : "不正解。正解は「" + q.choices[q.answer] + "」。") + q.note;
+    nextBtn.style.display = "inline-block";
+    nextBtn.textContent = (idx < queue.length - 1) ? "次の問題へ" : "結果を見る";
+  }
+
+  nextBtn.addEventListener("click", () => {
+    idx++;
+    if(idx < queue.length){
+      showQuestion();
+    } else {
+      showResult();
+    }
+  });
+
+  function showResult(){
+    qWrapEl.style.display = "none";
+    resultEl.style.display = "block";
+    progressEl.textContent = "";
+    const scoreText = correctCount + " / " + totalCount + " 問正解";
+    let html = '<p class="qr-score">' + scoreText + '</p>';
+
+    if(mode === "chapter" && wrongList.length === 0 && currentChapterId){
+      doneChapters[currentCat].add(currentChapterId);
+    }
+
+    if(wrongList.length === 0){
+      html += '<p class="qr-label">全問正解でした。</p>';
+      html += '<div class="qr-actions"><button class="quiz-btn primary" id="quizBackToList">編の一覧に戻る</button></div>';
+    } else {
+      html += '<p class="qr-label">間違えた ' + wrongList.length + ' 問だけ、再挑戦できます。</p>';
+      html += '<div class="qr-actions"><button class="quiz-btn primary" id="quizRetry">間違えた問題に再挑戦</button><button class="quiz-btn" id="quizBackToList">編の一覧に戻る</button></div>';
+    }
+    resultEl.innerHTML = html;
+
+    const retryBtn = document.getElementById("quizRetry");
+    if(retryBtn){
+      retryBtn.addEventListener("click", () => {
+        queue = shuffle(wrongList);
+        idx = 0; totalCount = queue.length; correctCount = 0; wrongList = [];
+        qWrapEl.style.display = "block";
+        resultEl.style.display = "none";
+        showQuestion();
+      });
+    }
+    document.getElementById("quizBackToList").addEventListener("click", backToChapterList);
+  }
+
+  function backToChapterList(){
+    areaEl.classList.remove("active");
+    chapterListEl.style.display = "block";
+    renderChapterList();
+  }
+
+  function backToSelect(){
+    chapterListEl.style.display = "none";
+    areaEl.classList.remove("active");
+    selectEl.style.display = "block";
+  }
+
+  document.querySelectorAll(".quiz-cat").forEach(btn => {
+    btn.addEventListener("click", () => openCategory(btn.dataset.cat));
+  });
+  backFromChapters.addEventListener("click", backToSelect);
+
+  // URLハッシュ（例: #person:yoritomo）で特定の編に直接ジャンプ
+  function openFromHash(){
+    const hash = location.hash.replace(/^#/, "");
+    if(!hash || !hash.includes(":")) return;
+    const [cat, chId] = hash.split(":");
+    if(!CHAPTERS[cat]) return;
+    const chapter = CHAPTERS[cat].find(c => c.id === chId);
+    if(!chapter) return;
+    openCategory(cat);
+    startChapter(chapter);
+  }
+  openFromHash();
+  window.addEventListener("hashchange", openFromHash);
+  backBtn.addEventListener("click", backToChapterList);
+  finalBtn.addEventListener("click", startFinalTest);
+})();
+</script>
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
+</body>
+</html>

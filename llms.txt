@@ -11,6 +11,7 @@
 - [鎌・くらんぽ年表](https://djnaoyaman.github.io/kuranpo/timeline.html): 鎌倉の歴史を7つの時期に分け、各時期の代表的な寺社を示す概観図。
 - [鎌・くらんぽ人物相関図](https://djnaoyaman.github.io/kuranpo/persons.html): 源頼朝・北条氏・足利氏・新田義貞・日蓮ら主要人物の関係を示す概観図。
 - [鎌・くらんぽ宗教関係図](https://djnaoyaman.github.io/kuranpo/religions.html): 鎌倉の寺社を禅宗・日蓮宗・浄土宗・神道など宗派・系統ごとに整理した概観図。
+- [鎌・くらんぽクイズ](https://djnaoyaman.github.io/kuranpo/quiz.html): 歴史・お寺・宗教・人物の4種類、サイト内の情報のみに基づく4択クイズ。10問ランダム出題、間違えた問題だけ再挑戦可能。
 - [修正履歴](https://djnaoyaman.github.io/kuranpo/changelog.html): サイトのバージョン管理・修正履歴（日本語のみ）。
 
 ## コース別・歴史の基本知識ページ（全30本）

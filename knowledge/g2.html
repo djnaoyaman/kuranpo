@@ -213,6 +213,29 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  .mini-drill{margin:36px 0 0; padding:20px 22px; background:var(--card); border:1px solid var(--line);}
+  .mini-drill h4{font-family:"Shippori Mincho", serif; font-size:16px; margin:0 0 14px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+  .md-item{margin:0 0 18px;}
+  .md-item:last-child{margin-bottom:0;}
+  .md-q{font-size:14.5px; margin:0 0 10px; line-height:1.7;}
+  .md-choices{display:flex; flex-direction:column; gap:6px; margin:0 0 8px;}
+  .md-choice{padding:8px 13px; border:1px solid var(--line); background:#fff; font-size:13.5px; text-align:left; cursor:pointer; font-family:inherit; color:var(--ink);}
+  .md-choice:hover{border-color:var(--ink);}
+  .md-choice.correct{border-color:var(--moss); background:#eef0dc; font-weight:700;}
+  .md-choice.wrong{border-color:var(--vermilion); background:var(--vermilion-bg);}
+  .md-choice[disabled]{cursor:default;}
+  .md-fb{font-size:13px; color:var(--ink-soft); line-height:1.7; display:none; padding-top:6px;}
+  .md-fb.show{display:block;}
+  .drill-more{margin:18px 0 0; padding-top:16px; border-top:1px dashed var(--line);}
+  .drill-more .dm-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .drill-more .dm-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .drill-more .dm-links a{font-size:13px; padding:6px 12px; border:1px solid var(--line); background:#fff; text-decoration:none; color:var(--ink);}
+  .drill-more .dm-links a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .related-drills{margin:20px 0 0;}
+  .related-drills-label{font-size:12px; color:var(--ink-soft); margin:0 0 8px;}
+  .related-drills-links{display:flex; flex-wrap:wrap; gap:8px;}
+  .rd-link{font-size:13px; padding:6px 12px; border:1px solid var(--line); text-decoration:none; color:var(--ink); background:var(--bg);}
+  .rd-link:hover{border-color:var(--vermilion); color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -338,6 +361,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+  <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -396,7 +420,59 @@
     <div class="term"><dt>段葛<span class="cat">07</span></dt><dd>若宮大路の中央に一段高く盛った参道。頼朝が<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>の安産を祈願して築いたと伝わる、地形そのものへの手入れ。</dd></div>
   </dl>
 
-    <div class="share-buttons">
+    <script>
+function initMiniDrill(containerId, questions){
+  const c = document.getElementById(containerId);
+  if(!c) return;
+  questions.forEach((q,qi) => {
+    const item = document.createElement("div");
+    item.className = "md-item";
+    const qP = document.createElement("p");
+    qP.className = "md-q";
+    qP.textContent = (qi+1) + ". " + q.q;
+    item.appendChild(qP);
+    const choicesDiv = document.createElement("div");
+    choicesDiv.className = "md-choices";
+    const fbP = document.createElement("p");
+    fbP.className = "md-fb";
+    q.choices.forEach((choice, ci) => {
+      const btn = document.createElement("button");
+      btn.className = "md-choice";
+      btn.textContent = choice;
+      btn.addEventListener("click", () => {
+        choicesDiv.querySelectorAll(".md-choice").forEach(b=>b.disabled=true);
+        if(ci === q.answer){ btn.classList.add("correct"); }
+        else {
+          btn.classList.add("wrong");
+          choicesDiv.children[q.answer].classList.add("correct");
+        }
+        fbP.textContent = q.note;
+        fbP.classList.add("show");
+      });
+      choicesDiv.appendChild(btn);
+    });
+    item.appendChild(choicesDiv);
+    item.appendChild(fbP);
+    c.appendChild(item);
+  });
+}
+</script>
+    <div class="related-drills">
+      <p class="related-drills-label">関連するドリルに挑戦</p>
+      <div class="related-drills-links"><a class="rd-link" href="../quiz.html#person:yoritomo">人物：源頼朝編</a><a class="rd-link" href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a></div>
+    </div>
+    <div class="mini-drill" id="miniDrill_g2">
+      <h4>この記事の理解度チェック</h4>
+    </div>
+    <div class="drill-more">
+      <p class="dm-label">もっと学ぶ</p>
+      <div class="dm-links"><a href="../quiz.html#person:yoritomo">人物：源頼朝編</a><a href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a></div>
+    </div>
+
+
+<script>initMiniDrill("miniDrill_g2", [{"q": "頼朝が「三方を山、一方を海に囲まれた土地」を選んだことから、彼がどんな視点を持っていたと考えられる？", "choices": ["景色の美しさだけを重視した", "攻められにくく守りやすい土地かどうかを考えた", "単に有名な土地だったから選んだ", "家臣の意見に従っただけ"], "answer": 1, "note": "山と海に囲まれた地形は、敵の侵入路を限定できる、軍事的に理にかなった選択でした。"}, {"q": "本文は「街の形は一人の男の好みで決まった」と言う一方、由比若宮は頼朝より前からあったとも述べている。これをどう理解すればいい？", "choices": ["矛盾しており、どちらかが誤りである", "頼朝は無から作ったのではなく、既にあったものを再編成・拡張した", "由比若宮は関係のない別の話", "頼朝は由比若宮の存在を知らなかった"], "answer": 1, "note": "頼朝は真っさらな土地に一から都市を作ったのではなく、既存の信仰の場を核にして、街を再編成していったと考えられます。"}, {"q": "段葛が鶴岡八幡宮に近づくほどわずかに狭くなる、という仕掛けに気づいた人は、どんな体験をすると考えられる？", "choices": ["何も感じない", "距離感や神社への近づき方の感覚が、通常の参道と違って感じられる", "道に迷ったと錯覚する", "景色が悪くなったと感じる"], "answer": 1, "note": "意図的な狭まりは、歩く人の距離感覚に働きかける仕掛けとされ、気づくかどうかは人によって違います。"}, {"q": "「どこで気づくかは人によって違うはず」という一文があるが、これを読むだけで段葛の仕掛けを「体験した」と言えるだろうか？", "choices": ["言える。読めば十分理解できる", "言えない。読むことと実際に歩くことは別の体験だから", "段葛の仕掛け自体が存在しない", "気づく必要はそもそもない"], "answer": 1, "note": "文章で説明されても、実際にどこで体感するかは人それぞれ。歩く行為そのものの価値を示しています。"}]);</script>
+
+<div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
       <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
       <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

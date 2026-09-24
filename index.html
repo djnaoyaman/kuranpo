@@ -158,16 +158,16 @@
   section.season{max-width:var(--max); margin:0 auto; padding:0 20px 24px;}
   section.areamap{max-width:var(--max); margin:0 auto; padding:0 20px 24px;}
   .areamap-note{font-size:14px; color:var(--ink-soft); margin:0 0 16px;}
-  .areamap-svg{width:100%; max-width:600px; height:auto; display:block; margin:0 auto;}
+  .areamap-svg{width:100%; max-width:760px; height:auto; display:block; margin:0 auto;}
   .am-line{stroke:var(--line); stroke-width:1.5;}
-  .am-dot{fill:var(--card); stroke:var(--ink); stroke-width:1.5; transition:fill .2s ease, stroke .2s ease;}
+  .am-dot{fill:var(--card); stroke:var(--ink); stroke-width:1.5;}
   .am-dot-center{stroke:var(--vermilion); stroke-width:2;}
-  .areamap-svg a:hover .am-dot{fill:var(--vermilion); stroke:var(--vermilion);}
-  .areamap-svg a:hover .am-label{fill:var(--vermilion);}
-  .am-label{font-family:"Shippori Mincho", serif; font-size:16px; fill:var(--ink); text-anchor:middle; font-weight:700; transition:fill .2s ease;}
+  .am-label{font-family:"Shippori Mincho", serif; font-size:16px; fill:var(--ink); text-anchor:middle; font-weight:700;}
   .am-label-center{font-size:17px;}
+  .am-label-right{text-anchor:start;}
   .am-sub{font-family:"IBM Plex Mono", monospace; font-size:12px; fill:var(--ink-soft); text-anchor:middle;}
   .areamap-svg a{cursor:pointer;}
+  .areamap-svg a:hover .am-sub{fill:var(--vermilion); text-decoration:underline;}
   .season-label{
     font-size:15px; color:var(--ink-soft);
     margin:0 0 12px; padding-top:24px; border-top:1px solid var(--line);
@@ -350,19 +350,7 @@
   .card:active{transform:translateY(-1px); transition-duration:.2s;}
 
   .card{position:relative;}
-  .progress-note{
-    font-family:"IBM Plex Mono", monospace; font-size:14px; color:var(--moss); font-weight:600; margin:0 0 14px;
-    padding:7px 14px; background:#fff; border:2px solid var(--moss); border-radius:20px; display:inline-block; letter-spacing:.01em;
-  }
-  .stamp-btn{
-    position:absolute; top:-10px; right:-10px; z-index:2;
-    width:30px; height:30px; border-radius:50%; border:2.5px solid var(--ink);
-    background:#fff; color:transparent; font-size:17.5px; line-height:1;
-    cursor:pointer; transition:all .2s ease; box-shadow:2px 2px 0 rgba(38,34,32,0.15);
-  }
-  .stamp-btn:hover{transform:scale(1.1);}
-  .stamp-btn.walked{background:var(--moss); border-color:var(--ink); color:#fff;}
-  .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding-right:14px;}
+  .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
   .card .num{
     font-family:"IBM Plex Mono", monospace; font-size:13.5px; font-weight:700; color:#fff; background:var(--vermilion);
     margin-right:8px; padding:4px 9px;
@@ -538,6 +526,9 @@
   <p class="drawer-label" data-i18n="footer.reading">読みもの</p>
   <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
   <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
+  <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
+  <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
   <p class="drawer-label" data-i18n="footer.about">このサイトについて</p>
   <a class="drawer-link" href="profile.html">編者プロフィール</a>
   <a class="drawer-link" href="changelog.html">修正履歴</a>
@@ -564,21 +555,63 @@
 <section class="areamap" id="areamap">
   <p class="chapters-label" data-i18n="areamap.label">エリアの位置関係（模式図）</p>
   <p class="areamap-note" data-i18n="areamap.note">実際の地図ではなく、位置関係を分かりやすくした模式図。ノードをタップすると代表コースに飛ぶ。</p>
-  <svg class="areamap-svg" viewBox="0 0 500 460" role="img" aria-label="鎌倉エリアの位置関係模式図">
-    <line x1="225" y1="150" x2="130" y2="40" class="am-line"/>
-    <line x1="225" y1="150" x2="320" y2="40" class="am-line"/>
-    <line x1="225" y1="150" x2="110" y2="280" class="am-line"/>
-    <line x1="225" y1="150" x2="250" y2="340" class="am-line"/>
-    <line x1="225" y1="150" x2="390" y2="280" class="am-line"/>
-    <line x1="110" y1="280" x2="110" y2="420" class="am-line"/>
+  <svg class="areamap-svg" viewBox="0 0 700 400" role="img" aria-label="鎌倉エリアの位置関係模式図（模式的なデフォルメ配置）">
+    <line x1="370" y1="200" x2="140" y2="40" class="am-line"/>
+    <line x1="370" y1="200" x2="370" y2="50" class="am-line"/>
+    <line x1="370" y1="200" x2="120" y2="300" class="am-line"/>
+    <line x1="370" y1="200" x2="460" y2="340" class="am-line"/>
+    <line x1="370" y1="200" x2="600" y2="210" class="am-line"/>
+    <line x1="120" y1="300" x2="60" y2="380" class="am-line"/>
 
-    <a href="knowledge/g12.html"><circle cx="130" cy="40" r="5" class="am-dot"/><text x="130" y="20" class="am-label" data-i18n="am.ofuna">大船・玉縄</text><text x="130" y="60" class="am-sub">G12</text></a>
-    <a href="knowledge/g4.html"><circle cx="320" cy="40" r="5" class="am-dot"/><text x="320" y="20" class="am-label" data-i18n="am.kitakamakura">北鎌倉</text><text x="320" y="60" class="am-sub">G4・G5</text></a>
-    <a href="knowledge/g2.html"><circle cx="225" cy="150" r="6" class="am-dot am-dot-center"/><text x="225" y="128" class="am-label am-label-center" data-i18n="am.station">鎌倉駅周辺</text><text x="225" y="170" class="am-sub">G1・G2・G3・G8</text></a>
-    <a href="knowledge/g11.html"><circle cx="110" cy="280" r="5" class="am-dot"/><text x="110" y="260" class="am-label" data-i18n="am.hase">長谷・極楽寺</text><text x="110" y="300" class="am-sub">G6・G11・G13</text></a>
-    <a href="knowledge/g7.html"><circle cx="250" cy="340" r="5" class="am-dot"/><text x="250" y="320" class="am-label" data-i18n="am.omachi">大町・材木座</text><text x="250" y="360" class="am-sub">G7・G10</text></a>
-    <a href="knowledge/g9.html"><circle cx="390" cy="280" r="5" class="am-dot"/><text x="390" y="260" class="am-label" data-i18n="am.kanazawa">金沢街道</text><text x="390" y="300" class="am-sub">G9</text></a>
-    <a href="knowledge/g14.html"><circle cx="110" cy="420" r="5" class="am-dot"/><text x="110" y="400" class="am-label" data-i18n="am.koshigoe">腰越・江の島</text><text x="110" y="440" class="am-sub">G14</text></a>
+    <g class="am-node">
+      <circle cx="140" cy="40" r="5" class="am-dot"/>
+      <text x="140" y="20" class="am-label" data-i18n="am.ofuna">大船・玉縄</text>
+      <a href="knowledge/g12.html"><text x="140" y="60" class="am-sub">G12</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="370" cy="50" r="5" class="am-dot"/>
+      <text x="370" y="30" class="am-label" data-i18n="am.kitakamakura">北鎌倉</text>
+      <a href="knowledge/g4.html"><text x="352" y="70" class="am-sub">G4</text></a>
+      <text x="370" y="70" class="am-sub">・</text>
+      <a href="knowledge/g5.html"><text x="388" y="70" class="am-sub">G5</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="370" cy="200" r="6" class="am-dot am-dot-center"/>
+      <text x="370" y="178" class="am-label am-label-center" data-i18n="am.station">鎌倉駅周辺</text>
+      <a href="knowledge/g1.html"><text x="322" y="222" class="am-sub">G1</text></a>
+      <text x="336" y="222" class="am-sub">・</text>
+      <a href="knowledge/g2.html"><text x="352" y="222" class="am-sub">G2</text></a>
+      <text x="366" y="222" class="am-sub">・</text>
+      <a href="knowledge/g3.html"><text x="382" y="222" class="am-sub">G3</text></a>
+      <text x="396" y="222" class="am-sub">・</text>
+      <a href="knowledge/g8.html"><text x="412" y="222" class="am-sub">G8</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="120" cy="300" r="5" class="am-dot"/>
+      <text x="120" y="278" class="am-label" data-i18n="am.hase">長谷・極楽寺</text>
+      <a href="knowledge/g6.html"><text x="82" y="322" class="am-sub">G6</text></a>
+      <text x="96" y="322" class="am-sub">・</text>
+      <a href="knowledge/g11.html"><text x="116" y="322" class="am-sub">G11</text></a>
+      <text x="136" y="322" class="am-sub">・</text>
+      <a href="knowledge/g13.html"><text x="156" y="322" class="am-sub">G13</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="460" cy="340" r="5" class="am-dot"/>
+      <text x="460" y="318" class="am-label" data-i18n="am.omachi">大町・材木座</text>
+      <a href="knowledge/g7.html"><text x="442" y="362" class="am-sub">G7</text></a>
+      <text x="456" y="362" class="am-sub">・</text>
+      <a href="knowledge/g10.html"><text x="474" y="362" class="am-sub">G10</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="600" cy="210" r="5" class="am-dot"/>
+      <text x="600" y="188" class="am-label" data-i18n="am.kanazawa">金沢街道</text>
+      <a href="knowledge/g9.html"><text x="600" y="230" class="am-sub">G9</text></a>
+    </g>
+    <g class="am-node">
+      <circle cx="60" cy="380" r="5" class="am-dot"/>
+      <text x="88" y="378" class="am-label am-label-right" data-i18n="am.koshigoe">腰越・江の島</text>
+      <a href="knowledge/g14.html"><text x="60" y="398" class="am-sub">G14</text></a>
+    </g>
   </svg>
 </section>
 
@@ -677,7 +710,6 @@
   <section class="panel active" id="panel-geo">
     <p class="panel-note" data-i18n="panel.geo">出発点と解散点を明示した基本の散歩コース。全14コースで鎌倉の主要な神社仏閣と歴史の要所をめぐる。</p>
     <div class="stats" id="stats-geo"></div>
-    <p class="progress-note" id="progress-geo"></p>
     <div class="filter-row" data-target="geo-list">
       <button class="active" data-mode="all" data-i18n="filter.all14">すべて（14）</button>
       <button data-mode="range" data-min="0" data-max="1.5" data-i18n="filter.range1">1〜1.5時間</button>
@@ -700,18 +732,33 @@
 
   <section class="panel" id="panel-religion">
     <p class="panel-note" data-i18n="panel.religion">宗派・信仰の系譜でめぐる巡礼プラン。1日で全宗派を回るものではなく、複数回に分けて完遂する前提。</p>
+    <a class="ref-banner" href="religions.html">
+      <span class="ref-banner-icon">🗂️</span>
+      <span class="ref-banner-body"><b>先に鎌・くらんぽ宗教関係図を見る</b><span>禅宗・日蓮宗・浄土宗など、宗派ごとの寺社を一枚で整理</span></span>
+      <span class="ref-banner-links">religions.html</span>
+    </a>
     <div class="stats" id="stats-religion"></div>
     <div class="axis-wrap" id="religion-list"></div>
   </section>
 
   <section class="panel" id="panel-person">
     <p class="panel-note" data-i18n="panel.person">頼朝・北条氏・日蓮など、鎌倉の歴史を動かした人物ゆかりの地をめぐるプラン。</p>
+    <a class="ref-banner" href="persons.html">
+      <span class="ref-banner-icon">🗂️</span>
+      <span class="ref-banner-body"><b>先に鎌・くらんぽ人物相関図を見る</b><span>源氏・北条氏・足利氏など、一族・関係を一枚で整理</span></span>
+      <span class="ref-banner-links">persons.html</span>
+    </a>
     <div class="stats" id="stats-person"></div>
     <div class="axis-wrap" id="person-list"></div>
   </section>
 
   <section class="panel" id="panel-timeline">
     <p class="panel-note" data-i18n="panel.timeline">古代から近代まで、鎌倉800年の通史を時代順にめぐるプラン。</p>
+    <a class="ref-banner" href="timeline.html">
+      <span class="ref-banner-icon">🗂️</span>
+      <span class="ref-banner-body"><b>先に鎌・くらんぽ年表を見る</b><span>7つの時期と、その頃建てられた寺社を一枚で整理</span></span>
+      <span class="ref-banner-links">timeline.html</span>
+    </a>
     <div class="stats" id="stats-timeline"></div>
     <div class="axis-wrap" id="timeline-list"></div>
   </section>
@@ -719,7 +766,6 @@
   <section class="panel" id="panel-complete">
     <p class="panel-note" data-i18n="panel.complete">エリア別14コースでは訪ねなかった、市内に残る社寺・史跡を拾う追加コース。エリア別コースと合わせて、鎌倉市内で実際に参拝できる社寺のほぼ全域を網羅する。塔頭など非公開の子院は本寺の拝観に含まれるものとして個別に数えていない。</p>
     <div class="stats" id="stats-complete"></div>
-    <p class="progress-note" id="progress-complete"></p>
     <div class="filter-row" data-target="complete-list">
       <button class="active" data-mode="all" data-i18n="filter.all16">すべて（16）</button>
       <button data-mode="range" data-min="0" data-max="1.5" data-i18n="filter.range1">1〜1.5時間</button>
@@ -1336,7 +1382,6 @@ function renderGeoCard(c){
   const startKey = stripRuby(c.start), endKey = stripRuby(c.end);
   return `
   <a class="card" data-duration="${c.duration}" data-course-id="${kFile}" href="knowledge/${kFile}.html">
-    <button class="stamp-btn" data-course-id="${kFile}" aria-label="このコースを歩いたにする" title="歩いたらタップ" data-i18n-title="stamp.title" data-i18n-aria="stamp.aria">✓</button>
     <div class="top">
       <h3><span class="num">${String(c.id).padStart(2,"0")}</span><span data-i18n="kn.${kFile}.title">${c.title}</span></h3>
       <span class="chev">→</span>
@@ -1621,6 +1666,7 @@ window.addEventListener("hashchange", ()=>{
 
   let last = null, leftFoot = true, lastStamp = 0;
   document.addEventListener("mousemove", (e)=>{
+    if(!e.target.closest(".card, .ch, a, button")) return; // カード等の上にある時だけ発火
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
     if(last){

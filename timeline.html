@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDXKF3Y622"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDXKF3Y622');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鎌・くらんぽ年表｜鎌・くらんぽ</title>
+<meta name="description" content="「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。">
+<link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/timeline.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="鎌・くらんぽ">
+<meta property="og:title" content="鎌・くらんぽ年表｜鎌・くらんぽ">
+<meta property="og:description" content="「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。">
+<meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/timeline.html">
+<meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="鎌・くらんぽ年表｜鎌・くらんぽ">
+<meta name="twitter:description" content="「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。">
+<meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
+<meta name="robots" content="index,follow">
+<meta name="author" content="クランポック">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFECE7;
+    --card:#F7F4EE;
+    --ink:#262220;
+    --ink-soft:#6B6058;
+    --line:#D8D0BF;
+    --vermilion:#A8402E;
+    --vermilion-bg:#EEDCCF;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Shippori Mincho", serif; line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  header.site{
+    padding:40px 20px 28px; border-bottom:1px solid var(--line);
+    background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);
+  }
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back::before{content:"← ";}
+  header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  header.site .back.reveal-line{animation-delay:0s;}
+  header.site .kicker.reveal-line{animation-delay:.08s;}
+  header.site h1.reveal-line{animation-delay:.18s;}
+  header.site p.reveal-line{animation-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
+
+  nav.jump{
+    position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
+    background:var(--bg); border-bottom:1px solid var(--line); padding:0 20px; scrollbar-width:none;
+  }
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump .inner{display:flex; max-width:var(--max); margin:0 auto; width:100%;}
+  nav.jump a{
+    flex:0 0 auto; padding:14px 14px 12px; font-size:15px; color:var(--ink-soft);
+    text-decoration:none; border-bottom:2px solid transparent; white-space:nowrap;
+  }
+  nav.jump a:hover{color:var(--ink); border-bottom-color:var(--vermilion);}
+
+  main{max-width:var(--max); margin:0 auto; padding:32px 20px 60px;}
+
+  section.group{max-width:760px; margin:0 0 44px; padding-top:26px; border-top:1px solid var(--line);}
+  section.group:first-of-type{border-top:none; padding-top:0;}
+  section.group h2{font-family:"Shippori Mincho", serif; font-size:21.5px; margin:0 0 6px;}
+  section.group .group-note{font-size:14.5px; color:var(--ink-soft); margin:0 0 18px;}
+
+  dl.terms{margin:0;}
+  .term{
+    display:block; padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .term:last-child{border-bottom:none;}
+  .term dt{
+    font-family:"Shippori Mincho", serif; font-weight:700; font-size:18px; margin:0 0 6px;
+    display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  }
+  .term dt .yomi{font-family:"Shippori Mincho", serif; font-weight:400; font-size:13.5px; color:var(--ink-soft);}
+  .term dd{margin:0; font-size:15.5px; color:var(--ink);}
+  .term dd .map{
+    display:inline-block; margin-top:8px; font-size:14px; color:var(--vermilion);
+    text-decoration:underline; text-decoration-color:var(--line);
+  }
+  .term dd .map::before{content:"📍 ";}
+
+  footer.site{
+    max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft);
+    font-size:14px; border-top:1px solid var(--line);
+  }
+  footer.site .inner{max-width:640px;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+  footer.site .last-updated{display:block; margin-top:6px; font-size:13px; color:var(--ink-soft);}
+
+  @media (min-width:768px){
+    header.site{padding:64px 32px 40px;}
+    main, footer.site{padding-left:32px; padding-right:32px;}
+    section.group dl.terms{column-count:2; column-gap:32px;}
+    section.group .term{break-inside:avoid;}
+  }
+  @media (min-width:1024px){
+    header.site{padding:80px 40px 48px;}
+    main, footer.site{padding-left:40px; padding-right:40px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,236,231,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; gap:20px; height:56px;
+  }
+  .topbar-brand{font-size:17.5px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:15px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:18.5px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(38,34,32,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:22.5px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(38,34,32,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7A2E1E;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
+}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+
+  .editor-mark-section{
+    min-height:100vh; min-height:100dvh; display:flex; align-items:center; justify-content:center;
+    border-top:3px solid var(--ink);
+  }
+  .editor-mark{
+    color:var(--ink); text-decoration:none; display:flex; flex-direction:column;
+    align-items:center; gap:10px; transition:color .2s ease;
+  }
+  .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark .em-label{font-size:15px; opacity:.6;}
+  .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .share-buttons{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
+  .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
+  .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+
+  /* ---------- 大まかな図解（年表・人物・宗教）共通 ---------- */
+  .diagram-intro{font-size:15.5px; color:var(--ink-soft); margin:0 0 28px; max-width:640px;}
+  .tl-diagram{position:relative; padding-left:26px; border-left:2px solid var(--line); margin:0 0 40px;}
+  .tl-era{position:relative; padding-bottom:32px;}
+  .tl-era:last-child{padding-bottom:0;}
+  .tl-dot{position:absolute; left:-33px; top:4px; width:13px; height:13px; border-radius:50%; background:var(--vermilion); border:3px solid var(--bg);}
+  .tl-period{font-family:"Shippori Mincho", serif; font-size:18px; font-weight:700; margin:0 0 4px;}
+  .tl-range{font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--ink-soft); margin:0 0 8px;}
+  .tl-temples{font-size:15px; line-height:1.9; margin:0;}
+  .tl-temples .yr{font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--ink-soft);}
+
+  .rel-group{margin:0 0 32px; padding:18px 20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
+  .rel-group.moss{border-left-color:var(--moss);}
+  .rel-group.indigo{border-left-color:var(--indigo);}
+  .rel-group.ochre{border-left-color:var(--ochre);}
+  .rel-group h3{font-family:"Shippori Mincho", serif; font-size:19px; margin:0 0 12px;}
+  .rel-person{margin:0 0 12px; padding-left:14px; border-left:2px solid var(--line);}
+  .rel-person:last-child{margin-bottom:0;}
+  .rel-person .name{font-weight:700; font-size:16px;}
+  .rel-person .name .yomi{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--ink-soft); font-weight:400; margin-left:4px;}
+  .rel-person .note{font-size:14.5px; color:var(--ink-soft); line-height:1.8; margin:4px 0 0;}
+  .rel-arrow{font-size:13px; color:var(--ink-soft); margin:2px 0 2px 14px;}
+
+  .tree-root{margin:0 0 32px;}
+  .tree-root > .tree-label{font-family:"Shippori Mincho", serif; font-size:20px; font-weight:700; padding:10px 16px; background:var(--ink); color:#fff; display:inline-block; margin:0 0 14px;}
+  .tree-branch{margin:0 0 20px 0; padding-left:20px; border-left:2px solid var(--line);}
+  .tree-branch .b-label{font-family:"Shippori Mincho", serif; font-size:16.5px; font-weight:700; color:var(--vermilion); margin:0 0 6px;}
+  .tree-branch.moss .b-label{color:var(--moss);}
+  .tree-branch.indigo .b-label{color:var(--indigo);}
+  .tree-branch.ochre .b-label{color:var(--ochre);}
+  .tree-leaves{font-size:14.5px; color:var(--ink-soft); line-height:1.9; margin:0;}
+
+  .diagram-intro b, .tl-temples b, .rel-person .note b, .tree-leaves b{color:var(--vermilion); font-weight:700;}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "鎌・くらんぽ年表",
+ "description": "「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。",
+ "url": "https://djnaoyaman.github.io/kuranpo/timeline.html",
+ "inLanguage": "ja",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "鎌・くらんぽ",
+  "url": "https://djnaoyaman.github.io/kuranpo/"
+ }
+}
+</script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
+  <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
+  <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
+    <p class="kicker reveal-line">散歩の前に、5分だけ</p>
+    <h1 class="mincho reveal-line">鎌・くらんぽ年表</h1>
+    <p class="lead reveal-line">「年表でめぐる」コースを歩く前に、鎌倉800年の大きな流れを知っておくと、今立っている場所が800年のどのあたりかが分かって、ぐっと楽しくなる。あくまでコースを楽しむための前提知識として、大まかな流れをここで掴んでおきたい。</p>
+  </div>
+</header>
+
+<main>
+
+  <p class="diagram-intro">鎌倉800年は、実は一人の男が作った土台の上に、何度も塗り重ねられてきた歴史です。7つの時期を追いながら、その塗り重ねを大まかに辿ります。</p>
+
+  <div class="tl-diagram">
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">古代</p>
+      <p class="tl-range">〜1179年頃</p>
+      <p class="tl-temples">鎌倉が「武士の都」と呼ばれるより<b>450年近く前</b>から、この土地にはすでに祈りの場がありました。<span class="yr">734年</span> 杉本寺、<span class="yr">1063年</span> 由比若宮——武士の物語が始まる前に、もう一つの物語がここにあったのです。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">頼朝期</p>
+      <p class="tl-range">1180〜1199年</p>
+      <p class="tl-temples">1180年、<ruby>源頼朝<rt>みなもとのよりとも</rt></ruby>がこの地を選んだことで、すべてが動き出します。まず若宮大路の突端に鶴岡八幡宮を据え、そこから東へ少し歩いた谷に大倉幕府、さらに奥に法華堂、南には勝長寿院——政治の場と、祈りの場と、死者を弔う場が、徒歩数十分の範囲に次々と配置されていきました。<b>わずか19年</b>で、都市の骨格ができあがったのです。頼朝が死ぬと、この骨組みの上に次の時代が積み重なっていきます。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">執権確立期</p>
+      <p class="tl-range">1200〜1250年頃</p>
+      <p class="tl-temples">実権は、頼朝の妻の一族・<ruby>北条氏<rt>ほうじょうし</rt></ruby>に移ります。政子が寿福寺を開き（1200年）、泰時が浄光明寺（1251年）を経て法律（御成敗式目）を整えた時代。<b>「頼朝の妻」から「執権の一族」へ</b>、権力の重心が静かに移動した時期です。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">蒙古襲来期</p>
+      <p class="tl-range">1250〜1284年頃</p>
+      <p class="tl-temples">そして鎌倉に、最大の危機が訪れます。<b>二度の元寇</b>。時頼が建長寺で本格的に禅を根づかせたのは1253年、まだ元軍来襲の気配もない頃でした。それから29年後の1282年、時宗は同じ北鎌倉の谷筋、建長寺から歩いてすぐの場所に円覚寺を建てます——今度は、実際に海を越えてきた敵の戦没者を慰めるために。同じ場所に建つ二つの禅寺の間には、平和な時代から危機の時代へと移った29年の重みがあります。同じ頃、鎌倉の西側では、極楽寺の忍性が、高徳院の大仏が、それぞれ別の形で時代と向き合っていました。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">幕府動揺・滅亡期</p>
+      <p class="tl-range">1284〜1333年</p>
+      <p class="tl-temples">元寇を退けた栄光も、長くは続きませんでした。<b>それから約50年後の1333年</b>、新田義貞の攻撃により、14代執権・高時は東勝寺で一族と共に自害します。鎌倉幕府、滅亡。宝戒寺は、その無念を弔うために建てられました。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">南北朝・室町期</p>
+      <p class="tl-range">1333〜1467年頃</p>
+      <p class="tl-temples">滅亡の直後、この土地の主役は交代します。まだ無名だった<ruby>足利氏<rt>あしかがし</rt></ruby>が、金沢街道という同じ一本の道沿いに、静かに勢力を広げていました。覚園寺（1296年）から瑞泉寺（1327年）まで31年、そこから報国寺（1334年）まで7年——道を奥へ奥へと進むように、寺が一つずつ増えていく速さです。<b>次の時代を作る一族は、いつも前の時代の隙間から現れる</b>——この土地の、繰り返されるパターンです。</p>
+    </div>
+    <div class="tl-era">
+      <div class="tl-dot"></div>
+      <p class="tl-period">戦国〜昭和</p>
+      <p class="tl-range">戦国時代以降</p>
+      <p class="tl-temples">鎌倉時代が終わってから200年以上を経て、また新しい「北条」が現れます。ただし<b>血のつながりはありません</b>——玉縄城主・北条綱成です（龍宝寺）。そして昭和、大船観音という、まったく新しい祈りの場がこの土地に加わりました。</p>
+    </div>
+  </div>
+
+  <p class="diagram-intro">頼朝の19年、北条氏の約150年、そして足利氏へ——鎌倉の主役は、この800年で何度も入れ替わっています。次にどの時代を歩いてみますか。頭がくらくらんぽしませんか。</p>
+
+<p class="diagram-intro">流れが掴めたら、実際に歩いてみませんか。<a href="index.html#tab-timeline">年表でめぐるコース一覧へ</a></p>
+
+<div class="share-buttons">
+    <span class="share-label">この記事をシェア</span>
+    <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
+    <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>
+    <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p>ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p><p><span class="last-updated">最終更新日：2026年9月24日</span></p>
+    <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+  </div>
+</footer>
+<section class="editor-mark-section">
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
+</section>
+
+
+<script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
+(function footprintTrail(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(!window.matchMedia("(pointer:fine)").matches) return; // タッチ端末では発火しない
+
+  const layer = document.createElement("div");
+  layer.style.cssText = "position:fixed; inset:0; pointer-events:none; z-index:9999; overflow:hidden;";
+  document.body.appendChild(layer);
+
+  const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
+
+  let last = null, leftFoot = true, lastStamp = 0;
+  document.addEventListener("mousemove", (e)=>{
+    if(!e.target.closest(".card, .ch, a, button")) return; // カード等の上にある時だけ発火
+    const now = performance.now();
+    if(now - lastStamp < 140) return; // 間引き
+    if(last){
+      const dx = e.clientX - last.x, dy = e.clientY - last.y;
+      if(Math.hypot(dx,dy) < 26) return; // 一定距離動いた時だけ
+    }
+    lastStamp = now;
+    const angle = last ? Math.atan2(e.clientY-last.y, e.clientX-last.x) * 180/Math.PI + 90 : 0;
+    last = {x:e.clientX, y:e.clientY};
+
+    const step = document.createElement("div");
+    step.innerHTML = FOOT;
+    const sideOffset = leftFoot ? -7 : 7;
+    leftFoot = !leftFoot;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--ink, #111); opacity:.28; transform:rotate(${angle}deg); transition:opacity 2.2s ease, transform 2.2s ease;`;
+    layer.appendChild(step);
+    requestAnimationFrame(()=>{
+      step.style.opacity = "0";
+      step.style.transform += " translateY(4px)";
+    });
+    setTimeout(()=> step.remove(), 1900);
+  }, {passive:true});
+})();
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
+</body>
+</html>

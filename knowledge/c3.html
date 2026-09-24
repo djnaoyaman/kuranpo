@@ -315,6 +315,9 @@
   <p class="drawer-label">読みもの</p>
   <a class="drawer-link" href="../basics.html">歩く前の基礎知識</a>
   <a class="drawer-link" href="../history.html#framework">神社仏閣を見る7つの視点</a>
+  <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
+  <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
+  <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
   <a class="drawer-link" href="../changelog.html">修正履歴</a>
@@ -412,6 +415,7 @@
 
   let last = null, leftFoot = true, lastStamp = 0;
   document.addEventListener("mousemove", (e)=>{
+    if(!e.target.closest(".card, .ch, a, button")) return; // カード等の上にある時だけ発火
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
     if(last){

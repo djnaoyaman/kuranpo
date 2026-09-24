@@ -216,6 +216,11 @@
   .quiz-intro{font-size:15.5px; color:var(--ink-soft); margin:0 0 28px; max-width:640px;}
   .quiz-select{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin:0 0 20px;}
   @media (max-width:600px){.quiz-select{grid-template-columns:1fr;}}
+  .chapter-overview-details{margin:0 0 28px; padding:16px 18px; background:var(--card); border:1px solid var(--line);}
+  .chapter-overview-details summary{cursor:pointer; font-size:14px; color:var(--ink-soft);}
+  .co-cat{font-family:"Shippori Mincho", serif; font-size:15px; margin:16px 0 8px;}
+  .co-cat:first-of-type{margin-top:14px;}
+  .co-list{margin:0 0 4px; padding-left:20px; font-size:13.5px; color:var(--ink-soft); line-height:1.8;}
   .quiz-cat{padding:22px; border:1.5px solid var(--line); background:var(--card); cursor:pointer; text-align:left; font-family:inherit;}
   .quiz-cat:hover{border-color:var(--ink);}
   .quiz-cat .qc-label{font-size:12px; color:#fff; display:inline-block; padding:3px 10px; margin:0 0 10px;}
@@ -352,6 +357,60 @@
       </button>
     </div>
   </section>
+
+  <details class="chapter-overview-details">
+    <summary>全編一覧を先に見る（歴史7編・お寺11編・宗教6編・人物12編）</summary>
+  <div class="chapter-overview" id="chapterOverview">
+    <h3 class="co-cat">歴史ドリル（全7編・13問）</h3>
+    <ul class="co-list">
+      <li>古代編（2問）</li>
+      <li>頼朝期編（2問）</li>
+      <li>執権確立期編（1問）</li>
+      <li>蒙古襲来期編（2問）</li>
+      <li>幕府動揺・滅亡期編（2問）</li>
+      <li>南北朝・室町期編（2問）</li>
+      <li>戦国〜昭和編（2問）</li>
+    </ul>
+    <h3 class="co-cat">お寺ドリル（全11編・13問）</h3>
+    <ul class="co-list">
+      <li>杉本寺編（2問）</li>
+      <li>報国寺編（1問）</li>
+      <li>極楽寺編（2問）</li>
+      <li>高徳院（大仏）編（1問）</li>
+      <li>明月院編（1問）</li>
+      <li>建長寺編（1問）</li>
+      <li>円覚寺編（1問）</li>
+      <li>大巧寺編（1問）</li>
+      <li>満福寺編（1問）</li>
+      <li>英勝寺編（1問）</li>
+      <li>甘縄神明神社編（1問）</li>
+    </ul>
+    <h3 class="co-cat">宗教ドリル（全6編・11問）</h3>
+    <ul class="co-list">
+      <li>禅宗編（2問）</li>
+      <li>日蓮宗編（2問）</li>
+      <li>浄土宗編（1問）</li>
+      <li>律宗・真言宗編（2問）</li>
+      <li>天台宗・単立編（2問）</li>
+      <li>神道編（2問）</li>
+    </ul>
+    <h3 class="co-cat">人物ドリル（全12編・26問）</h3>
+    <ul class="co-list">
+      <li>源頼朝編（3問）</li>
+      <li>北条政子編（2問）</li>
+      <li>北条泰時編（2問）</li>
+      <li>北条時頼編（2問）</li>
+      <li>北条時宗編（3問）</li>
+      <li>北条貞時編（2問）</li>
+      <li>北条高時編（2問）</li>
+      <li>日蓮編（2問）</li>
+      <li>忍性編（2問）</li>
+      <li>夢窓疎石編（2問）</li>
+      <li>新田義貞・足利氏編（3問）</li>
+      <li>北条綱成編（1問）</li>
+    </ul>
+  </div>
+  </details>
 
   <section id="quizChapterList" style="display:none;">
     <button class="quiz-back" id="quizBackFromChapters">← カテゴリ選択に戻る</button>

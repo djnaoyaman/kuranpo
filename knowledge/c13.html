@@ -27,7 +27,7 @@
 <meta name="twitter:description" content="青蓮寺は、空海というお坊さんが開いたと伝わる古いお寺。大慶寺は関東十刹という格式を持つお寺。観光地図にあまり出てこない深沢というエリアに、意外と古くて格式の高いお寺が残っている。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="robots" content="index,follow">
-<meta name="author" content="切通歩">
+<meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -184,18 +184,15 @@
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
   .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
-
-  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
-  .lang-switch button{
-    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
-    font-size:12.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
-  }
-  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
-  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:12px;} }
+}
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
   }
+  .share-buttons{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
+  .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
+  .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -208,7 +205,7 @@
  "inLanguage": "ja",
  "author": {
   "@type": "Person",
-  "name": "切通歩",
+  "name": "クランポック",
   "alternateName": [
    "宮崎直哉",
    "一見坊",
@@ -233,7 +230,7 @@
  },
  "publisher": {
   "@type": "Person",
-  "name": "切通歩",
+  "name": "クランポック",
   "alternateName": [
    "宮崎直哉",
    "一見坊",
@@ -301,12 +298,6 @@
       <a href="../history.html" data-i18n="nav.history">歴史知識</a>
       <a href="../profile.html" data-i18n="nav.profile">編者</a>
     </nav>
-        <div class="lang-switch" id="langSwitch">
-      <button data-lang="ja" class="active">JA</button>
-      <button data-lang="en">EN</button>
-      <button data-lang="zh">中</button>
-      <button data-lang="ko">한</button>
-    </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
       <span></span><span></span><span></span>
     </button>
@@ -356,7 +347,7 @@
       <span class="dist">施設間の徒歩距離 約3.2km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c13.story">青蓮寺は、<ruby>空海<rt>くうかい</rt></ruby>というお坊さんが開いたと伝わる古いお寺。大慶寺は<ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>という格式を持つお寺。観光地図にあまり出てこない深沢というエリアに、意外と古くて格式の高いお寺が残っている。</p>
+    <p class="story" data-i18n="kn.c13.story">観光地図にあまり出てこないエリアに、空海ゆかりの古寺があります。<ruby>青蓮寺<rt>しょうれんじ</rt></ruby>は、<ruby>空海<rt>くうかい</rt></ruby>というお坊さんが開いたと伝わる古いお寺。大慶寺は<ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>という格式を持つお寺です。深沢というエリアに、意外と古くて格式の高いお寺が残っていることに、頭がくらくらんぽします。</p>
     <ul class="spot-list"><li><span class="leg">湘南深沢駅から 徒歩1.0km・約14分</span><div class="row"><span class="sname">青蓮寺<span class="snote">空海開山の伝承。</span></span><span class="sfee">無料</span></div></li><li><span class="leg">青蓮寺から 徒歩1.2km・約17分</span><div class="row"><span class="sname">大慶寺<span class="snote">関東十刹の一。</span></span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">大慶寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：湘南深沢駅</span></div></li></ul>
     
   </div>
@@ -368,6 +359,14 @@
     <div class="term"><dt><ruby>空海<rt>くうかい</rt></ruby><span class="cat">04</span></dt><dd>青蓮寺の<ruby>開山<rt>かいさん</rt></ruby>伝承に名を残す僧。真言宗の祖師が、鎌倉の外縁にも足跡を残しているとされる例。</dd></div>
     <div class="term"><dt><ruby>関東十刹<rt>かんとうじっさつ</rt></ruby><span class="cat">02</span></dt><dd>大慶寺はこの寺格に数えられる。観光地図には載らない地域にも、格式ある寺が残っていることを示す。</dd></div>
   </dl>
+
+    <div class="share-buttons">
+      <span class="share-label">この記事をシェア</span>
+      <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
+      <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>
+      <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
+      <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
+    </div>
 
   </article>
 
@@ -381,39 +380,9 @@
 </main>
 
 <footer class="site">
-  <a class="editor-mark" href="../profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+  <a class="editor-mark" href="../profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
 </footer>
 
-<script>
-const TRANSLATIONS = {
-en: {"kn.lens.01": "01 Shinto–Buddhist Syncretism", "kn.lens.01b": "01 Shrine vs. Temple", "kn.lens.02": "02 Reading the Architecture", "kn.lens.02b": "02 Temple Rank", "kn.lens.03": "03 Who Is Enshrined", "kn.lens.04": "04 Founding Era", "kn.lens.05": "05 Relationship to Power", "kn.lens.06": "06 Folk Belief", "kn.lens.07": "07 Relationship to the Land", "kn.sectiondivider": "History Basics", "kn.fwref": "For how to read this (the 7 viewpoints, including Shinto vs. Buddhist and reading architecture), see the top of <a href=\"../history.html#framework\">Historical Background by Course</a>.", "kn.pager.prev": "Prev: ", "kn.pager.next": "Next: ", "kn.pager.list": "Back to list", "nav.courses": "Courses", "nav.basics": "Basics", "nav.history": "History", "nav.profile": "Editor", "drawer.courses": "Browse Courses", "footer.reading": "Further Reading", "footer.about": "About This Site", "footer.credit.label": "Editor: ", "footer.credit.editor": "Kiridoshi Ayumu", "footer.credit.changelog": "Changelog", "kn.c9.title": "Shichirigahama Area", "kn.c9.story": "At the edge of Kamakurayama, Shichirigahama holds two temples built in the modern era. A relatively new religious landscape, different from medieval Kamakura. A short course you can walk while looking out at the sea.", "kn.c9.terms": "<div class=\"term\"><dt>Modern-Era Construction<span class=\"cat\">04</span></dt><dd>Neither temple has a direct connection to medieval Kamakura; both were built in the modern era. Shows that places of faith continue to be newly created even today.</dd></div>", "kn.c10.title": "Imaizumi & Iwase Area", "kn.c10.story": "North of Ofuna, Imaizumi and Iwase retain shrines and temples set slightly apart from the city center. Daicho-ji is said to be connected to Hojo Tsunashige, though detailed records are scarce. A course walking the edge of Kamakura that hasn't become a tourist destination.", "kn.c10.terms": "<div class=\"term\"><dt>Hojo Tsunashige<span class=\"cat\">05</span></dt><dd>Said to be connected to Daicho-ji, though detailed records are scarce.</dd></div>", "kn.c11.title": "Tamanawa Area II", "kn.c11.story": "This area, once the castle town of the Tamanawa Hojo, retains several temples said to have been built by their retainers and subjects. Nothing flashy, but venturing a little further after visiting Ryuho-ji and Ofuna Kannon-ji brings the outline of Tamanawa as a region into sharper focus.", "kn.c11.terms": "<div class=\"term\"><dt>Retainers & Subjects of the Tamanawa Hojo<span class=\"cat\">05</span></dt><dd>Enko-ji and Kyujo-ji, among others, are said to have been built by retainers or subjects of the Tamanawa castle lord — showing that temples were built not only by the lord, but by the people beneath him too.</dd></div>", "kn.c12.title": "Ofuna & Okamoto Area, Uncatalogued", "kn.c12.story": "At the foot of Ofuna Kannon are Soto-sect temples rooted in the community, such as Tamon-in and Mokusen-ji. A course for turning your eyes to the quiet temple town around it, after being struck by the sheer size of the Kannon statue.", "kn.c12.terms": "<div class=\"term\"><dt>The Soto School<span class=\"cat\">01</span></dt><dd>The sect of Tamon-in and Mokusen-ji. A branch of Zen Buddhism with Dogen as its founding patriarch — an example of a different lineage of Zen entering a Kamakura otherwise centered on the Rinzai school.</dd></div>", "kn.c13.title": "Fukasawa Area I: Tebiro & Terabun", "kn.c13.story": "Seiren-ji is an old temple carrying a tradition of founding by Kukai; Daikei-ji is a temple of standing rank, counted among the Ten Temples of the Kanto. In Fukasawa, an area rarely marked on tourist maps, surprisingly old and prestigious temples remain.", "kn.c13.terms": "<div class=\"term\"><dt>Kukai<span class=\"cat\">04</span></dt><dd>The monk whose name remains in Seiren-ji's founding tradition. An example of a Shingon-school patriarch said to have left traces even in Kamakura's outer edges.</dd></div><div class=\"term\"><dt>The Ten Temples of the Kanto<span class=\"cat\">02</span></dt><dd>Daikei-ji is counted among this rank. Shows that prestigious temples remain even in areas absent from tourist maps.</dd></div>", "kn.c14.title": "Fukasawa Area II: Tokiwa, Fueta & Kajiwara", "kn.c14.story": "Temples scattered across Tokiwa, Fueta, and Kajiwara, along with Mishima Shrine. None stands out alone, but together they let you grasp, as a whole, how far faith once spread across the Fukasawa area.", "kn.c14.terms": "<div class=\"term\"><dt>The Shrines & Temples of Fukasawa<span class=\"cat\">07</span></dt><dd>All are small in scale, with limited public information on their individual histories. They remain, tucked in valleys away from the old town center, as local guardian shrines and family temples.</dd></div>", "kn.c15.title": "Dai Area, Uncatalogued Shrines", "kn.c15.story": "Several small shrines with no resident priest remain in the Dai area. A road tourists don't normally follow, but one that lets you feel that Kamakura's faith isn't made up only of “famous shrines and temples.”", "kn.c15.terms": "<div class=\"term\"><dt>Mujusha (Unattended Shrines)<span class=\"cat\">06</span></dt><dd>A general term for small shrines with no resident priest. Many of this kind remain in the Dai area, showing that “famous shrines and temples” aren't the whole of faith here.</dd></div>", "kn.c16.title": "Tamanawa Area III: The Remaining Shrines", "kn.c16.story": "Suwa Shrine, Inari Shrine, Kamakurayama Shrine, Kitano Shrine. Walking this last cluster of shrines remaining in Tamanawa, Tebiro, and Ueki, you've all but exhausted every shrine and temple the Area Courses and Complete Edition together could gather.", "kn.c16.terms": "<div class=\"term\"><dt>The Shrines of Tamanawa, Tebiro & Ueki<span class=\"cat\">07</span></dt><dd>All are small, local guardian-type shrines, with limited public information on their individual histories.</dd></div>"},
-zh: {"kn.lens.01": "01 神佛习合", "kn.lens.01b": "01 神社与寺院的区别", "kn.lens.02": "02 看建筑的眼光", "kn.lens.02b": "02 寺格", "kn.lens.03": "03 供奉的是谁", "kn.lens.04": "04 创建年代", "kn.lens.05": "05 与权力的关系", "kn.lens.06": "06 民间信仰", "kn.lens.07": "07 与土地的关系", "kn.sectiondivider": "历史基础知识", "kn.fwref": "关于这份知识的读法（神社与寺院的区别、看建筑的眼光等7个视角），请见<a href=\"../history.html#framework\">各路线的历史基础知识</a>页首的说明。", "kn.pager.prev": "上一条：", "kn.pager.next": "下一条：", "kn.pager.list": "返回列表", "nav.courses": "路线一览", "nav.basics": "基础知识", "nav.history": "历史知识", "nav.profile": "编者", "drawer.courses": "浏览路线", "footer.reading": "延伸阅读", "footer.about": "关于本站", "footer.credit.label": "编辑・文责：", "footer.credit.editor": "切通步", "footer.credit.changelog": "更新记录", "kn.c9.title": "七里滨区域", "kn.c9.story": "镰仓山边缘的七里滨，有两座近代以后建立的寺院。呈现出与中世镰仓不同、相对新近的信仰风景。这是一条可以边眺望大海边走完的短程路线。", "kn.c9.terms": "<div class=\"term\"><dt>近代以后的建立<span class=\"cat\">04</span></dt><dd>两座寺院均与中世镰仓无直接关联，皆为近代以后所建，显示信仰之地至今仍在不断新生。</dd></div>", "kn.c10.title": "今泉・岩濑区域", "kn.c10.story": "大船以北的今泉・岩濑，留有几处稍离市区的社寺。大长寺相传与北条纲成有渊源，但详细记录不多。这是一条走过尚未观光化之镰仓边缘的路线。", "kn.c10.terms": "<div class=\"term\"><dt>北条纲成<span class=\"cat\">05</span></dt><dd>相传与大长寺有渊源，但详细记录不多。</dd></div>", "kn.c11.title": "玉绳区域②", "kn.c11.story": "这一带曾是玉绳北条氏的城下町，至今留有几座相传由家臣或领民所建的寺院。虽不起眼，但在参观完龙宝寺、大船观音寺后再稍稍多走一段，玉绳这片地域的轮廓便会渐渐清晰起来。", "kn.c11.terms": "<div class=\"term\"><dt>玉绳北条氏的家臣・领民<span class=\"cat\">05</span></dt><dd>圆光寺・久成寺等，相传由玉绳城主的家臣或领民所建，可见并非只有城主，其麾下之人也曾建寺。</dd></div>", "kn.c12.title": "大船・冈本区域 未收录", "kn.c12.story": "大船观音脚下，散布着扎根于当地的曹洞宗寺院，如多闻院、默仙寺等。这是一条在被观音像的巨大所震撼之后，也想将目光投向周边静谧寺町的路线。", "kn.c12.terms": "<div class=\"term\"><dt>曹洞宗<span class=\"cat\">01</span></dt><dd>多闻院・默仙寺所属宗派。禅宗的一支，以道元为宗祖，是不同系统的禅宗进入以临济宗为主的镰仓之例。</dd></div>", "kn.c13.title": "深泽区域① 手广・寺分", "kn.c13.story": "青莲寺是相传由空海开山的古刹，大庆寺则是位列关东十刹之一的格式寺院。在深泽这个鲜少见于观光地图的区域，竟意外留存着如此古老而格式崇高的寺院。", "kn.c13.terms": "<div class=\"term\"><dt>空海<span class=\"cat\">04</span></dt><dd>名字留于青莲寺开山传承中的僧人。真言宗祖师足迹也曾及于镰仓外缘之一例。</dd></div><div class=\"term\"><dt>关东十刹<span class=\"cat\">02</span></dt><dd>大庆寺位列此寺格，显示即便在不见于观光地图的区域，也留存着格式崇高的寺院。</dd></div>", "kn.c14.title": "深泽区域② 常盘・笛田・梶原", "kn.c14.story": "散布于常盘・笛田・梶原的寺院与三岛神社。每一座单独看并不起眼，但走一遍便能整体把握深泽这片土地信仰的广度。", "kn.c14.terms": "<div class=\"term\"><dt>深泽区域的社寺<span class=\"cat\">07</span></dt><dd>规模均小，关于各自由来的公开信息有限。它们留存在远离旧市区的谷筋之中，作为当地的氏神与菩提寺。</dd></div>", "kn.c15.title": "台区域 未收录之社", "kn.c15.story": "台这一地区，留存着多座无神职常驻的小社。虽是观光通常不会走的路，却能实际感受到镰仓的信仰并非只由「著名社寺」构成。", "kn.c15.terms": "<div class=\"term\"><dt>无住社<span class=\"cat\">06</span></dt><dd>神职不常驻的小规模社之总称。台区域留存较多此类社，显示「著名社寺」并非信仰的全部。</dd></div>", "kn.c16.title": "玉绳区域③ 残余之社", "kn.c16.story": "诹访神社、稻荷神社、镰仓山神社、北野神社。走完留存于玉绳・手广・植木的最后一批社群，分区路线加完整版所能拾集的社寺，也就几乎到此为止了。", "kn.c16.terms": "<div class=\"term\"><dt>玉绳・手广・植木的社群<span class=\"cat\">07</span></dt><dd>皆为地方氏神性质的小社，关于各自由来的公开信息有限。</dd></div>"},
-ko: {"kn.lens.01": "01 신불습합", "kn.lens.01b": "01 신사와 절의 차이", "kn.lens.02": "02 건축을 보는 눈", "kn.lens.02b": "02 사찰 격식", "kn.lens.03": "03 누구를 모시고 있는가", "kn.lens.04": "04 창건 연대", "kn.lens.05": "05 권력과의 관계", "kn.lens.06": "06 민간 신앙", "kn.lens.07": "07 땅과의 관계", "kn.sectiondivider": "역사 기초 지식", "kn.fwref": "이 지식을 읽는 법（신사와 절의 차이, 건축을 보는 눈 등 7가지 관점）은 <a href=\"../history.html#framework\">코스별 역사 기초 지식</a> 상단에서 설명하고 있다.", "kn.pager.prev": "이전: ", "kn.pager.next": "다음: ", "kn.pager.list": "목록으로", "nav.courses": "코스 목록", "nav.basics": "기초 지식", "nav.history": "역사 지식", "nav.profile": "편저자", "drawer.courses": "코스 보기", "footer.reading": "읽을거리", "footer.about": "이 사이트에 대하여", "footer.credit.label": "편집・글쓴이：", "footer.credit.editor": "키리도시 아유무", "footer.credit.changelog": "수정 이력", "kn.c9.title": "시치리가하마 지역", "kn.c9.story": "가마쿠라야마 끝자락, 시치리가하마에는 근대 이후에 세워진 절이 두 곳 있다. 중세 가마쿠라와는 다른, 비교적 새로운 신앙의 풍경이다. 바다를 보며 걸을 수 있는 짧은 코스.", "kn.c9.terms": "<div class=\"term\"><dt>근대 이후의 건립<span class=\"cat\">04</span></dt><dd>두 절 모두 중세 가마쿠라와 직접적인 연관은 없는, 근대 이후에 세워진 절. 신앙의 자리가 지금도 계속 새롭게 생겨나고 있음을 보여준다.</dd></div>", "kn.c10.title": "이마이즈미・이와세 지역", "kn.c10.story": "오후나 북쪽, 이마이즈미・이와세에는 시가지에서 조금 떨어진 사찰・신사가 남아 있다. 다이초지는 호조 쓰나시게와 연이 있다고 하나 상세한 기록은 많지 않다. 관광지화되지 않은 가마쿠라의 변두리를 걷는 코스.", "kn.c10.terms": "<div class=\"term\"><dt>호조 쓰나시게<span class=\"cat\">05</span></dt><dd>다이초지와 연이 있다고 전해지나, 상세한 기록은 많지 않다.</dd></div>", "kn.c11.title": "다마나와 지역②", "kn.c11.story": "다마나와 호조씨의 성하마을이었던 이 일대에는, 가신이나 영민이 세웠다는 절이 여럿 남아 있다. 화려하지는 않지만, 류호지・오후나 관음사를 둘러본 뒤 조금 더 발을 뻗으면 다마나와라는 지역의 윤곽이 뚜렷해진다.", "kn.c11.terms": "<div class=\"term\"><dt>다마나와 호조씨의 가신・영민<span class=\"cat\">05</span></dt><dd>엔코지・규조지 등은 다마나와 성주의 가신이나 영민이 세웠다고 전해진다. 성주뿐 아니라 그 아래 사람들도 절을 세웠음을 알 수 있다.</dd></div>", "kn.c12.title": "오후나・오카모토 지역 미수록", "kn.c12.story": "오후나 관음 발치에는 다몬인・모쿠센지 등 지역에 뿌리내린 소토종 절들이 점재한다. 관음상의 크기에 시선을 빼앗긴 뒤, 그 주변의 조용한 사찰 마을에도 눈을 돌려보고 싶은 코스.", "kn.c12.terms": "<div class=\"term\"><dt>소토종<span class=\"cat\">01</span></dt><dd>다몬인・모쿠센지의 종파. 선종의 한 갈래로 도겐을 종조로 한다. 임제종이 중심이었던 가마쿠라에 다른 계통의 선이 들어온 예.</dd></div>", "kn.c13.title": "후카사와 지역① 데비로・데라분", "kn.c13.story": "세이렌지는 구카이 개산 전승을 가진 고찰, 다이케이지는 간토 짓사쓰（십찰） 중 하나로 꼽히는 격식 있는 절. 관광 지도에는 잘 실리지 않는 후카사와라는 지역에, 뜻밖에도 오래되고 격식 높은 절이 남아 있다.", "kn.c13.terms": "<div class=\"term\"><dt>구카이<span class=\"cat\">04</span></dt><dd>세이렌지의 개산 전승에 이름을 남긴 승려. 진언종 조사가 가마쿠라 외곽에도 흔적을 남겼다고 여겨지는 예.</dd></div><div class=\"term\"><dt>간토 짓사쓰<span class=\"cat\">02</span></dt><dd>다이케이지는 이 사격에 속한다. 관광 지도에 실리지 않는 지역에도 격식 있는 절이 남아 있음을 보여준다.</dd></div>", "kn.c14.title": "후카사와 지역② 도키와・후에타・가지와라", "kn.c14.story": "도키와・후에타・가지와라에 점재하는 절들과 미시마신사. 하나하나는 눈에 띄지 않지만, 후카사와라는 땅의 신앙이 얼마나 넓게 퍼져 있었는지를 면으로 파악하는 코스.", "kn.c14.terms": "<div class=\"term\"><dt>후카사와 지역의 사찰・신사<span class=\"cat\">07</span></dt><dd>모두 규모가 작고, 개별 유래에 관한 공개 정보는 제한적이다. 옛 시가지에서 떨어진 골짜기에, 지역의 우지가미・보리사로 남아 있다.</dd></div>", "kn.c15.title": "다이 지역 미수록 사당", "kn.c15.story": "신직이 상주하지 않는 작은 사당이, 다이라는 지역에 여럿 남아 있다. 관광으로는 보통 가지 않는 길이지만, 가마쿠라의 신앙이 '유명한 사찰・신사'만으로 이루어진 것이 아님을 실감할 수 있는 코스.", "kn.c15.terms": "<div class=\"term\"><dt>무주샤（무인 사당）<span class=\"cat\">06</span></dt><dd>신직이 상주하지 않는 소규모 사당의 총칭. 다이 지역에는 이런 종류의 사당이 많이 남아 있어, '유명한 사찰・신사'만이 신앙의 전부가 아님을 보여준다.</dd></div>", "kn.c16.title": "다마나와 지역③ 나머지 사당", "kn.c16.story": "스와신사, 이나리신사, 가마쿠라야마신사, 기타노신사. 다마나와・데비로・우에키에 남은 마지막 사당군을 걸으면, 지역별 코스＋컴플리트판으로 주울 수 있는 사찰・신사는 거의 여기서 다한다.", "kn.c16.terms": "<div class=\"term\"><dt>다마나와・데비로・우에키의 사당군<span class=\"cat\">07</span></dt><dd>모두 지역의 우지가미격 작은 사당으로, 개별 유래에 관한 공개 정보는 제한적이다.</dd></div>"},
-};
-
-const JA_ORIGINALS = {};
-document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
-
-function applyLanguage(lang){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
-    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
-  });
-  document.documentElement.lang = lang;
-  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
-  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
-}
-document.querySelectorAll("#langSwitch button").forEach(btn=>{
-  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
-});
-(function initLanguage(){
-  let saved = "ja";
-  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
-  if(saved !== "ja") applyLanguage(saved);
-})();
-
-</script>
 <script>
 /* ===================== PARALLAX HERO ===================== */
 (function knHeroParallax(){
@@ -508,5 +477,23 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
 </script>
 <button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
 
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
 </body>
 </html>

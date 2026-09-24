@@ -27,7 +27,7 @@
 <meta name="twitter:description" content="お探しのページは見つかりませんでした。トップページから歩き直してください。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="robots" content="index,follow">
-<meta name="author" content="切通歩">
+<meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -158,14 +158,7 @@
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
   .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
-
-  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
-  .lang-switch button{
-    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
-    font-size:12.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
-  }
-  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
-  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:12px;} }
+}
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
@@ -182,12 +175,6 @@
       <a href="history.html" data-i18n="nav.history">歴史知識</a>
       <a href="profile.html" data-i18n="nav.profile">編者</a>
     </nav>
-        <div class="lang-switch" id="langSwitch">
-      <button data-lang="ja" class="active">JA</button>
-      <button data-lang="en">EN</button>
-      <button data-lang="zh">中</button>
-      <button data-lang="ko">한</button>
-    </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
       <span></span><span></span><span></span>
     </button>
@@ -232,71 +219,9 @@
 </main>
 
 <footer class="site">
-  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
 </footer>
 
-<script>
-const TRANSLATIONS = {
-en: {
-  "nav.courses":"Courses","nav.basics":"Basics","nav.history":"History","nav.profile":"Editor",
-  "drawer.courses":"Browse Courses","footer.reading":"Further Reading","footer.about":"About This Site",
-  "footer.credit.label":"Editor: ","footer.credit.editor":"Kiridoshi Ayumu","footer.credit.changelog":"Changelog",
-  "p404.kicker":"The path breaks off, mid-pass",
-  "p404.h1":"No Path Beyond This Point",
-  "p404.body":"The page you're looking for may have moved, or the path simply hasn't been cut yet. Kamakura's mountain passes, too, took their current shape through collapse and rerouting. URLs change their course now and then.",
-  "p404.sign":"Start: Here (404)<br>End: Unknown<br>Duration: No further progress possible",
-  "p404.a1":"Back to the top, and start walking again",
-  "p404.a2":"Read the basics before you walk",
-  "p404.a3":"Read the course-by-course history",
-},
-zh: {
-  "nav.courses":"路线一览","nav.basics":"基础知识","nav.history":"历史知识","nav.profile":"编者",
-  "drawer.courses":"浏览路线","footer.reading":"延伸阅读","footer.about":"关于本站",
-  "footer.credit.label":"编辑・文责：","footer.credit.editor":"切通步","footer.credit.changelog":"更新记录",
-  "p404.kicker":"走到切通半路，道断了",
-  "p404.h1":"此处，无路可通",
-  "p404.body":"您要找的页面可能已经搬走，也可能是尚未开辟的道路。镰仓的切通古道，也是在崩塌与改道中变成如今的模样。URL偶尔也会改道。",
-  "p404.sign":"起点：这里（404）<br>终点：未知<br>所需时间：无法继续前进",
-  "p404.a1":"回到首页，重新出发",
-  "p404.a2":"阅读出发前的基础知识",
-  "p404.a3":"阅读各路线的历史知识",
-},
-ko: {
-  "nav.courses":"코스 목록","nav.basics":"기초 지식","nav.history":"역사 지식","nav.profile":"편저자",
-  "drawer.courses":"코스 보기","footer.reading":"읽을거리","footer.about":"이 사이트에 대하여",
-  "footer.credit.label":"편집・글쓴이：","footer.credit.editor":"키리도시 아유무","footer.credit.changelog":"수정 이력",
-  "p404.kicker":"기리도시(고갯길) 도중에 길이 끊겼습니다",
-  "p404.h1":"이 앞으로는 길이 없습니다",
-  "p404.body":"찾으시는 페이지는 이동했거나, 아직 뚫리지 않은 길인 것 같습니다. 가마쿠라의 기리도시(고갯길)도 무너지고 다시 나기를 거듭하며 지금의 모습이 되었습니다. URL도 가끔 길이 바뀝니다.",
-  "p404.sign":"출발점：여기（404）<br>해산점：불명<br>소요 시간：이 앞으로는 진행할 수 없습니다",
-  "p404.a1":"처음으로 돌아가 다시 걷기",
-  "p404.a2":"걷기 전에 기초 지식 읽기",
-  "p404.a3":"코스별 역사 지식 읽기",
-},
-};
-
-const JA_ORIGINALS = {};
-document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
-
-function applyLanguage(lang){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
-    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
-  });
-  document.documentElement.lang = lang;
-  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
-  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
-}
-document.querySelectorAll("#langSwitch button").forEach(btn=>{
-  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
-});
-(function initLanguage(){
-  let saved = "ja";
-  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
-  if(saved !== "ja") applyLanguage(saved);
-})();
-</script>
 <script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
 (function footprintTrail(){
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;

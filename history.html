@@ -27,7 +27,7 @@
 <meta name="twitter:description" content="神社仏閣を見る7つの視点と、全30コースそれぞれの歴史知識。祭神・本尊・人物・出来事を専用ページで解説。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="robots" content="index,follow">
-<meta name="author" content="切通歩">
+<meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -195,14 +195,7 @@
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
   .back-to-top:hover{background:#7A2E1E;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
-
-  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
-  .lang-switch button{
-    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
-    font-size:12.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
-  }
-  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
-  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:12px;} }
+}
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
@@ -219,6 +212,10 @@
   .editor-mark:hover{color:var(--vermilion);}
   .editor-mark .em-label{font-size:15px; opacity:.6;}
   .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .share-buttons{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
+  .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
+  .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -246,12 +243,6 @@
       <a href="history.html" data-i18n="nav.history">歴史知識</a>
       <a href="profile.html" data-i18n="nav.profile">編者</a>
     </nav>
-        <div class="lang-switch" id="langSwitch">
-      <button data-lang="ja" class="active">JA</button>
-      <button data-lang="en">EN</button>
-      <button data-lang="zh">中</button>
-      <button data-lang="ko">한</button>
-    </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
       <span></span><span></span><span></span>
     </button>
@@ -641,6 +632,15 @@
   </a>
 </article>
 
+<div class="share-buttons">
+  <span class="share-label">この記事をシェア</span>
+  <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
+  <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>
+  <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
+  <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
+</div>
+
+
 </main>
 
 <footer class="site">
@@ -650,40 +650,10 @@
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
 </section>
 
 
-<script>
-const TRANSLATIONS = {
-en: {"hist.footer.disclaimer": "The descriptions of figures, events, deities, and principal images here are based on general accounts from each shrine/temple's official site, the Kamakura City Tourist Association, Wikipedia, and similar sources. Matters that remain legend rather than verified history keep phrasing such as “said to” or “according to tradition.” Google Maps links are place-name searches, not official links.","common.lastupdated": "Last updated: September 24, 2026","hist.kicker": "From looking at buildings, to reading what happened there", "hist.h1": "Historical Background by Course", "hist.lead": "Visiting shrines and temples gets far more interesting once you hold these seven viewpoints. This page explains them first. After that, all 30 courses — the 14 Area Courses plus the 16 in the Complete Edition — each have their own dedicated page of background knowledge. One course, one knowledge page: just read the one for the course you're about to walk.", "hist.fw.intro": "A shrine or temple isn't just “built art” — it's a trace of what happened in that place. Carry these seven viewpoints with you, and the same building suddenly gains depth.", "hist.fw.item01": "<p class=\"fw-no mincho\">01</p><h3 class=\"mincho\">Shinto Shrines vs. Buddhist Temples</h3><p>Shinto is Japan's native faith, worshipping “kami” — mountains, the sea, ancestral spirits. Buddhism is a foreign religion that arrived from the continent in the 6th century, worshipping “buddhas.” For most of history the two were practiced together as one (shinbutsu-shugo). Before the Meiji government's forced separation of Shinto and Buddhism (1868), it was normal for a torii gate and a main hall to stand side by side in the same precinct.</p><p class=\"fw-example\">Before the Meiji era, Tsurugaoka Hachimangu was known as “Tsurugaoka Hachimangu-ji,” a combined shrine-temple complex managed by Buddhist monks. Only the shrine remains today, but its origins carry a Buddhist history as well.</p>", "hist.fw.item02": "<p class=\"fw-no mincho\">02</p><h3 class=\"mincho\">Reading the Architecture</h3><p>A Shinto shrine moves from the profane to the sacred: torii (a boundary marker) → sando (the approach path) → haiden (the worship hall) → honden (the innermost, most sacred hall where the kami resides, usually closed to the public). A Buddhist temple's basic layout is sanmon (the gate marking the boundary with the secular world) → kondo/hondo (the main hall enshrining the principal image) → to, a pagoda (originally built to house the Buddha's relics). Simply asking “what was this building for?” changes how you see it.</p><p class=\"fw-example\">A Zen temple like Kencho-ji follows a straight-line layout: somon, sanmon, butsuden, hatto, and hojo, one after another. This is a direct import of Song-dynasty Chinese Zen temple design, and reflects a different logic of layout from temples of other Japanese sects.</p>", "hist.fw.item03": "<p class=\"fw-no mincho\">03</p><h3 class=\"mincho\">Who Is Enshrined</h3><p>Learning the name and character of a kami or buddha tells you what people there hoped for. Hachiman is a god of martial fortune; Tenjin, a god of scholarship and thunder; Kannon, a bodhisattva who relieves suffering in this world; Jizo, a bodhisattva who protects children and travelers — each has a different role.</p><p class=\"fw-example\">Goryo Shrine in Gokurakuji enshrines Kamakura Gongoro Kagemasa, an actual warrior of the Heian period. This is an example of “hitogami” (human-deity) worship, enshrining a real person rather than a mythical god as a kami; Kamakura has several shrines of this type.</p>", "hist.fw.item04": "<p class=\"fw-no mincho\">04</p><h3 class=\"mincho\">Founding Era and History</h3><p>Whether a place was built in antiquity (before Yoritomo), the Kamakura period (1180–1333), the Nanboku-cho/Muromachi era, the Edo period, or the modern era changes the story it carries a great deal. Look at who built it here, and why.</p><p class=\"fw-example\">Sugimoto-dera (734) predates Yoritomo by nearly 450 years. It shows that this land had places of worship long before Kamakura became a “city of warriors.”</p>", "hist.fw.item05": "<p class=\"fw-no mincho\">05</p><h3 class=\"mincho\">Relationship to Power</h3><p>Shrines and temples are religious sites, but also stages for politics and culture. Emperors, warriors, the imperial court, the shogunate, and local warlords each used, supported, and sometimes destroyed these places for their own purposes.</p><p class=\"fw-example\">Tosho-ji ruins are the very site of the Kamakura Shogunate's fall (1333). Hokai-ji was built on the ruins of the fallen Hojo clan's mansion, to console their spirits. An example of a religious site carrying forward the memory of the losing side in politics.</p>", "hist.fw.item06": "<p class=\"fw-no mincho\">06</p><h3 class=\"mincho\">Folk Belief</h3><p>Beyond orthodox religious history, there's a layer of what ordinary people feared and wished for. Foxes (Inari), tengu, dragons, Jizo, koshin, dosojin (roadside deities) — these are less a systematized doctrine than the shape given to everyday fears and hopes.</p><p class=\"fw-example\">Clusters of shrines near the West Exit, like Sasuke Inari and Zeniarai Benten, barely appear in official history. They show that folk belief in seeking “gen” (spiritual efficacy) has built up in Kamakura as a layer separate from official shrine and temple records.</p>", "hist.fw.item07": "<p class=\"fw-no mincho\">07</p><h3 class=\"mincho\">Relationship to the Land</h3><p>Mountains, rivers, the sea, roads, springs. Asking “why is this built here?” turns an ordinary sightseeing spot three-dimensional. Kamakura is a cluster of small valleys called yato, a fortress city connected to the outside through mountain passes called kiridoshi.</p><p class=\"fw-example\">It's no coincidence that Sugimoto-dera, Hokoku-ji, and Jomyo-ji line the Kanazawa Kaido. This road was a trade route linking Kamakura to Mutsuura (today's Kanazawa Ward, Yokohama), and the temples were placed along that flow of traffic.</p>", "hist.fw.closing": "And ultimately — “How did someone a hundred years ago see this place?”<br>Carry just that one question, and almost any shrine or temple becomes interesting.", "nav.courses": "Courses", "nav.basics": "Basics", "nav.history": "History", "nav.profile": "Editor", "drawer.courses": "Browse Courses", "footer.reading": "Further Reading", "footer.about": "About This Site", "footer.credit.label": "Editor: ", "footer.credit.editor": "Kiridoshi Ayumu", "footer.credit.changelog": "Changelog"},
-zh: {"hist.footer.disclaimer": "本页所载人物・事件・祭神・本尊的说明，均依据各寺社官方网站、镰仓市观光协会、维基百科等的一般性记述。仍属传说、未经史实证实之事项，保留「相传」「据说」等措辞。Google Maps链接为地名检索结果，并非官方链接。","common.lastupdated": "最后更新：2026年9月24日","hist.kicker": "从看建筑，到读懂这里发生过什么", "hist.h1": "各路线的历史基础知识", "hist.lead": "游览神社佛阁，只要掌握这7个视角，就会一下子变得有趣起来。本页首先说明这7个视角。之后，分区路线14条＋完整版16条，共计30条路线，每条都配有独立的一页知识介绍。一条路线对应一页知识，出发前只需阅读该路线对应的那一页即可。", "hist.fw.intro": "神社佛阁并非「建成的美术品」，而是「这个地方发生过什么的痕迹」。带着以下7点去走，同一栋建筑会突然变得立体起来。", "hist.fw.item01": "<p class=\"fw-no mincho\">01</p><h3 class=\"mincho\">神社与寺院的区别</h3><p>神道是日本自古以来的信仰，供奉山、海、祖灵等「神」。佛教是6世纪从大陆传入的外来宗教，供奉「佛」。不过两者长期以来是一体信仰的（神佛习合）。在明治政府强制推行神佛分离令（1868年）之前，同一境内并列鸟居与佛堂是常态。</p><p class=\"fw-example\">鹤冈八幡宫在明治以前称为「鹤冈八幡宫寺」，是神佛习合的设施，由僧侣管理。如今只留下神社，但其境内的由来仍刻有佛教的历史。</p>", "hist.fw.item02": "<p class=\"fw-no mincho\">02</p><h3 class=\"mincho\">看建筑的眼光</h3><p>神社的结构是由俗入圣：鸟居（结界）→参道（通往神域之路）→拜殿（参拜之处）→本殿（神明镇座的最神圣之处，通常不对外开放）。寺院的基本构成则是：山门（俗世与圣域的分界）→金堂・本堂（供奉本尊的中心建筑）→塔（本用于安置佛的遗骨即舍利）。只要想一想「这栋建筑是为了什么而存在」，看法就会不同。</p><p class=\"fw-example\">像建长寺这样的禅宗寺院，采用总门・三门・佛殿・法堂・方丈依次排成一线的「伽蓝配置」。这是原样引进中国宋代禅宗样式的结果，与日本其他宗派寺院的布局思路不同。</p>", "hist.fw.item03": "<p class=\"fw-no mincho\">03</p><h3 class=\"mincho\">供奉的是谁</h3><p>了解神明・佛的名字与性格，就能明白当地人曾祈求什么。八幡神是武运之神，天神是学问与雷电之神，观音是拯救现世苦难的菩萨，地藏是守护儿童与旅人的菩萨——各自角色不同。</p><p class=\"fw-example\">御灵神社（坂之下）供奉的镰仓权五郎景政，是平安时代真实存在的武将。这是将真实人物而非神话之神奉为神明的「人神信仰」实例，镰仓有多座这类神社。</p>", "hist.fw.item04": "<p class=\"fw-no mincho\">04</p><h3 class=\"mincho\">创建年代与历史</h3><p>建于古代（赖朝之前）、镰仓时代（1180〜1333年）、南北朝・室町、江户、还是近代・现代，这个地方所承载的故事会大不相同。要看「是谁、为何、在此建造」。</p><p class=\"fw-example\">杉本寺（734年）比赖朝还要早近450年。这说明早在镰仓成为「武士之都」以前，这片土地上就已经有祈祷之所。</p>", "hist.fw.item05": "<p class=\"fw-no mincho\">05</p><h3 class=\"mincho\">与权力的关系</h3><p>神社佛阁既是宗教设施，同时也是政治・文化的舞台。天皇、武士、朝廷、幕府、地方豪族，各自立场不同，都曾利用、扶持、有时也摧毁过这些地方。</p><p class=\"fw-example\">东胜寺遗址正是镰仓幕府灭亡（1333年）的现场。宝戒寺建在灭亡的北条氏宅邸旧址之上，用以供养其菩提。这是宗教设施承载政治失败者记忆的一例。</p>", "hist.fw.item06": "<p class=\"fw-no mincho\">06</p><h3 class=\"mincho\">民间信仰</h3><p>除了正统的宗教史，还有一层是普通百姓恐惧什么、祈愿什么。狐（稻荷）、天狗、龙、地藏、庚申、道祖神等，与其说是体系化的教义，不如说是日常生活中恐惧与愿望所化成的形象。</p><p class=\"fw-example\">佐助稻荷・钱洗弁财天等西口一带的社群，几乎不见于正史。这说明追求「灵验」的民间信仰，作为有别于社寺正式记录的另一层，在镰仓不断积累。</p>", "hist.fw.item07": "<p class=\"fw-no mincho\">07</p><h3 class=\"mincho\">与土地的关系</h3><p>山、河、海、街道、涌泉。思考「为何建在这里」，会让单纯的观光景点变得立体起来。镰仓是由「谷户」这种小山谷聚合而成，并通过「切通」与外界相连的要塞之城。</p><p class=\"fw-example\">杉本寺・报国寺・净妙寺沿金泽街道排列并非偶然。这条路是连接镰仓与六浦（今横滨市金泽区）的物流通道，社寺也因此被置于这条流通之中。</p>", "hist.fw.closing": "归根结底——「一百年前的人，是怎么看待这个地方的呢？」<br>只要带着这一个问题去走，大多数神社佛阁都会变得有趣起来。", "nav.courses": "路线一览", "nav.basics": "基础知识", "nav.history": "历史知识", "nav.profile": "编者", "drawer.courses": "浏览路线", "footer.reading": "延伸阅读", "footer.about": "关于本站", "footer.credit.label": "编辑・文责：", "footer.credit.editor": "切通步", "footer.credit.changelog": "更新记录"},
-ko: {"hist.footer.disclaimer": "여기 실린 인물・사건・제신・본존에 대한 설명은 각 사찰・신사 공식 사이트, 가마쿠라시 관광협회, 위키피디아 등의 일반적인 기술에 근거한다. 전승의 영역을 벗어나지 않는 사항에는 '전해진다', '라고 한다' 등의 표현을 남겼다. 구글 지도 링크는 지명 검색에 의한 것으로, 공식 링크가 아니다.","common.lastupdated": "최종 업데이트: 2026년 9월 24일","hist.kicker": "건물을 보는 것에서, 무슨 일이 있었는지 읽는 것으로", "hist.h1": "코스별 역사 기초 지식", "hist.lead": "신사・사찰 순례는 7가지 관점을 가지면 단숨에 재미있어진다. 먼저 이 페이지에서 그 관점을 설명한다. 그 다음, 지역별 14개 코스＋컴플리트판 16개 코스, 총 30개 코스 각각에 대해 전용 페이지 하나씩 지식을 정리해 두었다. 코스 하나에 지식 페이지도 하나, 라는 대응 관계이므로 걷기 전에 해당 코스 분량만 읽으면 된다.", "hist.fw.intro": "신사・사찰은 '지어진 미술품'이 아니라 '그 장소에서 일어난 일의 흔적'이다. 다음 7가지를 가지고 걸으면, 같은 건물이 갑자기 입체적으로 보이기 시작한다.", "hist.fw.item01": "<p class=\"fw-no mincho\">01</p><h3 class=\"mincho\">신사와 절의 차이</h3><p>신도는 일본 고유의 신앙으로, 산・바다・조상의 영혼 등 '신'을 모신다. 불교는 6세기에 대륙에서 전래된 외래 종교로, '부처'를 모신다. 다만 둘은 오랫동안 하나로 믿어져 왔다（신불습합）. 메이지 정부의 신불분리령（1868년）으로 강제로 나뉘기 전에는 같은 경내에 도리이와 본당이 나란히 있는 것이 보통이었다.</p><p class=\"fw-example\">쓰루가오카하치만구는 메이지 이전에는 '쓰루가오카하치만구지'라는 신불습합 시설로, 승려가 관리했다. 지금은 신사만 남아 있지만, 경내의 유래에는 불교의 역사도 새겨져 있다.</p>", "hist.fw.item02": "<p class=\"fw-no mincho\">02</p><h3 class=\"mincho\">건축을 보는 눈</h3><p>신사는 도리이（결계）→산도（신역으로 가는 길）→하이덴（참배하는 곳）→혼덴（신이 좌정한 가장 신성한 곳, 보통 비공개）의 순서로, 속에서 성으로 나아가는 구조를 가진다. 절은 산몬（속세와 성역의 경계）→금당・본당（본존을 모신 중심 건물）→탑（본래 부처의 사리를 모신 건물）이라는 구성이 기본이다. '이 건물이 무엇을 위해 있는가'를 생각하는 것만으로 보는 눈이 달라진다.</p><p class=\"fw-example\">겐초지 같은 선종 사찰은 총문・산문・불전・법당・방장이 일직선으로 늘어선 '가람배치'를 취한다. 이는 중국 송대 선종 양식을 그대로 도입한 결과로, 일본의 다른 종파 절과는 배치의 사고방식이 다르다.</p>", "hist.fw.item03": "<p class=\"fw-no mincho\">03</p><h3 class=\"mincho\">누구를 모시고 있는가</h3><p>신・부처의 이름과 성격을 알면, 그곳에서 사람들이 무엇을 빌어왔는지 알 수 있다. 하치만신은 무운의 신, 텐진은 학문과 번개의 신, 관음은 현세의 고통을 구제하는 보살, 지장은 아이와 여행자를 지키는 보살, 이런 식으로 저마다 역할이 다르다.</p><p class=\"fw-example\">고료 신사（사카노시타）가 모시는 가마쿠라 곤고로 가게마사는 실존했던 헤이안 시대 무장이다. 신화 속 신이 아니라 실존 인물을 신으로 모시는 '히토가미（인신） 신앙'의 예로, 가마쿠라에는 이런 유형의 신사가 여럿 있다.</p>", "hist.fw.item04": "<p class=\"fw-no mincho\">04</p><h3 class=\"mincho\">창건 연대와 역사</h3><p>고대（요리토모 이전）, 가마쿠라 시대（1180〜1333년）, 남북조・무로마치, 에도, 근대・현대 중 어디에서 지어졌는가에 따라 그 장소가 짊어진 이야기는 크게 달라진다. '누가, 왜, 여기에 지었는가'를 본다.</p><p class=\"fw-example\">스기모토데라（734년）는 요리토모보다 450년 가까이 오래되었다. 가마쿠라가 '무사의 도읍'이 되기 전부터 이 땅에 기도의 자리가 있었음을 보여준다.</p>", "hist.fw.item05": "<p class=\"fw-no mincho\">05</p><h3 class=\"mincho\">권력과의 관계</h3><p>신사・사찰은 종교 시설인 동시에 정치・문화의 무대이기도 하다. 천황, 무사, 조정, 막부, 지역 호족이 각자의 입장에서 이 장소들을 이용하고, 지지하고, 때로는 파괴했다.</p><p class=\"fw-example\">도쇼지 터는 가마쿠라 막부 멸망（1333년）의 현장 그 자체다. 호카이지는 멸망한 호조씨의 저택 터에, 그 명복을 빌기 위해 세워졌다. 종교 시설이 정치적 패자의 기억을 이어받는 예다.</p>", "hist.fw.item06": "<p class=\"fw-no mincho\">06</p><h3 class=\"mincho\">민간 신앙</h3><p>정통 종교사뿐 아니라, 서민들이 무엇을 두려워하고 무엇을 빌었는가 하는 층이 있다. 여우（이나리）, 텐구, 용, 지장, 고신, 도소진 등은 체계화된 교의라기보다, 생활 속 두려움과 소망이 형태를 갖춘 것이다.</p><p class=\"fw-example\">사스케이나리・제니아라이벤텐 같은 서쪽 출구 일대의 사당들은 정사에는 거의 등장하지 않는다. '영험'을 구하는 민간 신앙이, 사찰・신사의 공식 기록과는 다른 층으로 가마쿠라에 쌓여 왔음을 보여준다.</p>", "hist.fw.item07": "<p class=\"fw-no mincho\">07</p><h3 class=\"mincho\">땅과의 관계</h3><p>산, 강, 바다, 가도, 용수. '왜 여기에 세워졌는가'를 생각하면, 단순한 관광지가 입체적으로 보이기 시작한다. 가마쿠라는 야토라는 작은 골짜기들의 집합체이며, 기리도시로 외부와 이어진 요새 도시였다.</p><p class=\"fw-example\">스기모토데라・호코쿠지・조묘지가 가나자와 가이도를 따라 늘어선 것은 우연이 아니다. 이 길은 가마쿠라와 무쓰우라（지금의 요코하마시 가나자와구）를 잇는 물류로였고, 사찰들도 그 흐름 속에 놓였기 때문이다.</p>", "hist.fw.closing": "그리고 궁극적으로는 — '이 장소를, 100년 전 사람은 어떻게 보고 있었을까?'<br>이 질문 하나만 가지고 걸어도, 대개의 신사・사찰은 흥미로워진다.", "nav.courses": "코스 목록", "nav.basics": "기초 지식", "nav.history": "역사 지식", "nav.profile": "편저자", "drawer.courses": "코스 보기", "footer.reading": "읽을거리", "footer.about": "이 사이트에 대하여", "footer.credit.label": "편집・글쓴이：", "footer.credit.editor": "키리도시 아유무", "footer.credit.changelog": "수정 이력"},
-};
-
-const JA_ORIGINALS = {};
-document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
-
-function applyLanguage(lang){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
-    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
-  });
-  document.documentElement.lang = lang;
-  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
-  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
-}
-document.querySelectorAll("#langSwitch button").forEach(btn=>{
-  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
-});
-(function initLanguage(){
-  let saved = "ja";
-  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
-  if(saved !== "ja") applyLanguage(saved);
-})();
-
-</script>
 <script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
 (function footprintTrail(){
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -761,5 +731,23 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
 </script>
 <button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
 
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
 </body>
 </html>

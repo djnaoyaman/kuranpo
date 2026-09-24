@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>鎌・くらんぽ ― 鎌倉散歩、まるごと｜出発点から解散点まで、全30コース</title>
-<meta name="description" content="鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅。エリア別14コース＋コンプリート版16コース、拝観料・徒歩距離・歴史知識つき。編者：切通歩。">
+<meta name="description" content="鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅。エリア別14コース＋コンプリート版16コース、拝観料・徒歩距離・歴史知識つき。編者：クランポック。">
 <link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="鎌・くらんぽ">
@@ -28,7 +28,7 @@
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="theme-color" content="#A8402E">
 <meta name="robots" content="index,follow">
-<meta name="author" content="切通歩">
+<meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -74,13 +74,6 @@
   .topbar-nav{display:none; gap:22px;}
   .topbar-nav a{font-size:15px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
   .topbar-nav a:hover{color:var(--vermilion);}
-  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
-  .lang-switch button{
-    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
-    font-size:12.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
-  }
-  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
-  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:12px;} }
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
@@ -488,7 +481,7 @@
  ],
  "author": {
   "@type": "Person",
-  "name": "切通歩",
+  "name": "クランポック",
   "alternateName": [
    "宮崎直哉",
    "一見坊",
@@ -525,12 +518,6 @@
       <a href="history.html" data-i18n="nav.history">歴史知識</a>
       <a href="profile.html" data-i18n="nav.profile">編者</a>
     </nav>
-    <div class="lang-switch" id="langSwitch">
-      <button data-lang="ja" class="active">JA</button>
-      <button data-lang="en">EN</button>
-      <button data-lang="zh">中</button>
-      <button data-lang="ko">한</button>
-    </div>
     <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
       <span></span><span></span><span></span>
     </button>
@@ -757,7 +744,7 @@
     </div>
     <div class="fl-col">
       <p class="fl-head mincho" data-i18n="footer.about">このサイトについて</p>
-      <a href="profile.html" data-i18n="footer.link.profile">編者プロフィール（切通歩）</a>
+      <a href="profile.html" data-i18n="footer.link.profile">編者プロフィール（クランポック）</a>
       <a href="changelog.html" data-i18n="footer.link.changelog">修正履歴・バージョン管理</a>
       <a href="https://djnaoyaman.github.io/youkai/index.html" target="_blank" rel="noopener">一見坊の日本妖怪学体系 ↗</a>
       <p class="fl-tagline mincho" data-i18n="footer.tagline">歩く。数える。鎌倉を、確かめる。</p>
@@ -786,7 +773,7 @@
 </footer>
 
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name"><ruby>切通歩<rt>きりどおし・あゆむ</rt></ruby></span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
   <p class="editor-mark-sub">最終更新：2026年9月24日</p>
 </section>
 
@@ -1573,393 +1560,6 @@ function toggleLabel(state){
 document.getElementById("geo-list").innerHTML = GEO.map(renderGeoCard).join("");
 document.getElementById("kids-list").innerHTML = KIDS.map(renderGeoCard).join("");
 
-/* ===================== I18N（EN / 中文 / 한국어） ===================== */
-const TRANSLATIONS = {
-en: {"kn.g1.title": "The Deep Roots of Ancient Faith","kn.g2.title": "Yoritomo Enters Kamakura","kn.g3.title": "Yoritomo's Memorial and Kamakura's Founding Years","kn.g4.title": "The Hojo Clan and the Arrival of Zen","kn.g5.title": "The Mongol Invasions and Temples for the War Dead","kn.g6.title": "Ritsu Buddhism and a Legacy of Social Work","kn.g7.title": "Nichiren Faces Persecution in Kamakura","kn.g8.title": "The Fall of the Shogunate and the Tragedy of the Northern & Southern Courts","kn.g9.title": "The Ashikaga Clan and the Kanazawa Kaido","kn.g10.title": "Convent Temples and the Women of Kamakura","kn.g11.title": "The Edo Period: Kamakura Becomes a Scenic Attraction","kn.g12.title": "The Tamanawa Hojo and a Link to the Showa Era","kn.g13.title": "Nitta Yoshisada and the Inamuragasaki Legend","kn.g14.title": "Koshigoe and the Eight Rotating Temples of Ryuko-ji","kn.c1.title": "Sugenobuyama / Zeniarai Benten Area","kn.c2.title": "Kita-Kamakura II: Uncatalogued Sites Near Engaku-ji & Kencho-ji","kn.c3.title": "Ogigayatsu II: Uncatalogued Temples","kn.c4.title": "Omachi II: Uncatalogued Shrines & Temples","kn.c5.title": "Zaimokuza II: Uncatalogued Temples","kn.c6.title": "Nishimikado & Nikaido II: Uncatalogued Shrines & Temples","kn.c7.title": "Hase II: Uncatalogued Shrines & Temples","kn.c8.title": "Koshigoe II: Uncatalogued Shrines & Temples","kn.c9.title": "Shichirigahama Area","kn.c10.title": "Imaizumi & Iwase Area","kn.c11.title": "Tamanawa Area II","kn.c12.title": "Ofuna & Okamoto Area, Uncatalogued","kn.c13.title": "Fukasawa Area I: Tebiro & Terabun","kn.c14.title": "Fukasawa Area II: Tokiwa, Fueta & Kajiwara","kn.c15.title": "Dai Area, Uncatalogued Shrines","kn.c16.title": "Tamanawa Area III: The Remaining Shrines","theme.g1": "A place of prayer that existed here even before Kamakura became a city of warriors.","theme.g2": "How Minamoto no Yoritomo chose Kamakura as the seat of warrior rule and built its spiritual center.","theme.g3": "Kamakura's first great temples, built to console the departed after Yoritomo's death. Mostly historic sites today.","theme.g4": "The turning point when regent Hojo Tokiyori invited Rankei Doryu and planted full-fledged Zen in Kamakura.","theme.g5": "The temple Hojo Tokimune opened, inviting Mugaku Sogen, to console the war dead of the Mongol invasions.","theme.g6": "The base from which Ninsho spread Ritsu Buddhism alongside relief for the poor and medical care.","theme.g7": "Omachi and Zaimokuza, where the memory of Nichiren's preaching and the persecution against it still gathers.","theme.g8": "The suicide of Hojo Takatoki and his clan in Nitta Yoshisada's assault on Kamakura, and the purge of Emperor Go-Daigo's inner circle.","theme.g9": "The old Mutsuura road lined with temples tied to the Ashikaga clan. Jomyo-ji holds fifth rank among the Five Mountains of Kamakura.","theme.g10": "Temples opened and supported by Kamakura's women, including Masako and Kakusan-ni.","theme.g11": "The era when, after declining as a medieval city, Kamakura was rediscovered through the Edo-period tourism and pilgrimage boom.","theme.g12": "The memory of the Tamanawa Hojo, who ruled the Kamakura outskirts in the Sengoku period, and the modernization of the suburbs.","theme.g13": "The legendary site where Nitta Yoshisada is said to have made the tide recede at Inamuragasaki and invaded Kamakura.","theme.g14": "The cluster of Nichiren-sect temples in Koshigoe, next to Enoshima, where the lineage of Nichiren's persecution reaches too.","theme.c1": "A cluster of shrines in the hills behind Kamakura Station's West Exit, carrying the legend of Yoritomo's rise.","theme.c2": "Little-known shrines and temples scattered through the valleys of Kita-Kamakura.","theme.c3": "Small, modest temples remaining around Eisho-ji and Kaizo-ji.","theme.c4": "Small Nichiren-sect temples and a shrine for warding off misfortune, remaining in Omachi.","theme.c5": "A cluster of small Jishu- and Jodo-sect temples scattered through the back streets of Zaimokuza.","theme.c6": "Kumano worship tied to Yoritomo, and small shrines remaining around Kamakura-gu.","theme.c7": "A temple tied to Nichiro, and an old shrine, remaining behind the Great Buddha and Hase-dera.","theme.c8": "The shrines and temples of Koshigoe shore, beyond the Eight Rotating Temples of Ryuko-ji.","theme.c9": "Modern-era temples standing at the edge of Kamakurayama.","theme.c10": "Shrines and temples remaining in Imaizumi and Iwase, north of Ofuna.","theme.c11": "Temples remaining in the former castle town of the Tamanawa Hojo.","theme.c12": "Shrines and temples remaining around Ofuna Kannon.","theme.c13": "An old temple carrying a tradition of founding by Kukai, and one of the Ten Temples of the Kanto.","theme.c14": "Temples scattered across the hills of Fukasawa, and Mishima Shrine.","theme.c15": "A cluster of small, unattended shrines remaining in Fukasawa and the Dai area.","theme.c16": "The last cluster of shrines remaining in Tamanawa, Tebiro, and Ueki.","鎌倉駅東口": "Kamakura Station East Exit","鎌倉駅西口": "Kamakura Station West Exit","鎌倉駅南口": "Kamakura Station South Exit","北鎌倉駅": "Kita-Kamakura Station","長谷駅": "Hase Station","極楽寺駅": "Gokurakuji Station","稲村ヶ崎駅": "Inamuragasaki Station","七里ヶ浜駅": "Shichirigahama Station","腰越駅": "Koshigoe Station","江ノ島駅": "Enoshima Station","和田塚駅": "Wadazuka Station","大船駅": "Ofuna Station","湘南深沢駅": "Shonan-Fukasawa Station","浄智寺前": "In front of Jochi-ji","建長寺バス停": "Kencho-ji Bus Stop","杉本寺バス停": "Sugimoto-dera Bus Stop","材木座バス停": "Zaimokuza Bus Stop","浄明寺バス停": "Jomyo-ji Bus Stop","瑞泉寺バス停": "Zuisen-ji Bus Stop","鎌倉宮バス停": "Kamakura-gu Bus Stop","十二所バス停": "Junisho Bus Stop","label.walkdist": "Walking distance between stops: approx. ","religion.leg0.group": "Rinzai School, Engaku-ji Lineage","religion.leg0.title": "Engaku-ji, Tokei-ji & Jochi-ji","religion.leg0.story": "Engaku-ji is the temple Hojo Tokimune built to console the war dead of the Mongol invasions. Tokei-ji later became an “enkiri-dera” saving women, and Jochi-ji became the family temple of a collateral branch of the Hojo. Even within the same sect, each temple was born under different circumstances.","religion.leg1.group": "Rinzai School, Kencho-ji Lineage (Kita-Kamakura)","religion.leg1.title": "Meigetsu-in, Kencho-ji & Enno-ji","religion.leg1.story": "Meigetsu-in, Kencho-ji, and Enno-ji all belong to the current in which Zen took firm root during Hojo Tokiyori's era. Walk knowing that behind Meigetsu-in, famous for its hydrangeas, lies the heavier story of a ruler's own renunciation of the world.","religion.leg2.group": "Rinzai School, Kencho-ji Lineage (Kanazawa Kaido)","religion.leg2.title": "Jomyo-ji & Hokoku-ji","religion.leg2.story": "Jomyo-ji and Hokoku-ji are temples built for the Ashikaga, the leading family of the next era. The quiet of Hokoku-ji, known for its bamboo grove, is an extension of this sect's long history of ties to the warrior class.","religion.leg3.group": "Nichiren School (Omachi & Zaimokuza)","religion.leg3.title": "Myohon-ji to Myocho-ji: 8 Temples","religion.leg3.story": "Omachi and Zaimokuza, where the memory of persecution against Nichiren gathers, hold an especially dense cluster of Nichiren-sect temples. Visit them one by one, and you'll see just how deeply faith took root in this land.","religion.leg4.group": "Nichiren School (Koshigoe)","religion.leg4.title": "The Eight Rotating Temples of Ryuko-ji","religion.leg4.story": "Centered on Ryuko-ji, site of the Tatsunokuchi Persecution, eight temples that share rotating duty remain in Koshigoe. A side of Koshigoe as a community of faith, quite apart from its face as an Enoshima tourist spot.","religion.leg5.group": "Jodo School (Zaimokuza)","religion.leg5.title": "Komyo-ji, Kuhon-ji & Anyo-in","religion.leg5.story": "Komyo-ji, Kuhon-ji, and Anyo-in. It's striking that the Hojo and Nitta Yoshisada — people on opposing sides in conflict — each built Jodo-sect temples of their own.","religion.leg6.group": "Jodo School (West Exit)","religion.leg6.title": "Eisho-ji","religion.leg6.story": "Eisho-ji, founded by a princess of the Mito Tokugawa family, is Kamakura's only convent with the status of a nun's imperial residence. A single temple that shows there was still meaning in holding a temple in Kamakura, even in the Tokugawa era.","religion.leg7.group": "Ritsu & Shingon Lineage (Gokuraku-ji)","religion.leg7.title": "Gokuraku-ji, Jojuin & Hoshii-ji","religion.leg7.story": "Around Gokuraku-ji, Ninsho's Ritsu school and the long-established Shingon school overlap. The outline remains of an era when prayer and helping others hadn't yet been separated.","religion.leg8.group": "Shingon School, Sennyu-ji Lineage (West Exit)","religion.leg8.title": "Jokomyo-ji & Kaizo-ji","religion.leg8.story": "Jokomyo-ji was founded by Hojo Nagatoki. Kaizo-ji is an old temple restored in 1394 (Oei 1) by Uesugi Ujisada. In the same Ogigayatsu, temples founded by different people in different eras stand side by side.","religion.leg9.group": "Tendai School & Independent Temples","religion.leg9.title": "Sugimoto-dera, Kotoku-in & Hase-dera","religion.leg9.story": "Sugimoto-dera is Kamakura's oldest temple; Kotoku-in and Hase-dera stand as independent (tanritsu) temples. Even under the same label of “independent,” the Great Buddha and the Hase Kannon are worshipped in entirely different ways.","religion.leg10.group": "Shinto (Tsurugaoka Hachimangu Lineage)","religion.leg10.title": "Tsurugaoka Hachimangu, Egara Tenjin & Kamakura-gu","religion.leg10.story": "Tsurugaoka Hachimangu, Egara Tenjin Shrine, Kamakura-gu. The Minamoto clan deity, a god of scholarship, and a prince who met a violent death — walk three shrines in a row whose reasons for being enshrined couldn't be more different.","religion.leg11.group": "Shinto (Hase & Koshigoe Lineage)","religion.leg11.title": "Amanawa Shinmei Shrine & Goryo Shrine","religion.leg11.story": "Amanawa Shinmei Shrine carries a tradition as Kamakura's oldest shrine, and Goryo Shrine has continued since the Heian period. A course for feeling just how old the faith of the Hase area runs.","person.leg0.group": "Minamoto no Yoritomo","person.leg0.title": "Tsurugaoka Hachimangu to Sugimoto-dera","person.leg0.story": "From Tsurugaoka Hachimangu to the Shochoju-in ruins, the Hokke-do ruins (Yoritomo's grave), and on to the restored Sugimoto-dera. Trace the footsteps of the man who built the city of Kamakura itself, in the order of what he built and where he was mourned.","person.leg1.group": "Hojo Masako & Hojo Ujiyasu","person.leg1.title": "Anyo-in & Kyoon-ji","person.leg1.story": "Anyo-in, founded by Masako, and Kyoon-ji, built by Ujiyasu of the Later Hojo. Two people of different eras and different standing left their traces in the same Zaimokuza.","person.leg2.group": "Hojo Masako (continued)","person.leg2.title": "Jufuku-ji & Kaizo-ji","person.leg2.story": "Jufuku-ji is the temple Masako founded, inviting the monk Myoan Eisai. A short course exploring another side of Masako, together with Kaizo-ji.","person.leg3.group": "Hojo Tokiyori & Tokimune","person.leg3.title": "Meigetsu-in, Kencho-ji, Engaku-ji & Tokei-ji","person.leg3.story": "Meigetsu-in and Kencho-ji are Tokiyori's; Engaku-ji is Tokimune's; and Tokei-ji was founded by Tokimune's wife, Kakusan-ni, who was also mother of the later regent Sadatoki. You can trace several generations of the Hojo clan's devotion to Zen in a single day, all within Kita-Kamakura.","person.leg4.group": "Hojo Yasutoki (Ofuna)","person.leg4.title": "Joraku-ji","person.leg4.story": "Joraku-ji is the temple Hojo Yasutoki built to pray for his wife's mother's soul. A private place of prayer for the regent who established Kamakura's legal system.","person.leg5.group": "Hojo Yasutoki & Jojuin Lineage","person.leg5.title": "Jojuin & Kotoku-in","person.leg5.story": "Jojuin was founded by Yasutoki. The Great Buddha (Kotoku-in) is said to have been vowed as a wooden statue in 1238, through fundraising led by the monk Joko — falling within Yasutoki's own term as regent. It was recast in bronze in 1252, ten years after Yasutoki's death. Two prayers from different eras, remaining in the same area.","person.leg6.group": "Hojo Tsunashige (Tamanawa)","person.leg6.title": "Ryuho-ji & Ofuna Kannon-ji","person.leg6.story": "Hojo Tsunashige, who ruled this area as lord of Tamanawa Castle in the Sengoku period. Connect Ryuho-ji and Ofuna Kannon-ji, and another “Hojo” entirely separate from the Kamakura Hojo comes into view.","person.leg7.group": "Ninsho","person.leg7.title": "Gokuraku-ji","person.leg7.story": "A course focused on a single monk, Ninsho, visiting only Gokuraku-ji. For anyone who wants to feel the trace of work that carried both prayer and social work at once.","person.leg8.group": "Nichiren (Omachi & Zaimokuza)","person.leg8.title": "Myohon-ji, Ankokuron-ji, Chosho-ji & Hongaku-ji","person.leg8.story": "Myohon-ji, Ankokuron-ji, Chosho-ji, Hongaku-ji. Trace just how much persecution, and just how much support, one monk named Nichiren received in this land at the same time.","person.leg9.group": "Nichiren (Koshigoe, Site of Persecution)","person.leg9.title": "Ryuko-ji & the Eight Rotating Temples","person.leg9.story": "The site of the Tatsunokuchi Persecution, which drove Nichiren to the brink of execution, and the eight rotating temples that carried on afterward. The memory of this man's harshest moment remains here.","person.leg10.group": "Muso Soseki","person.leg10.title": "Zuisen-ji","person.leg10.story": "A course for visiting only Zuisen-ji, to see Muso Soseki's garden. A moment to touch the individual work of a Zen monk who kept some distance from politics.","person.leg11.group": "Hojo Sadatoki","person.leg11.title": "Kakuon-ji","person.leg11.story": "Visit only Kakuon-ji. This temple, which still bears an inscription from Ashikaga Takauji, is a surprisingly little-known trace left by a single regent, Hojo Sadatoki.","person.leg12.group": "The Ashikaga Clan (Sadauji, Ietoki & Yoritsune)","person.leg12.title": "Jomyo-ji, Hokoku-ji & Myoo-in","person.leg12.story": "Jomyo-ji, Hokoku-ji, Myoo-in. Temples built by the Ashikaga — the clan that would later found the Muromachi Shogunate — back when they were still just one vassal family of the Kamakura period.","person.leg13.group": "Nitta Yoshisada & Hojo Takatoki","person.leg13.title": "Tosho-ji Ruins & Hokai-ji","person.leg13.story": "The Tosho-ji ruins and Hokai-ji. The memory of those who destroyed the Kamakura Shogunate, and those who were destroyed, remain side by side in the same Komachi valley.","person.leg14.group": "Nitta Yoshisada (The Inamuragasaki Legend)","person.leg14.title": "Inamuragasaki Park","person.leg14.story": "A course visiting only Inamuragasaki Park, the legendary site of Nitta Yoshisada. The stage for the story recorded in the Taiheiki, in which he threw his sword into the sea and made the tide recede.","timeline.leg0.group": "Antiquity","timeline.leg0.title": "Sugimoto-dera & Yui-Wakamiya","timeline.leg0.story": "Sugimoto-dera and Yui-Wakamiya. Visit what stood here long before Kamakura became a city of warriors.","timeline.leg1.group": "The Yoritomo Era (1180–99)","timeline.leg1.title": "Tsurugaoka Hachimangu, Shochoju-in Ruins, Okura Shogunate Ruins & Hokke-do Ruins","timeline.leg1.story": "Tsurugaoka Hachimangu, the Shochoju-in ruins, the Okura Shogunate ruins, the Hokke-do ruins. Trace the skeleton of the city built between Yoritomo's arrival in Kamakura and his death.","timeline.leg2.group": "The Shikken Consolidation Era (1200–50, West Exit)","timeline.leg2.title": "Jufuku-ji, Jokomyo-ji & Kaizo-ji","timeline.leg2.story": "Jufuku-ji (1200) and Jokomyo-ji (1251) were built as the Hojo consolidated power as shikken. Kaizo-ji, restored somewhat later by Uesugi Ujisada in 1394 (Oei 1), belongs to a slightly later era. A somewhat demanding course, crossing Kamegayatsu-zaka into Kita-Kamakura.","timeline.leg3.group": "The Shikken Consolidation Era (1200–50, Ofuna)","timeline.leg3.title": "Joraku-ji","timeline.leg3.story": "Joraku-ji. In the same period, a place of Hojo prayer was also built out in the suburb of Ofuna.","timeline.leg4.group": "The Mongol Invasion Era (1250–84, Kita-Kamakura)","timeline.leg4.title": "Kencho-ji & Engaku-ji","timeline.leg4.story": "Kencho-ji was built in 1253, ahead of the Mongol invasions, as a dedicated Zen training hall. Engaku-ji followed in 1282, to console the actual war dead of the invasions. Close in date, but built for different reasons.","timeline.leg5.group": "The Mongol Invasion Era (1250–84, Gokurakuji)","timeline.leg5.title": "Gokuraku-ji, Jojuin & Kotoku-in","timeline.leg5.story": "Gokuraku-ji, Jojuin, Kotoku-in. In the same period, on Kamakura's western side, social work and the casting of the Great Buddha were both moving forward at once.","timeline.leg6.group": "The Shogunate's Decline & Fall (1284–1333, East Exit)","timeline.leg6.title": "Tosho-ji Ruins & Hokai-ji","timeline.leg6.story": "The Tosho-ji ruins and Hokai-ji. Walk the very last place where the Kamakura Shogunate came to an end.","timeline.leg7.group": "The Shogunate's Decline & Fall (1284–1333, Inamuragasaki)","timeline.leg7.title": "Inamuragasaki Park","timeline.leg7.story": "Inamuragasaki Park. Just before the shogunate's fall, Nitta Yoshisada is said to have invaded Kamakura from here.","timeline.leg8.group": "The Nanboku-cho & Muromachi Era (1333–1467)","timeline.leg8.title": "Kamakura-gu, Kakuon-ji, Zuisen-ji, Jomyo-ji & Hokoku-ji","timeline.leg8.story": "Only Hokoku-ji (1334) falls purely within this period. Kakuon-ji (1296) and Zuisen-ji (1327) were both built before the shogunate's fall (1333), and Jomyo-ji's origins trace back even further, to 1188. Kamakura-gu was founded in 1869 (Meiji 2), more than 400 years removed from the era of its enshrined Prince Moriyoshi. A course better viewed through the geographic unity of the Kanazawa Kaido than through strict period boundaries.","timeline.leg9.group": "Sengoku Era to Showa","timeline.leg9.title": "Ryuho-ji & Ofuna Kannon-ji","timeline.leg9.story": "Ryuho-ji and Ofuna Kannon-ji. Centuries after the Kamakura period ended, this land gained new places of prayer once again.",
-  "s1.when":"Feb · Plum Blossoms",
-  "s1.note":"Egara Tenjin Shrine is known for its plum blossoms — a flower tied to its deity, Sugawara no Michizane.",
-  "s2.when":"Mar–Apr · Cherry Blossoms",
-  "s2.note":"Dankazura and the approach to Tsurugaoka Hachimangu are known for cherry blossoms. Dankazura's surface has been newly repaved and is especially easy to walk.",
-  "s3.when":"May · Fresh Greenery",
-  "s3.note":"Engaku-ji and Tokei-ji are said to be especially beautiful in the fresh green season, with sunlight filtering through the leaves.",
-  "s4.when":"Jun · Hydrangeas",
-  "s4.note":"Meigetsu-in is known for its hydrangeas, and only during this season is its rear garden opened to the public.",
-  "s5.when":"Jun · Hydrangeas",
-  "s5.note":"Hase-dera is also known for its hydrangea path. Can be combined with a visit to the Great Buddha.",
-  "s6.when":"Jul–Aug · By the Sea",
-  "s6.note":"Inamuragasaki, facing the ocean, is an easy stop on the way to or from summer swimming season.",
-  "s7.when":"Sep–Oct · Red Spider Lilies",
-  "s7.note":"The area around Kakuon-ji is known for its red spider lilies (higanbana) during this season.",
-  "s8.when":"Nov–Dec · Autumn Leaves",
-  "s8.note":"Hokoku-ji's bamboo grove paired with autumn foliage is a highlight.",
-  "s9.when":"Nov–Dec · Autumn Leaves",
-  "s9.note":"Kakuon-ji and Zuisen-ji are also known as spots for autumn leaves.",
-  "s10.when":"Jan · New Year Visits",
-  "s10.note":"Sasuke Inari and Zeniarai Benten are popular spots for New Year's visits and setting intentions for the year ahead.",
-  "s11.when":"Jan · New Year Visits",
-  "s11.note":"Ofuna Kannon draws crowds for the New Year's bell and New Year visits.",
-  "month.1":"January",
-  "month.2":"February",
-  "month.3":"March",
-  "month.4":"April",
-  "month.5":"May",
-  "month.6":"June",
-  "month.7":"July",
-  "month.8":"August",
-  "month.9":"September",
-  "month.10":"October",
-  "month.11":"November",
-  "month.12":"December",
-  "season.toggle.open":"See the full year's picks ▾",
-  "season.toggle.close":"Close the full year's picks ▴",
-  "season.soon":"Coming soon: ",
-  "filter.all14":"All (14)",
-  "filter.all16":"All (16)",
-  "filter.range1":"1–1.5 hrs",
-  "filter.range2":"2–2.5 hrs",
-  "filter.range3":"3+ hrs",
-  "am.kitakamakura":"Kita-Kamakura",
-  "am.ofuna":"Ofuna / Tamanawa",
-  "am.station":"Around Kamakura Sta.",
-  "am.hase":"Hase / Gokurakuji",
-  "am.kanazawa":"Kanazawa Kaido",
-  "am.omachi":"Omachi / Zaimokuza",
-  "am.koshigoe":"Koshigoe / Enoshima",
-  "kids.why1":"<b>Sugimoto-dera & Daikyo-ji</b>: Over in an hour. Easy-to-love sights like mossy stone steps and a shrine for safe childbirth.",
-  "kids.why2":"<b>Tsurugaoka Hachimangu & Dankazura</b>: Spacious, flat grounds. Plenty of pigeons, and an easy-walking approach path.",
-  "kids.why3":"<b>The Great Buddha & Hase-dera</b>: You can actually step inside the Great Buddha. Hase-dera's grounds are well maintained and easy to walk too.",
-  "kids.why4":"<b>Sasuke Inari & Zeniarai Benten</b>: A hands-on experience — wash real coins in the cave spring. The rows of torii gates photograph beautifully too.",
-  "card.readmore":"Read more (fees, distance, history)",
-  "stamp.title":"Tap once you've walked it",
-  "stamp.aria":"Mark this course as walked",
-  "site.kicker":"All of Kamakura, on Foot",
-  "site.yomi":"“Kama-Kurampo” is a coined word meaning “a Kamakura stroll.”",
-  "site.tagline":'Walk. Count. <span class="accent">Know Kamakura.</span>',
-  "site.lead":"A complete guide to shrines and temples in Kamakura, organized into 1-to-3-hour walking courses with fixed start and end points. The same data is also reorganized into three lenses — Religion, Historical Figures, and Timeline — as pilgrimage plans. Walking distances and admission fees (adult/child) are listed for every course.",
-  "nav.courses":"Courses","nav.basics":"Basics","nav.history":"History","nav.profile":"Editor",
-  "drawer.courses":"Browse Courses",
-  "footer.reading":"Further Reading","footer.about":"About This Site",
-  "footer.link.basics":"Basics to Know Before You Walk",
-  "footer.link.history":"Historical Background by Course",
-  "footer.link.framework":"7 Ways to Read a Shrine or Temple",
-  "footer.link.chapters":"Course List (this page)",
-  "footer.link.profile":"Editor Profile (Kiridoshi Ayumu)",
-  "footer.link.changelog":"Changelog & Version History",
-  "footer.tagline":"Walk. Count. Know Kamakura.",
-  "areamap.label":"How the Areas Relate",
-  "areamap.note":"A schematic diagram, not an actual map — showing rough relative positions. Tap a node to jump to a representative course.",
-  "season.label":"Recommended for This Season",
-  "chapters.label":"全6チャプター",
-  "chapters.geo.title":"Area Courses","chapters.geo.tagline":"Start by stepping inside the Great Buddha, then head for a square full of pigeons.",
-  "chapters.geo.desc":"14 core courses with fixed start and end points — the ones you actually walk.","chapters.geo.link":"See 14 courses",
-  "chapters.kids.title":"Kid-Friendly Courses","chapters.kids.tagline":"Step inside the Buddha, wash coins for luck, play with pigeons.",
-  "chapters.kids.desc":"Flat, short, and free of dangerous stretches — courses picked for walking with children.","chapters.kids.link":"See kid-friendly courses",
-  "chapters.religion.title":"By Religion","chapters.religion.tagline":"The same temple looks different through the lens of its sect.",
-  "chapters.religion.desc":"Pilgrimage plans reorganized by sect and lineage of faith. Meant to be completed over several visits.","chapters.religion.link":"See pilgrimage plans",
-  "chapters.person.title":"By Person","chapters.person.tagline":"Walk the roads Yoritomo once walked.",
-  "chapters.person.desc":"Follow the footsteps of Yoritomo, the Hojo clan, Nichiren, and others who shaped Kamakura's history.","chapters.person.link":"See figure-based plans",
-  "chapters.timeline.title":"By Timeline","chapters.timeline.tagline":"Retrace 800 years of Kamakura, era by era.",
-  "chapters.timeline.desc":"From antiquity to the modern era — 800 years of Kamakura history, walked in chronological order.","chapters.timeline.link":"See timeline plans",
-  "chapters.complete.title":"Complete Edition","chapters.complete.tagline":"Even the smallest shrine that never made it onto any map.",
-  "chapters.complete.desc":"16 supplementary courses covering shrines the Area Courses missed. For those who've walked it all.","chapters.complete.link":"See 16 courses",
-  "chapters.ref.title":"Basics & History","chapters.ref.tagline":"Knowing before you walk changes how the same road looks.",
-  "chapters.ref.desc":"A glossary to read before you walk, and course-by-course historical background, kept on separate pages.",
-  "panel.geo":"The basic walking courses, each with a fixed start and end point. All 14 courses cover Kamakura's major shrines, temples, and historical sites.",
-  "panel.kids":"4 courses selected for being flat, short (1–2 hours), and free of dangerous stairs or cliffside paths. All are drawn from the existing Area Courses and Complete Edition.",
-  "panel.religion":"Pilgrimage plans reorganized by sect and lineage of faith. Not meant to be completed in a single day — spread across several visits.",
-  "panel.person":"Plans that trace places connected to Yoritomo, the Hojo clan, Nichiren, and others who shaped Kamakura's history.",
-  "panel.timeline":"A plan that walks Kamakura's 800-year history in chronological order, from antiquity to the modern era.",
-  "panel.complete":"Supplementary courses covering shrines and temples the 14 Area Courses missed. Together they cover nearly all shrines and temples visitable in Kamakura. Non-public sub-temples are counted as part of their main temple's visit, not separately.",
-},
-zh: {
-  "s1.when":"2月・梅花",
-  "s1.note":"荏柄天神社是赏梅名所，梅花也与祭神菅原道真渊源深厚。",
-  "s2.when":"3〜4月・樱花",
-  "s2.note":"段葛与鹤冈八幡宫参道是赏樱名所。段葛路面新铺不久，尤其好走。",
-  "s3.when":"5月・新绿",
-  "s3.note":"据说圆觉寺・东庆寺在新绿时节，树荫下的光影格外美丽。",
-  "s4.when":"6月・绣球花",
-  "s4.note":"明月院以绣球花闻名，仅此时节本堂后庭园才特别开放。",
-  "s5.when":"6月・绣球花",
-  "s5.note":"长谷寺的紫阳花小径也很有名，可与大佛一同游览。",
-  "s6.when":"7〜8月・海边",
-  "s6.note":"稻村崎面朝大海，是海水浴季节往返途中顺路一游的好去处。",
-  "s7.when":"9〜10月・彼岸花",
-  "s7.note":"觉园寺周边以此时节可见彼岸花（曼珠沙华）而闻名。",
-  "s8.when":"11〜12月・红叶",
-  "s8.note":"报国寺的竹林与红叶相映成趣，是一大看点。",
-  "s9.when":"11〜12月・红叶",
-  "s9.note":"觉园寺・瑞泉寺也以红叶名所著称。",
-  "s10.when":"1月・初诣",
-  "s10.note":"佐助稻荷・钱洗弁财天是新年参拜、许下新年愿望的热门去处。",
-  "s11.when":"1月・初诣",
-  "s11.note":"大船观音因除夕钟声与新年参拜而热闹非凡。",
-  "month.1":"1月",
-  "month.2":"2月",
-  "month.3":"3月",
-  "month.4":"4月",
-  "month.5":"5月",
-  "month.6":"6月",
-  "month.7":"7月",
-  "month.8":"8月",
-  "month.9":"9月",
-  "month.10":"10月",
-  "month.11":"11月",
-  "month.12":"12月",
-  "season.toggle.open":"查看全年推荐 ▾",
-  "season.toggle.close":"收起全年推荐 ▴",
-  "season.soon":"近期：",
-  "filter.all14":"全部（14）",
-  "filter.all16":"全部（16）",
-  "filter.range1":"1〜1.5小时",
-  "filter.range2":"2〜2.5小时",
-  "filter.range3":"3小时以上",
-  "am.kitakamakura":"北镰仓",
-  "am.ofuna":"大船・玉绳",
-  "am.station":"镰仓站周边",
-  "am.hase":"长谷・极乐寺",
-  "am.kanazawa":"金泽街道",
-  "am.omachi":"大町・材木座",
-  "am.koshigoe":"腰越・江之岛",
-  "kids.why1":"<b>杉本寺・大巧寺</b>：1小时即可走完。长满青苔的石阶、祈求安产的神社，看点直观易懂。",
-  "kids.why2":"<b>鹤冈八幡宫・段葛</b>：境内宽敞平坦。鸽子众多，参道段葛也是易于行走的步道。",
-  "kids.why3":"<b>镰仓大佛・长谷寺</b>：可以实际进入大佛内部。长谷寺境内也整修完善，便于行走。",
-  "kids.why4":"<b>佐助稻荷・钱洗弁财天</b>：可在洞窟涌泉中实际洗钱的体验型景点。成排的鸟居也很上镜。",
-  "card.readmore":"查看详情（参拜费・距离・历史知识）",
-  "stamp.title":"走完后点一下",
-  "stamp.aria":"将此路线标记为已走过",
-  "site.kicker":"镰仓漫步，一次走遍",
-  "site.yomi":"“鎌·くらんぽ（Kama-Kurampo）”是取自“镰仓散步”之意的自创词。",
-  "site.tagline":'走。数。<span class="accent">认识镰仓。</span>',
-  "site.lead":"本站将镰仓市内的神社佛阁，整理成设定了起点和终点的1〜3小时徒步路线，力求网罗殆尽。同样的社寺数据，还从宗教、人物、年表三个视角重新编排为朝圣路线。每条路线均标明步行距离与参拜费用（成人/儿童）。",
-  "nav.courses":"路线一览","nav.basics":"基础知识","nav.history":"历史知识","nav.profile":"编者",
-  "drawer.courses":"浏览路线",
-  "footer.reading":"延伸阅读","footer.about":"关于本站",
-  "footer.link.basics":"出发前的基础知识",
-  "footer.link.history":"各路线的历史背景",
-  "footer.link.framework":"阅读神社佛阁的7个视角",
-  "footer.link.chapters":"路线一览（本页）",
-  "footer.link.profile":"编者简介（切通步）",
-  "footer.link.changelog":"更新记录与版本管理",
-  "footer.tagline":"走。数。认识镰仓。",
-  "areamap.label":"各区域位置关系",
-  "areamap.note":"并非实际地图，而是便于理解位置关系的示意图。点击节点可跳转至代表路线。",
-  "season.label":"当季推荐",
-  "chapters.label":"全部6个章节",
-  "chapters.geo.title":"分区路线","chapters.geo.tagline":"先去看看大佛的内部，再到鸽子广场走走。",
-  "chapters.geo.desc":"设定了起点和终点、实际可行走的14条基础路线。","chapters.geo.link":"查看14条路线",
-  "chapters.kids.title":"亲子路线","chapters.kids.tagline":"钻进大佛内部，洗洗铜钱，和鸽子玩耍。",
-  "chapters.kids.desc":"以平坦、短时间、无危险路段为标准精选的亲子路线。","chapters.kids.link":"查看亲子路线",
-  "chapters.religion.title":"按宗教巡游","chapters.religion.tagline":"同一座寺庙，换个宗派视角就有不同面貌。",
-  "chapters.religion.desc":"按宗派与信仰谱系重新编排的朝圣路线，建议分多次完成。","chapters.religion.link":"查看朝圣路线",
-  "chapters.person.title":"按人物巡游","chapters.person.tagline":"走一走源赖朝走过的路。",
-  "chapters.person.desc":"追寻源赖朝、北条氏、日莲等推动镰仓历史人物的足迹。","chapters.person.link":"查看人物路线",
-  "chapters.timeline.title":"按年表巡游","chapters.timeline.tagline":"按时代顺序，重走镰仓800年。",
-  "chapters.timeline.desc":"从古代到近代，按时间顺序走遍镰仓800年的通史。","chapters.timeline.link":"查看年表路线",
-  "chapters.complete.title":"完整版","chapters.complete.tagline":"连地图上没有的小神社也不放过。",
-  "chapters.complete.desc":"补充分区路线未能走到的社寺，共16条路线。适合已走完基础路线的人。","chapters.complete.link":"查看16条路线",
-  "chapters.ref.title":"基础知识与历史知识","chapters.ref.tagline":"先了解再出发，同一条路会看起来不一样。",
-  "chapters.ref.desc":"出发前阅读的词汇表，以及各路线的历史知识，整理在独立页面中。",
-  "panel.geo":"设定了起点和终点的基础徒步路线。全14条路线涵盖镰仓主要的神社佛阁与历史要地。",
-  "panel.kids":"以平坦、短时间（1〜2小时）、无危险台阶或悬崖路段为标准精选的4条路线。均为分区路线与完整版中的既有路线。",
-  "panel.religion":"按宗派与信仰谱系重新编排的朝圣计划。并非一天走完所有宗派，而是分多次完成。",
-  "panel.person":"追寻源赖朝、北条氏、日莲等推动镰仓历史的人物相关地点的计划。",
-  "panel.timeline":"按时代顺序走遍镰仓800年通史，从古代到近代的计划。",
-  "panel.complete":"补充分区14条路线未能走到的社寺与史迹的路线。与分区路线合计，几乎涵盖镰仓市内所有可参拜的社寺。非公开的塔头（子院）计入本寺参拜范围，不单独计数。",
-},
-ko: {
-  "s1.when":"2월・매화",
-  "s1.note":"에가라텐진샤는 매화 명소. 제신 스가와라노 미치자네와도 인연이 깊은 꽃이다.",
-  "s2.when":"3〜4월・벚꽃",
-  "s2.note":"단카즈라・쓰루가오카하치만구 참도는 벚꽃 명소. 단카즈라는 포장이 새로 되어 특히 걷기 좋다.",
-  "s3.when":"5월・신록",
-  "s3.note":"엔가쿠지・도케이지는 신록의 계절, 나뭇잎 사이로 비치는 햇살이 특히 아름답다고 한다.",
-  "s4.when":"6월・수국",
-  "s4.note":"메이게쓰인은 수국 명소로 알려져 있으며, 이 시기에만 본당 뒤 정원이 특별 공개된다.",
-  "s5.when":"6월・수국",
-  "s5.note":"하세데라도 수국길로 유명하다. 대불과 함께 둘러볼 수 있다.",
-  "s6.when":"7〜8월・바닷가",
-  "s6.note":"이나무라가사키는 바다를 마주한 코스로, 해수욕 시즌 오가는 길에 들르기 좋다.",
-  "s7.when":"9〜10월・피안화",
-  "s7.note":"가쿠온지 주변은 이 시기 피안화（석산）를 볼 수 있는 것으로 알려져 있다.",
-  "s8.when":"11〜12월・단풍",
-  "s8.note":"호코쿠지의 대나무숲과 단풍의 조화가 볼거리다.",
-  "s9.when":"11〜12월・단풍",
-  "s9.note":"가쿠온지・즈이센지도 단풍 명소로 알려져 있다.",
-  "s10.when":"1월・신년 참배",
-  "s10.note":"사스케이나리・제니아라이벤텐은 신년 참배와 한 해의 계획을 세우는 참배지로 인기가 많다.",
-  "s11.when":"1월・신년 참배",
-  "s11.note":"오후나 관음은 제야의 종과 신년 참배로 붐빈다.",
-  "month.1":"1월",
-  "month.2":"2월",
-  "month.3":"3월",
-  "month.4":"4월",
-  "month.5":"5월",
-  "month.6":"6월",
-  "month.7":"7월",
-  "month.8":"8월",
-  "month.9":"9월",
-  "month.10":"10월",
-  "month.11":"11월",
-  "month.12":"12월",
-  "season.toggle.open":"연간 추천 전체 보기 ▾",
-  "season.toggle.close":"연간 추천 접기 ▴",
-  "season.soon":"근일：",
-  "filter.all14":"전체（14）",
-  "filter.all16":"전체（16）",
-  "filter.range1":"1〜1.5시간",
-  "filter.range2":"2〜2.5시간",
-  "filter.range3":"3시간 이상",
-  "am.kitakamakura":"기타카마쿠라",
-  "am.ofuna":"오후나・다마나와",
-  "am.station":"가마쿠라역 주변",
-  "am.hase":"하세・고쿠라쿠지",
-  "am.kanazawa":"가나자와 가이도",
-  "am.omachi":"오마치・자이모쿠자",
-  "am.koshigoe":"고시고에・에노시마",
-  "kids.why1":"<b>스기모토데라・다이교지</b>：1시간이면 끝나는 짧은 코스. 이끼 낀 돌계단, 순산을 기원하는 신사 등 눈으로 보기에도 알기 쉬운 볼거리.",
-  "kids.why2":"<b>쓰루가오카하치만구・단카즈라</b>：경내가 넓고 평탄하다. 비둘기가 많고, 참도인 단카즈라도 걷기 편한 산책로.",
-  "kids.why3":"<b>가마쿠라 대불・하세데라</b>：대불 속（내부）에 실제로 들어갈 수 있다. 하세데라도 경내가 잘 정비되어 있어 걷기 편하다.",
-  "kids.why4":"<b>사스케이나리・제니아라이벤텐</b>：동굴 용수에서 실제로 돈을 씻어보는 체험형. 늘어선 도리이도 사진이 잘 나온다.",
-  "card.readmore":"자세히 보기（참배료・거리・역사 지식）",
-  "stamp.title":"걸었다면 탭하세요",
-  "stamp.aria":"이 코스를 걸은 것으로 표시",
-  "site.kicker":"가마쿠라를 통째로 걷다",
-  "site.yomi":"'카마쿠람포(鎌·くらんぽ)'는 '가마쿠라 산책'이라는 뜻을 담은 조어입니다.",
-  "site.tagline":'걷는다. 센다. <span class="accent">가마쿠라를 확인한다.</span>',
-  "site.lead":"가마쿠라 시내의 신사와 사찰을, 출발점과 해산점을 정한 1〜3시간짜리 도보 코스로 망라했습니다. 같은 데이터를 종교・인물・연표라는 세 가지 축으로도 재구성하여 순례 플랜으로 제시합니다. 도보 거리와 참배료(어른/어린이)도 코스마다 명기했습니다.",
-  "nav.courses":"코스 목록","nav.basics":"기초 지식","nav.history":"역사 지식","nav.profile":"편저자",
-  "drawer.courses":"코스 보기",
-  "footer.reading":"읽을거리","footer.about":"이 사이트에 대하여",
-  "footer.link.basics":"걷기 전에 알아두면 좋은 기초 지식",
-  "footer.link.history":"코스별 역사 기초 지식",
-  "footer.link.framework":"신사·사찰을 보는 7가지 관점",
-  "footer.link.chapters":"코스 목록(이 페이지)",
-  "footer.link.profile":"편저자 프로필(키리도시 아유무)",
-  "footer.link.changelog":"수정 이력·버전 관리",
-  "footer.tagline":"걷는다. 센다. 가마쿠라를 확인한다.",
-  "areamap.label":"지역 간 위치 관계",
-  "areamap.note":"실제 지도가 아니라 위치 관계를 알기 쉽게 나타낸 모식도입니다. 노드를 탭하면 대표 코스로 이동합니다.",
-  "season.label":"지금 계절의 추천",
-  "chapters.label":"전체 6개 챕터",
-  "chapters.geo.title":"지역별 코스","chapters.geo.tagline":"대불 속으로, 비둘기 광장으로, 먼저 만나러 간다.",
-  "chapters.geo.desc":"출발점과 해산점을 정한, 실제로 걷는 14개의 기본 코스.","chapters.geo.link":"14개 코스 보기",
-  "chapters.kids.title":"어린이 동반 코스","chapters.kids.tagline":"대불 속에 들어가고, 동전을 씻고, 비둘기와 논다.",
-  "chapters.kids.desc":"평탄하고 짧으며 위험한 구간이 없는 것을 기준으로 고른, 아이와 함께 걸을 수 있는 코스.","chapters.kids.link":"어린이 동반 코스 보기",
-  "chapters.religion.title":"종교로 돌아보기","chapters.religion.tagline":"같은 절도 종파로 보면 다른 얼굴이 보인다.",
-  "chapters.religion.desc":"종파·신앙의 계보로 다시 구성한 순례 플랜. 여러 번에 나누어 완주하는 것을 전제로 한다.","chapters.religion.link":"순례 플랜 보기",
-  "chapters.person.title":"인물로 돌아보기","chapters.person.tagline":"요리토모가 걸었던 길을, 당신도 걷는다.",
-  "chapters.person.desc":"요리토모·호조씨·니치렌 등 가마쿠라의 역사를 움직인 인물의 연고지를 따라간다.","chapters.person.link":"인물 플랜 보기",
-  "chapters.timeline.title":"연표로 돌아보기","chapters.timeline.tagline":"가마쿠라 800년을, 시대 순서대로 다시 걷는다.",
-  "chapters.timeline.desc":"고대부터 근대까지, 가마쿠라 800년의 통사를 시대 순으로 걷는다.","chapters.timeline.link":"연표 플랜 보기",
-  "chapters.complete.title":"컴플리트판","chapters.complete.tagline":"지도에 없는 작은 사당까지, 전부.",
-  "chapters.complete.desc":"지역별 코스가 들르지 않은 사찰·신사를 보충하는 16개 코스. 전부 걸은 사람을 위한 코스.","chapters.complete.link":"16개 코스 보기",
-  "chapters.ref.title":"기초 지식·역사 지식","chapters.ref.tagline":"알고 나서 걸으면, 같은 길도 다르게 보인다.",
-  "chapters.ref.desc":"걷기 전에 읽는 용어집과 코스별 역사 지식. 별도 페이지에 정리했다.",
-  "panel.geo":"출발점과 해산점을 명시한 기본 산책 코스. 전 14개 코스로 가마쿠라의 주요 신사・사찰과 역사적 요지를 돈다.",
-  "panel.kids":"평탄・단시간(1〜2시간)・위험한 계단이나 벼랑길이 없다는 기준으로 고른 4개 코스. 모두 기존 지역별 코스・컴플리트판에서 다시 실은 것.",
-  "panel.religion":"종파・신앙의 계보로 돌아보는 순례 플랜. 여러 번에 나누어 완주하는 것을 전제로 한다.",
-  "panel.person":"요리토모・호조씨・니치렌 등 가마쿠라의 역사를 움직인 인물의 연고지를 도는 플랜.",
-  "panel.timeline":"고대부터 근대까지, 가마쿠라 800년의 통사를 시대 순으로 도는 플랜.",
-  "panel.complete":"지역별 14개 코스가 들르지 않은, 시내에 남은 사찰・신사・사적을 보충하는 추가 코스. 지역별 코스와 합치면 가마쿠라 시내에서 참배 가능한 사찰・신사의 거의 전역을 망라한다. 비공개 탑두(자원)는 본사 참배에 포함되는 것으로 보아 개별로 세지 않았다.",
-},
-};
-
-/* ===================== STAMP RALLY（歩いた記録） ===================== */
-const STAMP_KEY = "kurampo_visited";
-function getVisited(){
-  try { return JSON.parse(localStorage.getItem(STAMP_KEY) || "{}"); }
-  catch(e){ return {}; }
-}
-function setVisited(obj){
-  try { localStorage.setItem(STAMP_KEY, JSON.stringify(obj)); } catch(e){}
-}
-function refreshStampUI(){
-  const visited = getVisited();
-  document.querySelectorAll(".stamp-btn").forEach(btn=>{
-    const id = btn.dataset.courseId;
-    btn.classList.toggle("walked", !!visited[id]);
-  });
-  // 進捗表示（エリア別・コンプリート版のみ）
-  const geoIds = GEO.map(c=>`g${c.id}`);
-  const completeIds = COMPLETE.map(c=>String(c.id).toLowerCase());
-  const geoDone = geoIds.filter(id=>visited[id]).length;
-  const completeDone = completeIds.filter(id=>visited[id]).length;
-  const geoProgEl = document.getElementById("progress-geo");
-  const completeProgEl = document.getElementById("progress-complete");
-  if(geoProgEl) geoProgEl.textContent = `歩いた記録：${geoDone}／${geoIds.length}コース`;
-  if(completeProgEl) completeProgEl.textContent = `歩いた記録：${completeDone}／${completeIds.length}コース`;
-}
-document.addEventListener("click", (e)=>{
-  const btn = e.target.closest(".stamp-btn");
-  if(!btn) return;
-  e.preventDefault();
-  e.stopPropagation();
-  const id = btn.dataset.courseId;
-  const visited = getVisited();
-  visited[id] = !visited[id];
-  setVisited(visited);
-  refreshStampUI();
-});
-refreshStampUI();
-document.getElementById("complete-list").innerHTML = COMPLETE.map(renderGeoCard).join("");
-document.getElementById("religion-list").innerHTML = renderGroupedAxis(RELIGION, "axis-religion", "religion");
-document.getElementById("person-list").innerHTML = renderGroupedAxis(PERSON, "axis-person", "person");
-document.getElementById("timeline-list").innerHTML = renderGroupedAxis(TIMELINE, "axis-timeline", "timeline");
-
-/* ===================== I18N 適用（全カード描画完了後に実行） ===================== */
-const JA_ORIGINALS = {}; // 日本語原文をキャッシュ（EN/中/한→JAへ戻す用）
-document.querySelectorAll("[data-i18n]").forEach(el=>{
-  JA_ORIGINALS[el.dataset.i18n] = el.innerHTML;
-});
-const JA_ATTR_ORIGINALS = {}; // title / aria-label 用の原文キャッシュ
-document.querySelectorAll("[data-i18n-title]").forEach(el=>{
-  JA_ATTR_ORIGINALS[el.dataset.i18nTitle] = el.getAttribute("title");
-});
-document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
-  JA_ATTR_ORIGINALS[el.dataset.i18nAria] = el.getAttribute("aria-label");
-});
-
-function applyLanguage(lang){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    if(lang === "ja"){
-      el.innerHTML = JA_ORIGINALS[key];
-    } else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){
-      el.innerHTML = TRANSLATIONS[lang][key];
-    }
-    // 未翻訳キーは日本語のまま残る（フォールバック）
-  });
-  document.querySelectorAll("[data-i18n-title]").forEach(el=>{
-    const key = el.dataset.i18nTitle;
-    const val = (lang === "ja") ? JA_ATTR_ORIGINALS[key] : (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]);
-    if(val) el.setAttribute("title", val);
-  });
-  document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
-    const key = el.dataset.i18nAria;
-    const val = (lang === "ja") ? JA_ATTR_ORIGINALS[key] : (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]);
-    if(val) el.setAttribute("aria-label", val);
-  });
-  document.documentElement.lang = lang;
-  const seasonToggle = document.getElementById("seasonToggle");
-  if(seasonToggle && typeof toggleLabel === "function"){
-    seasonToggle.textContent = toggleLabel(seasonToggle.dataset.state || "closed");
-  }
-  document.querySelectorAll("#langSwitch button").forEach(b=>{
-    b.classList.toggle("active", b.dataset.lang === lang);
-  });
-  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
-}
-
-document.querySelectorAll("#langSwitch button").forEach(btn=>{
-  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
-});
-
-(function initLanguage(){
-  let saved = "ja";
-  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
-  if(saved !== "ja") applyLanguage(saved);
-})();
 
 /* ===================== TABS ===================== */
 function switchTab(tab, updateHash){

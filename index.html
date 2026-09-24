@@ -113,8 +113,14 @@
 
   .contour-motif{
     position:absolute; top:0; right:0; height:100%; width:56%; max-width:640px;
-    color:var(--ink); opacity:.10; pointer-events:none;
+    color:var(--ink); opacity:.9; pointer-events:none;
   }
+  .am-star{color:var(--vermilion); animation:starTwinkle 2.4s ease-in-out infinite;}
+  @keyframes starTwinkle{
+    0%,100%{opacity:.5; transform-origin:center;}
+    50%{opacity:1;}
+  }
+  @media (prefers-reduced-motion: reduce){ .am-star{animation:none;} }
 
   /* ---------- back to top ---------- */
   .back-to-top{
@@ -213,11 +219,12 @@
   .ch{
     display:block; background:var(--card); padding:26px 22px 24px; cursor:pointer;
     border:3px solid var(--ink); border-radius:18px;
-    transition:transform .18s ease, box-shadow .18s ease;
+    transition:transform .28s cubic-bezier(.34,1.56,.64,1), box-shadow .28s cubic-bezier(.34,1.56,.64,1);
     text-decoration:none; color:inherit;
     box-shadow:5px 5px 0 rgba(17,17,17,0.14);
   }
-  .ch:hover{transform:rotate(-0.5deg) translateY(-3px); box-shadow:7px 8px 0 rgba(17,17,17,0.18);}
+  .ch:hover{transform:rotate(-1deg) translateY(-5px) scale(1.02); box-shadow:9px 10px 0 rgba(17,17,17,0.2);}
+  .ch:active{transform:rotate(-0.3deg) translateY(-1px) scale(.99); transition-duration:.05s;}
   .ch[data-tab="geo"] .ch-no, .ch[data-tab="kids"] .ch-no, .ch[data-tab="complete"] .ch-no{background:var(--vermilion);}
   .ch[data-tab="religion"] .ch-no{background:var(--moss);}
   .ch[data-tab="person"] .ch-no{background:var(--indigo);}
@@ -240,6 +247,22 @@
     border-bottom:1px solid var(--line); padding-bottom:1px; transition:border-color .2s ease, color .2s ease;
   }
   .ch:hover .ch-link{color:var(--vermilion); border-color:var(--vermilion);}
+
+  .ref-banner{
+    display:flex; align-items:center; gap:14px; margin-top:18px; padding:16px 18px;
+    background:#fff; border:3px dashed var(--ink); border-radius:14px;
+    text-decoration:none; color:inherit; transition:transform .15s ease, background .15s ease;
+  }
+  .ref-banner:hover{transform:translateY(-2px); background:var(--vermilion-bg);}
+  .ref-banner-icon{font-size:28px; flex:0 0 auto;}
+  .ref-banner-body{flex:1 1 auto; display:flex; flex-direction:column; gap:2px;}
+  .ref-banner-body b{font-size:15px;}
+  .ref-banner-body span{font-size:13px; color:var(--ink-soft); line-height:1.6;}
+  .ref-banner-links{font-family:"IBM Plex Mono", monospace; font-size:11px; color:var(--ink-soft); flex:0 0 auto; white-space:nowrap;}
+  @media (max-width:600px){
+    .ref-banner{flex-wrap:wrap;}
+    .ref-banner-links{width:100%; padding-left:42px;}
+  }
 
   @media (min-width:768px){
     .ch-grid{grid-template-columns:repeat(2,1fr);}
@@ -332,11 +355,12 @@
     margin:0 0 14px; padding:16px 18px 16px;
     text-decoration:none; color:inherit;
     opacity:0;
-    transition:opacity .5s ease, transform .18s ease, box-shadow .18s ease;
+    transition:opacity .5s ease, transform .28s cubic-bezier(.34,1.56,.64,1), box-shadow .28s cubic-bezier(.34,1.56,.64,1);
     box-shadow:4px 4px 0 rgba(17,17,17,0.12);
   }
   .card.in-view{opacity:1;}
-  .card:hover{transform:rotate(-0.6deg) translateY(-3px); box-shadow:6px 7px 0 rgba(17,17,17,0.16);}
+  .card:hover{transform:rotate(-1.2deg) translateY(-5px) scale(1.02); box-shadow:8px 9px 0 rgba(17,17,17,0.18);}
+  .card:active{transform:rotate(-0.3deg) translateY(-1px) scale(.99); transition-duration:.05s;}
 
   .card{position:relative;}
   .progress-note{
@@ -530,11 +554,24 @@
 
 <header class="site" id="top">
   <svg class="contour-motif" viewBox="0 0 640 640" aria-hidden="true" preserveAspectRatio="xMaxYMid slice">
-    <path d="M 520 60 C 620 120 640 260 560 340 C 480 420 340 440 280 380" fill="none" stroke="currentColor" stroke-width="1.4"/>
-    <path d="M 480 20 C 610 70 660 240 560 360 C 460 480 280 490 210 400" fill="none" stroke="currentColor" stroke-width="1.4"/>
-    <path d="M 440 -10 C 600 30 690 230 560 390 C 440 540 220 540 140 420" fill="none" stroke="currentColor" stroke-width="1.4"/>
-    <path d="M 400 -30 C 590 -10 720 220 560 420 C 410 600 160 590 70 440" fill="none" stroke="currentColor" stroke-width="1.4"/>
-    <circle cx="560" cy="230" r="3" fill="currentColor"/>
+    <defs>
+      <pattern id="halftone" width="14" height="14" patternUnits="userSpaceOnUse">
+        <circle cx="7" cy="7" r="3" fill="currentColor"/>
+      </pattern>
+      <clipPath id="buddhaClip"><circle cx="430" cy="330" r="230"/></clipPath>
+    </defs>
+    <circle cx="430" cy="330" r="230" fill="url(#halftone)" opacity=".14" clip-path="url(#buddhaClip)"/>
+    <circle cx="430" cy="330" r="230" fill="none" stroke="currentColor" stroke-width="4"/>
+    <!-- 鎌倉大仏（簡略シルエット） -->
+    <g transform="translate(430,330)" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M -95 120 C -95 40 -70 -30 0 -30 C 70 -30 95 40 95 120 Z"/>
+      <circle cx="0" cy="-95" r="52"/>
+      <path d="M -60 60 C -40 90 40 90 60 60"/>
+      <path d="M -95 120 L -125 130 L 125 130 L 95 120"/>
+    </g>
+    <g class="am-star" style="animation-delay:0s" transform="translate(560,110) rotate(12)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
+    <g class="am-star" style="animation-delay:.5s" transform="translate(150,90) rotate(-8) scale(.6)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
+    <g class="am-star" style="animation-delay:1s" transform="translate(590,480) rotate(20) scale(.75)"><path d="M0-22 L6-6 22 0 6 6 0 22 -6 6 -22 0 -6-6Z" fill="currentColor"/></g>
   </svg>
   <div class="inner">
     <p class="kicker reveal-line" data-i18n="site.kicker">鎌倉さんぽ、まるごと</p>
@@ -630,15 +667,16 @@
       <p data-i18n="chapters.complete.desc">エリア別コースが訪ねなかった社寺を拾う、補足の16コース。すべて歩いた人向け。</p>
       <span class="ch-link" data-i18n="chapters.complete.link">16コースを見る</span>
     </a>
-    <div class="ch ch-ref" onclick="location.href='basics.html'">
-      <p class="ch-no mincho">＋</p>
-      <p class="ch-en">Reference</p>
-      <h3 class="mincho" data-i18n="chapters.ref.title">基礎知識・歴史知識</h3>
-      <p class="ch-tagline mincho" data-i18n="chapters.ref.tagline">知ってから歩くと、同じ道が違って見える。</p>
-      <p data-i18n="chapters.ref.desc">歩く前に読む用語集と、コース別の歴史知識。別ページにまとめた。</p>
-      <span class="ch-link">basics.html / history.html</span>
-    </div>
   </div>
+
+  <a class="ref-banner" href="basics.html">
+    <span class="ref-banner-icon">📖</span>
+    <span class="ref-banner-body">
+      <b data-i18n="chapters.ref.title">基礎知識・歴史知識</b>
+      <span data-i18n="chapters.ref.desc">歩く前に読む用語集と、コース別の歴史知識。コースではなく、読み物として別ページにまとめてある。</span>
+    </span>
+    <span class="ref-banner-links">basics.html / history.html</span>
+  </a>
 </section>
 
 <div class="intro">

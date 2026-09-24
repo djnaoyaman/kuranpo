@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDXKF3Y622"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDXKF3Y622');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>修正履歴 ｜ 鎌・くらんぽ</title>
+<title>修正履歴｜鎌・くらんぽ</title>
+<meta name="description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<link rel="canonical" href="https://djnaoyaman.github.io/kamakura-kurampo/changelog.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="鎌・くらんぽ">
+<meta property="og:title" content="修正履歴｜鎌・くらんぽ">
+<meta property="og:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<meta property="og:url" content="https://djnaoyaman.github.io/kamakura-kurampo/changelog.html">
+<meta property="og:image" content="https://djnaoyaman.github.io/kamakura-kurampo/og-image.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="修正履歴｜鎌・くらんぽ">
+<meta name="twitter:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<meta name="twitter:image" content="https://djnaoyaman.github.io/kamakura-kurampo/og-image.png">
+<meta name="robots" content="index,follow">
+<meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -158,6 +182,21 @@
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
   }
 </style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "修正履歴",
+ "description": "鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。",
+ "url": "https://djnaoyaman.github.io/kamakura-kurampo/changelog.html",
+ "inLanguage": "ja",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "鎌・くらんぽ",
+  "url": "https://djnaoyaman.github.io/kamakura-kurampo/index.html"
+ }
+}
+</script>
 </head>
 <body>
 <div class="topbar">
@@ -229,7 +268,11 @@
   <b style="color:var(--ink)">v1.4.1（2026-09-24）</b>：季節のおすすめを、アクセスした月に関わらずいつでも確認できるよう「年間の季節おすすめを全部見る」開閉トグルを追加（12ヶ月分を一覧表示）。あわせて該当する10ページの個別コースページ（knowledge/g2, g3, g4, g5, g8, g9, g11, g12, g13, c1）に「このコースがおすすめの季節」情報を追加し、個別ページ単独でも季節の見どころを確認できるようにした。<br>
   <b style="color:var(--ink)">v1.4.2（2026-09-24）</b>：多言語訳文をセルフレビューし、不自然な箇所を修正。英語のキャッチコピー2箇所（語順・語尾の座りの悪さ）、中国語のキャッチコピー（「一网打尽」が犯罪者を捕らえる文脈の慣用句で散歩ガイドには物騒すぎたため変更）、中国語・韓国語の「くらんぽ」表記（ひらがなのまま出しても読めないため、名前の意味を説明する文に修正）を対応。ネイティブ話者による確認は別途推奨。<br>
   <b style="color:var(--ink)">v1.5.0（2026-09-24）</b>：多言語対応をサイト全体に拡大。全35ページのトップバーに言語切替（JA/EN/中/한）を設置。basics.html・profile.html・404.htmlは全文、history.htmlは「7つの視点」総論とヘッダー、changelog.htmlはヘッダーのみ翻訳（ログ本文は技術的な変更記録のため日本語のみと明記）。knowledge配下30ページはナビ・フッター等の共通部分を翻訳し、story本文・人物解説は分量の都合で今回は対象外（サイト側にその旨明記）。全35ページでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を確認済み。<br>
-  <b style="color:var(--ink)">v1.5.1（2026-09-24）</b>：トップページ「見方について」の説明文を、硬い言い回しから短く簡潔な表現に書き換え。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.5.1.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.5.1.zip</a>から。
+  <b style="color:var(--ink)">v1.5.1（2026-09-24）</b>：トップページ「見方について」の説明文を、硬い言い回しから短く簡潔な表現に書き換え。<br>
+  <b style="color:var(--ink)">v1.6.0（2026-09-24）</b>：「翻訳完全を目指す」との要望を受け、コース別知識ページ30本の本文（見出し・物語文・用語解説）を英語・中国語（簡体字）・韓国語に翻訳。これで全35ページの主要コンテンツが3言語対応となった（スペイン語は引き続き対象外）。作業の過程で、30ページ中18ページの「前へ」ページャーのタイトル表示が空欄になっていた既存の不具合（多言語対応とは無関係の元からの欠陥）を発見し修正。またレンズタグの表示ラベルが異なる2組で同じ翻訳キーを共有してしまっていた衝突も解消。全35ファイルでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を最終確認済み。<br>
+  <b style="color:var(--ink)">v1.6.1（2026-09-24）</b>：Google Analytics（gtag.js、測定ID：G-RDXKF3Y622）を全36ページ（ルート6ページ＋コース別知識30ページ）の&lt;head&gt;直下に設置。全ページでタグの重複がないこと、構文・タグ整合性を確認済み。<br>
+  <b style="color:var(--ink)">v1.7.0（2026-09-24）</b>：SEO・LLMO・SNS対策を一式整備。①全36ページにmeta description・canonical・OGP・Twitter Cardを設置。②SNS共有用のOG画像（1200×630px）を新規生成。③全ページにJSON-LD構造化データ（WebSite/Article/BreadcrumbList/WebPage）を追加。④robots.txtを新設。⑤sitemap.xmlを自動生成する仕組みを構築：scripts/generate_sitemap.pyでリポジトリ内のHTMLを走査して再生成、.github/workflows/update-sitemap.ymlでmainブランチへのpush時に自動実行・自動コミットされるようにした。⑥LLM向けdiscovery対応としてllms.txt・llms-full.txt（全30コースの要約つき）を新設。<br>
+  <b style="color:var(--ink)">v1.8.0（2026-09-24）</b>：E-A-T（専門性・権威性・信頼性）対策を整備。①Person（著者）のJSON-LDを大幅強化：別名義（宮崎直哉・一見坊・湯気文吾・djnaoyaman）・経歴・専門領域・他プロジェクトへのsameAsリンクを追加し、index.html＋コース別知識ページ30本の著者情報を統一。②profile.htmlをWebPageから、著者情報に特化したProfilePageスキーマに格上げ。③basics.html・history.htmlのフッターに「最終更新日」を表示（EN/ZH/KO翻訳込み）。④history.htmlのフッターに修正履歴（changelog.html）へのリンクを追加し忘れていた箇所を修正。全36ページで構文・JSON-LD妥当性・翻訳キー網羅を最終確認済み。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.8.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.8.0.zip</a>から。
 </div>
 
 <section class="guard">
@@ -308,6 +351,10 @@
     <li><span class="tag fix">v1.4.2</span>多言語訳文をセルフレビューし修正。英語のキャッチコピー2箇所、中国語のキャッチコピー（不穏当な慣用句を回避）、中国語・韓国語の「くらんぽ」表記（ひらがな→意味説明）を直した。</li>
     <li><span class="tag add">v1.5.0</span>多言語対応を全35ページに拡大。basics/profile/404は全文、historyは総論部分、changelogはヘッダーのみ翻訳。knowledge30ページは共通部分（ナビ・フッター）を翻訳し、本文は対象外である旨を明記。全ページで構文・キー網羅を確認済み。</li>
     <li><span class="tag fix">v1.5.1</span>トップページ「見方について」の説明文を短く簡潔な表現に書き換え。</li>
+    <li><span class="tag add">v1.6.0</span>コース別知識ページ30本の本文（見出し・物語文・用語解説）を英語・中国語・韓国語に翻訳。全35ページが主要3言語対応に。あわせて既存のページャー空欄バグ（18箇所）とレンズタグの翻訳キー衝突（2箇所）を発見・修正。</li>
+    <li><span class="tag add">v1.6.1</span>Google Analytics（gtag.js）を全36ページに設置。</li>
+    <li><span class="tag add">v1.7.0</span>SEO/LLMO/SNS対策一式（meta/OGP/Twitter Card/JSON-LD/OG画像/robots.txt）と、sitemap.xml自動生成の仕組み（生成スクリプト＋GitHub Actions）、LLM向けllms.txt／llms-full.txtを整備。</li>
+    <li><span class="tag add">v1.8.0</span>E-A-T対策：著者Person schemaを別名義・経歴・sameAsリンクつきに強化、profile.htmlをProfilePageスキーマに格上げ、basics/historyに最終更新日表示を追加（翻訳込み）。</li>
   </ol>
 </section>
 

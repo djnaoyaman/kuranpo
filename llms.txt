@@ -1,0 +1,20 @@
+# 鎌・くらんぽ
+
+> 鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅する個人編集のガイド。エリア別14コース＋コンプリート版16コース、計30コースそれぞれに拝観料・徒歩距離・歴史知識を明記している。同じ社寺データを宗教・人物・年表という3つの軸で再構成した巡礼プランも収録。編者：切通歩（きりどおし・あゆむ）。日本語のほか英語・中国語（簡体字）・韓国語に対応（サイト上部の言語切替から選択）。
+
+## 主要ページ
+
+- [鎌・くらんぽ トップ](https://djnaoyaman.github.io/kamakura-kurampo/index.html): コース一覧（エリア別・子供向け・宗教・人物・年表・コンプリート版の6チャプター）、エリア模式図マップ、季節のおすすめ、歩いた記録機能を収録。
+- [歩く前の基礎知識](https://djnaoyaman.github.io/kamakura-kurampo/basics.html): 切通・谷戸・鎌倉五山・拝観の実務など、鎌倉を歩く前に知っておくと社寺の見え方が変わる用語集。歴史の基本知識（鎌倉幕府の成立〜玉縄北条氏まで）も収録。
+- [コース別・歴史の基本知識](https://djnaoyaman.github.io/kamakura-kurampo/history.html): 神社仏閣を見る「7つの視点」の総論と、全30コースへのリンク一覧。
+- [編者プロフィール](https://djnaoyaman.github.io/kamakura-kurampo/profile.html): 編者「切通歩」（本名・宮崎直哉）の経歴と、他の名義（一見坊・湯気文吾・djnaoyaman）について。
+- [修正履歴](https://djnaoyaman.github.io/kamakura-kurampo/changelog.html): サイトのバージョン管理・修正履歴（日本語のみ）。
+
+## コース別・歴史の基本知識ページ（全30本）
+
+各コースの祭神・本尊・関連人物・出来事を専用ページで解説。一覧は [history.html](https://djnaoyaman.github.io/kamakura-kurampo/history.html) を参照。個別ページは `https://djnaoyaman.github.io/kamakura-kurampo/knowledge/{id}.html` の形式（例：`g1.html`〜`g14.html`＝エリア別コース、`c1.html`〜`c16.html`＝コンプリート版）。
+
+## Optional
+
+- [sitemap.xml](https://djnaoyaman.github.io/kamakura-kurampo/sitemap.xml): 全ページのURL一覧。
+- [llms-full.txt](https://djnaoyaman.github.io/kamakura-kurampo/llms-full.txt): 全30コースの要約を含む詳細版。

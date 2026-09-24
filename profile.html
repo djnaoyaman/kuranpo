@@ -187,6 +187,10 @@
   .editor-mark:hover{color:var(--vermilion);}
   .editor-mark .em-label{font-size:15px; opacity:.6;}
   .editor-mark .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .share-buttons{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:28px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
+  .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
+  .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
 </style>
 <script type="application/ld+json">
 {
@@ -334,6 +338,14 @@
     <h2 class="mincho" data-i18n="profile.h2.stance">このサイトの姿勢</h2>
     <p data-i18n="profile.p.stance">鎌倉の社寺には、史料で確認できる事実と、語り継がれるうちに姿を変えてきた伝承の両方があります。このサイトでは、その二つをできるだけ分けて書くことを心がけています。拝観料や距離のように確認できる数字は公式サイト等で確かめ、伝承や逸話には「伝わる」「という」といった言葉を残します。鎌倉を面白く紹介することだけでなく、何が確認できて、何が伝承なのかを残しておきたいと思っています。</p>
   </section>
+
+  <div class="share-buttons">
+    <span class="share-label">この記事をシェア</span>
+    <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
+    <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>
+    <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
+  </div>
 </main>
 
 <footer class="site">
@@ -424,5 +436,23 @@
 </script>
 <button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
 
+<script>
+(function shareButtons(){
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.href;
+  const title = document.title;
+  const eu = encodeURIComponent(url), et = encodeURIComponent(title);
+  const map = {
+    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
+    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+  };
+  Object.keys(map).forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.href = map[id];
+  });
+})();
+</script>
 </body>
 </html>

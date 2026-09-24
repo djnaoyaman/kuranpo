@@ -425,6 +425,43 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
   if(saved !== "ja") applyLanguage(saved);
 })();
 </script>
+<script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
+(function footprintTrail(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(!window.matchMedia("(pointer:fine)").matches) return; // タッチ端末では発火しない
+
+  const layer = document.createElement("div");
+  layer.style.cssText = "position:fixed; inset:0; pointer-events:none; z-index:9999; overflow:hidden;";
+  document.body.appendChild(layer);
+
+  const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
+
+  let last = null, leftFoot = true, lastStamp = 0;
+  document.addEventListener("mousemove", (e)=>{
+    const now = performance.now();
+    if(now - lastStamp < 140) return; // 間引き
+    if(last){
+      const dx = e.clientX - last.x, dy = e.clientY - last.y;
+      if(Math.hypot(dx,dy) < 26) return; // 一定距離動いた時だけ
+    }
+    lastStamp = now;
+    const angle = last ? Math.atan2(e.clientY-last.y, e.clientX-last.x) * 180/Math.PI + 90 : 0;
+    last = {x:e.clientX, y:e.clientY};
+
+    const step = document.createElement("div");
+    step.innerHTML = FOOT;
+    const sideOffset = leftFoot ? -7 : 7;
+    leftFoot = !leftFoot;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--moss, #3D4C36); opacity:.32; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    layer.appendChild(step);
+    requestAnimationFrame(()=>{
+      step.style.opacity = "0";
+      step.style.transform += " translateY(4px)";
+    });
+    setTimeout(()=> step.remove(), 1900);
+  }, {passive:true});
+})();
+</script>
 <script>/* ===================== BACK TO TOP ===================== */
 (function(){
   const btn = document.getElementById("backToTop");

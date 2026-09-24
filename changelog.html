@@ -275,7 +275,8 @@
   <b style="color:var(--ink)">v1.7.0（2026-09-24）</b>：SEO・LLMO・SNS対策を一式整備。①全36ページにmeta description・canonical・OGP・Twitter Cardを設置。②SNS共有用のOG画像（1200×630px）を新規生成。③全ページにJSON-LD構造化データ（WebSite/Article/BreadcrumbList/WebPage）を追加。④robots.txtを新設。⑤sitemap.xmlを自動生成する仕組みを構築：scripts/generate_sitemap.pyでリポジトリ内のHTMLを走査して再生成、.github/workflows/update-sitemap.ymlでmainブランチへのpush時に自動実行・自動コミットされるようにした。⑥LLM向けdiscovery対応としてllms.txt・llms-full.txt（全30コースの要約つき）を新設。<br>
   <b style="color:var(--ink)">v1.8.0（2026-09-24）</b>：E-A-T（専門性・権威性・信頼性）対策を整備。①Person（著者）のJSON-LDを大幅強化：別名義（宮崎直哉・一見坊・湯気文吾・djnaoyaman）・経歴・専門領域・他プロジェクトへのsameAsリンクを追加し、index.html＋コース別知識ページ30本の著者情報を統一。②profile.htmlをWebPageから、著者情報に特化したProfilePageスキーマに格上げ。③basics.html・history.htmlのフッターに「最終更新日」を表示（EN/ZH/KO翻訳込み）。④history.htmlのフッターに修正履歴（changelog.html）へのリンクを追加し忘れていた箇所を修正。<br>
   <b style="color:var(--ink)">v1.9.1（2026-09-24）</b>：index.html内で唯一残っていた大きな翻訳の取りこぼし（タブの中身）を英語のみ解消。①エリア別・コンプリート版30コースのテーマ文を英訳。②宗教・人物・年表タブの全37レッグ（グループ名・タイトル・物語文）を新規に英訳（このデータはこれまで一切翻訳対象になっていなかった）。③出発点・解散点として使われる駅・バス停名21件を英訳。④「施設間の徒歩距離」ラベルを翻訳。⑤季節のおすすめカードのタイトル表示が独自キーで宙に浮いていたのを、既存のコース別知識ページと共通のキーに統一。実際にカードをレンダリングした状態で検証し、229個のi18nキーすべてに英訳が対応していることを確認済み。中国語・韓国語はこのタブコンテンツについては未着手（知識ページ30本の翻訳は既に完了済み、今回はタブの中身のみ）。<br>
-  <b style="color:var(--ink)">v2.0.0（2026-09-24）</b>：デザインを全面改訂。従来の暖色クリーム＋明朝体＋テラコッタ配色は、実は生成AIデザインで最も頻出するパターンだったと判明したため、方向を転換。①配色を鎌倉石を思わせる冷たい灰色がかった紙色に変更、朱色は「至る所の装飾」ではなく歩いた記録のスタンプ等「押す場所」だけに使う印章的な役割に限定。②距離・拝観料・年代など数値情報はすべてIBM Plex Monoの等幅フォントで組み、散文と測量値を書体で区別。③ヒーローを中央揃えから非対称レイアウトに変更、鳥居アイコンを等高線（地形図）モチーフに置き換え。④宗教・人物・年表・エリア別の4色を「凡例」として提示し、独立した装飾ではなく一つの体系として見せる。⑤コースカードを均一な角丸＋左ボーダーの「SaaSカード」的な見た目から、測点票のような角のないフラットな形式に変更。⑥トラッキングを効かせた全角大文字の「見出しラベル」（AREA MAP —／SEASONAL PICK —／PROFILE等）と、リンク末尾に機械的に付く「→」記号を、AI生成デザインの典型的な"tell"として全箇所で除去。新配色とフォントは全36ページに展開済み。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v2.0.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v2.0.0.zip</a>から。
+  <b style="color:var(--ink)">v2.0.0（2026-09-24）</b>：デザインを全面改訂。従来の暖色クリーム＋明朝体＋テラコッタ配色は、実は生成AIデザインで最も頻出するパターンだったと判明したため、方向を転換。①配色を鎌倉石を思わせる冷たい灰色がかった紙色に変更、朱色は「至る所の装飾」ではなく歩いた記録のスタンプ等「押す場所」だけに使う印章的な役割に限定。②距離・拝観料・年代など数値情報はすべてIBM Plex Monoの等幅フォントで組み、散文と測量値を書体で区別。③ヒーローを中央揃えから非対称レイアウトに変更、鳥居アイコンを等高線（地形図）モチーフに置き換え。④宗教・人物・年表・エリア別の4色を「凡例」として提示し、独立した装飾ではなく一つの体系として見せる。⑤コースカードを均一な角丸＋左ボーダーの「SaaSカード」的な見た目から、測点票のような角のないフラットな形式に変更。⑥トラッキングを効かせた全角大文字の「見出しラベル」（AREA MAP —／SEASONAL PICK —／PROFILE等）と、リンク末尾に機械的に付く「→」記号を、AI生成デザインの典型的な"tell"として全箇所で除去。新配色とフォントは全36ページに展開済み。<br>
+  <b style="color:var(--ink)">v2.1.0（2026-09-24）</b>：参考サイト2件（konel.co.jp／newbird.co.kr）を踏まえてインタラクションを追加。①マウスを動かした軌跡に、交互に足跡がついて1.6秒ほどで消える「足跡カーソル」を全36ページに実装（歩くサイトというテーマに合わせた効果。reduced-motion環境・タッチ端末では発火しない）。②コース別知識ページ30本の冒頭に、スクロールすると等高線モチーフの背景が視差でゆっくり動く「パララックス入口」を追加。「普通に読むと退屈なページはデザインで見せる」という方針に基づき、知識ページ限定で導入。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v2.1.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v2.1.0.zip</a>から。
   <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.9.0.zip</a>から。
 </div>
 
@@ -362,6 +363,7 @@
     <li><span class="tag add">v1.9.0</span>取りこぼし翻訳の第1弾：絞り込みボタン・エリアマップ・子供向け理由・季節のおすすめ等を翻訳。あわせて言語切替の内部キャッシュがカード描画完了前に走っていたタイミングの不具合を発見・修正。</li>
     <li><span class="tag add">v1.9.1</span>取りこぼし翻訳の第2弾（英語のみ）：エリア別・コンプリート版30コースのテーマ文、宗教・人物・年表37レッグの全文、駅・バス停名21件を英訳。レンダリング結果で229キー全網羅を確認。中国語・韓国語は次回以降。</li>
     <li><span class="tag major">v2.0.0</span>デザイン全面改訂。暖色クリーム＋テラコッタ配色（生成AIの典型パターンと判明）から、冷たい石色＋朱を印章的アクセントに限定する方向へ転換。数値は等幅フォントで統一、ヒーローを非対称レイアウト化、カードを測点票スタイルに、大文字トラッキング見出しと機械的な「→」記号を全箇所で除去。新配色・フォントは全36ページに展開。</li>
+    <li><span class="tag add">v2.1.0</span>参考サイト（konel.co.jp／newbird.co.kr）を踏まえ、足跡カーソル（全36ページ）とコース別知識ページ限定のパララックス入口（全30ページ）を追加。</li>
   </ol>
 </section>
 
@@ -401,6 +403,43 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
   if(saved !== "ja") applyLanguage(saved);
 })();
 
+</script>
+<script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */
+(function footprintTrail(){
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(!window.matchMedia("(pointer:fine)").matches) return; // タッチ端末では発火しない
+
+  const layer = document.createElement("div");
+  layer.style.cssText = "position:fixed; inset:0; pointer-events:none; z-index:9999; overflow:hidden;";
+  document.body.appendChild(layer);
+
+  const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
+
+  let last = null, leftFoot = true, lastStamp = 0;
+  document.addEventListener("mousemove", (e)=>{
+    const now = performance.now();
+    if(now - lastStamp < 140) return; // 間引き
+    if(last){
+      const dx = e.clientX - last.x, dy = e.clientY - last.y;
+      if(Math.hypot(dx,dy) < 26) return; // 一定距離動いた時だけ
+    }
+    lastStamp = now;
+    const angle = last ? Math.atan2(e.clientY-last.y, e.clientX-last.x) * 180/Math.PI + 90 : 0;
+    last = {x:e.clientX, y:e.clientY};
+
+    const step = document.createElement("div");
+    step.innerHTML = FOOT;
+    const sideOffset = leftFoot ? -7 : 7;
+    leftFoot = !leftFoot;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--moss, #3D4C36); opacity:.32; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    layer.appendChild(step);
+    requestAnimationFrame(()=>{
+      step.style.opacity = "0";
+      step.style.transform += " translateY(4px)";
+    });
+    setTimeout(()=> step.remove(), 1900);
+  }, {passive:true});
+})();
 </script>
 <script>/* ===================== BACK TO TOP ===================== */
 (function(){

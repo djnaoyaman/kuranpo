@@ -272,7 +272,8 @@
   <b style="color:var(--ink)">v1.6.0（2026-09-24）</b>：「翻訳完全を目指す」との要望を受け、コース別知識ページ30本の本文（見出し・物語文・用語解説）を英語・中国語（簡体字）・韓国語に翻訳。これで全35ページの主要コンテンツが3言語対応となった（スペイン語は引き続き対象外）。作業の過程で、30ページ中18ページの「前へ」ページャーのタイトル表示が空欄になっていた既存の不具合（多言語対応とは無関係の元からの欠陥）を発見し修正。またレンズタグの表示ラベルが異なる2組で同じ翻訳キーを共有してしまっていた衝突も解消。全35ファイルでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を最終確認済み。<br>
   <b style="color:var(--ink)">v1.6.1（2026-09-24）</b>：Google Analytics（gtag.js、測定ID：G-RDXKF3Y622）を全36ページ（ルート6ページ＋コース別知識30ページ）の&lt;head&gt;直下に設置。全ページでタグの重複がないこと、構文・タグ整合性を確認済み。<br>
   <b style="color:var(--ink)">v1.7.0（2026-09-24）</b>：SEO・LLMO・SNS対策を一式整備。①全36ページにmeta description・canonical・OGP・Twitter Cardを設置。②SNS共有用のOG画像（1200×630px）を新規生成。③全ページにJSON-LD構造化データ（WebSite/Article/BreadcrumbList/WebPage）を追加。④robots.txtを新設。⑤sitemap.xmlを自動生成する仕組みを構築：scripts/generate_sitemap.pyでリポジトリ内のHTMLを走査して再生成、.github/workflows/update-sitemap.ymlでmainブランチへのpush時に自動実行・自動コミットされるようにした。⑥LLM向けdiscovery対応としてllms.txt・llms-full.txt（全30コースの要約つき）を新設。<br>
-  <b style="color:var(--ink)">v1.8.0（2026-09-24）</b>：E-A-T（専門性・権威性・信頼性）対策を整備。①Person（著者）のJSON-LDを大幅強化：別名義（宮崎直哉・一見坊・湯気文吾・djnaoyaman）・経歴・専門領域・他プロジェクトへのsameAsリンクを追加し、index.html＋コース別知識ページ30本の著者情報を統一。②profile.htmlをWebPageから、著者情報に特化したProfilePageスキーマに格上げ。③basics.html・history.htmlのフッターに「最終更新日」を表示（EN/ZH/KO翻訳込み）。④history.htmlのフッターに修正履歴（changelog.html）へのリンクを追加し忘れていた箇所を修正。全36ページで構文・JSON-LD妥当性・翻訳キー網羅を最終確認済み。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.8.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.8.0.zip</a>から。
+  <b style="color:var(--ink)">v1.8.0（2026-09-24）</b>：E-A-T（専門性・権威性・信頼性）対策を整備。①Person（著者）のJSON-LDを大幅強化：別名義（宮崎直哉・一見坊・湯気文吾・djnaoyaman）・経歴・専門領域・他プロジェクトへのsameAsリンクを追加し、index.html＋コース別知識ページ30本の著者情報を統一。②profile.htmlをWebPageから、著者情報に特化したProfilePageスキーマに格上げ。③basics.html・history.htmlのフッターに「最終更新日」を表示（EN/ZH/KO翻訳込み）。④history.htmlのフッターに修正履歴（changelog.html）へのリンクを追加し忘れていた箇所を修正。<br>
+  <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.9.0.zip</a>から。
 </div>
 
 <section class="guard">
@@ -355,6 +356,7 @@
     <li><span class="tag add">v1.6.1</span>Google Analytics（gtag.js）を全36ページに設置。</li>
     <li><span class="tag add">v1.7.0</span>SEO/LLMO/SNS対策一式（meta/OGP/Twitter Card/JSON-LD/OG画像/robots.txt）と、sitemap.xml自動生成の仕組み（生成スクリプト＋GitHub Actions）、LLM向けllms.txt／llms-full.txtを整備。</li>
     <li><span class="tag add">v1.8.0</span>E-A-T対策：著者Person schemaを別名義・経歴・sameAsリンクつきに強化、profile.htmlをProfilePageスキーマに格上げ、basics/historyに最終更新日表示を追加（翻訳込み）。</li>
+    <li><span class="tag add">v1.9.0</span>取りこぼし翻訳の第1弾：絞り込みボタン・エリアマップ・子供向け理由・季節のおすすめ等を翻訳。あわせて言語切替の内部キャッシュがカード描画完了前に走っていたタイミングの不具合を発見・修正。</li>
   </ol>
 </section>
 

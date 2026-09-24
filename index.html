@@ -540,20 +540,20 @@
     <line x1="170" y1="110" x2="170" y2="170" class="am-line"/>
     <line x1="170" y1="50" x2="90" y2="30" class="am-line"/>
 
-    <a href="knowledge/g4.html"><circle cx="170" cy="50" r="26" class="am-node"/><text x="170" y="46" class="am-label">北鎌倉</text><text x="170" y="59" class="am-sub">G4・G5</text></a>
-    <a href="knowledge/g12.html"><circle cx="90" cy="30" r="24" class="am-node"/><text x="90" y="26" class="am-label">大船・玉縄</text><text x="90" y="39" class="am-sub">G12</text></a>
-    <a href="knowledge/g2.html"><circle cx="170" cy="110" r="28" class="am-node am-center"/><text x="170" y="106" class="am-label">鎌倉駅周辺</text><text x="170" y="119" class="am-sub">G1・G2・G3・G8</text></a>
-    <a href="knowledge/g11.html"><circle cx="90" cy="160" r="26" class="am-node"/><text x="90" y="156" class="am-label">長谷・極楽寺</text><text x="90" y="169" class="am-sub">G6・G11・G13</text></a>
-    <a href="knowledge/g9.html"><circle cx="250" cy="150" r="26" class="am-node"/><text x="250" y="146" class="am-label">金沢街道</text><text x="250" y="159" class="am-sub">G9</text></a>
-    <a href="knowledge/g7.html"><circle cx="170" cy="170" r="24" class="am-node"/><text x="170" y="166" class="am-label">大町・材木座</text><text x="170" y="179" class="am-sub">G7・G10</text></a>
-    <a href="knowledge/g14.html"><circle cx="60" cy="210" r="24" class="am-node"/><text x="60" y="206" class="am-label">腰越・江の島</text><text x="60" y="219" class="am-sub">G14</text></a>
+    <a href="knowledge/g4.html"><circle cx="170" cy="50" r="26" class="am-node"/><text x="170" y="46" class="am-label" data-i18n="am.kitakamakura">北鎌倉</text><text x="170" y="59" class="am-sub">G4・G5</text></a>
+    <a href="knowledge/g12.html"><circle cx="90" cy="30" r="24" class="am-node"/><text x="90" y="26" class="am-label" data-i18n="am.ofuna">大船・玉縄</text><text x="90" y="39" class="am-sub">G12</text></a>
+    <a href="knowledge/g2.html"><circle cx="170" cy="110" r="28" class="am-node am-center"/><text x="170" y="106" class="am-label" data-i18n="am.station">鎌倉駅周辺</text><text x="170" y="119" class="am-sub">G1・G2・G3・G8</text></a>
+    <a href="knowledge/g11.html"><circle cx="90" cy="160" r="26" class="am-node"/><text x="90" y="156" class="am-label" data-i18n="am.hase">長谷・極楽寺</text><text x="90" y="169" class="am-sub">G6・G11・G13</text></a>
+    <a href="knowledge/g9.html"><circle cx="250" cy="150" r="26" class="am-node"/><text x="250" y="146" class="am-label" data-i18n="am.kanazawa">金沢街道</text><text x="250" y="159" class="am-sub">G9</text></a>
+    <a href="knowledge/g7.html"><circle cx="170" cy="170" r="24" class="am-node"/><text x="170" y="166" class="am-label" data-i18n="am.omachi">大町・材木座</text><text x="170" y="179" class="am-sub">G7・G10</text></a>
+    <a href="knowledge/g14.html"><circle cx="60" cy="210" r="24" class="am-node"/><text x="60" y="206" class="am-label" data-i18n="am.koshigoe">腰越・江の島</text><text x="60" y="219" class="am-sub">G14</text></a>
   </svg>
 </section>
 
 <section class="season" id="season-box">
   <p class="season-label" id="seasonLabel" data-i18n="season.label">SEASONAL PICK — 今の季節のおすすめ</p>
   <div id="season-content"></div>
-  <button class="season-toggle" id="seasonToggle">年間の季節おすすめを全部見る ▾</button>
+  <button class="season-toggle" id="seasonToggle" data-state="closed">年間の季節おすすめを全部見る ▾</button>
   <div class="season-all" id="season-all" hidden></div>
 </section>
 
@@ -660,10 +660,10 @@
     <div class="stats" id="stats-geo"></div>
     <p class="progress-note" id="progress-geo"></p>
     <div class="filter-row" data-target="geo-list">
-      <button class="active" data-mode="all">すべて（14）</button>
-      <button data-mode="range" data-min="0" data-max="1.5">1〜1.5時間</button>
-      <button data-mode="range" data-min="1.51" data-max="2.5">2〜2.5時間</button>
-      <button data-mode="range" data-min="2.51" data-max="99">3時間以上</button>
+      <button class="active" data-mode="all" data-i18n="filter.all14">すべて（14）</button>
+      <button data-mode="range" data-min="0" data-max="1.5" data-i18n="filter.range1">1〜1.5時間</button>
+      <button data-mode="range" data-min="1.51" data-max="2.5" data-i18n="filter.range2">2〜2.5時間</button>
+      <button data-mode="range" data-min="2.51" data-max="99" data-i18n="filter.range3">3時間以上</button>
     </div>
     <div class="card-grid" id="geo-list"></div>
   </section>
@@ -671,10 +671,10 @@
   <section class="panel" id="panel-kids">
     <p class="panel-note" data-i18n="panel.kids">平坦・短時間（1〜2時間）・危険な階段や崖道がない、という基準で選んだ4コース。すべて実際に歩ける、既存のエリア別コース・コンプリート版からの再掲。</p>
     <div class="kids-why">
-      <p class="kw-item"><b>杉本寺・大巧寺</b>：1時間で終わる短さ。苔の石段や安産祈願の社など、見た目にも分かりやすい見どころ。</p>
-      <p class="kw-item"><b>鶴岡八幡宮・段葛</b>：境内が広く平坦。鳩が多く、参道の段葛も歩きやすい遊歩道。</p>
-      <p class="kw-item"><b>鎌倉大仏・長谷寺</b>：大仏の胎内（内部）に実際に入れる。長谷寺も境内が整備されていて歩きやすい。</p>
-      <p class="kw-item"><b>佐助稲荷・銭洗弁財天</b>：洞窟の湧き水で実際にお金を洗える体験型。連なる鳥居も写真映えする。</p>
+      <p class="kw-item" data-i18n="kids.why1"><b>杉本寺・大巧寺</b>：1時間で終わる短さ。苔の石段や安産祈願の社など、見た目にも分かりやすい見どころ。</p>
+      <p class="kw-item" data-i18n="kids.why2"><b>鶴岡八幡宮・段葛</b>：境内が広く平坦。鳩が多く、参道の段葛も歩きやすい遊歩道。</p>
+      <p class="kw-item" data-i18n="kids.why3"><b>鎌倉大仏・長谷寺</b>：大仏の胎内（内部）に実際に入れる。長谷寺も境内が整備されていて歩きやすい。</p>
+      <p class="kw-item" data-i18n="kids.why4"><b>佐助稲荷・銭洗弁財天</b>：洞窟の湧き水で実際にお金を洗える体験型。連なる鳥居も写真映えする。</p>
     </div>
     <div class="card-grid" id="kids-list"></div>
   </section>
@@ -702,10 +702,10 @@
     <div class="stats" id="stats-complete"></div>
     <p class="progress-note" id="progress-complete"></p>
     <div class="filter-row" data-target="complete-list">
-      <button class="active" data-mode="all">すべて（16）</button>
-      <button data-mode="range" data-min="0" data-max="1.5">1〜1.5時間</button>
-      <button data-mode="range" data-min="1.51" data-max="2.5">2〜2.5時間</button>
-      <button data-mode="range" data-min="2.51" data-max="99">3時間以上</button>
+      <button class="active" data-mode="all" data-i18n="filter.all16">すべて（16）</button>
+      <button data-mode="range" data-min="0" data-max="1.5" data-i18n="filter.range1">1〜1.5時間</button>
+      <button data-mode="range" data-min="1.51" data-max="2.5" data-i18n="filter.range2">2〜2.5時間</button>
+      <button data-mode="range" data-min="2.51" data-max="99" data-i18n="filter.range3">3時間以上</button>
     </div>
     <div class="card-grid" id="complete-list"></div>
   </section>
@@ -1310,7 +1310,7 @@ function renderGeoCard(c){
   const kFile = (typeof c.id === "number") ? `g${c.id}` : String(c.id).toLowerCase();
   return `
   <a class="card" data-duration="${c.duration}" data-course-id="${kFile}" href="knowledge/${kFile}.html">
-    <button class="stamp-btn" data-course-id="${kFile}" aria-label="このコースを歩いたにする" title="歩いたらタップ">✓</button>
+    <button class="stamp-btn" data-course-id="${kFile}" aria-label="このコースを歩いたにする" title="歩いたらタップ" data-i18n-title="stamp.title" data-i18n-aria="stamp.aria">✓</button>
     <div class="top">
       <h3><span class="num">${String(c.id).padStart(2,"0")}</span>${c.title}</h3>
       <span class="chev">→</span>
@@ -1322,7 +1322,7 @@ function renderGeoCard(c){
       <span class="dist">施設間の徒歩距離 約${(dist/1000).toFixed(1)}km</span>
       <span class="fee">${feeSummary(c.spots)}</span>
     </div>
-    <p class="read-more">くわしく読む（拝観料・距離・歴史知識） →</p>
+    <p class="read-more" data-i18n="card.readmore">くわしく読む（拝観料・距離・歴史知識） →</p>
   </a>`;
 }
 
@@ -1388,17 +1388,17 @@ function computeCoverage(list){
 
 /* ===================== SEASONAL PICK ===================== */
 const SEASONS = [
-  {months:[2], when:"2月・梅", id:"g3", note:"荏柄天神社は梅の名所。祭神・菅原道真ゆかりの花でもある。"},
-  {months:[3,4], when:"3〜4月・桜", id:"g2", note:"段葛・鶴岡八幡宮の参道は桜の名所。段葛は特に舗装が新しくなり歩きやすい。"},
-  {months:[5], when:"5月・新緑", id:"g5", note:"円覚寺・東慶寺は新緑の時期、木漏れ日が特に美しいという。"},
-  {months:[6], when:"6月・あじさい", id:"g4", note:"明月院はあじさいの名所として知られ、この時期のみ本堂後庭園も特別公開される。"},
-  {months:[6], when:"6月・あじさい", id:"g11", note:"長谷寺も紫陽花路が有名。大仏とあわせて歩ける。"},
-  {months:[7,8], when:"7〜8月・海辺", id:"g13", note:"稲村ヶ崎は海水浴シーズンの行き帰りにも寄りやすい、海に面したコース。"},
-  {months:[9,10], when:"9〜10月・彼岸花", id:"g8", note:"覚園寺周辺は彼岸花（曼珠沙華）が見られることで知られる時期。"},
-  {months:[11,12], when:"11〜12月・紅葉", id:"g9", note:"報国寺の竹林と紅葉の組み合わせが見どころ。"},
-  {months:[11,12], when:"11〜12月・紅葉", id:"g8", note:"覚園寺・瑞泉寺は紅葉の名所としても知られる。"},
-  {months:[1], when:"1月・初詣", id:"c1", note:"佐助稲荷・銭洗弁財天は初詣や一年の計を立てる参拝先として人気。"},
-  {months:[1], when:"1月・初詣", id:"g12", note:"大船観音は除夜の鐘・初詣で賑わう。"},
+  {months:[2], when:"2月・梅", id:"g3", key:"s1", note:"荏柄天神社は梅の名所。祭神・菅原道真ゆかりの花でもある。"},
+  {months:[3,4], when:"3〜4月・桜", id:"g2", key:"s2", note:"段葛・鶴岡八幡宮の参道は桜の名所。段葛は特に舗装が新しくなり歩きやすい。"},
+  {months:[5], when:"5月・新緑", id:"g5", key:"s3", note:"円覚寺・東慶寺は新緑の時期、木漏れ日が特に美しいという。"},
+  {months:[6], when:"6月・あじさい", id:"g4", key:"s4", note:"明月院はあじさいの名所として知られ、この時期のみ本堂後庭園も特別公開される。"},
+  {months:[6], when:"6月・あじさい", id:"g11", key:"s5", note:"長谷寺も紫陽花路が有名。大仏とあわせて歩ける。"},
+  {months:[7,8], when:"7〜8月・海辺", id:"g13", key:"s6", note:"稲村ヶ崎は海水浴シーズンの行き帰りにも寄りやすい、海に面したコース。"},
+  {months:[9,10], when:"9〜10月・彼岸花", id:"g8", key:"s7", note:"覚園寺周辺は彼岸花（曼珠沙華）が見られることで知られる時期。"},
+  {months:[11,12], when:"11〜12月・紅葉", id:"g9", key:"s8", note:"報国寺の竹林と紅葉の組み合わせが見どころ。"},
+  {months:[11,12], when:"11〜12月・紅葉", id:"g8", key:"s9", note:"覚園寺・瑞泉寺は紅葉の名所としても知られる。"},
+  {months:[1], when:"1月・初詣", id:"c1", key:"s10", note:"佐助稲荷・銭洗弁財天は初詣や一年の計を立てる参拝先として人気。"},
+  {months:[1], when:"1月・初詣", id:"g12", key:"s11", note:"大船観音は除夜の鐘・初詣で賑わう。"},
 ];
 const SEASON_COURSES = {};
 [...GEO, ...COMPLETE].forEach(c=>{
@@ -1424,41 +1424,58 @@ const SEASON_COURSES = {};
   el.innerHTML = list.map(s=>{
     const c = SEASON_COURSES[s.id];
     if(!c) return "";
-    const prefix = nextSeasonMode ? "近日：" : "";
+    const prefixKey = nextSeasonMode ? "season.soon" : "";
     return `<a class="season-card" href="knowledge/${s.id}.html">
-      <p class="sc-when">${prefix}${s.when}</p>
-      <h4 class="mincho">${c.title}</h4>
-      <p>${s.note}</p>
+      <p class="sc-when"><span data-i18n="season.soon" style="${nextSeasonMode?'':'display:none'}">近日：</span><span data-i18n="${s.key}.when">${s.when}</span></p>
+      <h4 class="mincho" data-i18n="card.title.${s.id}">${c.title}</h4>
+      <p data-i18n="${s.key}.note">${s.note}</p>
     </a>`;
   }).join("");
 })();
 
 /* 年間の季節おすすめ一覧（アクセスした月に関わらず、いつでも確認できるように） */
+function toggleLabel(state){
+  const lang = document.documentElement.lang || "ja";
+  const key = state === "open" ? "season.toggle.close" : "season.toggle.open";
+  const ja = state === "open" ? "年間の季節おすすめを閉じる ▴" : "年間の季節おすすめを全部見る ▾";
+  if(lang !== "ja" && typeof TRANSLATIONS !== "undefined" && TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){
+    return TRANSLATIONS[lang][key];
+  }
+  return ja;
+}
 (function renderSeasonAll(){
   const el = document.getElementById("season-all");
   const toggle = document.getElementById("seasonToggle");
   if(!el || !toggle) return;
   const monthNames = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+  const monthKeys = ["month.1","month.2","month.3","month.4","month.5","month.6","month.7","month.8","month.9","month.10","month.11","month.12"];
   let html = "";
   for(let m=1; m<=12; m++){
     const picks = SEASONS.filter(s=>s.months.includes(m));
     if(picks.length === 0) continue;
-    html += `<p class="sa-month">${monthNames[m-1]}</p>`;
+    html += `<p class="sa-month" data-i18n="${monthKeys[m-1]}">${monthNames[m-1]}</p>`;
     picks.forEach(s=>{
       const c = SEASON_COURSES[s.id];
       if(!c) return;
       html += `<a class="season-card" href="knowledge/${s.id}.html">
-        <p class="sc-when">${s.when}</p>
-        <h4 class="mincho">${c.title}</h4>
-        <p>${s.note}</p>
+        <p class="sc-when" data-i18n="${s.key}.when">${s.when}</p>
+        <h4 class="mincho" data-i18n="card.title.${s.id}">${c.title}</h4>
+        <p data-i18n="${s.key}.note">${s.note}</p>
       </a>`;
     });
   }
   el.innerHTML = html;
   toggle.addEventListener("click", ()=>{
     const isHidden = el.hasAttribute("hidden");
-    if(isHidden){ el.removeAttribute("hidden"); toggle.textContent = "年間の季節おすすめを閉じる ▴"; }
-    else { el.setAttribute("hidden",""); toggle.textContent = "年間の季節おすすめを全部見る ▾"; }
+    if(isHidden){
+      el.removeAttribute("hidden");
+      toggle.textContent = toggleLabel("open");
+      toggle.dataset.state = "open";
+    } else {
+      el.setAttribute("hidden","");
+      toggle.textContent = toggleLabel("closed");
+      toggle.dataset.state = "closed";
+    }
   });
 })();
 
@@ -1514,6 +1531,62 @@ document.getElementById("kids-list").innerHTML = KIDS.map(renderGeoCard).join(""
 /* ===================== I18N（EN / 中文 / 한국어） ===================== */
 const TRANSLATIONS = {
 en: {
+  "s1.when":"Feb · Plum Blossoms",
+  "s1.note":"Egara Tenjin Shrine is known for its plum blossoms — a flower tied to its deity, Sugawara no Michizane.",
+  "s2.when":"Mar–Apr · Cherry Blossoms",
+  "s2.note":"Dankazura and the approach to Tsurugaoka Hachimangu are known for cherry blossoms. Dankazura's surface has been newly repaved and is especially easy to walk.",
+  "s3.when":"May · Fresh Greenery",
+  "s3.note":"Engaku-ji and Tokei-ji are said to be especially beautiful in the fresh green season, with sunlight filtering through the leaves.",
+  "s4.when":"Jun · Hydrangeas",
+  "s4.note":"Meigetsu-in is known for its hydrangeas, and only during this season is its rear garden opened to the public.",
+  "s5.when":"Jun · Hydrangeas",
+  "s5.note":"Hase-dera is also known for its hydrangea path. Can be combined with a visit to the Great Buddha.",
+  "s6.when":"Jul–Aug · By the Sea",
+  "s6.note":"Inamuragasaki, facing the ocean, is an easy stop on the way to or from summer swimming season.",
+  "s7.when":"Sep–Oct · Red Spider Lilies",
+  "s7.note":"The area around Kakuon-ji is known for its red spider lilies (higanbana) during this season.",
+  "s8.when":"Nov–Dec · Autumn Leaves",
+  "s8.note":"Hokoku-ji's bamboo grove paired with autumn foliage is a highlight.",
+  "s9.when":"Nov–Dec · Autumn Leaves",
+  "s9.note":"Kakuon-ji and Zuisen-ji are also known as spots for autumn leaves.",
+  "s10.when":"Jan · New Year Visits",
+  "s10.note":"Sasuke Inari and Zeniarai Benten are popular spots for New Year's visits and setting intentions for the year ahead.",
+  "s11.when":"Jan · New Year Visits",
+  "s11.note":"Ofuna Kannon draws crowds for the New Year's bell and New Year visits.",
+  "month.1":"January",
+  "month.2":"February",
+  "month.3":"March",
+  "month.4":"April",
+  "month.5":"May",
+  "month.6":"June",
+  "month.7":"July",
+  "month.8":"August",
+  "month.9":"September",
+  "month.10":"October",
+  "month.11":"November",
+  "month.12":"December",
+  "season.toggle.open":"See the full year's picks ▾",
+  "season.toggle.close":"Close the full year's picks ▴",
+  "season.soon":"Coming soon: ",
+  "filter.all14":"All (14)",
+  "filter.all16":"All (16)",
+  "filter.range1":"1–1.5 hrs",
+  "filter.range2":"2–2.5 hrs",
+  "filter.range3":"3+ hrs",
+  "am.kitakamakura":"Kita-Kamakura",
+  "am.ofuna":"Ofuna / Tamanawa",
+  "am.station":"Around Kamakura Sta.",
+  "am.hase":"Hase / Gokurakuji",
+  "am.kanazawa":"Kanazawa Kaido",
+  "am.omachi":"Omachi / Zaimokuza",
+  "am.koshigoe":"Koshigoe / Enoshima",
+  "kids.why1":"<b>Sugimoto-dera & Daikyo-ji</b>: Over in an hour. Easy-to-love sights like mossy stone steps and a shrine for safe childbirth.",
+  "kids.why2":"<b>Tsurugaoka Hachimangu & Dankazura</b>: Spacious, flat grounds. Plenty of pigeons, and an easy-walking approach path.",
+  "kids.why3":"<b>The Great Buddha & Hase-dera</b>: You can actually step inside the Great Buddha. Hase-dera's grounds are well maintained and easy to walk too.",
+  "kids.why4":"<b>Sasuke Inari & Zeniarai Benten</b>: A hands-on experience — wash real coins in the cave spring. The rows of torii gates photograph beautifully too.",
+  "card.readmore":"Read more (fees, distance, history) →",
+  "stamp.title":"Tap once you've walked it",
+  "stamp.aria":"Mark this course as walked",
   "site.kicker":"All of Kamakura, on Foot",
   "site.yomi":"“Kama-Kurampo” is a coined word meaning “a Kamakura stroll.”",
   "site.tagline":'Walk. Count. <span class="accent">Know Kamakura.</span>',
@@ -1554,6 +1627,62 @@ en: {
   "panel.complete":"Supplementary courses covering shrines and temples the 14 Area Courses missed. Together they cover nearly all shrines and temples visitable in Kamakura. Non-public sub-temples are counted as part of their main temple's visit, not separately.",
 },
 zh: {
+  "s1.when":"2月・梅花",
+  "s1.note":"荏柄天神社是赏梅名所，梅花也与祭神菅原道真渊源深厚。",
+  "s2.when":"3〜4月・樱花",
+  "s2.note":"段葛与鹤冈八幡宫参道是赏樱名所。段葛路面新铺不久，尤其好走。",
+  "s3.when":"5月・新绿",
+  "s3.note":"据说圆觉寺・东庆寺在新绿时节，树荫下的光影格外美丽。",
+  "s4.when":"6月・绣球花",
+  "s4.note":"明月院以绣球花闻名，仅此时节本堂后庭园才特别开放。",
+  "s5.when":"6月・绣球花",
+  "s5.note":"长谷寺的紫阳花小径也很有名，可与大佛一同游览。",
+  "s6.when":"7〜8月・海边",
+  "s6.note":"稻村崎面朝大海，是海水浴季节往返途中顺路一游的好去处。",
+  "s7.when":"9〜10月・彼岸花",
+  "s7.note":"觉园寺周边以此时节可见彼岸花（曼珠沙华）而闻名。",
+  "s8.when":"11〜12月・红叶",
+  "s8.note":"报国寺的竹林与红叶相映成趣，是一大看点。",
+  "s9.when":"11〜12月・红叶",
+  "s9.note":"觉园寺・瑞泉寺也以红叶名所著称。",
+  "s10.when":"1月・初诣",
+  "s10.note":"佐助稻荷・钱洗弁财天是新年参拜、许下新年愿望的热门去处。",
+  "s11.when":"1月・初诣",
+  "s11.note":"大船观音因除夕钟声与新年参拜而热闹非凡。",
+  "month.1":"1月",
+  "month.2":"2月",
+  "month.3":"3月",
+  "month.4":"4月",
+  "month.5":"5月",
+  "month.6":"6月",
+  "month.7":"7月",
+  "month.8":"8月",
+  "month.9":"9月",
+  "month.10":"10月",
+  "month.11":"11月",
+  "month.12":"12月",
+  "season.toggle.open":"查看全年推荐 ▾",
+  "season.toggle.close":"收起全年推荐 ▴",
+  "season.soon":"近期：",
+  "filter.all14":"全部（14）",
+  "filter.all16":"全部（16）",
+  "filter.range1":"1〜1.5小时",
+  "filter.range2":"2〜2.5小时",
+  "filter.range3":"3小时以上",
+  "am.kitakamakura":"北镰仓",
+  "am.ofuna":"大船・玉绳",
+  "am.station":"镰仓站周边",
+  "am.hase":"长谷・极乐寺",
+  "am.kanazawa":"金泽街道",
+  "am.omachi":"大町・材木座",
+  "am.koshigoe":"腰越・江之岛",
+  "kids.why1":"<b>杉本寺・大巧寺</b>：1小时即可走完。长满青苔的石阶、祈求安产的神社，看点直观易懂。",
+  "kids.why2":"<b>鹤冈八幡宫・段葛</b>：境内宽敞平坦。鸽子众多，参道段葛也是易于行走的步道。",
+  "kids.why3":"<b>镰仓大佛・长谷寺</b>：可以实际进入大佛内部。长谷寺境内也整修完善，便于行走。",
+  "kids.why4":"<b>佐助稻荷・钱洗弁财天</b>：可在洞窟涌泉中实际洗钱的体验型景点。成排的鸟居也很上镜。",
+  "card.readmore":"查看详情（参拜费・距离・历史知识） →",
+  "stamp.title":"走完后点一下",
+  "stamp.aria":"将此路线标记为已走过",
   "site.kicker":"镰仓漫步，一次走遍",
   "site.yomi":"“鎌·くらんぽ（Kama-Kurampo）”是取自“镰仓散步”之意的自创词。",
   "site.tagline":'走。数。<span class="accent">认识镰仓。</span>',
@@ -1594,6 +1723,62 @@ zh: {
   "panel.complete":"补充分区14条路线未能走到的社寺与史迹的路线。与分区路线合计，几乎涵盖镰仓市内所有可参拜的社寺。非公开的塔头（子院）计入本寺参拜范围，不单独计数。",
 },
 ko: {
+  "s1.when":"2월・매화",
+  "s1.note":"에가라텐진샤는 매화 명소. 제신 스가와라노 미치자네와도 인연이 깊은 꽃이다.",
+  "s2.when":"3〜4월・벚꽃",
+  "s2.note":"단카즈라・쓰루가오카하치만구 참도는 벚꽃 명소. 단카즈라는 포장이 새로 되어 특히 걷기 좋다.",
+  "s3.when":"5월・신록",
+  "s3.note":"엔가쿠지・도케이지는 신록의 계절, 나뭇잎 사이로 비치는 햇살이 특히 아름답다고 한다.",
+  "s4.when":"6월・수국",
+  "s4.note":"메이게쓰인은 수국 명소로 알려져 있으며, 이 시기에만 본당 뒤 정원이 특별 공개된다.",
+  "s5.when":"6월・수국",
+  "s5.note":"하세데라도 수국길로 유명하다. 대불과 함께 둘러볼 수 있다.",
+  "s6.when":"7〜8월・바닷가",
+  "s6.note":"이나무라가사키는 바다를 마주한 코스로, 해수욕 시즌 오가는 길에 들르기 좋다.",
+  "s7.when":"9〜10월・피안화",
+  "s7.note":"가쿠온지 주변은 이 시기 피안화（석산）를 볼 수 있는 것으로 알려져 있다.",
+  "s8.when":"11〜12월・단풍",
+  "s8.note":"호코쿠지의 대나무숲과 단풍의 조화가 볼거리다.",
+  "s9.when":"11〜12월・단풍",
+  "s9.note":"가쿠온지・즈이센지도 단풍 명소로 알려져 있다.",
+  "s10.when":"1월・신년 참배",
+  "s10.note":"사스케이나리・제니아라이벤텐은 신년 참배와 한 해의 계획을 세우는 참배지로 인기가 많다.",
+  "s11.when":"1월・신년 참배",
+  "s11.note":"오후나 관음은 제야의 종과 신년 참배로 붐빈다.",
+  "month.1":"1월",
+  "month.2":"2월",
+  "month.3":"3월",
+  "month.4":"4월",
+  "month.5":"5월",
+  "month.6":"6월",
+  "month.7":"7월",
+  "month.8":"8월",
+  "month.9":"9월",
+  "month.10":"10월",
+  "month.11":"11월",
+  "month.12":"12월",
+  "season.toggle.open":"연간 추천 전체 보기 ▾",
+  "season.toggle.close":"연간 추천 접기 ▴",
+  "season.soon":"근일：",
+  "filter.all14":"전체（14）",
+  "filter.all16":"전체（16）",
+  "filter.range1":"1〜1.5시간",
+  "filter.range2":"2〜2.5시간",
+  "filter.range3":"3시간 이상",
+  "am.kitakamakura":"기타카마쿠라",
+  "am.ofuna":"오후나・다마나와",
+  "am.station":"가마쿠라역 주변",
+  "am.hase":"하세・고쿠라쿠지",
+  "am.kanazawa":"가나자와 가이도",
+  "am.omachi":"오마치・자이모쿠자",
+  "am.koshigoe":"고시고에・에노시마",
+  "kids.why1":"<b>스기모토데라・다이교지</b>：1시간이면 끝나는 짧은 코스. 이끼 낀 돌계단, 순산을 기원하는 신사 등 눈으로 보기에도 알기 쉬운 볼거리.",
+  "kids.why2":"<b>쓰루가오카하치만구・단카즈라</b>：경내가 넓고 평탄하다. 비둘기가 많고, 참도인 단카즈라도 걷기 편한 산책로.",
+  "kids.why3":"<b>가마쿠라 대불・하세데라</b>：대불 속（내부）에 실제로 들어갈 수 있다. 하세데라도 경내가 잘 정비되어 있어 걷기 편하다.",
+  "kids.why4":"<b>사스케이나리・제니아라이벤텐</b>：동굴 용수에서 실제로 돈을 씻어보는 체험형. 늘어선 도리이도 사진이 잘 나온다.",
+  "card.readmore":"자세히 보기（참배료・거리・역사 지식） →",
+  "stamp.title":"걸었다면 탭하세요",
+  "stamp.aria":"이 코스를 걸은 것으로 표시",
   "site.kicker":"가마쿠라를 통째로 걷다",
   "site.yomi":"'카마쿠람포(鎌·くらんぽ)'는 '가마쿠라 산책'이라는 뜻을 담은 조어입니다.",
   "site.tagline":'걷는다. 센다. <span class="accent">가마쿠라를 확인한다.</span>',
@@ -1634,38 +1819,6 @@ ko: {
   "panel.complete":"지역별 14개 코스가 들르지 않은, 시내에 남은 사찰・신사・사적을 보충하는 추가 코스. 지역별 코스와 합치면 가마쿠라 시내에서 참배 가능한 사찰・신사의 거의 전역을 망라한다. 비공개 탑두(자원)는 본사 참배에 포함되는 것으로 보아 개별로 세지 않았다.",
 },
 };
-
-const JA_ORIGINALS = {}; // 日本語原文をキャッシュ（EN/中/한→JAへ戻す用）
-document.querySelectorAll("[data-i18n]").forEach(el=>{
-  JA_ORIGINALS[el.dataset.i18n] = el.innerHTML;
-});
-
-function applyLanguage(lang){
-  document.querySelectorAll("[data-i18n]").forEach(el=>{
-    const key = el.dataset.i18n;
-    if(lang === "ja"){
-      el.innerHTML = JA_ORIGINALS[key];
-    } else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){
-      el.innerHTML = TRANSLATIONS[lang][key];
-    }
-    // 未翻訳キーは日本語のまま残る（フォールバック）
-  });
-  document.documentElement.lang = lang;
-  document.querySelectorAll("#langSwitch button").forEach(b=>{
-    b.classList.toggle("active", b.dataset.lang === lang);
-  });
-  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
-}
-
-document.querySelectorAll("#langSwitch button").forEach(btn=>{
-  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
-});
-
-(function initLanguage(){
-  let saved = "ja";
-  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
-  if(saved !== "ja") applyLanguage(saved);
-})();
 
 /* ===================== STAMP RALLY（歩いた記録） ===================== */
 const STAMP_KEY = "kurampo_visited";
@@ -1708,6 +1861,60 @@ document.getElementById("complete-list").innerHTML = COMPLETE.map(renderGeoCard)
 document.getElementById("religion-list").innerHTML = renderGroupedAxis(RELIGION, "axis-religion");
 document.getElementById("person-list").innerHTML = renderGroupedAxis(PERSON, "axis-person");
 document.getElementById("timeline-list").innerHTML = renderGroupedAxis(TIMELINE, "axis-timeline");
+
+/* ===================== I18N 適用（全カード描画完了後に実行） ===================== */
+const JA_ORIGINALS = {}; // 日本語原文をキャッシュ（EN/中/한→JAへ戻す用）
+document.querySelectorAll("[data-i18n]").forEach(el=>{
+  JA_ORIGINALS[el.dataset.i18n] = el.innerHTML;
+});
+const JA_ATTR_ORIGINALS = {}; // title / aria-label 用の原文キャッシュ
+document.querySelectorAll("[data-i18n-title]").forEach(el=>{
+  JA_ATTR_ORIGINALS[el.dataset.i18nTitle] = el.getAttribute("title");
+});
+document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
+  JA_ATTR_ORIGINALS[el.dataset.i18nAria] = el.getAttribute("aria-label");
+});
+
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){
+      el.innerHTML = JA_ORIGINALS[key];
+    } else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){
+      el.innerHTML = TRANSLATIONS[lang][key];
+    }
+    // 未翻訳キーは日本語のまま残る（フォールバック）
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach(el=>{
+    const key = el.dataset.i18nTitle;
+    const val = (lang === "ja") ? JA_ATTR_ORIGINALS[key] : (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]);
+    if(val) el.setAttribute("title", val);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
+    const key = el.dataset.i18nAria;
+    const val = (lang === "ja") ? JA_ATTR_ORIGINALS[key] : (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]);
+    if(val) el.setAttribute("aria-label", val);
+  });
+  document.documentElement.lang = lang;
+  const seasonToggle = document.getElementById("seasonToggle");
+  if(seasonToggle && typeof toggleLabel === "function"){
+    seasonToggle.textContent = toggleLabel(seasonToggle.dataset.state || "closed");
+  }
+  document.querySelectorAll("#langSwitch button").forEach(b=>{
+    b.classList.toggle("active", b.dataset.lang === lang);
+  });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
 
 /* ===================== TABS ===================== */
 function switchTab(tab){

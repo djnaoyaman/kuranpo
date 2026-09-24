@@ -13,7 +13,7 @@ import re
 import datetime
 import xml.etree.ElementTree as ET
 
-BASE_URL = "https://djnaoyaman.github.io/kamakura-kurampo"
+BASE_URL = "https://djnaoyaman.github.io/kuranpo"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # 除外するディレクトリ・ファイル
@@ -60,8 +60,10 @@ def build_sitemap(rel_paths):
     today = datetime.date.today().isoformat()
     for rel in rel_paths:
         prio, freq = priority_for(rel)
+        # トップページは index.html を省略したルートURLで出力する
+        loc = f"{BASE_URL}/" if rel == "index.html" else f"{BASE_URL}/{rel}"
         url_el = ET.SubElement(urlset, "url")
-        ET.SubElement(url_el, "loc").text = f"{BASE_URL}/{rel}"
+        ET.SubElement(url_el, "loc").text = loc
         ET.SubElement(url_el, "lastmod").text = today
         ET.SubElement(url_el, "changefreq").text = freq
         ET.SubElement(url_el, "priority").text = f"{prio:.1f}"

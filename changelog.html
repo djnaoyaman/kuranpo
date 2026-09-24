@@ -14,41 +14,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>修正履歴｜鎌・くらんぽ</title>
 <meta name="description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
-<link rel="canonical" href="https://djnaoyaman.github.io/kamakura-kurampo/changelog.html">
+<link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/changelog.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="鎌・くらんぽ">
 <meta property="og:title" content="修正履歴｜鎌・くらんぽ">
 <meta property="og:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
-<meta property="og:url" content="https://djnaoyaman.github.io/kamakura-kurampo/changelog.html">
-<meta property="og:image" content="https://djnaoyaman.github.io/kamakura-kurampo/og-image.png">
+<meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/changelog.html">
+<meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="修正履歴｜鎌・くらんぽ">
 <meta name="twitter:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
-<meta name="twitter:image" content="https://djnaoyaman.github.io/kamakura-kurampo/og-image.png">
+<meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="robots" content="index,follow">
 <meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#E6E2D4; --card:#F3F1E7; --ink:#181B15; --ink-soft:#585C4E; --line:#C6C0AC;
-    --vermilion:#963A22; --moss:#3D4C36; --max:1120px;
+    --bg:#FFFF00; --card:#FFFFFF; --ink:#111111; --ink-soft:#3A3A3A; --line:#111111;
+    --vermilion:#E8171F; --moss:#00A651; --max:1120px;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
   body{margin:0; background:var(--bg); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho", serif;}
+  .mincho{font-family:"Zen Kaku Gothic New", sans-serif;}
   a{color:inherit;}
 
-  header.site{padding:40px 20px 28px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);}
+  header.site{padding:40px 20px 28px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);}
   header.site .inner{max-width:var(--max); margin:0 auto;}
-  header.site .back{font-size:12.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
-  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
-  header.site .kicker{font-size:11.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
-  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:14.5px;}
+  header.site h1{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
+  header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
 
   @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
   .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
@@ -63,40 +63,40 @@
   .notice{
     max-width:720px; margin:0 0 40px; padding:16px 18px;
     background:var(--card); border:1px solid var(--line); border-left:3px solid var(--ink-soft);
-    font-size:13px; color:var(--ink-soft);
+    font-size:15px; color:var(--ink-soft);
   }
 
   section.guard{max-width:760px; margin:0 0 56px;}
-  section.guard h2{font-family:"Shippori Mincho", serif; font-size:20px; margin:0 0 8px;}
-  section.guard > p{font-size:13px; color:var(--ink-soft); margin:0 0 20px;}
+  section.guard h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:22.5px; margin:0 0 8px;}
+  section.guard > p{font-size:15px; color:var(--ink-soft); margin:0 0 20px;}
   .guard-item{padding:14px 16px; margin:0 0 10px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
-  .guard-item .g-wrong{font-size:12.5px; color:var(--ink-soft); text-decoration:line-through; margin:0 0 4px;}
-  .guard-item .g-right{font-size:13.5px; color:var(--ink); font-weight:700; margin:0;}
+  .guard-item .g-wrong{font-size:14.5px; color:var(--ink-soft); text-decoration:line-through; margin:0 0 4px;}
+  .guard-item .g-right{font-size:15.5px; color:var(--ink); font-weight:700; margin:0;}
   .guard-item .g-right::before{content:"→ ";color:var(--vermilion);}
 
   section.log{max-width:760px;}
-  section.log h2{font-family:"Shippori Mincho", serif; font-size:20px; margin:0 0 4px;}
-  .log-date{font-size:12px; color:var(--ink-soft); letter-spacing:.06em; margin:0 0 20px; padding-bottom:12px; border-bottom:1px solid var(--line);}
+  section.log h2{font-family:"Zen Kaku Gothic New", sans-serif; font-size:22.5px; margin:0 0 4px;}
+  .log-date{font-size:14px; color:var(--ink-soft); letter-spacing:.06em; margin:0 0 20px; padding-bottom:12px; border-bottom:1px solid var(--line);}
   ol.log-list{list-style:none; margin:0; padding:0; counter-reset:rev;}
   ol.log-list li{
     counter-increment:rev; position:relative; padding:14px 0 14px 40px;
-    border-top:1px solid var(--line); font-size:13.5px;
+    border-top:1px solid var(--line); font-size:15.5px;
   }
   ol.log-list li:first-child{border-top:none;}
   ol.log-list li::before{
     content:counter(rev, decimal-leading-zero);
-    font-family:"Shippori Mincho", serif; font-weight:700; font-size:13px; color:var(--vermilion);
+    font-family:"Zen Kaku Gothic New", sans-serif; font-weight:700; font-size:15px; color:var(--vermilion);
     position:absolute; left:0; top:14px;
   }
   ol.log-list .tag{
-    display:inline-block; font-size:10px; color:var(--ink-soft); border:1px solid var(--line);
+    display:inline-block; font-size:12px; color:var(--ink-soft); border:1px solid var(--line);
     border-radius:8px; padding:1px 7px; margin-right:6px; vertical-align:middle;
   }
   ol.log-list .tag.fix{color:var(--vermilion); border-color:var(--vermilion);}
   ol.log-list .tag.add{color:var(--moss); border-color:var(--moss);}
   ol.log-list .tag.major{color:var(--indigo); border-color:var(--indigo); font-weight:700;}
 
-  footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft); font-size:12px; border-top:1px solid var(--line);}
+  footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft); font-size:14px; border-top:1px solid var(--line);}
   footer.site .inner{max-width:640px;}
   footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
 
@@ -111,16 +111,16 @@
   /* ---------- topbar ---------- */
   .topbar{
     position:sticky; top:0; z-index:100;
-    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    background:rgba(255,255,0,0.92); backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line);
   }
   .topbar-inner{
     max-width:var(--max); margin:0 auto; padding:0 20px;
-    display:flex; align-items:center; justify-content:space-between; height:56px;
+    display:flex; align-items:center; justify-content:space-between; gap:20px; height:56px;
   }
-  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-brand{font-size:17.5px; font-weight:700; color:var(--ink); text-decoration:none;}
   .topbar-nav{display:none; gap:22px;}
-  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a{font-size:15px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
   .topbar-nav a:hover{color:var(--vermilion);}
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
@@ -140,14 +140,14 @@
   }
   .drawer.open{transform:translateX(0);}
   .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
-  .drawer-head span{font-size:16px; font-weight:700;}
-  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
-  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-head span{font-size:18.5px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
   .drawer-label:first-of-type{margin-top:0;}
-  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
   .drawer-link:hover{color:var(--vermilion);}
   .drawer-overlay{
-    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    position:fixed; inset:0; z-index:150; background:rgba(17,17,17,0.35);
     opacity:0; visibility:hidden; transition:opacity .3s ease;
   }
   .drawer-overlay.open{opacity:1; visibility:visible;}
@@ -162,22 +162,22 @@
     width:46px; height:46px; border-radius:50%;
     background:var(--vermilion); color:#fff; border:none;
     display:flex; align-items:center; justify-content:center;
-    font-size:20px; line-height:1; cursor:pointer;
-    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    font-size:22.5px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(17,17,17,0.25);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:#7a2b1d;}
-  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+  .back-to-top:hover{background:#B01018;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:24.5px;} }
 
   .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
   .lang-switch button{
     appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
-    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+    font-size:12.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
   }
   .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
-  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:12px;} }
   .hamburger{
     appearance:none; background:none; border:none; cursor:pointer; padding:8px;
     display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
@@ -189,12 +189,12 @@
  "@type": "WebPage",
  "name": "修正履歴",
  "description": "鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。",
- "url": "https://djnaoyaman.github.io/kamakura-kurampo/changelog.html",
+ "url": "https://djnaoyaman.github.io/kuranpo/changelog.html",
  "inLanguage": "ja",
  "isPartOf": {
   "@type": "WebSite",
   "name": "鎌・くらんぽ",
-  "url": "https://djnaoyaman.github.io/kamakura-kurampo/index.html"
+  "url": "https://djnaoyaman.github.io/kuranpo/"
  }
 }
 </script>
@@ -250,7 +250,7 @@
 
 <main>
 
-<p class="lang-note" data-i18n="cl.langnote" style="max-width:720px; font-size:12px; color:var(--ink-soft); margin:0 0 20px; padding:10px 14px; background:var(--card); border-left:3px solid var(--line);">以下の更新ログ本文は日本語のみで記載しています（サイト内部の技術的な変更記録のため）。</p>
+<p class="lang-note" data-i18n="cl.langnote" style="max-width:720px; font-size:14px; color:var(--ink-soft); margin:0 0 20px; padding:10px 14px; background:var(--card); border-left:3px solid var(--line);">以下の更新ログ本文は日本語のみで記載しています（サイト内部の技術的な変更記録のため）。</p>
 
 <div class="notice">
   このサイトは2026年9月24日の一連の作業でゼロから構築された。そのため今のところ全ての履歴が同じ日付に集中しているが、今後の更新はここに日付ごとに追記していく。<br><br>
@@ -277,8 +277,18 @@
   <b style="color:var(--ink)">v1.9.1（2026-09-24）</b>：index.html内で唯一残っていた大きな翻訳の取りこぼし（タブの中身）を英語のみ解消。①エリア別・コンプリート版30コースのテーマ文を英訳。②宗教・人物・年表タブの全37レッグ（グループ名・タイトル・物語文）を新規に英訳（このデータはこれまで一切翻訳対象になっていなかった）。③出発点・解散点として使われる駅・バス停名21件を英訳。④「施設間の徒歩距離」ラベルを翻訳。⑤季節のおすすめカードのタイトル表示が独自キーで宙に浮いていたのを、既存のコース別知識ページと共通のキーに統一。実際にカードをレンダリングした状態で検証し、229個のi18nキーすべてに英訳が対応していることを確認済み。中国語・韓国語はこのタブコンテンツについては未着手（知識ページ30本の翻訳は既に完了済み、今回はタブの中身のみ）。<br>
   <b style="color:var(--ink)">v2.0.0（2026-09-24）</b>：デザインを全面改訂。従来の暖色クリーム＋明朝体＋テラコッタ配色は、実は生成AIデザインで最も頻出するパターンだったと判明したため、方向を転換。①配色を鎌倉石を思わせる冷たい灰色がかった紙色に変更、朱色は「至る所の装飾」ではなく歩いた記録のスタンプ等「押す場所」だけに使う印章的な役割に限定。②距離・拝観料・年代など数値情報はすべてIBM Plex Monoの等幅フォントで組み、散文と測量値を書体で区別。③ヒーローを中央揃えから非対称レイアウトに変更、鳥居アイコンを等高線（地形図）モチーフに置き換え。④宗教・人物・年表・エリア別の4色を「凡例」として提示し、独立した装飾ではなく一つの体系として見せる。⑤コースカードを均一な角丸＋左ボーダーの「SaaSカード」的な見た目から、測点票のような角のないフラットな形式に変更。⑥トラッキングを効かせた全角大文字の「見出しラベル」（AREA MAP —／SEASONAL PICK —／PROFILE等）と、リンク末尾に機械的に付く「→」記号を、AI生成デザインの典型的な"tell"として全箇所で除去。新配色とフォントは全36ページに展開済み。<br>
   <b style="color:var(--ink)">v2.1.0（2026-09-24）</b>：参考サイト2件（konel.co.jp／newbird.co.kr）を踏まえてインタラクションを追加。①マウスを動かした軌跡に、交互に足跡がついて1.6秒ほどで消える「足跡カーソル」を全36ページに実装（歩くサイトというテーマに合わせた効果。reduced-motion環境・タッチ端末では発火しない）。②コース別知識ページ30本の冒頭に、スクロールすると等高線モチーフの背景が視差でゆっくり動く「パララックス入口」を追加。「普通に読むと退屈なページはデザインで見せる」という方針に基づき、知識ページ限定で導入。<br>
-  <b style="color:var(--ink)">v2.2.0（2026-09-24）</b>：人名・難読語へのふりがな付与が一部の語にしか適用されておらず不統一だったため、全体に展開。北条時頼・北条時宗・源頼朝・日蓮・新田義貞・足利尊氏など約90語の人名・歴史用語の読み辞書を作成し、コース別知識ページ30本（見出し・物語文・用語解説）、history.htmlの「7つの視点」、basics.htmlの用語集6セクション、index.htmlの宗教・人物・年表・エリア別コースの物語文に一括適用。既存のふりがなを二重適用しないよう検出ロジックを組み、全箇所で正しく1回だけ付いていることを確認済み。メタデータ（JSON-LD構造化データ）内の人名には付与していない（画面表示されない情報のため対象外）。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v2.2.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v2.2.0.zip</a>から。
-  <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.9.0.zip</a>から。
+  <b style="color:var(--ink)">v2.2.0（2026-09-24）</b>：人名・難読語へのふりがな付与が一部の語にしか適用されておらず不統一だったため、全体に展開。北条時頼・北条時宗・源頼朝・日蓮・新田義貞・足利尊氏など約90語の人名・歴史用語の読み辞書を作成し、コース別知識ページ30本（見出し・物語文・用語解説）、history.htmlの「7つの視点」、basics.htmlの用語集6セクション、index.htmlの宗教・人物・年表・エリア別コースの物語文に一括適用。既存のふりがなを二重適用しないよう検出ロジックを組み、全箇所で正しく1回だけ付いていることを確認済み。メタデータ（JSON-LD構造化データ）内の人名には付与していない（画面表示されない情報のため対象外）。<br>
+  <b style="color:var(--ink)">v2.2.1（2026-09-24）</b>：トップバーでロゴ「鎌・くらんぽ」とナビゲーションリンクの間隔が詰まって見える不具合を修正。原因は言語切替ボタンに指定していた<code>margin-left:auto</code>が、本来ロゴとナビの間に配分されるはずだった<code>justify-content:space-between</code>の余白を吸収してしまい、両者の間隔が実質ゼロになっていたこと。トップバー全体に明示的な<code>gap</code>を指定して解消。あわせて、v2.0.0のデザイン全面改訂時に見落としていた旧配色のRGBA直書き（ヘッダー背景のグラデーション・ドロワーの背景・戻るボタンの影・季節カードのホバー色など）が全36ページに散在して残っていたことも発見し、新配色に統一。<br>
+  <b style="color:var(--ink)">v2.3.0（2026-09-24）</b>：①実際の公開URLが<code>kamakura-kurampo</code>ではなく<code>kuranpo</code>であることが判明し、canonical・OGP・JSON-LD・sitemap.xml・robots.txt・llms.txt・OG画像等、SEO関連で使っていたベースURLを全36ファイル・付随ファイルにわたって修正（41ファイル）。②g7ページ（日蓮、鎌倉で法難に遭う）に、日蓮が命を狙われた理由を社会環境と本人の立場の両面から補足：法華経以外を認めず幕府庇護下の念仏・禅を名指しで攻撃したこと、『立正安国論』が事実上幕府の宗教政策批判だったこと、北条氏の庇護を持たない低い身分の僧だったこと。EN/ZH/KO訳も同時更新。③用語一覧で、ルビと旧来の読み表示（.yomiスパン）が二重に読みを表示していた箇所（35件）を解消し、ルビのみに統一。ルビが付いていなかった単独の読み表示（23件）もルビに変換。④参考画像（konel.co.jp）を踏まえ、サイト全体の配色を石色基調の落ち着いた印象から、白背景中心の明るいトーンに転換。<br>
+  <b style="color:var(--ink)">v2.4.0（2026-09-24）</b>：①ホームページの正式URLを<code>https://djnaoyaman.github.io/kuranpo/</code>（末尾スラッシュ、index.html省略）に統一。canonical・OGP・JSON-LD・sitemap.xml・llms.txt・llms-full.txtの参照、およびsitemap自動生成スクリプトを修正し、トップページのみindex.htmlを省いたルートURLで出力されるようにした。②「宗教でめぐる」「人物でめぐる」「年表でめぐる」を含む6つの章カード・ドロワーリンクが、全てのタブについて同じ汎用アンカー（#chapters）を指しており、各タブへ直接リンク・共有できない状態だったのを修正。章カードを実体のある&lt;a&gt;タグに変え、タブごとに固有のURL（#tab-religion 等）を持たせ、そのURLに直接アクセスした場合に該当タブが自動的に開くようにした。③g7ページの追記部分を、大人にも子どもにも分かるよう、硬い言い回しをやめて短い文・具体的な言葉に書き直した（EN/ZH/KO含む）。他の29コース別知識ページへの同様の書き直しは、今回はまだ着手していない別途の作業として残っている。<br>
+  <b style="color:var(--ink)">v2.5.0（2026-09-24）</b>：「カラーのメリハリがなく読みにくい」との指摘を受け、配色の方向を落ち着いた石色調から、浮世絵を思わせる濃く鮮やかな色に転換。①朱・藍・苔・黄土の4色を、彩度を大幅に上げた版に変更（例：朱は#963A22→#E0391D）。②本文の薄墨色（--ink-soft）も濃くし、コントラスト不足を解消。③章カード・コースカードの左ボーダーを3px→6〜8pxに太くし、番号バッジを縁取りのみから塗りつぶしの色ブロックに変更。④「芸術と身体性をつなぐ」という要望に応え、足跡カーソルを単色から朱・藍・苔・黄土が一歩ごとに巡る仕様に変更し、不透明度も上げて存在感を強めた。⑤OG画像を新配色で再生成。<br>
+  <b style="color:var(--ink)">v2.6.0（2026-09-24）</b>：①背景色を黄色（#FFD400）に変更し、配色全体を黄色を軸に再構成。朱・藍・苔は彩度をさらに強め、黄土は背景の黄色に埋もれてしまうため紫（#9B4DCC）に差し替えた。カードの罫線・区切り線も黒に統一し、浮世絵よりさらにポップアートに近い、はっきりした色面構成に。②カードデザインの「堅さ」を解消：角丸＋太い黒縁のコマ割り風にし、番号バッジも角ばった塊から丸いピル型に。ホバーで少し傾いて浮き上がる、シールを貼るような動きを追加。③コース別知識ページ30本のうち、日蓮の1本（g7）を除く残り29本の本文を、大人にも子どもにも分かる短い文・やさしい言葉に全面的に書き直した（切通歩の語り口で統一。今回は日本語版のみで、英語・中国語・韓国語への反映はまだ）。書き直しに伴い、各ページのメタディスクリプションも新しい本文から再生成。<br>
+  <b style="color:var(--ink)">v2.6.1（2026-09-24）</b>：背景の黄色を#FFD400（やや橙寄り）から、本当の黄色である#FFFF00に修正。トップバーの半透明背景・OG画像も合わせて更新。<br>
+  <b style="color:var(--ink)">v2.7.0（2026-09-24）</b>：見出し・タイトル等に使っていた明朝体（Shippori Mincho）をやめ、全てゴシック体（Zen Kaku Gothic New）に統一。全36ページ・187箇所を一括変更し、不要になった明朝体フォントの読み込みも削除して軽量化した。<br>
+  <b style="color:var(--ink)">v2.8.0（2026-09-24）</b>：①コースカード・章カードのグリッドを、1024px以上でも3列にせず最大2列で固定。②カードの高さがテキスト量によってバラバラに見えていたのを解消：グリッドの<code>align-items</code>を<code>stretch</code>にして同じ行のカードの高さを揃え、カード自体もflexの縦積みに変更。「くわしく読む」リンクを各カードの下端に固定し、本文の長さに関わらず読み終わりの位置が揃うようにした。<br>
+  <b style="color:var(--ink)">v2.9.0（2026-09-24）</b>：これまでの度重なる配色変更の過程で、一部の色指定が古いバージョンのまま置き去りになっていたのを、全ファイルにわたって洗い出して修正。①足跡カーソルの色配列（フォールバック値）が、2世代前の配色（朱#E0391D・藍#17427E・苔#1B7A3D・黄土#D99A1B）のまま止まっていた箇所を、全36ページで現行配色に更新。②「トップに戻る」ボタンのホバー色が、最初期バージョンから一度も更新されずに残っていた（#7a2e1a／#7a2b1dの表記ゆれ含む）のを、現在の朱色に合わせて修正。③theme-colorメタタグが1世代前の朱色のままだったのを修正。④統計ボックスの文字色が、暖色系だった旧世代パレットの色（#F0DAC8等）のまま更新されておらず、現在のポップな配色から浮いていたのを、サイトの主色である黄色を軸にした配色に刷新。全ファイルでhex色・rgba値を総点検し、現行パレット以外の値がchangelogの過去バージョン記述を除いて残っていないことを確認済み。<br>
+  <b style="color:var(--ink)">v3.0.0（2026-09-24）</b>：①エリアの位置関係模式図を再設計。円のノードが5〜6文字のラベルに対して小さすぎ、文字がはみ出していたのを、角丸長方形（ピル型）に変更してラベル・コースコードが必ず収まるサイズを個別に計算。文字サイズも11px→16px、8px→11.5pxに拡大し、線・枠も太くしてサイト全体のポップな印象に合わせた。②サイト全体の文字サイズが、ポップで力強いトーン＆マナーに対して小さすぎるとの指摘を受け、本文・説明文・用語解説など読み物として使われる文字サイズを一律で約2px前後拡大（全36ページ・1199箇所）。コース別知識ページの見出しサイズも合わせて拡大。全ファイルの一括ダウンロードは<a href="kuranpo_v3.0.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v3.0.0.zip</a>から。
+  <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kuranpo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v1.9.0.zip</a>から。
 </div>
 
 <section class="guard">
@@ -366,6 +376,16 @@
     <li><span class="tag major">v2.0.0</span>デザイン全面改訂。暖色クリーム＋テラコッタ配色（生成AIの典型パターンと判明）から、冷たい石色＋朱を印章的アクセントに限定する方向へ転換。数値は等幅フォントで統一、ヒーローを非対称レイアウト化、カードを測点票スタイルに、大文字トラッキング見出しと機械的な「→」記号を全箇所で除去。新配色・フォントは全36ページに展開。</li>
     <li><span class="tag add">v2.1.0</span>参考サイト（konel.co.jp／newbird.co.kr）を踏まえ、足跡カーソル（全36ページ）とコース別知識ページ限定のパララックス入口（全30ページ）を追加。</li>
     <li><span class="tag fix">v2.2.0</span>人名・難読語のふりがなが不統一だった箇所を全面的に補完。約90語の読み辞書を作成し、知識ページ30本・history.html・basics.html・index.htmlの物語文に一括適用。既存分との二重適用なし。</li>
+    <li><span class="tag fix">v2.2.1</span>トップバーでロゴとナビの間隔がゼロになる不具合を修正（<code>margin-left:auto</code>が<code>space-between</code>の余白を吸収していたのが原因）。あわせてv2.0.0のデザイン改訂時に取り残されていた旧配色のRGBA直書きを全36ページで新配色に統一。</li>
+    <li><span class="tag major">v2.3.0</span>実際の公開URL（kuranpo）とSEO関連ファイルの想定URL（kamakura-kurampo）の不一致を修正。g7ページに日蓮迫害の背景説明を追記（3言語対応）。用語一覧のルビ二重表示を解消。配色を白背景中心の明るいトーンに転換。</li>
+    <li><span class="tag major">v2.4.0</span>トップページの正式URLを末尾スラッシュ形式に統一。宗教・人物・年表など6つの章カードが全て同じ汎用アンカーを指していた不具合を修正し、タブごとに固有のURL（直リンク可）を持たせた。g7の追記文を、より短くやさしい言葉に書き直し。</li>
+    <li><span class="tag major">v2.5.0</span>配色を石色調から浮世絵的な高彩度・高コントラストに転換。4色の彩度を大幅アップ、左ボーダーと番号バッジを太い塗りつぶしに変更、足跡カーソルを4色巡回にしてアート性と身体性を強調。</li>
+    <li><span class="tag major">v2.6.0</span>背景を黄色に変更しポップアート的な配色へ。黄土色は紫に差し替え。カードを角丸＋太い黒縁のコマ割り風に、番号バッジも丸いピル型に。コース別知識ページ29本の本文を、大人にも子どもにも分かるやさしい語り口に全面書き直し（日本語版のみ）。</li>
+    <li><span class="tag fix">v2.6.1</span>背景の黄色を#FFD400から本当の黄色#FFFF00に修正。OG画像も再生成。</li>
+    <li><span class="tag major">v2.7.0</span>見出し・タイトルに使っていた明朝体をやめ、全てゴシック体に統一（全36ページ・187箇所）。不要になったフォント読み込みも削除。</li>
+    <li><span class="tag fix">v2.8.0</span>カードグリッドを1024px以上でも最大2列に固定（3列廃止）。カードの高さを行内で揃え、「くわしく読む」を下端に固定して文字量による見た目の不揃いを解消。</li>
+    <li><span class="tag fix">v2.9.0</span>度重なる配色変更の過程で置き去りになっていた古い色指定を全ファイルで洗い出し修正：足跡カーソルの色配列、戻るボタンのホバー色、theme-colorメタタグ、統計ボックスの文字色。全て現行パレットに統一。</li>
+    <li><span class="tag major">v3.0.0</span>エリア模式図を円からピル型に再設計し、文字はみ出しを解消。サイト全体の文字サイズをポップなトーンに合わせて一律拡大（約2px、全36ページ・1199箇所）。</li>
   </ol>
 </section>
 
@@ -417,7 +437,8 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
 
   const FOOT = '<svg viewBox="0 0 24 34" width="15" height="21"><ellipse cx="12" cy="12" rx="7" ry="10"/><circle cx="6" cy="27" r="2.6"/><circle cx="10.5" cy="30.5" r="2.3"/><circle cx="15" cy="30" r="2.1"/><circle cx="18.5" cy="27.5" r="1.9"/></svg>';
 
-  let last = null, leftFoot = true, lastStamp = 0;
+  const COLORS = ["var(--vermilion, #E8171F)","var(--indigo, #0066CC)","var(--moss, #00A651)","var(--ochre, #9B4DCC)"];
+  let last = null, leftFoot = true, lastStamp = 0, colorIdx = 0;
   document.addEventListener("mousemove", (e)=>{
     const now = performance.now();
     if(now - lastStamp < 140) return; // 間引き
@@ -432,8 +453,9 @@ document.querySelectorAll("#langSwitch button").forEach(btn=>{
     const step = document.createElement("div");
     step.innerHTML = FOOT;
     const sideOffset = leftFoot ? -7 : 7;
+    if(leftFoot) colorIdx = (colorIdx + 1) % COLORS.length; // 一歩（左右セット）ごとに色を巡らせる
     leftFoot = !leftFoot;
-    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:var(--moss, #3D4C36); opacity:.32; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
+    step.style.cssText = `position:absolute; left:${e.clientX-7+sideOffset}px; top:${e.clientY-10}px; color:${COLORS[colorIdx]}; opacity:.55; transform:rotate(${angle}deg); transition:opacity 1.6s ease, transform 1.6s ease;`;
     layer.appendChild(step);
     requestAnimationFrame(()=>{
       step.style.opacity = "0";

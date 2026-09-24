@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>修正履歴 ｜ 鎌・くらんぽ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEAE0; --card:#FBF9F4; --ink:#1E1B18; --ink-soft:#5B534C; --line:#D9CFB8;
+    --vermilion:#8F3323; --moss:#48583F; --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  header.site{padding:40px 20px 28px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);}
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:12.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back::before{content:"← ";}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
+  header.site .kicker{font-size:11.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:14.5px;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  header.site .back.reveal-line{animation-delay:0s;}
+  header.site .kicker.reveal-line{animation-delay:.08s;}
+  header.site h1.reveal-line{animation-delay:.18s;}
+  header.site p.reveal-line{animation-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+
+  main{max-width:var(--max); margin:0 auto; padding:32px 20px 80px;}
+
+  .notice{
+    max-width:720px; margin:0 0 40px; padding:16px 18px;
+    background:var(--card); border:1px solid var(--line); border-left:3px solid var(--ink-soft);
+    font-size:13px; color:var(--ink-soft);
+  }
+
+  section.guard{max-width:760px; margin:0 0 56px;}
+  section.guard h2{font-family:"Shippori Mincho", serif; font-size:20px; margin:0 0 8px;}
+  section.guard > p{font-size:13px; color:var(--ink-soft); margin:0 0 20px;}
+  .guard-item{padding:14px 16px; margin:0 0 10px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
+  .guard-item .g-wrong{font-size:12.5px; color:var(--ink-soft); text-decoration:line-through; margin:0 0 4px;}
+  .guard-item .g-right{font-size:13.5px; color:var(--ink); font-weight:700; margin:0;}
+  .guard-item .g-right::before{content:"→ ";color:var(--vermilion);}
+
+  section.log{max-width:760px;}
+  section.log h2{font-family:"Shippori Mincho", serif; font-size:20px; margin:0 0 4px;}
+  .log-date{font-size:12px; color:var(--ink-soft); letter-spacing:.06em; margin:0 0 20px; padding-bottom:12px; border-bottom:1px solid var(--line);}
+  ol.log-list{list-style:none; margin:0; padding:0; counter-reset:rev;}
+  ol.log-list li{
+    counter-increment:rev; position:relative; padding:14px 0 14px 40px;
+    border-top:1px solid var(--line); font-size:13.5px;
+  }
+  ol.log-list li:first-child{border-top:none;}
+  ol.log-list li::before{
+    content:counter(rev, decimal-leading-zero);
+    font-family:"Shippori Mincho", serif; font-weight:700; font-size:13px; color:var(--vermilion);
+    position:absolute; left:0; top:14px;
+  }
+  ol.log-list .tag{
+    display:inline-block; font-size:10px; color:var(--ink-soft); border:1px solid var(--line);
+    border-radius:8px; padding:1px 7px; margin-right:6px; vertical-align:middle;
+  }
+  ol.log-list .tag.fix{color:var(--vermilion); border-color:var(--vermilion);}
+  ol.log-list .tag.add{color:var(--moss); border-color:var(--moss);}
+
+  footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft); font-size:12px; border-top:1px solid var(--line);}
+  footer.site .inner{max-width:640px;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  @media (min-width:768px){
+    header.site{padding:64px 32px 40px;}
+    main, footer.site{padding-left:32px; padding-right:32px;}
+  }
+  @media (min-width:1024px){
+    header.site{padding:80px 40px 48px;}
+    main, footer.site{padding-left:40px; padding-right:40px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; height:56px;
+  }
+  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:16px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7a2b1d;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+
+  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
+  .lang-switch button{
+    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
+    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+  }
+  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+        <div class="lang-switch" id="langSwitch">
+      <button data-lang="ja" class="active">JA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">中</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
+    <p class="kicker reveal-line" data-i18n="cl.kicker">先祖返りを防ぐための記録</p>
+    <h1 class="mincho reveal-line" data-i18n="cl.h1">修正履歴</h1>
+    <p class="lead reveal-line" data-i18n="cl.lead">このサイトが企画から現在の形になるまでの、指示と修正の変遷を日付ごとに記録する。同じ間違いを後から繰り返さないための「やってはいけない一覧」も併せて置いておく。</p>
+  </div>
+</header>
+
+<main>
+
+<p class="lang-note" data-i18n="cl.langnote" style="max-width:720px; font-size:12px; color:var(--ink-soft); margin:0 0 20px; padding:10px 14px; background:var(--card); border-left:3px solid var(--line);">以下の更新ログ本文は日本語のみで記載しています（サイト内部の技術的な変更記録のため）。</p>
+
+<div class="notice">
+  このサイトは2026年9月24日の一連の作業でゼロから構築された。そのため今のところ全ての履歴が同じ日付に集中しているが、今後の更新はここに日付ごとに追記していく。<br><br>
+  <b style="color:var(--ink)">v1.0.0（2026-09-24）</b>：この時点の全ファイルをGitで管理開始。以後の変更はバージョン番号を上げて記録する（軽微な追記＝パッチ版、機能追加＝マイナー版、構造変更＝メジャー版）。<br>
+  <b style="color:var(--ink)">v1.0.1（2026-09-24）</b>：トップページ「見方について」欄にあった素の下線リンク3本を、他の箇所と揃えたカード型リンクに変更。<br>
+  <b style="color:var(--ink)">v1.0.2（2026-09-24）</b>：フッターの注記4本（拝観料・※印・距離・総数）も同様に、ラベル付きの区切りリストに再構成。<br>
+  <b style="color:var(--ink)">v1.1.0（2026-09-24）</b>：UI/UXを全面リニューアル。全ページ共通のハンバーガーメニュー（ドロワー式ナビ）を追加し、トップページに鳥居のラインアートを配したヒーローと、相互リンクを充実させたフッター（コース早見・読みもの・このサイトについてを列にした3カラム）を新設。テキストサイズも一部拡大。<br>
+  <b style="color:var(--ink)">v1.1.1（2026-09-24）</b>：「トップに戻る」ボタンが無いという指摘を受け、全35ページに固定表示の丸ボタン（一定量スクロールすると出現、クリックでトップへスムーススクロール）を追加。散歩サイトとして迷子を出さないための必須ナビゲーションとして位置づける。<br>
+  <b style="color:var(--ink)">v1.1.2（2026-09-24）</b>：コース一覧の並び順を「エリア別→コンプリート版→宗教→人物→年表」から「エリア別→宗教→人物→年表→コンプリート版」に変更。エリア別コースを基本の入口としてまず提示し、宗教・人物・年表という3つの読み替えを続け、すべて歩き終えた人向けの補足であるコンプリート版を最後に置く構成にした。章グリッド・タブ・パネル・ドロワーの表示順をすべて揃えている。<br>
+  <b style="color:var(--ink)">v1.2.0（2026-09-24）</b>：神社仏閣の訪問件数（大きな数字＋寺社の内訳＋充足率）を、トップにまとめて1つ表示する形から、5つのタブそれぞれの中に個別表示する形に変更。宗教・人物・年表タブにも「このタブで訪ねる件数」を同じ体裁で表示し、エリア別・コンプリート版タブには合計119件になる旨の注記も残した。<br>
+  <b style="color:var(--ink)">v1.2.1（2026-09-24）</b>：統計ボックスがコースカードと見分けづらいという指摘を受け、濃色反転配色に変更。チャプター一覧の各カードに、歩いてみたくなるキャッチコピーを追加。エリア別コース・コンプリート版には「子供と歩けるコースあり」の注記を追加し、どのコースが・なぜ子供向けかを明記（大仏の胎内拝観・鶴岡八幡宮の広い境内・銭洗弁財天の体験型参拝など、平坦で危険な区間がなく1〜2時間で終わる点を根拠にした）。<br>
+  <b style="color:var(--ink)">v1.2.2（2026-09-24）</b>：フッターの「エリア別コース」14件リンクと「コンプリート版」抜粋リンクを削除。プレーンテキストの下線リンク一覧が、タブ・カードの表示と内容が重複するだけの劣化版UIだったための整理。フッターは「読みもの」「このサイトについて」の2カラムに整理した。<br>
+  <b style="color:var(--ink)">v1.3.0（2026-09-24）</b>：「このコースの基本知識」の自動抽出グロッサリー機能をカードから撤廃（個別ページのみに情報を集約する方針に統一）。「子供と歩けるコースあり」のバッジ表記もやめ、代わりに新しいチャプター「02 子供向けコース」を新設。エリア別コース・コンプリート版から平坦・短時間・危険区間なしの4コース（古代信仰の基層／頼朝、鎌倉に入る／江戸期「名所」になる／源氏山・銭洗弁天エリア）を実カードとして再掲し、なぜ子供向けかの理由をコースごとに明記した。全チャプター数は6に。<br>
+  <b style="color:var(--ink)">v1.3.1（2026-09-24）</b>：所要時間の絞り込み「すべて／1時間未満／2時間未満／2時間以上」を見直した。実際のコースは最短でも1時間のため「1時間未満」は常に0件という不具合があり、実データに合わせて「すべて／1〜1.5時間／2〜2.5時間／3時間以上」に変更。あわせてコンプリート版タブにも同じ絞り込みを追加し、これまでエリア別コース専用だった機能を汎用化した。<br>
+  <b style="color:var(--ink)">v1.4.0（2026-09-24）</b>：サイトをよりメジャーにするための機能を一括追加。①SEO/OGPメタ情報（description・og:*・twitter:*・canonical）を追加。②スタンプラリー機能：各コースカードに「歩いた」チェックを追加し、localStorageで記録・進捗表示（エリア別／コンプリート版）。③季節のおすすめ：現在の月に応じて明月院のあじさい・段葛の桜・報国寺の紅葉などを自動表示（該当月がなければ次のシーズンを先出し）。④エリア模式図マップ：北鎌倉・鎌倉駅周辺・長谷・金沢街道・大町・腰越・大船玉縄の位置関係を示すSVG図を新設。⑤多言語対応：トップバーに言語切替（JA/EN/中/한）を追加し、ヘッダー・チャプター6枚・パネル説明・フッター・ドロワーの55キーを英語・中国語（簡体字）・韓国語に翻訳。スペイン語と、コース別知識ページ（story本文・人物解説）の翻訳は次フェーズ。<br>
+  <b style="color:var(--ink)">v1.4.1（2026-09-24）</b>：季節のおすすめを、アクセスした月に関わらずいつでも確認できるよう「年間の季節おすすめを全部見る」開閉トグルを追加（12ヶ月分を一覧表示）。あわせて該当する10ページの個別コースページ（knowledge/g2, g3, g4, g5, g8, g9, g11, g12, g13, c1）に「このコースがおすすめの季節」情報を追加し、個別ページ単独でも季節の見どころを確認できるようにした。<br>
+  <b style="color:var(--ink)">v1.4.2（2026-09-24）</b>：多言語訳文をセルフレビューし、不自然な箇所を修正。英語のキャッチコピー2箇所（語順・語尾の座りの悪さ）、中国語のキャッチコピー（「一网打尽」が犯罪者を捕らえる文脈の慣用句で散歩ガイドには物騒すぎたため変更）、中国語・韓国語の「くらんぽ」表記（ひらがなのまま出しても読めないため、名前の意味を説明する文に修正）を対応。ネイティブ話者による確認は別途推奨。<br>
+  <b style="color:var(--ink)">v1.5.0（2026-09-24）</b>：多言語対応をサイト全体に拡大。全35ページのトップバーに言語切替（JA/EN/中/한）を設置。basics.html・profile.html・404.htmlは全文、history.htmlは「7つの視点」総論とヘッダー、changelog.htmlはヘッダーのみ翻訳（ログ本文は技術的な変更記録のため日本語のみと明記）。knowledge配下30ページはナビ・フッター等の共通部分を翻訳し、story本文・人物解説は分量の都合で今回は対象外（サイト側にその旨明記）。全35ページでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を確認済み。<br>
+  <b style="color:var(--ink)">v1.5.1（2026-09-24）</b>：トップページ「見方について」の説明文を、硬い言い回しから短く簡潔な表現に書き換え。全ファイルの一括ダウンロードは<a href="kamakura-kurampo_v1.5.1.zip" style="color:var(--vermilion); text-decoration:underline;">kamakura-kurampo_v1.5.1.zip</a>から。
+</div>
+
+<section class="guard">
+  <h2 class="mincho">先祖返り注意リスト</h2>
+  <p>一度直したのに、あとの編集で気づかず元に戻すと厄介なもの。特にこの5点。</p>
+
+  <div class="guard-item">
+    <p class="g-wrong">報国寺を「関東十刹」と書く</p>
+    <p class="g-right">報国寺は「諸山」。関東十刹は大慶寺など。Wikipediaで確認済み。</p>
+  </div>
+  <div class="guard-item">
+    <p class="g-wrong">東慶寺の覚山尼を「北条時宗の子・貞時の姉」と書く</p>
+    <p class="g-right">覚山尼は時宗の妻であり、貞時の母。</p>
+  </div>
+  <div class="guard-item">
+    <p class="g-wrong">杉本寺の拝観料を「大人200円・小人100円」の2段階で書く</p>
+    <p class="g-right">公式サイトの表記は「一般（高校生以上）300円・中学生200円・小学生100円」の3段階。英勝寺も同様に3段階（大人300円・高校生200円・中小学生100円）。</p>
+  </div>
+  <div class="guard-item">
+    <p class="g-wrong">拝観料をコースごとに個別入力する</p>
+    <p class="g-right">拝観料はindex.html内のFEESテーブルで寺社名ごとに一元管理している。個別のコースデータ（spot呼び出し）に価格を直接書き込まない。修正はFEESテーブルの該当キーだけを直す。</p>
+  </div>
+  <div class="guard-item">
+    <p class="g-wrong">「徒歩◯km」を境内を歩き回る分も含む距離として説明する</p>
+    <p class="g-right">この距離は「施設間の距離」（駅・バス停を含む、次の施設までの区間距離）であり、境内を歩き回る分は含まない。ラベルにもその旨を明記している。</p>
+  </div>
+</section>
+
+<section class="log">
+  <h2 class="mincho">作業ログ</h2>
+  <p class="log-date">2026年9月24日</p>
+  <ol class="log-list">
+    <li><span class="tag add">企画</span>鎌倉市内の神社仏閣を、歴史を紐解きながら歩く散歩サイトの企画。出発点・解散点を明示した1〜3時間の散歩コースという基本ルールを設定。</li>
+    <li><span class="tag add">追加</span>宗教軸・人物軸・年表軸という3つのテーマでめぐる巡礼プランを追加。地理的に離れた社寺を無理に1コースにまとめず、複数回に分けて巡る前提に設計を修正。</li>
+    <li><span class="tag fix">訂正</span>網羅性の指摘を受け、勝長寿院跡・寿福寺・浄智寺・覚園寺・浄光明寺・稲村ヶ崎など欠落していたコースを追加。</li>
+    <li><span class="tag add">構築</span>初版サイト（index.html）を構築。エリア別コースをタブ形式で表示。</li>
+    <li><span class="tag add">追加</span>訪問可能な神社仏閣の総数（寺・社の内訳）を集計し、市内総数の推定に対する充足率を明記。</li>
+    <li><span class="tag add">追加</span>編者ペンネーム「切通歩（きりどおし・あゆむ）」を採用。</li>
+    <li><span class="tag add">追加</span>各コースに、その場所の物語・魅力・目的を説明する文章（story）を追加。</li>
+    <li><span class="tag fix">訂正</span>「解釈ではなく事実を」との指摘を受け、全コースの記述を事実確認。勝長寿院の建立時期、大仏造立と北条泰時の年代関係などの誤りを訂正。</li>
+    <li><span class="tag add">追加</span>各区間の徒歩距離（施設間の距離）を追加。所要分は距離70m/分換算。</li>
+    <li><span class="tag add">追加</span>エリア別14コースが訪ねなかった社寺を拾う「コンプリート版」16コースを追加し、市内の実質網羅率を算出。</li>
+    <li><span class="tag add">追加</span>タブ（エリア別／コンプリート版／宗教／人物／年表）ごとに訪問できる神社仏閣数を表示。</li>
+    <li><span class="tag fix">訂正</span>拝観料の不整合（タブによって同じ寺の価格が違う）を指摘され、FEESテーブルによる一元管理に構造変更。</li>
+    <li><span class="tag fix">訂正</span>杉本寺・英勝寺の拝観料が実際は3段階（一般・中学生・小学生 等）であることが判明し、料金モデルに中間価格（teen）の枠を追加して対応。</li>
+    <li><span class="tag fix">変更</span>所要時間の絞り込みボタンを「すべて／1時間未満／2時間未満／2時間以上」の表記に変更。</li>
+    <li><span class="tag fix">変更</span>サイト名を「鎌・くらんぽ」に改名。PC・タブレット・スマホに対応するレスポンシブデザインに変更。</li>
+    <li><span class="tag add">追加</span>編者プロフィールページ（profile.html）を新設。</li>
+    <li><span class="tag add">追加</span>歩く前の基礎知識ページ（basics.html）を新設。用語集にGoogle Mapsへのリンクを追加。</li>
+    <li><span class="tag fix">訂正</span>内容校正・時代考証を多角的に実施。報国寺の寺格（十刹→諸山）、覚山尼の関係（子・姉→妻・母）、建長寺と元寇の前後関係など複数の誤りを訂正。</li>
+    <li><span class="tag add">追加</span>basics.htmlに「歴史の基本知識」（鎌倉幕府の成立・執権政治・元寇・南北朝など）の章を追加。</li>
+    <li><span class="tag add">追加</span>普通に読めない人名・地名（蘭渓道隆、無学祖元、護良親王、覚園寺など）にルビを追加。</li>
+    <li><span class="tag add">追加</span>各コースのアコーディオンを開くと、そのコースの物語文に実際に出てくる語を26語のミニ用語集と自動照合し、「このコースの基本知識」として表示する機能を追加。</li>
+    <li><span class="tag add">追加</span>コース別・歴史の基本知識ページ（history.html）を新設。全30コース分の人物・出来事の知識を掲載。</li>
+    <li><span class="tag fix">再構築</span>naito-otsuka.comのフレーミング（章番号、一行ずつの見出し表現、余白の多いグリッド）を参照し、トップページのレイアウトを再構成。ヒーローの段階的な出現アニメーション、5チャプターの一覧グリッド、カードのスクロール出現アニメーションを追加。</li>
+    <li><span class="tag fix">訂正</span>多段組（column-count）とtransformの併用による表示ズレ、カード見出しの縦位置ズレ、アニメーション失敗時にカードが表示されないリスクの3点を修正。</li>
+    <li><span class="tag fix">再構築</span>history.htmlを、「神社と寺の違い」「建築を見る目」「誰を祀っているか」「創建年代と歴史」「権力との関係」「民間信仰」「土地との関係」の7つの視点による総論から始まる構成に拡張。各コースに祭神・本尊・民間信仰との接点などを追加し、読み応えのある分量にした。</li>
+    <li><span class="tag add">追加</span>この修正履歴ページ（changelog.html）を新設。</li>
+    <li><span class="tag add">追加</span>404ページ（404.html）を新設。</li>
+    <li><span class="tag fix">再構築</span>history.htmlの30コース分の全文を、コースごとに独立した専用ページ（knowledge/g1.html〜knowledge/c16.html、全30ページ）へ分割。history.html自体は「7つの視点」の総論と、各ページへの一覧・リンクだけを持つ形に変更。index.htmlの各コースカードから、対応する専用ページへ1:1でリンクするように変更。</li>
+    <li><span class="tag fix">訂正</span>エリア別・コンプリート版カードの並び順が、段組み（column-count）のせいで「01→02→03…」と読めず列ごとに縦読みになる不具合を修正。CSS Gridに変更し、番号順に左から右へ読める配置にした。</li>
+    <li><span class="tag fix">再構築</span>エリア別・コンプリート版のカードから、ページ内アコーディオン（開閉展開）を撤廃。カード自体を専用ページ（knowledge/*.html）への直接リンクに変更し、拝観料・距離・スポット一覧・物語文もその専用ページに統合。index.html側は要約（出発・解散・所要時間・距離・拝観料合計）のみを表示する構成にした。</li>
+    <li><span class="tag add">v1.0.0</span>サイト全体をGitで管理開始。一括ダウンロード用のzipを作成。</li>
+    <li><span class="tag fix">v1.0.1</span>「見方について」欄にあった素の下線リンク（歩く前の基礎知識／コース別・歴史の基本知識／修正履歴）を、他の箇所と統一したカード型リンクに変更。</li>
+    <li><span class="tag fix">v1.0.2</span>フッターの注記4本（拝観料・※印・距離・総数）を、ベタ書きの段落からラベル付きの区切りリストに再構成。</li>
+    <li><span class="tag add">v1.1.0</span>UI/UXを全面リニューアル。全35ページ共通のハンバーガーメニュー（ドロワー式ナビ）を追加。トップページのヒーローに鳥居のラインアートを追加し、フッターを3カラムの相互リンクディレクトリ（コース早見・読みもの・このサイトについて）に拡張。リード文・パネル説明文のテキストサイズを拡大。参考として一見坊の日本妖怪学体系サイトの構成（数字見出し・相互リンクの充実・確認できる事実と私見を分ける姿勢）を参照した。</li>
+    <li><span class="tag add">v1.1.1</span>全35ページに「トップに戻る」ボタン（固定表示、一定量スクロールで出現）を追加。散歩サイトとして経路に迷わせないための必須ナビゲーションと位置づける。</li>
+    <li><span class="tag fix">v1.1.2</span>コース一覧の並び順を「エリア別→宗教→人物→年表→コンプリート版」に変更（章グリッド・タブ・パネル・ドロワーすべて）。基本コースの後に3つの読み替えを続け、補足的なコンプリート版を最後に置く構成にした。</li>
+    <li><span class="tag add">v1.2.0</span>神社仏閣の訪問件数の統計ボックスを、トップに1つだけ置く形から5タブそれぞれの中に個別表示する形に変更。宗教・人物・年表タブにも同じ体裁で件数・充足率を表示。</li>
+    <li><span class="tag fix">v1.2.1</span>統計ボックスを濃色反転配色に変更（カードとの見分けをつきやすくした）。チャプター一覧にキャッチコピーと「子供と歩けるコースあり」の注記（対象コース・理由を明示）を追加。</li>
+    <li><span class="tag fix">v1.2.2</span>フッターの「エリア別コース」14件リンク・「コンプリート版」抜粋リンクを削除。タブ・カードと内容が重複するだけの劣化版UIだったため。フッターを「読みもの」「このサイトについて」の2カラムに整理。</li>
+    <li><span class="tag add">v1.3.0</span>「このコースの基本知識」自動グロッサリーをカードから撤廃（情報は個別ページのみに集約）。「子供と歩けるコースあり」バッジを廃止し、新チャプター「02 子供向けコース」を新設。4コースを実カードで再掲し、なぜ子供向けかを明記。</li>
+    <li><span class="tag fix">v1.3.1</span>所要時間の絞り込みを「1時間未満」が常に0件になる不具合を修正し、実データに合わせた区分（1〜1.5時間／2〜2.5時間／3時間以上）に変更。コンプリート版タブにも同じ絞り込みを追加。</li>
+    <li><span class="tag add">v1.4.0</span>SEO/OGPメタ情報、スタンプラリー（歩いた記録・localStorage）、季節のおすすめ（月ごとに自動表示）、エリア模式図マップ（SVG）、多言語対応（JA/EN/中/한、55キー）を追加。スペイン語とコース別知識ページの翻訳は次フェーズ。</li>
+    <li><span class="tag add">v1.4.1</span>季節のおすすめに「年間を全部見る」トグルを追加し、いつアクセスしても12ヶ月分を確認できるようにした。該当する10本の個別コースページにも「このコースがおすすめの季節」を追加。</li>
+    <li><span class="tag fix">v1.4.2</span>多言語訳文をセルフレビューし修正。英語のキャッチコピー2箇所、中国語のキャッチコピー（不穏当な慣用句を回避）、中国語・韓国語の「くらんぽ」表記（ひらがな→意味説明）を直した。</li>
+    <li><span class="tag add">v1.5.0</span>多言語対応を全35ページに拡大。basics/profile/404は全文、historyは総論部分、changelogはヘッダーのみ翻訳。knowledge30ページは共通部分（ナビ・フッター）を翻訳し、本文は対象外である旨を明記。全ページで構文・キー網羅を確認済み。</li>
+    <li><span class="tag fix">v1.5.1</span>トップページ「見方について」の説明文を短く簡潔な表現に書き換え。</li>
+  </ol>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p><a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+  </div>
+</footer>
+
+<script>
+const TRANSLATIONS = {
+en: {"cl.kicker": "A record to prevent backsliding", "cl.h1": "Changelog", "cl.lead": "A dated record of the instructions and revisions that shaped this site from planning to its current form. Includes a \"do-not-repeat\" list so the same mistakes aren't made twice.", "cl.langnote": "The changelog entries below are written in Japanese only (they're a technical, internal record of site changes).", "nav.courses": "Courses", "nav.basics": "Basics", "nav.history": "History", "nav.profile": "Editor", "drawer.courses": "Browse Courses", "footer.reading": "Further Reading", "footer.about": "About This Site", "footer.credit.label": "Editor: ", "footer.credit.editor": "Kiridoshi Ayumu", "footer.credit.changelog": "Changelog"},
+zh: {"cl.kicker": "为防止走回头路而做的记录", "cl.h1": "修改履历", "cl.lead": "按日期记录本站从策划到形成现有样貌过程中的指示与修改变迁。同时附有「不可再犯清单」，避免日后重复同样的错误。", "cl.langnote": "以下更新日志正文仅提供日文（属于网站内部的技术性变更记录）。", "nav.courses": "路线一览", "nav.basics": "基础知识", "nav.history": "历史知识", "nav.profile": "编者", "drawer.courses": "浏览路线", "footer.reading": "延伸阅读", "footer.about": "关于本站", "footer.credit.label": "编辑・文责：", "footer.credit.editor": "切通步", "footer.credit.changelog": "更新记录"},
+ko: {"cl.kicker": "뒷걸음질을 막기 위한 기록", "cl.h1": "수정 이력", "cl.lead": "이 사이트가 기획부터 지금의 모습이 되기까지의 지시와 수정 과정을 날짜별로 기록한다. 같은 실수를 나중에 반복하지 않기 위한 '하지 말아야 할 것 목록'도 함께 두었다.", "cl.langnote": "아래 업데이트 로그 본문은 일본어로만 작성되어 있습니다（사이트 내부의 기술적인 변경 기록이기 때문）。", "nav.courses": "코스 목록", "nav.basics": "기초 지식", "nav.history": "역사 지식", "nav.profile": "편저자", "drawer.courses": "코스 보기", "footer.reading": "읽을거리", "footer.about": "이 사이트에 대하여", "footer.credit.label": "편집・글쓴이：", "footer.credit.editor": "키리도시 아유무", "footer.credit.changelog": "수정 이력"},
+};
+
+const JA_ORIGINALS = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
+    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
+
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+</body>
+</html>

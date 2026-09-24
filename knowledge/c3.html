@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>扇ガ谷② 未収録寺 ｜ コース別歴史知識 ｜ 鎌・くらんぽ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEAE0; --card:#FBF9F4; --ink:#1E1B18; --ink-soft:#5B534C; --line:#D9CFB8;
+    --vermilion:#8F3323; --moss:#48583F; --max:760px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+  ruby rt{font-size:0.6em;}
+
+  header.site{padding:40px 20px 24px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);}
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:12.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:10px;}
+  header.site .back::before{content:"← ";}
+  header.site .crumb{font-size:11px; color:var(--ink-soft); margin:0 0 14px;}
+  header.site .crumb a{text-decoration:underline; text-decoration-color:var(--line);}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .6s cubic-bezier(.22,.61,.36,1) forwards;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+
+  main{max-width:var(--max); margin:0 auto; padding:24px 20px 60px;}
+
+  article.course{padding:0; background:none; border:none; margin:0;}
+  article.course h1{font-family:"Shippori Mincho", serif; font-size:clamp(22px,4vw,28px); margin:0 0 6px;}
+  article.course h1 .no{font-size:13px; color:var(--ink-soft); margin-right:10px; font-family:"Zen Kaku Gothic New",sans-serif;}
+  article.course .spots-line{font-size:13px; color:var(--ink-soft); margin:0 0 10px;}
+  article.course .lens-tags{margin:0 0 18px; display:flex; gap:6px; flex-wrap:wrap;}
+  article.course .lens-tags span{font-size:10.5px; color:var(--vermilion); border:1px solid var(--line); border-radius:10px; padding:2px 8px;}
+  article.course .maplinks{margin:0 0 22px; display:flex; gap:10px; flex-wrap:wrap;}
+  article.course .maplinks a{font-size:12px; color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+  article.course .maplinks a::before{content:"📍 ";}
+
+  dl.terms{margin:0;}
+  .term{padding:16px 0; border-top:1px solid var(--line);}
+  .term:first-child{border-top:none; padding-top:0;}
+  .term dt{font-family:"Shippori Mincho", serif; font-weight:700; font-size:16px; margin:0 0 6px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
+  .term dt .yomi{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:400; font-size:12px; color:var(--ink-soft);}
+  .term dt .cat{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:400; font-size:10.5px; color:var(--vermilion); border:1px solid var(--line); border-radius:8px; padding:1px 7px;}
+  .term dd{margin:0; font-size:14px; color:var(--ink);}
+
+
+  .practical{margin:0 0 24px; padding-bottom:20px; border-bottom:1px solid var(--line);}
+  .meta-row{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12.5px; color:var(--ink-soft); margin:0 0 14px;}
+  .meta-row b{color:var(--ink); font-weight:500;}
+  .meta-row .fee{color:var(--vermilion); font-weight:500;}
+  .meta-row .dist{color:var(--ink); font-weight:500;}
+  .story{font-family:"Shippori Mincho", serif; font-size:14.5px; line-height:1.9; color:var(--ink); margin:0 0 16px;}
+  .spot-list{list-style:none; margin:0; padding:0;}
+  .spot-list li{padding:10px 0; border-top:1px solid var(--line); font-size:13.5px;}
+  .spot-list li:first-child{border-top:none;}
+  .spot-list .leg{display:block; font-size:11px; color:var(--ink-soft); margin-bottom:2px;}
+  .spot-list .leg::before{content:"→ ";}
+  .spot-list .row{display:flex; justify-content:space-between; gap:10px; align-items:baseline;}
+  .spot-list .sname{flex:1;}
+  .spot-list .snote{display:block; color:var(--ink-soft); font-size:11.5px; margin-top:2px;}
+  .spot-list .sfee{flex:0 0 auto; text-align:right; color:var(--ink-soft); font-size:12.5px; white-space:nowrap;}
+  .spot-list .sfee .opt{display:block; font-size:11px; margin-top:2px;}
+  .spot-list li.endleg .row{color:var(--ink-soft); font-size:12.5px;}
+  .card-footnote{font-size:11.5px; color:var(--ink-soft); margin-top:10px;}
+  .section-divider{font-family:"Shippori Mincho", serif; font-size:15px; font-weight:700; margin:0 0 14px;}
+
+  .fw-ref{margin:28px 0 0; padding:14px 16px; background:var(--card); border:1px solid var(--line); border-left:3px solid var(--line); font-size:12.5px; color:var(--ink-soft);}
+  .fw-ref a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  nav.pager{display:flex; justify-content:space-between; gap:12px; margin:36px 0 0; padding-top:20px; border-top:1px solid var(--line);}
+  nav.pager a{font-size:12.5px; color:var(--ink-soft); text-decoration:none;}
+  nav.pager a:hover{color:var(--vermilion);}
+  nav.pager .prev::before{content:"← ";}
+  nav.pager .next::after{content:" →";}
+
+  footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 50px; color:var(--ink-soft); font-size:12px; border-top:1px solid var(--line);}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; height:56px;
+  }
+  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:16px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7a2b1d;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+
+  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
+  .lang-switch button{
+    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
+    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+  }
+  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="../index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="../index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="../basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="../history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="../profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+        <div class="lang-switch" id="langSwitch">
+      <button data-lang="ja" class="active">JA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">中</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="../index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="../history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="../basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="../history.html#framework">神社仏閣を見る7つの視点</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="../profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="../changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C3 扇ガ谷② 未収録寺</p>
+  </div>
+</header>
+
+<main>
+  <article class="course reveal-line" id="c3">
+
+  <h1><span class="no">C3</span>扇ガ谷② 未収録寺</h1>
+  <div class="practical">
+    <div class="meta-row">
+      <span><b>鎌倉駅西口</b> → <b>鎌倉駅西口</b></span>
+      <span>1時間</span>
+      <span class="dist">施設間の徒歩距離 約2.8km</span>
+      <span class="fee">大人合計 無料</span>
+    </div>
+    <p class="story">英勝寺・海蔵寺の周辺には、移転や改宗を経て小さくなった寺がいくつも残っている。護国寺は昭和になってから移ってきた寺で、扇ガ谷の歴史の層のいちばん新しい部分を担う。有名な寺をひとまわり見終えた後の、静かな余白のようなコース。</p>
+    <ul class="spot-list"><li><span class="leg">鎌倉駅西口から 徒歩900m・約13分</span><div class="row"><span class="sname">護国寺<span class="snote">1969年創建の日蓮正宗寺院。</span></span><span class="sfee">無料</span></div></li><li><span class="leg">護国寺から 徒歩300m・約4分</span><div class="row"><span class="sname">妙伝寺<span class="snote">東京文京区より移転。</span></span><span class="sfee">無料</span></div></li><li><span class="leg">妙伝寺から 徒歩300m・約4分</span><div class="row"><span class="sname">薬王寺<span class="snote">日像による改宗の伝承を持つ。</span></span><span class="sfee">無料</span></div></li><li><span class="leg">薬王寺から 徒歩500m・約7分</span><div class="row"><span class="sname">厳島神社</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">厳島神社から 徒歩800m・約11分</span><div class="row"><span class="sname">解散地点：鎌倉駅西口</span></div></li></ul>
+    
+  </div>
+  <p class="section-divider">歴史の基本知識</p>
+  <p class="spots-line">護国寺・妙伝寺・薬王寺・厳島神社</p>
+  <div class="lens-tags"><span>04 創建年代</span></div>
+  <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85%E8%A5%BF%E5%8F%A3" target="_blank" rel="noopener">出発：鎌倉駅西口</a></div>
+  <dl class="terms">
+    <div class="term"><dt>日蓮正宗<span class="yomi">にちれんしょうしゅう</span><span class="cat">01</span></dt><dd>護国寺の宗派。1969年（昭和44年）の創建で、扇ガ谷の中では新しい寺にあたる。</dd></div>
+  </dl>
+
+  </article>
+
+  <p class="fw-ref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説している。</p>
+
+  <nav class="pager">
+    <a class="prev" href="c2.html">前：北鎌倉② 円覚寺・建長寺周辺の未収録社寺</a>
+    <a href="../history.html">一覧へ</a>
+    <a class="next" href="c4.html">次：大町② 未収録の社寺</a>
+  </nav>
+</main>
+
+<footer class="site">
+  <p><span data-i18n="footer.credit.label">編集・文責：</span><a href="../profile.html" data-i18n="footer.credit.editor">切通歩</a> ／ <a href="../changelog.html" data-i18n="footer.credit.changelog">修正履歴</a></p>
+</footer>
+
+<script>
+const TRANSLATIONS = {
+en: {
+  "nav.courses":"Courses","nav.basics":"Basics","nav.history":"History","nav.profile":"Editor",
+  "drawer.courses":"Browse Courses","footer.reading":"Further Reading","footer.about":"About This Site",
+  "footer.credit.label":"Editor: ","footer.credit.editor":"Kiridoshi Ayumu","footer.credit.changelog":"Changelog",
+},
+zh: {
+  "nav.courses":"路线一览","nav.basics":"基础知识","nav.history":"历史知识","nav.profile":"编者",
+  "drawer.courses":"浏览路线","footer.reading":"延伸阅读","footer.about":"关于本站",
+  "footer.credit.label":"编辑・文责：","footer.credit.editor":"切通步","footer.credit.changelog":"更新记录",
+},
+ko: {
+  "nav.courses":"코스 목록","nav.basics":"기초 지식","nav.history":"역사 지식","nav.profile":"편저자",
+  "drawer.courses":"코스 보기","footer.reading":"읽을거리","footer.about":"이 사이트에 대하여",
+  "footer.credit.label":"편집・글쓴이：","footer.credit.editor":"키리도시 아유무","footer.credit.changelog":"수정 이력",
+},
+};
+
+const JA_ORIGINALS = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
+
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
+    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
+
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+</body>
+</html>

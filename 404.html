@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 ― この先、道はありません ｜ 鎌・くらんぽ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEAE0; --card:#FBF9F4; --ink:#1E1B18; --ink-soft:#5B534C; --line:#D9CFB8;
+    --vermilion:#8F3323; --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8; -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
+  }
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+
+  main.notfound{
+    flex:1; display:flex; align-items:center;
+    padding:60px 20px; background:radial-gradient(circle at 88% 18%, rgba(143,51,35,0.08), transparent 55%), var(--bg);
+  }
+  .nf-inner{max-width:640px; margin:0 auto;}
+  .nf-inner .kicker{font-size:11.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 18px; animation-delay:.05s;}
+  .nf-inner .no{
+    font-family:"Shippori Mincho", serif; font-weight:700; color:var(--vermilion);
+    font-size:clamp(64px,16vw,120px); line-height:1; margin:0 0 8px; animation-delay:.15s;
+  }
+  .nf-inner h1{
+    font-family:"Shippori Mincho", serif; font-weight:700;
+    font-size:clamp(22px,4vw,30px); margin:0 0 18px; animation-delay:.3s;
+  }
+  .nf-inner p.body-text{font-size:14.5px; color:var(--ink-soft); margin:0 0 14px; max-width:34em; animation-delay:.42s;}
+  .nf-inner .sign{
+    margin:28px 0 32px; padding:16px 18px; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--vermilion); font-family:"Shippori Mincho", serif; font-size:14px;
+    line-height:1.9; animation-delay:.56s;
+  }
+  .nf-inner .actions{display:flex; gap:12px; flex-wrap:wrap; animation-delay:.7s;}
+  .nf-inner .actions a{
+    font-size:13px; padding:10px 18px; border:1px solid var(--line); text-decoration:none;
+    color:var(--ink); transition:border-color .2s ease, color .2s ease;
+  }
+  .nf-inner .actions a.primary{background:var(--vermilion); color:#fff; border-color:var(--vermilion);}
+  .nf-inner .actions a:not(.primary):hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .nf-inner .actions a.primary:hover{opacity:.9;}
+
+  footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 40px; color:var(--ink-soft); font-size:12px; border-top:1px solid var(--line); width:100%;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  @media (min-width:768px){
+    main.notfound{padding:80px 32px;}
+    footer.site{padding-left:32px; padding-right:32px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; height:56px;
+  }
+  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:16px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7a2b1d;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+
+  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
+  .lang-switch button{
+    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
+    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+  }
+  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+        <div class="lang-switch" id="langSwitch">
+      <button data-lang="ja" class="active">JA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">中</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<main class="notfound">
+  <div class="nf-inner">
+    <p class="kicker reveal-line" data-i18n="p404.kicker">切通の途中で、道が途切れました</p>
+    <p class="no reveal-line">404</p>
+    <h1 class="mincho reveal-line" data-i18n="p404.h1">この先、道はありません</h1>
+    <p class="body-text reveal-line" data-i18n="p404.body">お探しのページは、移動したか、まだ切り開かれていない道のようです。鎌倉の切通も、崩れたり付け替えられたりしながら今の形になった。URLも、たまに道が変わる。</p>
+    <div class="sign reveal-line" data-i18n="p404.sign">
+      出発点：ここ（404）<br>
+      解散点：不明<br>
+      所要時間：この先には進めません
+    </div>
+    <div class="actions reveal-line">
+      <a class="primary" href="index.html" data-i18n="p404.a1">トップに戻って歩き直す</a>
+      <a href="basics.html" data-i18n="p404.a2">歩く前の基礎知識を読む</a>
+      <a href="history.html" data-i18n="p404.a3">コース別・歴史の基本知識を読む</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <p><span data-i18n="footer.credit.label">編集・文責：</span><a href="profile.html" data-i18n="footer.credit.editor">切通歩</a> ／ <a href="changelog.html" data-i18n="footer.credit.changelog">修正履歴</a></p>
+</footer>
+
+<script>
+const TRANSLATIONS = {
+en: {
+  "nav.courses":"Courses","nav.basics":"Basics","nav.history":"History","nav.profile":"Editor",
+  "drawer.courses":"Browse Courses","footer.reading":"Further Reading","footer.about":"About This Site",
+  "footer.credit.label":"Editor: ","footer.credit.editor":"Kiridoshi Ayumu","footer.credit.changelog":"Changelog",
+  "p404.kicker":"The path breaks off, mid-pass",
+  "p404.h1":"No Path Beyond This Point",
+  "p404.body":"The page you're looking for may have moved, or the path simply hasn't been cut yet. Kamakura's mountain passes, too, took their current shape through collapse and rerouting. URLs change their course now and then.",
+  "p404.sign":"Start: Here (404)<br>End: Unknown<br>Duration: No further progress possible",
+  "p404.a1":"Back to the top, and start walking again",
+  "p404.a2":"Read the basics before you walk",
+  "p404.a3":"Read the course-by-course history",
+},
+zh: {
+  "nav.courses":"路线一览","nav.basics":"基础知识","nav.history":"历史知识","nav.profile":"编者",
+  "drawer.courses":"浏览路线","footer.reading":"延伸阅读","footer.about":"关于本站",
+  "footer.credit.label":"编辑・文责：","footer.credit.editor":"切通步","footer.credit.changelog":"更新记录",
+  "p404.kicker":"走到切通半路，道断了",
+  "p404.h1":"此处，无路可通",
+  "p404.body":"您要找的页面可能已经搬走，也可能是尚未开辟的道路。镰仓的切通古道，也是在崩塌与改道中变成如今的模样。URL偶尔也会改道。",
+  "p404.sign":"起点：这里（404）<br>终点：未知<br>所需时间：无法继续前进",
+  "p404.a1":"回到首页，重新出发",
+  "p404.a2":"阅读出发前的基础知识",
+  "p404.a3":"阅读各路线的历史知识",
+},
+ko: {
+  "nav.courses":"코스 목록","nav.basics":"기초 지식","nav.history":"역사 지식","nav.profile":"편저자",
+  "drawer.courses":"코스 보기","footer.reading":"읽을거리","footer.about":"이 사이트에 대하여",
+  "footer.credit.label":"편집・글쓴이：","footer.credit.editor":"키리도시 아유무","footer.credit.changelog":"수정 이력",
+  "p404.kicker":"기리도시(고갯길) 도중에 길이 끊겼습니다",
+  "p404.h1":"이 앞으로는 길이 없습니다",
+  "p404.body":"찾으시는 페이지는 이동했거나, 아직 뚫리지 않은 길인 것 같습니다. 가마쿠라의 기리도시(고갯길)도 무너지고 다시 나기를 거듭하며 지금의 모습이 되었습니다. URL도 가끔 길이 바뀝니다.",
+  "p404.sign":"출발점：여기（404）<br>해산점：불명<br>소요 시간：이 앞으로는 진행할 수 없습니다",
+  "p404.a1":"처음으로 돌아가 다시 걷기",
+  "p404.a2":"걷기 전에 기초 지식 읽기",
+  "p404.a3":"코스별 역사 지식 읽기",
+},
+};
+
+const JA_ORIGINALS = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
+
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
+    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+</body>
+</html>

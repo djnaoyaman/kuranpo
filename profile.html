@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>編者プロフィール ｜ 鎌・くらんぽ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEAE0;
+    --card:#FBF9F4;
+    --ink:#1E1B18;
+    --ink-soft:#5B534C;
+    --line:#D9CFB8;
+    --vermilion:#8F3323;
+    --vermilion-bg:#F3E3DD;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  header.site{
+    padding:40px 20px 26px; border-bottom:1px solid var(--line);
+    background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);
+  }
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:12.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back::before{content:"← ";}
+  header.site .eyebrow{font-size:11px; letter-spacing:.18em; color:var(--ink-soft); text-transform:uppercase; margin:0 0 10px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,36px); margin:0 0 6px;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  header.site .back.reveal-line{animation-delay:0s;}
+  header.site .kicker.reveal-line{animation-delay:.08s;}
+  header.site h1.reveal-line{animation-delay:.18s;}
+  header.site p.reveal-line{animation-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+  header.site .yomi{font-size:13px; color:var(--ink-soft); margin:0;}
+
+  main{max-width:var(--max); margin:0 auto; padding:36px 20px 60px;}
+  .lead{font-family:"Shippori Mincho", serif; font-size:15.5px; line-height:2; max-width:640px; margin:0 0 40px;}
+
+  section.block{max-width:720px; margin:0 0 40px; padding-top:28px; border-top:1px solid var(--line);}
+  section.block:first-of-type{border-top:none; padding-top:0;}
+  section.block h2{font-family:"Shippori Mincho", serif; font-size:19px; margin:0 0 16px;}
+  section.block h3{font-family:"Zen Kaku Gothic New", sans-serif; font-size:13px; color:var(--ink-soft); letter-spacing:.06em; margin:20px 0 8px;}
+  section.block p{font-size:14px; margin:0 0 12px; color:var(--ink);}
+  section.block ul{margin:0 0 12px; padding-left:1.1em;}
+  section.block li{font-size:13.5px; margin-bottom:6px; color:var(--ink);}
+  section.block li .note{display:block; color:var(--ink-soft); font-size:12px; margin-top:2px;}
+  section.block a.ext{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  .pen-names{
+    display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;
+  }
+  .pen-names span{
+    font-size:12px; padding:5px 10px; border:1px solid var(--line); background:var(--card); border-radius:3px; color:var(--ink-soft);
+  }
+
+  footer.site{
+    max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft);
+    font-size:12px; border-top:1px solid var(--line);
+  }
+  footer.site .inner{max-width:640px;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  @media (min-width:768px){
+    header.site{padding:56px 32px 32px;}
+    main, footer.site{padding-left:32px; padding-right:32px;}
+  }
+  @media (min-width:1024px){
+    header.site{padding:72px 40px 40px;}
+    main, footer.site{padding-left:40px; padding-right:40px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; height:56px;
+  }
+  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:16px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7a2b1d;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+
+  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
+  .lang-switch button{
+    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
+    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+  }
+  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+        <div class="lang-switch" id="langSwitch">
+      <button data-lang="ja" class="active">JA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">中</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
+    <p class="eyebrow">PROFILE</p>
+    <h1 class="mincho reveal-line">編者プロフィール</h1>
+    <p class="yomi reveal-line">切通歩（きりどおし・あゆむ）</p>
+  </div>
+</header>
+
+<main>
+  <p class="lead reveal-line" data-i18n="profile.lead">「切通」は、鎌倉特有の、山を切り開いてつくられた古道の名。谷戸から谷戸へ、人が歩いて越えてきた道そのものを指す。「歩」は、その名の通り歩く人。鎌倉の徒歩コースを整理し、拝観料や距離を確かめながら記録していく、このサイトの編者名として名乗っている。</p>
+
+  <section class="block">
+    <h2 class="mincho" data-i18n="profile.h2.career">本名としての経歴</h2>
+    <p data-i18n="profile.p.career">本名は宮崎直哉。ブランドマネージャー・マーケターとして、複数のウェルネス・ヘルスケア領域企業でマーケティングディレクターを務める。岩手県紫波町では東根エリアのブランディングプロデューサーも担う。</p>
+
+    <h3 data-i18n="profile.h3.education">学歴</h3>
+    <ul data-i18n="profile.ul.education">
+      <li>足立区立梅島小学校 卒業</li>
+      <li>足立区立第四中学校 卒業</li>
+      <li>明治学院高校 卒業</li>
+      <li>青山学院大学 文学部 教育学科 中退</li>
+      <li>明治大学 商学部 商学科 卒業</li>
+    </ul>
+
+    <h3 data-i18n="profile.h3.work">経歴</h3>
+    <ul data-i18n="profile.ul.work">
+      <li>みずほ情報総研株式会社（ロンドン・ニューヨーク向け大規模決済処理システム構築、ビジネスコンサルタント）</li>
+      <li>株式会社サイバーエージェント（インターネット広告代理事業部 マネジメント）</li>
+      <li>株式会社リッツ・インターナショナル 取締役（美容サービス事業およびクリニック経営を担当）</li>
+      <li>株式会社フライング・ブレイン 代表取締役（上流マーケティング企画会社として、アパレル・ウェルネスを中心に50以上のブランドの上流マーケティング・ブランディングを担当）</li>
+      <li>紫波金魚 代表</li>
+      <li>あづまねエリアブランディングプロデューサー（岩手県紫波郡紫波町、2024年〜）。地方活性化のプロジェクトには、複数の自治体を横断して関わっている。</li>
+    </ul>
+
+    <h3 data-i18n="profile.h3.talks">講演実績</h3>
+    <p data-i18n="profile.p.talks">東京工科大学、関東学院大学、神奈川大学、和光大学、専修大学、紫波町、五島市、砥部市、他。</p>
+  </section>
+
+  <section class="block">
+    <h2 class="mincho" data-i18n="profile.h2.names">名義について</h2>
+    <p data-i18n="profile.p.names">活動領域ごとに名義を分けている。「切通歩」は鎌倉の歴史・地理を扱うこのサイトのための名義。</p>
+    <div class="pen-names" data-i18n="profile.pennames">
+      <span>切通歩 ― 鎌・くらんぽ（本サイト）</span>
+      <span>一見坊 ― 妖怪関連</span>
+      <span>湯気文吾 ― サウナ関連</span>
+      <span>djnaoyaman ― DJ</span>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="mincho" data-i18n="profile.h2.works">制作物・関連プロジェクト</h2>
+    <ul data-i18n="profile.ul.works">
+      <li>鎌・くらんぽ（本サイト）<span class="note">鎌倉市内の神社仏閣を、出発点と解散点を定めた散歩コースで整理し、拝観料・徒歩距離・歴史的背景をまとめた個人編集のガイド。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/youkai/index.html">一見坊の【日本妖怪学体系】</a><span class="note">47都道府県と全国区の日本の妖怪を、伝承・出典・信頼度つきでまとめた個人編集のデータベース。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/sakanamushi/">花鳥風月、そして魚と虫</a><span class="note">魚偏・虫偏をはじめとする難読漢字（380字超）を、一字ずつ大きく読んで答えるクイズ図鑑。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/ppp/about.html">掌蹠膿疱症.com</a><span class="note">個人の記録と公開資料をもとに整理した情報サイト。</span></li>
+      <li><a class="ext" href="https://note.com/djnaoyaman">note.com（djnaoyaman）</a><span class="note">エッセイ、DJ関連の連載などを執筆中。</span></li>
+      <li><a class="ext" href="https://sauna-ikitai.com/saunners/12991">サウナイキタイ</a><span class="note">ペンネーム「湯気文吾」で、全国のサウナを巡り記録するプロジェクト。</span></li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2 class="mincho" data-i18n="profile.h2.stance">このサイトの姿勢</h2>
+    <p data-i18n="profile.p.stance">鎌倉の社寺には、史料で確認できる事実と、語り継がれるうちに姿を変えてきた伝承の両方がある。このサイトでは、その二つをできるだけ分けて書くことを心がけている。拝観料や距離のように確認できる数字は公式サイト等で確かめ、伝承や逸話には「伝わる」「という」といった言葉を残す。鎌倉を面白く紹介することだけでなく、何が確認できて、何が伝承なのかを残しておきたい。</p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p><a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+  </div>
+</footer>
+
+<script>
+const TRANSLATIONS = {
+en: {
+  "nav.courses":"Courses","nav.basics":"Basics","nav.history":"History","nav.profile":"Editor",
+  "drawer.courses":"Browse Courses","footer.reading":"Further Reading","footer.about":"About This Site",
+  "footer.credit.label":"Editor: ","footer.credit.editor":"Kiridoshi Ayumu","footer.credit.changelog":"Changelog",
+  "profile.lead":"“Kiridoshi” is the name for the mountain passes cut through Kamakura's hills — the roads people walked from one valley to the next. “Ayumu” simply means “one who walks.” I go by this name as the editor of this site, organizing Kamakura's walking courses and recording admission fees and distances as I confirm them.",
+  "profile.h2.career":"Career (under my real name)",
+  "profile.p.career":"My real name is Naoya Miyazaki. I work as a brand manager and marketer, serving as marketing director for several wellness and healthcare companies. Since 2024 I've also served as branding producer for the Azumane area of Shiwa Town, Iwate Prefecture.",
+  "profile.h3.education":"Education",
+  "profile.ul.education":"<li>Graduated, Adachi Ward Umejima Elementary School</li><li>Graduated, Adachi Ward Daiyon Junior High School</li><li>Graduated, Meiji Gakuin High School</li><li>Aoyama Gakuin University, Faculty of Letters, Dept. of Education (did not complete)</li><li>Graduated, Meiji University, Faculty of Commerce</li>",
+  "profile.h3.work":"Work History",
+  "profile.ul.work":"<li>Mizuho Information & Research Institute (business consultant, building large-scale payment processing systems for London and New York)</li><li>CyberAgent, Inc. (management, internet advertising agency division)</li><li>Director, Ritz International Co., Ltd. (beauty services and clinic management)</li><li>Representative Director, Flying Brain Co., Ltd. (upstream marketing and branding for 50+ brands, centered on apparel and wellness)</li><li>Representative, Shiwa Kingyo</li><li>Azumane Area Branding Producer (Shiwa District, Iwate Prefecture, 2024–). Works across multiple municipalities on regional revitalization projects.</li>",
+  "profile.h3.talks":"Speaking Engagements",
+  "profile.p.talks":"Tokyo University of Technology, Kanto Gakuin University, Kanagawa University, Wako University, Senshu University, Shiwa Town, Goto City, Tobe Town, and others.",
+  "profile.h2.names":"About the Pen Names",
+  "profile.p.names":"I use a different name for each area of activity. “Kiridoshi Ayumu” is the name used for this site, which covers Kamakura's history and geography.",
+  "profile.pennames":"<span>Kiridoshi Ayumu — Kama-Kurampo (this site)</span><span>Ikkenbo — yokai folklore</span><span>Yuge Bungo — sauna</span><span>djnaoyaman — DJ</span>",
+  "profile.h2.works":"Works & Related Projects",
+  "profile.ul.works":"<li>Kama-Kurampo (this site)<span class=\"note\">A personally edited guide organizing Kamakura's shrines and temples into walking courses with fixed start and end points, along with admission fees, walking distances, and historical background.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/youkai/index.html\">Ikkenbo's Compendium of Japanese Yokai</a><span class=\"note\">A personally edited database of Japanese yokai across all 47 prefectures and nationwide, with folklore, sources, and reliability ratings.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/sakanamushi/\">Birds, Flowers, Wind, and Moon — Fish and Insects</a><span class=\"note\">A picture quiz of 380+ hard-to-read kanji, centered on the fish and insect radicals, shown one large character at a time.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/ppp/about.html\">Palmoplantar-Pustulosis.com</a><span class=\"note\">An information site organized from personal records and published materials.</span></li><li><a class=\"ext\" href=\"https://note.com/djnaoyaman\">note.com (djnaoyaman)</a><span class=\"note\">Essays and a DJ-related series, among other writing.</span></li><li><a class=\"ext\" href=\"https://sauna-ikitai.com/saunners/12991\">Sauna Ikitai</a><span class=\"note\">Under the pen name “Yuge Bungo,” a project recording saunas visited across Japan.</span></li>",
+  "profile.h2.stance":"This Site's Approach",
+  "profile.p.stance":"Kamakura's shrines and temples carry both facts that can be verified in historical records and legends that have changed shape as they were passed down. This site tries to keep the two separate as much as possible: figures that can be checked, like admission fees and distances, are confirmed against official sources; legends and anecdotes are marked with words like “said to” or “according to tradition.” The goal isn't only to make Kamakura interesting, but to keep a record of what can be confirmed and what remains legend.",
+},
+zh: {
+  "nav.courses":"路线一览","nav.basics":"基础知识","nav.history":"历史知识","nav.profile":"编者",
+  "drawer.courses":"浏览路线","footer.reading":"延伸阅读","footer.about":"关于本站",
+  "footer.credit.label":"编辑・文责：","footer.credit.editor":"切通步","footer.credit.changelog":"更新记录",
+  "profile.lead":"「切通」是镰仓特有的地名，指开凿山岭而成的古道——人们从一个谷户走到另一个谷户所经的路。「步」正如其字面意思，即行走之人。我以此名担任本站编者，整理镰仓的徒步路线，一边核实参拜费用与距离，一边记录下来。",
+  "profile.h2.career":"本名经历",
+  "profile.p.career":"本名宫崎直哉。作为品牌经理・市场营销人员，在多家健康养生领域企业担任市场总监。自2024年起，兼任岩手县紫波町东根地区的品牌营造负责人。",
+  "profile.h3.education":"学历",
+  "profile.ul.education":"<li>足立区立梅岛小学 毕业</li><li>足立区立第四中学 毕业</li><li>明治学院高中 毕业</li><li>青山学院大学 文学部 教育学科 肄业</li><li>明治大学 商学部 商学科 毕业</li>",
+  "profile.h3.work":"工作经历",
+  "profile.ul.work":"<li>瑞穗信息综研株式会社（面向伦敦・纽约的大型结算处理系统构建，任业务顾问）</li><li>CyberAgent株式会社（互联网广告代理事业部 管理岗）</li><li>Ritz International株式会社 董事（负责美容服务事业及诊所经营）</li><li>Flying Brain株式会社 代表董事（作为上游营销企划公司，负责服饰・养生领域50余个品牌的上游营销与品牌策划）</li><li>紫波金鱼 代表</li><li>东根地区品牌营造负责人（岩手县紫波郡紫波町，2024年〜）。跨多个地方自治体参与地域振兴项目。</li>",
+  "profile.h3.talks":"演讲经历",
+  "profile.p.talks":"东京工科大学、关东学院大学、神奈川大学、和光大学、专修大学、紫波町、五岛市、砥部町等。",
+  "profile.h2.names":"关于笔名",
+  "profile.p.names":"按活动领域使用不同的笔名。「切通步」是负责镰仓历史与地理的本站专用笔名。",
+  "profile.pennames":"<span>切通步 ― 鎌·くらんぽ（本站）</span><span>一见坊 ― 妖怪相关</span><span>汤气文吾 ― 桑拿相关</span><span>djnaoyaman ― DJ</span>",
+  "profile.h2.works":"作品与相关项目",
+  "profile.ul.works":"<li>鎌·くらんぽ（本站）<span class=\"note\">将镰仓市内神社佛阁整理为设有起点终点的徒步路线，汇总参拜费用・步行距离・历史背景的个人编辑指南。</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/youkai/index.html\">一见坊的【日本妖怪学体系】</a><span class=\"note\">收录日本47都道府县及全国性妖怪、附带传承・出处・可信度的个人编辑数据库。</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/sakanamushi/\">花鸟风月，以及鱼与虫</a><span class=\"note\">以鱼字旁・虫字旁为主的380余个难读汉字，逐字放大呈现的图鉴式问答。</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/ppp/about.html\">掌跖脓疱症.com</a><span class=\"note\">基于个人记录与公开资料整理的信息网站。</span></li><li><a class=\"ext\" href=\"https://note.com/djnaoyaman\">note.com（djnaoyaman）</a><span class=\"note\">连载随笔及DJ相关文章等。</span></li><li><a class=\"ext\" href=\"https://sauna-ikitai.com/saunners/12991\">Sauna Ikitai</a><span class=\"note\">以笔名「汤气文吾」记录走访全国桑拿的项目。</span></li>",
+  "profile.h2.stance":"本站的立场",
+  "profile.p.stance":"镰仓的社寺，既有史料可查证的事实，也有在口耳相传中逐渐变形的传说。本站尽量将二者分开书写：参拜费用、距离等可核实的数字会对照官方资料确认；传说与轶事则保留「相传」「据说」等措辞。希望留下的不只是让镰仓变得有趣，更是哪些内容已获确认、哪些仍属传说。",
+},
+ko: {
+  "nav.courses":"코스 목록","nav.basics":"기초 지식","nav.history":"역사 지식","nav.profile":"편저자",
+  "drawer.courses":"코스 보기","footer.reading":"읽을거리","footer.about":"이 사이트에 대하여",
+  "footer.credit.label":"편집・글쓴이：","footer.credit.editor":"키리도시 아유무","footer.credit.changelog":"수정 이력",
+  "profile.lead":"'키리도시(切通)'는 가마쿠라 특유의, 산을 깎아 만든 옛길의 이름. 골짜기(야토)에서 골짜기로 사람이 걸어서 넘어온 길 그 자체를 가리킨다. '아유무(歩)'는 이름 그대로 걷는 사람. 가마쿠라의 도보 코스를 정리하고, 참배료와 거리를 확인하며 기록해 나가는 이 사이트의 편저자명으로 쓰고 있다.",
+  "profile.h2.career":"본명으로서의 경력",
+  "profile.p.career":"본명은 미야자키 나오야. 브랜드 매니저・마케터로서 여러 웰니스・헬스케어 분야 기업에서 마케팅 디렉터를 맡고 있다. 이와테현 시와초에서는 아즈마네 지역의 브랜딩 프로듀서도 겸하고 있다.",
+  "profile.h3.education":"학력",
+  "profile.ul.education":"<li>아다치구립 우메지마 초등학교 졸업</li><li>아다치구립 제4중학교 졸업</li><li>메이지가쿠인 고등학교 졸업</li><li>아오야마가쿠인대학 문학부 교육학과 중퇴</li><li>메이지대학 상학부 상학과 졸업</li>",
+  "profile.h3.work":"경력",
+  "profile.ul.work":"<li>미즈호정보종연구소 주식회사（런던・뉴욕 대상 대규모 결제처리시스템 구축, 비즈니스 컨설턴트）</li><li>주식회사 사이버에이전트（인터넷 광고대행사업부 매니지먼트）</li><li>주식회사 리츠 인터내셔널 이사（미용 서비스 사업 및 클리닉 경영 담당）</li><li>주식회사 플라잉 브레인 대표이사（상류 마케팅 기획회사로서 어패럴・웰니스를 중심으로 50개 이상 브랜드의 상류 마케팅・브랜딩 담당）</li><li>시와킨교 대표</li><li>아즈마네 지역 브랜딩 프로듀서（이와테현 시와군 시와초, 2024년〜）. 여러 지자체를 넘나들며 지역 활성화 프로젝트에 참여하고 있다.</li>",
+  "profile.h3.talks":"강연 실적",
+  "profile.p.talks":"도쿄공과대학, 간토가쿠인대학, 가나가와대학, 와코대학, 센슈대학, 시와초, 고토시, 도베초 외.",
+  "profile.h2.names":"필명에 대하여",
+  "profile.p.names":"활동 영역마다 필명을 나누어 쓰고 있다. '키리도시 아유무'는 가마쿠라의 역사・지리를 다루는 이 사이트를 위한 이름.",
+  "profile.pennames":"<span>키리도시 아유무 ― 카마쿠람포(이 사이트)</span><span>잇켄보 ― 요괴 관련</span><span>유게 분고 ― 사우나 관련</span><span>djnaoyaman ― DJ</span>",
+  "profile.h2.works":"작품・관련 프로젝트",
+  "profile.ul.works":"<li>카마쿠람포（이 사이트）<span class=\"note\">가마쿠라 시내의 신사・사찰을 출발점과 해산점을 정한 도보 코스로 정리하고, 참배료・도보 거리・역사적 배경을 정리한 개인 편집 가이드.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/youkai/index.html\">잇켄보의 [일본 요괴학 체계]</a><span class=\"note\">일본 47개 도도부현과 전국구 요괴를 전승・출전・신뢰도와 함께 정리한 개인 편집 데이터베이스.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/sakanamushi/\">화조풍월, 그리고 물고기와 벌레</a><span class=\"note\">물고기 변・벌레 변을 중심으로 한 난독 한자(380자 이상)를, 한 글자씩 크게 보여주며 맞히는 퀴즈 도감.</span></li><li><a class=\"ext\" href=\"https://djnaoyaman.github.io/ppp/about.html\">장척농포증(掌蹠膿疱症).com</a><span class=\"note\">개인 기록과 공개 자료를 바탕으로 정리한 정보 사이트.</span></li><li><a class=\"ext\" href=\"https://note.com/djnaoyaman\">note.com（djnaoyaman）</a><span class=\"note\">에세이, DJ 관련 연재 등을 집필 중.</span></li><li><a class=\"ext\" href=\"https://sauna-ikitai.com/saunners/12991\">사우나 이키타이</a><span class=\"note\">필명 '유게 분고'로 전국의 사우나를 순회하며 기록하는 프로젝트.</span></li>",
+  "profile.h2.stance":"이 사이트의 자세",
+  "profile.p.stance":"가마쿠라의 사찰・신사에는 사료로 확인할 수 있는 사실과, 전해 내려오며 모습을 바꾸어 온 전승이 모두 존재한다. 이 사이트에서는 이 둘을 가능한 한 나누어 쓰려고 한다. 참배료나 거리처럼 확인 가능한 숫자는 공식 사이트 등으로 확인하고, 전승이나 일화에는 '전해진다', '라고 한다' 같은 표현을 남긴다. 가마쿠라를 흥미롭게 소개하는 것뿐 아니라, 무엇이 확인되었고 무엇이 전승인지를 남겨두고 싶다.",
+},
+};
+
+const JA_ORIGINALS = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
+
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
+    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+</body>
+</html>

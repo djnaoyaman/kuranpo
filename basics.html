@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歩く前の基礎知識 ｜ 鎌・くらんぽ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEAE0;
+    --card:#FBF9F4;
+    --ink:#1E1B18;
+    --ink-soft:#5B534C;
+    --line:#D9CFB8;
+    --vermilion:#8F3323;
+    --vermilion-bg:#F3E3DD;
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Zen Kaku Gothic New", sans-serif; line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  .mincho{font-family:"Shippori Mincho", serif;}
+  a{color:inherit;}
+
+  header.site{
+    padding:40px 20px 28px; border-bottom:1px solid var(--line);
+    background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);
+  }
+  header.site .inner{max-width:var(--max); margin:0 auto;}
+  header.site .back{font-size:12.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
+  header.site .back::before{content:"← ";}
+  header.site .kicker{font-size:11.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
+
+  @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+  .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
+  header.site .back.reveal-line{animation-delay:0s;}
+  header.site .kicker.reveal-line{animation-delay:.08s;}
+  header.site h1.reveal-line{animation-delay:.18s;}
+  header.site p.reveal-line{animation-delay:.32s;}
+  @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:14.5px;}
+
+  nav.jump{
+    position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
+    background:var(--bg); border-bottom:1px solid var(--line); padding:0 20px; scrollbar-width:none;
+  }
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump .inner{display:flex; max-width:var(--max); margin:0 auto; width:100%;}
+  nav.jump a{
+    flex:0 0 auto; padding:14px 14px 12px; font-size:13px; color:var(--ink-soft);
+    text-decoration:none; border-bottom:2px solid transparent; white-space:nowrap;
+  }
+  nav.jump a:hover{color:var(--ink); border-bottom-color:var(--vermilion);}
+
+  main{max-width:var(--max); margin:0 auto; padding:32px 20px 60px;}
+
+  section.group{max-width:760px; margin:0 0 44px; padding-top:26px; border-top:1px solid var(--line);}
+  section.group:first-of-type{border-top:none; padding-top:0;}
+  section.group h2{font-family:"Shippori Mincho", serif; font-size:19px; margin:0 0 6px;}
+  section.group .group-note{font-size:12.5px; color:var(--ink-soft); margin:0 0 18px;}
+
+  dl.terms{margin:0;}
+  .term{
+    display:block; padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .term:last-child{border-bottom:none;}
+  .term dt{
+    font-family:"Shippori Mincho", serif; font-weight:700; font-size:15.5px; margin:0 0 6px;
+    display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  }
+  .term dt .yomi{font-family:"Zen Kaku Gothic New", sans-serif; font-weight:400; font-size:11.5px; color:var(--ink-soft);}
+  .term dd{margin:0; font-size:13.5px; color:var(--ink);}
+  .term dd .map{
+    display:inline-block; margin-top:8px; font-size:12px; color:var(--vermilion);
+    text-decoration:underline; text-decoration-color:var(--line);
+  }
+  .term dd .map::before{content:"📍 ";}
+
+  footer.site{
+    max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft);
+    font-size:12px; border-top:1px solid var(--line);
+  }
+  footer.site .inner{max-width:640px;}
+  footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+
+  @media (min-width:768px){
+    header.site{padding:64px 32px 40px;}
+    main, footer.site{padding-left:32px; padding-right:32px;}
+    section.group dl.terms{column-count:2; column-gap:32px;}
+    section.group .term{break-inside:avoid;}
+  }
+  @media (min-width:1024px){
+    header.site{padding:80px 40px 48px;}
+    main, footer.site{padding-left:40px; padding-right:40px;}
+  }
+  /* ---------- topbar ---------- */
+  .topbar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(239,234,224,0.92); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; justify-content:space-between; height:56px;
+  }
+  .topbar-brand{font-size:15px; font-weight:700; color:var(--ink); text-decoration:none;}
+  .topbar-nav{display:none; gap:22px;}
+  .topbar-nav a{font-size:13px; color:var(--ink-soft); text-decoration:none; transition:color .2s ease;}
+  .topbar-nav a:hover{color:var(--vermilion);}
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+  .hamburger span{display:block; width:20px; height:2px; background:var(--ink); transition:transform .25s ease, opacity .25s ease;}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
+    background:var(--card); border-left:1px solid var(--line);
+    transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
+    padding:20px 24px; overflow-y:auto;
+  }
+  .drawer.open{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
+  .drawer-head span{font-size:16px; font-weight:700;}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-label{font-size:11px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
+  .drawer-label:first-of-type{margin-top:0;}
+  .drawer-link{display:block; padding:10px 0; font-size:14.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .drawer-link:hover{color:var(--vermilion);}
+  .drawer-overlay{
+    position:fixed; inset:0; z-index:150; background:rgba(30,27,24,0.35);
+    opacity:0; visibility:hidden; transition:opacity .3s ease;
+  }
+  .drawer-overlay.open{opacity:1; visibility:visible;}
+
+  .torii-accent{
+    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  }
+
+  /* ---------- back to top ---------- */
+  .back-to-top{
+    position:fixed; right:18px; bottom:18px; z-index:90;
+    width:46px; height:46px; border-radius:50%;
+    background:var(--vermilion); color:#fff; border:none;
+    display:flex; align-items:center; justify-content:center;
+    font-size:20px; line-height:1; cursor:pointer;
+    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  }
+  .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
+  .back-to-top:hover{background:#7a2b1d;}
+  @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
+
+  .lang-switch{display:flex; gap:2px; margin-left:auto; margin-right:10px;}
+  .lang-switch button{
+    appearance:none; border:1px solid var(--line); background:none; color:var(--ink-soft);
+    font-size:10.5px; padding:4px 7px; cursor:pointer; border-radius:3px;
+  }
+  .lang-switch button.active{background:var(--vermilion); border-color:var(--vermilion); color:#fff;}
+  @media (max-width:767px){ .lang-switch{margin-right:4px;} .lang-switch button{padding:4px 5px; font-size:10px;} }
+  .hamburger{
+    appearance:none; background:none; border:none; cursor:pointer; padding:8px;
+    display:flex; flex-direction:column; gap:5px; width:36px; height:36px; justify-content:center; align-items:center;
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
+    <nav class="topbar-nav">
+      <a href="index.html#chapters" data-i18n="nav.courses">コース一覧</a>
+      <a href="basics.html" data-i18n="nav.basics">基礎知識</a>
+      <a href="history.html" data-i18n="nav.history">歴史知識</a>
+      <a href="profile.html" data-i18n="nav.profile">編者</a>
+    </nav>
+        <div class="lang-switch" id="langSwitch">
+      <button data-lang="ja" class="active">JA</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">中</button>
+      <button data-lang="ko">한</button>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<nav class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mincho">鎌・くらんぽ</span>
+    <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
+  </div>
+  <p class="drawer-label">コースを見る</p>
+  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
+  <p class="drawer-label">読みもの</p>
+  <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
+  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <p class="drawer-label">このサイトについて</p>
+  <a class="drawer-link" href="profile.html">編者プロフィール</a>
+  <a class="drawer-link" href="changelog.html">修正履歴</a>
+</nav>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+<header class="site">
+  <div class="inner">
+    <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
+    <p class="kicker reveal-line" data-i18n="basics.kicker">散歩前に、5分だけ</p>
+    <h1 class="mincho reveal-line" data-i18n="basics.h1">歩く前の基礎知識</h1>
+    <p class="lead reveal-line" data-i18n="basics.lead">鎌倉を歩く前に知っておくと、社寺の見え方が変わる言葉をまとめた。コース説明の中で断りなく使っている言葉も多いので、迷ったらここに戻ってきてほしい。キーワードごとにGoogle Mapsへのリンクも付けた。</p>
+  </div>
+</header>
+
+<nav class="jump">
+  <div class="inner">
+    <a href="#rekishi" data-i18n="basics.nav.rekishi">歴史の基本知識</a>
+    <a href="#chihei" data-i18n="basics.nav.chihei">地形・地理</a>
+    <a href="#kenchiku" data-i18n="basics.nav.kenchiku">寺社・仏教用語</a>
+    <a href="#junrei" data-i18n="basics.nav.junrei">巡礼・霊場</a>
+    <a href="#sanpai" data-i18n="basics.nav.sanpai">参拝の実務</a>
+    <a href="#kotsu" data-i18n="basics.nav.kotsu">交通・エリア</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="group" id="rekishi">
+    <h2 class="mincho" data-i18n="basics.rekishi.h2">歴史の基本知識</h2>
+    <p class="group-note" data-i18n="basics.rekishi.note">コースの「年代」「時代区分」を読むための、いちばん大きな骨格。</p>
+    <dl class="terms" data-i18n="basics.rekishi.terms">
+      <div class="term">
+        <dt>鎌倉幕府の成立（1180年前後）</dt>
+        <dd>1180年、源頼朝が鎌倉に本拠を構えたことで武家政権が実質的に始まる。1192年に頼朝が征夷大将軍に任じられた年を成立年とする説が長く一般的だったが、近年は実質的な支配体制が整った1180年代前半を成立とみる説も有力になっている。年号は一つに決まっているわけではない。</dd>
+      </div>
+      <div class="term">
+        <dt>執権政治</dt>
+        <dd>頼朝の死後、将軍を補佐する「執権」の地位にあった北条氏が実質的な権力を握った体制。初代・北条時政以降、歴代の執権はすべて北条氏から出ている。将軍はしだいに名目上の存在になっていく。</dd>
+      </div>
+      <div class="term">
+        <dt>承久の乱（1221年）</dt>
+        <dd>後鳥羽上皇が幕府打倒を企てて起こした戦い。幕府方が勝利し、京都に六波羅探題を置いて朝廷への統制を強めた。この乱を境に、幕府の力は西国にも及ぶようになる。</dd>
+      </div>
+      <div class="term">
+        <dt>元寇（1274年・1281年）</dt>
+        <dd>文永の役（1274年）・弘安の役（1281年）。二度にわたる蒙古襲来。軍事的には撃退したが、恩賞を十分に与えられなかった御家人の不満が蓄積し、幕府衰退の一因になったとされる。円覚寺はこの戦没者を弔うために建てられた。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉幕府の滅亡（1333年）</dt>
+        <dd>後醍醐天皇の呼びかけに応じた新田義貞・足利尊氏らが挙兵。新田軍が鎌倉に攻め入り、北条高時ら北条氏一門は東勝寺で自刃した。約150年続いた鎌倉幕府がここで終わる。</dd>
+      </div>
+      <div class="term">
+        <dt>建武の新政と南北朝（1333〜1392年）</dt>
+        <dd>幕府滅亡後、後醍醐天皇による建武の新政が始まるが、武士層の支持を得られず短期間で崩壊。足利尊氏が離反して室町幕府を開き、後醍醐天皇は吉野に逃れて南朝を樹立。京都の北朝と並立する南北朝時代に入る。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉府と鎌倉公方</dt>
+        <dd>室町幕府は関東統治のため鎌倉府を置き、足利氏の一門を「鎌倉公方」として鎌倉に常駐させた。政治の中心は京都に移ったが、鎌倉は関東の統治拠点として引き続き重要な土地だった。</dd>
+      </div>
+      <div class="term">
+        <dt>玉縄北条氏（戦国期）と鎌倉北条氏の違い</dt>
+        <dd>鎌倉時代の執権北条氏とは血統上つながらない、伊勢氏を出自とする戦国大名「後北条氏」の一族。北条早雲の子・氏時が玉縄城主となり、以後玉縄北条氏として鎌倉近郊を支配した。同じ「北条」でも別の家であることに注意。本サイトのコース説明でも、この二つを区別して書いている。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="group" id="chihei">
+    <h2 class="mincho" data-i18n="basics.chihei.h2">地形・地理</h2>
+    <p class="group-note" data-i18n="basics.chihei.note">鎌倉の地形そのものが、社寺の配置と歴史を決めている。</p>
+    <dl class="terms" data-i18n="basics.chihei.terms">
+      <div class="term">
+        <dt>切通（きりどおし）</dt>
+        <dd>鎌倉は三方を山に、一方を海に囲まれた要塞のような都市。外部との往来のため、山を切り開いてつくった道の総称。<ruby>朝夷奈<rt>あさいな</rt></ruby>切通・<ruby>名越<rt>なごえ</rt></ruby>切通・<ruby>化粧坂<rt>けわいざか</rt></ruby>切通・<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>切通・大仏切通・極楽寺坂切通・<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>切通などがあり、まとめて「鎌倉七切通」と呼ばれることが多い。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">亀ヶ谷坂切通の位置</a></dd>
+      </div>
+      <div class="term">
+      </div>
+      <div class="term">
+        <dt>谷戸（やと）</dt>
+        <dd>三方を山に囲まれた、袋状の小さな谷。鎌倉の寺の多くは、この谷戸の奥まった場所に建てられている。同じ「北鎌倉」でも、寺ごとに入っている谷戸が違うため、隣同士に見えて実際は山越えが必要な場合がある。</dd>
+      </div>
+      <div class="term">
+        <dt>やぐら</dt>
+        <dd>鎌倉特有の、岩肌に横穴を掘ってつくった中世の墓所・納骨堂。北鎌倉や長谷の寺の裏山などに、今も数百基単位で残っている。明月院やぐらは鎌倉最大規模とされる。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉石</dt>
+        <dd>鎌倉周辺で産出する、加工しやすい軟らかな砂岩。切通の岩壁、石段、寺の基礎などに広く使われてきたが、風化しやすく、苔がつきやすい性質もある。杉本寺や<ruby>覚園寺<rt>かくおんじ</rt></ruby>の苔むした石段も、この石の性質による。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="group" id="kenchiku">
+    <h2 class="mincho" data-i18n="basics.kenchiku.h2">寺社・仏教用語</h2>
+    <p class="group-note" data-i18n="basics.kenchiku.note">コース説明の中で断りなく使っている言葉。</p>
+    <dl class="terms" data-i18n="basics.kenchiku.terms">
+      <div class="term">
+        <dt>開山・開基</dt>
+        <dd>「開山」は寺を実際に開いた僧、「開基」は建立のための土地や資金を出した人（多くは武家）を指す。両者は別人であることが多く、たとえば建長寺は<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>が開山、北条時頼が開基。</dd>
+      </div>
+      <div class="term">
+        <dt>塔頭（たっちゅう）</dt>
+        <dd>大寺院の敷地内にある、開山や歴代住職の墓を守るための小院。円覚寺には塔頭が17院、建長寺には10院前後残るが、大半は非公開で、通常は本寺の拝観の中から外観を眺めるだけになる。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉五山</dt>
+        <dd>建長寺・円覚寺・寿福寺・浄智寺・浄妙寺。臨済宗の寺格を序列化した制度で、北条氏が中国の制度にならって定めたとされる。</dd>
+      </div>
+      <div class="term">
+        <dt>関東十刹（かんとうじっさつ）</dt>
+        <dd>五山に次ぐ格式とされた10の禅寺。大慶寺などがこれに数えられる。報国寺は、これより一段下の「諸山」という寺格にあたる（誤って十刹と紹介される例があるので注記しておく）。</dd>
+      </div>
+      <div class="term">
+        <dt>志納（しのう）</dt>
+        <dd>決まった拝観料を設けず、参拝者が気持ちとして納める形式。「無料」と書かれていても、志納箱が置かれている場合がある。</dd>
+      </div>
+      <div class="term">
+        <dt>単立（たんりつ）</dt>
+        <dd>特定の宗派本山の傘下に入らず、独立した宗教法人として運営される寺院。高徳院（大仏）や長谷寺がこれにあたる。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="group" id="junrei">
+    <h2 class="mincho" data-i18n="basics.junrei.h2">巡礼・霊場</h2>
+    <p class="group-note" data-i18n="basics.junrei.note">鎌倉市観光協会が公式に案内している巡礼コースの単位。</p>
+    <dl class="terms" data-i18n="basics.junrei.terms">
+      <div class="term">
+        <dt>鎌倉三十三観音霊場</dt>
+        <dd>観音菩薩を祀る33の寺をめぐる巡礼路。杉本寺が第一番。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉二十四地蔵</dt>
+        <dd>地蔵菩薩を祀る24の場所をめぐる巡礼路。建長寺の心平地蔵・済田地蔵などが含まれる。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉・江の島七福神</dt>
+        <dd>七福神を祀る7つの社寺をめぐる巡礼路。浄智寺・宝戒寺・妙隆寺などが含まれる。</dd>
+      </div>
+      <div class="term">
+        <dt>坂東三十三観音霊場</dt>
+        <dd>関東一円に広がる、より大きな観音巡礼路。杉本寺はこちらも第一番札所を兼ねる。</dd>
+      </div>
+      <div class="term">
+        <dt>鎌倉十井（じっせい）</dt>
+        <dd>水質の良さで知られた、鎌倉に残る10の古井戸。海蔵寺の十六井戸・底脱ノ井、浄智寺の甘露ノ井などが含まれる。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="group" id="sanpai">
+    <h2 class="mincho" data-i18n="basics.sanpai.h2">参拝の実務</h2>
+    <p class="group-note" data-i18n="basics.sanpai.note">当日困らないための、細かいが実用的な情報。</p>
+    <dl class="terms" data-i18n="basics.sanpai.terms">
+      <div class="term">
+        <dt>拝観料の年齢区分</dt>
+        <dd>「大人」は高校生以上を指すことが多いが、寺によって基準が異なる（中学生から大人料金の寺もある）。本サイトでは寺ごとの表記のまま掲載している。</dd>
+      </div>
+      <div class="term">
+        <dt>拝観時間</dt>
+        <dd>多くの寺は16時前後で受付終了。16時半に着いても入れないことが多いので、最後の1〜2寺は余裕をもった時間に。</dd>
+      </div>
+      <div class="term">
+        <dt>御朱印</dt>
+        <dd>参拝の証としていただく印。多くの寺で300円前後。書き置き（すでに書かれた紙を受け取る形式）のみの寺も増えている。</dd>
+      </div>
+      <div class="term">
+        <dt>喪中・月曜休み</dt>
+        <dd>安国論寺など、月曜を定休日とする寺がある（祝日は開門）。事前確認が必要。</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="group" id="kotsu">
+    <h2 class="mincho" data-i18n="basics.kotsu.h2">交通・エリアの基本</h2>
+    <p class="group-note" data-i18n="basics.kotsu.note">駅名と方角だけ押さえておくと、コース選びが早くなる。</p>
+    <dl class="terms" data-i18n="basics.kotsu.terms">
+      <div class="term">
+        <dt>鎌倉駅 東口・西口</dt>
+        <dd>東口は鶴岡八幡宮・小町通り・若宮大路方面。西口は銭洗弁財天・佐助稲荷・寿福寺方面。同じ「鎌倉駅」でも出口を間違えると15分以上のロスになる。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">鎌倉駅の位置</a></dd>
+      </div>
+      <div class="term">
+        <dt>北鎌倉駅</dt>
+        <dd>円覚寺・建長寺・明月院・東慶寺・浄智寺など、禅寺が集中するエリアの起点。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">北鎌倉駅の位置</a></dd>
+      </div>
+      <div class="term">
+        <dt>江ノ電（江ノ島電鉄）</dt>
+        <dd>鎌倉駅から長谷・極楽寺・稲村ヶ崎・七里ヶ浜・腰越・江ノ島方面へ向かう単線の私鉄。本数が少なく単線区間もあるため、休日は行き違い待ちで遅れることがある。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">長谷駅の位置</a></dd>
+      </div>
+      <div class="term">
+        <dt>金沢街道（六浦路）</dt>
+        <dd>鎌倉駅東口から浄妙寺・報国寺・<ruby>十二所<rt>じゅうにそ</rt></ruby>方面へ延びる旧道。バス利用が基本で、徒歩だと鎌倉駅から30分程度かかる。</dd>
+      </div>
+      <div class="term">
+        <dt>大船駅・湘南深沢駅</dt>
+        <dd>常楽寺・龍宝寺・大船観音寺、深沢エリアの寺社への起点。旧市街からは離れるが、玉縄北条氏の歴史を歩くにはここが起点になる。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">大船駅の位置</a></dd>
+      </div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p>掲載した用語・巡礼路の名称は、鎌倉市観光協会・各寺社公式サイト等の一般的な説明にもとづく。Google Mapsへのリンクは地名検索によるもので、鎌倉市観光協会等の公式リンクではない。</p>
+    <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+  </div>
+</footer>
+
+<script>
+const TRANSLATIONS = {
+en: {"basics.kicker": "Five Minutes Before You Walk", "basics.h1": "Basics to Know Before You Walk", "basics.lead": "A collection of terms that change how the shrines and temples look once you know them before walking Kamakura. Many of these words are used in the course descriptions without explanation, so come back here whenever something's unclear. A Google Maps link is included for each place-based entry.", "basics.nav.rekishi": "History Basics", "basics.nav.chihei": "Terrain & Geography", "basics.nav.kenchiku": "Shrine/Temple & Buddhist Terms", "basics.nav.junrei": "Pilgrimages & Sacred Sites", "basics.nav.sanpai": "Visiting Etiquette", "basics.nav.kotsu": "Transport & Areas", "basics.rekishi.h2": "History Basics", "basics.rekishi.note": "The largest framework for reading a course's era and period.", "basics.chihei.h2": "Terrain & Geography", "basics.chihei.note": "Kamakura's terrain itself determined where its shrines and temples were placed, and its history.", "basics.kenchiku.h2": "Shrine/Temple & Buddhist Terms", "basics.kenchiku.note": "Words used without explanation throughout the course descriptions.", "basics.junrei.h2": "Pilgrimages & Sacred Sites", "basics.junrei.note": "Pilgrimage routes officially guided by the Kamakura City Tourist Association.", "basics.sanpai.h2": "Visiting Etiquette", "basics.sanpai.note": "Small but practical details so you don't get stuck on the day.", "basics.kotsu.h2": "Transport & Areas", "basics.kotsu.note": "Knowing just the station names and directions speeds up choosing a course.", "basics.rekishi.terms": "<div class=\"term\"><dt>The Founding of the Kamakura Shogunate (c. 1180)</dt><dd>In 1180, Minamoto no Yoritomo established his base in Kamakura, effectively beginning warrior-class rule. For a long time, 1192 (the year Yoritomo was appointed Seii Taishogun) was the standard founding date, but in recent years the view that the shogunate was effectively founded once its ruling structure was in place in the early 1180s has gained ground. There is no single settled date.</dd></div><div class=\"term\"><dt>Shikken Rule (Regency)</dt><dd>After Yoritomo's death, the Hojo clan, who held the office of shikken (regent) assisting the shogun, held real power. From the first shikken, Hojo Tokimasa, onward, every shikken came from the Hojo clan. The shogun gradually became a figurehead.</dd></div><div class=\"term\"><dt>The Jokyu War (1221)</dt><dd>A war launched by Retired Emperor Go-Toba to try to overthrow the shogunate. The shogunate side won, and placed the Rokuhara Tandai in Kyoto to tighten control over the imperial court. After this war, the shogunate's power extended into western Japan as well.</dd></div><div class=\"term\"><dt>The Mongol Invasions (1274, 1281)</dt><dd>The Bun'ei Campaign (1274) and the Koan Campaign (1281): two Mongol invasions. They were repelled militarily, but the vassals' discontent over insufficient rewards is said to have accumulated, contributing to the shogunate's decline. Engaku-ji was built to console the war dead of these campaigns.</dd></div><div class=\"term\"><dt>The Fall of the Kamakura Shogunate (1333)</dt><dd>Nitta Yoshisada and Ashikaga Takauji rose up in response to Emperor Go-Daigo's call. Nitta's forces invaded Kamakura, and Hojo Takatoki and his clan took their own lives at Tosho-ji. The Kamakura Shogunate, which had lasted about 150 years, ended here.</dd></div><div class=\"term\"><dt>The Kenmu Restoration and the Northern & Southern Courts (1333-1392)</dt><dd>After the shogunate fell, Emperor Go-Daigo's Kenmu Restoration began, but it collapsed quickly without the support of the warrior class. Ashikaga Takauji broke away to found the Muromachi Shogunate, while Go-Daigo fled to Yoshino and established the Southern Court, entering the era of two courts standing alongside Kyoto's Northern Court.</dd></div><div class=\"term\"><dt>The Kamakura-fu and the Kamakura Kubo</dt><dd>The Muromachi Shogunate placed the Kamakura-fu in Kamakura to govern the Kanto region, stationing a branch of the Ashikaga clan there as “Kamakura Kubo.” Political power had moved to Kyoto, but Kamakura remained an important base for governing the Kanto region.</dd></div><div class=\"term\"><dt>The Tamanawa Hojo (Sengoku Era) vs. the Kamakura Hojo</dt><dd>A clan of the Sengoku-era “Later Hojo,” originating from the Ise clan, with no blood ties to the shikken-era Hojo of the Kamakura period. Ujitoki, son of Hojo Soun, became lord of Tamanawa Castle, and the Tamanawa Hojo ruled the area around Kamakura from there on. Note that despite sharing the name “Hojo,” these are different families — this site's course descriptions distinguish between the two.</dd></div>", "basics.chihei.terms": "<div class=\"term\"><dt>Kiridoshi (Cut Passes)</dt><dd>Kamakura is a fortress-like city surrounded by mountains on three sides and the sea on one. The general term for roads cut through the mountains to allow passage to the outside world. These include the Asaina, Nagoe, Kewaizaka, Kamegayatsu, Daibutsu, Gokurakuji-zaka, and Kobukuro-zaka passes, often grouped together as the “Seven Passes of Kamakura.” <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82\" target=\"_blank\" rel=\"noopener\">Location of Kamegayatsu-zaka</a></dd></div><div class=\"term\"><dt>Yato (Valleys)</dt><dd>A small, pocket-shaped valley enclosed by mountains on three sides. Most of Kamakura's temples are built deep within these yato. Even within “Kita-Kamakura,” different temples sit in different yato, so places that look adjacent may actually require crossing a hill to reach.</dd></div><div class=\"term\"><dt>Yagura</dt><dd>Medieval tombs and ossuaries unique to Kamakura, dug as horizontal caves into rock faces. Hundreds still remain on the hills behind temples in Kita-Kamakura and Hase. The Meigetsu-in yagura is said to be the largest in Kamakura.</dd></div><div class=\"term\"><dt>Kamakura Stone</dt><dd>A soft, easily worked sandstone found around Kamakura. It has been widely used for the rock walls of the passes, stone steps, and temple foundations, but it also weathers easily and grows moss readily. The mossy stone steps at Sugimoto-dera and Kakuon-ji owe their look to this stone's nature.</dd></div>", "basics.kenchiku.terms": "<div class=\"term\"><dt>Kaisan & Kaiki (Founder & Founding Patron)</dt><dd>“Kaisan” refers to the monk who actually founded a temple; “kaiki” refers to the person (often a warrior) who provided the land or funds for its construction. The two are often different people — at Kencho-ji, for example, Rankei Doryu was the kaisan while Hojo Tokiyori was the kaiki.</dd></div><div class=\"term\"><dt>Tacchu (Sub-temples)</dt><dd>Small temples within a major temple's grounds that preserve the graves of its founder and successive abbots. Engaku-ji retains 17 tacchu and Kencho-ji around 10, but most are not open to the public, and visitors typically only view their exteriors while visiting the main temple.</dd></div><div class=\"term\"><dt>The Five Mountains of Kamakura (Kamakura Gozan)</dt><dd>Kencho-ji, Engaku-ji, Jufuku-ji, Jochi-ji, and Jomyo-ji. A system ranking the status of Rinzai Zen temples, said to have been established by the Hojo clan in imitation of a Chinese system.</dd></div><div class=\"term\"><dt>The Ten Temples of the Kanto (Kanto Jissatsu)</dt><dd>Ten Zen temples ranked just below the Five Mountains; Daikei-ji is among them. Hokoku-ji holds the rank of “shozan,” one tier below this — worth noting, since it is sometimes mistakenly introduced as one of the Ten Temples.</dd></div><div class=\"term\"><dt>Shino (Donation-Based Offerings)</dt><dd>A system with no fixed admission fee, where visitors offer what they wish. Even sites marked “free” sometimes have a donation box.</dd></div><div class=\"term\"><dt>Tanritsu (Independent Temples)</dt><dd>Temples run as independent religious corporations, not affiliated with any sect's head temple. Kotoku-in (the Great Buddha) and Hase-dera fall into this category.</dd></div>", "basics.junrei.terms": "<div class=\"term\"><dt>The Kamakura Thirty-Three Kannon Pilgrimage</dt><dd>A pilgrimage route of 33 temples enshrining Kannon. Sugimoto-dera is temple number one.</dd></div><div class=\"term\"><dt>The Kamakura Twenty-Four Jizo</dt><dd>A pilgrimage route of 24 sites enshrining Jizo Bosatsu, including Kencho-ji's Shimpei Jizo and Saita Jizo.</dd></div><div class=\"term\"><dt>The Kamakura-Enoshima Seven Lucky Gods</dt><dd>A pilgrimage route of seven shrines and temples enshrining the Seven Lucky Gods, including Jochi-ji, Hokai-ji, and Myoryu-ji.</dd></div><div class=\"term\"><dt>The Bando Thirty-Three Kannon Pilgrimage</dt><dd>A larger Kannon pilgrimage spanning the wider Kanto region. Sugimoto-dera also serves as its temple number one.</dd></div><div class=\"term\"><dt>The Ten Wells of Kamakura (Kamakura Jissei)</dt><dd>Ten old wells in Kamakura known for the quality of their water, including the Sixteen Wells and Sokonuke-no-i at Kaizo-ji, and the Kanro-no-i at Jochi-ji.</dd></div>", "basics.sanpai.terms": "<div class=\"term\"><dt>Age Categories for Admission Fees</dt><dd>“Adult” usually means high-school age and up, but standards vary by temple (some apply adult rates from junior-high age). This site lists each temple's own stated categories as-is.</dd></div><div class=\"term\"><dt>Visiting Hours</dt><dd>Many temples stop accepting visitors around 4:00 PM. Arriving even at 4:30 often means you can't get in, so leave extra time for the last temple or two on a course.</dd></div><div class=\"term\"><dt>Goshuin (Temple/Shrine Seals)</dt><dd>A seal received as proof of a visit, usually around ¥300. A growing number of temples only offer pre-written ones, handed over already inscribed rather than written on the spot.</dd></div><div class=\"term\"><dt>Monday Closures</dt><dd>Some temples, such as Ankokuron-ji, are closed on Mondays (open on public holidays instead). Check in advance.</dd></div>", "basics.kotsu.terms": "<div class=\"term\"><dt>Kamakura Station: East & West Exits</dt><dd>The East Exit leads toward Tsurugaoka Hachimangu, Komachi-dori, and Wakamiya-oji. The West Exit leads toward Zeniarai Benten, Sasuke Inari, and Jufuku-ji. Taking the wrong exit at the same “Kamakura Station” can cost you 15 minutes or more. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">Location of Kamakura Station</a></dd></div><div class=\"term\"><dt>Kita-Kamakura Station</dt><dd>The starting point for the area where Zen temples cluster: Engaku-ji, Kencho-ji, Meigetsu-in, Tokei-ji, Jochi-ji, and others. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">Location of Kita-Kamakura Station</a></dd></div><div class=\"term\"><dt>The Enoden (Enoshima Electric Railway)</dt><dd>A single-track private railway running from Kamakura Station toward Hase, Gokurakuji, Inamuragasaki, Shichirigahama, Koshigoe, and Enoshima. Trains are infrequent and the line is partly single-track, so delays for train-crossing waits are common on weekends. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85\" target=\"_blank\" rel=\"noopener\">Location of Hase Station</a></dd></div><div class=\"term\"><dt>Kanazawa Kaido (the Old Mutsuura Road)</dt><dd>An old road running from Kamakura Station's East Exit toward Jomyo-ji, Hokoku-ji, and Junisho. Best reached by bus; on foot it takes roughly 30 minutes from Kamakura Station.</dd></div><div class=\"term\"><dt>Ofuna Station & Shonan-Fukasawa Station</dt><dd>The starting points for Joraku-ji, Ryuho-ji, Ofuna Kannon-ji, and the temples and shrines of the Fukasawa area. These lie away from the old town center, but they're the starting point for walking the history of the Tamanawa Hojo. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85\" target=\"_blank\" rel=\"noopener\">Location of Ofuna Station</a></dd></div>", "nav.courses": "Courses", "nav.basics": "Basics", "nav.history": "History", "nav.profile": "Editor", "drawer.courses": "Browse Courses", "footer.reading": "Further Reading", "footer.about": "About This Site", "footer.credit.label": "Editor: ", "footer.credit.editor": "Kiridoshi Ayumu", "footer.credit.changelog": "Changelog"},
+zh: {"basics.kicker": "出发前，只需5分钟", "basics.h1": "走之前，先懂的基础知识", "basics.lead": "汇总了走镰仓之前先了解、会改变社寺观感的词语。路线说明中有不少词是不加说明直接使用的，若有疑问可随时回到这里查阅。带有具体地点的词条附有Google Maps链接。", "basics.nav.rekishi": "历史基础知识", "basics.nav.chihei": "地形・地理", "basics.nav.kenchiku": "寺社・佛教用语", "basics.nav.junrei": "巡礼・灵场", "basics.nav.sanpai": "参拜须知", "basics.nav.kotsu": "交通・区域基础", "basics.rekishi.h2": "历史基础知识", "basics.rekishi.note": "理解路线中“年代”“时代划分”的最大框架。", "basics.chihei.h2": "地形・地理", "basics.chihei.note": "镰仓的地形本身，决定了社寺的分布与历史。", "basics.kenchiku.h2": "寺社・佛教用语", "basics.kenchiku.note": "路线说明中不加解释直接使用的词语。", "basics.junrei.h2": "巡礼・灵场", "basics.junrei.note": "镰仓市观光协会官方介绍的巡礼路线单位。", "basics.sanpai.h2": "参拜须知", "basics.sanpai.note": "为避免当天遇到麻烦而准备的、琐碎但实用的信息。", "basics.kotsu.h2": "交通・区域基础", "basics.kotsu.note": "只需记住车站名与方向，选路线时会快很多。", "basics.rekishi.terms": "<div class=\"term\"><dt>镰仓幕府的成立（约1180年）</dt><dd>1180年，源赖朝在镰仓建立根据地，武家政权由此实质性开始。长期以来，1192年（赖朝被任命为征夷大将军之年）被视为成立之年，但近年来，认为1180年代前期统治体制实质确立之时即为成立的说法也颇具影响力。成立年份并非只有一种定论。</dd></div><div class=\"term\"><dt>执权政治</dt><dd>赖朝死后，担任辅佐将军之职「执权」的北条氏掌握了实际权力的体制。自初代执权北条时政以后，历代执权皆出自北条氏。将军逐渐沦为名义上的存在。</dd></div><div class=\"term\"><dt>承久之乱（1221年）</dt><dd>后鸟羽上皇企图推翻幕府而发动的战争。幕府一方获胜，在京都设置六波罗探题，加强对朝廷的管控。以此乱为界，幕府的势力也扩展至西国。</dd></div><div class=\"term\"><dt>元寇（1274年・1281年）</dt><dd>文永之役（1274年）・弘安之役（1281年）。两次蒙古来袭。虽在军事上击退了敌军，但因未能充分赏赐御家人而积累的不满，被认为是幕府衰落的原因之一。圆觉寺正是为供养此役战殁者而建。</dd></div><div class=\"term\"><dt>镰仓幕府的灭亡（1333年）</dt><dd>响应后醍醐天皇号召的新田义贞・足利尊氏等起兵。新田军攻入镰仓，北条高时等北条一族在东胜寺自尽。延续约150年的镰仓幕府就此终结。</dd></div><div class=\"term\"><dt>建武新政与南北朝（1333〜1392年）</dt><dd>幕府灭亡后，后醍醐天皇推行的建武新政开始，但未获武士阶层支持，短期内即告崩溃。足利尊氏倒戈开设室町幕府，后醍醐天皇逃往吉野建立南朝，由此进入与京都北朝并立的南北朝时代。</dd></div><div class=\"term\"><dt>镰仓府与镰仓公方</dt><dd>室町幕府为统治关东而设置镰仓府，令足利氏一族以「镰仓公方」身份常驻镰仓。政治中心虽已移至京都，镰仓仍是统治关东的重要据点。</dd></div><div class=\"term\"><dt>玉绳北条氏（战国期）与镰仓北条氏的区别</dt><dd>与镰仓时代的执权北条氏并无血缘关系，出身伊势氏的战国大名「后北条氏」的一族。北条早云之子氏时成为玉绳城主，此后玉绳北条氏统治镰仓近郊一带。虽同为「北条」，实为不同家族，本站的路线说明中也对二者加以区分。</dd></div>", "basics.chihei.terms": "<div class=\"term\"><dt>切通（山道）</dt><dd>镰仓是三面环山、一面临海的要塞般城市。为与外部往来而开凿山体所建道路的总称。有朝夷奈、名越、化妆坂、龟谷坂、大佛切通、极乐寺坂、巨福吕坂等，合称「镰仓七切通」。<a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82\" target=\"_blank\" rel=\"noopener\">龟谷坂切通的位置</a></dd></div><div class=\"term\"><dt>谷户</dt><dd>三面环山、呈袋状的小山谷。镰仓的许多寺院都建在谷户深处。即便同属「北镰仓」，各寺所在谷户不同，看似相邻，实际却可能需要翻山才能到达。</dd></div><div class=\"term\"><dt>崖墓（YAGURA）</dt><dd>镰仓特有的、在岩壁上凿出横穴而成的中世墓所・纳骨堂。北镰仓、长谷等寺院后山至今仍留存数百座。明月院的崖墓群被认为是镰仓规模最大的。</dd></div><div class=\"term\"><dt>镰仓石</dt><dd>产自镰仓周边、易于加工的软质砂岩。广泛用于切通的岩壁、石阶、寺院地基等，但也易风化、易生苔藓。杉本寺与觉园寺长满青苔的石阶，正是这种岩石特性所致。</dd></div>", "basics.kenchiku.terms": "<div class=\"term\"><dt>开山・开基</dt><dd>「开山」指实际开创寺院的僧人，「开基」指出资出地建寺之人（多为武家）。二者常为不同人物，例如建长寺由兰溪道隆开山、北条时赖开基。</dd></div><div class=\"term\"><dt>塔头</dt><dd>位于大寺院院内、守护开山祖师及历代住持墓地的小院。圆觉寺现存塔头17院，建长寺约10院，但大多不对外开放，通常只能在参拜本寺时远观其外观。</dd></div><div class=\"term\"><dt>镰仓五山</dt><dd>建长寺・圆觉寺・寿福寺・净智寺・净妙寺。将临济宗寺院寺格序列化的制度，据说由北条氏仿照中国制度而定。</dd></div><div class=\"term\"><dt>关东十刹</dt><dd>仅次于五山的十座禅寺，大庆寺等属此列。报国寺则属更低一级的「诸山」寺格（因常被误传为十刹之一，特此说明）。</dd></div><div class=\"term\"><dt>志纳</dt><dd>不设固定参拜费，由参拜者随心奉纳的形式。即便标注「免费」，有时仍设有志纳箱。</dd></div><div class=\"term\"><dt>单立</dt><dd>不隶属于任何宗派本山、作为独立宗教法人运营的寺院。高德院（大佛）与长谷寺即属此类。</dd></div>", "basics.junrei.terms": "<div class=\"term\"><dt>镰仓三十三观音灵场</dt><dd>巡礼供奉观音菩萨之33座寺院的路线，杉本寺为第一番。</dd></div><div class=\"term\"><dt>镰仓二十四地藏</dt><dd>巡礼供奉地藏菩萨之24处的路线，包括建长寺的心平地藏、济田地藏等。</dd></div><div class=\"term\"><dt>镰仓・江之岛七福神</dt><dd>巡礼供奉七福神之7座社寺的路线，包括净智寺・宝戒寺・妙隆寺等。</dd></div><div class=\"term\"><dt>坂东三十三观音灵场</dt><dd>范围遍及整个关东地区、规模更大的观音巡礼路线，杉本寺同时也是这条路线的第一番札所。</dd></div><div class=\"term\"><dt>镰仓十井</dt><dd>以水质优良著称、留存至今的10口古井，包括海藏寺的十六井户・底脱之井，净智寺的甘露之井等。</dd></div>", "basics.sanpai.terms": "<div class=\"term\"><dt>参拜费的年龄划分</dt><dd>「大人（成人）」多指高中生以上，但各寺标准不一（有的寺院初中生起即按成人票价）。本站按各寺自身标注原样刊载。</dd></div><div class=\"term\"><dt>参拜时间</dt><dd>许多寺院在16点前后停止接待。即便16点半抵达，往往也无法入内，因此路线最后一两座寺院请预留充裕时间。</dd></div><div class=\"term\"><dt>御朱印</dt><dd>作为参拜凭证所领取的印章，多数寺院约300日元。仅提供「预先写好的纸张」（而非当场书写）的寺院也在增加。</dd></div><div class=\"term\"><dt>周一休息</dt><dd>安国论寺等部分寺院以周一为定休日（遇节假日则开门）。请提前确认。</dd></div>", "basics.kotsu.terms": "<div class=\"term\"><dt>镰仓站 东口・西口</dt><dd>东口方向为鹤冈八幡宫・小町通・若宫大路。西口方向为钱洗弁财天・佐助稻荷・寿福寺。同为「镰仓站」，走错出口可能损失15分钟以上。<a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">镰仓站的位置</a></dd></div><div class=\"term\"><dt>北镰仓站</dt><dd>圆觉寺・建长寺・明月院・东庆寺・净智寺等禅寺集中区域的起点。<a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">北镰仓站的位置</a></dd></div><div class=\"term\"><dt>江之电（江之岛电铁）</dt><dd>从镰仓站开往长谷・极乐寺・稻村崎・七里滨・腰越・江之岛方向的单线私营铁路。班次较少且部分为单线区间，节假日常因会车等待而晚点。<a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85\" target=\"_blank\" rel=\"noopener\">长谷站的位置</a></dd></div><div class=\"term\"><dt>金泽街道（六浦路）</dt><dd>从镰仓站东口延伸至净妙寺・报国寺・十二所方向的旧道。以乘坐巴士为主，步行的话从镰仓站约需30分钟。</dd></div><div class=\"term\"><dt>大船站・湘南深泽站</dt><dd>前往常乐寺・龙宝寺・大船观音寺及深泽地区社寺的起点。虽远离旧市区，但要走访玉绳北条氏的历史，正应以此为起点。<a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85\" target=\"_blank\" rel=\"noopener\">大船站的位置</a></dd></div>", "nav.courses": "路线一览", "nav.basics": "基础知识", "nav.history": "历史知识", "nav.profile": "编者", "drawer.courses": "浏览路线", "footer.reading": "延伸阅读", "footer.about": "关于本站", "footer.credit.label": "编辑・文责：", "footer.credit.editor": "切通步", "footer.credit.changelog": "更新记录"},
+ko: {"basics.kicker": "산책 전, 딱 5분만", "basics.h1": "걷기 전에 알아두면 좋은 기초 지식", "basics.lead": "가마쿠라를 걷기 전에 알아두면 사찰・신사가 다르게 보이는 말들을 모았다. 코스 설명 중에는 설명 없이 그대로 쓰는 말도 많으니, 헷갈리면 언제든 이곳으로 돌아오면 된다. 장소가 있는 항목에는 구글 지도 링크도 붙였다.", "basics.nav.rekishi": "역사 기초 지식", "basics.nav.chihei": "지형・지리", "basics.nav.kenchiku": "사찰・신사・불교 용어", "basics.nav.junrei": "순례・영장", "basics.nav.sanpai": "참배 실무", "basics.nav.kotsu": "교통・지역 기본", "basics.rekishi.h2": "역사 기초 지식", "basics.rekishi.note": "코스의 '연대', '시대 구분'을 읽기 위한 가장 큰 뼈대.", "basics.chihei.h2": "지형・지리", "basics.chihei.note": "가마쿠라의 지형 자체가 사찰・신사의 배치와 역사를 결정지었다.", "basics.kenchiku.h2": "사찰・신사・불교 용어", "basics.kenchiku.note": "코스 설명 중 별다른 설명 없이 사용하는 말들.", "basics.junrei.h2": "순례・영장", "basics.junrei.note": "가마쿠라시 관광협회가 공식적으로 안내하는 순례 코스의 단위.", "basics.sanpai.h2": "참배 실무", "basics.sanpai.note": "당일 곤란해지지 않기 위한, 사소하지만 실용적인 정보.", "basics.kotsu.h2": "교통・지역 기본", "basics.kotsu.note": "역 이름과 방향만 알아두면 코스 선택이 빨라진다.", "basics.rekishi.terms": "<div class=\"term\"><dt>가마쿠라 막부의 성립（약 1180년）</dt><dd>1180년, 미나모토노 요리토모가 가마쿠라에 본거지를 정하면서 무가 정권이 실질적으로 시작되었다. 요리토모가 정이대장군에 임명된 1192년을 성립년으로 보는 설이 오랫동안 일반적이었지만, 최근에는 실질적인 지배 체제가 갖추어진 1180년대 전반을 성립으로 보는 설도 유력해지고 있다. 연도가 하나로 정해진 것은 아니다.</dd></div><div class=\"term\"><dt>싯켄（집권） 정치</dt><dd>요리토모 사후, 쇼군을 보좌하는 '싯켄' 지위에 있던 호조씨가 실질적인 권력을 쥔 체제. 초대 싯켄 호조 도키마사 이후, 역대 싯켄은 모두 호조씨에서 나왔다. 쇼군은 점차 명목상의 존재가 되어간다.</dd></div><div class=\"term\"><dt>조큐의 난（1221년）</dt><dd>고토바 상황이 막부 타도를 꾀하여 일으킨 전쟁. 막부측이 승리하여 교토에 로쿠하라 단다이를 두고 조정에 대한 통제를 강화했다. 이 난을 계기로 막부의 힘은 서일본에도 미치게 된다.</dd></div><div class=\"term\"><dt>겐코（원구, 1274년・1281년）</dt><dd>분에이의 역（1274년）・고안의 역（1281년）. 두 차례에 걸친 몽골 침공. 군사적으로는 격퇴했지만, 충분한 은상을 받지 못한 고케닌들의 불만이 쌓여 막부 쇠퇴의 한 원인이 되었다고 한다. 엔가쿠지는 이 전사자들을 위로하기 위해 세워졌다.</dd></div><div class=\"term\"><dt>가마쿠라 막부의 멸망（1333년）</dt><dd>고다이고 천황의 호소에 응한 닛타 요시사다・아시카가 다카우지 등이 거병. 닛타의 군이 가마쿠라로 쳐들어가, 호조 다카토키를 비롯한 호조 일족은 도쇼지에서 자결했다. 약 150년 이어진 가마쿠라 막부는 여기서 끝난다.</dd></div><div class=\"term\"><dt>겐무 신정과 남북조（1333〜1392년）</dt><dd>막부 멸망 후 고다이고 천황에 의한 겐무 신정이 시작되지만, 무사 계층의 지지를 얻지 못해 단기간에 붕괴. 아시카가 다카우지가 등을 돌려 무로마치 막부를 열고, 고다이고 천황은 요시노로 피신해 남조를 세운다. 교토의 북조와 병립하는 남북조 시대로 접어든다.</dd></div><div class=\"term\"><dt>가마쿠라부와 가마쿠라 구보</dt><dd>무로마치 막부는 간토 통치를 위해 가마쿠라부를 두고, 아시카가 일족을 '가마쿠라 구보'로서 가마쿠라에 상주시켰다. 정치의 중심은 교토로 옮겨갔지만, 가마쿠라는 여전히 간토 통치의 거점으로서 중요한 땅이었다.</dd></div><div class=\"term\"><dt>다마나와 호조씨（전국시대）와 가마쿠라 호조씨의 차이</dt><dd>가마쿠라 시대의 싯켄 호조씨와는 혈통상 이어지지 않는, 이세씨를 출자로 하는 전국다이묘 '고호조씨'의 일족. 호조 소운의 아들 우지토키가 다마나와 성주가 되어, 이후 다마나와 호조씨로서 가마쿠라 근교를 지배했다. 같은 '호조'라도 다른 가문임에 주의. 본 사이트의 코스 설명에서도 이 둘을 구분해서 쓰고 있다.</dd></div>", "basics.chihei.terms": "<div class=\"term\"><dt>기리도시（고갯길）</dt><dd>가마쿠라는 삼면이 산으로, 한 면이 바다로 둘러싸인 요새 같은 도시. 외부와의 왕래를 위해 산을 깎아 만든 길의 총칭. 아사이나・나고에・게와이자카・가메가야쓰자카・다이부쓰・고쿠라쿠지자카・고부쿠로자카 등이 있으며, 통틀어 '가마쿠라 칠기리도시'라 불린다. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82\" target=\"_blank\" rel=\"noopener\">가메가야쓰자카 위치</a></dd></div><div class=\"term\"><dt>야토（골짜기）</dt><dd>삼면이 산으로 둘러싸인 자루 모양의 작은 골짜기. 가마쿠라의 절 대부분은 이 야토 깊숙한 곳에 세워져 있다. 같은 '기타카마쿠라'라도 절마다 자리한 야토가 달라, 이웃해 보여도 실제로는 산을 넘어야 하는 경우가 있다.</dd></div><div class=\"term\"><dt>야구라</dt><dd>가마쿠라 특유의, 암벽에 옆으로 굴을 파서 만든 중세의 무덤・납골당. 기타카마쿠라나 하세의 절 뒷산 등에 지금도 수백 기 단위로 남아 있다. 메이게쓰인 야구라는 가마쿠라 최대 규모로 알려져 있다.</dd></div><div class=\"term\"><dt>가마쿠라 이시（돌）</dt><dd>가마쿠라 주변에서 나는, 가공하기 쉬운 무른 사암. 기리도시의 암벽, 돌계단, 절의 기초 등에 널리 쓰여 왔지만 풍화되기 쉽고 이끼가 끼기 쉬운 성질도 있다. 스기모토데라나 가쿠온지의 이끼 낀 돌계단도 이 돌의 성질 때문이다.</dd></div>", "basics.kenchiku.terms": "<div class=\"term\"><dt>가이산・가이키（개산・개기）</dt><dd>'가이산'은 절을 실제로 연 승려, '가이키'는 창건을 위해 땅이나 자금을 낸 사람（대개 무가）을 가리킨다. 둘은 다른 인물인 경우가 많아, 예를 들어 겐초지는 란케이 도류가 가이산, 호조 도키요리가 가이키다.</dd></div><div class=\"term\"><dt>탑두（塔頭）</dt><dd>대사찰의 경내에 있는, 개산이나 역대 주지의 묘를 지키기 위한 작은 절. 엔가쿠지에는 탑두가 17원, 겐초지에는 10원 전후 남아 있지만 대부분 비공개로, 보통 본사 참배 중 외관만 바라보게 된다.</dd></div><div class=\"term\"><dt>가마쿠라 고잔（오산）</dt><dd>겐초지・엔가쿠지・주후쿠지・조치지・조묘지. 임제종 사찰의 격을 서열화한 제도로, 호조씨가 중국의 제도를 본떠 정했다고 한다.</dd></div><div class=\"term\"><dt>간토 짓사쓰（십찰）</dt><dd>오산 다음가는 격식으로 여겨진 열 곳의 선종 사찰. 다이케이지 등이 여기에 속한다. 호코쿠지는 이보다 한 단계 아래인 '쇼잔'이라는 격에 해당한다（십찰로 잘못 소개되는 경우가 있어 짚어둔다）.</dd></div><div class=\"term\"><dt>시노（志納）</dt><dd>정해진 참배료 없이 참배객이 마음으로 내는 형식. '무료'라고 적혀 있어도 시노함이 놓여 있는 경우가 있다.</dd></div><div class=\"term\"><dt>단리쓰（단립）</dt><dd>특정 종파 본산의 산하에 들지 않고 독립된 종교법인으로 운영되는 사찰. 고토쿠인（대불）과 하세데라가 여기에 해당한다.</dd></div>", "basics.junrei.terms": "<div class=\"term\"><dt>가마쿠라 33관음 영장</dt><dd>관음보살을 모신 33개 절을 도는 순례길. 스기모토데라가 1번.</dd></div><div class=\"term\"><dt>가마쿠라 24지장</dt><dd>지장보살을 모신 24곳을 도는 순례길. 겐초지의 신페이지조・사이타지조 등이 포함된다.</dd></div><div class=\"term\"><dt>가마쿠라・에노시마 칠복신</dt><dd>칠복신을 모신 7개 사찰・신사를 도는 순례길. 조치지・호카이지・묘류지 등이 포함된다.</dd></div><div class=\"term\"><dt>반도 33관음 영장</dt><dd>간토 전역에 걸친, 더 큰 규모의 관음 순례길. 스기모토데라는 이쪽에서도 1번 札所를 겸한다.</dd></div><div class=\"term\"><dt>가마쿠라 10정（十井）</dt><dd>수질 좋기로 알려진, 가마쿠라에 남은 10개의 옛 우물. 가이조지의 주로쿠이도・소코누케노이, 조치지의 간로노이 등이 포함된다.</dd></div>", "basics.sanpai.terms": "<div class=\"term\"><dt>참배료의 연령 구분</dt><dd>'어른'은 대개 고등학생 이상을 가리키지만 절마다 기준이 다르다（중학생부터 어른 요금인 절도 있다）. 본 사이트에서는 각 절의 표기를 그대로 싣는다.</dd></div><div class=\"term\"><dt>참배 시간</dt><dd>많은 절이 16시 전후로 접수를 마감한다. 16시 반에 도착해도 들어가지 못하는 경우가 많으니, 마지막 1〜2곳은 여유 있는 시간에.</dd></div><div class=\"term\"><dt>고슈인（御朱印）</dt><dd>참배의 증표로 받는 도장. 대부분 300엔 전후. 그 자리에서 써주지 않고 미리 써둔 종이를 건네는 절도 늘고 있다.</dd></div><div class=\"term\"><dt>월요일 휴무</dt><dd>안코쿠론지 등 월요일을 정기 휴무로 하는 절이 있다（공휴일은 개문）. 사전 확인이 필요하다.</dd></div>", "basics.kotsu.terms": "<div class=\"term\"><dt>가마쿠라역 동쪽 출구・서쪽 출구</dt><dd>동쪽 출구는 쓰루가오카하치만구・고마치도리・와카미야오지 방면. 서쪽 출구는 제니아라이벤텐・사스케이나리・주후쿠지 방면. 같은 '가마쿠라역'이라도 출구를 잘못 나오면 15분 이상 손해를 본다. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">가마쿠라역 위치</a></dd></div><div class=\"term\"><dt>기타카마쿠라역</dt><dd>엔가쿠지・겐초지・메이게쓰인・도케이지・조치지 등 선종 사찰이 밀집한 지역의 시작점. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85\" target=\"_blank\" rel=\"noopener\">기타카마쿠라역 위치</a></dd></div><div class=\"term\"><dt>에노덴（에노시마 전철）</dt><dd>가마쿠라역에서 하세・고쿠라쿠지・이나무라가사키・시치리가하마・고시고에・에노시마 방면으로 향하는 단선 사철. 배차 간격이 길고 단선 구간도 있어, 주말에는 교행 대기로 지연되기도 한다. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85\" target=\"_blank\" rel=\"noopener\">하세역 위치</a></dd></div><div class=\"term\"><dt>가나자와 가이도（옛 무쓰우라로）</dt><dd>가마쿠라역 동쪽 출구에서 조묘지・호코쿠지・주니소 방면으로 이어지는 옛길. 버스 이용이 기본이며, 걸어서는 가마쿠라역에서 약 30분 걸린다.</dd></div><div class=\"term\"><dt>오후나역・쇼난후카사와역</dt><dd>조라쿠지・류호지・오후나 관음사, 후카사와 지역 사찰・신사로 가는 시작점. 옛 시가지에서는 떨어져 있지만, 다마나와 호조씨의 역사를 걷기에는 이곳이 시작점이 된다. <a class=\"map\" href=\"https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85\" target=\"_blank\" rel=\"noopener\">오후나역 위치</a></dd></div>", "nav.courses": "코스 목록", "nav.basics": "기초 지식", "nav.history": "역사 지식", "nav.profile": "편저자", "drawer.courses": "코스 보기", "footer.reading": "읽을거리", "footer.about": "이 사이트에 대하여", "footer.credit.label": "편집・글쓴이：", "footer.credit.editor": "키리도시 아유무", "footer.credit.changelog": "수정 이력"},
+};
+
+const JA_ORIGINALS = {};
+document.querySelectorAll("[data-i18n]").forEach(el=>{ JA_ORIGINALS[el.dataset.i18n] = el.innerHTML; });
+
+function applyLanguage(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    if(lang === "ja"){ el.innerHTML = JA_ORIGINALS[key]; }
+    else if(TRANSLATIONS[lang] && TRANSLATIONS[lang][key]){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll("#langSwitch button").forEach(b=>{ b.classList.toggle("active", b.dataset.lang === lang); });
+  try { localStorage.setItem("kurampo_lang", lang); } catch(e){}
+}
+document.querySelectorAll("#langSwitch button").forEach(btn=>{
+  btn.addEventListener("click", ()=> applyLanguage(btn.dataset.lang));
+});
+(function initLanguage(){
+  let saved = "ja";
+  try { saved = localStorage.getItem("kurampo_lang") || "ja"; } catch(e){}
+  if(saved !== "ja") applyLanguage(saved);
+})();
+
+</script>
+<script>/* ===================== BACK TO TOP ===================== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 400) btn.classList.add("show");
+    else btn.classList.remove("show");
+  });
+  btn.addEventListener("click", ()=>{
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+
+
+/* HAMBURGER (shared) */
+(function(){
+  const hamburger = document.getElementById("hamburgerBtn");
+  const drawer = document.getElementById("drawer");
+  const overlay = document.getElementById("drawerOverlay");
+  const closeBtn = document.getElementById("drawerClose");
+  if(!hamburger || !drawer) return;
+  function openDrawer(){
+    drawer.classList.add("open"); overlay.classList.add("open");
+    hamburger.setAttribute("aria-expanded", "true"); drawer.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeDrawer(){
+    drawer.classList.remove("open"); overlay.classList.remove("open");
+    hamburger.setAttribute("aria-expanded", "false"); drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  hamburger.addEventListener("click", ()=>{ drawer.classList.contains("open") ? closeDrawer() : openDrawer(); });
+  closeBtn.addEventListener("click", closeDrawer);
+  overlay.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
+  document.querySelectorAll(".drawer-link").forEach(link=> link.addEventListener("click", closeDrawer));
+})();
+</script>
+<button id="backToTop" class="back-to-top" aria-label="トップへ戻る" title="トップへ戻る">↑</button>
+
+</body>
+</html>

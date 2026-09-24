@@ -31,19 +31,19 @@
 <meta name="author" content="切通歩">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#EFEAE0;
-    --card:#FBF9F4;
-    --ink:#1E1B18;
-    --ink-soft:#5B534C;
-    --line:#D9CFB8;
-    --vermilion:#8F3323;
-    --vermilion-bg:#F3E3DD;
-    --moss:#48583F;
-    --indigo:#2E3B4E;
-    --ochre:#8A6A2A;
+    --bg:#E6E2D4;
+    --card:#F3F1E7;
+    --ink:#181B15;
+    --ink-soft:#585C4E;
+    --line:#C6C0AC;
+    --vermilion:#963A22;
+    --vermilion-bg:#EFE2D8;
+    --moss:#3D4C36;
+    --indigo:#2B3A4D;
+    --ochre:#7E611E;
     --max:1120px;
   }
   *{box-sizing:border-box;}
@@ -57,11 +57,8 @@
     -webkit-font-smoothing:antialiased;
   }
   .mincho{font-family:"Shippori Mincho", serif;}
+  .num, .mono, time, [data-num]{font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums;}
   a{color:inherit;}
-  .eyebrow{
-    font-family:"Zen Kaku Gothic New", sans-serif;
-    font-size:11px; letter-spacing:.18em; color:var(--ink-soft); text-transform:uppercase;
-  }
 
   /* ---------- topbar ---------- */
   .topbar{
@@ -114,8 +111,9 @@
   }
   .drawer-overlay.open{opacity:1; visibility:visible;}
 
-  .torii-accent{
-    position:absolute; top:24px; right:20px; width:64px; height:auto; color:var(--vermilion); opacity:.55;
+  .contour-motif{
+    position:absolute; top:0; right:0; height:100%; width:56%; max-width:640px;
+    color:var(--ink); opacity:.08; pointer-events:none;
   }
 
   /* ---------- back to top ---------- */
@@ -125,33 +123,36 @@
     background:var(--vermilion); color:#fff; border:none;
     display:flex; align-items:center; justify-content:center;
     font-size:20px; line-height:1; cursor:pointer;
-    box-shadow:0 3px 10px rgba(30,27,24,0.25);
+    box-shadow:0 3px 10px rgba(24,27,21,0.25);
     opacity:0; visibility:hidden; transform:translateY(8px);
     transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
   }
   .back-to-top.show{opacity:1; visibility:visible; transform:translateY(0);}
-  .back-to-top:hover{background:#7a2b1d;}
+  .back-to-top:hover{background:#7a2e1a;}
   @media (min-width:768px){ .back-to-top{right:28px; bottom:28px; width:50px; height:50px; font-size:22px;} }
 
   header.site{
     position:relative; overflow:hidden;
-    padding:40px 20px 28px;
+    padding:56px 20px 36px;
     border-bottom:1px solid var(--line);
-    background:radial-gradient(circle at 88% 12%, rgba(143,51,35,0.07), transparent 55%), var(--bg);
   }
-  header.site .inner{max-width:var(--max); margin:0 auto;}
-  header.site .kicker{font-size:11.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site .inner{max-width:640px; margin:0; position:relative; z-index:1;}
+  header.site .kicker{font-size:12.5px; color:var(--ink-soft); margin:0 0 16px;}
   header.site h1{
     font-family:"Shippori Mincho", serif; font-weight:700;
-    font-size:clamp(34px,9vw,64px); line-height:1.15; margin:0 0 10px; letter-spacing:.02em;
+    font-size:clamp(36px,9vw,58px); line-height:1.1; margin:0 0 10px; letter-spacing:.02em;
   }
-  header.site .yomi{font-size:12.5px; color:var(--ink-soft); margin:0 0 16px;}
+  header.site .yomi{font-size:12.5px; color:var(--ink-soft); margin:0 0 18px;}
   header.site .tagline{
-    font-family:"Shippori Mincho", serif; font-size:clamp(15px,2.4vw,19px);
-    margin:0 0 18px; color:var(--ink-soft);
+    font-family:"Shippori Mincho", serif; font-size:clamp(16px,2.4vw,20px);
+    margin:0 0 20px; color:var(--ink-soft);
   }
   header.site .tagline .accent{color:var(--vermilion); font-weight:700;}
-  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:15.5px; line-height:1.8;}
+  header.site p.lead{max-width:36em; margin:0 0 24px; color:var(--ink-soft); font-size:15.5px; line-height:1.85;}
+
+  .hero-legend{display:flex; flex-wrap:wrap; gap:10px 18px;}
+  .hero-legend span{display:inline-flex; align-items:center; gap:7px; font-size:12px; color:var(--ink-soft);}
+  .hero-legend i{width:8px; height:8px; display:inline-block; flex:0 0 auto;}
 
   /* ---------- hero reveal animation ---------- */
   @keyframes heroReveal{
@@ -178,7 +179,7 @@
   .am-sub{font-family:"Zen Kaku Gothic New", sans-serif; font-size:8px; fill:var(--ink-soft); text-anchor:middle;}
   .areamap-svg a{cursor:pointer;}
   .season-label{
-    font-size:10.5px; letter-spacing:.16em; color:var(--ink-soft); text-transform:uppercase;
+    font-size:13px; color:var(--ink-soft);
     margin:0 0 12px; padding-top:24px; border-top:1px solid var(--line);
   }
   .season-card{
@@ -205,28 +206,34 @@
 
   section.chapters{max-width:var(--max); margin:0 auto; padding:0 20px 40px;}
   .chapters-label{
-    font-size:10.5px; letter-spacing:.16em; color:var(--ink-soft); text-transform:uppercase;
+    font-size:13px; color:var(--ink-soft);
     margin:0 0 14px; padding-top:28px; border-top:1px solid var(--line);
   }
   .ch-grid{display:grid; grid-template-columns:1fr; gap:1px; background:var(--line); border:1px solid var(--line);}
   .ch{
     background:var(--bg); padding:24px 22px 22px; cursor:pointer;
-    transition:background-color .25s ease;
+    transition:background-color .25s ease; border-left:3px solid transparent;
   }
   .ch:hover{background:var(--card);}
-  .ch:hover .ch-link{color:var(--vermilion);}
-  .ch .ch-no{font-size:13px; color:var(--vermilion); margin:0 0 10px; font-weight:700;}
-  .ch .ch-en{font-size:10px; letter-spacing:.14em; color:var(--ink-soft); text-transform:uppercase; margin:0 0 4px;}
+  .ch[data-tab="geo"], .ch[data-tab="kids"], .ch[data-tab="complete"]{border-left-color:var(--vermilion);}
+  .ch[data-tab="religion"]{border-left-color:var(--moss);}
+  .ch[data-tab="person"]{border-left-color:var(--indigo);}
+  .ch[data-tab="timeline"]{border-left-color:var(--ochre);}
+  .ch .ch-no{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--ink-soft); margin:0 0 10px;}
+  .ch .ch-en{font-family:"IBM Plex Mono", monospace; font-size:10.5px; color:var(--ink-soft); margin:0 0 4px; opacity:.7;}
   .ch h3{font-size:18px; margin:0 0 4px;}
-  .ch-tagline{font-size:13.5px; color:var(--vermilion); font-weight:700; margin:0 0 10px;}
+  .ch-tagline{font-size:13.5px; color:var(--ink); font-weight:700; margin:0 0 10px;}
   .ch p{font-size:12.5px; color:var(--ink-soft); margin:0 0 14px; line-height:1.7;}
   .ch-kids{
     margin:0 0 14px; padding:9px 11px; font-size:11px; line-height:1.7; color:var(--ink-soft);
-    background:rgba(72,88,63,0.08); border-left:2px solid var(--moss);
+    background:rgba(61,76,54,0.08); border-left:2px solid var(--moss);
   }
   .ch-kids b{color:var(--moss); display:block; margin-bottom:2px; font-size:11.5px;}
-  .ch .ch-link{font-size:11.5px; color:var(--ink-soft); transition:color .2s ease;}
-  .ch .ch-link::after{content:" →";}
+  .ch .ch-link{
+    font-size:11.5px; color:var(--ink-soft); display:inline-block;
+    border-bottom:1px solid var(--line); padding-bottom:1px; transition:border-color .2s ease, color .2s ease;
+  }
+  .ch:hover .ch-link{color:var(--vermilion); border-color:var(--vermilion);}
 
   @media (min-width:768px){
     .ch-grid{grid-template-columns:repeat(2,1fr);}
@@ -257,13 +264,13 @@
 
   .stats{
     margin:16px 0 20px; padding:20px 22px; max-width:640px;
-    background:var(--ink); border:1px solid var(--ink); border-left:5px solid var(--vermilion);
+    background:var(--ink); border:1px solid var(--ink); border-top:2px solid var(--vermilion);
   }
-  .stats .num{font-family:"Shippori Mincho", serif; font-size:32px; font-weight:700; color:#F0DAC8;}
-  .stats .num small{font-size:13px; font-weight:500; margin-left:6px; color:#C9BEB0;}
-  .stats .breakdown{font-size:12.5px; color:#C9BEB0; margin-top:8px;}
+  .stats .num{font-family:"IBM Plex Mono", monospace; font-size:32px; font-weight:600; color:#F0DAC8;}
+  .stats .num small{font-family:"Zen Kaku Gothic New", sans-serif; font-size:13px; font-weight:500; margin-left:6px; color:#C9BEB0;}
+  .stats .breakdown{font-family:"IBM Plex Mono", monospace; font-size:12px; color:#C9BEB0; margin-top:8px;}
   .stats .rate{font-size:12px; color:#B5A99A; margin-top:12px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.14);}
-  .stats .rate b{color:#F0DAC8;}
+  .stats .rate b{font-family:"IBM Plex Mono", monospace; color:#F0DAC8;}
 
   nav.tabs{
     position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
@@ -316,25 +323,26 @@
 
   .card{
     display:block;
-    background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);
-    margin:0 0 14px; padding:14px 16px 14px;
+    background:var(--card); border:1px solid var(--line);
+    margin:0 0 12px; padding:14px 16px 14px;
     text-decoration:none; color:inherit;
     opacity:0;
     transition:opacity .5s ease, border-color .2s ease;
   }
   .card.in-view{opacity:1;}
-  .card:hover{border-color:var(--vermilion);}
-  .card.axis-religion{border-left-color:var(--moss);}
-  .card.axis-religion:hover{border-color:var(--moss);}
-  .card.axis-person{border-left-color:var(--indigo);}
-  .card.axis-person:hover{border-color:var(--indigo);}
-  .card.axis-timeline{border-left-color:var(--ochre);}
-  .card.axis-timeline:hover{border-color:var(--ochre);}
+  .card:hover{border-color:var(--ink-soft);}
+  .card::before{
+    content:""; position:absolute; top:0; left:0; width:3px; height:100%;
+    background:var(--vermilion);
+  }
+  .card.axis-religion::before{background:var(--moss);}
+  .card.axis-person::before{background:var(--indigo);}
+  .card.axis-timeline::before{background:var(--ochre);}
 
   .card{position:relative;}
   .progress-note{
-    font-size:12.5px; color:var(--moss); font-weight:700; margin:0 0 14px;
-    padding:8px 12px; background:rgba(72,88,63,0.08); display:inline-block;
+    font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--moss); font-weight:500; margin:0 0 14px;
+    padding:7px 12px; background:rgba(61,76,54,0.08); display:inline-block; letter-spacing:.01em;
   }
   .stamp-btn{
     position:absolute; top:12px; right:12px; z-index:2;
@@ -344,13 +352,16 @@
   }
   .stamp-btn:hover{border-color:var(--moss);}
   .stamp-btn.walked{background:var(--moss); border-color:var(--moss); color:#fff;}
-  .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding-right:30px;}
-  .card .num{font-family:"Shippori Mincho", serif; font-size:12px; color:var(--ink-soft); margin-right:6px;}
+  .card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; padding-right:30px; padding-left:6px;}
+  .card .num{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; color:var(--ink-soft); margin-right:8px;
+    border:1px solid var(--line); padding:1px 5px; border-radius:2px; vertical-align:1px;
+  }
   .card h3{font-family:"Shippori Mincho", serif; font-size:17px; font-weight:700; margin:0; line-height:1.4;}
   .card .chev{flex:0 0 auto; color:var(--ink-soft); font-size:13px; line-height:1.4; transition:transform .18s ease;}
   .card:hover .chev{transform:translateX(3px);}
   .card.open .chev{transform:rotate(180deg);}
-  .card .theme{font-size:13px; color:var(--ink-soft); margin:6px 0 10px;}
+  .card .theme{font-size:13px; color:var(--ink-soft); margin:6px 0 10px; padding-left:6px;}
   .card .read-more{font-size:12px; color:var(--vermilion); margin:12px 0 0;}
 
   .meta-row{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12.5px; color:var(--ink-soft); margin-bottom:2px;}
@@ -517,20 +528,30 @@
 
 
 <header class="site" id="top">
+  <svg class="contour-motif" viewBox="0 0 640 640" aria-hidden="true" preserveAspectRatio="xMaxYMid slice">
+    <path d="M 520 60 C 620 120 640 260 560 340 C 480 420 340 440 280 380" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M 480 20 C 610 70 660 240 560 360 C 460 480 280 490 210 400" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M 440 -10 C 600 30 690 230 560 390 C 440 540 220 540 140 420" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M 400 -30 C 590 -10 720 220 560 420 C 410 600 160 590 70 440" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <circle cx="560" cy="230" r="3" fill="currentColor"/>
+  </svg>
   <div class="inner">
-    <svg class="torii-accent" viewBox="0 0 200 140" aria-hidden="true">
-      <path d="M20 40 L180 40 M30 30 L30 46 M170 30 L170 46 M10 55 L190 55 M55 55 L55 130 M145 55 L145 130" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round"/>
-    </svg>
     <p class="kicker reveal-line" data-i18n="site.kicker">鎌倉さんぽ、まるごと</p>
     <h1 class="mincho reveal-line">鎌・くらんぽ</h1>
     <p class="yomi reveal-line" data-i18n="site.yomi">鎌倉散歩＝鎌・くらんぽ。</p>
     <p class="tagline mincho reveal-line" data-i18n="site.tagline">歩く。数える。<span class="accent">鎌倉を、確かめる。</span></p>
     <p class="lead reveal-line" data-i18n="site.lead">鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅する。地理でめぐるコースと、宗教・人物・年表という3つの軸でめぐる巡礼プランを、同じ社寺データの上に重ねて示す。歩く距離と拝観料（大人・小人）も明記した。</p>
+    <div class="hero-legend">
+      <span><i style="background:var(--vermilion)"></i>エリア別・コンプリート版</span>
+      <span><i style="background:var(--moss)"></i>宗教でめぐる</span>
+      <span><i style="background:var(--indigo)"></i>人物でめぐる</span>
+      <span><i style="background:var(--ochre)"></i>年表でめぐる</span>
+    </div>
   </div>
 </header>
 
 <section class="areamap" id="areamap">
-  <p class="chapters-label" data-i18n="areamap.label">AREA MAP — エリアの位置関係（模式図）</p>
+  <p class="chapters-label" data-i18n="areamap.label">エリアの位置関係（模式図）</p>
   <p class="areamap-note" data-i18n="areamap.note">実際の地図ではなく、位置関係を分かりやすくした模式図。ノードをタップすると代表コースに飛ぶ。</p>
   <svg class="areamap-svg" viewBox="0 0 340 260" role="img" aria-label="鎌倉エリアの位置関係模式図">
     <line x1="170" y1="50" x2="170" y2="110" class="am-line"/>
@@ -551,14 +572,14 @@
 </section>
 
 <section class="season" id="season-box">
-  <p class="season-label" id="seasonLabel" data-i18n="season.label">SEASONAL PICK — 今の季節のおすすめ</p>
+  <p class="season-label" id="seasonLabel" data-i18n="season.label">今の季節のおすすめ</p>
   <div id="season-content"></div>
   <button class="season-toggle" id="seasonToggle" data-state="closed">年間の季節おすすめを全部見る ▾</button>
   <div class="season-all" id="season-all" hidden></div>
 </section>
 
 <section class="chapters" id="chapters">
-  <p class="chapters-label" data-i18n="chapters.label">CONTENTS — 6 CHAPTERS</p>
+  <p class="chapters-label" data-i18n="chapters.label">全6チャプター</p>
   <div class="ch-grid">
     <div class="ch" data-tab="geo">
       <p class="ch-no mincho">01</p>
@@ -627,15 +648,15 @@
   <p>今後は実際に歩いた写真も載せていく予定。</p>
   <div class="ref-links">
     <a href="basics.html">
-      <span class="rl-title mincho">歩く前の基礎知識 →</span>
+      <span class="rl-title mincho">歩く前の基礎知識</span>
       <span class="rl-desc">切通・谷戸・鎌倉五山・拝観の実務など</span>
     </a>
     <a href="history.html">
-      <span class="rl-title mincho">コース別・歴史の基本知識 →</span>
+      <span class="rl-title mincho">コース別・歴史の基本知識</span>
       <span class="rl-desc">全30コースの人物・出来事・おさらい</span>
     </a>
     <a href="changelog.html">
-      <span class="rl-title mincho">修正履歴 →</span>
+      <span class="rl-title mincho">修正履歴</span>
       <span class="rl-desc">サイトの更新記録・バージョン管理</span>
     </a>
   </div>
@@ -1325,7 +1346,7 @@ function renderGeoCard(c){
       <span class="dist"><span data-i18n="label.walkdist">施設間の徒歩距離 約</span>${(dist/1000).toFixed(1)}km</span>
       <span class="fee">${feeSummary(c.spots)}</span>
     </div>
-    <p class="read-more" data-i18n="card.readmore">くわしく読む（拝観料・距離・歴史知識） →</p>
+    <p class="read-more" data-i18n="card.readmore">くわしく読む（拝観料・距離・歴史知識）</p>
   </a>`;
 }
 
@@ -1588,7 +1609,7 @@ en: {"kn.g1.title": "The Deep Roots of Ancient Faith","kn.g2.title": "Yoritomo E
   "kids.why2":"<b>Tsurugaoka Hachimangu & Dankazura</b>: Spacious, flat grounds. Plenty of pigeons, and an easy-walking approach path.",
   "kids.why3":"<b>The Great Buddha & Hase-dera</b>: You can actually step inside the Great Buddha. Hase-dera's grounds are well maintained and easy to walk too.",
   "kids.why4":"<b>Sasuke Inari & Zeniarai Benten</b>: A hands-on experience — wash real coins in the cave spring. The rows of torii gates photograph beautifully too.",
-  "card.readmore":"Read more (fees, distance, history) →",
+  "card.readmore":"Read more (fees, distance, history)",
   "stamp.title":"Tap once you've walked it",
   "stamp.aria":"Mark this course as walked",
   "site.kicker":"All of Kamakura, on Foot",
@@ -1605,10 +1626,10 @@ en: {"kn.g1.title": "The Deep Roots of Ancient Faith","kn.g2.title": "Yoritomo E
   "footer.link.profile":"Editor Profile (Kiridoshi Ayumu)",
   "footer.link.changelog":"Changelog & Version History",
   "footer.tagline":"Walk. Count. Know Kamakura.",
-  "areamap.label":"AREA MAP — How the Areas Relate",
+  "areamap.label":"How the Areas Relate",
   "areamap.note":"A schematic diagram, not an actual map — showing rough relative positions. Tap a node to jump to a representative course.",
-  "season.label":"SEASONAL PICK — Recommended for This Season",
-  "chapters.label":"CONTENTS — 6 CHAPTERS",
+  "season.label":"Recommended for This Season",
+  "chapters.label":"全6チャプター",
   "chapters.geo.title":"Area Courses","chapters.geo.tagline":"Start by stepping inside the Great Buddha, then head for a square full of pigeons.",
   "chapters.geo.desc":"14 core courses with fixed start and end points — the ones you actually walk.","chapters.geo.link":"See 14 courses",
   "chapters.kids.title":"Kid-Friendly Courses","chapters.kids.tagline":"Step inside the Buddha, wash coins for luck, play with pigeons.",
@@ -1684,7 +1705,7 @@ zh: {
   "kids.why2":"<b>鹤冈八幡宫・段葛</b>：境内宽敞平坦。鸽子众多，参道段葛也是易于行走的步道。",
   "kids.why3":"<b>镰仓大佛・长谷寺</b>：可以实际进入大佛内部。长谷寺境内也整修完善，便于行走。",
   "kids.why4":"<b>佐助稻荷・钱洗弁财天</b>：可在洞窟涌泉中实际洗钱的体验型景点。成排的鸟居也很上镜。",
-  "card.readmore":"查看详情（参拜费・距离・历史知识） →",
+  "card.readmore":"查看详情（参拜费・距离・历史知识）",
   "stamp.title":"走完后点一下",
   "stamp.aria":"将此路线标记为已走过",
   "site.kicker":"镰仓漫步，一次走遍",
@@ -1701,10 +1722,10 @@ zh: {
   "footer.link.profile":"编者简介（切通步）",
   "footer.link.changelog":"更新记录与版本管理",
   "footer.tagline":"走。数。认识镰仓。",
-  "areamap.label":"AREA MAP — 各区域位置关系",
+  "areamap.label":"各区域位置关系",
   "areamap.note":"并非实际地图，而是便于理解位置关系的示意图。点击节点可跳转至代表路线。",
-  "season.label":"SEASONAL PICK — 当季推荐",
-  "chapters.label":"CONTENTS — 6个章节",
+  "season.label":"当季推荐",
+  "chapters.label":"全部6个章节",
   "chapters.geo.title":"分区路线","chapters.geo.tagline":"先去看看大佛的内部，再到鸽子广场走走。",
   "chapters.geo.desc":"设定了起点和终点、实际可行走的14条基础路线。","chapters.geo.link":"查看14条路线",
   "chapters.kids.title":"亲子路线","chapters.kids.tagline":"钻进大佛内部，洗洗铜钱，和鸽子玩耍。",
@@ -1780,7 +1801,7 @@ ko: {
   "kids.why2":"<b>쓰루가오카하치만구・단카즈라</b>：경내가 넓고 평탄하다. 비둘기가 많고, 참도인 단카즈라도 걷기 편한 산책로.",
   "kids.why3":"<b>가마쿠라 대불・하세데라</b>：대불 속（내부）에 실제로 들어갈 수 있다. 하세데라도 경내가 잘 정비되어 있어 걷기 편하다.",
   "kids.why4":"<b>사스케이나리・제니아라이벤텐</b>：동굴 용수에서 실제로 돈을 씻어보는 체험형. 늘어선 도리이도 사진이 잘 나온다.",
-  "card.readmore":"자세히 보기（참배료・거리・역사 지식） →",
+  "card.readmore":"자세히 보기（참배료・거리・역사 지식）",
   "stamp.title":"걸었다면 탭하세요",
   "stamp.aria":"이 코스를 걸은 것으로 표시",
   "site.kicker":"가마쿠라를 통째로 걷다",
@@ -1797,10 +1818,10 @@ ko: {
   "footer.link.profile":"편저자 프로필(키리도시 아유무)",
   "footer.link.changelog":"수정 이력·버전 관리",
   "footer.tagline":"걷는다. 센다. 가마쿠라를 확인한다.",
-  "areamap.label":"AREA MAP — 지역 간 위치 관계",
+  "areamap.label":"지역 간 위치 관계",
   "areamap.note":"실제 지도가 아니라 위치 관계를 알기 쉽게 나타낸 모식도입니다. 노드를 탭하면 대표 코스로 이동합니다.",
-  "season.label":"SEASONAL PICK — 지금 계절의 추천",
-  "chapters.label":"CONTENTS — 6개 챕터",
+  "season.label":"지금 계절의 추천",
+  "chapters.label":"전체 6개 챕터",
   "chapters.geo.title":"지역별 코스","chapters.geo.tagline":"대불 속으로, 비둘기 광장으로, 먼저 만나러 간다.",
   "chapters.geo.desc":"출발점과 해산점을 정한, 실제로 걷는 14개의 기본 코스.","chapters.geo.link":"14개 코스 보기",
   "chapters.kids.title":"어린이 동반 코스","chapters.kids.tagline":"대불 속에 들어가고, 동전을 씻고, 비둘기와 논다.",

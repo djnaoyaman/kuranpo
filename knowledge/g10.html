@@ -831,15 +831,19 @@ function initMiniDrill(containerId, questions){
   const title = document.title;
   const eu = encodeURIComponent(url), et = encodeURIComponent(title);
   const map = {
-    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
-    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareX: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url+'?utm_source=x&utm_medium=social&utm_campaign=kuranpo_share')}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url+'?utm_source=line&utm_medium=social&utm_campaign=kuranpo_share')}`,
     shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
-    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+    shareHatena: `https://b.hatena.ne.jp/add?mode=confirm&url=${eu}&title=${et}`
   };
   Object.keys(map).forEach(id=>{
     const el = document.getElementById(id);
     if(el) el.href = map[id];
   });
+  /* 新しいタブが開けない画面（アプリ内の表示など）では、同じ画面でそのまま開く */
+  Object.keys(map).forEach(id=>{ const el = document.getElementById(id); if(!el) return;
+    el.addEventListener("click", e=>{ e.preventDefault(); const w = window.open(map[id], "_blank");
+      if(w){ try{ w.opener = null; }catch(_){} } else { location.href = map[id]; } }); });
 })();
 </script>
 </body>

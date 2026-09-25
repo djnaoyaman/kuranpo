@@ -518,9 +518,9 @@
     <h2 class="mincho" data-i18n="profile.h2.works">制作物・関連プロジェクト</h2>
     <ul data-i18n="profile.ul.works">
       <li>鎌・くらんぽ（本サイト）<span class="note">鎌倉市内の神社仏閣を、出発点と解散点を定めた散歩コースで整理し、拝観料・徒歩距離・歴史的背景をまとめた個人編集のガイドです。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/youkai/index.html">一見坊の【日本妖怪学体系】</a><span class="note">47都道府県と全国区の日本の妖怪を、伝承・出典・信頼度つきでまとめた個人編集のデータベースです。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/sakanamushi/">花鳥風月、そして魚と虫</a><span class="note">魚偏・虫偏をはじめとする難読漢字（380字超）を、一字ずつ大きく読んで答えるクイズ図鑑です。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/ppp/about.html">掌蹠膿疱症.com</a><span class="note">個人の記録と公開資料をもとに整理した情報サイトです。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/youkai/index.html?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">一見坊の【日本妖怪学体系】</a><span class="note">47都道府県と全国区の日本の妖怪を、伝承・出典・信頼度つきでまとめた個人編集のデータベースです。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/sakanamushi/?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">花鳥風月、そして魚と虫</a><span class="note">魚偏・虫偏をはじめとする難読漢字（380字超）を、一字ずつ大きく読んで答えるクイズ図鑑です。</span></li>
+      <li><a class="ext" href="https://djnaoyaman.github.io/ppp/about.html?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">掌蹠膿疱症.com</a><span class="note">個人の記録と公開資料をもとに整理した情報サイトです。</span></li>
       <li><a class="ext" href="https://note.com/djnaoyaman">note.com（djnaoyaman）</a><span class="note">エッセイ、DJ関連の連載などを執筆しています。</span></li>
       <li><a class="ext" href="https://sauna-ikitai.com/saunners/12991">サウナイキタイ</a><span class="note">ペンネーム「湯気文吾」で、全国のサウナを巡り記録するプロジェクトです。</span></li>
     </ul>
@@ -646,15 +646,19 @@
   const title = document.title;
   const eu = encodeURIComponent(url), et = encodeURIComponent(title);
   const map = {
-    shareX: `https://twitter.com/intent/tweet?url=${eu}&text=${et}`,
-    shareLine: `https://social-plugins.line.me/lineit/share?url=${eu}`,
+    shareX: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url+'?utm_source=x&utm_medium=social&utm_campaign=kuranpo_share')}&text=${et}`,
+    shareLine: `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url+'?utm_source=line&utm_medium=social&utm_campaign=kuranpo_share')}`,
     shareFb: `https://www.facebook.com/sharer/sharer.php?u=${eu}`,
-    shareHatena: `https://b.hatena.ne.jp/entry/panel/?url=${eu}&title=${et}`
+    shareHatena: `https://b.hatena.ne.jp/add?mode=confirm&url=${eu}&title=${et}`
   };
   Object.keys(map).forEach(id=>{
     const el = document.getElementById(id);
     if(el) el.href = map[id];
   });
+  /* 新しいタブが開けない画面（アプリ内の表示など）では、同じ画面でそのまま開く */
+  Object.keys(map).forEach(id=>{ const el = document.getElementById(id); if(!el) return;
+    el.addEventListener("click", e=>{ e.preventDefault(); const w = window.open(map[id], "_blank");
+      if(w){ try{ w.opener = null; }catch(_){} } else { location.href = map[id]; } }); });
 })();
 </script>
 </body>

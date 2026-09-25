@@ -369,6 +369,16 @@
   .editor-mark-section .em-label{font-size:15px; opacity:.6;}
   .editor-mark-section .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
   .editor-mark-section .editor-mark-sub{font-size:12.5px; color:var(--ink-soft); margin:0;}
+  /* 48. 読む文章の組み方。明朝の細い横画が薄い地に溶けないよう、色を濃く、大きさを揃え、字間と行間をわずかに開ける。薄い色は短いラベルだけに使う */
+  :root{--ink-read:#3F3833;}
+  .intro p, .hero-lead, header.site p.lead, .fw-intro, .fw-item > p:not(.fw-no), .fw-closing p, .tl-temples, .rel-person .note, .tree-leaves,
+  .diagram-intro, .term dd, .tl-strip figcaption, .nf-inner .body-text, .r-sh-d, .profile-body p, main > p, .prof p
+  {font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .fn-text, .co-pagenote, .r-theme, .spot-list li > .snote, .note-text, .fw-example, .rel-arrow, .opts-note, .panel-note, .g-right,
+  ol.log-list li, .quiz-feedback, .md-fb, .r-kw li, .rd-d, .qcl-desc, .season-note p, .sn-text
+  {font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .story{letter-spacing:.02em;}
+  @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
 </style>
 <script type="application/ld+json">
 {

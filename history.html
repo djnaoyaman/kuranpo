@@ -33,11 +33,11 @@
 <meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#EFECE7; --card:#F7F4EE; --ink:#262220; --ink-soft:#6B6058; --line:#D8D0BF;
-    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px;
+    --bg:#F4F1EA; --card:#FBF9F4; --ink:#262220; --ink-soft:#6B6058; --line:#DCD5C4;
+    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px; --voice:"Cormorant Garamond", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -95,7 +95,7 @@
   article.course .theme{font-size:15px; color:var(--ink); line-height:1.7; margin:0 0 8px;}
   article.course .spots-line{font-size:14px; color:var(--ink-soft); margin:0 0 6px;}
   article.course .lens-tags{margin:0 0 14px; display:flex; gap:6px; flex-wrap:wrap;}
-  article.course .lens-tags span{font-size:12.5px; color:var(--vermilion); border:1px solid var(--line); border-radius:10px; padding:2px 8px;}
+  article.course .lens-tags span{font-family:var(--voice); font-style:italic; font-size:13px; color:var(--vermilion); border:1px solid var(--line); padding:2px 9px;}
   article.course .maplinks{margin:0 0 14px; display:flex; gap:10px; flex-wrap:wrap;}
   article.course .maplinks a{font-size:13.5px; color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
   article.course .maplinks a::before{content:"📍 ";}
@@ -117,7 +117,7 @@
   .term:first-child{border-top:none; padding-top:0;}
   .term dt{font-family:"Shippori Mincho", serif; font-weight:700; font-size:16.5px; margin:0 0 4px; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;}
   .term dt .yomi{font-family:"Shippori Mincho", serif; font-weight:400; font-size:13px; color:var(--ink-soft);}
-  .term dt .cat{font-family:"Shippori Mincho", serif; font-weight:400; font-size:12px; color:var(--vermilion); border:1px solid var(--line); border-radius:8px; padding:1px 6px;}
+  .term dt .cat{font-family:var(--voice); font-style:italic; font-size:13px; color:var(--vermilion); border:1px solid var(--line); padding:1px 8px;}
   .term dd{margin:0; font-size:15px; color:var(--ink);}
 
   footer.site{max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft); font-size:14px; border-top:1px solid var(--line);}
@@ -165,12 +165,12 @@
     position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
     background:var(--card); border-left:1px solid var(--line);
     transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
-    padding:20px 24px; overflow-y:auto;
+    padding:24px 24px; overflow-y:auto;
   }
   .drawer.open{transform:translateX(0);}
   .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
-  .drawer-head span{font-size:18.5px; font-weight:700;}
-  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-head span{font-family:var(--voice); font-style:italic; font-size:20px; font-weight:500; color:var(--vermilion);}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
   .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
   .drawer-label:first-of-type{margin-top:0;}
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
@@ -220,6 +220,124 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  @media (min-width:768px){:root{--gutter:40px;}}
+
+  /* 1. グリッド：全コンテナの左端を一本に揃える */
+  .topbar-inner{padding-left:var(--gutter); padding-right:var(--gutter);}
+  header.site{padding-left:0; padding-right:0; background:var(--bg);}
+  header.site .inner{max-width:var(--max); margin-left:auto; margin-right:auto; padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  nav.tabs, nav.jump{padding-left:0; padding-right:0;}
+  nav.tabs .inner, nav.jump .inner{padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  main, .intro, footer.site{padding-left:var(--gutter); padding-right:var(--gutter);}
+  section.first-timer, section.locator, section.areamap, section.season, section.chapters{padding-left:var(--gutter); padding-right:var(--gutter);}
+  main section.quiz-promo{padding-left:0; padding-right:0;}
+  section.first-timer{padding-top:40px;}
+
+  /* 2. 書体：和文を機械的に斜体化しない・約物を詰める・文節で改行する・一文字だけの行を作らない */
+  html{font-synthesis:weight;}
+  body{line-break:strict;}
+  h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
+  h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
+  p,li,dd{text-wrap:pretty;}
+
+  /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
+  ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
+  /* ルビが親文字より長い分（o1〜o12＝半角1〜12字分）だけ前後にはみ出させる。短いルビは引き伸ばさない */
+  ruby.o1 > rt{margin-inline:-0.5em;}
+  ruby.o2 > rt{margin-inline:-1em;}
+  ruby.o3 > rt{margin-inline:-1.5em;}
+  ruby.o4 > rt{margin-inline:-2em;}
+  ruby.o5 > rt{margin-inline:-2.5em;}
+  ruby.o6 > rt{margin-inline:-3em;}
+  ruby.o7 > rt{margin-inline:-3.5em;}
+  ruby.o8 > rt{margin-inline:-4em;}
+  ruby.o9 > rt{margin-inline:-4.5em;}
+  ruby.o10 > rt{margin-inline:-5em;}
+  ruby.o11 > rt{margin-inline:-5.5em;}
+  ruby.o12 > rt{margin-inline:-6em;}
+
+  /* 4. 見出しラベルの統一 */
+  .ft-label, .chapters-label, .season-label{font-family:var(--voice); font-style:italic; font-weight:500; font-size:16px; color:var(--vermilion); letter-spacing:.04em;}
+  .sn-label{font-family:var(--voice); font-style:italic; font-weight:500; letter-spacing:.04em;}
+
+  /* 5. 罫線は2種類だけ（1px＝区切り／2px＝強調） */
+  footer.site{border-top:1px solid var(--line);}
+  .panel-note, .notice, .season-note{border-left-width:2px;}
+  .nf-inner .actions a.primary{background:none; color:var(--vermilion); border-color:var(--vermilion);}
+  /* 6. 意味の読めない装飾は置かない（見出し右上で切り取られて弧のかけらだけが見えていた） */
+  .kn-hero-bg{display:none;}
+  /* 7. 行長：読ませる段落は1行42字前後に収める */
+  .tl-era p, .rel-person p, .rel-group > p, .tree-branch p, .group-note, .fw-intro, .fw-item p, .fw-closing p, .stats p, .diagram-intro{max-width:42em;}
+  .panel-note{max-width:44em;}
+  /* 8. 短い導入文は文節で改行する（「7／つ」のような数字と助数詞の泣き別れを防ぐ） */
+  header.site p, .diagram-intro, .panel-note, .areamap-note, .ch p, .card .theme, .qcl-desc, .fw-intro, .group-note{word-break:auto-phrase;}
+
+  /* ===== v17.1：機械監査（77ページ×4画面幅）で見つかった問題への対処 ===== */
+  /* 9. タンを文字に使う時だけ濃い版（背景に対し4.5:1以上）。線・点・罫線は元のタンのまま */
+  :root{--ochre-ink:#86652F;}
+  .axis-timeline .meta-row .fee, .card.axis-timeline .num, .ch[data-tab="timeline"] .ch-no, .dl-course[data-axis="timeline"] .dl-course-no, .note-trivia .note-label, .quiz-cat.person .qc-label, .tree-branch.ochre .b-label{color:var(--ochre-ink);}
+  /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
+  .spot-list .sname{flex:1 1 auto; min-width:0;}
+  .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
+  /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
+  body{overflow-wrap:break-word;}
+  code{overflow-wrap:anywhere;}
+  /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
+  header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
+  .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  /* 14. 目次の番号も他の番号と同じ言葉で（角丸をやめ、欧文イタリックの数字に） */
+  nav.jump a{border-radius:0; font-family:var(--voice); font-style:italic; font-size:15px; padding:3px 11px;}
+  nav.jump a:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
+  .topbar-inner{max-width:1120px;}
+  @media (min-width:768px){
+    .topbar-inner{display:flex; align-items:center;}
+    .topbar-nav{display:flex; margin-left:auto; margin-right:18px;}
+    .hamburger{display:flex;}
+  }
+  /* 18. 色は意味を持つものにだけ使う。季節のおすすめは「おすすめ」の朱（「迷ったら、これ」と同じ）。注記の種類（季節・トリビア・寄り道）は見出しの言葉で区別し、色分けしない */
+  .season-card{border-left-color:var(--vermilion);}
+  .season-card:hover{border-color:var(--vermilion);}
+  .season-card .sc-when{color:var(--vermilion);}
+  .season-toggle:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .kw-item b{color:var(--ink);}
+  .season-note{background:var(--card); border:1px solid var(--line); border-left:2px solid var(--vermilion);}
+  .season-note .sn-label{color:var(--vermilion);}
+  .note-season, .note-trivia, .note-detour{border-left-color:var(--ink-soft);}
+  .note-season .note-label, .note-trivia .note-label, .note-detour .note-label{color:var(--ink-soft);}
+  /* 21. 罫線は1px＝区切り／2px＝強調の2種類だけ（計算後の値で3px以上が残っていた9種類を揃える。年表の点の縁取りは線ではないので除く） */
+  .course, article.course, .fw-closing, .fw-example, .fw-ref, .guard-item, .rel-group, .sign, .season-note{border-left-width:2px;}
+  .editor-mark-section{border-top:1px solid var(--line);}
+  .fw-item .fw-example, .nf-inner .sign, .sign.reveal-line{border-left-width:2px;}
+  /* 22. 欧文イタリックの数字は、和文の字面の高さに揃うライニング数字に固定する（下に沈むオールドスタイル数字を使わない） */
+  html{font-variant-numeric:lining-nums;}
+  /* 24. 元のデザインの名残を今の言葉に置き換える */
+  /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
+  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
+  .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
+  .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
+  .tl-temples .yr{font-family:inherit; font-size:inherit;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
+  .topbar{background:rgba(244,241,234,0.92);}
+  .md-choice{background:var(--bg);}
+  .quiz-cat, .qcl-item{color:var(--ink);}
+  /* 24-3. 小見出しの字間を、全ページで同じ詰め具合に */
+  header.site .kicker{letter-spacing:.02em;}
+  /* 24-4. 地図リンクの絵文字をやめ、外の地図へ移ることを細い矢印で示す */
+  article.course .maplinks a::before, .term dd .map::before{content:none;}
+  article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
+  /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
+  .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
 </style>
 <script type="application/ld+json">
 {
@@ -280,7 +398,7 @@
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line" data-i18n="hist.kicker">建物を見る、から、何が起きたかを読む、へ</p>
     <h1 class="mincho reveal-line" data-i18n="hist.h1">コース別・歴史の基本知識</h1>
-    <p class="lead reveal-line" data-i18n="hist.lead">神社仏閣めぐりは、7つの視点を持つと一気に面白くなる。まずその視点をここで説明する。そのあと、エリア別14コース＋コンプリート版16コース、全30コースそれぞれについて、専用の1ページで知識をまとめてある。コース一つにつき知識ページも一つ、という対応にしているので、歩く前にそのコースの分だけ読めばいい。</p>
+    <p class="lead reveal-line" data-i18n="hist.lead">神社仏閣めぐりは、7つの視点を持つと一気に面白くなります。このページでは、まずその7つを説明し、続いて全30コース（エリア別14・コンプリート版16）を並べました。知識はコースごとに1ページずつまとめてあります。歩く前に読むのは、これから歩くコースの1ページだけで足ります。</p>
   </div>
 </header>
 
@@ -305,65 +423,65 @@
 
 <section class="framework" id="framework">
   <h2 class="mincho" style="font-size:22px; margin:0 0 16px;">歩く前の7つの視点</h2>
-  <p class="fw-intro" data-i18n="hist.fw.intro">神社仏閣は「建てられた美術品」ではなく、「その場所で起きたことの跡」。次の7つを持って歩くと、同じ建物が急に立体的に見えてくる。</p>
+  <p class="fw-intro" data-i18n="hist.fw.intro">神社仏閣は「建てられた美術品」ではなく、「その場所で起きたことの跡」です。次の7つを持って歩くと、同じ建物が急に立体的に見えてきます。</p>
 
   <div class="fw-item" data-i18n="hist.fw.item01">
   <p class="fw-no mincho">01</p>
     <h3 class="mincho">神社と寺の違い</h3>
-    <p>神道は日本古来の信仰で、山・海・祖先の霊など「神」を祀る。仏教は6世紀に大陸から伝来した外来宗教で、「仏」を祀る。ただし両者は長く一体で信仰されてきた（神仏習合）。明治の神仏分離令（1868年）で強制的に分けられる前は、同じ境内に鳥居と本堂が並ぶのが普通だった。</p>
-    <p class="fw-example">鶴岡八幡宮は、明治以前は「鶴岡八幡宮寺」という神仏習合の施設で、僧侶が管理していた。現在は神社だけが残るが、境内の成り立ちには仏教の歴史も刻まれている。</p>
+    <p>神道は日本古来の信仰で、山・海・祖先の霊など「神」を祀ります。仏教は6世紀に大陸から伝来した外来宗教で、「仏」を祀ります。ただし両者は長く一体で信仰されてきました（神仏習合）。明治の神仏分離令（1868年）で強制的に分けられる前は、同じ境内に鳥居と本堂が並ぶのが普通でした。</p>
+    <p class="fw-example">鶴岡八幡宮は、明治以前は「鶴岡八幡宮寺」という神仏習合の施設で、僧侶が管理していました。現在は神社だけが残っていますが、境内の成り立ちには仏教の歴史も刻まれています。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item02">
   <p class="fw-no mincho">02</p>
     <h3 class="mincho">建築を見る目</h3>
-    <p>神社は、鳥居（結界）→参道（神域への道）→拝殿（参拝する場所）→本殿（神が鎮座する最も神聖な場所、通常非公開）という順に、俗から聖へ進む構造を持つ。寺は、山門（俗世と聖域の境）→金堂・本堂（本尊を祀る中心建物）→塔（本来は仏の遺骨=舎利を納める建物）という構成が基本。「何のためにこの建物があるか」を考えるだけで、見え方が変わる。</p>
-    <p class="fw-example">建長寺のような禅宗寺院は、総門・三門・仏殿・法堂・方丈が一直線に並ぶ「伽藍配置」を取る。これは中国・宋代の禅宗様式をそのまま導入した結果で、日本の他の宗派の寺とは配置の考え方が異なる。</p>
+    <p>神社は、鳥居（結界）→参道（神域への道）→拝殿（参拝する場所）→本殿（神が鎮座する最も神聖な場所、通常は非公開）という順に、俗から聖へ進む構造を持っています。寺は、山門（俗世と聖域の境）→金堂・本堂（本尊を祀る中心の建物）→塔（本来は仏の遺骨＝舎利を納める建物）という構成が基本です。「何のためにこの建物があるのか」を考えるだけで、見え方が変わります。</p>
+    <p class="fw-example">建長寺のような禅宗寺院は、総門・三門・仏殿・法堂・方丈が一直線に並ぶ「伽藍配置」を取ります。中国・宋代の禅宗様式をそのまま取り入れたもので、日本の他の宗派の寺とは、配置の考え方が異なります。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item03">
   <p class="fw-no mincho">03</p>
     <h3 class="mincho">誰を祀っているか</h3>
-    <p>神様・仏様の名前と性格を知ると、その場所に人々が何を願ってきたかが分かる。八幡神は武運の神、天神は学問と雷の神、観音は現世の苦しみを救う菩薩、地蔵は子供や旅人を守る菩薩、というように、それぞれ役割が違う。</p>
-    <p class="fw-example">御霊神社（坂ノ下）が祀る<ruby>鎌倉権五郎景政<rt>かまくらごんごろうかげまさ</rt></ruby>は、実在した平安時代の武将。神話の神ではなく実在の人物を神として祀る「人神（ひとがみ）信仰」の例で、鎌倉にはこの型の神社が複数ある。</p>
+    <p>神様・仏様の名前と性格を知ると、その場所で人々が何を願ってきたのかが分かります。八幡神は武運の神、天神は学問と雷の神、観音は現世の苦しみを救う菩薩、地蔵は子供や旅人を守る菩薩というように、それぞれ役割が違います。</p>
+    <p class="fw-example">御霊神社（坂ノ下）が祀る<ruby>鎌倉権五郎景政<rt>かまくらごんごろうかげまさ</rt></ruby>は、実在した平安時代の武将です。神話の神ではなく、実在の人物を神として祀る「人神（ひとがみ）信仰」の例で、鎌倉にはこの型の神社が複数あります。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item04">
   <p class="fw-no mincho">04</p>
     <h3 class="mincho">創建年代と歴史</h3>
-    <p>古代（頼朝以前）、鎌倉時代（1180〜1333年）、<ruby>南北朝<rt>なんぼくちょう</rt></ruby>・室町、江戸、近代・現代のどこで建てられたかによって、その場所が背負っている物語は大きく変わる。「誰が、なぜ、ここに建てたのか」を見る。</p>
-    <p class="fw-example">杉本寺（734年）は頼朝より450年近く古い。鎌倉が「武士の都」になる前から、この土地には祈りの場があったことを示している。</p>
+    <p>古代（頼朝以前）、鎌倉時代（1180〜1333年）、<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>・室町、江戸、近代・現代のどの時代に建てられたかによって、その場所が背負っている物語は大きく変わります。「誰が、なぜ、ここに建てたのか」を見てみてください。</p>
+    <p class="fw-example">杉本寺は734年の創建と伝わり、頼朝より450年近く古い寺です。鎌倉が「武士の都」になる前から、この土地には祈りの場がありました。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item05">
   <p class="fw-no mincho">05</p>
     <h3 class="mincho">権力との関係</h3>
-    <p>神社仏閣は宗教施設であると同時に、政治・文化の舞台でもある。天皇、武士、朝廷、幕府、地域の豪族が、それぞれの立場でこれらの場所を利用し、支え、時に壊した。</p>
-    <p class="fw-example">東勝寺跡は、鎌倉幕府滅亡（1333年）の現場そのもの。宝戒寺は、滅んだ北条氏の屋敷跡に、その菩提を弔うために建てられている。宗教施設が政治の敗者の記憶を引き継ぐ例。</p>
+    <p>神社仏閣は宗教施設であると同時に、政治と文化の舞台でもあります。天皇、武士、朝廷、幕府、地域の豪族が、それぞれの立場でこれらの場所を利用し、支え、時に壊してきました。</p>
+    <p class="fw-example">東勝寺跡は、鎌倉幕府が滅んだ（1333年）現場そのものです。宝戒寺は、滅んだ北条氏の屋敷跡に、その菩提を弔うために建てられました。宗教施設が、政治の敗者の記憶を引き継いでいる例です。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item06">
   <p class="fw-no mincho">06</p>
     <h3 class="mincho">民間信仰</h3>
-    <p>正統な宗教史だけでなく、庶民が何を恐れ、何を願ったかという層がある。狐（稲荷）、天狗、龍、地蔵、庚申、道祖神などは、体系化された教義というより、暮らしの中の恐れと願いが形になったもの。</p>
-    <p class="fw-example">佐助稲荷・銭洗弁財天のような西口の社群は、正史にはほとんど登場しない。「験（げん）」を求める民間の信仰が、寺社の記録とは別の層として鎌倉に積み重なっていることを示している。</p>
+    <p>正統な宗教史だけでなく、庶民が何を恐れ、何を願ったかという層もあります。狐（稲荷）、天狗、龍、地蔵、庚申、道祖神などは、体系立った教義というより、暮らしの中の恐れと願いが形になったものです。</p>
+    <p class="fw-example">佐助稲荷や銭洗弁財天のような西口の社は、正史にはほとんど登場しません。「験（げん）」を求める民間の信仰が、寺社の記録とは別の層として、鎌倉に積み重なっています。</p>
   </div>
 
   <div class="fw-item" data-i18n="hist.fw.item07">
   <p class="fw-no mincho">07</p>
     <h3 class="mincho">土地との関係</h3>
-    <p>山、川、海、街道、湧水。「なぜここに建っているのか」を考えると、単なる観光地が立体的になる。鎌倉は、<ruby>谷戸<rt>やと</rt></ruby>という小さな谷の集合体であり、<ruby>切通<rt>きりどおし</rt></ruby>で外部とつながる要塞都市だった。</p>
-    <p class="fw-example">杉本寺・報国寺・浄妙寺が金沢街道沿いに並ぶのは偶然ではない。この道が鎌倉と六浦（現在の横浜市金沢区）を結ぶ物流路で、寺社もその流れの中に置かれたため。</p>
+    <p>山、川、海、街道、湧水。「なぜここに建っているのか」を考えると、ただの観光地が立体的に見えてきます。鎌倉は、<ruby>谷戸<rt>やと</rt></ruby>という小さな谷の集まりで、<ruby class=o1>切通<rt>きりどおし</rt></ruby>で外とつながる、要塞のような都市でした。</p>
+    <p class="fw-example">杉本寺・報国寺・浄妙寺が金沢街道沿いに並ぶのは、偶然ではありません。この道は鎌倉と六浦（現在の横浜市金沢区）を結ぶ物流の道で、寺社もその流れの中に置かれました。</p>
   </div>
 
   <div class="fw-closing">
-    <p data-i18n="hist.fw.closing">そして究極的には——「この場所を、100年前の人はどう見ていたんだろう？」<br>この一つを持って歩くだけで、たいていの神社仏閣は面白くなる。</p>
+    <p data-i18n="hist.fw.closing">7つの視点を突き詰めると、残る問いは一つです。<br>「この場所を、100年前の人はどう見ていたんだろう？」<br>この問いを持って歩くだけで、たいていの神社仏閣は面白くなります。</p>
   </div>
 </section>
 
 <div class="section-head" id="area">
   <h2 class="mincho">エリア別コース（14）</h2>
-  <p>実際に歩く単位となる基本の14コース。各コースの終わりに「見るポイント」として、7つの視点のうち特に効くものを示した。</p>
+  <p>実際に歩く単位となる、基本の14コースです。各コースの終わりに、7つの視点のうち特に効くものを「見るポイント」として示しました。</p>
 </div>
 
 <article class="course link-card" id="g1">
@@ -379,7 +497,7 @@
 <article class="course link-card" id="g2">
   <a class="card-link" href="knowledge/g2.html">
     <h3><span class="no">02</span>頼朝、鎌倉に入る</h3>
-    <p class="theme"><ruby>源頼朝<rt>みなもとのよりとも</rt></ruby>が鎌倉を武家政権の地に選び、精神的中心を造営した経緯。</p>
+    <p class="theme"><ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>が鎌倉を武家政権の地に選び、精神的中心を造営した経緯。</p>
     <p class="spots-line">鶴岡八幡宮・段葛・由比若宮</p>
     <div class="lens-tags"><span>01 神仏習合</span><span>03 祀られているもの</span><span>07 土地との関係</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -399,7 +517,7 @@
 <article class="course link-card" id="g4">
   <a class="card-link" href="knowledge/g4.html">
     <h3><span class="no">04</span>北条氏と禅宗の輸入</h3>
-    <p class="theme"><ruby>執権<rt>しっけん</rt></ruby><ruby>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を招き、鎌倉に本格的な禅宗を根付かせた画期。</p>
+    <p class="theme"><ruby>執権<rt>しっけん</rt></ruby><ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を招き、鎌倉に本格的な禅宗を根付かせた画期。</p>
     <p class="spots-line">明月院・建長寺・円応寺</p>
     <div class="lens-tags"><span>02 建築を見る目</span><span>06 民間信仰</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -409,7 +527,7 @@
 <article class="course link-card" id="g5">
   <a class="card-link" href="knowledge/g5.html">
     <h3><span class="no">05</span>蒙古襲来と鎮魂の寺</h3>
-    <p class="theme"><ruby>北条時宗<rt>ほうじょうときむね</rt></ruby>が<ruby>元寇<rt>げんこう</rt></ruby>の戦没者供養のため<ruby>無学祖元<rt>むがくそげん</rt></ruby>を招いて開いた寺。</p>
+    <p class="theme"><ruby class=o1>北条時宗<rt>ほうじょうときむね</rt></ruby>が<ruby>元寇<rt>げんこう</rt></ruby>の戦没者供養のため<ruby>無学祖元<rt>むがくそげん</rt></ruby>を招いて開いた寺。</p>
     <p class="spots-line">円覚寺・東慶寺・浄智寺</p>
     <div class="lens-tags"><span>04 創建年代</span><span>05 権力との関係</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -419,7 +537,7 @@
 <article class="course link-card" id="g6">
   <a class="card-link" href="knowledge/g6.html">
     <h3><span class="no">06</span>律宗と社会事業の記憶</h3>
-    <p class="theme"><ruby>忍性<rt>にんしょう</rt></ruby>が貧民救済・医療事業とともに広めた律宗の拠点。</p>
+    <p class="theme"><ruby class=o1>忍性<rt>にんしょう</rt></ruby>が貧民救済・医療事業とともに広めた律宗の拠点。</p>
     <p class="spots-line">極楽寺・星井寺</p>
     <div class="lens-tags"><span>05 権力との関係</span><span>07 土地との関係</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -439,7 +557,7 @@
 <article class="course link-card" id="g8">
   <a class="card-link" href="knowledge/g8.html">
     <h3><span class="no">08</span>幕府滅亡と南北朝の悲劇</h3>
-    <p class="theme"><ruby>新田義貞<rt>にったよしさだ</rt></ruby>の鎌倉攻めによる<ruby>北条高時<rt>ほうじょうたかとき</rt></ruby>ら一族の自刃、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>側近の粛清。</p>
+    <p class="theme"><ruby>新田義貞<rt>にったよしさだ</rt></ruby>の鎌倉攻めによる<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>ら一族の自刃、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>側近の粛清。</p>
     <p class="spots-line">宝戒寺・東勝寺跡・鎌倉宮・覚園寺・瑞泉寺</p>
     <div class="lens-tags"><span>05 権力との関係</span><span>04 創建年代</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -499,7 +617,7 @@
 <article class="course link-card" id="g14">
   <a class="card-link" href="knowledge/g14.html">
     <h3><span class="no">14</span>腰越・龍口寺輪番八ヶ寺</h3>
-    <p class="theme"><ruby>日蓮<rt>にちれん</rt></ruby>法難の系譜が腰越にも及ぶ、江の島に隣接する<ruby>日蓮宗<rt>にちれんしゅう</rt></ruby>寺院群。</p>
+    <p class="theme"><ruby>日蓮<rt>にちれん</rt></ruby>法難の系譜が腰越にも及ぶ、江の島に隣接する<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>寺院群。</p>
     <p class="spots-line">龍口寺・勧行寺・本龍寺・東漸寺・法源寺・本成寺</p>
     <div class="lens-tags"><span>05 権力との関係</span><span>07 土地との関係</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -508,7 +626,7 @@
 
 <div class="section-head" id="complete">
   <h2 class="mincho">コンプリート版（16）</h2>
-  <p>エリア別14コースでは訪ねなかった社寺の補足コース。</p>
+  <p>エリア別14コースでは訪ねなかった社寺を拾う、補足のコースです。</p>
 </div>
 
 <article class="course complete link-card" id="c1">
@@ -544,7 +662,7 @@
 <article class="course complete link-card" id="c4">
   <a class="card-link" href="knowledge/c4.html">
     <h3><span class="no">C4</span>大町② 未収録の社寺</h3>
-    <p class="theme">大町に残る、<ruby>日蓮宗<rt>にちれんしゅう</rt></ruby>の小寺と厄除けの社。</p>
+    <p class="theme">大町に残る、<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の小寺と厄除けの社。</p>
     <p class="spots-line">八雲神社（大町）・蛭子神社・大宝寺・別願寺・本興寺・妙法寺・妙隆寺</p>
     <div class="lens-tags"><span>06 民間信仰</span><span>07 土地との関係</span></div>
     <span class="read-more">くわしく読む →</span>
@@ -684,7 +802,7 @@
 
 <footer class="site">
   <div class="inner">
-    <p data-i18n="hist.footer.disclaimer">掲載した人物・出来事・祭神・本尊の説明は、各寺社公式サイト・鎌倉市観光協会・Wikipedia等の一般的な記述にもとづく。伝承の域を出ない事項には「伝わる」「とされる」等の表現を残した。Google Mapsへのリンクは地名検索によるもので、公式リンクではない。</p><p><span class="last-updated" data-i18n="common.lastupdated">最終更新日：2026年9月24日</span></p>
+    <p data-i18n="hist.footer.disclaimer">掲載した人物・出来事・祭神・本尊の説明は、各寺社公式サイト・鎌倉市観光協会・Wikipedia等の一般的な記述にもとづく。伝承の域を出ない事項には「伝わる」「とされる」等の表現を残した。Google Mapsへのリンクは地名検索によるもので、公式リンクではない。</p><p><span class="last-updated" data-i18n="common.lastupdated">最終更新日：2026年9月25日</span></p>
     <p><a href="basics.html">用語集（歩く前の基礎知識）を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
   </div>
 </footer>

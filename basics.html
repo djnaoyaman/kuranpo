@@ -33,17 +33,18 @@
 <meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#EFECE7;
-    --card:#F7F4EE;
+    --bg:#F4F1EA;
+    --card:#FBF9F4;
     --ink:#262220;
     --ink-soft:#6B6058;
-    --line:#D8D0BF;
+    --line:#DCD5C4;
     --vermilion:#A8402E;
     --vermilion-bg:#EEDCCF;
     --max:1120px;
+    --voice:"Cormorant Garamond", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -156,12 +157,12 @@
     position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
     background:var(--card); border-left:1px solid var(--line);
     transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
-    padding:20px 24px; overflow-y:auto;
+    padding:24px 24px; overflow-y:auto;
   }
   .drawer.open{transform:translateX(0);}
   .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
-  .drawer-head span{font-size:18.5px; font-weight:700;}
-  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-head span{font-family:var(--voice); font-style:italic; font-size:20px; font-weight:500; color:var(--vermilion);}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
   .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
   .drawer-label:first-of-type{margin-top:0;}
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
@@ -211,6 +212,120 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  @media (min-width:768px){:root{--gutter:40px;}}
+
+  /* 1. グリッド：全コンテナの左端を一本に揃える */
+  .topbar-inner{padding-left:var(--gutter); padding-right:var(--gutter);}
+  header.site{padding-left:0; padding-right:0; background:var(--bg);}
+  header.site .inner{max-width:var(--max); margin-left:auto; margin-right:auto; padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  nav.tabs, nav.jump{padding-left:0; padding-right:0;}
+  nav.tabs .inner, nav.jump .inner{padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  main, .intro, footer.site{padding-left:var(--gutter); padding-right:var(--gutter);}
+  section.first-timer, section.locator, section.areamap, section.season, section.chapters{padding-left:var(--gutter); padding-right:var(--gutter);}
+  main section.quiz-promo{padding-left:0; padding-right:0;}
+  section.first-timer{padding-top:40px;}
+
+  /* 2. 書体：和文を機械的に斜体化しない・約物を詰める・文節で改行する・一文字だけの行を作らない */
+  html{font-synthesis:weight;}
+  body{line-break:strict;}
+  h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
+  h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
+  p,li,dd{text-wrap:pretty;}
+
+  /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
+  ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
+  /* ルビが親文字より長い分（o1〜o12＝半角1〜12字分）だけ前後にはみ出させる。短いルビは引き伸ばさない */
+  ruby.o1 > rt{margin-inline:-0.5em;}
+  ruby.o2 > rt{margin-inline:-1em;}
+  ruby.o3 > rt{margin-inline:-1.5em;}
+  ruby.o4 > rt{margin-inline:-2em;}
+  ruby.o5 > rt{margin-inline:-2.5em;}
+  ruby.o6 > rt{margin-inline:-3em;}
+  ruby.o7 > rt{margin-inline:-3.5em;}
+  ruby.o8 > rt{margin-inline:-4em;}
+  ruby.o9 > rt{margin-inline:-4.5em;}
+  ruby.o10 > rt{margin-inline:-5em;}
+  ruby.o11 > rt{margin-inline:-5.5em;}
+  ruby.o12 > rt{margin-inline:-6em;}
+
+  /* 4. 見出しラベルの統一 */
+  .ft-label, .chapters-label, .season-label{font-family:var(--voice); font-style:italic; font-weight:500; font-size:16px; color:var(--vermilion); letter-spacing:.04em;}
+  .sn-label{font-family:var(--voice); font-style:italic; font-weight:500; letter-spacing:.04em;}
+
+  /* 5. 罫線は2種類だけ（1px＝区切り／2px＝強調） */
+  footer.site{border-top:1px solid var(--line);}
+  .panel-note, .notice, .season-note{border-left-width:2px;}
+  .nf-inner .actions a.primary{background:none; color:var(--vermilion); border-color:var(--vermilion);}
+  /* 6. 意味の読めない装飾は置かない（見出し右上で切り取られて弧のかけらだけが見えていた） */
+  .kn-hero-bg{display:none;}
+  /* 7. 行長：読ませる段落は1行42字前後に収める */
+  .tl-era p, .rel-person p, .rel-group > p, .tree-branch p, .group-note, .fw-intro, .fw-item p, .fw-closing p, .stats p, .diagram-intro{max-width:42em;}
+  .panel-note{max-width:44em;}
+  /* 8. 短い導入文は文節で改行する（「7／つ」のような数字と助数詞の泣き別れを防ぐ） */
+  header.site p, .diagram-intro, .panel-note, .areamap-note, .ch p, .card .theme, .qcl-desc, .fw-intro, .group-note{word-break:auto-phrase;}
+
+  /* ===== v17.1：機械監査（77ページ×4画面幅）で見つかった問題への対処 ===== */
+  /* 9. タンを文字に使う時だけ濃い版（背景に対し4.5:1以上）。線・点・罫線は元のタンのまま */
+  :root{--ochre-ink:#86652F;}
+  .axis-timeline .meta-row .fee, .card.axis-timeline .num, .ch[data-tab="timeline"] .ch-no, .dl-course[data-axis="timeline"] .dl-course-no, .note-trivia .note-label, .quiz-cat.person .qc-label, .tree-branch.ochre .b-label{color:var(--ochre-ink);}
+  /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
+  .spot-list .sname{flex:1 1 auto; min-width:0;}
+  .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
+  /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
+  body{overflow-wrap:break-word;}
+  code{overflow-wrap:anywhere;}
+  /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
+  header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
+  .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
+  .topbar-inner{max-width:1120px;}
+  @media (min-width:768px){
+    .topbar-inner{display:flex; align-items:center;}
+    .topbar-nav{display:flex; margin-left:auto; margin-right:18px;}
+    .hamburger{display:flex;}
+  }
+  /* 18. 色は意味を持つものにだけ使う。季節のおすすめは「おすすめ」の朱（「迷ったら、これ」と同じ）。注記の種類（季節・トリビア・寄り道）は見出しの言葉で区別し、色分けしない */
+  .season-card{border-left-color:var(--vermilion);}
+  .season-card:hover{border-color:var(--vermilion);}
+  .season-card .sc-when{color:var(--vermilion);}
+  .season-toggle:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .kw-item b{color:var(--ink);}
+  .season-note{background:var(--card); border:1px solid var(--line); border-left:2px solid var(--vermilion);}
+  .season-note .sn-label{color:var(--vermilion);}
+  .note-season, .note-trivia, .note-detour{border-left-color:var(--ink-soft);}
+  .note-season .note-label, .note-trivia .note-label, .note-detour .note-label{color:var(--ink-soft);}
+  /* 21. 罫線は1px＝区切り／2px＝強調の2種類だけ（計算後の値で3px以上が残っていた9種類を揃える。年表の点の縁取りは線ではないので除く） */
+  .course, article.course, .fw-closing, .fw-example, .fw-ref, .guard-item, .rel-group, .sign, .season-note{border-left-width:2px;}
+  .editor-mark-section{border-top:1px solid var(--line);}
+  /* 22. 欧文イタリックの数字は、和文の字面の高さに揃うライニング数字に固定する（下に沈むオールドスタイル数字を使わない） */
+  html{font-variant-numeric:lining-nums;}
+  /* 24. 元のデザインの名残を今の言葉に置き換える */
+  /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
+  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
+  .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
+  .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
+  .tl-temples .yr{font-family:inherit; font-size:inherit;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
+  .topbar{background:rgba(244,241,234,0.92);}
+  .md-choice{background:var(--bg);}
+  .quiz-cat, .qcl-item{color:var(--ink);}
+  /* 24-3. 小見出しの字間を、全ページで同じ詰め具合に */
+  header.site .kicker{letter-spacing:.02em;}
+  /* 24-4. 地図リンクの絵文字をやめ、外の地図へ移ることを細い矢印で示す */
+  article.course .maplinks a::before, .term dd .map::before{content:none;}
+  article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
+  /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
+  .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
 </style>
 <script type="application/ld+json">
 {
@@ -271,7 +386,7 @@
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line" data-i18n="basics.kicker">散歩前に、5分だけ</p>
     <h1 class="mincho reveal-line" data-i18n="basics.h1">歩く前の基礎知識</h1>
-    <p class="lead reveal-line" data-i18n="basics.lead">鎌倉を歩く前に知っておくと、社寺の見え方が変わる言葉をまとめた。コース説明の中で断りなく使っている言葉も多いので、迷ったらここに戻ってきてほしい。キーワードごとにGoogle Mapsへのリンクも付けた。</p>
+    <p class="lead reveal-line" data-i18n="basics.lead">「切通」「谷戸」「鎌倉五山」。コースの説明には、こうした言葉が断りなく出てきます。歩く前に知っておくと社寺の見え方が変わる言葉を、ここにまとめました。場所の分かる言葉には、Google Mapsへのリンクも付けています。歩きながら迷ったら、いつでもここに戻ってきてください。</p>
   </div>
 </header>
 
@@ -290,172 +405,170 @@
 
   <section class="group" id="rekishi">
     <h2 class="mincho" data-i18n="basics.rekishi.h2">歴史の基本知識</h2>
-    <p class="group-note" data-i18n="basics.rekishi.note">コースの「年代」「時代区分」を読むための、いちばん大きな骨格。</p>
+    <p class="group-note" data-i18n="basics.rekishi.note">コースに出てくる「年代」や「時代区分」を読むための、いちばん大きな骨格です。</p>
     <dl class="terms" data-i18n="basics.rekishi.terms">
       <div class="term">
         <dt>鎌倉幕府の成立（1180年前後）</dt>
-        <dd>1180年、<ruby>源頼朝<rt>みなもとのよりとも</rt></ruby>が鎌倉に本拠を構えたことで武家政権が実質的に始まる。1192年に頼朝が征夷大将軍に任じられた年を成立年とする説が長く一般的だったが、近年は実質的な支配体制が整った1180年代前半を成立とみる説も有力になっている。年号は一つに決まっているわけではない。</dd>
+        <dd>1180年、<ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>が鎌倉に本拠を構えたことで、武家政権が実質的に始まります。頼朝が征夷大将軍に任じられた1192年を成立の年とする説が長く一般的でしたが、近年は実質的な支配の仕組みが整った1180年代前半を成立とみる説も有力です。成立の年は、一つに決まっているわけではありません。</dd>
       </div>
       <div class="term">
         <dt><ruby>執権<rt>しっけん</rt></ruby>政治</dt>
-        <dd>頼朝の死後、将軍を補佐する「<ruby>執権<rt>しっけん</rt></ruby>」の地位にあった北条氏が実質的な権力を握った体制。初代・<ruby>北条時政<rt>ほうじょうときまさ</rt></ruby>以降、歴代の<ruby>執権<rt>しっけん</rt></ruby>はすべて北条氏から出ている。将軍はしだいに名目上の存在になっていく。</dd>
+        <dd>頼朝の死後、将軍を補佐する「<ruby>執権<rt>しっけん</rt></ruby>」の地位にあった北条氏が、実質的な権力を握った体制です。初代の<ruby class=o1>北条時政<rt>ほうじょうときまさ</rt></ruby>以降、歴代の<ruby>執権<rt>しっけん</rt></ruby>はすべて北条氏から出ています。将軍は、しだいに名目だけの存在になっていきました。</dd>
       </div>
       <div class="term">
-        <dt><ruby>承久の乱<rt>じょうきゅうのらん</rt></ruby>（1221年）</dt>
-        <dd><ruby>後鳥羽上皇<rt>ごとばじょうこう</rt></ruby>が幕府打倒を企てて起こした戦い。幕府方が勝利し、京都に六波羅探題を置いて朝廷への統制を強めた。この乱を境に、幕府の力は西国にも及ぶようになる。</dd>
+        <dt><ruby class=o1>承久の乱<rt>じょうきゅうのらん</rt></ruby>（1221年）</dt>
+        <dd><ruby>後鳥羽上皇<rt>ごとばじょうこう</rt></ruby>が幕府を倒そうとして起こした戦いです。幕府方が勝ち、京都に六波羅探題を置いて朝廷への統制を強めました。この乱を境に、幕府の力は西国にも及ぶようになります。</dd>
       </div>
       <div class="term">
         <dt><ruby>元寇<rt>げんこう</rt></ruby>（1274年・1281年）</dt>
-        <dd><ruby>文永の役<rt>ぶんえいのえき</rt></ruby>（1274年）・<ruby>弘安の役<rt>こうあんのえき</rt></ruby>（1281年）。二度にわたる蒙古襲来。軍事的には撃退したが、恩賞を十分に与えられなかった御家人の不満が蓄積し、幕府衰退の一因になったとされる。円覚寺はこの戦没者を弔うために建てられた。</dd>
+        <dd><ruby>文永の役<rt>ぶんえいのえき</rt></ruby>（1274年）と<ruby>弘安の役<rt>こうあんのえき</rt></ruby>（1281年）、二度にわたる蒙古襲来です。軍事的には撃退しましたが、恩賞を十分に与えられなかった御家人の不満が積もり、幕府が衰える一因になったとされます。円覚寺は、この戦いの戦没者を弔うために建てられました。</dd>
       </div>
       <div class="term">
         <dt>鎌倉幕府の滅亡（1333年）</dt>
-        <dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の呼びかけに応じた<ruby>新田義貞<rt>にったよしさだ</rt></ruby>・<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>らが挙兵。新田軍が鎌倉に攻め入り、<ruby>北条高時<rt>ほうじょうたかとき</rt></ruby>ら北条氏一門は東勝寺で自刃した。約150年続いた鎌倉幕府がここで終わる。</dd>
+        <dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の呼びかけに応じて、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>・<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>らが兵を挙げました。新田軍が鎌倉に攻め入り、<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>ら北条氏一門は東勝寺で自刃します。約150年続いた鎌倉幕府は、ここで終わりました。</dd>
       </div>
       <div class="term">
-        <dt><ruby>建武の新政<rt>けんむのしんせい</rt></ruby>と<ruby>南北朝<rt>なんぼくちょう</rt></ruby>（1333〜1392年）</dt>
-        <dd>幕府滅亡後、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>による<ruby>建武の新政<rt>けんむのしんせい</rt></ruby>が始まるが、武士層の支持を得られず短期間で崩壊。<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が離反して室町幕府を開き、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>は吉野に逃れて南朝を樹立。京都の北朝と並立する<ruby>南北朝<rt>なんぼくちょう</rt></ruby>時代に入る。</dd>
+        <dt><ruby>建武の新政<rt>けんむのしんせい</rt></ruby>と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>（1333〜1392年）</dt>
+        <dd>幕府の滅亡後、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>による<ruby>建武の新政<rt>けんむのしんせい</rt></ruby>が始まりますが、武士たちの支持を得られず、短い期間で崩れました。<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が離反して室町幕府を開き、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>は吉野に逃れて南朝を立てます。こうして、京都の北朝と並び立つ<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>時代に入りました。</dd>
       </div>
       <div class="term">
         <dt><ruby>鎌倉府<rt>かまくらふ</rt></ruby>と<ruby>鎌倉公方<rt>かまくらくぼう</rt></ruby></dt>
-        <dd>室町幕府は関東統治のため<ruby>鎌倉府<rt>かまくらふ</rt></ruby>を置き、足利氏の一門を「<ruby>鎌倉公方<rt>かまくらくぼう</rt></ruby>」として鎌倉に常駐させた。政治の中心は京都に移ったが、鎌倉は関東の統治拠点として引き続き重要な土地だった。</dd>
+        <dd>室町幕府は関東を治めるために<ruby>鎌倉府<rt>かまくらふ</rt></ruby>を置き、足利氏の一門を「<ruby>鎌倉公方<rt>かまくらくぼう</rt></ruby>」として鎌倉に常駐させました。政治の中心は京都に移りましたが、鎌倉は関東を治める拠点として、引き続き重要な土地でした。</dd>
       </div>
       <div class="term">
         <dt>玉縄北条氏（戦国期）と鎌倉北条氏の違い</dt>
-        <dd>鎌倉時代の<ruby>執権<rt>しっけん</rt></ruby>北条氏とは血統上つながらない、伊勢氏を出自とする戦国大名「<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>」の一族。<ruby>北条早雲<rt>ほうじょうそううん</rt></ruby>の子・氏時が玉縄城主となり、以後玉縄北条氏として鎌倉近郊を支配した。同じ「北条」でも別の家であることに注意。本サイトのコース説明でも、この二つを区別して書いている。</dd>
+        <dd>鎌倉時代の<ruby>執権<rt>しっけん</rt></ruby>北条氏とは血筋のつながらない、伊勢氏を出自とする戦国大名「<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>」の一族です。<ruby class=o1>北条早雲<rt>ほうじょうそううん</rt></ruby>の子・氏時が玉縄城主となり、以後は玉縄北条氏として鎌倉の近郊を支配しました。同じ「北条」でも別の家なので、注意が必要です。このサイトのコース説明でも、二つを区別して書いています。</dd>
       </div>
     </dl>
   </section>
 
   <section class="group" id="chihei">
     <h2 class="mincho" data-i18n="basics.chihei.h2">地形・地理</h2>
-    <p class="group-note" data-i18n="basics.chihei.note">鎌倉の地形そのものが、社寺の配置と歴史を決めている。</p>
+    <p class="group-note" data-i18n="basics.chihei.note">鎌倉の地形そのものが、社寺の配置と歴史を決めています。</p>
     <dl class="terms" data-i18n="basics.chihei.terms">
       <div class="term">
-        <dt><ruby>切通<rt>きりどおし</rt></ruby>（きりどおし）</dt>
-        <dd>鎌倉は三方を山に、一方を海に囲まれた要塞のような都市。外部との往来のため、山を切り開いてつくった道の総称。<ruby>朝夷奈<rt>あさいな</rt></ruby>切通・<ruby>名越<rt>なごえ</rt></ruby>切通・<ruby>化粧坂<rt>けわいざか</rt></ruby>切通・<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>切通・大仏<ruby>切通<rt>きりどおし</rt></ruby>・極楽寺坂<ruby>切通<rt>きりどおし</rt></ruby>・<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>切通などがあり、まとめて「鎌倉七<ruby>切通<rt>きりどおし</rt></ruby>」と呼ばれることが多い。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">亀ヶ谷坂<ruby>切通<rt>きりどおし</rt></ruby>の位置</a></dd>
-      </div>
-      <div class="term">
+        <dt><ruby class=o1>切通<rt>きりどおし</rt></ruby>（きりどおし）</dt>
+        <dd>鎌倉は、三方を山に、一方を海に囲まれた要塞のような都市です。外との行き来のために山を切り開いてつくった道を、こう呼びます。<ruby>朝夷奈<rt>あさいな</rt></ruby>切通・<ruby>名越<rt>なごえ</rt></ruby>切通・<ruby>化粧坂<rt>けわいざか</rt></ruby>切通・<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>切通・大仏<ruby class=o1>切通<rt>きりどおし</rt></ruby>・極楽寺坂<ruby class=o1>切通<rt>きりどおし</rt></ruby>・<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>切通などがあり、まとめて「鎌倉七<ruby class=o1>切通<rt>きりどおし</rt></ruby>」と呼ばれることがよくあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">亀ヶ谷坂<ruby class=o1>切通<rt>きりどおし</rt></ruby>の位置</a></dd>
       </div>
       <div class="term">
         <dt><ruby>谷戸<rt>やと</rt></ruby>（やと）</dt>
-        <dd>三方を山に囲まれた、袋状の小さな谷。鎌倉の寺の多くは、この<ruby>谷戸<rt>やと</rt></ruby>の奥まった場所に建てられている。同じ「北鎌倉」でも、寺ごとに入っている<ruby>谷戸<rt>やと</rt></ruby>が違うため、隣同士に見えて実際は山越えが必要な場合がある。</dd>
+        <dd>三方を山に囲まれた、袋のような形の小さな谷です。鎌倉の寺の多くは、この<ruby>谷戸<rt>やと</rt></ruby>の奥まった場所に建てられています。同じ「北鎌倉」でも寺ごとに入っている<ruby>谷戸<rt>やと</rt></ruby>が違うため、隣り合って見えても、実際には山越えが必要な場合があります。</dd>
       </div>
       <div class="term">
         <dt>やぐら</dt>
-        <dd>鎌倉特有の、岩肌に横穴を掘ってつくった中世の墓所・納骨堂。北鎌倉や長谷の寺の裏山などに、今も数百基単位で残っている。明月院やぐらは鎌倉最大規模とされる。</dd>
+        <dd>鎌倉特有の、岩肌に横穴を掘ってつくった中世の墓所・納骨堂です。北鎌倉や長谷の寺の裏山などに、今も数百基単位で残っています。明月院やぐらは、鎌倉で最大の規模とされます。</dd>
       </div>
       <div class="term">
         <dt>鎌倉石</dt>
-        <dd>鎌倉周辺で産出する、加工しやすい軟らかな砂岩。<ruby>切通<rt>きりどおし</rt></ruby>の岩壁、石段、寺の基礎などに広く使われてきたが、風化しやすく、苔がつきやすい性質もある。杉本寺や<ruby>覚園寺<rt>かくおんじ</rt></ruby>の苔むした石段も、この石の性質による。</dd>
+        <dd>鎌倉周辺でとれる、加工しやすい軟らかな砂岩です。<ruby class=o1>切通<rt>きりどおし</rt></ruby>の岩壁や石段、寺の基礎などに広く使われてきましたが、風化しやすく、苔がつきやすい性質もあります。杉本寺や<ruby>覚園寺<rt>かくおんじ</rt></ruby>の苔むした石段も、この石の性質によるものです。</dd>
       </div>
     </dl>
   </section>
 
   <section class="group" id="kenchiku">
     <h2 class="mincho" data-i18n="basics.kenchiku.h2">寺社・仏教用語</h2>
-    <p class="group-note" data-i18n="basics.kenchiku.note">コース説明の中で断りなく使っている言葉。</p>
+    <p class="group-note" data-i18n="basics.kenchiku.note">コースの説明で、断りなく使っている言葉です。</p>
     <dl class="terms" data-i18n="basics.kenchiku.terms">
       <div class="term">
         <dt><ruby>開山<rt>かいさん</rt></ruby>・<ruby>開基<rt>かいき</rt></ruby></dt>
-        <dd>「<ruby>開山<rt>かいさん</rt></ruby>」は寺を実際に開いた僧、「<ruby>開基<rt>かいき</rt></ruby>」は建立のための土地や資金を出した人（多くは武家）を指す。両者は別人であることが多く、たとえば建長寺は<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>が<ruby>開山<rt>かいさん</rt></ruby>、<ruby>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby>開基<rt>かいき</rt></ruby>。</dd>
+        <dd>「<ruby>開山<rt>かいさん</rt></ruby>」は寺を実際に開いた僧、「<ruby>開基<rt>かいき</rt></ruby>」は建立のための土地や資金を出した人（多くは武家）を指します。両者は別人であることが多く、たとえば建長寺は、<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>が<ruby>開山<rt>かいさん</rt></ruby>、<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby>開基<rt>かいき</rt></ruby>です。</dd>
       </div>
       <div class="term">
-        <dt><ruby>塔頭<rt>たっちゅう</rt></ruby>（たっちゅう）</dt>
-        <dd>大寺院の敷地内にある、<ruby>開山<rt>かいさん</rt></ruby>や歴代住職の墓を守るための小院。円覚寺には<ruby>塔頭<rt>たっちゅう</rt></ruby>が17院、建長寺には10院前後残るが、大半は非公開で、通常は本寺の拝観の中から外観を眺めるだけになる。</dd>
+        <dt><ruby class=o1>塔頭<rt>たっちゅう</rt></ruby>（たっちゅう）</dt>
+        <dd>大寺院の敷地内にある、<ruby>開山<rt>かいさん</rt></ruby>や歴代住職の墓を守るための小さな寺院です。円覚寺には<ruby class=o1>塔頭<rt>たっちゅう</rt></ruby>が17院、建長寺には10院前後が残っていますが、大半は非公開で、ふだんは本寺を拝観しながら外から眺めるだけになります。</dd>
       </div>
       <div class="term">
         <dt>鎌倉五山</dt>
-        <dd>建長寺・円覚寺・寿福寺・浄智寺・浄妙寺。臨済宗の寺格を序列化した制度で、北条氏が中国の制度にならって定めたとされる。</dd>
+        <dd>建長寺・円覚寺・寿福寺・浄智寺・浄妙寺の5つです。臨済宗の寺の格を序列にした制度で、北条氏が中国の制度にならって定めたとされます。</dd>
       </div>
       <div class="term">
         <dt><ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>（かんとうじっさつ）</dt>
-        <dd>五山に次ぐ格式とされた10の禅寺。大慶寺などがこれに数えられる。報国寺は、これより一段下の「<ruby>諸山<rt>しょさん</rt></ruby>」という寺格にあたる（誤って十刹と紹介される例があるので注記しておく）。</dd>
+        <dd>五山に次ぐ格式とされた10の禅寺です。大慶寺などがこれに数えられます。報国寺は、これより一段下の「<ruby>諸山<rt>しょさん</rt></ruby>」という寺格にあたります（誤って十刹と紹介される例があるため、注記しておきます）。</dd>
       </div>
       <div class="term">
         <dt><ruby>志納<rt>しのう</rt></ruby>（しのう）</dt>
-        <dd>決まった拝観料を設けず、参拝者が気持ちとして納める形式。「無料」と書かれていても、<ruby>志納<rt>しのう</rt></ruby>箱が置かれている場合がある。</dd>
+        <dd>決まった拝観料を設けず、参拝する人が気持ちとして納める形式です。「無料」と書かれていても、<ruby>志納<rt>しのう</rt></ruby>箱が置かれている場合があります。</dd>
       </div>
       <div class="term">
         <dt><ruby>単立<rt>たんりつ</rt></ruby>（たんりつ）</dt>
-        <dd>特定の宗派本山の傘下に入らず、独立した宗教法人として運営される寺院。高徳院（大仏）や長谷寺がこれにあたる。</dd>
+        <dd>特定の宗派の本山の傘下に入らず、独立した宗教法人として運営される寺院です。高徳院（大仏）や長谷寺がこれにあたります。</dd>
       </div>
     </dl>
   </section>
 
   <section class="group" id="junrei">
     <h2 class="mincho" data-i18n="basics.junrei.h2">巡礼・霊場</h2>
-    <p class="group-note" data-i18n="basics.junrei.note">鎌倉市観光協会が公式に案内している巡礼コースの単位。</p>
+    <p class="group-note" data-i18n="basics.junrei.note">鎌倉市観光協会が公式に案内している、巡礼コースの単位です。</p>
     <dl class="terms" data-i18n="basics.junrei.terms">
       <div class="term">
         <dt>鎌倉三十三観音霊場</dt>
-        <dd>観音菩薩を祀る33の寺をめぐる巡礼路。杉本寺が第一番。</dd>
+        <dd>観音菩薩を祀る33の寺をめぐる巡礼路で、杉本寺が第一番です。</dd>
       </div>
       <div class="term">
         <dt>鎌倉二十四地蔵</dt>
-        <dd>地蔵菩薩を祀る24の場所をめぐる巡礼路。建長寺の心平地蔵・済田地蔵などが含まれる。</dd>
+        <dd>地蔵菩薩を祀る24の場所をめぐる巡礼路です。建長寺の心平地蔵・済田地蔵などが含まれます。</dd>
       </div>
       <div class="term">
         <dt>鎌倉・江の島七福神</dt>
-        <dd>七福神を祀る7つの社寺をめぐる巡礼路。浄智寺・宝戒寺・妙隆寺などが含まれる。</dd>
+        <dd>七福神を祀る7つの社寺をめぐる巡礼路です。浄智寺・宝戒寺・妙隆寺などが含まれます。</dd>
       </div>
       <div class="term">
         <dt>坂東三十三観音霊場</dt>
-        <dd>関東一円に広がる、より大きな観音巡礼路。杉本寺はこちらも第一番札所を兼ねる。</dd>
+        <dd>関東一円に広がる、より大きな観音の巡礼路です。杉本寺は、こちらの第一番札所も兼ねています。</dd>
       </div>
       <div class="term">
         <dt>鎌倉十井（じっせい）</dt>
-        <dd>水質の良さで知られた、鎌倉に残る10の古井戸。海蔵寺の十六井戸・底脱ノ井、浄智寺の甘露ノ井などが含まれる。</dd>
+        <dd>水質の良さで知られた、鎌倉に残る10の古井戸です。海蔵寺の十六井戸・底脱ノ井、浄智寺の甘露ノ井などが含まれます。</dd>
       </div>
     </dl>
   </section>
 
   <section class="group" id="sanpai">
     <h2 class="mincho" data-i18n="basics.sanpai.h2">参拝の実務</h2>
-    <p class="group-note" data-i18n="basics.sanpai.note">当日困らないための、細かいが実用的な情報。</p>
+    <p class="group-note" data-i18n="basics.sanpai.note">当日に困らないための、細かいけれど実用的な情報です。</p>
     <dl class="terms" data-i18n="basics.sanpai.terms">
       <div class="term">
         <dt>拝観料の年齢区分</dt>
-        <dd>「大人」は高校生以上を指すことが多いが、寺によって基準が異なる（中学生から大人料金の寺もある）。本サイトでは寺ごとの表記のまま掲載している。</dd>
+        <dd>「大人」は高校生以上を指すことが多いものの、寺によって基準が異なります（中学生から大人料金の寺もあります）。このサイトでは、寺ごとの表記のまま載せています。</dd>
       </div>
       <div class="term">
         <dt>拝観時間</dt>
-        <dd>多くの寺は16時前後で受付終了。16時半に着いても入れないことが多いので、最後の1〜2寺は余裕をもった時間に。</dd>
+        <dd>多くの寺は、16時前後で受付を終えます。16時半に着いても入れないことが多いので、最後の1〜2寺は時間に余裕をもって訪ねてください。</dd>
       </div>
       <div class="term">
         <dt>御朱印</dt>
-        <dd>参拝の証としていただく印。多くの寺で300円前後。書き置き（すでに書かれた紙を受け取る形式）のみの寺も増えている。</dd>
+        <dd>参拝の証としていただく印で、多くの寺で300円前後です。書き置き（すでに書かれた紙を受け取る形式）だけの寺も増えています。</dd>
       </div>
       <div class="term">
         <dt>喪中・月曜休み</dt>
-        <dd>安国論寺など、月曜を定休日とする寺がある（祝日は開門）。事前確認が必要。</dd>
+        <dd>安国論寺など、月曜を定休日とする寺があります（祝日は開門）。事前に確認してください。</dd>
       </div>
     </dl>
   </section>
 
   <section class="group" id="kotsu">
     <h2 class="mincho" data-i18n="basics.kotsu.h2">交通・エリアの基本</h2>
-    <p class="group-note" data-i18n="basics.kotsu.note">駅名と方角だけ押さえておくと、コース選びが早くなる。</p>
+    <p class="group-note" data-i18n="basics.kotsu.note">駅名と方角だけ押さえておくと、コース選びが早くなります。</p>
     <dl class="terms" data-i18n="basics.kotsu.terms">
       <div class="term">
         <dt>鎌倉駅 東口・西口</dt>
-        <dd>東口は鶴岡八幡宮・小町通り・若宮大路方面。西口は銭洗弁財天・佐助稲荷・寿福寺方面。同じ「鎌倉駅」でも出口を間違えると15分以上のロスになる。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">鎌倉駅の位置</a></dd>
+        <dd>東口は鶴岡八幡宮・小町通り・若宮大路の方面、西口は銭洗弁財天・佐助稲荷・寿福寺の方面です。同じ「鎌倉駅」でも、出口を間違えると15分以上のロスになります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">鎌倉駅の位置</a></dd>
       </div>
       <div class="term">
         <dt>北鎌倉駅</dt>
-        <dd>円覚寺・建長寺・明月院・東慶寺・浄智寺など、禅寺が集中するエリアの起点。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">北鎌倉駅の位置</a></dd>
+        <dd>円覚寺・建長寺・明月院・東慶寺・浄智寺など、禅寺が集まるエリアの起点です。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">北鎌倉駅の位置</a></dd>
       </div>
       <div class="term">
         <dt>江ノ電（江ノ島電鉄）</dt>
-        <dd>鎌倉駅から長谷・極楽寺・稲村ヶ崎・七里ヶ浜・腰越・江ノ島方面へ向かう単線の私鉄。本数が少なく単線区間もあるため、休日は行き違い待ちで遅れることがある。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">長谷駅の位置</a></dd>
+        <dd>鎌倉駅から長谷・極楽寺・稲村ヶ崎・七里ヶ浜・腰越・江ノ島の方面へ向かう、単線の私鉄です。本数が少なく単線のため、休日は行き違いの待ち合わせで遅れることがあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">長谷駅の位置</a></dd>
       </div>
       <div class="term">
         <dt>金沢街道（六浦路）</dt>
-        <dd>鎌倉駅東口から浄妙寺・報国寺・<ruby>十二所<rt>じゅうにそ</rt></ruby>方面へ延びる旧道。バス利用が基本で、徒歩だと鎌倉駅から30分程度かかる。</dd>
+        <dd>鎌倉駅東口から浄妙寺・報国寺・<ruby>十二所<rt>じゅうにそ</rt></ruby>の方面へ延びる旧道です。バスを使うのが基本で、歩くと鎌倉駅から30分ほどかかります。</dd>
       </div>
       <div class="term">
         <dt>大船駅・湘南深沢駅</dt>
-        <dd>常楽寺・龍宝寺・大船観音寺、深沢エリアの寺社への起点。旧市街からは離れるが、玉縄北条氏の歴史を歩くにはここが起点になる。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">大船駅の位置</a></dd>
+        <dd>常楽寺・龍宝寺・大船観音寺や、深沢エリアの寺社への起点です。旧市街からは離れますが、玉縄北条氏の歴史を歩くなら、ここが起点になります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">大船駅の位置</a></dd>
       </div>
     </dl>
   </section>
@@ -472,7 +585,7 @@
 
 <footer class="site">
   <div class="inner">
-    <p data-i18n="basics.footer.disclaimer">掲載した用語・巡礼路の名称は、鎌倉市観光協会・各寺社公式サイト等の一般的な説明にもとづく。Google Mapsへのリンクは地名検索によるもので、鎌倉市観光協会等の公式リンクではない。</p><p><span class="last-updated" data-i18n="common.lastupdated">最終更新日：2026年9月24日</span></p>
+    <p data-i18n="basics.footer.disclaimer">掲載した用語・巡礼路の名称は、鎌倉市観光協会・各寺社公式サイト等の一般的な説明にもとづく。Google Mapsへのリンクは地名検索によるもので、鎌倉市観光協会等の公式リンクではない。</p><p><span class="last-updated" data-i18n="common.lastupdated">最終更新日：2026年9月25日</span></p>
     <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
   </div>
 </footer>

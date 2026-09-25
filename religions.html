@@ -33,17 +33,18 @@
 <meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#EFECE7;
-    --card:#F7F4EE;
+    --bg:#F4F1EA;
+    --card:#FBF9F4;
     --ink:#262220;
     --ink-soft:#6B6058;
-    --line:#D8D0BF;
+    --line:#DCD5C4;
     --vermilion:#A8402E;
     --vermilion-bg:#EEDCCF;
     --max:1120px;
+    --voice:"Cormorant Garamond", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -156,12 +157,12 @@
     position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
     background:var(--card); border-left:1px solid var(--line);
     transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
-    padding:20px 24px; overflow-y:auto;
+    padding:24px 24px; overflow-y:auto;
   }
   .drawer.open{transform:translateX(0);}
   .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
-  .drawer-head span{font-size:18.5px; font-weight:700;}
-  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-head span{font-family:var(--voice); font-style:italic; font-size:20px; font-weight:500; color:var(--vermilion);}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
   .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
   .drawer-label:first-of-type{margin-top:0;}
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
@@ -236,7 +237,7 @@
   .rel-arrow{font-size:13px; color:var(--ink-soft); margin:2px 0 2px 14px;}
 
   .tree-root{margin:0 0 32px;}
-  .tree-root > .tree-label{font-family:"Shippori Mincho", serif; font-size:20px; font-weight:700; padding:10px 16px; background:var(--ink); color:#fff; display:inline-block; margin:0 0 14px;}
+  .tree-root > .tree-label{font-family:var(--voice); font-style:italic; font-size:24px; font-weight:500; padding:0; background:none; color:var(--vermilion); display:inline-block; margin:0 0 18px; border-bottom:1px solid var(--line); padding-bottom:10px;}
   .tree-branch{margin:0 0 20px 0; padding-left:20px; border-left:2px solid var(--line);}
   .tree-branch .b-label{font-family:"Shippori Mincho", serif; font-size:16.5px; font-weight:700; color:var(--vermilion); margin:0 0 6px;}
   .tree-branch.moss .b-label{color:var(--moss);}
@@ -245,6 +246,122 @@
   .tree-leaves{font-size:14.5px; color:var(--ink-soft); line-height:1.9; margin:0;}
 
   .diagram-intro b, .tl-temples b, .rel-person .note b, .tree-leaves b{color:var(--vermilion); font-weight:700;}
+  /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  @media (min-width:768px){:root{--gutter:40px;}}
+
+  /* 1. グリッド：全コンテナの左端を一本に揃える */
+  .topbar-inner{padding-left:var(--gutter); padding-right:var(--gutter);}
+  header.site{padding-left:0; padding-right:0; background:var(--bg);}
+  header.site .inner{max-width:var(--max); margin-left:auto; margin-right:auto; padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  nav.tabs, nav.jump{padding-left:0; padding-right:0;}
+  nav.tabs .inner, nav.jump .inner{padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  main, .intro, footer.site{padding-left:var(--gutter); padding-right:var(--gutter);}
+  section.first-timer, section.locator, section.areamap, section.season, section.chapters{padding-left:var(--gutter); padding-right:var(--gutter);}
+  main section.quiz-promo{padding-left:0; padding-right:0;}
+  section.first-timer{padding-top:40px;}
+
+  /* 2. 書体：和文を機械的に斜体化しない・約物を詰める・文節で改行する・一文字だけの行を作らない */
+  html{font-synthesis:weight;}
+  body{line-break:strict;}
+  h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
+  h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
+  p,li,dd{text-wrap:pretty;}
+
+  /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
+  ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
+  /* ルビが親文字より長い分（o1〜o12＝半角1〜12字分）だけ前後にはみ出させる。短いルビは引き伸ばさない */
+  ruby.o1 > rt{margin-inline:-0.5em;}
+  ruby.o2 > rt{margin-inline:-1em;}
+  ruby.o3 > rt{margin-inline:-1.5em;}
+  ruby.o4 > rt{margin-inline:-2em;}
+  ruby.o5 > rt{margin-inline:-2.5em;}
+  ruby.o6 > rt{margin-inline:-3em;}
+  ruby.o7 > rt{margin-inline:-3.5em;}
+  ruby.o8 > rt{margin-inline:-4em;}
+  ruby.o9 > rt{margin-inline:-4.5em;}
+  ruby.o10 > rt{margin-inline:-5em;}
+  ruby.o11 > rt{margin-inline:-5.5em;}
+  ruby.o12 > rt{margin-inline:-6em;}
+
+  /* 4. 見出しラベルの統一 */
+  .ft-label, .chapters-label, .season-label{font-family:var(--voice); font-style:italic; font-weight:500; font-size:16px; color:var(--vermilion); letter-spacing:.04em;}
+  .sn-label{font-family:var(--voice); font-style:italic; font-weight:500; letter-spacing:.04em;}
+
+  /* 5. 罫線は2種類だけ（1px＝区切り／2px＝強調） */
+  footer.site{border-top:1px solid var(--line);}
+  .panel-note, .notice, .season-note{border-left-width:2px;}
+  .nf-inner .actions a.primary{background:none; color:var(--vermilion); border-color:var(--vermilion);}
+  /* 6. 意味の読めない装飾は置かない（見出し右上で切り取られて弧のかけらだけが見えていた） */
+  .kn-hero-bg{display:none;}
+  /* 7. 行長：読ませる段落は1行42字前後に収める */
+  .tl-era p, .rel-person p, .rel-group > p, .tree-branch p, .group-note, .fw-intro, .fw-item p, .fw-closing p, .stats p, .diagram-intro{max-width:42em;}
+  .panel-note{max-width:44em;}
+  /* 8. 短い導入文は文節で改行する（「7／つ」のような数字と助数詞の泣き別れを防ぐ） */
+  header.site p, .diagram-intro, .panel-note, .areamap-note, .ch p, .card .theme, .qcl-desc, .fw-intro, .group-note{word-break:auto-phrase;}
+
+  /* ===== v17.1：機械監査（77ページ×4画面幅）で見つかった問題への対処 ===== */
+  /* 9. タンを文字に使う時だけ濃い版（背景に対し4.5:1以上）。線・点・罫線は元のタンのまま */
+  :root{--ochre-ink:#86652F;}
+  .axis-timeline .meta-row .fee, .card.axis-timeline .num, .ch[data-tab="timeline"] .ch-no, .dl-course[data-axis="timeline"] .dl-course-no, .note-trivia .note-label, .quiz-cat.person .qc-label, .tree-branch.ochre .b-label{color:var(--ochre-ink);}
+  /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
+  .spot-list .sname{flex:1 1 auto; min-width:0;}
+  .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
+  /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
+  body{overflow-wrap:break-word;}
+  code{overflow-wrap:anywhere;}
+  /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
+  header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
+  .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
+  .topbar-inner{max-width:1120px;}
+  @media (min-width:768px){
+    .topbar-inner{display:flex; align-items:center;}
+    .topbar-nav{display:flex; margin-left:auto; margin-right:18px;}
+    .hamburger{display:flex;}
+  }
+  /* 18. 色は意味を持つものにだけ使う。季節のおすすめは「おすすめ」の朱（「迷ったら、これ」と同じ）。注記の種類（季節・トリビア・寄り道）は見出しの言葉で区別し、色分けしない */
+  .season-card{border-left-color:var(--vermilion);}
+  .season-card:hover{border-color:var(--vermilion);}
+  .season-card .sc-when{color:var(--vermilion);}
+  .season-toggle:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .kw-item b{color:var(--ink);}
+  .season-note{background:var(--card); border:1px solid var(--line); border-left:2px solid var(--vermilion);}
+  .season-note .sn-label{color:var(--vermilion);}
+  .note-season, .note-trivia, .note-detour{border-left-color:var(--ink-soft);}
+  .note-season .note-label, .note-trivia .note-label, .note-detour .note-label{color:var(--ink-soft);}
+  /* 19. 図解ページの構造の色は、そのページの軸の色（苔）だけにする。本文の強調の朱はサイト共通 */
+  .tree-root > .tree-label, .tree-branch .b-label, .tree-branch.moss .b-label, .tree-branch.indigo .b-label, .tree-branch.ochre .b-label{color:var(--moss);}
+  /* 21. 罫線は1px＝区切り／2px＝強調の2種類だけ（計算後の値で3px以上が残っていた9種類を揃える。年表の点の縁取りは線ではないので除く） */
+  .course, article.course, .fw-closing, .fw-example, .fw-ref, .guard-item, .rel-group, .sign, .season-note{border-left-width:2px;}
+  .editor-mark-section{border-top:1px solid var(--line);}
+  /* 22. 欧文イタリックの数字は、和文の字面の高さに揃うライニング数字に固定する（下に沈むオールドスタイル数字を使わない） */
+  html{font-variant-numeric:lining-nums;}
+  /* 24. 元のデザインの名残を今の言葉に置き換える */
+  /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
+  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
+  .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
+  .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
+  .tl-temples .yr{font-family:inherit; font-size:inherit;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
+  .topbar{background:rgba(244,241,234,0.92);}
+  .md-choice{background:var(--bg);}
+  .quiz-cat, .qcl-item{color:var(--ink);}
+  /* 24-3. 小見出しの字間を、全ページで同じ詰め具合に */
+  header.site .kicker{letter-spacing:.02em;}
+  /* 24-4. 地図リンクの絵文字をやめ、外の地図へ移ることを細い矢印で示す */
+  article.course .maplinks a::before, .term dd .map::before{content:none;}
+  article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
+  /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
+  .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
 </style>
 <script type="application/ld+json">
 {
@@ -305,7 +422,7 @@
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line">散歩の前に、5分だけ</p>
     <h1 class="mincho reveal-line">鎌・くらんぽ宗教関係図</h1>
-    <p class="lead reveal-line">「宗教でめぐる」コースを歩く前に、その寺がどの宗派で、なぜその宗派を選んだのかを知っておくと、同じ「お寺」でも見え方が変わる。あくまでコースを楽しむための前提知識として、宗派同士の関係をここで掴んでおきたい。</p>
+    <p class="lead reveal-line">同じ「お寺」でも、宗派が違えば、鎌倉に根づいた理由がまるで違います。ここでは、「宗教でめぐる」コースを楽しむための前提知識として、宗派同士の関係をまとめました。その寺がどの宗派で、なぜその宗派を選んだのか。それを知ってから歩くと、同じ山門の前でも見え方が変わります。</p>
   </div>
 </header>
 
@@ -319,19 +436,19 @@
     <div class="tree-branch">
       <p class="b-label">禅宗（臨済宗）——執権が政治的に導入した宗派</p>
       <p class="tree-leaves"><b>北条時頼・時宗が、国を挙げて根づかせた</b>のがこの禅宗です。単なる信仰ではなく、蒙古襲来という国難への向き合い方そのものでした。<br>
-      建長寺派は北鎌倉の谷筋、建長寺・明月院・円応寺が徒歩10分ほどの範囲に固まり、そこから金沢街道沿いに浄妙寺・報国寺まで足を延ばす。円覚寺派は北鎌倉駅を出てすぐ、円覚寺・東慶寺・浄智寺が同じ坂道の途中に並ぶ、目と鼻の先の距離感。</p>
+      建長寺派は北鎌倉の谷筋、建長寺・明月院・円応寺が徒歩10分ほどの範囲に固まり、そこから金沢街道沿いに浄妙寺・報国寺まで延びています。円覚寺派は北鎌倉駅を出てすぐ、円覚寺・東慶寺・浄智寺が同じ坂道の途中に並ぶ、目と鼻の先の距離感。</p>
     </div>
 
     <div class="tree-branch">
       <p class="b-label">日蓮宗——体制に抗って根づいた宗派</p>
       <p class="tree-leaves">禅宗が「体制側」だったのに対し、日蓮宗は<b>幕府の宗教政策そのものを批判して迫害を受けながら</b>根を張りました。大町・材木座にこれだけ密集しているのは、迫害の記憶がむしろ信仰を強くした証拠でもあります。<br>
-      大町・材木座では、妙本寺から妙長寺まで8つの寺が、住宅地の路地一本ごとに次の寺が現れるという密度で並ぶ。腰越では、龍口寺を中心に輪番八ヶ寺が、江ノ電の線路に沿って点々と続く。</p>
+      大町・材木座では、妙本寺から妙長寺まで8つの寺が、住宅地の路地一本ごとに次の寺が現れるという密度で並んでいます。腰越では、龍口寺を中心に輪番八ヶ寺が、江ノ電の線路に沿って点々と続いています。</p>
     </div>
 
     <div class="tree-branch">
       <p class="b-label">浄土宗——敵味方を越えて選ばれた宗派</p>
       <p class="tree-leaves"><b>北条氏と、その北条氏を滅ぼした新田義貞——敵対する立場の人々が、それぞれ浄土宗の寺を建てています</b>。政治的な立場を越えて選ばれた教えだったのかもしれません。<br>
-      材木座では光明寺・九品寺・安養院が、海に向かう緩やかな坂道の途中に並ぶ。西口の英勝寺は、鎌倉駅からは反対方向——江戸期、水戸徳川家の姫が、あえて中心から離れたこの場所を選んだ。</p>
+      材木座では光明寺・九品寺・安養院が、海に向かう緩やかな坂道の途中に並んでいます。西口の英勝寺は、鎌倉駅からは反対方向——江戸期、水戸徳川家の姫が、あえて中心から離れたこの場所を選びました。</p>
     </div>
 
     <div class="tree-branch">
@@ -341,7 +458,7 @@
 
     <div class="tree-branch">
       <p class="b-label">真言宗</p>
-      <p class="tree-leaves">成就院・星井寺は極楽寺のすぐ隣。浄光明寺・海蔵寺は反対側の扇ガ谷、亀ヶ谷坂に向かう谷筋にひっそりと構える。。禅宗導入以前から、鎌倉の信仰を支えていた古い系譜です。</p>
+      <p class="tree-leaves">成就院・星井寺は極楽寺のすぐ隣。浄光明寺・海蔵寺は反対側の扇ガ谷、亀ヶ谷坂に向かう谷筋に、ひっそりと構えています。禅宗導入以前から、鎌倉の信仰を支えていた古い系譜です。</p>
     </div>
 
     <div class="tree-branch">
@@ -365,7 +482,7 @@
 
     <div class="tree-branch moss">
       <p class="b-label">長谷・腰越系——仏教より古い信仰</p>
-      <p class="tree-leaves">甘縄神明神社（<b>鎌倉最古と伝わる神社</b>）・御霊神社（平安時代から続く）。仏教が伝来するより前から、この土地にあった信仰の層です。</p>
+      <p class="tree-leaves">甘縄神明神社（<b>鎌倉最古と伝わる神社</b>）と、御霊神社（平安時代から続くと伝わる神社）です。仏教が伝来するより前から、この土地にあった信仰の層です。</p>
     </div>
   </div>
 
@@ -385,7 +502,7 @@
 
 <footer class="site">
   <div class="inner">
-    <p>ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p><p><span class="last-updated">最終更新日：2026年9月24日</span></p>
+    <p>ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p><p><span class="last-updated">最終更新日：2026年9月25日</span></p>
     <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
   </div>
 </footer>

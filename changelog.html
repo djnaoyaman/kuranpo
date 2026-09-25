@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>修正履歴｜鎌・くらんぽ</title>
-<meta name="description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<meta name="description" content="鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -21,23 +21,23 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="鎌・くらんぽ">
 <meta property="og:title" content="修正履歴｜鎌・くらんぽ">
-<meta property="og:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<meta property="og:description" content="鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。">
 <meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/changelog.html">
 <meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/changelog.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="修正履歴｜鎌・くらんぽ">
-<meta name="twitter:description" content="鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。">
+<meta name="twitter:description" content="鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/ogp/changelog.png">
 <meta name="robots" content="index,follow">
 <meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#EFECE7; --card:#F7F4EE; --ink:#262220; --ink-soft:#6B6058; --line:#D8D0BF;
-    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px;
+    --bg:#F4F1EA; --card:#FBF9F4; --ink:#262220; --ink-soft:#6B6058; --line:#DCD5C4;
+    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px; --voice:"Cormorant Garamond", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
@@ -92,8 +92,8 @@
     position:absolute; left:0; top:14px;
   }
   ol.log-list .tag{
-    display:inline-block; font-size:12px; color:var(--ink-soft); border:1px solid var(--line);
-    border-radius:8px; padding:1px 7px; margin-right:6px; vertical-align:middle;
+    display:inline-block; font-family:var(--voice); font-style:italic; font-size:13px; color:var(--ink-soft); border:1px solid var(--line);
+    padding:1px 9px; margin-right:6px; vertical-align:middle;
   }
   ol.log-list .tag.fix{color:var(--vermilion); border-color:var(--vermilion);}
   ol.log-list .tag.add{color:var(--moss); border-color:var(--moss);}
@@ -139,12 +139,12 @@
     position:fixed; top:0; right:0; height:100%; width:min(320px, 84vw); z-index:200;
     background:var(--card); border-left:1px solid var(--line);
     transform:translateX(100%); transition:transform .3s cubic-bezier(.22,.61,.36,1);
-    padding:20px 24px; overflow-y:auto;
+    padding:24px 24px; overflow-y:auto;
   }
   .drawer.open{transform:translateX(0);}
   .drawer-head{display:flex; justify-content:space-between; align-items:center; margin:0 0 20px; padding-bottom:14px; border-bottom:1px solid var(--line);}
-  .drawer-head span{font-size:18.5px; font-weight:700;}
-  .drawer-close{appearance:none; background:none; border:none; font-size:26.5px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
+  .drawer-head span{font-family:var(--voice); font-style:italic; font-size:20px; font-weight:500; color:var(--vermilion);}
+  .drawer-close{appearance:none; background:none; border:none; font-size:24px; line-height:1; color:var(--ink-soft); cursor:pointer; padding:0 6px;}
   .drawer-label{font-size:13px; letter-spacing:.12em; color:var(--ink-soft); margin:20px 0 8px;}
   .drawer-label:first-of-type{margin-top:0;}
   .drawer-link{display:block; padding:10px 0; font-size:16.5px; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
@@ -194,13 +194,131 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+  /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  @media (min-width:768px){:root{--gutter:40px;}}
+
+  /* 1. グリッド：全コンテナの左端を一本に揃える */
+  .topbar-inner{padding-left:var(--gutter); padding-right:var(--gutter);}
+  header.site{padding-left:0; padding-right:0; background:var(--bg);}
+  header.site .inner{max-width:var(--max); margin-left:auto; margin-right:auto; padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  nav.tabs, nav.jump{padding-left:0; padding-right:0;}
+  nav.tabs .inner, nav.jump .inner{padding-left:var(--gutter); padding-right:var(--gutter); box-sizing:border-box;}
+  main, .intro, footer.site{padding-left:var(--gutter); padding-right:var(--gutter);}
+  section.first-timer, section.locator, section.areamap, section.season, section.chapters{padding-left:var(--gutter); padding-right:var(--gutter);}
+  main section.quiz-promo{padding-left:0; padding-right:0;}
+  section.first-timer{padding-top:40px;}
+
+  /* 2. 書体：和文を機械的に斜体化しない・約物を詰める・文節で改行する・一文字だけの行を作らない */
+  html{font-synthesis:weight;}
+  body{line-break:strict;}
+  h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
+  h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
+  p,li,dd{text-wrap:pretty;}
+
+  /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
+  ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
+  /* ルビが親文字より長い分（o1〜o12＝半角1〜12字分）だけ前後にはみ出させる。短いルビは引き伸ばさない */
+  ruby.o1 > rt{margin-inline:-0.5em;}
+  ruby.o2 > rt{margin-inline:-1em;}
+  ruby.o3 > rt{margin-inline:-1.5em;}
+  ruby.o4 > rt{margin-inline:-2em;}
+  ruby.o5 > rt{margin-inline:-2.5em;}
+  ruby.o6 > rt{margin-inline:-3em;}
+  ruby.o7 > rt{margin-inline:-3.5em;}
+  ruby.o8 > rt{margin-inline:-4em;}
+  ruby.o9 > rt{margin-inline:-4.5em;}
+  ruby.o10 > rt{margin-inline:-5em;}
+  ruby.o11 > rt{margin-inline:-5.5em;}
+  ruby.o12 > rt{margin-inline:-6em;}
+
+  /* 4. 見出しラベルの統一 */
+  .ft-label, .chapters-label, .season-label{font-family:var(--voice); font-style:italic; font-weight:500; font-size:16px; color:var(--vermilion); letter-spacing:.04em;}
+  .sn-label{font-family:var(--voice); font-style:italic; font-weight:500; letter-spacing:.04em;}
+
+  /* 5. 罫線は2種類だけ（1px＝区切り／2px＝強調） */
+  footer.site{border-top:1px solid var(--line);}
+  .panel-note, .notice, .season-note{border-left-width:2px;}
+  .nf-inner .actions a.primary{background:none; color:var(--vermilion); border-color:var(--vermilion);}
+  /* 6. 意味の読めない装飾は置かない（見出し右上で切り取られて弧のかけらだけが見えていた） */
+  .kn-hero-bg{display:none;}
+  /* 7. 行長：読ませる段落は1行42字前後に収める */
+  .tl-era p, .rel-person p, .rel-group > p, .tree-branch p, .group-note, .fw-intro, .fw-item p, .fw-closing p, .stats p, .diagram-intro{max-width:42em;}
+  .panel-note{max-width:44em;}
+  /* 8. 短い導入文は文節で改行する（「7／つ」のような数字と助数詞の泣き別れを防ぐ） */
+  header.site p, .diagram-intro, .panel-note, .areamap-note, .ch p, .card .theme, .qcl-desc, .fw-intro, .group-note{word-break:auto-phrase;}
+
+  /* ===== v17.1：機械監査（77ページ×4画面幅）で見つかった問題への対処 ===== */
+  /* 9. タンを文字に使う時だけ濃い版（背景に対し4.5:1以上）。線・点・罫線は元のタンのまま */
+  :root{--ochre-ink:#86652F;}
+  .axis-timeline .meta-row .fee, .card.axis-timeline .num, .ch[data-tab="timeline"] .ch-no, .dl-course[data-axis="timeline"] .dl-course-no, .note-trivia .note-label, .quiz-cat.person .qc-label, .tree-branch.ochre .b-label{color:var(--ochre-ink);}
+  /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
+  .spot-list .sname{flex:1 1 auto; min-width:0;}
+  .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
+  /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
+  body{overflow-wrap:break-word;}
+  code{overflow-wrap:anywhere;}
+  /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
+  header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
+  .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
+  .topbar-inner{max-width:1120px;}
+  @media (min-width:768px){
+    .topbar-inner{display:flex; align-items:center;}
+    .topbar-nav{display:flex; margin-left:auto; margin-right:18px;}
+    .hamburger{display:flex;}
+  }
+  /* 18. 色は意味を持つものにだけ使う。季節のおすすめは「おすすめ」の朱（「迷ったら、これ」と同じ）。注記の種類（季節・トリビア・寄り道）は見出しの言葉で区別し、色分けしない */
+  .season-card{border-left-color:var(--vermilion);}
+  .season-card:hover{border-color:var(--vermilion);}
+  .season-card .sc-when{color:var(--vermilion);}
+  .season-toggle:hover{border-color:var(--vermilion); color:var(--vermilion);}
+  .kw-item b{color:var(--ink);}
+  .season-note{background:var(--card); border:1px solid var(--line); border-left:2px solid var(--vermilion);}
+  .season-note .sn-label{color:var(--vermilion);}
+  .note-season, .note-trivia, .note-detour{border-left-color:var(--ink-soft);}
+  .note-season .note-label, .note-trivia .note-label, .note-detour .note-label{color:var(--ink-soft);}
+  /* 20. 種別タグの色分けは凡例がなく読み取れないため、無彩色に揃える */
+  ol.log-list .tag, ol.log-list .tag.add, ol.log-list .tag.fix, ol.log-list .tag.major{color:var(--ink-soft); border-color:var(--line); font-weight:400;}
+  /* 21. 罫線は1px＝区切り／2px＝強調の2種類だけ（計算後の値で3px以上が残っていた9種類を揃える。年表の点の縁取りは線ではないので除く） */
+  .course, article.course, .fw-closing, .fw-example, .fw-ref, .guard-item, .rel-group, .sign, .season-note{border-left-width:2px;}
+  .editor-mark-section{border-top:1px solid var(--line);}
+  .log-current{margin:24px 0 0; font-size:13px; color:var(--ink-soft);}
+  ol.log-list li{text-align:start;}  /* 2〜4行の短い箇条は両端揃えにしない（数字の前後の字間が間延びするため） */
+  /* 22. 欧文イタリックの数字は、和文の字面の高さに揃うライニング数字に固定する（下に沈むオールドスタイル数字を使わない） */
+  html{font-variant-numeric:lining-nums;}
+  /* 24. 元のデザインの名残を今の言葉に置き換える */
+  /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
+  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
+  .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
+  .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
+  .tl-temples .yr{font-family:inherit; font-size:inherit;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
+  .topbar{background:rgba(244,241,234,0.92);}
+  .md-choice{background:var(--bg);}
+  .quiz-cat, .qcl-item{color:var(--ink);}
+  /* 24-3. 小見出しの字間を、全ページで同じ詰め具合に */
+  header.site .kicker{letter-spacing:.02em;}
+  /* 24-4. 地図リンクの絵文字をやめ、外の地図へ移ることを細い矢印で示す */
+  article.course .maplinks a::before, .term dd .map::before{content:none;}
+  article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
+  /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
+  .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
 </style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "WebPage",
  "name": "修正履歴",
- "description": "鎌・くらんぽの修正履歴とバージョン管理の記録。企画から現在の形になるまでの指示と修正の変遷。",
+ "description": "鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。",
  "url": "https://djnaoyaman.github.io/kuranpo/changelog.html",
  "inLanguage": "ja",
  "isPartOf": {
@@ -254,285 +372,56 @@
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line" data-i18n="cl.kicker">先祖返りを防ぐための記録</p>
     <h1 class="mincho reveal-line" data-i18n="cl.h1">修正履歴</h1>
-    <p class="lead reveal-line" data-i18n="cl.lead">このサイトが企画から現在の形になるまでの、指示と修正の変遷を日付ごとに記録する。同じ間違いを後から繰り返さないための「やってはいけない一覧」も併せて置いておく。</p>
+    <p class="lead reveal-line" data-i18n="cl.lead">このサイトで行った事実の訂正と、大きな変更だけを記録しています。一度直した誤りを後の編集で元に戻さないよう、注意すべき点を先に掲げました。</p>
   </div>
 </header>
 
 <main>
 
-<p class="lang-note" data-i18n="cl.langnote" style="max-width:720px; font-size:14px; color:var(--ink-soft); margin:0 0 20px; padding:10px 14px; background:var(--card); border-left:3px solid var(--line);">以下の更新ログ本文は日本語のみで記載しています（サイト内部の技術的な変更記録のため）。</p>
-
-<div class="notice">
-  このサイトは2026年9月24日の一連の作業でゼロから構築された。そのため今のところ全ての履歴が同じ日付に集中しているが、今後の更新はここに日付ごとに追記していく。<br><br>
-  <b style="color:var(--ink)">v1.0.0（2026-09-24）</b>：この時点の全ファイルをGitで管理開始。以後の変更はバージョン番号を上げて記録する（軽微な追記＝パッチ版、機能追加＝マイナー版、構造変更＝メジャー版）。<br>
-  <b style="color:var(--ink)">v1.0.1（2026-09-24）</b>：トップページ「見方について」欄にあった素の下線リンク3本を、他の箇所と揃えたカード型リンクに変更。<br>
-  <b style="color:var(--ink)">v1.0.2（2026-09-24）</b>：フッターの注記4本（拝観料・※印・距離・総数）も同様に、ラベル付きの区切りリストに再構成。<br>
-  <b style="color:var(--ink)">v1.1.0（2026-09-24）</b>：UI/UXを全面リニューアル。全ページ共通のハンバーガーメニュー（ドロワー式ナビ）を追加し、トップページに鳥居のラインアートを配したヒーローと、相互リンクを充実させたフッター（コース早見・読みもの・このサイトについてを列にした3カラム）を新設。テキストサイズも一部拡大。<br>
-  <b style="color:var(--ink)">v1.1.1（2026-09-24）</b>：「トップに戻る」ボタンが無いという指摘を受け、全35ページに固定表示の丸ボタン（一定量スクロールすると出現、クリックでトップへスムーススクロール）を追加。散歩サイトとして迷子を出さないための必須ナビゲーションとして位置づける。<br>
-  <b style="color:var(--ink)">v1.1.2（2026-09-24）</b>：コース一覧の並び順を「エリア別→コンプリート版→宗教→人物→年表」から「エリア別→宗教→人物→年表→コンプリート版」に変更。エリア別コースを基本の入口としてまず提示し、宗教・人物・年表という3つの読み替えを続け、すべて歩き終えた人向けの補足であるコンプリート版を最後に置く構成にした。章グリッド・タブ・パネル・ドロワーの表示順をすべて揃えている。<br>
-  <b style="color:var(--ink)">v1.2.0（2026-09-24）</b>：神社仏閣の訪問件数（大きな数字＋寺社の内訳＋充足率）を、トップにまとめて1つ表示する形から、5つのタブそれぞれの中に個別表示する形に変更。宗教・人物・年表タブにも「このタブで訪ねる件数」を同じ体裁で表示し、エリア別・コンプリート版タブには合計119件になる旨の注記も残した。<br>
-  <b style="color:var(--ink)">v1.2.1（2026-09-24）</b>：統計ボックスがコースカードと見分けづらいという指摘を受け、濃色反転配色に変更。チャプター一覧の各カードに、歩いてみたくなるキャッチコピーを追加。エリア別コース・コンプリート版には「子供と歩けるコースあり」の注記を追加し、どのコースが・なぜ子供向けかを明記（大仏の胎内拝観・鶴岡八幡宮の広い境内・銭洗弁財天の体験型参拝など、平坦で危険な区間がなく1〜2時間で終わる点を根拠にした）。<br>
-  <b style="color:var(--ink)">v1.2.2（2026-09-24）</b>：フッターの「エリア別コース」14件リンクと「コンプリート版」抜粋リンクを削除。プレーンテキストの下線リンク一覧が、タブ・カードの表示と内容が重複するだけの劣化版UIだったための整理。フッターは「読みもの」「このサイトについて」の2カラムに整理した。<br>
-  <b style="color:var(--ink)">v1.3.0（2026-09-24）</b>：「このコースの基本知識」の自動抽出グロッサリー機能をカードから撤廃（個別ページのみに情報を集約する方針に統一）。「子供と歩けるコースあり」のバッジ表記もやめ、代わりに新しいチャプター「02 子供向けコース」を新設。エリア別コース・コンプリート版から平坦・短時間・危険区間なしの4コース（古代信仰の基層／頼朝、鎌倉に入る／江戸期「名所」になる／源氏山・銭洗弁天エリア）を実カードとして再掲し、なぜ子供向けかの理由をコースごとに明記した。全チャプター数は6に。<br>
-  <b style="color:var(--ink)">v1.3.1（2026-09-24）</b>：所要時間の絞り込み「すべて／1時間未満／2時間未満／2時間以上」を見直した。実際のコースは最短でも1時間のため「1時間未満」は常に0件という不具合があり、実データに合わせて「すべて／1〜1.5時間／2〜2.5時間／3時間以上」に変更。あわせてコンプリート版タブにも同じ絞り込みを追加し、これまでエリア別コース専用だった機能を汎用化した。<br>
-  <b style="color:var(--ink)">v1.4.0（2026-09-24）</b>：サイトをよりメジャーにするための機能を一括追加。①SEO/OGPメタ情報（description・og:*・twitter:*・canonical）を追加。②スタンプラリー機能：各コースカードに「歩いた」チェックを追加し、localStorageで記録・進捗表示（エリア別／コンプリート版）。③季節のおすすめ：現在の月に応じて明月院のあじさい・段葛の桜・報国寺の紅葉などを自動表示（該当月がなければ次のシーズンを先出し）。④エリア模式図マップ：北鎌倉・鎌倉駅周辺・長谷・金沢街道・大町・腰越・大船玉縄の位置関係を示すSVG図を新設。⑤多言語対応：トップバーに言語切替（JA/EN/中/한）を追加し、ヘッダー・チャプター6枚・パネル説明・フッター・ドロワーの55キーを英語・中国語（簡体字）・韓国語に翻訳。スペイン語と、コース別知識ページ（story本文・人物解説）の翻訳は次フェーズ。<br>
-  <b style="color:var(--ink)">v1.4.1（2026-09-24）</b>：季節のおすすめを、アクセスした月に関わらずいつでも確認できるよう「年間の季節おすすめを全部見る」開閉トグルを追加（12ヶ月分を一覧表示）。あわせて該当する10ページの個別コースページ（knowledge/g2, g3, g4, g5, g8, g9, g11, g12, g13, c1）に「このコースがおすすめの季節」情報を追加し、個別ページ単独でも季節の見どころを確認できるようにした。<br>
-  <b style="color:var(--ink)">v1.4.2（2026-09-24）</b>：多言語訳文をセルフレビューし、不自然な箇所を修正。英語のキャッチコピー2箇所（語順・語尾の座りの悪さ）、中国語のキャッチコピー（「一网打尽」が犯罪者を捕らえる文脈の慣用句で散歩ガイドには物騒すぎたため変更）、中国語・韓国語の「くらんぽ」表記（ひらがなのまま出しても読めないため、名前の意味を説明する文に修正）を対応。ネイティブ話者による確認は別途推奨。<br>
-  <b style="color:var(--ink)">v1.5.0（2026-09-24）</b>：多言語対応をサイト全体に拡大。全35ページのトップバーに言語切替（JA/EN/中/한）を設置。basics.html・profile.html・404.htmlは全文、history.htmlは「7つの視点」総論とヘッダー、changelog.htmlはヘッダーのみ翻訳（ログ本文は技術的な変更記録のため日本語のみと明記）。knowledge配下30ページはナビ・フッター等の共通部分を翻訳し、story本文・人物解説は分量の都合で今回は対象外（サイト側にその旨明記）。全35ページでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を確認済み。<br>
-  <b style="color:var(--ink)">v1.5.1（2026-09-24）</b>：トップページ「見方について」の説明文を、硬い言い回しから短く簡潔な表現に書き換え。<br>
-  <b style="color:var(--ink)">v1.6.0（2026-09-24）</b>：「翻訳完全を目指す」との要望を受け、コース別知識ページ30本の本文（見出し・物語文・用語解説）を英語・中国語（簡体字）・韓国語に翻訳。これで全35ページの主要コンテンツが3言語対応となった（スペイン語は引き続き対象外）。作業の過程で、30ページ中18ページの「前へ」ページャーのタイトル表示が空欄になっていた既存の不具合（多言語対応とは無関係の元からの欠陥）を発見し修正。またレンズタグの表示ラベルが異なる2組で同じ翻訳キーを共有してしまっていた衝突も解消。全35ファイルでJS構文・タグ整合性・翻訳キー網羅（欠落0件）を最終確認済み。<br>
-  <b style="color:var(--ink)">v1.6.1（2026-09-24）</b>：Google Analytics（gtag.js、測定ID：G-RDXKF3Y622）を全36ページ（ルート6ページ＋コース別知識30ページ）の&lt;head&gt;直下に設置。全ページでタグの重複がないこと、構文・タグ整合性を確認済み。<br>
-  <b style="color:var(--ink)">v1.7.0（2026-09-24）</b>：SEO・LLMO・SNS対策を一式整備。①全36ページにmeta description・canonical・OGP・Twitter Cardを設置。②SNS共有用のOG画像（1200×630px）を新規生成。③全ページにJSON-LD構造化データ（WebSite/Article/BreadcrumbList/WebPage）を追加。④robots.txtを新設。⑤sitemap.xmlを自動生成する仕組みを構築：scripts/generate_sitemap.pyでリポジトリ内のHTMLを走査して再生成、.github/workflows/update-sitemap.ymlでmainブランチへのpush時に自動実行・自動コミットされるようにした。⑥LLM向けdiscovery対応としてllms.txt・llms-full.txt（全30コースの要約つき）を新設。<br>
-  <b style="color:var(--ink)">v1.8.0（2026-09-24）</b>：E-A-T（専門性・権威性・信頼性）対策を整備。①Person（著者）のJSON-LDを大幅強化：別名義（宮崎直哉・一見坊・湯気文吾・djnaoyaman）・経歴・専門領域・他プロジェクトへのsameAsリンクを追加し、index.html＋コース別知識ページ30本の著者情報を統一。②profile.htmlをWebPageから、著者情報に特化したProfilePageスキーマに格上げ。③basics.html・history.htmlのフッターに「最終更新日」を表示（EN/ZH/KO翻訳込み）。④history.htmlのフッターに修正履歴（changelog.html）へのリンクを追加し忘れていた箇所を修正。<br>
-  <b style="color:var(--ink)">v1.9.1（2026-09-24）</b>：index.html内で唯一残っていた大きな翻訳の取りこぼし（タブの中身）を英語のみ解消。①エリア別・コンプリート版30コースのテーマ文を英訳。②宗教・人物・年表タブの全37レッグ（グループ名・タイトル・物語文）を新規に英訳（このデータはこれまで一切翻訳対象になっていなかった）。③出発点・解散点として使われる駅・バス停名21件を英訳。④「施設間の徒歩距離」ラベルを翻訳。⑤季節のおすすめカードのタイトル表示が独自キーで宙に浮いていたのを、既存のコース別知識ページと共通のキーに統一。実際にカードをレンダリングした状態で検証し、229個のi18nキーすべてに英訳が対応していることを確認済み。中国語・韓国語はこのタブコンテンツについては未着手（知識ページ30本の翻訳は既に完了済み、今回はタブの中身のみ）。<br>
-  <b style="color:var(--ink)">v2.0.0（2026-09-24）</b>：デザインを全面改訂。従来の暖色クリーム＋明朝体＋テラコッタ配色は、実は生成AIデザインで最も頻出するパターンだったと判明したため、方向を転換。①配色を鎌倉石を思わせる冷たい灰色がかった紙色に変更、朱色は「至る所の装飾」ではなく歩いた記録のスタンプ等「押す場所」だけに使う印章的な役割に限定。②距離・拝観料・年代など数値情報はすべてIBM Plex Monoの等幅フォントで組み、散文と測量値を書体で区別。③ヒーローを中央揃えから非対称レイアウトに変更、鳥居アイコンを等高線（地形図）モチーフに置き換え。④宗教・人物・年表・エリア別の4色を「凡例」として提示し、独立した装飾ではなく一つの体系として見せる。⑤コースカードを均一な角丸＋左ボーダーの「SaaSカード」的な見た目から、測点票のような角のないフラットな形式に変更。⑥トラッキングを効かせた全角大文字の「見出しラベル」（AREA MAP —／SEASONAL PICK —／PROFILE等）と、リンク末尾に機械的に付く「→」記号を、AI生成デザインの典型的な"tell"として全箇所で除去。新配色とフォントは全36ページに展開済み。<br>
-  <b style="color:var(--ink)">v2.1.0（2026-09-24）</b>：参考サイト2件（konel.co.jp／newbird.co.kr）を踏まえてインタラクションを追加。①マウスを動かした軌跡に、交互に足跡がついて1.6秒ほどで消える「足跡カーソル」を全36ページに実装（歩くサイトというテーマに合わせた効果。reduced-motion環境・タッチ端末では発火しない）。②コース別知識ページ30本の冒頭に、スクロールすると等高線モチーフの背景が視差でゆっくり動く「パララックス入口」を追加。「普通に読むと退屈なページはデザインで見せる」という方針に基づき、知識ページ限定で導入。<br>
-  <b style="color:var(--ink)">v2.2.0（2026-09-24）</b>：人名・難読語へのふりがな付与が一部の語にしか適用されておらず不統一だったため、全体に展開。北条時頼・北条時宗・源頼朝・日蓮・新田義貞・足利尊氏など約90語の人名・歴史用語の読み辞書を作成し、コース別知識ページ30本（見出し・物語文・用語解説）、history.htmlの「7つの視点」、basics.htmlの用語集6セクション、index.htmlの宗教・人物・年表・エリア別コースの物語文に一括適用。既存のふりがなを二重適用しないよう検出ロジックを組み、全箇所で正しく1回だけ付いていることを確認済み。メタデータ（JSON-LD構造化データ）内の人名には付与していない（画面表示されない情報のため対象外）。<br>
-  <b style="color:var(--ink)">v2.2.1（2026-09-24）</b>：トップバーでロゴ「鎌・くらんぽ」とナビゲーションリンクの間隔が詰まって見える不具合を修正。原因は言語切替ボタンに指定していた<code>margin-left:auto</code>が、本来ロゴとナビの間に配分されるはずだった<code>justify-content:space-between</code>の余白を吸収してしまい、両者の間隔が実質ゼロになっていたこと。トップバー全体に明示的な<code>gap</code>を指定して解消。あわせて、v2.0.0のデザイン全面改訂時に見落としていた旧配色のRGBA直書き（ヘッダー背景のグラデーション・ドロワーの背景・戻るボタンの影・季節カードのホバー色など）が全36ページに散在して残っていたことも発見し、新配色に統一。<br>
-  <b style="color:var(--ink)">v2.3.0（2026-09-24）</b>：①実際の公開URLが<code>kamakura-kurampo</code>ではなく<code>kuranpo</code>であることが判明し、canonical・OGP・JSON-LD・sitemap.xml・robots.txt・llms.txt・OG画像等、SEO関連で使っていたベースURLを全36ファイル・付随ファイルにわたって修正（41ファイル）。②g7ページ（日蓮、鎌倉で法難に遭う）に、日蓮が命を狙われた理由を社会環境と本人の立場の両面から補足：法華経以外を認めず幕府庇護下の念仏・禅を名指しで攻撃したこと、『立正安国論』が事実上幕府の宗教政策批判だったこと、北条氏の庇護を持たない低い身分の僧だったこと。EN/ZH/KO訳も同時更新。③用語一覧で、ルビと旧来の読み表示（.yomiスパン）が二重に読みを表示していた箇所（35件）を解消し、ルビのみに統一。ルビが付いていなかった単独の読み表示（23件）もルビに変換。④参考画像（konel.co.jp）を踏まえ、サイト全体の配色を石色基調の落ち着いた印象から、白背景中心の明るいトーンに転換。<br>
-  <b style="color:var(--ink)">v2.4.0（2026-09-24）</b>：①ホームページの正式URLを<code>https://djnaoyaman.github.io/kuranpo/</code>（末尾スラッシュ、index.html省略）に統一。canonical・OGP・JSON-LD・sitemap.xml・llms.txt・llms-full.txtの参照、およびsitemap自動生成スクリプトを修正し、トップページのみindex.htmlを省いたルートURLで出力されるようにした。②「宗教でめぐる」「人物でめぐる」「年表でめぐる」を含む6つの章カード・ドロワーリンクが、全てのタブについて同じ汎用アンカー（#chapters）を指しており、各タブへ直接リンク・共有できない状態だったのを修正。章カードを実体のある&lt;a&gt;タグに変え、タブごとに固有のURL（#tab-religion 等）を持たせ、そのURLに直接アクセスした場合に該当タブが自動的に開くようにした。③g7ページの追記部分を、大人にも子どもにも分かるよう、硬い言い回しをやめて短い文・具体的な言葉に書き直した（EN/ZH/KO含む）。他の29コース別知識ページへの同様の書き直しは、今回はまだ着手していない別途の作業として残っている。<br>
-  <b style="color:var(--ink)">v2.5.0（2026-09-24）</b>：「カラーのメリハリがなく読みにくい」との指摘を受け、配色の方向を落ち着いた石色調から、浮世絵を思わせる濃く鮮やかな色に転換。①朱・藍・苔・黄土の4色を、彩度を大幅に上げた版に変更（例：朱は#963A22→#E0391D）。②本文の薄墨色（--ink-soft）も濃くし、コントラスト不足を解消。③章カード・コースカードの左ボーダーを3px→6〜8pxに太くし、番号バッジを縁取りのみから塗りつぶしの色ブロックに変更。④「芸術と身体性をつなぐ」という要望に応え、足跡カーソルを単色から朱・藍・苔・黄土が一歩ごとに巡る仕様に変更し、不透明度も上げて存在感を強めた。⑤OG画像を新配色で再生成。<br>
-  <b style="color:var(--ink)">v2.6.0（2026-09-24）</b>：①背景色を黄色（#FFD400）に変更し、配色全体を黄色を軸に再構成。朱・藍・苔は彩度をさらに強め、黄土は背景の黄色に埋もれてしまうため紫（#9B4DCC）に差し替えた。カードの罫線・区切り線も黒に統一し、浮世絵よりさらにポップアートに近い、はっきりした色面構成に。②カードデザインの「堅さ」を解消：角丸＋太い黒縁のコマ割り風にし、番号バッジも角ばった塊から丸いピル型に。ホバーで少し傾いて浮き上がる、シールを貼るような動きを追加。③コース別知識ページ30本のうち、日蓮の1本（g7）を除く残り29本の本文を、大人にも子どもにも分かる短い文・やさしい言葉に全面的に書き直した（クランポックの語り口で統一。今回は日本語版のみで、英語・中国語・韓国語への反映はまだ）。書き直しに伴い、各ページのメタディスクリプションも新しい本文から再生成。<br>
-  <b style="color:var(--ink)">v2.6.1（2026-09-24）</b>：背景の黄色を#FFD400（やや橙寄り）から、本当の黄色である#FFFF00に修正。トップバーの半透明背景・OG画像も合わせて更新。<br>
-  <b style="color:var(--ink)">v2.7.0（2026-09-24）</b>：見出し・タイトル等に使っていた明朝体（Shippori Mincho）をやめ、全てゴシック体（Zen Kaku Gothic New）に統一。全36ページ・187箇所を一括変更し、不要になった明朝体フォントの読み込みも削除して軽量化した。<br>
-  <b style="color:var(--ink)">v2.8.0（2026-09-24）</b>：①コースカード・章カードのグリッドを、1024px以上でも3列にせず最大2列で固定。②カードの高さがテキスト量によってバラバラに見えていたのを解消：グリッドの<code>align-items</code>を<code>stretch</code>にして同じ行のカードの高さを揃え、カード自体もflexの縦積みに変更。「くわしく読む」リンクを各カードの下端に固定し、本文の長さに関わらず読み終わりの位置が揃うようにした。<br>
-  <b style="color:var(--ink)">v2.9.0（2026-09-24）</b>：これまでの度重なる配色変更の過程で、一部の色指定が古いバージョンのまま置き去りになっていたのを、全ファイルにわたって洗い出して修正。①足跡カーソルの色配列（フォールバック値）が、2世代前の配色（朱#E0391D・藍#17427E・苔#1B7A3D・黄土#D99A1B）のまま止まっていた箇所を、全36ページで現行配色に更新。②「トップに戻る」ボタンのホバー色が、最初期バージョンから一度も更新されずに残っていた（#7a2e1a／#7a2b1dの表記ゆれ含む）のを、現在の朱色に合わせて修正。③theme-colorメタタグが1世代前の朱色のままだったのを修正。④統計ボックスの文字色が、暖色系だった旧世代パレットの色（#F0DAC8等）のまま更新されておらず、現在のポップな配色から浮いていたのを、サイトの主色である黄色を軸にした配色に刷新。全ファイルでhex色・rgba値を総点検し、現行パレット以外の値がchangelogの過去バージョン記述を除いて残っていないことを確認済み。<br>
-  <b style="color:var(--ink)">v3.0.0（2026-09-24）</b>：①エリアの位置関係模式図を再設計。円のノードが5〜6文字のラベルに対して小さすぎ、文字がはみ出していたのを、角丸長方形（ピル型）に変更してラベル・コースコードが必ず収まるサイズを個別に計算。文字サイズも11px→16px、8px→11.5pxに拡大し、線・枠も太くしてサイト全体のポップな印象に合わせた。②サイト全体の文字サイズが、ポップで力強いトーン＆マナーに対して小さすぎるとの指摘を受け、本文・説明文・用語解説など読み物として使われる文字サイズを一律で約2px前後拡大（全36ページ・1199箇所）。コース別知識ページの見出しサイズも合わせて拡大。<br>
-  <b style="color:var(--ink)">v3.1.0（2026-09-24）</b>：以前の面白法人カヤックのWEBサイト（漫画的表現・ハーフトーン・星の爆発・ネイティブ感のあるアニメーション）を参照し、以下を実施。①「基礎知識・歴史知識」が6つのコース別チャプターと並列のカードとして並んでいたのを分離。コースを選ぶための入口ではなく読み物であることを示すため、破線囲みの横長バナーとして独立配置に変更。②トップのヒーローに、鎌倉大仏の簡略シルエット・ハーフトーンドット・きらめく星の爆発を追加。作者が歩いて確かめている土地の象徴を、抽象的な等高線モチーフから具体的な大仏モチーフへ転換。③OG画像の署名表記を、実URLに使われる技術的なGitHubアカウント名（NAOYAMAN）ではなく、このサイトの編者ペルソナである「クランポック」に修正。④コース別カード・章カードのホバー時の動きを、バネのように少し弾んでから収まる動き（オーバーシュートするイージング）に変更し、クリック時にもタップした感覚が伝わるフィードバックを追加。ゲームアプリに近いネイティブな触感を意識した。<br>
-  <b style="color:var(--ink)">v3.2.0（2026-09-24）</b>：「宗教でめぐる」「人物でめぐる」「年表でめぐる」の37レッグには、これまでカード内の折りたたみ表示しかなく、コース別知識ページのような専用記事が存在しなかった。今回、既存のg1〜g30系ページと同じ形式（ヒーロー・実務情報・スポット一覧・パンくず・ページャー・JSON-LD）で、37本の記事を新規に作成した（宗教：re1〜re12、人物：pe1〜pe15、年表：ti1〜ti10）。取り急ぎ日本語のみ対応（英語・中国語・韓国語は未着手）。トップページの各レッグの折りたたみを開くと「くわしく読む」リンクが表示され、専用記事に移動できるようにした。パンくず・一覧リンクは、これまでの「コース別・歴史の基本知識（history.html）」ではなく、各軸のタブ（例：宗教でめぐる → #tab-religion）を指すようにしている。sitemap.xml・llms.txtも新規37ページを含めて更新（sitemap.xmlは35件→72件に）。用語集（dl.terms）は、既存30ページと違い今回は含めていない。<br>
-  <b style="color:var(--ink)">v3.3.0（2026-09-24）</b>：ヒーローの鎌倉大仏シルエットを撤回し、なおちゃん提供の江ノ電イラスト（線画）に変更。アップロードされた画像の背景色（クリーム色）を明度ベースの解析で透明化し、線画部分だけを残した画像をサイトの黄色背景に直接重ねられるようにした。星の爆発の装飾は維持し、イラストとは別レイヤーとして残している。<br>
-  <b style="color:var(--ink)">v3.4.0（2026-09-24）</b>：フッターの「編集・文責：クランポック」を、画面いっぱい（1スクロール分）を使い、リンクだけを上下左右中央にぽつんと置く形に変更。広い余白の中に一つだけ置くことで、あえて目立たせる意図。全73ページに適用。基礎知識・歴史知識・プロフィール・修正履歴の4ページは、既存の免責事項・ナビゲーションリンクは残したまま、その下にこの署名セクションを新設。index.htmlは、フッター内にあった「編集・文責／修正履歴／最終更新」の1行を、フッター本体から独立した専用セクションに移動し、修正履歴へのリンクは「読みもの」列に既にあるため重複を避けて省略、最終更新日は署名の下に小さく添えた。<br>
-  <b style="color:var(--ink)">v3.5.0（2026-09-24）</b>：背景色を黄色（#FFFF00）から緑（#00A968）に変更。新しい緑が「宗教でめぐる」の軸色である苔色（#00A651）とほぼ同一で背景に溶けてしまうため、宗教の軸色を橙（#F2761C）に差し替えた。黄→紫の変更時と同じ理屈。あわせて、足跡カーソルのフォールバック色・統計ボックスの強調色（旧背景色に合わせていた黄色）・OG画像も新配色で更新。<br>
-  <b style="color:var(--ink)">v3.6.0（2026-09-24）</b>：全画面中央に置いた「編集・文責：クランポック」の見た目を調整。①周囲の枠（角丸のピル型ボーダー）を撤去し、リンクそのものだけが余白の中に浮くようにした。②「編集・文責：」のラベルは小さいまま残し、「クランポック」の文字サイズをトップページの見出し（鎌・くらんぽ）と同じ大きさ（clamp(36px,9vw,58px)）に拡大。ホバー時は枠の色反転ではなく、文字色が朱色に変わる形に変更。全73ページに適用。<br>
-  <b style="color:var(--ink)">v3.7.0（2026-09-24）</b>：①「クランポック」にふりがなを追加（署名部分・プロフィールページの名義解説文）。②アニメーションを、跳ねる・傾く・拡大するといったアニメ・ゲーム的な動きから、ゆっくり持ち上がるだけの映画的な動きに変更（カード・章タイルのホバー、足跡カーソルの単色化、きらめく星の装飾を撤去）。③サイト全体をゴシック体から明朝体に書き直し。フォント読み込みを復元し、本文の既定フォントを明朝体に。数字・距離・拝観料など測定値の表示のみ、意図的にIBM Plex Mono（等幅）のまま残した。ゴシック体は現在どこにも使用していない。④SEO・LLMO・SNS対策を総点検：必須メタタグ（description・canonical・OGP・Twitter Card・robots・author）の欠落が全73ページで無いことを確認、JSON-LD構造化データ139ブロック全て妥当性を確認、sitemap.xml（72件）と実ファイル数の整合を確認、内部リンクの破損なしを確認、llms-full.txtに宗教・人物・年表37本の存在（日本語のみ・用語集未収録である旨）を補記。<br>
-  <b style="color:var(--ink)">v4.0.0（2026-09-24）</b>：これまでのポップアート的・カヤック漫画的な方向性を撤回し、提供された本草学チャート（伝統的な中医学の生薬解説図）を参照して配色を全面的に作り直した。①背景を鮮やかな緑から、本草学チャートと同じ落ち着いた生成り紙色（#EFECE7）に変更。②朱・苔・藍・黄土の4色を、参考画像から実際に色を抽出して差し替え：朱→煉瓦色の印章赤（辛の生薬に使われる色）、苔→オリーブ色（苦の生薬の色）、藍→深い紺（寒の生薬の色）、黄土→タン色（温の生薬の色）。中医学の性状分類の配色をそのまま4軸に転用した形。③カード・章タイルを、太い黒縁と強い影を持つ「シール」のような見た目から、細い罫線と控えめな影による繊細な見た目に変更。角丸も直角に近づけた。番号バッジもピル型から角のない箱型に。④OG画像も新配色・明朝体で再生成。<br>
-  <b style="color:var(--ink)">v4.1.0（2026-09-24）</b>：コースカードの出現アニメーションを、単純なフェードインから「葉が落ちる」ような動きに変更。カードは少し上・少し傾いた状態から始まり、ゆっくり回転を戻しながら着地する（1.1秒、なめらかな減速のイージング）。隣り合うカードは傾く方向を互い違いにし、複数枚が同時に画面に入る場面では着地のタイミングにも少しずつ差をつけて、何枚もの葉が順にふわりと落ちてくるような印象にした。ホバー時の動きは従来通り素早い反応を保っている。<br>
-  <b style="color:var(--ink)">v4.2.0（2026-09-24）</b>：エリアの位置関係模式図を見直し。①英語表示時、"Around Kamakura Sta."のような長い訳語がピル型の枠からはみ出す不具合があった。②「そもそも丸枠は必要か、線だけで位置関係は伝わるのでは」との指摘を受け、枠自体を撤去。各地点は小さな点だけにし、ラベルは点の上下に自由な文字列として配置。線は点と点を直接つなぐ形にした。枠という「容器」がなくなったことで、日本語・英語・中国語・韓国語のどの言語でも、文字の長さに関わらずはみ出さない構成になった。<br>
-  <b style="color:var(--ink)">v4.3.0（2026-09-24）</b>：カードの出現アニメーションを調整。①回転しながら着地する動きをやめ、まっすぐ上から下へ、回転なしで滑らかに落ちる動きに変更（「スルリと」というイメージに合わせた）。②これまでコース一覧の6つの章タイルには出現アニメーションが付いていなかったが、これも同じ「カード」として扱い、同じ動きを追加。<br>
-  <b style="color:var(--ink)">v4.3.1（2026-09-24）</b>：エリア模式図の「大船・玉縄」付近に、線が2本重なって表示される不具合を修正。v4.2.0で丸枠を撤去して点＋線の構成に作り直した際、旧バージョン（丸枠時代）の線が1本、削除し忘れて残っていた。座標の古い線を削除し、現在の点の位置に対応する線だけが表示されるようにした。<br>
-  <b style="color:var(--ink)">v4.4.0（2026-09-24）</b>：「見方について」以下の構成を見直した。①「コース別・歴史の基本知識」カードで見出しが「識」の1文字だけ次の行に孤立して折れる不具合があった。調査の結果、この3枚のカード（歩く前の基礎知識／コース別・歴史の基本知識／修正履歴）は、章タイル一覧のところに既に用意していた「基礎知識・歴史知識」バナーと行き先が重複していた（修正履歴はドロワーメニューにも別途ある）ことが分かったため、カード自体を削除し「見方について」を4段落で簡潔に終える形にした。折れの不具合は、重複の解消によって併せて解消している。②フッターの「読みもの」「このサイトについて」の2列の間に、細い区切り線を追加。2つの独立したリストが並んでいるだけという印象を少し和らげた。<br>
-  <b style="color:var(--ink)">v4.5.0（2026-09-24）</b>：単純な見た目の調整ではなく、根本原因を修正。「見方について」の本文・タブの説明文・統計ボックス・子供向けコースの注記・脚注ブロックに、それぞれ<code>max-width:640px</code>という制約がかかっており、これらのブロックが1カラム構成であるにも関わらず、周囲のコンテナ幅（最大1120px）よりずっと狭い幅で左に寄って表示され、右側に無駄な余白ができていた。この制約を全て撤去し、各ブロックが1カラムとして周囲の幅をそのまま使うように修正。フッターの2列レイアウトにかかっていた同様の幅制限（900px・480px）も撤去した。ヒーロー部分の非対称レイアウト（右にイラストがある構造）だけは意図的なものとして残している。<br>
-  <b style="color:var(--ink)">v4.6.0（2026-09-24）</b>：ヒーローの江ノ電イラストを削除。画像が無くなった分、見出し・リード文の列の幅を640px→820px（リード文自体は36em→44em）に広げ、右側に余白が残らないよう調整した。不要になった画像ファイル（enoden-hero.png）自体も削除。<br>
-  <b style="color:var(--ink)">v5.0.0（2026-09-24）</b>：多言語対応（英語・中国語・韓国語）を一旦全面削除。後日、改めて作り直す方針。トップバーの言語切替ボタン（JA/EN/中/한）、各ページに個別に持っていたTRANSLATIONSオブジェクトとapplyLanguage関連のJavaScript一式を、全73ページから削除した。data-i18n属性自体はHTML内に残っているが、これを処理するJavaScriptがなくなったため、現時点では何もしない無害な属性になっている。<br>
-  <b style="color:var(--ink)">v5.1.0（2026-09-24）</b>：編者のペンネームを「切通歩（きりどおし・あゆむ）」から「クランポック」に変更。全73ページ・302箇所を一括置換。ふりがな（ruby）は漢字の読みを示すためのものだったので、カタカナ表記のクランポックには不要と判断し、ふりがなタグ自体も除去した。あわせて、llms.txt・llms-full.txtに残っていた旧名義への言及と、既に削除済みの多言語対応への古い言及（v5.0.0の変更が反映されていなかった）も修正。OG画像も新しい名前で再生成。<br>
-  <b style="color:var(--ink)">v5.2.0（2026-09-24）</b>：説明ページ（コース別知識ページ67本＋歩く前の基礎知識＋コース別・歴史の基本知識、計69ページ）にSNSシェアボタンを追加。X・LINE・Facebook・はてなブックマークの4つ。各ページの正規URL（canonical）とタイトルを使って、シェア用のリンクをページ読み込み時にJavaScriptで組み立てる方式にした。歴史の基本知識ページは30コースを一覧するページなので、個別のコースごとではなく、ページ全体で1回だけ設置している。<br>
-  <b style="color:var(--ink)">v5.3.0（2026-09-24）</b>：説明文の心理的な仕掛けを、文末だけでなく開始・中盤・終盤の三段構成全体に配置し直した。これまでの仕込み（本文末尾のくらくらんぽ＋感覚的な誘い）は終盤止まりだったので、各コースの本文冒頭に「掴み」となる一文（意外な対比・断定を避けた問いかけ）を追加。「杉本寺の石段には、今も足を乗せられません。理由を知ると、少し背筋が伸びます」（g1）、「性格のまるで違う3つの寺が、なぜ徒歩数分の距離に並んでいるのでしょう」（g5）のように、冒頭で小さな疑問を作り、中盤の史実でその疑問を解決し、終盤のくらくらんぽで感情的な締めと行動への誘いを作る、という一連の流れにした。21ページ全てに適用。<br>
-  <b style="color:var(--ink)">v6.0.0（2026-09-24）</b>：全67本のコース別知識ページの文章チェックが完了。残っていたc8〜c16（9本）・宗教でめぐる re1〜re12（12本）・人物でめぐる pe1〜pe15（15本）・年表でめぐる ti1〜ti10（10本）、計46本に、開始・中盤・終盤の三段構成と「頭がくらくらんぽ」を適用した。宗教・人物・年表軸は、エリア別コースと同じ寺社を扱っているものが多かったため、既に調べていた季節の花や逸話（浄智寺の布袋像、明月院の悟りの窓、報国寺の竹林のミシュラン評価など）を再利用しつつ、各軸の視点（同じ宗派でも生まれた理由が違う／同じ人物の複数の足跡／年代が近くても事情が違う、等）に合わせて書き直した。満福寺の腰越状（c8）は新たに検索で確認した逸話。これで全67ページに「事実と伝承の分離・ふりがな・三段構成・くらくらんぽ」が一貫して適用された。<br>
-  <b style="color:var(--ink)">v6.0.1（2026-09-24）</b>：ti1.html（杉本寺・由比若宮）の本文が薄いという指摘を受けて修正。前回のバージョンは、冒頭の「掴み」と直後の一文がほぼ同じ内容を繰り返すだけで、肝心の中盤（史実で疑問を解決する部分）が実質的に空だった。由比若宮の創建の経緯（1063年、源頼義が石清水八幡宮を勧請）、頼朝が5代目の子孫にあたること、1180年に現在の鶴岡八幡宮の場所へ遷されたこと、元の場所が「元八幡」と呼ばれることなどを検索で確認し、本文に組み込んだ。トリビア（石清水の井の由来）も新規に追加。<br>
-  <b style="color:var(--ink)">v6.1.0（2026-09-24）</b>：「コース別・歴史の基本知識」ページも薄いという指摘を受けて確認したところ、全30コースのカードが、タイトル・寺社名・視点タグだけで、そのコース固有の「面白さ」を伝える一文を持っていないことが分かった。各コースの詳細ページ（knowledge/*.html）にはすでに「掴み」の一文を用意していたので、それを一覧カード用に再利用する形で、全30コースにテーマ文を追加した（例：「杉本寺の石段には、今も足を乗せられません」「同じ「北条」という名字なのに、血のつながりがない二つの一族があります」）。これで、一覧ページを眺めるだけでも各コースの見どころが伝わるようになった。<br>
-  <b style="color:var(--ink)">v6.2.0（2026-09-24）</b>：「類似の漏れがないか、サイト全体をチェックしてほしい」との依頼を受けて調査。index.html内部に、各コース・各軸の説明文を保持するJavaScriptのデータ配列（GEO・COMPLETE・RELIGION・PERSON・TIMELINE）が存在し、knowledge/*.htmlの本文とは別に、同じ内容を複製して持っていることが判明した。これらの配列は、①エリア別・コンプリート版カードの短い紹介文（theme、30件）、②宗教・人物・年表タブのアコーディオン内の本文（story、37件）として画面に表示される。ところが、67ページ全ての本文を三段構成・くらくらんぽに書き直した際、この複製データの方は更新しておらず、古い文章のまま取り残されていた。利用者が一覧やアコーディオンで読む内容と、詳細ページに移動した時に読む内容が、食い違っていたことになる。今回、theme30件・story37件、合計67件全てを、対応する詳細ページの新しい本文に同期させた。なお、GEO・COMPLETE配列にも同名のstoryフィールドが残っていたが、これは画面上どこにも表示されない未使用のデータだったため、実害はなし（削除はせず残置）。<br>
-  <b style="color:var(--ink)">v6.2.1（2026-09-24）</b>：「人物・宗教・年表でめぐるのカードが消えた」という報告を受けて緊急調査。原因は、v5.0.0（多言語対応の全面削除）まで遡る古いバグだった。当時、i18n関連のJavaScriptコードを範囲指定で削除した際、その削除範囲の終点に置いていた目印（コメント文）が、実際にはコンプリート版・宗教・人物・年表の4つのタブの描画呼び出し文（<code>document.getElementById(...).innerHTML = ...</code>）の直後に位置していたため、この4行が削除対象の範囲に紛れ込み、一緒に消えてしまっていた。結果として、この4つのタブは「データ（配列）と、そのデータを描画する関数」は正しく存在するのに、「描画関数を呼び出す一文」だけが欠落し、空のまま表示されない状態になっていた。この状態はv5.0.0以降、今回の指摘まで見過ごされていた。過去のバージョン（v4.0.0時点）から該当の4行を復元し、Node.js上でデータ配列の件数・構文・実際のHTML生成を検証した上で修正を確定した。<br>
-  <b style="color:var(--ink)">v6.3.0（2026-09-24）</b>：「文章はルール通りUPDATEできているか」との確認を受けて、67ページ全てを機械的に検査。三段構成のルール「終盤は頭がくらくらんぽで感情の山を作り、行かないと分からない何かを残して終える」のうち、後半の「行かないと分からない何かを残す」一文が欠けたまま、くらくらんぽで終わっているページが34本見つかった（主にc11〜c16・pe1〜pe15の大半・re/tiの一部）。各ページの内容に応じた感覚的な誘いの一文を追加し、全て修正。あわせて、このうち宗教・人物・年表軸に該当する27本はindex.html内の複製データ（RELIGION/PERSON/TIMELINE配列）にも反映が必要だったため、同様に同期した（同期作業中、一部のページでv6.2.0時点の複製データが実際の本文と句読点レベルで微妙に異なっていることも判明し、正確な文字列を再取得して修正）。<br>
-  <b style="color:var(--ink)">v6.4.0（2026-09-24）</b>：「人物でめぐる等で、カードの本文と詳細ページの説明文が同じ」との指摘を受けて修正。宗教・人物・年表タブのカードは、クリックして開くと三段構成の全文（story）がそのまま表示され、その後「くわしく読む」で詳細ページに移動しても同じ文章が繰り返される構造になっていた。エリア別・コンプリート版のカードは既に「カードにはキャッチコピー程度の短いtheme、詳細ページに全文」という形式になっていたので、これに揃える形で、宗教・人物・年表37件それぞれの本文冒頭の一文（フック文）をtheme（キャッチコピー）として抽出し、カード側はこの短い一文だけを常時表示するように変更した。カードのアコーディオンを開くと出てくるのは、行程・スポット一覧・注記・詳細ページへのリンクのみで、全文はもう出てこない。全文（story）はknowledge/*.htmlの詳細ページ側にのみ残っている。<br>
-  <b style="color:var(--ink)">v6.5.0（2026-09-24）</b>：「カードは情報、本文は情報と情緒とした時、カードのリード文はどうあるべきか」という問いを受けて考察。v6.4.0で採用した「本文冒頭のフック文をそのままカードのテーマに転用する」方式は、実は誤りだった。フック文（「杉本寺の石段は、上れません」等）は、答えを明かさず好奇心の空白を作る、情緒側の技法。情報を淡々と伝えるべきカードに、この心理的な仕掛けを置くのは筋が違う。カードのリード文は、答えを隠さず「このコースが何についてか」を要約する、情報としてのテーマ文であるべきという結論に至った。実際、v6.1.0でフック文に書き換える前のGEO/COMPLETE配列には、まさにこの形のテーマ文（「鎌倉が武家の都になる以前から、すでにここにあった祈りの場」等）が既に存在していたため、これをgit履歴から復元。宗教・人物・年表37件については、これまで情報ベースのテーマ文を持っていなかったため、各レッグの構成寺社・関連人物・年代を要約する形で新たに作成した。エリア別・コンプリート版カード（index.html）、コース別・歴史の基本知識の全30コースカード（history.html）、宗教・人物・年表タブのカード（index.html）、合計67箇所全てを情報ベースのテーマ文に統一。本文側のフック文（三段構成の「掴み」）はknowledge/*.htmlの詳細ページ側にそのまま残しており、変更していない。<br>
-  <b style="color:var(--ink)">v6.6.0（2026-09-24）</b>：「宗教・人物・年表タブのカードもPCで2列にしてほしい、微妙にズレて気持ち悪い」との指摘を受けて修正。エリア別・コンプリート版のカード（<code>.card-grid</code>）は既にPC幅で最大2列のグリッドになっていたが、宗教・人物・年表タブのカードは別の入れ物（<code>.axis-wrap</code>）を使っており、グリッド指定が無いまま単一列で720px幅に制約されているだけだった。これが「微妙なズレ」の実体。<code>.axis-wrap</code>にも同じ2列グリッドを適用し、グループの見出し（臨済宗円覚寺派、等の区切り）だけは2列にまたがるよう指定。カードは開閉するアコーディオン式のため、GEO/COMPLETE側の<code>align-items:stretch</code>（高さを揃える）ではなく<code>align-items:start</code>（各カードの自然な高さのまま）を採用し、片方のカードだけ開いた時に隣が不自然に伸びないようにしている。<br>
-  <b style="color:var(--ink)">v6.6.1（2026-09-24）</b>：実際に2列化した結果を見て「やはり1カラムが良い」との判断があり、v6.6.0のグリッド指定を撤回。宗教・人物・年表タブは、グループごとに件数が異なる・カードが開閉するアコーディオン式である、という構造上、2列に並べると列の高さがまばらになりやすく、1カラムの方が読みやすいという結論。ただし元の720px制約（余白の原因）は戻さず、820pxまで幅を広げて調整した。v6.4.0で全文（story）をカードから外したことで、開いた時に表示される内容がスポット一覧・注記・リンクのみになっているため、幅が広がっても読みにくくなる心配は無い。<br>
-  <b style="color:var(--ink)">v6.6.2（2026-09-24）</b>：「1カラムの幅を他のコンテンツと合わせてほしい、820pxは中途半端」との指摘を受けて修正。v4.5.0で「見方について」の本文・統計ボックス・タブ説明文・脚注等、他の1カラムブロックからは既にmax-width制約を完全に撤去していたのに、宗教・人物・年表タブの入れ物（<code>.axis-wrap</code>）だけ、820pxという中間的な値を残してしまっていた。同じ理屈で制約自体を撤去し、周囲の幅（mainの最大1120px）をそのまま使うように統一。<br>
-  <b style="color:var(--ink)">v6.7.0（2026-09-24）</b>：3点の指摘を確認・修正した。①「カード右上の◯」は、コースを歩いた記録をつけるスタンプボタン（チェックマーク）だった。②「謎の楕円」は、その進捗表示（「歩いた記録：0／14コース」のような文言が入るはずの空の枠）だった。調査したところ、この2つを機能させていたJavaScript（<code>refreshStampUI</code>関数と、それに連動するクリック処理）が、v5.0.0の多言語削除時に一緒に消えていたことが判明——宗教・人物・年表タブの描画呼び出しが消えたv6.2.1のバグと、まったく同じ原因・同じタイミングだった。壊れて何も表示・機能しない状態だったため、修正ではなく指示通り両方とも完全に削除した。③足跡カーソルは、これまでページ全体でマウスを動かすとどこでも発火していたが、カード・章タイル・リンク・ボタンの上にマウスがある時だけ発火するように変更（全73ページ）。<br>
-  <b style="color:var(--ink)">v7.0.0（2026-09-24）</b>：新規ページ3本を追加。「鎌・くらんぽ年表」（timeline.html）・「鎌・くらんぽ人物相関図」（persons.html）・「鎌・くらんぽ宗教関係図」（religions.html）。それぞれ、既存の「年表でめぐる」「人物でめぐる」「宗教でめぐる」12〜37レッグの内容を、コースを歩く前に一望できる概観図としてまとめたもの。年表は7つの時期区分と各時期の代表寺社、人物相関図は源氏・北条氏・足利氏など一族ごとの関係、宗教関係図は禅宗・日蓮宗・浄土宗・神道など宗派ごとの寺社を、それぞれHTML/CSSベースの図解（タイムライン・系図風・階層ツリー）で示す。配置は、①ドロワーメニューの「読みもの」欄（全76ページから到達可能）、②index.htmlの宗教・人物・年表タブそれぞれの説明文直後（先に概観を見るための案内バナー）、の2箇所。sitemap.xmlは自動生成スクリプトの再実行で72→75件に、llms.txtにも3ページを追記した。<br>
-  <b style="color:var(--ink)">v7.1.0（2026-09-24）</b>：エリアの位置関係模式図を作り直した。①viewBoxを500×460（ほぼ正方形）から700×400（16:9に近い横長）に変更し、7つのエリアを実際の地理よりもデフォルメして配置（北側にエリアをまとめ、海沿いのエリアを下側に）。②これまでノード全体（点＋ラベル＋コード）が1つのリンクで、そのエリアの「代表コース」1本にしか飛べなかった不具合を修正。エリア名とコード表記（G4・G5等）は分離し、コード部分を1つずつ個別にリンクできるようにした。「鎌倉駅周辺」のようにG1・G2・G3・G8と4つのコースを持つエリアも、それぞれ個別にクリックして該当ページへ飛べる。エリア名自体はリンクを持たない表示専用のラベルとし、実際の行き先はコードのホバーで朱色に変わることで示す。<br>
-  <b style="color:var(--ink)">v7.2.0（2026-09-24）</b>：「全部大まかすぎる。ポイントの強調とストーリーが見えるように。これも情報＋情緒の基本ルールの適用対象」との指摘を受け、v7.0.0の3ページ（鎌・くらんぽ年表・人物相関図・宗教関係図）を全面的に書き直した。前回は単なる分類リスト（時期・氏族・宗派を並べただけ）で、67ページの知識ページに適用していた「情報＋情緒」のルールをこの3ページには当てていなかった。年表は「頼朝の19年」「北条氏の約150年」のように具体的な数字を強調しつつ、一つの時代が次の時代にどう繋がるかを地の文で語る形に。人物相関図は「源氏→北条氏→足利氏」という権力の受け渡しをストーリーとして通し、北条氏の系譜には「4世代・約150年の実権」という見出しを添えた。宗教関係図は、禅宗＝執権が政治的に導入した宗派、日蓮宗＝体制に抗って根づいた宗派、浄土宗＝敵味方を越えて選ばれた宗派、というように各宗派が「なぜ根づいたか」の物語を持たせた。強調したい数字・対比は<b>朱色の太字</b>で視覚的にも強弱をつけている。<br>
-  <b style="color:var(--ink)">v7.3.0（2026-09-24）</b>：「大まかな年表、ではなく『鎌・くらんぽ年表』のようにブランド名を冠して、あくまでコースを楽しむための前提知識として作ってほしい」との指摘を受けて調整。①ページ名を「大まかな年表／人物相関図／宗教関係図」から「鎌・くらんぽ年表／人物相関図／宗教関係図」に変更（title・h1・meta・JSON-LD・ドロワー・案内バナー・llms.txt含む全77ファイル）。②リード文を「この情報自体が目的」という書き方から、「○○でめぐるコースを歩く前に知っておくと、見え方が変わる」という、コースへの前提知識であることを明示する書き方に変更。③各ページの末尾に、対応する軸タブ（宗教／人物／年表でめぐる）への実際のリンクを追加し、読んだ後にそのまま該当コース一覧へ進めるようにした。<br>
-  <b style="color:var(--ink)">v7.4.0（2026-09-24）</b>：「単語の羅列ではなく、時間や空間の臨場感が感じられるように」との指摘を受けて、3ページの中でも特に名前を並べていた箇所を書き直した。宗教関係図の「建長寺・明月院・円応寺・浄妙寺・報国寺」のような並列は、「建長寺・明月院・円応寺が徒歩10分ほどの範囲に固まり、そこから金沢街道沿いに浄妙寺・報国寺まで足を延ばす」のように、実際に歩く距離感・位置関係を伴う書き方に変更。年表は、建長寺（1253年）から円覚寺（1282年）までの29年、覚園寺から報国寺までの覚園寺→瑞泉寺31年・瑞泉寺→報国寺7年という間隔を、単なる年号ではなく「時代が移った重みの実感」として書き込んだ。人物相関図は、北条氏4代・約150年という期間を「明治のはじめから令和の今日までの隔たりに近い」という今の感覚で捉え直せる比較を添え、その間に代々の寺が北鎌倉の谷筋に積み重なっていった様子を書いた。<br>
-  <b style="color:var(--ink)">v7.5.0（2026-09-24）</b>：「人物には客観的なキャッチコピー」との指摘を受け、鎌・くらんぽ人物相関図に登場する13人物それぞれに、史実に基づく肩書きバッジを追加した。北条政子には「尼将軍」（『吾妻鏡』等に基づく史上の呼称）、夢窓疎石には「七朝帝師」（歴代天皇から7度国師号を賜ったことに由来する尊称）というように、いずれも本人の解釈・評価ではなく、歴史上実際に使われてきた呼称・官職名を採用した（源頼朝＝鎌倉幕府初代将軍、北条泰時〜貞時＝各代の執権、高時＝最後の執権、新田義貞＝鎌倉幕府を滅ぼした武将、足利氏＝室町幕府を開いた一族、北条綱成＝玉縄城主、日蓮＝日蓮宗の開祖、忍性＝律宗の僧）。名前の直後に、細い枠で囲んだ小さなバッジとして常時表示し、本文（情緒側）とは別に、情報として一目で分かるようにしている。<br>
-  <b style="color:var(--ink)">v7.5.1（2026-09-24）</b>：「○代執権だけだと面白くない、○代執権・キャッチコピーが良い」との指摘を受けて、5人の執権（泰時・時頼・時宗・貞時・高時）の肩書きを「役職番号のみ」から「役職番号・特徴的な事実」の組み合わせに変更。泰時＝武士のための法律を初めて作った男（御成敗式目）、時頼＝出家してなお実権を握った男、時宗＝二度の元寇を退けた男、貞時＝日本初の徳政令を出した男（永仁の徳政令・1297年）、高時＝鎌倉幕府を終わらせた男。貞時は本文側にも徳政令の具体的な内容を追記し、キャッチコピーと本文の内容が食い違わないようにした。<br>
-  <b style="color:var(--ink)">v7.6.0（2026-09-24）</b>：「なぜ足利が幕府をつくることになったのか、その説明がないと飛んでいる」との指摘を受けて調整。これまで「新田義貞が北条高時を滅ぼした」と「足利氏が室町幕府を開いた」を、間の説明なしに並べて書いていた。実際には、新田義貞と足利尊氏は共に鎌倉幕府を倒した同志（共に清和源氏の血を引く）だったが、倒幕後に始まった後醍醐天皇の建武の新政が武士の不満を買い、家格の高い足利尊氏のもとに武士が集結。1336年の湊川の戦いで尊氏が義貞を破り、征夷大将軍として室町幕府を開いた——という経緯がある。新田義貞の項に「倒幕の功労者でありながら新政権で不遇だった」という伏線を追加し、足利氏の項に建武の新政の失敗から湊川の戦いまでの転換点を書き込んで、両者の記述をつなげた。<br>
-  <b style="color:var(--ink)">v8.0.0（2026-09-24）</b>：favicon・apple-touch-iconを新規作成した。これまでこの2つは存在しておらず、ブラウザのタブやスマートフォンのホーム画面に追加した際、サイト独自のアイコンが表示されない状態だった。指定に従い、favicon（ブラウザタブ用、16/32/256pxを内包するfavicon.ico）は「鎌」の一文字、apple-touch-icon（iOSホーム画面用、180px）は「くら」「んぽ」の2行、いずれも朱色（--vermilion）の背景に生成り色の文字を明朝体（Noto Serif CJK JP）で配置した。OGP画像（og-image.png）は、既に「鎌・くらんぽ」の名称と「歩く。数える。鎌倉を、確かめる。」というキャッチコピーを両方含む構成になっていたため、変更していない。favicon・apple-touch-iconへのリンクタグは、knowledge以下67ページを含む全76ページのheadに追加した。<br>
-  <b style="color:var(--ink)">v8.0.1（2026-09-24）</b>：「apple-touch-iconの文字がズレてる」との指摘で修正。前バージョンは「くら」「んぽ」を2行のまとまりとしてそれぞれ重心センタリングしていたため、行ごとの余白の違いで全体の見た目の中心が微妙にズレていた。1文字ずつ独立させ、2×2のグリッド（く・ら／ん・ぽ、各90×90pxのセル）に個別配置する方式に変更。実際のインク範囲を数値検証したところ、列（く/ん、ら/ぽ）ごとの中心のズレは1〜3px以内に収まっている。<br>
-  <b style="color:var(--ink)">v9.0.0（2026-09-24）</b>：「OGPはページごとに、そのページの魅力を一瞬で伝えるコピーが欲しい」との要望を受け、まず対話でルールを詰めてから実装した。決まったルール：①各ページ本文冒頭の「フック文」を素材にする（新規に無関係な話を考えない）②文末を「〜知っていますか？」「〜ご存知でしたか？」のような語りかけ調に変換する③レイアウトは、これまでの鳥居イラスト入りの共通1枚（og-image.png）をやめ、文字中心・軸ごとの色分けバッジ（エリア別＝朱／宗教＝苔／人物＝紺／年表＝タン）付きの構成に一新④「鎌・くらんぽ」のサイト名を92pxで主役として大きく配置し、キャッチコピーはその下に38px以下のサブテキストとして控えめに置く（逆に鳥居があった頃は名称が小さく埋もれていた）⑤日本語の禁則処理（行頭に「、」「。」等を置かない）を自前の折り返し処理に実装。この方針で、knowledge以下67ページ＋index・basics・history・profile・changelog・404・timeline・persons・religionsの9ページ、計76枚を新規生成し、全ページのog:image・twitter:image・JSON-LDのimageフィールドを、共通画像から個別画像（ogp/各ページID.png）に切り替えた。<br>
-  <b style="color:var(--ink)">v9.0.1（2026-09-24）</b>：「鎌・くらんぽの下の下線が中途半端、デザインならデザインらしく」との指摘で修正。実測したところ「鎌・くらんぽ」（92px）の文字幅は552pxあるのに対し、下線は80〜420pxの340px固定で引いていたため、文字の3分の1程度で途切れていた。文字幅を実際に測定し、その幅にぴったり合わせる方式に変更。76枚全てを再生成した。<br>
-  <b style="color:var(--ink)">v10.0.0（2026-09-24）</b>：「デザインをもっとモダンでスタイリッシュに」との要望を受け、対話を重ねながらOGPデザインを全面刷新した。最終仕様：①背景は白②左端に軸カラーの太いバー（目印）③右側に軸カラーのブロック。幅はテキスト内容にぴったり合わせ、余白を持たせない④ブロック内は「KAMAKURANPO」（ゴシックBlack・太）と「KAMAKURA+SANPO」（ゴシックThin・細）の英字ロゴを90度回転させて縦組みにし、太さの対比で表情をつけた。両方とも縦幅630px（バナーの全高）にぴったり合わせている⑤「鎌・くらんぽ」は明朝体Bold・80pxで黒、下線は撤去⑥フックコピーはゴシック体に変更し、自動折り返しをやめ、意味の切れ目・単語の区切りで手動改行する方式にした。チャプター別の配色について確認したところ、既存サイトの設計では元々エリア別・子供向け・コンプリート版の3チャプターは朱色に意図的に統一されており、宗教＝苔・人物＝紺・年表＝タンと合わせて4色構成になっていたため、これを踏襲。この最終仕様で67ページ分のフックコピーに改行位置を設定し直し、特殊9ページと合わせて全76枚を再生成した。<br>
-  <b style="color:var(--ink)">v10.1.0（2026-09-24）</b>：プロフィールページの自己紹介文（リード文）に、v5.1.0でペンネームを「切通歩」から「クランポック」に変更した際の取り残しが見つかった。ペンネーム表記（yomi）は正しく「クランポック」になっていたのに、その直下の説明文だけが「「切通」は、鎌倉特有の、山を切り開いてつくられた古道の名。…このサイトの編者名として名乗っている」という、旧ペンネーム「切通歩」の由来をまるごと説明する文章のまま残っていた。単純な文字列置換（302箇所）では、名前そのものの由来を語るこの文章までは書き換えられなかったため、見落とされていたと考えられる。クランポックの正しい由来（鎌・くらんぽからの単純な派生、大層な背景はない）に基づいて書き直した。念のためサイト全体で「切通」の他の言及も確認したが、用語集の項目・地名・changelogの記録として正しく使われているものばかりで、他に取り残しはなかった。<br>
-  <b style="color:var(--ink)">v10.1.1（2026-09-24）</b>：「元の文章（切通歩の由来）も残して、それがクランポックになったという経緯を残したい」との指摘を受けて再修正。v10.1.0では旧由来の説明を丸ごとクランポックの説明に置き換えてしまったが、正しくは「切通歩」の由来（山を切り開いてつくられた古道の名＋歩く人）はそのまま残し、その後に「後にクランポックに改めた。クランポックは鎌・くらんぽからの単純な派生で、切通歩のような由来はない」という改名の経緯を続ける形にした。名前の変遷を隠さず記録する、という方針。<br>
-  <b style="color:var(--ink)">v10.1.2（2026-09-24）</b>：「切通歩（きりどおしあゆむ）をカタカナにしたらクランポックになった、ということにすればよい」との明確な指示を受けて修正。v10.1.1では「クランポックは切通歩のような由来はない」と別由来として書いていたが、正しくは「切通歩をカタカナ変換したものがクランポックである」という直接の変換関係として記述するよう修正。あわせて、以前の会話で保存していた「クランポックは鎌・くらんぽからの単純な派生で、深い由来なし」という記憶を、この新しい理解（旧ペンネーム「切通歩」をカタカナにしたもの）に更新した。<br>
-  <b style="color:var(--ink)">v10.1.3（2026-09-24）</b>：「丁寧語にしてください。鎌・くらんぽのくらんぽは、娘が鎌倉を散歩することをそう呼び出したのでアイデアをもらった」との指摘で修正。①これまで「〜である」という言い切りの文体だった箇所を、丁寧語（です・ます調）に統一。②サイト名「鎌・くらんぽ」の「くらんぽ」自体の由来（娘さんが鎌倉散歩をそう呼んでいたことから着想を得た）を、冒頭に追加した。これにより自己紹介文は、サイト名の由来（くらんぽ＝娘の言葉から）→ 旧ペンネームの由来（切通歩＝山道＋歩く人）→ 現ペンネームへの改名（切通歩をカタカナにしてクランポック）という3段階の説明になった。<br>
-  <b style="color:var(--ink)">v10.1.4（2026-09-24）</b>：「家族で歩くのが楽しくなったので作っていた散歩コースです」との情報を受けて、プロジェクトそのものの動機を自己紹介文に追加した。「くらんぽ」という名前の由来（娘さんの言葉）の直後に、「家族で歩くのが楽しくなったことがきっかけで、この散歩コースを作るようになりました」という一文を加え、名前の由来だけでなく、このサイト全体がなぜ作られたかという経緯も伝わるようにした。<br>
-  <b style="color:var(--ink)">v10.1.5（2026-09-24）</b>：「プロフィールページも基本的に丁寧語にしてください」との指摘を受けて、ページ全体を確認した。リード文は既に丁寧語だったが、その他のセクション（経歴・名義について・制作物一覧・このサイトの姿勢）に「〜務める」「〜分けている」「〜ある」のような言い切り・である調が10箇所残っていたため、すべて丁寧語（です・ます調）に修正した。学歴・経歴のリスト項目（「〜卒業」等）、講演実績の羅列、名義の対応表（「クランポック ― 鎌・くらんぽ」等）は、履歴書・名簿形式の体言止めとして自然な表記のため、意図的に変更対象から外している。<br>
-  <b style="color:var(--ink)">v11.0.0（2026-09-24）</b>：「急所を刺すアイデアを3つ」という提案を受け、対話の末「任せる」と言っていただいたので実装した。指摘の要旨は、情報設計は強いが入口の体験設計に伸びしろがあるという点。実装した3点：①「迷ったら、これ」——ヒーロー直後に、タグ選択より前に置く単一の推奨カード。杉本寺の石段が上れない理由というフック文を証拠として embed し、「証拠を見せる」という2つ目の提案もこの中に統合した（2つの別々の箱を並べるより、1つの強いカードにする方が良いと判断）。②「今どこにいますか」——エリアの位置関係模式図の下に新設した、現在地からの横断導線。7つのエリアをボタンとして並べ、選ぶとエリア別コースだけでなく、宗教・人物・年表の3軸のうち、その土地に関わるコースもまとめて表示する。地理×宗教×人物×年表を横断するというこのサイト固有の強みを、一番使いたい瞬間（今どこにいるか）に見せる仕掛け。各エリアと軸レッグの対応は、既存のGコースの寺社構成をもとに判断したもので、地理的境界を厳密に測量したわけではない。全7エリア×3軸でのリンク生成をNode.jsで実行検証し、参照エラーがないことを確認した。<br>
-  <b style="color:var(--ink)">v11.0.1（2026-09-24）</b>：実機のスクリーンショット2枚から、「明月院」「杉本寺」等のスポット名や説明文が1文字ずつ縦に折り返されるという深刻な表示崩れが報告された。原因は、スポット一覧の行レイアウト（<code>.spot-list .row</code>）が<code>display:flex</code>で、名前側（<code>.sname</code>、flex:1）と料金側（<code>.sfee</code>、flex:0 0 auto・<code>white-space:nowrap</code>で折り返し禁止）を横並びにしていたこと。料金の文字列が長い場合（例：「大人¥500／小人¥300＋本堂後庭園¥500」等）、折り返せない料金側がその幅をそのまま確保しようとし、幅が可変の名前側がその分だけ極端に圧迫され、数十pxしか残らない状態になっていた。そこに長い名前や説明文が入ると、1文字ごとに改行せざるを得なくなる。修正は<code>.row</code>に<code>flex-wrap:wrap</code>を追加し、料金欄が長くて収まらない場合は自動的に次の行へ折り返せるようにした。あわせて<code>.sname</code>に<code>min-width:140px</code>を設定し、名前側が確保する最低限の幅を保証した。この構造はknowledge以下67ページとindex.htmlで完全に共通のCSSだったため、68ファイル全てに同じ修正を適用した。<br>
-  <b style="color:var(--ink)">v12.0.0（2026-09-24）</b>：新規ページ「鎌・くらんぽクイズ」（quiz.html）を追加した。歴史・お寺・宗教・人物の4種類、合計51問（歴史15・お寺12・宗教13・人物11）を、このサイトの知識ページ・年表・人物相関図・宗教関係図に書かれている情報だけを根拠に作成。カテゴリを選ぶと、その問題プールから10問（プールが10問未満の場合は全問）をランダム抽出して4択形式で出題し、正解・不正解に応じて即座に解説を表示する。10問終了後は正答数を表示し、間違えた問題が1問でもあれば「間違えた問題に再挑戦」ボタンで、その問題だけを再度ランダム順で出題し直せる。選択肢の並び順も出題のたびにシャッフルしている。実装後、Node.jsで全51問の構造（選択肢数・正解インデックス・選択肢の重複有無）を検証し、異常がないことを確認した。あわせてサイト関連ファイルを更新：①ドロワーメニュー「読みもの」欄に全77ファイルからのリンクを追加②トップページ本体（コース一覧の末尾）にクイズへの導線カードを新設③quiz.html専用のOGP画像を新規生成④sitemap.xmlを自動生成スクリプトで75→76件に更新⑤llms.txtにクイズページの説明を追記。<br>
-  <b style="color:var(--ink)">v13.0.0（2026-09-24）</b>：「ランダム出題ではなく、1本筋の通ったドリル設計にしてほしい。人物なら源頼朝編のように。総合テストもあると良い。加えて、各記事ごとにもドリルがあると良い」という2段階の指摘を受け、クイズを全面的に作り直した。①quiz.htmlを「カテゴリ→編一覧→編ごとに順番出題」という3階層構造に再設計。歴史（7つの時代編）・お寺（11の寺編）・宗教（6つの宗派編）・人物（12人の人物編）に再編成し、各編は書いた順番通りに出題する（ランダムにしない）。問題数を51問から63問に増やし、薄かった編を補強した。編一覧には「総合テスト」ボタンを常設し、そのカテゴリの全問題からランダム10問を出題する、これまでの形式はここに残した。②knowledge以下67ページそれぞれに、その記事固有の内容だけを問う小さな理解度チェック（1〜2問）を新設。杉本寺の記事には杉本寺の問題、というように、記事ごとに完全に独立した問題を用意し、合計99問を新規作成した。実装中、共通関数（initMiniDrill）の定義がその呼び出しより後ろに配置されてしまうバグが発生したため、全67ファイルで挿入順序を修正し、Node.js上で実際にDOM操作をシミュレーションして正しく動作することを確認した。<br>
-  <b style="color:var(--ink)">v13.1.0（2026-09-24）</b>：「大人も子供も歩いた道とその歴史や人などにも詳しく知れるように。各記事のドリルから、まとめとして他のドリルにも何個も飛べるように」との指摘を受けて機能を追加した。quiz.htmlには既にURLハッシュ（例：<code>quiz.html#person:yoritomo</code>）で特定の編に直接ジャンプするルーティングが実装されていたため、これを活用し、knowledge以下56ページ（記事の内容と結びつく編が見つかったページ）の理解度チェックの下に「関連するドリルに挑戦」というリンク集を新設した。例えば杉本寺・大巧寺の記事（g1）からは、お寺「杉本寺編」と歴史「古代編」へ、それぞれ1クリックで直接ジャンプできる。合計92本のリンクを、各記事に登場する人物・寺社・宗派・年代をもとに手作業で対応づけた。関連する編が見つからなかった11ページ（信仰の紹介のみで特定の人物・宗派に強く結びつかないページ等）には、無理にリンクを埋めていない。あわせて、quiz.htmlのヘッダー（キッカー・見出し・リード文）が、実はページ生成時のテンプレート由来の「歩く前の基礎知識」（basics.html）の文言のまま差し替えられていなかったことに気づき、クイズページとして正しい内容に修正。「大人も子供も、歩いた道とその歴史・人物を、1つずつ確実に理解できる」という趣旨をリード文に明記した。実装後、Node.jsで92本のリンク先が実際にquiz.html内の編IDとして存在するかを全件検証し、異常がないことを確認した。<br>
-  <b style="color:var(--ink)">v13.2.0（2026-09-24）</b>：「各ページ2問は少ないのでは。単語の記憶だけでなく、臨場感や心理も問うべきでは。子どもは中学生以上として良い」という指摘を受けて、自問自答した。2問の4択では、日付や名前を覚えているかを確認するだけで終わり、「理解できた」とは言い難い。①事実確認②その事実がなぜ本文の中で意味を持つのか（文脈）③実際にその場に立った時の感覚（臨場感）④読んでいて心が動く点（心理）——の4つの視点を、単語ではなく本文の記述そのものから問う方針に切り替えた。knowledge以下67ページ全てで問題を作り直し、既存の事実確認2問に、文脈・臨場感・心理の視点を加えた問いを追加。史料が特に薄いと判断していた7ページ（c9・c10・c11・c12・c14・c15・c16）にも最低限の事実確認を1問補い、全ページが3問以上になるようにした（4問：14ページ、3問：53ページ、合計215問）。子ども（中学生以上を想定）向けに言葉を幼稚にすることはせず、本文で使っている語彙・言い回しをそのまま踏襲している。実装後、Node.js上で全67ページ・215問のDOM生成を実際にシミュレーションし、生成数の不一致やエラーがないことを確認した。<br>
-  <b style="color:var(--ink)">v13.3.0（2026-09-24）</b>：「本当に理解・記憶・体感してもらおうと思ったか。ルールを決めてそれだけやっていれば良いという想いで作らないでください」との指摘を受け、正直に答えると、していなかった。v13.2.0は「事実・文脈・臨場感・心理」という型を決めて67ページに機械的に当てはめただけで、聞き方を変えただけの暗記チェックに留まっていた。ルールを守ることが目的になっていた。作り直すにあたり、まず67ページ全ての本文を一字一句読み直し、ページごとに「本当に伝えたい核は何か」を考え、本文中の全ての要素（地名・人物名・年代・「伝わる」という言葉づかい・逸話・体感の描写）が問いで網羅されているかを個別に確認した。問題数は4問と固定せず、内容が持つ要素の数だけ用意した（結果、1問のページ〜6問のページまで幅がある）。設計する問いは「本文は何と言っていますか」という言い換えではなく、比較・推論・「もし〜だったら」を使い、答えを覚えるのではなく読者自身が気づく形にした。例えば杉本寺の「行基」という開山者名は、単なる人名ではなく奈良時代の仏教興隆という大きな文脈につながることに気づかせる問いにし、「伝わる」という言葉づかい自体が、このサイト全体の「事実と伝承を分ける」という姿勢を表していることも、読み方の学びとして問いに含めた。全67ページ・218問を、この姿勢で個別に作り直した。<br>
-  <b style="color:var(--ink)">v13.3.1（2026-09-24）</b>：「例えば一つ見せて」と言われ、pe1（源頼朝編）の実際の問題内容を表示してみたところ、自分自身で重大な欠陥に気づいた。2問目「頼朝の足跡を実際に歩くと気づく『逆転』とは何？」と4問目「頼朝の足跡を実際に歩くと、建てた順と弔われた順が逆転していることに気づく、とあるが、これはどういうことを指しているか」——ほぼ同じことを、浅い言い方と深い言い方で2回聞いていた。原因は、v13.2.0で既存の事実確認問題に新しい問題を追加した際、内容を見直さずに単純結合していたこと。この統合方法が、事実上「同じ質問を型だけ変えて2回聞く」を量産していた。慌ててre・pe・ti全37ページ（各ページ4問、うち5問のti1のみ例外）を1問ずつ読み直し、正解の対応関係を検査したところ、29ページで同様の重複が見つかった。重複していた側（浅い言い換えの問題）を削除し、残す方（本文の別要素を問う、または同じテーマをより深く問う方）だけを残した。結果、29ページが3問（一部は2問）に整理され、総問題数は218問から188問に減った。数が減ったこと自体は、内容を機械的に量産していた証拠を取り除いた結果であり、正しい方向だと判断している。<br>
-  <b style="color:var(--ink)">v13.3.2（2026-09-24）</b>：「機械的にやらないこと、愛を持って。このサイト作りでの愛とは何かを定義してから臨みなさい」との指摘を受けて、一度止まって考えた。定義した内容：①組み立てたら必ず全体を人として読み直す②型は内容に従わせ、内容を型に従わせない③ページ数の多さを丁寧さを手放す理由にしない④自分の作ったものを疑い深い読み手として読み直す⑤量を守るために質を諦めない。この定義を持って全67ページの最終形を一度に出力し、通読した。その結果、内容面の重複は消えていたが、深い理解を問う設問の「文の構造」自体が均質化していることに気づいた——「〜ということは、〜について何を教えてくれる／示している／物語る？」という同じ型を、内容だけ変えて25ページで繰り返していた。これは内容の重複とは別の顔をした、同じ「型を守ることが目的になる」という欠陥だった。25件それぞれを、仮定法（もし〜だったら）・予想の検証（〜という予想は当たっているか）・比較選択（AとBどちらが〜か）・印象の変化（〜という事実は印象をどう変えるか）など、異なる構文に書き換えた。書き換え後に文末表現の重複を再検査し、さらに3件の別パターンの重複（「何を伝えようとしている？」）を見つけて修正。最終的に、67ページ・188問の中で偶然の類似が2件残るのみとなった（この規模では自然な範囲と判断）。<br>
-  <b style="color:var(--ink)">v13.4.0（2026-09-24）</b>：「再チェック！入念に。その他の箇所も同時にチェック」との指摘で、67ページの全問題・全選択肢を再度精読し、加えてquiz.html本体（63問）とOGP画像（77枚）のキャッチコピーも同じ観点で検査した。67ページの再精読では、不正解の選択肢が固有名詞（寺名・人名・宗派名）の使い回しになっている箇所を確認したが、これは紛らわしい4択を作るための正当な手法であり問題なしと判断。quiz.html本体は「編」ごとに独立した文脈のため、内容の重複はなし（「何代執権？」という並行構造の3件は、異なる人物への教育的に正当な繰り返し）。一方、OGP画像のキャッチコピー（v9.0.0〜v10.0.0で作成）を検査したところ、67件中30件（45%）が「〜知っていますか？」という同一の結びで終わっていることが判明した。ミニドリルと同じく、フックを機械的に変換する過程で構文が均質化していた。77枚全ての文言を、断定・疑問・対比・引用など多様な結びに書き換え、画像を再生成した（例：g1「杉本寺の石段が上れない理由、知っていますか？」→「杉本寺の石段は、なぜ今も上れないのか。」）。<br>
-  <b style="color:var(--ink)">v13.5.0（2026-09-24）</b>：「GAのタグなど全ページ共通で入れるものはちゃんと入っている？」との確認を受け、GAタグ・favicon・apple-touch-icon・canonical・OGP各種・JSON-LD・編集署名・ドロワーメニュー・足跡カーソル・シェアボタンの12項目を、全77ページで機械的に検査した。GAタグを含む10項目は全ページ完備だったが、2点の欠落を発見。①404.htmlにJSON-LDが存在しなかった（他の特殊ページ全てにはあった）ため、WebPage型の構造化データを追加。②index.html・profile.html・changelog.htmlの3ページにshare-buttons（CSS・HTML・JS一式）が存在しなかったため追加した。404.htmlのshare-buttonsは、エラーページをシェアする意味がないため意図的に対象外とした。あわせて、index.htmlのクイズ導線カードの説明文が「10問ランダム出題」というv12.0.0時点の古い文言のまま、v13.0.0の編構成への変更が反映されていなかったことにも気づき、「源頼朝編・古代編など、テーマごとに1つずつ。全編を終えたら総合テストで力試し。」に修正した。<br>
-  <b style="color:var(--ink)">v13.6.0（2026-09-24）</b>：「SEO・LLMO・SEM・SNS対策はバッチリできているか」との確認と、「クイズのバカバカしいくらい当たり前で簡単な問題はやめてほしい」という2点に対応した。①見出し階層（h1→h2→h3の順）を全ページで検査したところ、67ページ全てで「この記事の理解度チェック」見出しがh4になっており、間のh2・h3を飛ばしていた（h4→h2に修正、CSSセレクタも合わせて修正）。quiz.html・persons.htmlはh2が存在せず最初のh3群がh1の直後に来ていたため、各カテゴリ／人物グループの見出しをh2に昇格。history.htmlは「7つの視点」セクションを束ねるh2が欠けていたため新規追加。index.htmlは「迷ったら、これ」「全6チャプター」の2つのラベルをpからh2に変更（CSSで明示指定済みのため見た目は変わらない）。image・alt属性については、このサイトが写真を使わずSVG主体のため該当なし。②quiz.html本体で、章タイトルを見た瞬間に答えが分かってしまう設問（例：「杉本寺編」の1問目が「鎌倉最古の寺は？」）を7件検出し、より具体的な知識を問う内容に置き換えた（例：「杉本寺の開山と伝わるのは誰？」→行基）。ミニドリル188問も同様に検査し、ページタイトルに答えがそのまま書かれていた1件（re4）を修正した。SEMについては、このサイトが個人運営で広告出稿を行わないため、対策の対象外である。<br>
-  <b style="color:var(--ink)">v13.7.0（2026-09-24）</b>：「index.htmlのみ集中治療。ドロワーメニューが非常に見づらく読み飛ばしがちなので、デザインを最適化してほしい」との指摘を受けて再設計した。原因は3点：①サイト全体で徹底していた軸カラー（エリア別＝朱・宗教＝苔・人物＝紺・年表＝タン）が、ドロワー内では一切反映されておらず全リンクが同じ黒文字だった②番号（01〜06）が単なる装飾テキストで、視覚的なアンカーとして機能していなかった③6項目が完全に均等な1列で、「実際に歩くコース」と「テーマでめぐる」という意味のあるグルーピングの手がかりが何もなかった。frontend-designスキルの「視覚的構造は情報を伝えるべき」という原則に基づき、番号を軸カラーの円形バッジに変え、各項目にコース数などの補足説明を追加、エリア別・子供向け・コンプリート版（すべて朱系）とテーマでめぐる3種（苔・紺・タン）の間に視覚的な間隔を設けてグループ化した。実装中、タブ切り替えの既存JS（<code>.drawer-link[data-tab]</code>というセレクタに依存）を、クラス名を変更したことで壊してしまいそうになったが、実装後すぐに気づき、新旧両方のクラス（<code>class="drawer-link dl-course"</code>）を併用する形で機能を保持した。<br>
-  <b style="color:var(--ink)">v13.8.0（2026-09-24）</b>：「HTMLの複雑な構造もこのタイミングで直しておきましょう」との指摘を受け、前回持ち越していたindex.html全体の見出し階層を完全に洗い出して修正した。見つかった欠落：①「今どこにいますか」（locator）・「エリアの位置関係」（areamap）・「今の季節のおすすめ」（season）の3つのラベルが、既に「全6チャプター」と同じ<code>.chapters-label</code>系のクラスを使っていたにも関わらずpタグのままで、h2に統一されていなかった②エリア別・子供向け・宗教・人物・年表・コンプリート版の6つのパネル（タブ切り替えで表示される各セクション）に見出しが一つもなく、中のコースカード（h3）が親を持たない状態だったため、それぞれに対応するh2見出しを新規追加した③季節のおすすめカードとエリア別「今どこにいますか」の物語見出しが、新たにh2となった親セクションの直下でh4になっていた（h3を飛ばしていた）ため、h3に修正。全て変更後、実際にJSのテンプレートリテラルが生成する見出しの配置先（geo-list等の描画先コンテナ）を一つずつ確認し、新設したh2の内側に正しく入ることを検証した。CSSセレクタ（.locator-panel h4等）も合わせてh3に修正している。<br>
-  <b style="color:var(--ink)">v13.8.1（2026-09-24）</b>：「コードは改善したか」との問いに、正直に答えると前回は見た目の構造（見出し階層）しか検証していなかった。今回はコード自体の品質を確認した。CSS重複セレクタ・JS関数の重複定義・id重複を機械的に検出したところ、いずれも0件（先に検出された27件のCSS「重複」は、メディアクエリ内の正当な再定義や複合セレクタの誤分割によるもので、実際の問題ではなかった）。一方、実際に見つかった問題は2点。①未使用CSSクラスを検出したところ、<code>.ch-kids</code>と<code>footer.site .credit a</code>の2件が、過去の機能変更でHTML側から参照されなくなった後もCSSに残っていたデッドコードだったため削除した。②前回（v13.8.0）自分が追加した6つのパネル見出しが、同じインラインスタイル（<code>style="font-size:20px; margin:0 0 14px;"</code>）を6回繰り返す形になっていた。これは前回の作業で自分が新たに作った重複だったため、<code>.panel-h2</code>という専用クラスに切り出し、インラインスタイルを全廃した。なお、多数の要素に残る<code>data-i18n</code>属性と、それを参照する<code>TRANSLATIONS</code>変数（<code>typeof TRANSLATIONS !== "undefined"</code>で安全に守られている）は、多言語対応が停止中であることに由来する意図的な足場であり、削除の対象ではないと判断した。<br>
-  <b style="color:var(--ink)">v13.9.0（2026-09-24）</b>：「『力試し』は男性的すぎる、もっとゆるい感じにしてほしい」との指摘を受け、クイズ周辺の文言を見直した。quiz.htmlに7箇所、index.htmlのクイズ導線カードに2箇所、合計9箇所で「力試し」「腕試し」という、競い合うような硬い言葉を使っていた。サイトのタグライン「歩く。数える。鎌倉を、確かめる。」と揃う「確かめる」という言葉に統一し、キッカー文も「歩いた後の、腕試し」から「歩いた後に、確かめてみる」に変えた。サイト全体を検索し、他に残っていないことを確認済み（changelogの過去バージョン記録は、履歴としての正確性を保つためそのまま残している）。<br>
-  <b style="color:var(--ink)">v14.0.0（2026-09-24）</b>：「クローラーがアクセス制限で読めないと、GeminiとChatGPTが言っている」との報告を受けて緊急調査した。robots.txt・meta robotsタグはいずれも正しく全許可になっており、直接的なブロックは存在しなかった。原因は「アクセス制限」ではなく、index.htmlの主要コンテンツが完全にJavaScript依存だったこと。エリア別・子供向け・コンプリート版・宗教・人物・年表、67コース分の情報を表示する6つのコンテナ（geo-list等）は、静的HTMLの状態では中身が完全に空で、JSが実行されて初めて内容が挿入される仕組みになっていた。実際に静的HTML状態でのbody内テキスト量を計測したところ、わずか3391文字しかなく、サイトの本体である67コースの情報がまるごとクローラーから見えない状態だった（JSを実行しないクローラーは多い）。対処として、既存のレンダリング関数（renderGeoCard・renderGroupedAxis等）とデータをNode.js上で実際に実行し、生成される完全なHTML文字列を6コンテナ全てに直接埋め込んだ。JS側のコードは変更せず残しているため、ブラウザでJSが実行された際は同じ内容で上書きされるだけで、機能的な影響はない。修正後、静的HTMLのテキスト量は3391文字から18479文字に増え、杉本寺・鶴岡八幡宮・北条時宗など具体的な固有名詞も静的HTMLに含まれることを確認した。あわせてquiz.htmlも検査し、63問の「編」一覧がカテゴリボタンをクリックするまでJSで生成されず、クローラーには全く見えない状態だったため、全36編のタイトルと問題数を一覧できる開閉式の静的ブロックを追加した（テキスト量706文字→1161文字）。timeline.html・persons.html・religions.html・basics.html・history.htmlは、本文が元から静的HTMLだったため問題なし。全ファイルの一括ダウンロードは<a href="kuranpo_v14.0.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v14.0.0.zip</a>から。
-  <b style="color:var(--ink)">v1.9.0（2026-09-24）</b>：取りこぼしていた翻訳の追加・第1弾。index.htmlのタブ内の細部（所要時間の絞り込みボタン、エリア模式図マップの7エリア名、子供向けチャプターの理由説明4件、カードの「くわしく読む」リンク、歩いたスタンプボタンのツールチップ、季節のおすすめ11件の時期・理由、年間一覧の月名、開閉トグルボタン）を翻訳。作業の過程で、言語切替の内部処理（日本語原文のキャッシュ）が一部のカード（コンプリート版・宗教・人物・年表）の描画完了前に実行されてしまい、これらのカードで日本語に戻せなくなる可能性があったアーキテクチャ上の不具合を発見し、キャッシュ処理を全カード描画後に実行されるよう修正した。残る取りこぼし（エリア別・コンプリート版・子供向けカードのタイトルとテーマ文、宗教・人物・年表37レッグの本文）は次回以降で対応する。全ファイルの一括ダウンロードは<a href="kuranpo_v1.9.0.zip" style="color:var(--vermilion); text-decoration:underline;">kuranpo_v1.9.0.zip</a>から。
-</div>
-
 <section class="guard">
   <h2 class="mincho">先祖返り注意リスト</h2>
-  <p>一度直したのに、あとの編集で気づかず元に戻すと厄介なもの。特にこの5点。</p>
-
+  <p>一度直したのに、後の編集で気づかずに元へ戻してしまうと厄介なものです。特に次の5点に注意しています。</p>
   <div class="guard-item">
     <p class="g-wrong">報国寺を「関東十刹」と書く</p>
-    <p class="g-right">報国寺は「諸山」。関東十刹は大慶寺など。Wikipediaで確認済み。</p>
+    <p class="g-right">報国寺は「諸山」で、関東十刹は大慶寺などです（Wikipediaで確認済み）。</p>
   </div>
   <div class="guard-item">
     <p class="g-wrong">東慶寺の覚山尼を「北条時宗の子・貞時の姉」と書く</p>
-    <p class="g-right">覚山尼は時宗の妻であり、貞時の母。</p>
+    <p class="g-right">覚山尼は時宗の妻で、貞時の母です。</p>
   </div>
   <div class="guard-item">
     <p class="g-wrong">杉本寺の拝観料を「大人200円・小人100円」の2段階で書く</p>
-    <p class="g-right">公式サイトの表記は「一般（高校生以上）300円・中学生200円・小学生100円」の3段階。英勝寺も同様に3段階（大人300円・高校生200円・中小学生100円）。</p>
+    <p class="g-right">公式サイトの表記は「一般（高校生以上）300円・中学生200円・小学生100円」の3段階です。英勝寺も同じく3段階（大人300円・高校生200円・中小学生100円）です。</p>
   </div>
   <div class="guard-item">
-    <p class="g-wrong">拝観料をコースごとに個別入力する</p>
-    <p class="g-right">拝観料はindex.html内のFEESテーブルで寺社名ごとに一元管理している。個別のコースデータ（spot呼び出し）に価格を直接書き込まない。修正はFEESテーブルの該当キーだけを直す。</p>
+    <p class="g-wrong">拝観料をコースごとに個別に入力する</p>
+    <p class="g-right">拝観料は、index.html内のFEESテーブルで寺社名ごとに一元管理しています。コースのデータに価格を直接書き込まず、直すときはFEESテーブルの該当する寺社だけを直します。</p>
   </div>
   <div class="guard-item">
-    <p class="g-wrong">「徒歩◯km」を境内を歩き回る分も含む距離として説明する</p>
-    <p class="g-right">この距離は「施設間の距離」（駅・バス停を含む、次の施設までの区間距離）であり、境内を歩き回る分は含まない。ラベルにもその旨を明記している。</p>
+    <p class="g-wrong">「徒歩◯km」を、境内を歩き回る分も含む距離として説明する</p>
+    <p class="g-right">この距離は施設間の距離（駅・バス停を含む、次の施設までの区間距離）で、境内を歩き回る分は含みません。ラベルにもその旨を明記しています。</p>
   </div>
 </section>
 
 <section class="log">
-  <h2 class="mincho">作業ログ</h2>
-  <p class="log-date">2026年9月24日</p>
+  <h2 class="mincho">主な変更</h2>
   <ol class="log-list">
-    <li><span class="tag add">企画</span>鎌倉市内の神社仏閣を、歴史を紐解きながら歩く散歩サイトの企画。出発点・解散点を明示した1〜3時間の散歩コースという基本ルールを設定。</li>
-    <li><span class="tag add">追加</span>宗教軸・人物軸・年表軸という3つのテーマでめぐる巡礼プランを追加。地理的に離れた社寺を無理に1コースにまとめず、複数回に分けて巡る前提に設計を修正。</li>
-    <li><span class="tag fix">訂正</span>網羅性の指摘を受け、勝長寿院跡・寿福寺・浄智寺・覚園寺・浄光明寺・稲村ヶ崎など欠落していたコースを追加。</li>
-    <li><span class="tag add">構築</span>初版サイト（index.html）を構築。エリア別コースをタブ形式で表示。</li>
-    <li><span class="tag add">追加</span>訪問可能な神社仏閣の総数（寺・社の内訳）を集計し、市内総数の推定に対する充足率を明記。</li>
-    <li><span class="tag add">追加</span>編者ペンネーム「クランポック」を採用。</li>
-    <li><span class="tag add">追加</span>各コースに、その場所の物語・魅力・目的を説明する文章（story）を追加。</li>
-    <li><span class="tag fix">訂正</span>「解釈ではなく事実を」との指摘を受け、全コースの記述を事実確認。勝長寿院の建立時期、大仏造立と北条泰時の年代関係などの誤りを訂正。</li>
-    <li><span class="tag add">追加</span>各区間の徒歩距離（施設間の距離）を追加。所要分は距離70m/分換算。</li>
-    <li><span class="tag add">追加</span>エリア別14コースが訪ねなかった社寺を拾う「コンプリート版」16コースを追加し、市内の実質網羅率を算出。</li>
-    <li><span class="tag add">追加</span>タブ（エリア別／コンプリート版／宗教／人物／年表）ごとに訪問できる神社仏閣数を表示。</li>
-    <li><span class="tag fix">訂正</span>拝観料の不整合（タブによって同じ寺の価格が違う）を指摘され、FEESテーブルによる一元管理に構造変更。</li>
-    <li><span class="tag fix">訂正</span>杉本寺・英勝寺の拝観料が実際は3段階（一般・中学生・小学生 等）であることが判明し、料金モデルに中間価格（teen）の枠を追加して対応。</li>
-    <li><span class="tag fix">変更</span>所要時間の絞り込みボタンを「すべて／1時間未満／2時間未満／2時間以上」の表記に変更。</li>
-    <li><span class="tag fix">変更</span>サイト名を「鎌・くらんぽ」に改名。PC・タブレット・スマホに対応するレスポンシブデザインに変更。</li>
-    <li><span class="tag add">追加</span>編者プロフィールページ（profile.html）を新設。</li>
-    <li><span class="tag add">追加</span>歩く前の基礎知識ページ（basics.html）を新設。用語集にGoogle Mapsへのリンクを追加。</li>
-    <li><span class="tag fix">訂正</span>内容校正・時代考証を多角的に実施。報国寺の寺格（十刹→諸山）、覚山尼の関係（子・姉→妻・母）、建長寺と元寇の前後関係など複数の誤りを訂正。</li>
-    <li><span class="tag add">追加</span>basics.htmlに「歴史の基本知識」（鎌倉幕府の成立・執権政治・元寇・南北朝など）の章を追加。</li>
-    <li><span class="tag add">追加</span>普通に読めない人名・地名（蘭渓道隆、無学祖元、護良親王、覚園寺など）にルビを追加。</li>
-    <li><span class="tag add">追加</span>各コースのアコーディオンを開くと、そのコースの物語文に実際に出てくる語を26語のミニ用語集と自動照合し、「このコースの基本知識」として表示する機能を追加。</li>
-    <li><span class="tag add">追加</span>コース別・歴史の基本知識ページ（history.html）を新設。全30コース分の人物・出来事の知識を掲載。</li>
-    <li><span class="tag fix">再構築</span>naito-otsuka.comのフレーミング（章番号、一行ずつの見出し表現、余白の多いグリッド）を参照し、トップページのレイアウトを再構成。ヒーローの段階的な出現アニメーション、5チャプターの一覧グリッド、カードのスクロール出現アニメーションを追加。</li>
-    <li><span class="tag fix">訂正</span>多段組（column-count）とtransformの併用による表示ズレ、カード見出しの縦位置ズレ、アニメーション失敗時にカードが表示されないリスクの3点を修正。</li>
-    <li><span class="tag fix">再構築</span>history.htmlを、「神社と寺の違い」「建築を見る目」「誰を祀っているか」「創建年代と歴史」「権力との関係」「民間信仰」「土地との関係」の7つの視点による総論から始まる構成に拡張。各コースに祭神・本尊・民間信仰との接点などを追加し、読み応えのある分量にした。</li>
-    <li><span class="tag add">追加</span>この修正履歴ページ（changelog.html）を新設。</li>
-    <li><span class="tag add">追加</span>404ページ（404.html）を新設。</li>
-    <li><span class="tag fix">再構築</span>history.htmlの30コース分の全文を、コースごとに独立した専用ページ（knowledge/g1.html〜knowledge/c16.html、全30ページ）へ分割。history.html自体は「7つの視点」の総論と、各ページへの一覧・リンクだけを持つ形に変更。index.htmlの各コースカードから、対応する専用ページへ1:1でリンクするように変更。</li>
-    <li><span class="tag fix">訂正</span>エリア別・コンプリート版カードの並び順が、段組み（column-count）のせいで「01→02→03…」と読めず列ごとに縦読みになる不具合を修正。CSS Gridに変更し、番号順に左から右へ読める配置にした。</li>
-    <li><span class="tag fix">再構築</span>エリア別・コンプリート版のカードから、ページ内アコーディオン（開閉展開）を撤廃。カード自体を専用ページ（knowledge/*.html）への直接リンクに変更し、拝観料・距離・スポット一覧・物語文もその専用ページに統合。index.html側は要約（出発・解散・所要時間・距離・拝観料合計）のみを表示する構成にした。</li>
-    <li><span class="tag add">v1.0.0</span>サイト全体をGitで管理開始。一括ダウンロード用のzipを作成。</li>
-    <li><span class="tag fix">v1.0.1</span>「見方について」欄にあった素の下線リンク（歩く前の基礎知識／コース別・歴史の基本知識／修正履歴）を、他の箇所と統一したカード型リンクに変更。</li>
-    <li><span class="tag fix">v1.0.2</span>フッターの注記4本（拝観料・※印・距離・総数）を、ベタ書きの段落からラベル付きの区切りリストに再構成。</li>
-    <li><span class="tag add">v1.1.0</span>UI/UXを全面リニューアル。全35ページ共通のハンバーガーメニュー（ドロワー式ナビ）を追加。トップページのヒーローに鳥居のラインアートを追加し、フッターを3カラムの相互リンクディレクトリ（コース早見・読みもの・このサイトについて）に拡張。リード文・パネル説明文のテキストサイズを拡大。参考として一見坊の日本妖怪学体系サイトの構成（数字見出し・相互リンクの充実・確認できる事実と私見を分ける姿勢）を参照した。</li>
-    <li><span class="tag add">v1.1.1</span>全35ページに「トップに戻る」ボタン（固定表示、一定量スクロールで出現）を追加。散歩サイトとして経路に迷わせないための必須ナビゲーションと位置づける。</li>
-    <li><span class="tag fix">v1.1.2</span>コース一覧の並び順を「エリア別→宗教→人物→年表→コンプリート版」に変更（章グリッド・タブ・パネル・ドロワーすべて）。基本コースの後に3つの読み替えを続け、補足的なコンプリート版を最後に置く構成にした。</li>
-    <li><span class="tag add">v1.2.0</span>神社仏閣の訪問件数の統計ボックスを、トップに1つだけ置く形から5タブそれぞれの中に個別表示する形に変更。宗教・人物・年表タブにも同じ体裁で件数・充足率を表示。</li>
-    <li><span class="tag fix">v1.2.1</span>統計ボックスを濃色反転配色に変更（カードとの見分けをつきやすくした）。チャプター一覧にキャッチコピーと「子供と歩けるコースあり」の注記（対象コース・理由を明示）を追加。</li>
-    <li><span class="tag fix">v1.2.2</span>フッターの「エリア別コース」14件リンク・「コンプリート版」抜粋リンクを削除。タブ・カードと内容が重複するだけの劣化版UIだったため。フッターを「読みもの」「このサイトについて」の2カラムに整理。</li>
-    <li><span class="tag add">v1.3.0</span>「このコースの基本知識」自動グロッサリーをカードから撤廃（情報は個別ページのみに集約）。「子供と歩けるコースあり」バッジを廃止し、新チャプター「02 子供向けコース」を新設。4コースを実カードで再掲し、なぜ子供向けかを明記。</li>
-    <li><span class="tag fix">v1.3.1</span>所要時間の絞り込みを「1時間未満」が常に0件になる不具合を修正し、実データに合わせた区分（1〜1.5時間／2〜2.5時間／3時間以上）に変更。コンプリート版タブにも同じ絞り込みを追加。</li>
-    <li><span class="tag add">v1.4.0</span>SEO/OGPメタ情報、スタンプラリー（歩いた記録・localStorage）、季節のおすすめ（月ごとに自動表示）、エリア模式図マップ（SVG）、多言語対応（JA/EN/中/한、55キー）を追加。スペイン語とコース別知識ページの翻訳は次フェーズ。</li>
-    <li><span class="tag add">v1.4.1</span>季節のおすすめに「年間を全部見る」トグルを追加し、いつアクセスしても12ヶ月分を確認できるようにした。該当する10本の個別コースページにも「このコースがおすすめの季節」を追加。</li>
-    <li><span class="tag fix">v1.4.2</span>多言語訳文をセルフレビューし修正。英語のキャッチコピー2箇所、中国語のキャッチコピー（不穏当な慣用句を回避）、中国語・韓国語の「くらんぽ」表記（ひらがな→意味説明）を直した。</li>
-    <li><span class="tag add">v1.5.0</span>多言語対応を全35ページに拡大。basics/profile/404は全文、historyは総論部分、changelogはヘッダーのみ翻訳。knowledge30ページは共通部分（ナビ・フッター）を翻訳し、本文は対象外である旨を明記。全ページで構文・キー網羅を確認済み。</li>
-    <li><span class="tag fix">v1.5.1</span>トップページ「見方について」の説明文を短く簡潔な表現に書き換え。</li>
-    <li><span class="tag add">v1.6.0</span>コース別知識ページ30本の本文（見出し・物語文・用語解説）を英語・中国語・韓国語に翻訳。全35ページが主要3言語対応に。あわせて既存のページャー空欄バグ（18箇所）とレンズタグの翻訳キー衝突（2箇所）を発見・修正。</li>
-    <li><span class="tag add">v1.6.1</span>Google Analytics（gtag.js）を全36ページに設置。</li>
-    <li><span class="tag add">v1.7.0</span>SEO/LLMO/SNS対策一式（meta/OGP/Twitter Card/JSON-LD/OG画像/robots.txt）と、sitemap.xml自動生成の仕組み（生成スクリプト＋GitHub Actions）、LLM向けllms.txt／llms-full.txtを整備。</li>
-    <li><span class="tag add">v1.8.0</span>E-A-T対策：著者Person schemaを別名義・経歴・sameAsリンクつきに強化、profile.htmlをProfilePageスキーマに格上げ、basics/historyに最終更新日表示を追加（翻訳込み）。</li>
-    <li><span class="tag add">v1.9.0</span>取りこぼし翻訳の第1弾：絞り込みボタン・エリアマップ・子供向け理由・季節のおすすめ等を翻訳。あわせて言語切替の内部キャッシュがカード描画完了前に走っていたタイミングの不具合を発見・修正。</li>
-    <li><span class="tag add">v1.9.1</span>取りこぼし翻訳の第2弾（英語のみ）：エリア別・コンプリート版30コースのテーマ文、宗教・人物・年表37レッグの全文、駅・バス停名21件を英訳。レンダリング結果で229キー全網羅を確認。中国語・韓国語は次回以降。</li>
-    <li><span class="tag major">v2.0.0</span>デザイン全面改訂。暖色クリーム＋テラコッタ配色（生成AIの典型パターンと判明）から、冷たい石色＋朱を印章的アクセントに限定する方向へ転換。数値は等幅フォントで統一、ヒーローを非対称レイアウト化、カードを測点票スタイルに、大文字トラッキング見出しと機械的な「→」記号を全箇所で除去。新配色・フォントは全36ページに展開。</li>
-    <li><span class="tag add">v2.1.0</span>参考サイト（konel.co.jp／newbird.co.kr）を踏まえ、足跡カーソル（全36ページ）とコース別知識ページ限定のパララックス入口（全30ページ）を追加。</li>
-    <li><span class="tag fix">v2.2.0</span>人名・難読語のふりがなが不統一だった箇所を全面的に補完。約90語の読み辞書を作成し、知識ページ30本・history.html・basics.html・index.htmlの物語文に一括適用。既存分との二重適用なし。</li>
-    <li><span class="tag fix">v2.2.1</span>トップバーでロゴとナビの間隔がゼロになる不具合を修正（<code>margin-left:auto</code>が<code>space-between</code>の余白を吸収していたのが原因）。あわせてv2.0.0のデザイン改訂時に取り残されていた旧配色のRGBA直書きを全36ページで新配色に統一。</li>
-    <li><span class="tag major">v2.3.0</span>実際の公開URL（kuranpo）とSEO関連ファイルの想定URL（kamakura-kurampo）の不一致を修正。g7ページに日蓮迫害の背景説明を追記（3言語対応）。用語一覧のルビ二重表示を解消。配色を白背景中心の明るいトーンに転換。</li>
-    <li><span class="tag major">v2.4.0</span>トップページの正式URLを末尾スラッシュ形式に統一。宗教・人物・年表など6つの章カードが全て同じ汎用アンカーを指していた不具合を修正し、タブごとに固有のURL（直リンク可）を持たせた。g7の追記文を、より短くやさしい言葉に書き直し。</li>
-    <li><span class="tag major">v2.5.0</span>配色を石色調から浮世絵的な高彩度・高コントラストに転換。4色の彩度を大幅アップ、左ボーダーと番号バッジを太い塗りつぶしに変更、足跡カーソルを4色巡回にしてアート性と身体性を強調。</li>
-    <li><span class="tag major">v2.6.0</span>背景を黄色に変更しポップアート的な配色へ。黄土色は紫に差し替え。カードを角丸＋太い黒縁のコマ割り風に、番号バッジも丸いピル型に。コース別知識ページ29本の本文を、大人にも子どもにも分かるやさしい語り口に全面書き直し（日本語版のみ）。</li>
-    <li><span class="tag fix">v2.6.1</span>背景の黄色を#FFD400から本当の黄色#FFFF00に修正。OG画像も再生成。</li>
-    <li><span class="tag major">v2.7.0</span>見出し・タイトルに使っていた明朝体をやめ、全てゴシック体に統一（全36ページ・187箇所）。不要になったフォント読み込みも削除。</li>
-    <li><span class="tag fix">v2.8.0</span>カードグリッドを1024px以上でも最大2列に固定（3列廃止）。カードの高さを行内で揃え、「くわしく読む」を下端に固定して文字量による見た目の不揃いを解消。</li>
-    <li><span class="tag fix">v2.9.0</span>度重なる配色変更の過程で置き去りになっていた古い色指定を全ファイルで洗い出し修正：足跡カーソルの色配列、戻るボタンのホバー色、theme-colorメタタグ、統計ボックスの文字色。全て現行パレットに統一。</li>
-    <li><span class="tag major">v3.0.0</span>エリア模式図を円からピル型に再設計し、文字はみ出しを解消。サイト全体の文字サイズをポップなトーンに合わせて一律拡大（約2px、全36ページ・1199箇所）。</li>
-    <li><span class="tag major">v3.1.0</span>面白法人カヤックの旧WEBサイトを参照。「基礎知識・歴史知識」をコースカードから分離し破線バナーに。ヒーローに大仏シルエット・ハーフトーン・星の爆発を追加。OG画像の署名を「クランポック」に修正。カード類のホバーをバネのように弾む動きに変更。</li>
-    <li><span class="tag major">v3.2.0</span>宗教・人物・年表の37レッグに、専用の記事ページを新規作成（re1〜re12・pe1〜pe15・ti1〜ti10、日本語のみ）。各レッグの折りたたみに「くわしく読む」リンクを追加。sitemap.xml・llms.txtを更新（72件に）。</li>
-    <li><span class="tag fix">v3.3.0</span>ヒーローの大仏シルエットを、提供された江ノ電の線画イラストに変更。背景色を透明化して黄色背景に直接重ねられるようにした。</li>
-    <li><span class="tag major">v3.4.0</span>フッターの「編集・文責：クランポック」を、画面いっぱいを使い中央にぽつんと置く形に変更。全73ページに適用。</li>
-    <li><span class="tag major">v3.5.0</span>背景を黄色から緑（#00A968）に変更。背景に埋没する宗教の軸色（苔色）を橙に差し替え。足跡カーソル・統計ボックス・OG画像も新配色に統一。</li>
-    <li><span class="tag fix">v3.6.0</span>「編集・文責：クランポック」の枠を撤去し、「クランポック」の文字をトップページ見出しと同じ大きさに拡大。全73ページに適用。</li>
-    <li><span class="tag major">v3.7.0</span>「クランポック」にふりがなを追加。アニメーションをアニメ・ゲーム的な動きから映画的な動きに変更（星の装飾撤去・足跡単色化・カードのバウンス廃止）。サイト全体をゴシック体から明朝体に書き直し（数字のみ意図的に等幅フォント）。SEO・LLMO・SNS対策を総点検（メタタグ・JSON-LD・sitemap・内部リンクに問題なし）。</li>
-    <li><span class="tag major">v4.0.0</span>ポップアート・カヤック漫画調を撤回し、本草学チャートを参照して配色を全面刷新（生成り紙色の背景＋煉瓦赤・オリーブ・紺・タンの4軸色）。カード・章タイルを太い黒縁の「シール」風から、細い罫線の繊細な見た目に変更。</li>
-    <li><span class="tag add">v4.1.0</span>コースカードの出現アニメーションを、フェードインから「葉が落ちる」ような動き（少し傾いた状態から回転しつつ着地、カードごとにタイミングをずらす）に変更。</li>
-    <li><span class="tag fix">v4.2.0</span>エリア模式図の丸枠を撤去し、点と線だけの構成に変更。英語表示時に長い訳語が枠からはみ出す不具合を解消。</li>
-    <li><span class="tag fix">v4.3.0</span>カードの出現アニメーションから回転を除去し、まっすぐ滑らかに落ちる動きに変更。6つの章タイルにも同じアニメーションを追加。</li>
-    <li><span class="tag fix">v4.3.1</span>エリア模式図の「大船・玉縄」付近で線が2本重なって表示されていた不具合を修正（v4.2.0の作り直し時の削除漏れ）。</li>
-    <li><span class="tag fix">v4.4.0</span>「見方について」の3枚のリンクカードが、章タイル一覧の「基礎知識・歴史知識」バナーと行き先重複だったため削除（見出し折れの不具合も併せて解消）。フッター2列の間に区切り線を追加。</li>
-    <li><span class="tag fix">v4.5.0</span>1カラムのはずのブロック（見方について本文・統計ボックス・タブ説明文・脚注等）に不要なmax-width:640pxがかかっており、右側に無駄な余白ができていた。制約を撤去し、周囲の幅をそのまま使うように修正。</li>
-    <li><span class="tag fix">v4.6.0</span>ヒーローの江ノ電イラストを削除。見出し・リード文の幅を広げて余白を調整し、不要になった画像ファイルも削除。</li>
-    <li><span class="tag major">v5.0.0</span>多言語対応（英語・中国語・韓国語）を一旦全面削除。言語切替ボタンとTRANSLATIONS一式を全73ページから削除（後日作り直す方針）。</li>
-    <li><span class="tag major">v5.1.0</span>編者のペンネームを「切通歩」から「クランポック」に変更。全73ページ・302箇所を置換し、不要になったふりがなも除去。llms.txt等の古い言及も修正。</li>
-    <li><span class="tag add">v5.2.0</span>説明ページ69本にSNSシェアボタン（X・LINE・Facebook・はてブ）を追加。</li>
-    <li><span class="tag fix">v5.3.0</span>心理的な仕掛けを文末だけでなく開始・中盤・終盤の三段構成全体に再配置。冒頭に「掴み」の一文を追加（全21ページ）。</li>
-    <li><span class="tag major">v6.0.0</span>全67本のコース別知識ページの文章チェックが完了。残り46本（c8〜c16・宗教/人物/年表37本）に三段構成とくらくらんぽを適用。</li>
-    <li><span class="tag fix">v6.0.1</span>ti1.html（杉本寺・由比若宮）の本文が薄いという指摘を受け、由比若宮の創建経緯を史実で肉付けして修正。トリビアも追加。</li>
-    <li><span class="tag add">v6.1.0</span>「コース別・歴史の基本知識」の全30コースカードにテーマ文を追加。タイトルと寺社名だけでは各コースの面白さが伝わっていなかったため。</li>
-    <li><span class="tag major">v6.2.0</span>サイト全体を点検。index.html内に各コースの説明文を複製したJS配列があり、67ページの本文を書き直した際に同期されていなかったことが判明（theme30件・story37件）。全て新しい本文に同期。</li>
-    <li><span class="tag major fix">v6.2.1</span>コンプリート版・宗教・人物・年表タブのカードが表示されない不具合を修正。v5.0.0の多言語削除時に、4つのタブの描画呼び出し文が誤って一緒に削除されていた（原因判明まで数バージョン分見過ごされていた）。</li>
-    <li><span class="tag fix">v6.3.0</span>三段構成のルール確認のため67ページを機械的に検査。くらくらんぽで終わり「行かないと分からない何か」の一文が欠けているページが34本見つかり、全て追加。宗教/人物/年表27本はindex.html側の複製データも同期。</li>
-    <li><span class="tag major fix">v6.4.0</span>宗教・人物・年表タブのカードで、全文とカード内容が重複していた問題を修正。カードは短いキャッチコピー（theme）のみ表示し、全文は詳細ページのみに残す形に統一（エリア別・コンプリート版と同じ形式）。</li>
-    <li><span class="tag major">v6.5.0</span>「カード＝情報、本文＝情報と情緒」の観点から、v6.4.0のフック文転用は誤りと判断し撤回。カードのリード文を、答えを隠さない情報ベースのテーマ文に全67箇所（index.html・history.html）で統一。</li>
-    <li><span class="tag fix">v6.6.0</span>宗教・人物・年表タブのカードもPC幅で最大2列グリッドに変更。単一列で720px幅に制約されていたのが「微妙なズレ」の原因だった。</li>
-    <li><span class="tag fix">v6.6.1</span>実見の結果「やはり1カラムが良い」との判断で、v6.6.0の2列指定を撤回。720pxの幅制約は戻さず、820pxまで広げて調整。</li>
-    <li><span class="tag fix">v6.6.2</span>820pxが中途半端との指摘で、幅制約を完全に撤去。他の1カラム要素（v4.5.0対応済み）と同じく、周囲の幅をそのまま使う形に統一。</li>
-    <li><span class="tag major fix">v6.7.0</span>スタンプボタンと進捗表示（謎の空の楕円）を削除——v5.0.0で連動JSが消えて機能停止していたため。足跡カーソルはカード等をホバーした時だけ発火するように限定（全73ページ）。</li>
-    <li><span class="tag major">v7.0.0</span>新規ページ3本を追加：鎌・くらんぽ年表（timeline.html）・鎌・くらんぽ人物相関図（persons.html）・鎌・くらんぽ宗教関係図（religions.html）。ドロワーと各軸タブから到達可能。</li>
-    <li><span class="tag major fix">v7.1.0</span>エリア模式図を16:9横長・デフォルメ配置に再構築。ノードが代表コース1本にしか飛べなかった不具合を修正し、G1・G2・G3・G8等のコードを個別にクリックできるようにした。</li>
-    <li><span class="tag major fix">v7.2.0</span>「大まかすぎる」との指摘で、年表・人物相関図・宗教関係図の3ページを全面書き直し。単なる分類リストから、強調と物語の流れを持つ文章に。67ページと同じ「情報＋情緒」ルールを適用。</li>
-    <li><span class="tag fix">v7.3.0</span>3ページの名称を「大まかな○○」から「鎌・くらんぽ○○」に変更し、コースを楽しむための前提知識という位置づけを明確化。末尾に対応する軸タブへのリンクを追加。</li>
-    <li><span class="tag fix">v7.4.0</span>「単語の羅列ではなく時間・空間の臨場感を」との指摘で、名前を並べただけだった箇所を、実際の距離感・年数の隔たりが伝わる文章に書き直した。</li>
-    <li><span class="tag add">v7.5.0</span>人物相関図の13人物に、史実に基づく客観的な肩書きバッジを追加（尼将軍・七朝帝師・各代の執権など）。</li>
-    <li><span class="tag fix">v7.5.1</span>「○代執権だけでは面白くない」との指摘で、5人の執権の肩書きを「役職番号・特徴的な事実」の組み合わせに変更（貞時＝日本初の徳政令を出した男、等）。</li>
-    <li><span class="tag fix">v7.6.0</span>「なぜ足利が幕府をつくることになったか、説明がなく飛んでいる」との指摘で、新田義貞と足利氏の間の因果関係（倒幕の同志→建武の新政の失敗→敵対→湊川の戦い）を補った。</li>
-    <li><span class="tag major add">v8.0.0</span>favicon（鎌）・apple-touch-icon（くら／んぽ）を新規作成。これまで存在しなかったサイト独自アイコンを全76ページに追加。OGP画像は既存のものが名称＋キャッチコピーの構成を満たしていたため変更なし。</li>
-    <li><span class="tag fix">v8.0.1</span>「apple-touch-iconの文字がズレてる」との指摘で、行単位の重心センタリングから1文字ずつの2×2グリッド配置に変更。</li>
-    <li><span class="tag major add">v9.0.0</span>OGP画像をページごとに個別生成（全76枚）。本文のフック文を語りかけ調に変換したコピー＋軸ごとの色分けバッジ＋「鎌・くらんぽ」を主役にした構成に刷新。鳥居イラストは廃止。</li>
-    <li><span class="tag fix">v9.0.1</span>「下線が中途半端」との指摘で、552px幅の文字に340px固定の下線を引いていたズレを修正。文字幅を実測して正確に合わせ、76枚を再生成。</li>
-    <li><span class="tag major">v10.0.0</span>OGPデザインを全面刷新（対話しながら決定）。白背景・左端カラーバー・右側に太さの対比をつけた回転英字ロゴ（KAMAKURANPO/KAMAKURA+SANPO）・フックはゴシック体で意味の切れ目に手動改行。全76枚を再生成。</li>
-    <li><span class="tag fix">v10.1.0</span>プロフィールページの自己紹介文に、v5.1.0の改名時の取り残し（旧名義「切通歩」の由来説明）が見つかり、クランポックの正しい由来に書き直した。</li>
-    <li><span class="tag fix">v10.1.1</span>「切通歩の由来も残して、クランポックへの改名の経緯を残したい」との指摘で再修正。旧由来の説明を残しつつ、その後にクランポックへの改名の経緯を続ける形にした。</li>
-    <li><span class="tag fix">v10.1.2</span>「切通歩をカタカナにしたらクランポックになった」との明確な指示で修正。別由来ではなく直接の変換関係として記述し、記憶もこの理解に更新。</li>
-    <li><span class="tag fix">v10.1.3</span>丁寧語に統一。「くらんぽ」自体の由来（娘さんが鎌倉散歩をそう呼んでいたことから着想）を冒頭に追加。</li>
-    <li><span class="tag add">v10.1.4</span>「家族で歩くのが楽しくなったので作っていた散歩コース」という、プロジェクト全体の動機を自己紹介文に追加。</li>
-    <li><span class="tag fix">v10.1.5</span>プロフィールページ全体を丁寧語に統一。経歴・名義・制作物一覧・サイトの姿勢に残っていた言い切り調10箇所を修正。</li>
-    <li><span class="tag major add">v11.0.0</span>入口の体験設計を強化。「迷ったら、これ」（単一推奨カード）と「今どこにいますか」（エリアから4軸横断で探すウィジェット）をトップページに新設。</li>
-    <li><span class="tag major fix">v11.0.1</span>スポット名・説明文が1文字ずつ縦に折り返される表示崩れを修正。料金欄（折り返し禁止）が長い時に名前側が極端に圧迫されていたのが原因。全68ファイル（index.html+knowledge67本）に共通のCSSバグだった。</li>
-    <li><span class="tag major add">v12.0.0</span>新規ページ「鎌・くらんぽクイズ」を追加。歴史・お寺・宗教・人物の4種類・計51問、10問ランダム出題・間違えた問題だけ再挑戦可能。ドロワー・トップページ・sitemap・llms.txt等の関連ファイルも更新。</li>
-    <li><span class="tag major">v13.0.0</span>クイズを「編」構成のドリルに全面再設計（歴史7編・お寺11編・宗教6編・人物12編、計63問、順番出題＋総合テスト）。加えてknowledge67ページ全てに記事専用のミニドリル（計99問）を新設。</li>
-    <li><span class="tag add">v13.1.0</span>56ページの理解度チェック下に「関連するドリルに挑戦」リンク集（計92本）を新設。既存のURLハッシュ機能で記事から関連ドリルへ1クリック移動可能に。quiz.htmlの取り残されたヘッダーも修正。</li>
-    <li><span class="tag major">v13.2.0</span>「2問は少ない、臨場感や心理も問うべき」との指摘で、67ページ全ての理解度チェックを作り直し。事実確認だけでなく、文脈・臨場感・心理の視点を加え、全ページ3問以上（計215問）に増強。</li>
-    <li><span class="tag major">v13.3.0</span>「本当に理解させようと思ったか、ルールをなぞるだけの作り方をやめてほしい」との指摘で全67ページを再度作り直し。数を固定せず本文を網羅、答えを覚えるのではなく気づく設計に（計218問）。</li>
-    <li><span class="tag major fix">v13.3.1</span>「例えば一つ見せて」でpe1を表示し、浅い版と深い版が同じことを2回聞く重複を自分で発見。re/pe/ti全37ページを読み直して29ページの重複を除去（218問→188問）。</li>
-    <li><span class="tag major fix">v13.3.2</span>「愛とは何かを定義してから臨みなさい」との指摘で5つの原則を定義し、全67ページを通読。文の構造自体が均質化していた28件（同じ型の言い回し）を、それぞれ異なる構文に書き換えた。</li>
-    <li><span class="tag major fix">v13.4.0</span>「入念に再チェック、他の箇所も同時に」との指摘で、quiz.html本体とOGP画像も検査。OGP77枚中30枚が同じ結び「〜知っていますか？」だったため、全て多様な結びに書き換えて再生成。</li>
-    <li><span class="tag fix">v13.5.0</span>GAタグ等12項目の共通要素を全77ページで検査。404.htmlのJSON-LD欠落、index/profile/changelogのshare-buttons欠落を発見し追加。クイズ導線カードの古い説明文も修正。</li>
-    <li><span class="tag major fix">v13.6.0</span>SEO観点で見出し階層（h1→h2→h3）の乱れを全ページで修正（67ページのh4→h2等）。クイズで章タイトルから答えが自明な設問8件を、より具体的な知識を問う内容に置き換えた。</li>
-    <li><span class="tag major">v13.7.0</span>index.htmlのドロワーメニューを再設計。軸カラーの円形バッジ・補足説明・意味のあるグルーピング（歩くコース／テーマでめぐる）を追加し、見づらさを解消。</li>
-    <li><span class="tag major fix">v13.8.0</span>index.html全体の見出し階層を完全修正。6つのタブパネルにh2を新設、locator/areamap/seasonのラベルをh2に統一、季節カード等のh4をh3に修正。</li>
-    <li><span class="tag fix">v13.8.1</span>コード品質を検証。未使用CSS（.ch-kids等）を削除し、前回自分が追加した6箇所の重複インラインスタイルを.panel-h2クラスに統合。CSS/JS重複・id重複は0件を確認。</li>
-    <li><span class="tag fix">v13.9.0</span>「力試しは男性的すぎる」との指摘で、quiz.html・index.htmlの9箇所「力試し／腕試し」を、サイトのタグラインと揃う「確かめる」に統一。</li>
-    <li><span class="tag major fix">v14.0.0</span>「クローラーが読めない」との報告で緊急調査。原因はrobots.txt等ではなく、index.htmlの67コース分の情報が完全にJS依存で静的HTMLに存在しなかったこと。レンダリング結果を6コンテナに直接埋め込み、テキスト量を3391→18479文字に。quiz.htmlの編一覧も同様に静的化。</li>
+    <li><span class="tag">公開</span>鎌倉市内の神社仏閣を、出発点と解散点を決めた1〜3時間の散歩コースで巡るサイトとして公開しました。エリア別のコースと、宗教・人物・年表の3つの軸で巡るプランを用意しています。（2026年9月24日）</li>
+    <li><span class="tag">追加</span>欠けていた勝長寿院跡・寿福寺・浄智寺・覚園寺・浄光明寺・稲村ヶ崎などをコースに加えました。エリア別14コースで訪ねなかった社寺を拾う「コンプリート版」16コースも加えています。（2026年9月24日）</li>
+    <li><span class="tag">訂正</span>全コースの記述を事実の面から確かめ直し、勝長寿院の建立時期、大仏造立と北条泰時の年代関係、報国寺の寺格（十刹→諸山）、覚山尼の続柄（子・姉→妻・母）、建長寺と元寇の前後関係などの誤りを訂正しました。（2026年9月24日）</li>
+    <li><span class="tag">訂正</span>同じ寺でも表示する場所によって拝観料が違っていたため、拝観料を寺社ごとに一か所で管理する形に改めました。杉本寺・英勝寺などの3段階の料金にも対応しています。（2026年9月24日）</li>
+    <li><span class="tag">追加</span>歩く前の基礎知識、コース別・歴史の基本知識、各コースの知識ページ（67ページ）、年表・人物相関図・宗教関係図、編者プロフィールを加えました。（2026年9月24日）</li>
+    <li><span class="tag">追加</span>歴史・お寺・宗教・人物の4種類のクイズを、テーマごとの「編」で順に学べるドリルとして加え、各知識ページにも理解度チェックを設けました。（2026年9月24日）</li>
+    <li><span class="tag">改善</span>JavaScriptで表示していたコースの情報をHTMLにも書き出し、検索エンジンやAIが内容を読めるようにしました。（2026年9月24日）</li>
+    <li><span class="tag">改善</span>配色・書体・罫線・余白をサイト全体で統一しました。和文を機械的に斜体にしない組み方に改め、スマートフォンでは縦長のエリア模式図に切り替えています。（2026年9月24〜25日）</li>
+    <li><span class="tag">訂正</span>ページのタイトルや説明文で、読みがなが親文字につながって崩れていた表記（例：「覚園寺かくおんじ」）を直しました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>全ページを4つの画面幅で点検し、小さすぎる文字、背景とのコントラスト不足、画面外へのはみ出し、指で押しにくい大きさ、リンク切れを直しました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>サイト全体の本文を丁寧語にそろえ、トップページと年表・人物相関図・宗教関係図の導入文を書き改めました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>コース数の統計と「今どこにいますか」の中身をHTMLにも書き出し、JavaScriptが動かない環境や検索エンジンからも読めるようにしました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>元のデザインが残っていた箇所（数値用の等幅フォント、上部の固定バーの古い背景色、選択肢の純白、地図リンクの絵文字、知識ページの節見出しなど）を、今のデザインに揃えました。両端揃えで字間が引き伸ばされていた行も直しています。（2026年9月25日）</li>
   </ol>
+  <p class="log-current">現在のバージョン：v17.7.0（2026年9月25日）</p>
 </section>
-
 
   <div class="share-buttons">
     <span class="share-label">この記事をシェア</span>

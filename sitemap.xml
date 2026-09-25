@@ -433,6 +433,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://djnaoyaman.github.io/kuranpo/photos.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://djnaoyaman.github.io/kuranpo/profile.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -456,5 +462,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-  <url><loc>https://djnaoyaman.github.io/kuranpo/photos.html</loc><lastmod>2026-09-25</lastmod></url>
 </urlset>

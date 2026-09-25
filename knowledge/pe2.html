@@ -748,6 +748,17 @@ function initMiniDrill(containerId, questions){
   Object.keys(map).forEach(id=>{ const el = document.getElementById(id); if(!el) return;
     el.addEventListener("click", e=>{ e.preventDefault(); const w = window.open(map[id], "_blank");
       if(w){ try{ w.opener = null; }catch(_){} } else { location.href = map[id]; } }); });
+  /* Facebook：スマホでは端末の共有シートを開く（Facebookを選ぶと、アプリの投稿画面にリンクが入った状態で開く）。共有シートのない環境では、これまでどおりFacebookの共有ページを開く */
+  const fb = document.getElementById("shareFb");
+  if(fb && navigator.share && window.matchMedia("(pointer:coarse)").matches){
+    fb.addEventListener("click", e=>{
+      e.preventDefault(); e.stopImmediatePropagation();
+      navigator.share({ title: title, url: url }).catch(err=>{
+        if(err && err.name === "AbortError") return;
+        const w = window.open(map.shareFb, "_blank"); if(w){ try{ w.opener = null; }catch(_){} } else { location.href = map.shareFb; }
+      });
+    }, true);
+  }
 })();
 </script>
 </body>

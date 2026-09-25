@@ -2,6 +2,24 @@
 
 いまは所蔵館の画像を直接表示しています。サイト内に置く場合は、各画像を保存して「置き場所」に入れ、HTMLの src をその置き場所に書き換えてください。
 
+
+## Claude Cowork での使い方
+
+1. Coworkで、サイトのフォルダ（kuranpo）を接続します。
+2. 次のように頼みます。
+
+   > notes/fetch_old_photos.py を実行して、古写真7枚を img/old/ に保存し、ページの画像をサイト内のものに書き換えてください。取得できなかった画像があれば、表示される所蔵館のページをブラウザで開いて画像を保存し、同じ置き場所に入れてから、もう一度実行してください。
+
+3. ネットワークの許可を求められたら、次の住所を許可します。
+   - commons.wikimedia.org / upload.wikimedia.org（ウィキメディア・コモンズ）
+   - media.getty.edu（ゲッティ美術館）
+   - onlinecollections.syr.edu（シラキュース大学美術館）
+
+先に `python3 notes/fetch_old_photos.py --dry-run` を実行すると、ファイルを変えずに、何をするかだけを確かめられます。Claude Code でも同じコマンドで動きます。
+
+書き換えたあとの画像は、3段構えで表示されます。サイト内の画像がない時は所蔵館の画像を、それも読めない時は所蔵館のページへの案内を出します。
+
+
 ## daito
 - 表示中の画像: https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg
 - 所蔵館・出典のページ: https://www.getty.edu/art/collection/object/109BY7

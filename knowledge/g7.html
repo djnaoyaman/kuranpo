@@ -441,6 +441,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -570,6 +582,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -581,7 +594,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 07 日蓮、鎌倉で法難に遭う</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 07 <ruby>日蓮<rt>にちれん</rt></ruby>、鎌倉で<ruby>法難<rt>ほうなん</rt></ruby>に遭う</p>
   </div>
 </header>
 
@@ -597,14 +610,14 @@
     <h1><span class="no">07</span><span data-i18n="kn.g7.title"><ruby>日蓮<rt>にちれん</rt></ruby>、鎌倉で法難に遭う</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="geo" aria-label="鎌倉駅南口から和田塚駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:32.1%"></i><i class="r-dot" style="left:50.0%"></i><i class="r-dot" style="left:70.1%"></i><i class="r-dot" style="left:85.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span>和田塚駅</span></span></div>
+    <div class="kn-route" data-set="geo" aria-label="鎌倉駅南口から和田塚駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:32.1%"></i><i class="r-dot" style="left:50.0%"></i><i class="r-dot" style="left:70.1%"></i><i class="r-dot" style="left:85.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span><ruby>和田塚<rt>わだづか</rt></ruby>駅</span></span></div>
     <div class="meta-row">
       <span>2.5時間</span>
       <span class="dist">施設間の徒歩距離 約4.2km</span>
       <span class="fee">大人合計 ¥200</span>
     </div>
-    <p class="story" data-i18n="kn.g7.story">たった一人で、幕府と正面から向き合った僧がいました。<ruby>日蓮<rt>にちれん</rt></ruby>は「正しいのは法華経だけだ」と信じていました。だから当時、幕府が大事にしていた念仏（浄土宗）と禅を、名前を出して厳しく批判しました。1260年に書いた『<ruby class=o1>立正安国論<rt>りっしょうあんこくろん</rt></ruby>』では、続く災害や病気の理由を「幕府が間違った教えを許しているからだ」と言い切っています。このままでは他の国に攻められる、とも警告しました。これは幕府への批判でもありました。しかも日蓮は、比叡山で学んだあと一人で新しい教えを立てた僧でした。禅僧たちのように北条氏に守られてはいません。強い言葉で相手を批判したのに、守ってくれる人がいない——だから日蓮は、幕府から二度も命を狙われたと伝わっています。一度目は住んでいた小屋を焼かれた松葉ヶ谷法難、二度目は処刑されそうになった<ruby class=o1>龍口法難<rt>たつのくちほうなん</rt></ruby>です。安国論寺は彼がその本を書いた小屋のあった場所、妙本寺は<ruby>比企<rt>ひき</rt></ruby>一族が滅んだ屋敷の跡地にあります。大町・材木座には、迫害の記憶を持ちながらも根を張った<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の寺が集まっています。二度も命を狙われてなお教えを曲げなかったと知ると、頭がくらくらんぽします。小屋があった場所に立つと、その緊張感が今も少し残っている気がします。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅南口</span></div></li><li><span class="leg">鎌倉駅南口から 徒歩700m・約10分</span><div class="row"><span class="sname">妙本寺</span><span class="sfee">無料</span></div><span class="snote">比企氏邸跡。</span></li><li><span class="leg">妙本寺から 徒歩600m・約9分</span><div class="row"><span class="sname">安国論寺</span><span class="sfee">¥100（一律）</span></div><span class="snote">日蓮が『立正安国論』を著したと伝わる。年齢区分なし。</span></li><li><span class="leg">安国論寺から 徒歩800m・約11分</span><div class="row"><span class="sname">本覚寺</span><span class="sfee">無料</span></div></li><li><span class="leg">本覚寺から 徒歩900m・約13分</span><div class="row"><span class="sname">長勝寺</span><span class="sfee">無料</span></div></li><li><span class="leg">長勝寺から 徒歩700m・約10分</span><div class="row"><span class="sname">安養院</span><span class="sfee">¥100（一律）</span></div><span class="snote">北条政子開基。田代寺とも。年齢区分なし。</span></li><li class="endleg"><span class="leg">安養院から 徒歩500m・約7分</span><div class="row"><span class="sname">解散地点：和田塚駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.g7.story">たった一人で、幕府と正面から向き合った僧がいました。<ruby>日蓮<rt>にちれん</rt></ruby>は「正しいのは法華経だけだ」と信じていました。だから当時、幕府が大事にしていた念仏（浄土宗）と禅を、名前を出して厳しく批判しました。1260年に書いた『<ruby class=o1>立正安国論<rt>りっしょうあんこくろん</rt></ruby>』では、続く災害や病気の理由を「幕府が間違った教えを許しているからだ」と言い切っています。このままでは他の国に攻められる、とも警告しました。これは幕府への批判でもありました。しかも日蓮は、<ruby>比叡山<rt>ひえいざん</rt></ruby>で学んだあと一人で新しい教えを立てた僧でした。禅僧たちのように北条氏に守られてはいません。強い言葉で相手を批判したのに、守ってくれる人がいない——だから日蓮は、幕府から二度も命を狙われたと伝わっています。一度目は住んでいた小屋を焼かれた<ruby>松葉ヶ谷<rt>まつばがやつ</rt></ruby>法難、二度目は処刑されそうになった<ruby class=o1>龍口法難<rt>たつのくちほうなん</rt></ruby>です。<ruby>安国論寺<rt>あんこくろんじ</rt></ruby>は彼がその本を書いた小屋のあった場所、<ruby>妙本寺<rt>みょうほんじ</rt></ruby>は<ruby>比企<rt>ひき</rt></ruby>一族が滅んだ屋敷の跡地にあります。<ruby>大町<rt>おおまち</rt></ruby>・<ruby>材木座<rt>ざいもくざ</rt></ruby>には、迫害の記憶を持ちながらも根を張った<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の寺が集まっています。二度も命を狙われてなお教えを曲げなかったと知ると、頭がくらくらんぽします。小屋があった場所に立つと、その緊張感が今も少し残っている気がします。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅南口</span></div></li><li><span class="leg">鎌倉駅南口から 徒歩700m・約10分</span><div class="row"><span class="sname">妙本寺</span><span class="sfee">無料</span></div><span class="snote">比企氏邸跡。</span></li><li><span class="leg">妙本寺から 徒歩600m・約9分</span><div class="row"><span class="sname">安国論寺</span><span class="sfee">¥100（一律）</span></div><span class="snote">日蓮が『立正安国論』を著したと伝わる。年齢区分なし。</span></li><li><span class="leg">安国論寺から 徒歩800m・約11分</span><div class="row"><span class="sname"><ruby>本覚寺<rt>ほんがくじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">本覚寺から 徒歩900m・約13分</span><div class="row"><span class="sname"><ruby class="o1">長勝寺<rt>ちょうしょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">長勝寺から 徒歩700m・約10分</span><div class="row"><span class="sname"><ruby>安養院<rt>あんよういん</rt></ruby></span><span class="sfee">¥100（一律）</span></div><span class="snote"><ruby>北条政子<rt>ほうじょうまさこ</rt></ruby><ruby>開基<rt>かいき</rt></ruby>。田代寺とも。年齢区分なし。</span></li><li class="endleg"><span class="leg">安養院から 徒歩500m・約7分</span><div class="row"><span class="sname">解散地点：和田塚駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-season">
         <p class="note-label">季節の見どころ</p>
@@ -622,7 +635,7 @@
     <div class="term"><dt><ruby>一塔両尊四士<rt>いっとうりょうそんしし</rt></ruby><span class="cat">02</span></dt><dd><ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>特有の本尊形式。中央に「南無妙法蓮華経」の宝塔を置き、釈迦・多宝の両如来と四菩薩を配する、他宗にはない構成。</dd></div>
     <div class="term"><dt><ruby class=o1>立正安国論<rt>りっしょうあんこくろん</rt></ruby><span class="cat">05</span></dt><dd><ruby>日蓮<rt>にちれん</rt></ruby>が幕府に提出した意見書。国難を予言し、弾圧を招く一因になったとされます。宗教が政治批判の手段にもなった例。</dd></div>
     <div class="term"><dt><ruby>比企能員<rt>ひきよしかず</rt></ruby><span class="cat">05</span></dt><dd>2代将軍頼家の外戚。<ruby>比企能員<rt>ひきよしかず</rt></ruby>の変（1203年）で一族が滅亡。妙本寺はその屋敷跡にあります。</dd></div>
-    <div class="term"><dt><ruby>松葉ヶ谷法難<rt>まつばがやつほうなん</rt></ruby><span class="cat">04</span></dt><dd><ruby>日蓮<rt>にちれん</rt></ruby>の草庵が焼かれた最初の法難。</dd></div>
+    <div class="term"><dt><ruby>松葉ヶ谷法難<rt>まつばがやつほうなん</rt></ruby><span class="cat">04</span></dt><dd><ruby>日蓮<rt>にちれん</rt></ruby>の<ruby>草庵<rt>そうあん</rt></ruby>が焼かれた最初の法難。</dd></div>
   </dl>
 
     <script>
@@ -684,7 +697,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g8.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">08</span>幕府滅亡と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>の悲劇</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:21.2%"></i><i class="r-dot" style="left:35.3%"></i><i class="r-dot" style="left:60.5%"></i><i class="r-dot" style="left:71.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>瑞泉寺バス停</span></span><span class="pg-meta">3時間・徒歩約3.4km</span></a>
+    <a class="pg-next" data-set="geo" href="g8.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">08</span>幕府滅亡と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>の悲劇</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:21.2%"></i><i class="r-dot" style="left:35.3%"></i><i class="r-dot" style="left:60.5%"></i><i class="r-dot" style="left:71.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span><ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>バス停</span></span><span class="pg-meta">3時間・徒歩約3.4km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g6.html">← 前：律宗と社会事業の記憶</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

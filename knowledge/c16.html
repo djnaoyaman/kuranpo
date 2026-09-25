@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -560,6 +572,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -571,7 +584,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C16 玉縄エリア③ 残余の社</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C16 <ruby>玉縄<rt>たまなわ</rt></ruby>エリア③ 残余の社</p>
   </div>
 </header>
 
@@ -587,13 +600,13 @@
     <h1><span class="no">C16</span><span data-i18n="kn.c16.title">玉縄エリア③ 残余の社</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="大船駅から大船駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:27.9%"></i><i class="r-dot" style="left:48.6%"></i><i class="r-dot" style="left:69.4%"></i><i class="r-dot" style="left:83.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>大船駅</span><span>大船駅</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="大船駅から大船駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:27.9%"></i><i class="r-dot" style="left:48.6%"></i><i class="r-dot" style="left:69.4%"></i><i class="r-dot" style="left:83.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>大船<rt>おおふな</rt></ruby>駅</span><span>大船駅</span></span></div>
     <div class="meta-row">
       <span>2時間</span>
       <span class="dist">施設間の徒歩距離 約6.8km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c16.story">玉縄・手広・植木を歩き終えると、エリア別コースとコンプリート版で拾える社寺は、だいたいここで尽きます。諏訪神社、稲荷神社、鎌倉山神社、北野神社——最後に残った神社たちを歩きます。ここまで歩いてきた距離を思うと、頭がくらくらんぽするかもしれません。地図で振り返ってみると、その距離の実感がまた変わります。</p>
+    <p class="story" data-i18n="kn.c16.story">玉縄・<ruby>手広<rt>てびろ</rt></ruby>・植木を歩き終えると、エリア別コースとコンプリート版で拾える社寺は、だいたいここで尽きます。<ruby>諏訪神社<rt>すわじんじゃ</rt></ruby>、<ruby>稲荷神社<rt>いなりじんじゃ</rt></ruby>、<ruby>鎌倉山神社<rt>かまくらやまじんじゃ</rt></ruby>、<ruby>北野神社<rt>きたのじんじゃ</rt></ruby>——最後に残った神社たちを歩きます。ここまで歩いてきた距離を思うと、頭がくらくらんぽするかもしれません。地図で振り返ってみると、その距離の実感がまた変わります。</p>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.8km・約26分</span><div class="row"><span class="sname">諏訪神社（植木）</span><span class="sfee">無料</span></div></li><li><span class="leg">諏訪神社（植木）から 徒歩1.5km・約21分</span><div class="row"><span class="sname">稲荷神社（手広）</span><span class="sfee">無料</span></div></li><li><span class="leg">稲荷神社（手広）から 徒歩1.5km・約21分</span><div class="row"><span class="sname">鎌倉山神社</span><span class="sfee">無料</span></div></li><li><span class="leg">鎌倉山神社から 徒歩1.0km・約14分</span><div class="row"><span class="sname">北野神社</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">北野神社から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     
   </div>
@@ -603,7 +616,7 @@
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">出発：大船駅</a></div>
   <dl class="terms" data-i18n="kn.c16.terms">
-    <div class="term"><dt>玉縄・手広・植木の社群<span class="cat">07</span></dt><dd>いずれも地域の氏神的な小社で、個別の由緒についての公開情報は限られます。</dd></div>
+    <div class="term"><dt>玉縄・手広・植木の社群<span class="cat">07</span></dt><dd>いずれも地域の<ruby>氏神<rt>うじがみ</rt></ruby>的な小社で、個別の由緒についての公開情報は限られます。</dd></div>
   </dl>
 
     <script>
@@ -648,7 +661,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#person:tsunashige">人物：北条綱成編</a></div>
+      <div class="dm-links"><a href="../quiz.html#person:tsunashige">人物：<ruby class="o1">北条綱成<rt>ほうじょうつなしげ</rt></ruby>編</a></div>
     </div>
 
 

@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#F4F1EA">
 <title>鎌・くらんぽ宗教関係図｜鎌・くらんぽ</title>
-<meta name="description" content="「宗教でめぐる」コースを楽しむための前提知識。禅宗・日蓮宗・浄土宗など、宗派ごとの関係を掴んでおく。">
+<meta name="description" content="鎌倉時代に新しい仏教が次々に生まれた理由と、その多くが鎌倉を目指した理由から、宗派どうしに何が起きたのかを、史料や寺の由緒で確かめられる出来事でたどります。">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="鎌・くらんぽ">
 <meta property="og:title" content="鎌・くらんぽ宗教関係図｜鎌・くらんぽ">
-<meta property="og:description" content="「宗教でめぐる」コースを楽しむための前提知識。禅宗・日蓮宗・浄土宗など、宗派ごとの関係を掴んでおく。">
+<meta property="og:description" content="鎌倉時代に新しい仏教が次々に生まれた理由と、その多くが鎌倉を目指した理由から、宗派どうしに何が起きたのかを、史料や寺の由緒で確かめられる出来事でたどります。">
 <meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/religions.html">
 <meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/religions.png">
 <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="鎌・くらんぽ宗教関係図｜鎌・くらんぽ">
-<meta name="twitter:description" content="「宗教でめぐる」コースを楽しむための前提知識。禅宗・日蓮宗・浄土宗など、宗派ごとの関係を掴んでおく。">
+<meta name="twitter:description" content="鎌倉時代に新しい仏教が次々に生まれた理由と、その多くが鎌倉を目指した理由から、宗派どうしに何が起きたのかを、史料や寺の由緒で確かめられる出来事でたどります。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/ogp/religions.png">
 <meta name="robots" content="index,follow">
 <meta name="author" content="クランポック">
@@ -436,13 +436,124 @@
   {font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .story{letter-spacing:.02em;}
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  /* 52. 宗教関係図：30年に点が集まる年の線／出来事の縦の道／歩いて訪ねる寺／見分ける手がかり */
+  .rs-fig{margin:8px 0 44px;}
+  .rs-top{position:relative; height:30px;}
+  .rs-bracket{position:absolute; bottom:4px; height:9px; border:1px solid var(--moss); border-bottom:none; box-sizing:border-box;}
+  .rs-bracket span{position:absolute; bottom:12px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:13px; font-weight:500; color:var(--moss);}
+  .rs-line{position:relative; height:22px;}
+  .rs-line::before{content:""; position:absolute; left:3%; right:3%; top:10px; height:1px; background:var(--moss);}
+  .rs-dot{position:absolute; top:6px; width:9px; height:9px; margin-left:-4.5px; border-radius:50%; background:var(--moss);}
+  .rs-labels{position:relative; height:46px;}
+  .rs-labels span{position:absolute; top:4px; transform:translateX(-50%); font-size:12px; line-height:1.45; text-align:center; color:var(--ink-soft); white-space:nowrap;}
+  .rs-labels em{font-family:var(--voice); font-style:italic; font-size:13px;}
+  .rs-fig figcaption{margin:10px 0 0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .rs-sec{margin:52px 0 0;}
+  .rs-sec > h2{font-size:21px; font-weight:700; margin:0 0 10px; padding-top:28px; border-top:1px solid var(--line);}
+  .rs-note{margin:0 0 22px; font-size:15px; line-height:1.85; color:var(--ink-read);}
+  .ev-list{list-style:none; margin:0; padding:0;}
+  .ev-list li{position:relative; margin:0 0 0 5px; padding:0 0 26px 24px; border-left:1px solid var(--moss);}
+  .ev-list li:last-child{border-left-color:transparent;}
+  .ev-list li::before{content:""; position:absolute; left:-5.5px; top:.5em; width:10px; height:10px; border-radius:50%; background:var(--moss);}
+  .ev-y{display:block; margin:0 0 4px; font-family:var(--voice); font-style:italic; font-size:21px; line-height:1.1; color:var(--moss);}
+  .ev-t{margin:0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .ev-p{margin:8px 0 0; font-size:13.5px; color:var(--ink-soft);}
+  .ev-p a, .rs-walk a{color:var(--vermilion);}
+  .tree-branch h3.b-label{margin:0 0 8px; font-size:17px; font-weight:500; line-height:1.5; color:var(--moss);}
+  .rs-walk{margin:10px 0 0; font-size:13.5px; line-height:1.9; color:var(--ink-soft);}
+  .rs-cues{margin:0;}
+  .rs-cues div{padding:18px 0; border-top:1px solid var(--line);}
+  .rs-cues div:first-child{border-top:none; padding-top:4px;}
+  .rs-cues dt{margin:0 0 6px; font-size:17px; font-weight:500;}
+  .rs-cues dd{margin:0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .rs-close{margin-top:48px;}
+  /* 53. なぜこの時代に・なぜ鎌倉へ（目次／4つの背景／ひねり／祖師と鎌倉） */
+  .rs-toc-wrap{margin:0 0 8px;}
+  .rs-toc{list-style:none; margin:0; padding:0; border-top:1px solid var(--line);}
+  .rs-toc li{border-bottom:1px solid var(--line);}
+  .rs-toc a{display:flex; gap:12px; align-items:baseline; padding:12px 0; color:var(--ink); text-decoration:none; font-size:15px; line-height:1.6;}
+  .rs-toc a:hover{color:var(--vermilion);}
+  .rs-toc .n{flex:0 0 1.2em; font-family:var(--voice); font-style:italic; font-size:17px; color:var(--moss);}
+  .why-list{list-style:none; margin:0; padding:0;}
+  .why-list li{padding:20px 0; border-top:1px solid var(--line);}
+  .why-h{display:flex; gap:12px; align-items:baseline; margin:0 0 8px; font-size:18px; font-weight:500; line-height:1.5;}
+  .why-no{flex:0 0 1em; font-family:var(--voice); font-style:italic; font-size:26px; line-height:1; color:var(--moss);}
+  .why-list p, .rs-twist p{margin:0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .rs-twist{margin:12px 0 0; padding:20px 20px 22px; background:var(--card); border-left:2px solid var(--moss);}
+  .rs-twist .why-h{font-size:17px; color:var(--moss);}
+  .founders{list-style:none; margin:0; padding:0;}
+  .founders li{padding:18px 0; border-top:1px solid var(--line);}
+  .fd-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; margin:0 0 8px;}
+  .fd-name{font-size:18px; font-weight:500;}
+  .fd-sect{font-size:13px; color:var(--moss);}
+  .fd-tag{margin-left:auto; font-size:12.5px; color:var(--ink-soft); border:1px solid var(--line); padding:2px 9px;}
+  .fd-t{margin:0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  @media (min-width:900px){ .founders{display:grid; grid-template-columns:1fr 1fr; column-gap:48px;} }
+  /* 54. 関係図（学び・招き・対立の3つの線）／境目の地図／祈りの暦／出典 */
+  .rel-h{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; margin:30px 0 12px; font-size:18px; font-weight:500; color:var(--moss);}
+  .rel-h span{font-size:13.5px; font-weight:400; color:var(--ink-soft);}
+  .rel-svg{display:block; width:100%; max-width:520px; height:auto; margin:4px auto 0;}
+  .rel-line{stroke:var(--moss); stroke-width:1; fill:none;}
+  .rel-dot{fill:var(--moss);}
+  .rel-t{font-size:14px; fill:var(--ink);}
+  .rel-b{font-size:16px; font-weight:700;}
+  .rel-s{font-size:12px; fill:var(--ink-soft);}
+  .rel-y{font-family:var(--voice); font-style:italic; font-size:14px; fill:var(--ink-soft);}
+  .rel-cap{margin:10px 0 0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .lineage{display:grid; gap:18px;}
+  @media (min-width:900px){ .lineage{grid-template-columns:repeat(3,1fr); column-gap:32px;} }
+  .lg-src{margin:0 0 8px; font-size:13.5px; color:var(--ink-soft);}
+  .lg-list{list-style:none; margin:0; padding:0 0 0 18px; border-left:1px solid var(--moss);}
+  .lg-list li{position:relative; padding:6px 0 6px 14px;}
+  .lg-list li::before{content:""; position:absolute; left:-18px; top:1.15em; width:26px; height:1px; background:var(--moss);}
+  .lg-list .lg-list{margin-top:4px;}
+  .lg-name{font-size:16px; font-weight:500; margin-right:10px;}
+  .lg-sect{font-size:13px; color:var(--ink-soft);}
+  .per-list{list-style:none; margin:0 auto; padding:0 0 0 22px; max-width:520px; border-left:1px solid var(--moss);}
+  .per-list li{position:relative; padding:4px 0 10px; font-size:15px; line-height:1.7; color:var(--ink);}
+  .per-list li::before{content:""; position:absolute; left:-27px; top:.55em; width:9px; height:9px; border-radius:50%; background:var(--moss);}
+  .per-list .ev-y{display:inline; font-size:17px; margin-right:10px;}
+  .edge-hill{stroke:var(--ink-soft); stroke-width:1; fill:none;}
+  .edge-pass{fill:var(--bg); stroke:var(--ink-soft); stroke-width:1;}
+  .edge-ref{fill:var(--ink-soft);}
+  .rs-body{margin:14px 0 0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .cal-d{font-size:18px;}
+  .cal-h{margin:0 0 4px; font-size:17px; font-weight:500;}
+  .src-list{margin:0; padding:0 0 0 1.6em; font-size:13.5px; line-height:1.9; color:var(--ink-read);}
+  .src-list li{padding:2px 0;}
+  .src-list a{color:var(--ink-read); text-decoration:none; border-bottom:1px solid var(--line);}
+  .src-list a:hover{color:var(--vermilion);}
+  .rs-note a{color:var(--vermilion);}
+  /* 55. ふりがなの入った語は折り返せないため、狭い画面で列が押し広げられないようにする */
+  header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "WebPage",
  "name": "鎌・くらんぽ宗教関係図",
- "description": "「宗教でめぐる」コースを楽しむための前提知識。禅宗・日蓮宗・浄土宗など、宗派ごとの関係を掴んでおく。",
+ "description": "鎌倉時代に新しい仏教が次々に生まれた理由と、その多くが鎌倉を目指した理由から、宗派どうしに何が起きたのかを、史料や寺の由緒で確かめられる出来事でたどります。",
  "url": "https://djnaoyaman.github.io/kuranpo/religions.html",
  "inLanguage": "ja",
  "isPartOf": {
@@ -488,6 +599,7 @@
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="profile.html">編者プロフィール</a>
@@ -499,77 +611,237 @@
 <header class="site">
   <div class="inner">
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
-    <p class="kicker reveal-line">散歩の前に、5分だけ</p>
+    <p class="kicker reveal-line">散歩の前に、15分だけ</p>
     <h1 class="mincho reveal-line"><span class="h1-l">鎌・くらんぽ</span><span class="h1-l">宗教関係図</span></h1>
-    <p class="lead reveal-line">同じ「お寺」でも、宗派が違えば、鎌倉に根づいた理由がまるで違います。ここでは、「宗教でめぐる」コースを楽しむための前提知識として、宗派同士の関係をまとめました。その寺がどの宗派で、なぜその宗派を選んだのか。それを知ってから歩くと、同じ山門の前でも見え方が変わります。</p>
+    <p class="lead reveal-line">鎌倉時代のおよそ150年のあいだに、浄土宗・<ruby class="o1">浄土真宗<rt>じょうどしんしゅう</rt></ruby>・<ruby>時宗<rt>じしゅう</rt></ruby>・<ruby class="o1">臨済宗<rt>りんざいしゅう</rt></ruby>・曹洞宗・<ruby>日蓮<rt>にちれん</rt></ruby>宗と、今に続く宗派が次々に生まれました。なぜ、この時代だったのか。そして、なぜその多くが鎌倉を目指したのか。それを知ってから歩くと、同じ山門の前でも見え方が変わります。</p>
   </div>
 </header>
 
 <main>
+  <nav class="rs-toc-wrap" aria-label="このページの内容"><ol class="rs-toc"><li><a href="#rs-why"><span class="n">1</span>なぜ、この時代に新しい仏教が生まれたのか</a></li><li><a href="#rs-kama"><span class="n">2</span>なぜ、その多くが鎌倉を目指したのか</a></li><li><a href="#rs-rel"><span class="n">3</span>一枚で見る、宗派の関係</a></li><li><a href="#rs-edge"><span class="n">4</span>新しい教えは、鎌倉の境目にあった</a></li><li><a href="#rs-ev"><span class="n">5</span>宗派どうしに、何が起きたか</a></li><li><a href="#rs-br"><span class="n">6</span>宗派ごとに見る</a></li><li><a href="#rs-cal"><span class="n">7</span>今も続く祈りの暦</a></li><li><a href="#rs-cue"><span class="n">8</span>現地で宗派を見分ける手がかり</a></li><li><a href="#rs-src"><span class="n">9</span>出典</a></li></ol></nav>
 
-  <p class="diagram-intro">鎌倉の信仰は、一枚岩ではありません。政治と結びついて広まった宗派もあれば、政治に抵抗して根づいた宗派もあります。その大まかな流れを辿ります。</p>
+  <section class="rs-sec" aria-labelledby="rs-why">
+  <h2 id="rs-why">なぜ、この時代に新しい仏教が生まれたのか</h2>
+  <p class="rs-note">教科書で「鎌倉新仏教」と呼ばれる宗派です。鎌倉の町で生まれたわけではなく、鎌倉時代に、<ruby>比叡山<rt>ひえいざん</rt></ruby>などで学んだ僧たちが開いた教えです。その背景には、次の4つが重なっていました。</p>
+  <ol class="why-list">
+    <li><h3 class="why-h"><span class="why-no">1</span><span><ruby>末法<rt>まっぽう</rt></ruby>の世に入ったと信じられていた</span></h3><p>仏の教えが衰え、正しく修行しても悟れなくなる「末法」の世に、1052年から入ったと広く信じられていました。<ruby>法然<rt>ほうねん</rt></ruby>は、学問や難しい修行だけでは末法の人々は救われないと考え、阿弥陀仏の名を唱える念仏だけに打ち込む教えを説きました。</p></li>
+    <li><h3 class="why-h"><span class="why-no">2</span><span>戦と災害が続いた</span></h3><p>源平の争乱に続き、鎌倉は1257年に大地震に襲われました。『<ruby>吾妻鏡<rt>あづまかがみ</rt></ruby>』は、神社や寺で無事なものは一つもなかったと記しています。飢饉と疫病が続くさなか、日蓮はこの地震をきっかけに『<ruby class="o1">立正安国論<rt>りっしょうあんこくろん</rt></ruby>』を構想したと、日蓮宗は説明しています。</p></li>
+    <li><h3 class="why-h"><span class="why-no">3</span><span>比叡山で学んだ僧たちが、一つの教えを選んだ</span></h3><p>6つの宗派を開いた法然・<ruby>親鸞<rt>しんらん</rt></ruby>・<ruby>栄西<rt>えいさい</rt></ruby>・<ruby>道元<rt>どうげん</rt></ruby>・日蓮・<ruby>一遍<rt>いっぺん</rt></ruby>を、比叡山<ruby>延暦寺<rt>えんりゃくじ</rt></ruby>は、いずれも「比叡山が生んだ高僧」として掲げています。彼らは、比叡山で学ぶ多くの教えの中から一つを選び、それだけに打ち込み、誰にでもできる形で説きました。念仏を選んだのが法然・親鸞・一遍、禅を選んだのが栄西・道元、法華経を選んだのが日蓮です。</p></li>
+    <li><h3 class="why-h"><span class="why-no">4</span><span>武士という新しい担い手が現れた</span></h3><p>朝廷と貴族に代わって、武士が政治を動かすようになりました。鎌倉の幕府を率いる北条氏は、新しい教えにも祈りと心の支えを求め、宋の禅僧を招いています。<ruby class="o1">北条時宗<rt>ほうじょうときむね</rt></ruby>に招かれた<ruby>無学祖元<rt>むがくそげん</rt></ruby>は、モンゴルの元が宋に攻め込んだ後の1279年に、海を渡ってきた僧です。</p></li>
+  </ol>
+  <div class="rs-twist">
+    <h3 class="why-h">ただし、当時の主流は古い仏教でした</h3>
+    <p>歴史家の<ruby>黒田俊雄<rt>くろだとしお</rt></ruby>は、中世の仏教の中心は新しい宗派ではなく、比叡山や奈良の大寺院などの古い仏教だったと唱え、学界に大きな衝撃を与えました。鎌倉でも、幕府の宗教の中心にあったのは、<ruby class="o1">天台宗<rt>てんだいしゅう</rt></ruby>と<ruby class="o1">真言宗<rt>しんごんしゅう</rt></ruby>の僧が仕える<ruby>鶴岡八幡宮寺<rt>つるがおかはちまんぐうじ</rt></ruby>です。新しい宗派が大きく広がるのは、もっと後の時代のこととされます。</p>
+  </div>
+  </section>
 
+  <section class="rs-sec" aria-labelledby="rs-kama">
+  <h2 id="rs-kama">なぜ、その多くが鎌倉を目指したのか</h2>
+  <p class="rs-note">時宗の総本山・<ruby>遊行寺<rt>ゆぎょうじ</rt></ruby>は、当時の鎌倉について、北条氏の保護で禅宗が盛んになるのを見て、各宗の高僧たちが鎌倉での布教をこころみ、仕事と食料を求める人々も数多く集まっていた、と説明しています。祖師たちと鎌倉との関わりは、次のとおりです。</p>
+  <ul class="founders">
+    <li><div class="fd-head"><span class="fd-name">栄西</span><span class="fd-sect">臨済宗</span><span class="fd-tag">鎌倉に寺を開いた</span></div><p class="fd-t">比叡山で学び、2度にわたって宋に渡りました。幕府の<ruby>帰依<rt>きえ</rt></ruby>を受け、<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が開いた<ruby>寿福寺<rt>じゅふくじ</rt></ruby>の<ruby>開山<rt>かいさん</rt></ruby>となっています。</p></li>
+    <li><div class="fd-head"><span class="fd-name">道元</span><span class="fd-sect">曹洞宗</span><span class="fd-tag">半年で去った</span></div><p class="fd-t">1247年ごろ、<ruby class="o1">北条時頼<rt>ほうじょうときより</rt></ruby>らに招かれて鎌倉に下り、半年ほど教えを説いた後、<ruby>越前<rt>えちぜん</rt></ruby>（今の福井県）の<ruby>永平寺<rt>えいへいじ</rt></ruby>に戻りました。</p></li>
+    <li><div class="fd-head"><span class="fd-name">法然</span><span class="fd-sect">浄土宗</span><span class="fd-tag">弟子の代に根づいた</span></div><p class="fd-t">京都を中心に念仏を説きました。孫弟子の<ruby class="o2">良忠<rt>りょうちゅう</rt></ruby>が、<ruby class="o1">北条経時<rt>ほうじょうつねとき</rt></ruby>の開いた<ruby>光明寺<rt>こうみょうじ</rt></ruby>の開山となり、浄土宗が鎌倉に根を下ろします。</p></li>
+    <li><div class="fd-head"><span class="fd-name">親鸞</span><span class="fd-sect">浄土真宗</span><span class="fd-tag">鎌倉の外で広めた</span></div><p class="fd-t">法然の弟子です。<ruby>越後<rt>えちご</rt></ruby>に流された後、関東では<ruby>常陸国<rt>ひたちのくに</rt></ruby>（今の茨城県）を拠点に教えを説きました。このサイトのコースには、浄土真宗の寺は入っていません。</p></li>
+    <li><div class="fd-head"><span class="fd-name">日蓮</span><span class="fd-sect">日蓮宗</span><span class="fd-tag">迫害の中で根づいた</span></div><p class="fd-t">比叡山などで学んだ後、鎌倉の<ruby>松葉ヶ谷<rt>まつばがやつ</rt></ruby>を拠点に教えを説き、幕府に『立正安国論』を献じました。迫害を受けながら、弟子や信徒が寺を開いていきます。</p></li>
+    <li><div class="fd-head"><span class="fd-name">一遍</span><span class="fd-sect">時宗</span><span class="fd-tag">入れなかった</span></div><p class="fd-t">はじめ天台を学び、<ruby>太宰府<rt>だざいふ</rt></ruby>で浄土念仏を習いました。1282年、鎌倉に入ろうとして止められ、<ruby>片瀬<rt>かたせ</rt></ruby>で踊り念仏を行っています。</p></li>
+    <li><div class="fd-head"><span class="fd-name"><ruby>叡尊<rt>えいそん</rt></ruby>・<ruby class="o1">忍性<rt>にんしょう</rt></ruby></span><span class="fd-sect">律宗（古い仏教の立て直し）</span><span class="fd-tag">鎌倉に寺を開いた</span></div><p class="fd-t">奈良の<ruby>西大寺<rt>さいだいじ</rt></ruby>で<ruby>戒律<rt>かいりつ</rt></ruby>の教えを立て直した叡尊と、その弟子の忍性です。1262年に叡尊が鎌倉に下り、忍性は<ruby>極楽寺<rt>ごくらくじ</rt></ruby>を拠点に人々の救済に力を尽くしました。</p></li>
+  </ul>
+  </section>
+
+
+  <section class="rs-sec" aria-labelledby="rs-rel">
+  <h2 id="rs-rel">一枚で見る、宗派の関係</h2>
+  <p class="rs-note">人と人のつながりを、3つの線に分けて描きました。つながりの記録がない人どうしは、線で結んでいません。</p>
+  <h3 class="rel-h">学びの線<span>どこで、誰に学んだか</span></h3>
+  <div class="lineage"><div class="lg-root"><p class="lg-src">比叡山（延暦寺）で学んだ祖師</p><ul class="lg-list"><li><span class="lg-name">法然</span><span class="lg-sect">浄土宗</span><ul class="lg-list"><li><span class="lg-name">親鸞</span><span class="lg-sect">浄土真宗・法然の弟子</span></li><li><span class="lg-name">良忠</span><span class="lg-sect">光明寺の開山・法然の孫弟子</span></li></ul></li><li><span class="lg-name">栄西</span><span class="lg-sect">臨済宗</span><ul class="lg-list"><li><span class="lg-name">道元</span><span class="lg-sect">曹洞宗・栄西の弟子の<ruby class="o1">明全<rt>みょうぜん</rt></ruby>に学ぶ</span></li></ul></li><li><span class="lg-name">日蓮</span><span class="lg-sect">日蓮宗</span></li><li><span class="lg-name">一遍</span><span class="lg-sect">時宗・はじめ天台を学ぶ</span></li></ul></div><div class="lg-root"><p class="lg-src">奈良（西大寺）で戒律を立て直した僧</p><ul class="lg-list"><li><span class="lg-name">叡尊</span><span class="lg-sect">律宗</span><ul class="lg-list"><li><span class="lg-name">忍性</span><span class="lg-sect">極楽寺の開山・叡尊の弟子</span></li></ul></li></ul></div><div class="lg-root"><p class="lg-src">宋から海を渡った禅僧</p><ul class="lg-list"><li><span class="lg-name"><ruby class="o1">蘭渓道隆<rt>らんけいどうりゅう</rt></ruby></span><span class="lg-sect"><ruby>建長寺<rt>けんちょうじ</rt></ruby>の開山・1246年に来日</span></li><li><span class="lg-name">無学祖元</span><span class="lg-sect"><ruby>円覚寺<rt>えんがくじ</rt></ruby>の開山・1279年に来日</span></li></ul></div></div>
+  <h3 class="rel-h">招きの線<span>北条氏が鎌倉に迎えた僧</span></h3>
+  <svg class="rel-svg inv-svg" viewBox="0 0 340 236" role="img" aria-label="北条氏が鎌倉に迎えた僧：北条政子と栄西、北条経時と良忠、北条時頼と道元・蘭渓道隆・叡尊、北条時宗と無学祖元">
+<line x1="104" y1="30" x2="216" y2="30" class="rel-line"/>
+<line x1="104" y1="66" x2="216" y2="66" class="rel-line"/>
+<line x1="104" y1="138" x2="216" y2="102" class="rel-line"/>
+<line x1="104" y1="138" x2="216" y2="138" class="rel-line"/>
+<line x1="104" y1="138" x2="216" y2="174" class="rel-line"/>
+<line x1="104" y1="210" x2="216" y2="210" class="rel-line"/>
+<circle cx="100" cy="30" r="4.5" class="rel-dot"/><text x="90" y="35" text-anchor="end" class="rel-t">北条政子</text>
+<circle cx="100" cy="66" r="4.5" class="rel-dot"/><text x="90" y="71" text-anchor="end" class="rel-t">北条経時</text>
+<circle cx="100" cy="138" r="4.5" class="rel-dot"/><text x="90" y="143" text-anchor="end" class="rel-t">北条時頼</text>
+<circle cx="100" cy="210" r="4.5" class="rel-dot"/><text x="90" y="215" text-anchor="end" class="rel-t">北条時宗</text>
+<circle cx="220" cy="30" r="4.5" class="rel-dot"/><text x="230" y="35" class="rel-t">栄西<tspan class="rel-y" dx="6">1200</tspan></text>
+<circle cx="220" cy="66" r="4.5" class="rel-dot"/><text x="230" y="71" class="rel-t">良忠<tspan class="rel-y" dx="6">1240</tspan></text>
+<circle cx="220" cy="102" r="4.5" class="rel-dot"/><text x="230" y="107" class="rel-t">道元<tspan class="rel-y" dx="6">1247</tspan></text>
+<circle cx="220" cy="138" r="4.5" class="rel-dot"/><text x="230" y="143" class="rel-t">蘭渓道隆<tspan class="rel-y" dx="6">1253</tspan></text>
+<circle cx="220" cy="174" r="4.5" class="rel-dot"/><text x="230" y="179" class="rel-t">叡尊<tspan class="rel-y" dx="6">1262</tspan></text>
+<circle cx="220" cy="210" r="4.5" class="rel-dot"/><text x="230" y="215" class="rel-t">無学祖元<tspan class="rel-y" dx="6">1282</tspan></text>
+</svg>
+  <p class="rel-cap">北条時頼からは、3本の線が出ています。</p>
+  <h3 class="rel-h">対立の線<span>日蓮が受けた迫害と、批判した教え</span></h3>
+  <ol class="per-list"><li><span class="ev-y">1260</span>松葉ヶ谷の<ruby>草庵<rt>そうあん</rt></ruby>を、念仏を信じる人々に襲われる</li><li><span class="ev-y">1261</span>幕府によって伊豆の<ruby>伊東<rt>いとう</rt></ruby>へ流される</li><li><span class="ev-y">1271</span><ruby>龍ノ口<rt>たつのくち</rt></ruby>で処刑されかけ、<ruby>佐渡<rt>さど</rt></ruby>へ流される</li></ol>
+  <svg class="rel-svg fan-svg" viewBox="0 0 340 176" role="img" aria-label="日蓮が批判した4つの教え：念仏、禅、真言、律">
+<line x1="170" y1="0" x2="170" y2="20" class="rel-line"/>
+<line x1="170" y1="30" x2="46" y2="112" class="rel-line"/>
+<line x1="170" y1="30" x2="128" y2="112" class="rel-line"/>
+<line x1="170" y1="30" x2="212" y2="112" class="rel-line"/>
+<line x1="170" y1="30" x2="294" y2="112" class="rel-line"/>
+<circle cx="170" cy="26" r="7" class="rel-dot"/><text x="184" y="31" class="rel-t rel-b">日蓮</text>
+<circle cx="46" cy="118" r="4.5" class="rel-dot"/><text x="46" y="144" text-anchor="middle" class="rel-t">念仏</text><text x="46" y="164" text-anchor="middle" class="rel-s">念仏無間</text>
+<circle cx="128" cy="118" r="4.5" class="rel-dot"/><text x="128" y="144" text-anchor="middle" class="rel-t">禅</text><text x="128" y="164" text-anchor="middle" class="rel-s">禅天魔</text>
+<circle cx="212" cy="118" r="4.5" class="rel-dot"/><text x="212" y="144" text-anchor="middle" class="rel-t">真言</text><text x="212" y="164" text-anchor="middle" class="rel-s">真言亡国</text>
+<circle cx="294" cy="118" r="4.5" class="rel-dot"/><text x="294" y="144" text-anchor="middle" class="rel-t">律</text><text x="294" y="164" text-anchor="middle" class="rel-s">律国賊</text>
+</svg>
+  <p class="rel-cap">日蓮が念仏・禅・真言・律を批判した言葉は、のちの人によって「念仏無間・禅天魔・真言亡国・律国賊」の四句にまとめられ、「<ruby>四箇格言<rt>しかかくげん</rt></ruby>」と呼ばれています。雨乞いをめぐって対立した忍性は、律の僧です。なお、現在の日蓮宗には、この言葉に教化のうえで絶対的な意味を与えない傾向があるとされます。</p>
+  </section>
+
+  <section class="rs-sec" aria-labelledby="rs-edge">
+  <h2 id="rs-edge">新しい教えは、鎌倉の境目にあった</h2>
+  <p class="rs-note">鎌倉は三方を山、一方を海に囲まれ、外との出入りは「鎌倉七口」と呼ばれる<ruby class="o1">切通<rt>きりどおし</rt></ruby>などに限られていました。</p>
+  <svg class="rel-svg edge-svg" viewBox="0 0 340 332" role="img" aria-label="鎌倉七口と、新しい教えの拠点の位置関係の模式図">
+<path d="M 82 262 C 62 170, 70 92, 120 62 C 160 42, 222 42, 262 64 C 300 90, 306 170, 292 252" class="edge-hill"/>
+<line x1="60" y1="284" x2="312" y2="284" class="edge-hill"/>
+<text x="186" y="304" text-anchor="middle" class="rel-s">海（由比ヶ浜・材木座）</text>
+<text x="170" y="16" text-anchor="middle" class="rel-s">↑ 建長寺・円覚寺（山ノ内）</text>
+<circle cx="178" cy="132" r="3.5" class="edge-ref"/><text x="178" y="152" text-anchor="middle" class="rel-s">鶴岡八幡宮</text>
+<circle cx="170" cy="48" r="6" class="rel-dot"/><text x="170" y="34" text-anchor="middle" class="rel-t">巨福呂坂（一遍が止められた）</text>
+<circle cx="122" cy="62" r="3.5" class="edge-pass"/><text x="132" y="80" text-anchor="start" class="rel-s">亀ヶ谷坂</text>
+<circle cx="93" cy="88" r="3.5" class="edge-pass"/><text x="104" y="96" text-anchor="start" class="rel-s">化粧坂</text>
+<circle cx="74" cy="146" r="3.5" class="edge-pass"/><text x="86" y="150" text-anchor="start" class="rel-s">大仏</text>
+<circle cx="76" cy="214" r="3.5" class="edge-pass"/><text x="88" y="218" text-anchor="start" class="rel-s">極楽寺坂</text>
+<circle cx="278" cy="80" r="3.5" class="edge-pass"/><text x="268" y="98" text-anchor="end" class="rel-s">朝比奈</text>
+<circle cx="299" cy="196" r="3.5" class="edge-pass"/><text x="306" y="190" text-anchor="start" class="rel-s">名越</text>
+<circle cx="262" cy="214" r="6" class="rel-dot"/><text x="252" y="212" text-anchor="end" class="rel-t">松葉ヶ谷</text><text x="252" y="230" text-anchor="end" class="rel-s">（日蓮の草庵）</text>
+<circle cx="42" cy="228" r="6" class="rel-dot"/><text x="42" y="250" text-anchor="middle" class="rel-t">極楽寺</text><text x="42" y="268" text-anchor="middle" class="rel-s">（忍性）</text>
+<text x="6" y="324" class="rel-t">← 龍ノ口・片瀬（腰越・藤沢）</text>
+</svg>
+  <p class="rel-cap">実際の地図ではなく、位置関係を分かりやすくした模式図です。白い丸が鎌倉七口、塗りの丸が拠点と出来事の場所です。</p>
+  <p class="rs-body">極楽寺は、西の<ruby>極楽寺坂<rt>ごくらくじざか</rt></ruby>を越えた先にあります。日蓮の草庵があったと伝わる松葉ヶ谷は、東の<ruby>名越<rt>なごえ</rt></ruby>の切通の手前です。一遍が止められたのは北の<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>、日蓮が処刑されかけた龍ノ口は、さらに西の<ruby>腰越<rt>こしごえ</rt></ruby>にあります。</p>
+  <p class="rs-body">一遍は、幕府の法が及ばない鎌倉の境目の土地をたどって念仏を広め、同じ一帯を、忍性が率いる律宗の集団も拠点にしていたのではないか。そう考える論文もあります（下の出典「一遍の鎌倉遊行について」）。</p>
+  </section>
+
+  <section class="rs-sec" aria-labelledby="rs-ev">
+  <h2 id="rs-ev">宗派どうしに、何が起きたか</h2>
+  <p class="rs-note">鎌倉の宗派は、一度にそろったわけではありません。1253年に建長寺が開かれてから、1282年に円覚寺が開かれるまでのおよそ30年のあいだに、日蓮の布教、奈良から来た律宗の僧たち、そして一遍の一行が、相次いで鎌倉にやって来ました。下の出来事は、史料や寺の由緒で確かめられるものだけを年の順に並べ、確かでないものは「〜と伝わる」と書いています。</p>
+  <figure class="rs-fig">
+  <div class="rs-top" aria-hidden="true"><span class="rs-bracket" style="left:34.19%; width:12.39%"><span>この30年</span></span></div>
+  <div class="rs-line" aria-hidden="true"><i class="rs-dot" style="left:11.55%"></i><i class="rs-dot" style="left:28.64%"></i><i class="rs-dot" style="left:33.76%"></i><i class="rs-dot" style="left:34.19%"></i><i class="rs-dot" style="left:37.18%"></i><i class="rs-dot" style="left:37.61%"></i><i class="rs-dot" style="left:38.04%"></i><i class="rs-dot" style="left:40.17%"></i><i class="rs-dot" style="left:41.88%"></i><i class="rs-dot" style="left:46.58%"></i><i class="rs-dot" style="left:47.86%"></i><i class="rs-dot" style="left:68.37%"></i><i class="rs-dot" style="left:69.23%"></i><i class="rs-dot" style="left:94.44%"></i></div>
+  <div class="rs-labels" aria-hidden="true"><span style="left:11.55%">寿福寺<br><em>1200</em></span><span style="left:34.19%">建長寺<br><em>1253</em></span><span style="left:46.58%">円覚寺<br><em>1282</em></span><span style="left:68.37%">幕府滅亡<br><em>1333</em></span></div>
+  <figcaption>1180年から1400年までの線に、下の「宗派どうしに、何が起きたか」の出来事を点で置きました。点の半分は、1253年から1282年までのおよそ30年に集まっています。</figcaption>
+</figure>
+  <ol class="ev-list">
+    <li><span class="ev-y">1200</span><p class="ev-t"><ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>栄西<rt>えいさい</rt></ruby>を開山に迎え、寿福寺を開いたと伝わります。栄西は、宋で学んだ禅を日本に伝えた僧です。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/g10.html">寿福寺</a></p></li>
+    <li><span class="ev-y">1240</span><p class="ev-t"><ruby>北条経時<rt>ほうじょうつねとき</rt></ruby>が、浄土宗の<ruby>然阿良忠<rt>ねんありょうちゅう</rt></ruby>を開山に迎えて<ruby>佐助ヶ谷<rt>さすけがやつ</rt></ruby>に<ruby>蓮華寺<rt>れんげじ</rt></ruby>を開き、3年後に<ruby>材木座<rt>ざいもくざ</rt></ruby>へ移して光明寺と改めたと伝わります。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re6.html">光明寺（宗教でめぐる 06）</a></p></li>
+    <li><span class="ev-y">1252</span><p class="ev-t">大仏の造立が始まったと、幕府の記録『<ruby>吾妻鏡<rt>あづまかがみ</rt></ruby>』は記しています。資金は、僧の<ruby>浄光<rt>じょうこう</rt></ruby>が人々から集めたと伝わります。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re10.html"><ruby>高徳院<rt>こうとくいん</rt></ruby>（宗教でめぐる 10）</a></p></li>
+    <li><span class="ev-y">1253</span><p class="ev-t">北条時頼が、宋から来た禅僧の<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を開山に迎え、建長寺を開きました。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re2.html">建長寺（宗教でめぐる 02）</a></p></li>
+    <li><span class="ev-y">1260</span><p class="ev-t">7月、日蓮が『立正安国論』を前<ruby>執権<rt>しっけん</rt></ruby>の北条時頼に献じました。災いが続くのは誤った教えが広まっているからだと説き、法華経を立てるよう求めた書です。8月には、日蓮が住む<ruby>松葉ヶ谷<rt>まつばがやつ</rt></ruby>の草庵が、念仏を信じる人々に襲われました。草庵の跡を伝える寺は、今も複数あります。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re4.html"><ruby>安国論寺<rt>あんこくろんじ</rt></ruby>など（宗教でめぐる 04）</a></p></li>
+    <li><span class="ev-y">1261</span><p class="ev-t">5月、日蓮が伊豆の伊東へ流されました。同じ年、律宗の<ruby>忍性<rt>にんしょう</rt></ruby>が、北条時頼・<ruby>重時<rt>しげとき</rt></ruby>・<ruby>実時<rt>さねとき</rt></ruby>らの信頼を得て鎌倉に入りました。</p></li>
+    <li><span class="ev-y">1262</span><p class="ev-t">北条時頼の求めで、奈良の西大寺から<ruby>叡尊<rt>えいそん</rt></ruby>が鎌倉に下りました。忍性の師にあたる僧です。</p></li>
+    <li><span class="ev-y">1267</span><p class="ev-t">忍性が極楽寺の開山となりました。病人や貧しい人の救済、橋や道の<ruby>普請<rt>ふしん</rt></ruby>に力を尽くしたと伝わります。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re8.html">極楽寺（宗教でめぐる 08）</a></p></li>
+    <li><span class="ev-y">1271</span><p class="ev-t">日照りの夏、忍性が雨乞いの祈りを行いました。日蓮はこの祈りをめぐって勝負と法論を挑みましたが、忍性は相手にしなかったとされます。9月、日蓮は捕らえられて<ruby>龍ノ口<rt>たつのくち</rt></ruby>の<ruby class="o1">刑場<rt>けいじょう</rt></ruby>で斬られる寸前までいき、処刑は取りやめになったと伝わります。そのあと佐渡へ流されました。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re5.html"><ruby>龍口寺<rt>りゅうこうじ</rt></ruby>（宗教でめぐる 05）</a></p></li>
+    <li><span class="ev-y">1282</span><p class="ev-t">3月、<ruby>一遍<rt>いっぺん</rt></ruby>の一行が<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>から鎌倉に入ろうとして、警護の武士に止められたと『<ruby>一遍聖絵<rt>いっぺんひじりえ</rt></ruby>』は描いています。一行は<ruby>片瀬<rt>かたせ</rt></ruby>の浜に移り、踊り念仏を行いました。12月、北条時宗が宋から招いた<ruby>無学祖元<rt>むがくそげん</rt></ruby>を開山に、円覚寺を開きました。<ruby>蒙古襲来<rt>もうこしゅうらい</rt></ruby>の戦没者を、敵味方の区別なく弔うためと、円覚寺は伝えています。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re1.html">円覚寺（宗教でめぐる 01）</a></p></li>
+    <li><span class="ev-y">1285</span><p class="ev-t">北条時宗の妻・<ruby>覚山尼<rt>かくさんに</rt></ruby>が<ruby>東慶寺<rt>とうけいじ</rt></ruby>を開いたと伝わります。のちに、夫と別れたい女性が駆け込む寺として知られるようになりました。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re1.html">東慶寺（宗教でめぐる 01）</a></p></li>
+    <li><span class="ev-y">1333</span><p class="ev-t">5月22日、北条<ruby>高時<rt>たかとき</rt></ruby>をはじめ一族郎党870余名が、<ruby>葛西ヶ谷<rt>かさいがやつ</rt></ruby>の<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で自害したと伝わります。鎌倉幕府の最期です。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/g8.html"><ruby>東勝寺跡<rt>とうしょうじあと</rt></ruby>（エリア別 08）</a></p></li>
+    <li><span class="ev-y">1335</span><p class="ev-t"><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>が、北条氏の霊を慰めるため、<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>に命じて北条氏の屋敷の跡に<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>を建てさせたと、寺は伝えています。開山は天台宗の<ruby>円観<rt>えんかん</rt></ruby>です。建物が実際に整ったのは、それから20年近く後と考えられています。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/g8.html">宝戒寺（エリア別 08）</a></p></li>
+    <li><span class="ev-y">1394</span><p class="ev-t">幕府の滅亡で焼けていた<ruby>海蔵寺<rt>かいぞうじ</rt></ruby>が、<ruby>上杉氏定<rt>うえすぎうじさだ</rt></ruby>によって禅の寺として建て直されました。もとは真言宗の寺だったと伝わります。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re9.html">海蔵寺（宗教でめぐる 09）</a></p></li>
+    <li><span class="ev-y">1868</span><p class="ev-t">明治の<ruby>神仏分離<rt>しんぶつぶんり</rt></ruby>で、鶴岡八幡宮寺は神社の<ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>となりました。境内の大塔・薬師堂・仁王門などは取り壊され、仏に仕える僧たちの住まい（<ruby>二十五坊<rt>にじゅうごぼう</rt></ruby>）も、すべて失われました。</p><figure class="plate"><div class="pl-frame"><img src="https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg" alt="幕末の鶴岡八幡宮寺の大塔（多宝塔）を写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">画像を読み込めませんでした。所蔵館のページで見る</a></div><figcaption><span class="pl-cap">取り壊される数年前の大塔（多宝塔）。当時の鶴岡八幡宮は、神と仏をあわせて祀る八幡宮寺でした。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1867〜68年。J・ポール・ゲッティ美術館所蔵（パブリックドメイン）。<a href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">所蔵館のページで見る</a></span></figcaption></figure><p class="ev-p">ゆかりの場所：<a href="knowledge/re11.html">鶴岡八幡宮（宗教でめぐる 11）</a></p></li>
+  </ol>
+  </section>
+
+  <section class="rs-sec" aria-labelledby="rs-br">
+  <h2 id="rs-br">宗派ごとに見る</h2>
   <div class="tree-root">
     <span class="tree-label">仏教</span>
-
     <div class="tree-branch">
-      <p class="b-label">禅宗（臨済宗）——執権が政治的に導入した宗派</p>
-      <p class="tree-leaves"><b>北条時頼・時宗が、国を挙げて根づかせた</b>のがこの禅宗です。単なる信仰ではなく、蒙古襲来という国難への向き合い方そのものでした。<br>
-      建長寺派は北鎌倉の谷筋、建長寺・明月院・円応寺が徒歩10分ほどの範囲に固まり、そこから金沢街道沿いに浄妙寺・報国寺まで延びています。円覚寺派は北鎌倉駅を出てすぐ、円覚寺・東慶寺・浄智寺が同じ坂道の途中に並ぶ、目と鼻の先の距離感。</p>
+      <h3 class="b-label">臨済宗（禅宗）——執権が招いた宗派</h3>
+      <p class="tree-leaves">宋から来た禅僧を、北条氏の執権が自ら<ruby>開基<rt>かいき</rt></ruby>となって迎えた宗派です。寿福寺に始まり、北条時頼の建長寺、北条時宗の円覚寺と、大きな寺が相次いで開かれました。建長寺と円覚寺は、のちに鎌倉五山の第一位と第二位に数えられます。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re2.html">建長寺派の<ruby>明月院<rt>めいげついん</rt></ruby>・建長寺・<ruby>円応寺<rt>えんのうじ</rt></ruby></a>、<a href="knowledge/re3.html"><ruby class="o1">浄妙寺<rt>じょうみょうじ</rt></ruby>・<ruby>報国寺<rt>ほうこくじ</rt></ruby></a>、<a href="knowledge/re9.html">海蔵寺</a>／<a href="knowledge/re1.html">円覚寺派の円覚寺・東慶寺・<ruby>浄智寺<rt>じょうちじ</rt></ruby></a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">日蓮宗——体制に抗って根づいた宗派</p>
-      <p class="tree-leaves">禅宗が「体制側」だったのに対し、日蓮宗は<b>幕府の宗教政策そのものを批判して迫害を受けながら</b>根を張りました。大町・材木座にこれだけ密集しているのは、迫害の記憶がむしろ信仰を強くした証拠でもあります。<br>
-      大町・材木座では、妙本寺から妙長寺まで8つの寺が、住宅地の路地一本ごとに次の寺が現れるという密度で並んでいます。腰越では、龍口寺を中心に輪番八ヶ寺が、江ノ電の線路に沿って点々と続いています。</p>
+      <h3 class="b-label">日蓮宗——執権を批判した宗派</h3>
+      <p class="tree-leaves">日蓮は『立正安国論』で幕府に進言し、ほかの宗派を強く批判しました。そのため、草庵の焼き討ち、伊豆への<ruby>流罪<rt>るざい</rt></ruby>、龍ノ口の<ruby>法難<rt>ほうなん</rt></ruby>と、鎌倉で繰り返し迫害を受けています。<ruby>大町<rt>おおまち</rt></ruby>・材木座には、日蓮ゆかりの伝承を持つ寺が、路地一本ごとに次の寺が現れるほどの密度で並びます。腰越の龍口寺は、龍ノ口の法難の地と伝わる場所に建っています。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re4.html">大町・材木座の8ヶ寺</a>、<a href="knowledge/re5.html">腰越の龍口寺と<ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺</a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">浄土宗——敵味方を越えて選ばれた宗派</p>
-      <p class="tree-leaves"><b>北条氏と、その北条氏を滅ぼした新田義貞——敵対する立場の人々が、それぞれ浄土宗の寺を建てています</b>。政治的な立場を越えて選ばれた教えだったのかもしれません。<br>
-      材木座では光明寺・九品寺・安養院が、海に向かう緩やかな坂道の途中に並んでいます。西口の英勝寺は、鎌倉駅からは反対方向——江戸期、水戸徳川家の姫が、あえて中心から離れたこの場所を選びました。</p>
+      <h3 class="b-label">浄土宗——阿弥陀仏の名を唱える宗派</h3>
+      <p class="tree-leaves">阿弥陀仏の名を唱えれば救われると説く、法然の教えの流れです。北条経時が良忠を迎えた光明寺は、今は浄土宗の大本山で、毎年10月の<ruby>十夜<rt>じゅうや</rt></ruby>法要はこの寺で始まったと伝わります。北条氏を滅ぼした<ruby>新田義貞<rt>にったよしさだ</rt></ruby>が建てたと伝わる<ruby>九品寺<rt>くほんじ</rt></ruby>、北条政子ゆかりと伝わる<ruby>安養院<rt>あんよういん</rt></ruby>も材木座にあります。大仏で知られる高徳院も浄土宗の寺です。江戸時代には、<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>の側室だった<ruby class="o1">英勝院<rt>えいしょういん</rt></ruby>が<ruby>英勝寺<rt>えいしょうじ</rt></ruby>を開きました。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re6.html">光明寺・九品寺・安養院</a>、<a href="knowledge/re7.html">英勝寺</a>、<a href="knowledge/re10.html">高徳院</a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">律宗——祈りと福祉が分かれていなかった時代の宗派</p>
-      <p class="tree-leaves">極楽寺（忍性の拠点）。<b>「お寺」が病院や道路工事まで担っていた</b>、今の宗教のイメージとは違う姿がここにあります。真言宗と重なる系譜。</p>
+      <h3 class="b-label">時宗——鎌倉に入れなかった宗派</h3>
+      <p class="tree-leaves">念仏を唱えながら踊る「踊り念仏」で知られる、一遍の宗派です。1282年、一遍の一行は鎌倉に入ることを止められ、片瀬の浜で踊り念仏を行いました。鎌倉の中には、のちに時宗の寺が開かれています。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/c6.html"><ruby>十二所<rt>じゅうにそ</rt></ruby>の<ruby>光触寺<rt>こうそくじ</rt></ruby></a>、<a href="knowledge/c4.html">大町の<ruby>別願寺<rt>べつがんじ</rt></ruby></a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">真言宗</p>
-      <p class="tree-leaves">成就院・星井寺は極楽寺のすぐ隣。浄光明寺・海蔵寺は反対側の扇ガ谷、亀ヶ谷坂に向かう谷筋に、ひっそりと構えています。禅宗導入以前から、鎌倉の信仰を支えていた古い系譜です。</p>
+      <h3 class="b-label">律宗——祈りと救済を一つにした宗派</h3>
+      <p class="tree-leaves">戒律を重んじる宗派で、奈良の西大寺の叡尊と、その弟子の忍性が鎌倉に広めました。忍性は極楽寺を拠点に、病人や貧しい人の救済、橋や道の普請に力を尽くしたと伝わります。日蓮が書き残したものには、この忍性への批判が繰り返し出てきます。極楽寺は、今は<ruby class="o1">真言律宗<rt>しんごんりっしゅう</rt></ruby>の寺です。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re8.html">極楽寺・<ruby class="o1">成就院<rt>じょうじゅいん</rt></ruby>・<ruby>星井寺<rt>ほしいでら</rt></ruby></a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">天台宗</p>
-      <p class="tree-leaves">杉本寺——<b>鎌倉最古の寺。頼朝が来るより450年も前</b>からここにありました。</p>
+      <h3 class="b-label">真言宗——北条氏の祈りを支えた宗派</h3>
+      <p class="tree-leaves">密教の宗派です。北条<ruby>長時<rt>ながとき</rt></ruby>が開いた<ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>、北条<ruby>泰時<rt>やすとき</rt></ruby>ゆかりと伝わる成就院、北条<ruby>義時<rt>よしとき</rt></ruby>が建てた薬師堂に始まると伝わる<ruby>覚園寺<rt>かくおんじ</rt></ruby>など、北条氏とつながりの深い寺があります。鶴岡八幡宮寺にも、真言宗と天台宗の僧が仕えていました。<ruby>扇ガ谷<rt>おうぎがやつ</rt></ruby>の海蔵寺は、もとは真言宗の寺でしたが、幕府の滅亡で焼けた後、禅の寺として建て直されています。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re9.html">浄光明寺</a>、<a href="knowledge/re8.html">成就院・星井寺</a>、<a href="knowledge/g8.html">覚園寺</a></p>
     </div>
-
     <div class="tree-branch">
-      <p class="b-label">単立（特定宗派に属さない）</p>
-      <p class="tree-leaves">高徳院（大仏）・長谷寺。<b>同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違います</b>。</p>
+      <h3 class="b-label">天台宗——最も古い寺と、北条氏を弔う寺</h3>
+      <p class="tree-leaves">比叡山を本山とする宗派です。734年の創建と伝わる鎌倉最古の<ruby>杉本寺<rt>すぎもとでら</rt></ruby>と、滅びた北条氏の霊を弔うために屋敷の跡に建てられた宝戒寺が、天台宗の寺です。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re10.html">杉本寺</a>、<a href="knowledge/g8.html">宝戒寺</a></p>
+    </div>
+    <div class="tree-branch">
+      <h3 class="b-label"><ruby>単立<rt>たんりつ</rt></ruby>——どの宗派にも属さない寺</h3>
+      <p class="tree-leaves"><ruby>長谷寺<rt>はせでら</rt></ruby>は、江戸時代のはじめに浄土宗となり、第二次世界大戦の後に浄土宗から離れて、どの宗派にも属さない単立の寺になりました。本尊は、日本最大級の木造の十一面観音です。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re10.html">長谷寺</a></p>
     </div>
   </div>
-
   <div class="tree-root">
     <span class="tree-label">神道</span>
-
-    <div class="tree-branch moss">
-      <p class="b-label">鶴岡八幡宮系——源氏の氏神から始まる系譜</p>
-      <p class="tree-leaves">鶴岡八幡宮・荏柄天神社・鎌倉宮。<b>源氏の氏神、学問の神、非業の死を遂げた親王</b>——祀られる理由がそれぞれまったく違います。</p>
+    <div class="tree-branch">
+      <h3 class="b-label">鶴岡八幡宮系——神と仏がともにあった社</h3>
+      <p class="tree-leaves"><ruby class="o3">源頼義<rt>みなもとのよりよし</rt></ruby>が<ruby>由比若宮<rt>ゆいわかみや</rt></ruby>を建てたのが始まりと伝わり、1180年に<ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby>が今の地に移しました。明治までは「鶴岡八幡宮寺」と呼ばれる、神と仏をあわせて祀る場所で、仏に仕える僧たちが神主より上の立場で運営していました。明治の神仏分離で仏教の建物が取り壊され、今の姿になっています。学問の神・<ruby class="o1">菅原道真<rt>すがわらのみちざね</rt></ruby>を祀る<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>と、明治に創建され<ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>も、この流れで訪ねられます。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re11.html">鶴岡八幡宮・荏柄天神社・鎌倉宮</a></p>
     </div>
-
-    <div class="tree-branch moss">
-      <p class="b-label">長谷・腰越系——仏教より古い信仰</p>
-      <p class="tree-leaves">甘縄神明神社（<b>鎌倉最古と伝わる神社</b>）と、御霊神社（平安時代から続くと伝わる神社）です。仏教が伝来するより前から、この土地にあった信仰の層です。</p>
+    <div class="tree-branch">
+      <h3 class="b-label"><ruby>長谷<rt>はせ</rt></ruby>・腰越系——仏教より古い信仰</h3>
+      <p class="tree-leaves"><ruby>甘縄神明神社<rt>あまなわしんめいじんじゃ</rt></ruby>は鎌倉最古と伝わる神社、<ruby>御霊神社<rt>ごりょうじんじゃ</rt></ruby>は平安時代の武将・<ruby>鎌倉権五郎景政<rt>かまくらごんごろうかげまさ</rt></ruby>を祀る神社です。</p>
+      <p class="rs-walk">歩いて訪ねる：<a href="knowledge/re12.html">甘縄神明神社・御霊神社</a></p>
     </div>
   </div>
+  </section>
 
-  <p class="diagram-intro">政治に導入された禅宗、政治に抗った日蓮宗、敵味方を越えた浄土宗——同じ「仏教」でも、鎌倉に根づいた事情はまるで違います。頭がくらくらんぽしませんか。</p>
 
-<p class="diagram-intro">関係が掴めたら、実際に歩いてみませんか。<a href="index.html#tab-religion">宗教でめぐるコース一覧へ</a></p>
+  <section class="rs-sec" aria-labelledby="rs-cal">
+  <h2 id="rs-cal">今も続く祈りの暦</h2>
+  <p class="rs-note">このページの出来事や人を、今も偲ぶ行事です。日に合わせて歩くと、あの時代の続きに立ち会えます。日程や参加の方法は年によって変わることがあるので、訪れる前に各寺社の公式の案内で確かめてください。</p>
+  <ol class="ev-list cal-list">
+    <li><span class="ev-y cal-d">毎週 土・日</span><p class="cal-h">円覚寺の土日<ruby>坐禅<rt>ざぜん</rt></ruby>会</p><p class="ev-t">無学祖元が開いた円覚寺では、一般の人も参加できる坐禅会が、週末に開かれています。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re1.html">円覚寺（宗教でめぐる 01）</a></p></li>
+    <li><span class="ev-y cal-d">5月22日</span><p class="cal-h">宝戒寺の徳崇大<ruby>権現<rt>ごんげん</rt></ruby>会</p><p class="ev-t">鎌倉幕府が滅びた日に、北条氏の霊を慰める法要が営まれます。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/g8.html">宝戒寺（エリア別 08）</a></p></li>
+    <li><span class="ev-y cal-d">9月11日・12日ごろ</span><p class="cal-h">龍口寺と<ruby>常栄寺<rt>じょうえいじ</rt></ruby>の龍口法難会</p><p class="ev-t">日蓮が龍ノ口で処刑されかけた出来事を偲ぶ法要です。刑場へ向かう日蓮に、<ruby>桟敷の尼<rt>さじきのあま</rt></ruby>がぼたもちを差し出したと伝わることから、ぼたもちが振る舞われます。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re5.html">龍口寺（宗教でめぐる 05）</a></p></li>
+    <li><span class="ev-y cal-d">9月14日〜16日</span><p class="cal-h">鶴岡八幡宮の例大祭</p><p class="ev-t">1187年に<ruby>放生会<rt>ほうじょうえ</rt></ruby>と<ruby>流鏑馬<rt>やぶさめ</rt></ruby>が始められたと、『吾妻鏡』は記しています。16日には流鏑馬が奉納されます。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re11.html">鶴岡八幡宮（宗教でめぐる 11）</a></p></li>
+    <li><span class="ev-y cal-d">10月12日〜15日</span><p class="cal-h">光明寺のお十夜</p><p class="ev-t">1495年に始まったと伝わる念仏の法要です。浄土宗の寺で広く行われる十夜法要は、ここから始まったとされます。</p><p class="ev-p">ゆかりの場所：<a href="knowledge/re6.html">光明寺（宗教でめぐる 06）</a></p></li>
+  </ol>
+  </section>
 
-<div class="share-buttons">
+  <section class="rs-sec" aria-labelledby="rs-cue">
+  <h2 id="rs-cue">現地で宗派を見分ける手がかり</h2>
+  <dl class="rs-cues">
+    <div><dt>「南無妙法蓮華経」の<ruby>題目<rt>だいもく</rt></ruby></dt><dd>石碑や額にこの七文字が刻まれていれば、日蓮宗の寺であることが多い手がかりです。</dd></div>
+    <div><dt>「南無阿弥陀仏」の<ruby>名号<rt>みょうごう</rt></ruby></dt><dd>浄土宗や時宗の寺であることが多い手がかりです。</dd></div>
+    <div><dt>一直線に並ぶ<ruby>伽藍<rt>がらん</rt></ruby></dt><dd>門・<ruby>仏殿<rt>ぶつでん</rt></ruby>・<ruby class="o1">方丈<rt>ほうじょう</rt></ruby>などが一本の軸の上に並ぶのは、建長寺や円覚寺のような禅宗（臨済宗）の大きな寺に見られる配置です。</dd></div>
+    <div><dt>三つの三角形の紋「<ruby>三つ鱗<rt>みつうろこ</rt></ruby>」</dt><dd>北条氏の家紋です。宝戒寺の門扉や本堂にも見られます。</dd></div>
+  </dl>
+  </section>
+
+  <p class="diagram-intro rs-close">禅を招いたのも、日蓮を流したのも、北条氏が率いた幕府でした。その北条氏は1333年に滅び、2年後、自分たちの屋敷の跡に建てられた寺で弔われる側になりました。頭がくらくらんぽしませんか。</p>
+  <p class="diagram-intro">関係が掴めたら、実際に歩いてみませんか。<a href="index.html#tab-religion">宗教でめぐるコース一覧へ</a></p>
+  
+  <section class="rs-sec" aria-labelledby="rs-quiz">
+  <h2 id="rs-quiz">確かめてみる</h2>
+  <p class="rs-note">読み終えたら、クイズの<a href="quiz.html#religion:shinbukkyo">鎌倉新仏教編</a>で確かめてみてください。禅宗編・日蓮宗編など、宗派ごとの編もあります。</p>
+  </section>
+  <section class="rs-sec rs-src" aria-labelledby="rs-src">
+  <h2 id="rs-src">出典</h2>
+  <p class="rs-note">このページを書くときに確かめた資料です。</p>
+  <ol class="src-list"><li><a href="https://www.engakuji.or.jp/about/" target="_blank" rel="noopener">臨済宗大本山 円覚寺「円覚寺について」</a></li><li><a href="https://www.engakuji.or.jp/blog/40635/" target="_blank" rel="noopener">臨済宗大本山 円覚寺「比叡山と鎌倉新仏教」</a></li><li><a href="https://www.engakuji.or.jp/blog/37821/" target="_blank" rel="noopener">臨済宗大本山 円覚寺「鎌倉新仏教の祖師たち」</a></li><li><a href="https://www.engakuji.or.jp/blog/40781/" target="_blank" rel="noopener">臨済宗大本山 円覚寺「鶴岡八幡宮へ」</a></li><li><a href="https://www.kenchoji.com/about/" target="_blank" rel="noopener">巨福山 建長寺「歴史」</a></li><li><a href="https://www.kotoku-in.jp/about.html" target="_blank" rel="noopener">鎌倉大仏殿高徳院「鎌倉大仏と高徳院」</a></li><li><a href="https://hokaiji.com/%E7%B8%81%E8%B5%B7/" target="_blank" rel="noopener">宝戒寺「縁起」</a></li><li><a href="http://www.jishu.or.jp/ippensyounin-osie/ippensyounin-hujisawa/" target="_blank" rel="noopener">時宗総本山 遊行寺「一遍上人と藤沢」</a></li><li><a href="https://www.nichiren.or.jp/goibun/id124/" target="_blank" rel="noopener">日蓮宗ポータルサイト「安国論副状」</a></li><li><a href="https://www.ris.ac.jp/library/nichiren-kichou/d61_05/index.html" target="_blank" rel="noopener">立正大学図書館「日蓮聖人御伝木版画」</a></li><li><a href="https://ryuukoji.com/news/169/" target="_blank" rel="noopener">寂光山 龍口寺「龍口法難会 開催のご案内」</a></li><li><a href="https://www.trip-kamakura.com/facility/detail.php?id=14" target="_blank" rel="noopener">鎌倉市観光協会「海蔵寺」</a></li><li><a href="https://www.trip-kamakura.com/facility/detail.php?id=24" target="_blank" rel="noopener">鎌倉市観光協会「光明寺」</a></li><li><a href="https://www.trip-kamakura.com/event/detail.php?id=62" target="_blank" rel="noopener">鎌倉市観光協会「鶴岡八幡宮例大祭」</a></li><li><a href="https://cir.nii.ac.jp/crid/1050001337812142848" target="_blank" rel="noopener">「一遍の鎌倉遊行について」（CiNii Research）</a></li><li><a href="https://japanknowledge.com/introduction/keyword.html?i=1657" target="_blank" rel="noopener">『国史大辞典』「鎌倉仏教」（ジャパンナレッジ）</a></li><li><a href="https://pub.hozokan.co.jp/book/b522630.html" target="_blank" rel="noopener">黒田俊雄『黒田俊雄著作集3 <ruby>顕密<rt>けんみつ</rt></ruby>仏教と寺社勢力』（法藏館）</a></li><li><a href="https://kotobank.jp/word/%E5%9B%9B%E7%AE%87%E6%A0%BC%E8%A8%80-72363" target="_blank" rel="noopener">「四箇格言」（コトバンク）</a></li><li><a href="https://jodoshuzensho.jp/daijiten/index.php/%E5%9B%9B%E7%AE%87%E6%A0%BC%E8%A8%80" target="_blank" rel="noopener">『新纂浄土宗大辞典』「四箇格言」</a></li><li><a href="https://kotobank.jp/word/%E8%98%AD%E6%B8%93%E9%81%93%E9%9A%86-17903" target="_blank" rel="noopener">「蘭渓道隆」（コトバンク）</a></li><li>『吾妻鏡』（正嘉元年8月23日条、文治3年8月15日条ほか）</li><li>『一遍聖絵』（<ruby class="o1">清浄光寺<rt>しょうじょうこうじ</rt></ruby>蔵）</li><li>Wikipedia「忍性」「道元」「長谷寺 (鎌倉市)」「宝戒寺」「鶴岡二十五坊」「正嘉地震」</li></ol>
+  </section>
+
+  <div class="share-buttons">
     <span class="share-label">この記事をシェア</span>
     <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
     <a class="share-btn" href="#" id="shareLine" target="_blank" rel="noopener">LINE</a>

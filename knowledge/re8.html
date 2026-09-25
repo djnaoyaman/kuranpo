@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "極楽寺・成就院・星井寺（宗教でめぐる）", "description": "忍性の律宗と、古くからの真言宗が重なる極楽寺周辺。祈ることと助けることが分かれていなかった時代の輪郭が残る。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/re8.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/re8.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/re8.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
@@ -494,6 +506,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +518,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 08 極楽寺・成就院・星井寺</p>
+    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 08 <ruby>極楽寺<rt>ごくらくじ</rt></ruby>・<ruby class="o1">成就院<rt>じょうじゅいん</rt></ruby>・<ruby>星井寺<rt>ほしいでら</rt></ruby></p>
   </div>
 </header>
 
@@ -521,9 +534,9 @@
     <h1><span class="no" style="color:var(--moss)">08</span><span>極楽寺・成就院・星井寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="religion" aria-label="極楽寺駅から稲村ヶ崎駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.7%"></i><i class="r-dot" style="left:45.1%"></i><i class="r-dot" style="left:51.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>極楽寺駅</span><span>稲村ヶ崎駅</span></span></div>
+    <div class="kn-route" data-set="religion" aria-label="極楽寺駅から稲村ヶ崎駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.7%"></i><i class="r-dot" style="left:45.1%"></i><i class="r-dot" style="left:51.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>極楽寺駅</span><span><ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>駅</span></span></div>
     <div class="meta-row"><span>1.5時間</span><span class="dist">施設間の徒歩距離 約1.4km</span><span class="fee">大人合計 無料（＋任意 ¥300）</span></div>
-    <p class="story">「お寺」が病院や道路工事まで担っていた時代がありました。<ruby class=o1>忍性<rt>にんしょう</rt></ruby>の律宗と、古くからの真言宗が重なる極楽寺周辺には、祈ることと助けることが分かれていなかった時代の輪郭が残っています。今の「お寺」の姿からは想像しにくく、頭がくらくらんぽする話です。その痕跡がどこに残っているかは、歩いて探してみてください。</p>
+    <p class="story">「お寺」が病院や道路工事まで担っていた時代がありました。<ruby class=o1>忍性<rt>にんしょう</rt></ruby>の律宗と、古くからの<ruby class="o1">真言宗<rt>しんごんしゅう</rt></ruby>が重なる極楽寺周辺には、祈ることと助けることが分かれていなかった時代の輪郭が残っています。今の「お寺」の姿からは想像しにくく、頭がくらくらんぽする話です。その痕跡がどこに残っているかは、歩いて探してみてください。</p>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：極楽寺駅</span></div></li><li><span class="leg">極楽寺駅から 徒歩150m・約2分</span><div class="row"><span class="sname">極楽寺</span><span class="sfee">無料</span></div><span class="snote"><ruby class=o1>忍性<rt>にんしょう</rt></ruby>が社会事業とともに営んだ寺。</span><span class="opt">＋宝物館（春・秋の特定日のみ開館） ¥300（一律）</span></li><li><span class="leg">極楽寺から 徒歩500m・約7分</span><div class="row"><span class="sname">成就院</span><span class="sfee">無料</span></div></li><li><span class="leg">成就院から 徒歩100m・約1分</span><div class="row"><span class="sname">星井寺</span><span class="sfee">無料</span></div><span class="snote">成就院が管理する境外仏堂。</span></li><li class="endleg"><span class="leg">星井寺から 徒歩700m・約10分</span><div class="row"><span class="sname">解散地点：稲村ヶ崎駅</span></div></li></ul>
     
   </div>
@@ -592,7 +605,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="religion" href="re9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">09</span>浄光明寺・海蔵寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:34.3%"></i><i class="r-dot" style="left:52.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>鎌倉駅西口</span></span><span class="pg-meta">1時間・徒歩約2.1km</span></a>
+    <a class="pg-next" data-set="religion" href="re9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">09</span><ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>・<ruby>海蔵寺<rt>かいぞうじ</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:34.3%"></i><i class="r-dot" style="left:52.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>鎌倉駅西口</span></span><span class="pg-meta">1時間・徒歩約2.1km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="re7.html">← 前：英勝寺</a><a class="pg-list" href="../index.html#tab-religion">一覧へ</a></div>
   </nav>
 </main>

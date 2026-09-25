@@ -423,6 +423,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -552,6 +564,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -563,7 +576,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C13 深沢エリア① 手広・寺分</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C13 <ruby>深沢<rt>ふかさわ</rt></ruby>エリア① <ruby>手広<rt>てびろ</rt></ruby>・<ruby>寺分<rt>てらぶん</rt></ruby></p>
   </div>
 </header>
 
@@ -579,14 +592,14 @@
     <h1><span class="no">C13</span><span data-i18n="kn.c13.title">深沢エリア① 手広・寺分</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="湘南深沢駅から湘南深沢駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:32.4%"></i><i class="r-dot" style="left:67.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>湘南深沢駅</span><span>湘南深沢駅</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="湘南深沢駅から湘南深沢駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:32.4%"></i><i class="r-dot" style="left:67.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby class="o1">湘南深沢<rt>しょうなんふかさわ</rt></ruby>駅</span><span>湘南深沢駅</span></span></div>
     <div class="meta-row">
       <span>1.5時間</span>
       <span class="dist">施設間の徒歩距離 約3.2km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c13.story">観光地図にあまり出てこないエリアに、空海ゆかりの古寺があります。<ruby>青蓮寺<rt>しょうれんじ</rt></ruby>は、<ruby>空海<rt>くうかい</rt></ruby>というお坊さんが開いたと伝わる古いお寺。大慶寺は<ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>という格式を持つお寺です。深沢というエリアに、意外と古くて格式の高いお寺が残っていることに、頭がくらくらんぽします。深沢という地名を知っている人自体が少なく、地図を片手に歩く価値があります。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：湘南深沢駅</span></div></li><li><span class="leg">湘南深沢駅から 徒歩1.0km・約14分</span><div class="row"><span class="sname">青蓮寺</span><span class="sfee">無料</span></div><span class="snote">空海開山の伝承。</span></li><li><span class="leg">青蓮寺から 徒歩1.2km・約17分</span><div class="row"><span class="sname">大慶寺</span><span class="sfee">無料</span></div><span class="snote">関東十刹の一。</span></li><li class="endleg"><span class="leg">大慶寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：湘南深沢駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c13.story">観光地図にあまり出てこないエリアに、<ruby>空海<rt>くうかい</rt></ruby>ゆかりの古寺があります。<ruby>青蓮寺<rt>しょうれんじ</rt></ruby>は、<ruby>空海<rt>くうかい</rt></ruby>というお坊さんが開いたと伝わる古いお寺。<ruby>大慶寺<rt>だいけいじ</rt></ruby>は<ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>という格式を持つお寺です。深沢というエリアに、意外と古くて格式の高いお寺が残っていることに、頭がくらくらんぽします。深沢という地名を知っている人自体が少なく、地図を片手に歩く価値があります。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：湘南深沢駅</span></div></li><li><span class="leg">湘南深沢駅から 徒歩1.0km・約14分</span><div class="row"><span class="sname">青蓮寺</span><span class="sfee">無料</span></div><span class="snote">空海<ruby>開山<rt>かいさん</rt></ruby>の伝承。</span></li><li><span class="leg">青蓮寺から 徒歩1.2km・約17分</span><div class="row"><span class="sname">大慶寺</span><span class="sfee">無料</span></div><span class="snote">関東十刹の一。</span></li><li class="endleg"><span class="leg">大慶寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：湘南深沢駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -595,7 +608,7 @@
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E6%B9%98%E5%8D%97%E6%B7%B1%E6%B2%A2%E9%A7%85" target="_blank" rel="noopener">出発：湘南深沢駅</a></div>
   <dl class="terms" data-i18n="kn.c13.terms">
-    <div class="term"><dt><ruby>空海<rt>くうかい</rt></ruby><span class="cat">04</span></dt><dd>青蓮寺の<ruby>開山<rt>かいさん</rt></ruby>伝承に名を残す僧。真言宗の祖師が、鎌倉の外縁にも足跡を残しているとされる例。</dd></div>
+    <div class="term"><dt><ruby>空海<rt>くうかい</rt></ruby><span class="cat">04</span></dt><dd>青蓮寺の<ruby>開山<rt>かいさん</rt></ruby>伝承に名を残す僧。<ruby class="o1">真言宗<rt>しんごんしゅう</rt></ruby>の祖師が、鎌倉の外縁にも足跡を残しているとされる例。</dd></div>
     <div class="term"><dt><ruby>関東十刹<rt>かんとうじっさつ</rt></ruby><span class="cat">02</span></dt><dd>大慶寺はこの寺格に数えられます。観光地図には載らない地域にも、格式ある寺が残っていることを示しています。</dd></div>
   </dl>
 
@@ -653,7 +666,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c14.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C14</span>深沢エリア② 常盤・笛田・梶原</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:24.7%"></i><i class="r-dot" style="left:39.2%"></i><i class="r-dot" style="left:66.3%"></i><i class="r-dot" style="left:78.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>湘南深沢駅</span><span>湘南深沢駅</span></span><span class="pg-meta">2時間・徒歩約5.2km</span></a>
+    <a class="pg-next" data-set="complete" href="c14.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C14</span>深沢エリア② <ruby>常盤<rt>ときわ</rt></ruby>・<ruby>笛田<rt>ふえだ</rt></ruby>・<ruby>梶原<rt>かじわら</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:24.7%"></i><i class="r-dot" style="left:39.2%"></i><i class="r-dot" style="left:66.3%"></i><i class="r-dot" style="left:78.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>湘南深沢駅</span><span>湘南深沢駅</span></span><span class="pg-meta">2時間・徒歩約5.2km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c12.html">← 前：大船・岡本エリア 未収録</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

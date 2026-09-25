@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -588,7 +601,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 05 蒙古襲来と鎮魂の寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 05 <ruby>蒙古襲来<rt>もうこしゅうらい</rt></ruby>と鎮魂の寺</p>
   </div>
 </header>
 
@@ -603,16 +616,16 @@
   </svg>
     <h1><span class="no">05</span><span data-i18n="kn.g5.title">蒙古襲来と鎮魂の寺</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>5月・新緑</b>：円覚寺・東慶寺は新緑の時期、木漏れ日が特に美しいという。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>5月・新緑</b>：<ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>東慶寺<rt>とうけいじ</rt></ruby>は新緑の時期、木漏れ日が特に美しいという。</p></div>
 <div class="practical">
-    <div class="kn-route" data-set="geo" aria-label="北鎌倉駅から浄智寺前までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:16.4%"></i><i class="r-dot" style="left:56.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span>浄智寺前</span></span></div>
+    <div class="kn-route" data-set="geo" aria-label="北鎌倉駅から浄智寺前までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:16.4%"></i><i class="r-dot" style="left:56.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span><ruby>浄智寺<rt>じょうちじ</rt></ruby>前</span></span></div>
     <div class="meta-row">
       <span>2時間</span>
       <span class="dist">施設間の徒歩距離 約0.7km</span>
       <span class="fee">大人合計 ¥900（＋任意 ¥300）</span>
     </div>
     <p class="story" data-i18n="kn.g5.story">性格のまるで違う3つの寺が、なぜ徒歩数分の距離に並んでいるのでしょう。1281年、2度目の<ruby>元寇<rt>げんこう</rt></ruby>（<ruby>弘安の役<rt>こうあんのえき</rt></ruby>）を退けた<ruby class=o1>北条時宗<rt>ほうじょうときむね</rt></ruby>は、その翌年、戦って死んだ人たちの霊を慰めるために円覚寺を建てました。招かれた<ruby>無学祖元<rt>むがくそげん</rt></ruby>は、日本に来る前、中国のお寺が元の軍に襲われても動じなかったという、すごいお坊さんです。東慶寺は後に、女性を救う「<ruby>縁切寺<rt>えんきりでら</rt></ruby>」になりました。浄智寺は北条氏の別の家系・師時が建てています。国を守る、死んだ人を慰める、そして後の女性を救う——性格の違う3つのお寺を、短い距離でつなぐコースです。歩く順番によって印象が変わるので、頭がくらくらんぽする組み合わせを探してみてください。3つの空気の違いは、続けて歩いてこそ体で分かるものです。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩100m・約1分</span><div class="row"><span class="sname">円覚寺</span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote">塔頭含む。</span></li><li><span class="leg">円覚寺から 徒歩300m・約4分</span><div class="row"><span class="sname">東慶寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote">後に尼寺として続いた歴史も持つ。</span><span class="opt">＋松岡宝蔵（展示替えにより変動） ¥300（一律）</span></li><li><span class="leg">東慶寺から 徒歩300m・約4分</span><div class="row"><span class="sname">浄智寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote">鎌倉五山第四位。北条師時開基。</span></li></ul>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩100m・約1分</span><div class="row"><span class="sname">円覚寺</span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote"><ruby class="o1">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li><li><span class="leg">円覚寺から 徒歩300m・約4分</span><div class="row"><span class="sname">東慶寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote">後に尼寺として続いた歴史も持つ。</span><span class="opt">＋松岡宝蔵（展示替えにより変動） ¥300（一律）</span></li><li><span class="leg">東慶寺から 徒歩300m・約4分</span><div class="row"><span class="sname">浄智寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote">鎌倉五山第四位。<ruby class="o1">北条師時<rt>ほうじょうもろとき</rt></ruby><ruby>開基<rt>かいき</rt></ruby>。</span></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -631,7 +644,7 @@
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E5%86%86%E8%A6%9A%E5%AF%BA%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">円覚寺の位置</a></div>
   <dl class="terms" data-i18n="kn.g5.terms">
     <div class="term"><dt><ruby class=o1>北条時宗<rt>ほうじょうときむね</rt></ruby><span class="cat">05</span></dt><dd>8代<ruby>執権<rt>しっけん</rt></ruby>。二度の<ruby>元寇<rt>げんこう</rt></ruby>を退け、円覚寺を建立しました。</dd></div>
-    <div class="term"><dt><ruby>宝冠釈迦如来<rt>ほうかんしゃかにょらい</rt></ruby><span class="cat">03</span></dt><dd>円覚寺の本尊。宝冠を戴く釈迦如来像で、通常の釈迦像とは異なる荘厳な姿。</dd></div>
+    <div class="term"><dt><ruby>宝冠釈迦如来<rt>ほうかんしゃかにょらい</rt></ruby><span class="cat">03</span></dt><dd>円覚寺の本尊。宝冠を戴く<ruby>釈迦如来<rt>しゃかにょらい</rt></ruby>像で、通常の釈迦像とは異なる荘厳な姿。</dd></div>
     <div class="term"><dt><ruby>弘安の役<rt>こうあんのえき</rt></ruby><span class="cat">04</span></dt><dd>1281年、二度目の蒙古襲来。翌年、円覚寺が戦没者供養のために建てられました。</dd></div>
     <div class="term"><dt><ruby>覚山尼<rt>かくさんに</rt></ruby><span class="cat">05</span></dt><dd>時宗の妻。東慶寺を開いた尼僧で、後の<ruby>執権<rt>しっけん</rt></ruby>貞時の母。</dd></div>
     <div class="term"><dt><ruby>縁切寺<rt>えんきりでら</rt></ruby><span class="cat">06</span></dt><dd>離婚を望む女性が駆け込んだ寺。東慶寺はその代表格で、正式な法制度の外にあった庶民女性の救済策として知られています。</dd></div>
@@ -696,7 +709,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g6.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">06</span>律宗と社会事業の記憶</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.7%"></i><i class="r-dot" style="left:51.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>極楽寺駅</span><span>極楽寺駅</span></span><span class="pg-meta">1時間・徒歩約1.4km</span></a>
+    <a class="pg-next" data-set="geo" href="g6.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">06</span>律宗と社会事業の記憶</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.7%"></i><i class="r-dot" style="left:51.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>極楽寺<rt>ごくらくじ</rt></ruby>駅</span><span>極楽寺駅</span></span><span class="pg-meta">1時間・徒歩約1.4km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g4.html">← 前：北条氏と禅宗の輸入</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

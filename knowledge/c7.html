@@ -441,6 +441,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -570,6 +582,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -581,7 +594,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C7 長谷② 未収録の社寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C7 <ruby>長谷<rt>はせ</rt></ruby>② 未収録の社寺</p>
   </div>
 </header>
 
@@ -603,12 +616,12 @@
       <span class="dist">施設間の徒歩距離 約3.4km</span>
       <span class="fee">大人合計 ¥100</span>
     </div>
-    <p class="story" data-i18n="kn.c7.story">大仏と長谷寺の賑わいのすぐ裏に、驚くほど静かなお寺があります。大仏・長谷寺の賑わいのすぐ裏に、光則寺という静かなお寺があります。<ruby>日朗<rt>にちろう</rt></ruby>というお坊さんが閉じ込められたと伝わり、花の寺としても知られています。五所神社、巽神社と一緒に歩けば、観光の主役の裏にある、長谷のもう一つの顔に出会えるコースです。あの賑わいのすぐ裏にこんな静けさがあると、頭がくらくらんぽします。海棠が咲く時期の匂いと色は、行ってみるまでのお楽しみにしておきます。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：長谷駅</span></div></li><li><span class="leg">長谷駅から 徒歩900m・約13分</span><div class="row"><span class="sname">光則寺</span><span class="sfee">大人¥100／小人無料</span></div><span class="snote">高校生以上100円、中学生以下無料。日朗ゆかり。</span></li><li><span class="leg">光則寺から 徒歩400m・約6分</span><div class="row"><span class="sname">収玄寺</span><span class="sfee">無料</span></div></li><li><span class="leg">収玄寺から 徒歩600m・約9分</span><div class="row"><span class="sname">五所神社</span><span class="sfee">無料</span></div></li><li><span class="leg">五所神社から 徒歩500m・約7分</span><div class="row"><span class="sname">巽神社</span><span class="sfee">無料</span></div></li><li><span class="leg">巽神社から 徒歩400m・約6分</span><div class="row"><span class="sname">第六天社</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">第六天社から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：長谷駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c7.story">大仏と<ruby>長谷寺<rt>はせでら</rt></ruby>の賑わいのすぐ裏に、驚くほど静かなお寺があります。大仏・長谷寺の賑わいのすぐ裏に、<ruby>光則寺<rt>こうそくじ</rt></ruby>という静かなお寺があります。<ruby>日朗<rt>にちろう</rt></ruby>というお坊さんが閉じ込められたと伝わり、花の寺としても知られています。<ruby>五所神社<rt>ごしょじんじゃ</rt></ruby>、<ruby class="o1">巽神社<rt>たつみじんじゃ</rt></ruby>と一緒に歩けば、観光の主役の裏にある、長谷のもう一つの顔に出会えるコースです。あの賑わいのすぐ裏にこんな静けさがあると、頭がくらくらんぽします。海棠が咲く時期の匂いと色は、行ってみるまでのお楽しみにしておきます。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：長谷駅</span></div></li><li><span class="leg">長谷駅から 徒歩900m・約13分</span><div class="row"><span class="sname">光則寺</span><span class="sfee">大人¥100／小人無料</span></div><span class="snote">高校生以上100円、中学生以下無料。日朗ゆかり。</span></li><li><span class="leg">光則寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>収玄寺<rt>しゅうげんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">収玄寺から 徒歩600m・約9分</span><div class="row"><span class="sname">五所神社</span><span class="sfee">無料</span></div></li><li><span class="leg">五所神社から 徒歩500m・約7分</span><div class="row"><span class="sname">巽神社</span><span class="sfee">無料</span></div></li><li><span class="leg">巽神社から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>第六天社<rt>だいろくてんしゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">第六天社から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：長谷駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
-        <p class="note-text">光則寺の海棠（カイドウ）は樹齢200年以上と伝わり、鎌倉市の天然記念物です。かつては妙本寺・安国論寺と並んで「鎌倉三大カイドウ」と呼ばれていましたが、安国論寺の古木は枯れてしまったため、今ではより貴重な存在になっています。</p>
+        <p class="note-text">光則寺の海棠（カイドウ）は樹齢200年以上と伝わり、鎌倉市の天然記念物です。かつては<ruby>妙本寺<rt>みょうほんじ</rt></ruby>・<ruby>安国論寺<rt>あんこくろんじ</rt></ruby>と並んで「鎌倉三大カイドウ」と呼ばれていましたが、安国論寺の古木は枯れてしまったため、今ではより貴重な存在になっています。</p>
       </div>
       <div class="note-item note-season">
         <p class="note-label">季節の見どころ</p>
@@ -622,7 +635,7 @@
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">出発：長谷駅</a></div>
   <dl class="terms" data-i18n="kn.c7.terms">
-    <div class="term"><dt><ruby>日朗<rt>にちろう</rt></ruby><span class="cat">05</span></dt><dd><ruby>日蓮<rt>にちれん</rt></ruby>の弟子。光則寺の土牢に幽閉されたと伝わります。師の法難の余波が弟子にも及んだ例。</dd></div>
+    <div class="term"><dt><ruby>日朗<rt>にちろう</rt></ruby><span class="cat">05</span></dt><dd><ruby>日蓮<rt>にちれん</rt></ruby>の弟子。光則寺の土牢に幽閉されたと伝わります。師の<ruby>法難<rt>ほうなん</rt></ruby>の余波が弟子にも及んだ例。</dd></div>
   </dl>
 
     <script>
@@ -667,7 +680,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#temple:kotokuin">お寺：高徳院（大仏）編</a></div>
+      <div class="dm-links"><a href="../quiz.html#temple:kotokuin">お寺：<ruby>高徳院<rt>こうとくいん</rt></ruby>（大仏）編</a></div>
     </div>
 
 
@@ -684,7 +697,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c8.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C8</span>腰越② 未収録の社寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:10.8%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:36.9%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:57.8%"></i><i class="r-dot" style="left:70.9%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:86.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>腰越駅</span><span>江ノ島駅</span></span><span class="pg-meta">1.5時間・徒歩約3.6km</span></a>
+    <a class="pg-next" data-set="complete" href="c8.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C8</span><ruby>腰越<rt>こしごえ</rt></ruby>② 未収録の社寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:10.8%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:36.9%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:57.8%"></i><i class="r-dot" style="left:70.9%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:86.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>腰越駅</span><span><ruby>江ノ島<rt>えのしま</rt></ruby>駅</span></span><span class="pg-meta">1.5時間・徒歩約3.6km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c6.html">← 前：西御門・二階堂② 未収録の社寺</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

@@ -10,7 +10,8 @@
 - [編者プロフィール](https://djnaoyaman.github.io/kuranpo/profile.html): 編者「クランポック」（本名・宮崎直哉）の経歴と、他の名義（一見坊・湯気文吾・djnaoyaman）について。
 - [鎌・くらんぽ年表](https://djnaoyaman.github.io/kuranpo/timeline.html): 鎌倉の歴史を7つの時期に分け、各時期の代表的な寺社を示す概観図。
 - [鎌・くらんぽ人物相関図](https://djnaoyaman.github.io/kuranpo/persons.html): 源頼朝・北条氏・足利氏・新田義貞・日蓮ら主要人物の関係を示す概観図。
-- [鎌・くらんぽ宗教関係図](https://djnaoyaman.github.io/kuranpo/religions.html): 鎌倉の寺社を禅宗・日蓮宗・浄土宗・神道など宗派・系統ごとに整理した概観図。
+- [鎌・くらんぽ宗教関係図](https://djnaoyaman.github.io/kuranpo/religions.html): 鎌倉時代に新しい仏教が次々に生まれた4つの背景と、当時の主流は古い仏教だったとする研究の見方。祖師たちと鎌倉との関わり、学び・招き・対立の3つの線で描いた関係図、鎌倉七口と拠点の模式図、史料で確かめた15の出来事、宗派ごとの寺と歩けるコース、今も続く祈りの暦、現地で宗派を見分ける手がかり、出典の一覧。
+- [古写真で歩く鎌倉](https://djnaoyaman.github.io/kuranpo/photos.html): 幕末から明治に撮られた鎌倉大仏（フェリーチェ・ベアト、日下部金兵衛）と、神仏分離で取り壊される前の鶴岡八幡宮寺の大塔の写真を年の順にたどるページ。撮影者・年代・所蔵館が明らかなパブリックドメインの写真のみ。
 - [鎌・くらんぽクイズ](https://djnaoyaman.github.io/kuranpo/quiz.html): 歴史・お寺・宗教・人物の4種類、サイト内の情報のみに基づく4択クイズ。10問ランダム出題、間違えた問題だけ再挑戦可能。
 - [修正履歴](https://djnaoyaman.github.io/kuranpo/changelog.html): サイトのバージョン管理・修正履歴（日本語のみ）。
 

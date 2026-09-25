@@ -431,6 +431,28 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "鶴岡八幡宮・荏柄天神社・鎌倉宮（宗教でめぐる）", "description": "鶴岡八幡宮・荏柄天神社・鎌倉宮。源氏の氏神、学問の神、非業の死を遂げた親王。祀られている理由がそれぞれまったく違う神社を続けて歩く。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/re11.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/re11.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/re11.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
@@ -494,6 +516,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +528,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 11 鶴岡八幡宮・荏柄天神社・鎌倉宮</p>
+    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 11 <ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>・<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>・<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby></p>
   </div>
 </header>
 
@@ -518,13 +541,13 @@
     <path d="M 140 5 C 205 20 230 105 170 165 C 115 220 30 210 5 150" fill="none" stroke="currentColor" stroke-width="1.3"/>
     <circle cx="175" cy="90" r="2.4" fill="currentColor"/>
   </svg>
-    <h1><span class="no" style="color:var(--moss)">11</span><span>鶴岡八幡宮・<ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby>・鎌倉宮</span></h1>
+    <h1><span class="no" style="color:var(--moss)">11</span><span>鶴岡八幡宮・<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>・鎌倉宮</span></h1>
   </div>
   <div class="practical">
     <div class="kn-route" data-set="religion" aria-label="鎌倉駅東口から鎌倉宮バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:37.0%"></i><i class="r-dot" style="left:73.0%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span></div>
     <div class="meta-row"><span>1.5時間</span><span class="dist">施設間の徒歩距離 約2.4km</span><span class="fee">大人合計 無料（＋任意 ¥500）</span></div>
-    <p class="story">源氏の氏神、学問の神、非業の死を遂げた親王——祀られる理由がこれほど違う神社が並んでいます。鶴岡八幡宮・<ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby>・鎌倉宮を続けて歩くと、それがよく分かります。祀られている理由がそれぞれまったく違う神社を続けて歩くと、頭がくらくらんぽします。荏柄天神社の梅と、樹齢900年の大銀杏も見どころです。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の氏神として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><span class="leg">鶴岡八幡宮から 徒歩900m・約13分</span><div class="row"><span class="sname"><ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">平安後期創建の古社。</span></li><li><span class="leg">荏柄天神社から 徒歩600m・約9分</span><div class="row"><span class="sname">鎌倉宮</span><span class="sfee">無料</span></div><span class="snote"><ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る。境内は無料。</span><span class="opt">＋土牢・宝物館・神苑 大人¥300／小人¥150</span></li><li class="endleg"><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
+    <p class="story">源氏の<ruby>氏神<rt>うじがみ</rt></ruby>、学問の神、非業の死を遂げた親王——祀られる理由がこれほど違う神社が並んでいます。鶴岡八幡宮・<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>・鎌倉宮を続けて歩くと、それがよく分かります。祀られている理由がそれぞれまったく違う神社を続けて歩くと、頭がくらくらんぽします。荏柄天神社の梅と、樹齢900年の大銀杏も見どころです。</p><figure class="plate"><div class="pl-frame"><img src="https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg" alt="幕末の鶴岡八幡宮寺の大塔（多宝塔）を写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">画像を読み込めませんでした。所蔵館のページで見る</a></div><figcaption><span class="pl-cap">明治の<ruby>神仏分離<rt>しんぶつぶんり</rt></ruby>で取り壊される数年前の、<ruby>鶴岡八幡宮寺<rt>つるがおかはちまんぐうじ</rt></ruby>の大塔（多宝塔）です。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1867〜68年。J・ポール・ゲッティ美術館所蔵（パブリックドメイン）。<a href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">所蔵館のページで見る</a></span></figcaption></figure>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の氏神として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><span class="leg">鶴岡八幡宮から 徒歩900m・約13分</span><div class="row"><span class="sname"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">平安後期創建の古社。</span></li><li><span class="leg">荏柄天神社から 徒歩600m・約9分</span><div class="row"><span class="sname">鎌倉宮</span><span class="sfee">無料</span></div><span class="snote"><ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る。境内は無料。</span><span class="opt">＋土牢・宝物館・神苑 大人¥300／小人¥150</span></li><li class="endleg"><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -575,7 +598,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#temple:amanawa">お寺：甘縄神明神社編</a><a href="../quiz.html#person:yoritomo">人物：源頼朝編</a></div>
+      <div class="dm-links"><a href="../quiz.html#temple:amanawa">お寺：<ruby>甘縄神明神社<rt>あまなわしんめいじんじゃ</rt></ruby>編</a><a href="../quiz.html#person:yoritomo">人物：<ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby>編</a></div>
     </div>
 
 
@@ -592,7 +615,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="religion" href="re12.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">12</span>甘縄神明神社・御霊神社</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:32.7%"></i><i class="r-dot" style="left:52.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>長谷駅</span><span>極楽寺駅</span></span><span class="pg-meta">1時間・徒歩約1.9km</span></a>
+    <a class="pg-next" data-set="religion" href="re12.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">12</span>甘縄神明神社・<ruby>御霊神社<rt>ごりょうじんじゃ</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:32.7%"></i><i class="r-dot" style="left:52.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>長谷<rt>はせ</rt></ruby>駅</span><span><ruby>極楽寺<rt>ごくらくじ</rt></ruby>駅</span></span><span class="pg-meta">1時間・徒歩約1.9km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="re10.html">← 前：杉本寺・高徳院・長谷寺</a><a class="pg-list" href="../index.html#tab-religion">一覧へ</a></div>
   </nav>
 </main>

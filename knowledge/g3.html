@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -588,7 +601,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 03 頼朝の菩提と草創期の鎌倉</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 03 頼朝の<ruby>菩提<rt>ぼだい</rt></ruby>と草創期の鎌倉</p>
   </div>
 </header>
 
@@ -603,16 +616,16 @@
   </svg>
     <h1><span class="no">03</span><span data-i18n="kn.g3.title">頼朝の菩提と草創期の鎌倉</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>2月・梅</b>：荏柄天神社は梅の名所。祭神・菅原道真ゆかりの花でもある。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>2月・梅</b>：<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>は梅の名所。<ruby>祭神<rt>さいじん</rt></ruby>・<ruby class="o1">菅原道真<rt>すがわらのみちざね</rt></ruby>ゆかりの花でもある。</p></div>
 <div class="practical">
-    <div class="kn-route" data-set="geo" aria-label="鎌倉駅東口から鎌倉宮バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.4%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:64.7%"></i><i class="r-dot" style="left:79.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span></div>
+    <div class="kn-route" data-set="geo" aria-label="鎌倉駅東口から鎌倉宮バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.4%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:64.7%"></i><i class="r-dot" style="left:79.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span></span></div>
     <div class="meta-row">
       <span>2.5時間</span>
       <span class="dist">施設間の徒歩距離 約3.2km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.g3.story">何もない場所ほど、実は語ることが多い——そう思ったことはありますか。1184年、頼朝は父・<ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby>の霊を慰めるため、勝長寿院というお寺を建てました。頼朝自身が亡くなったのは1199年のこと。その体は法華堂に埋葬されたと伝わっています。大倉幕府跡、法華堂跡、そして後にできた永福寺跡を一緒に歩くと、昔の鎌倉の中心が、今の観光地とはちょっと違う場所にあったことが分かります。建物は残っていませんが、そこに何があったかを辿るコースです。何もない場所が、かつて幕府の中心だったと知ると、頭がくらくらんぽします。立ってみると、その「何もなさ」が思いのほか語りかけてきます。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩900m・約13分</span><div class="row"><span class="sname">勝長寿院跡</span><span class="sfee">無料</span></div><span class="snote">1184年建立。頼朝が父義朝の菩提のために建てた鎌倉最初の大寺院（現在は跡地）。</span></li><li><span class="leg">勝長寿院跡から 徒歩400m・約6分</span><div class="row"><span class="sname">大倉幕府跡</span><span class="sfee">無料</span></div><span class="snote">頼朝以来の幕府庭地。</span></li><li><span class="leg">大倉幕府跡から 徒歩200m・約3分</span><div class="row"><span class="sname">法華堂跡</span><span class="sfee">無料</span></div><span class="snote">頼朝の墓。</span></li><li><span class="leg">法華堂跡から 徒歩600m・約9分</span><div class="row"><span class="sname">永福寺跡</span><span class="sfee">無料</span></div><span class="snote">奥州合戦の戦没者供養のため頼朝が建立。</span></li><li><span class="leg">永福寺跡から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">平安後期創建の古社。</span></li><li class="endleg"><span class="leg"><ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby>から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
+    <p class="story" data-i18n="kn.g3.story">何もない場所ほど、実は語ることが多い——そう思ったことはありますか。1184年、頼朝は父・<ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby>の霊を慰めるため、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>というお寺を建てました。頼朝自身が亡くなったのは1199年のこと。その体は<ruby>法華堂<rt>ほっけどう</rt></ruby>に埋葬されたと伝わっています。<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>、<ruby>法華堂跡<rt>ほっけどうあと</rt></ruby>、そして後にできた<ruby>永福寺跡<rt>ようふくじあと</rt></ruby>を一緒に歩くと、昔の鎌倉の中心が、今の観光地とはちょっと違う場所にあったことが分かります。建物は残っていませんが、そこに何があったかを辿るコースです。何もない場所が、かつて幕府の中心だったと知ると、頭がくらくらんぽします。立ってみると、その「何もなさ」が思いのほか語りかけてきます。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩900m・約13分</span><div class="row"><span class="sname"><ruby class="o2">勝長寿院跡<rt>しょうちょうじゅいんあと</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">1184年建立。頼朝が父義朝の菩提のために建てた鎌倉最初の大寺院（現在は跡地）。</span></li><li><span class="leg">勝長寿院跡から 徒歩400m・約6分</span><div class="row"><span class="sname">大倉幕府跡</span><span class="sfee">無料</span></div><span class="snote">頼朝以来の幕府庭地。</span></li><li><span class="leg">大倉幕府跡から 徒歩200m・約3分</span><div class="row"><span class="sname">法華堂跡</span><span class="sfee">無料</span></div><span class="snote">頼朝の墓。</span></li><li><span class="leg">法華堂跡から 徒歩600m・約9分</span><div class="row"><span class="sname">永福寺跡</span><span class="sfee">無料</span></div><span class="snote">奥州合戦の戦没者供養のため頼朝が建立。</span></li><li><span class="leg">永福寺跡から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">平安後期創建の古社。</span></li><li class="endleg"><span class="leg"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -631,8 +644,8 @@
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85%E6%9D%B1%E5%8F%A3" target="_blank" rel="noopener">出発：鎌倉駅東口</a></div>
   <dl class="terms" data-i18n="kn.g3.terms">
     <div class="term"><dt><ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby><span class="cat">05</span></dt><dd>頼朝の父。平治の乱（1160年）で敗死。勝長寿院はその菩提を弔うために建てられました。</dd></div>
-    <div class="term"><dt>大倉幕府<span class="cat">05</span></dt><dd>頼朝が鎌倉入り後に構えた政庁。現在は跡地として残るのみで、当時の建物は何も残っていません。</dd></div>
-    <div class="term"><dt><ruby class=o1>奥州合戦<rt>おうしゅうかっせん</rt></ruby><span class="cat">05</span></dt><dd>1189年、頼朝が奥州藤原氏を滅ぼした戦い。永福寺はその戦没者供養のために建立されました。</dd></div>
+    <div class="term"><dt><ruby>大倉<rt>おおくら</rt></ruby>幕府<span class="cat">05</span></dt><dd>頼朝が鎌倉入り後に構えた政庁。現在は跡地として残るのみで、当時の建物は何も残っていません。</dd></div>
+    <div class="term"><dt><ruby class=o1>奥州合戦<rt>おうしゅうかっせん</rt></ruby><span class="cat">05</span></dt><dd>1189年、頼朝が奥州藤原氏を滅ぼした戦い。<ruby>永福寺<rt>ようふくじ</rt></ruby>はその戦没者供養のために建立されました。</dd></div>
     <div class="term"><dt>法華堂<span class="cat">04</span></dt><dd>頼朝の墓所とされる場所。もとは頼朝の持仏堂だったと伝わります。</dd></div>
     <div class="term"><dt><ruby class=o1>菅原道真<rt>すがわらのみちざね</rt></ruby><span class="cat">03</span></dt><dd>荏柄天神社の祭神。学問の神として知られますが、もとは怨霊を鎮めるための「<ruby>御霊信仰<rt>ごりょうしんこう</rt></ruby>」から発した神格でもあります。</dd></div>
   </dl>
@@ -679,7 +692,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a><a href="../quiz.html#person:yoritomo">人物：源頼朝編</a></div>
+      <div class="dm-links"><a href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a><a href="../quiz.html#person:yoritomo">人物：<ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby>編</a></div>
     </div>
 
 
@@ -696,7 +709,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g4.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">04</span>北条氏と禅宗の輸入</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.9%"></i><i class="r-dot" style="left:54.0%"></i><i class="r-dot" style="left:75.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span>建長寺バス停</span></span><span class="pg-meta">2.5時間・徒歩約3.5km</span></a>
+    <a class="pg-next" data-set="geo" href="g4.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">04</span>北条氏と禅宗の輸入</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.9%"></i><i class="r-dot" style="left:54.0%"></i><i class="r-dot" style="left:75.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span><ruby>建長寺<rt>けんちょうじ</rt></ruby>バス停</span></span><span class="pg-meta">2.5時間・徒歩約3.5km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g2.html">← 前：頼朝、鎌倉に入る</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

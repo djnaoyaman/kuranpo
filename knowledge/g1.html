@@ -441,6 +441,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -570,6 +582,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -603,8 +616,8 @@
       <span class="dist">施設間の徒歩距離 約3.3km</span>
       <span class="fee">大人合計 ¥300</span>
     </div>
-    <p class="story" data-i18n="kn.g1.story">杉本寺の石段は、上れません。頼朝が鎌倉にやって来るより、450年も前。この谷には、もう祈りの場所がありました。杉本寺は734年、<ruby>行基<rt>ぎょうき</rt></ruby>というお坊さんが開いたと伝わる、鎌倉で一番古いお寺です。1189年、火事でお堂が焼け落ちた夜、本尊の観音像は誰の手も借りず、自らこの杉の根元まで逃げていた、と伝わっています。すぐそばの大巧寺は「おんめさま」と呼ばれ、今も安産を願う人が絶えません。鎌倉を「武士の町」と思う前に、この土地がどれだけ古いか、感じていただけたらと思います。歩いて1時間で終わる、小さなコースです。頼朝より450年も前、と聞くと、頭がくらくらんぽしませんか。苔の石段を前にした時の、あの静けさは、行ってみないと伝わりません。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩1.6km・約23分</span><div class="row"><span class="sname">杉本寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">734年、行基開山の伝承。坂東三十三観音第一番。一般(高校生以上)300円・中学生200円・小学生100円、未就学児無料。</span></li><li><span class="leg">杉本寺から 徒歩1.5km・約21分</span><div class="row"><span class="sname">大巧寺</span><span class="sfee">無料</span></div><span class="snote">安産祈願で親しまれる「おんめさま」。</span></li><li class="endleg"><span class="leg">大巧寺から 徒歩200m・約3分</span><div class="row"><span class="sname">解散地点：鎌倉駅東口</span></div></li></ul>
+    <p class="story" data-i18n="kn.g1.story"><ruby>杉本寺<rt>すぎもとでら</rt></ruby>の石段は、上れません。頼朝が鎌倉にやって来るより、450年も前。この谷には、もう祈りの場所がありました。杉本寺は734年、<ruby>行基<rt>ぎょうき</rt></ruby>というお坊さんが開いたと伝わる、鎌倉で一番古いお寺です。1189年、火事でお堂が焼け落ちた夜、本尊の観音像は誰の手も借りず、自らこの杉の根元まで逃げていた、と伝わっています。すぐそばの<ruby>大巧寺<rt>だいぎょうじ</rt></ruby>は「おんめさま」と呼ばれ、今も安産を願う人が絶えません。鎌倉を「武士の町」と思う前に、この土地がどれだけ古いか、感じていただけたらと思います。歩いて1時間で終わる、小さなコースです。頼朝より450年も前、と聞くと、頭がくらくらんぽしませんか。苔の石段を前にした時の、あの静けさは、行ってみないと伝わりません。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩1.6km・約23分</span><div class="row"><span class="sname">杉本寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">734年、行基<ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。一般(高校生以上)300円・中学生200円・小学生100円、未就学児無料。</span></li><li><span class="leg">杉本寺から 徒歩1.5km・約21分</span><div class="row"><span class="sname">大巧寺</span><span class="sfee">無料</span></div><span class="snote">安産祈願で親しまれる「おんめさま」。</span></li><li class="endleg"><span class="leg">大巧寺から 徒歩200m・約3分</span><div class="row"><span class="sname">解散地点：鎌倉駅東口</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -616,7 +629,7 @@
       </div>
       <div class="note-item note-detour">
         <p class="note-label">寄り道スポット</p>
-        <p class="note-text">杉本寺から徒歩5分ほどのところに、庭にカエルの置物が点在する小さなカフェと、十割そばの店があります。竹林で知られる報国寺・浄妙寺（このサイトの別コースで紹介）まで足を延ばすこともできますが、今日は杉本寺と大巧寺だけでも十分な散歩になるはずです。</p>
+        <p class="note-text">杉本寺から徒歩5分ほどのところに、庭にカエルの置物が点在する小さなカフェと、十割そばの店があります。竹林で知られる<ruby>報国寺<rt>ほうこくじ</rt></ruby>・<ruby class="o1">浄妙寺<rt>じょうみょうじ</rt></ruby>（このサイトの別コースで紹介）まで足を延ばすこともできますが、今日は杉本寺と大巧寺だけでも十分な散歩になるはずです。</p>
       </div>
     </div>
     

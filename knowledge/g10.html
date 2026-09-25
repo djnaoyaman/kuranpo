@@ -441,6 +441,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -570,6 +582,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -603,16 +616,16 @@
       <span class="dist">施設間の徒歩距離 約2.8km</span>
       <span class="fee">大人合計 ¥300（＋任意 ¥300）</span>
     </div>
-    <p class="story" data-i18n="kn.g10.story">政治の記録には、女性の名前がほとんど出てきません。それでも。英勝寺は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）です。寿福寺は<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みんなんえいさい</rt></ruby>というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど、鎌倉の女性たちが実際に動かした歴史を辿るコースです。政治の記録に残らないだけで、実際は大きく動かしていたと知ると、頭がくらくらんぽします。竹の庭に射す光の角度は、時間によって毎回違います。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅西口</span></div></li><li><span class="leg">鎌倉駅西口から 徒歩500m・約7分</span><div class="row"><span class="sname">英勝寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">水戸徳川家。太田道灌の子孫。大人300円・高校生200円・中小学生100円。</span></li><li><span class="leg">英勝寺から 徒歩600m・約9分</span><div class="row"><span class="sname">寿福寺</span><span class="sfee">無料</span></div><span class="snote">北条政子が<ruby>明菴栄西<rt>みんなんえいさい</rt></ruby>を招いて開山。鎌倉五山第三位。</span></li><li><span class="leg">寿福寺から 徒歩300m・約4分</span><div class="row"><span class="sname">浄光明寺</span><span class="sfee">無料</span></div><span class="snote">北条長時開基。鎌倉三十三観音第二十五番。</span><span class="opt">＋阿弥陀堂・収蔵庫（木・土・日・祝のみ公開、年齢区分不明のため一律扱い） ¥200（一律）</span></li><li><span class="leg">浄光明寺から 徒歩400m・約6分</span><div class="row"><span class="sname">海蔵寺</span><span class="sfee">無料</span></div><span class="opt">＋十六井戸（年齢区分なし） ¥100（一律）</span></li><li class="endleg"><span class="leg">海蔵寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：鎌倉駅西口</span></div></li></ul>
+    <p class="story" data-i18n="kn.g10.story">政治の記録には、女性の名前がほとんど出てきません。それでも。<ruby>英勝寺<rt>えいしょうじ</rt></ruby>は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）です。<ruby>寿福寺<rt>じゅふくじ</rt></ruby>は<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど、鎌倉の女性たちが実際に動かした歴史を辿るコースです。政治の記録に残らないだけで、実際は大きく動かしていたと知ると、頭がくらくらんぽします。竹の庭に射す光の角度は、時間によって毎回違います。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅西口</span></div></li><li><span class="leg">鎌倉駅西口から 徒歩500m・約7分</span><div class="row"><span class="sname">英勝寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">水戸徳川家。<ruby>太田道灌<rt>おおたどうかん</rt></ruby>の子孫。大人300円・高校生200円・中小学生100円。</span></li><li><span class="leg">英勝寺から 徒歩600m・約9分</span><div class="row"><span class="sname">寿福寺</span><span class="sfee">無料</span></div><span class="snote">北条政子が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>を招いて<ruby>開山<rt>かいさん</rt></ruby>。鎌倉五山第三位。</span></li><li><span class="leg">寿福寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote"><ruby class="o1">北条長時<rt>ほうじょうながとき</rt></ruby><ruby>開基<rt>かいき</rt></ruby>。鎌倉三十三観音第二十五番。</span><span class="opt">＋阿弥陀堂・収蔵庫（木・土・日・祝のみ公開、年齢区分不明のため一律扱い） ¥200（一律）</span></li><li><span class="leg">浄光明寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>海蔵寺<rt>かいぞうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="opt">＋十六井戸（年齢区分なし） ¥100（一律）</span></li><li class="endleg"><span class="leg">海蔵寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：鎌倉駅西口</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
-        <p class="note-text">英勝寺の建つ土地は、もとは源頼朝の父・義朝の屋敷があった場所です。鎌倉時代には寿福寺に変わり、江戸時代になって<ruby class=o1>英勝院<rt>えいしょういん</rt></ruby>（徳川家康の側室）が現在の英勝寺を建てました。同じ土地の上に、何層もの時代が重なっているのです。</p>
+        <p class="note-text">英勝寺の建つ土地は、もとは<ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby>の父・義朝の屋敷があった場所です。鎌倉時代には寿福寺に変わり、江戸時代になって<ruby class=o1>英勝院<rt>えいしょういん</rt></ruby>（<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>の側室）が現在の英勝寺を建てました。同じ土地の上に、何層もの時代が重なっているのです。</p>
       </div>
       <div class="note-item note-season">
         <p class="note-label">季節の見どころ</p>
-        <p class="note-text">英勝寺は春に藤（白藤）、初夏にあじさい、秋は彼岸花と紅葉、冬は水仙が咲きます。境内裏手には報国寺に匹敵する竹の庭もあります。</p>
+        <p class="note-text">英勝寺は春に藤（白藤）、初夏にあじさい、秋は彼岸花と紅葉、冬は水仙が咲きます。境内裏手には<ruby>報国寺<rt>ほうこくじ</rt></ruby>に匹敵する竹の庭もあります。</p>
       </div>
     </div>
   </div>
@@ -622,9 +635,9 @@
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85%E8%A5%BF%E5%8F%A3" target="_blank" rel="noopener">出発：鎌倉駅西口</a></div>
   <dl class="terms" data-i18n="kn.g10.terms">
-    <div class="term"><dt><ruby><ruby class=o1>英勝院<rt>えいしょういん</rt></ruby><rt>えいしょういん</rt></ruby><span class="cat">05</span></dt><dd>太田道灌の子孫で徳川家康の側室。英勝寺を開きました。</dd></div>
-    <div class="term"><dt><ruby>明菴栄西<rt>みんなんえいさい</rt></ruby><span class="cat">04</span></dt><dd>臨済宗を日本に伝えた僧。寿福寺の<ruby>開山<rt>かいさん</rt></ruby>。</dd></div>
-    <div class="term"><dt>釈迦如来<span class="cat">03</span></dt><dd>寿福寺の本尊。</dd></div>
+    <div class="term"><dt><ruby class="o1">英勝院<rt>えいしょういん</rt></ruby><span class="cat">05</span></dt><dd>太田道灌の子孫で徳川家康の側室。英勝寺を開きました。</dd></div>
+    <div class="term"><dt><ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby><span class="cat">04</span></dt><dd><ruby class="o1">臨済宗<rt>りんざいしゅう</rt></ruby>を日本に伝えた僧。寿福寺の<ruby>開山<rt>かいさん</rt></ruby>。</dd></div>
+    <div class="term"><dt><ruby>釈迦如来<rt>しゃかにょらい</rt></ruby><span class="cat">03</span></dt><dd>寿福寺の本尊。</dd></div>
     <div class="term"><dt><ruby class=o1>北条長時<rt>ほうじょうながとき</rt></ruby><span class="cat">05</span></dt><dd>6代<ruby>執権<rt>しっけん</rt></ruby>。浄光明寺の<ruby>開基<rt>かいき</rt></ruby>。</dd></div>
     <div class="term"><dt><ruby>上杉氏定<rt>うえすぎうじさだ</rt></ruby><span class="cat">04</span></dt><dd>海蔵寺を1394年（応永元年）に再興した人物。</dd></div>
   </dl>
@@ -688,7 +701,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g11.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">11</span>江戸期、鎌倉が「名所」になる</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:40.6%"></i><i class="r-dot" style="left:55.2%"></i><i class="r-dot" style="left:76.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>長谷駅</span><span>長谷駅</span></span><span class="pg-meta">2時間・徒歩約2.2km</span></a>
+    <a class="pg-next" data-set="geo" href="g11.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">11</span>江戸期、鎌倉が「名所」になる</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:40.6%"></i><i class="r-dot" style="left:55.2%"></i><i class="r-dot" style="left:76.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>長谷<rt>はせ</rt></ruby>駅</span><span>長谷駅</span></span><span class="pg-meta">2時間・徒歩約2.2km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g9.html">← 前：足利氏と金沢街道</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -588,7 +601,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 12 玉縄北条氏と昭和への接続</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 12 <ruby>玉縄<rt>たまなわ</rt></ruby>北条氏と昭和への接続</p>
   </div>
 </header>
 
@@ -603,7 +616,7 @@
   </svg>
     <h1><span class="no">12</span><span data-i18n="kn.g12.title">玉縄北条氏と昭和への接続</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>1月・初詣</b>：大船観音は除夜の鐘・初詣で賑わう。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>1月・初詣</b>：<ruby>大船<rt>おおふな</rt></ruby>観音は除夜の鐘・初詣で賑わう。</p></div>
 <div class="practical">
     <div class="kn-route" data-set="geo" aria-label="大船駅から大船駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:27.5%"></i><i class="r-dot" style="left:58.2%"></i><i class="r-dot" style="left:84.7%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>大船駅</span><span>大船駅</span></span></div>
     <div class="meta-row">
@@ -611,8 +624,8 @@
       <span class="dist">施設間の徒歩距離 約4.6km</span>
       <span class="fee">大人合計 ¥300（＋任意 ¥200）</span>
     </div>
-    <p class="story" data-i18n="kn.g12.story">同じ「北条」という名字なのに、血のつながりがない二つの一族があります。鎌倉の北条氏が滅んだ後も、戦国時代には、別の一族の北条氏（<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>）が玉縄城を築き、この一帯を支配しました。龍宝寺は、その城主・<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>が建てたと伝わります。常楽寺には<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条泰時<rt>ほうじょうやすとき</rt></ruby>の墓があります——鎌倉時代と戦国時代、血のつながらない北条氏が、同じ地名の中で眠っているのです。大船観音は昭和になって加わった、いちばん新しい祈りの場所です。同じ「北条」なのに血のつながりが無いと知ると、頭がくらくらんぽします。常楽寺の竹林の静けさは、その驚きが落ち着くのを待ってくれるくらい深いものです。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.2km・約17分</span><div class="row"><span class="sname">龍宝寺</span><span class="sfee">無料</span></div><span class="snote">玉縄城主北条綱成の開基。</span><span class="opt">＋玉縄歴史館 大人¥200／小人¥100</span></li><li><span class="leg">龍宝寺から 徒歩1.5km・約21分</span><div class="row"><span class="sname">常楽寺</span><span class="sfee">無料</span></div><span class="snote">志納。北条泰時の墓所。</span></li><li><span class="leg">常楽寺から 徒歩1.3km・約19分</span><div class="row"><span class="sname">大船観音寺</span><span class="sfee">大人¥300／小人¥100</span></div><span class="snote">昭和期に完成。高校生以上300円・小中学生100円、幼児無料。</span></li><li class="endleg"><span class="leg">大船観音寺から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.g12.story">同じ「北条」という名字なのに、血のつながりがない二つの一族があります。鎌倉の北条氏が滅んだ後も、戦国時代には、別の一族の北条氏（<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>）が玉縄城を築き、この一帯を支配しました。<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>は、その城主・<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>が建てたと伝わります。<ruby>常楽寺<rt>じょうらくじ</rt></ruby>には<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条泰時<rt>ほうじょうやすとき</rt></ruby>の墓があります——鎌倉時代と戦国時代、血のつながらない北条氏が、同じ地名の中で眠っているのです。大船観音は昭和になって加わった、いちばん新しい祈りの場所です。同じ「北条」なのに血のつながりが無いと知ると、頭がくらくらんぽします。常楽寺の竹林の静けさは、その驚きが落ち着くのを待ってくれるくらい深いものです。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.2km・約17分</span><div class="row"><span class="sname">龍宝寺</span><span class="sfee">無料</span></div><span class="snote">玉縄城主北条綱成の<ruby>開基<rt>かいき</rt></ruby>。</span><span class="opt">＋玉縄歴史館 大人¥200／小人¥100</span></li><li><span class="leg">龍宝寺から 徒歩1.5km・約21分</span><div class="row"><span class="sname">常楽寺</span><span class="sfee">無料</span></div><span class="snote">志納。北条泰時の墓所。</span></li><li><span class="leg">常楽寺から 徒歩1.3km・約19分</span><div class="row"><span class="sname"><ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby></span><span class="sfee">大人¥300／小人¥100</span></div><span class="snote">昭和期に完成。高校生以上300円・小中学生100円、幼児無料。</span></li><li class="endleg"><span class="leg">大船観音寺から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -695,7 +708,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g13.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">13</span><ruby>新田義貞<rt>にったよしさだ</rt></ruby>、稲村ヶ崎伝説</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:11.8%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:88.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>極楽寺駅</span><span>稲村ヶ崎駅</span></span><span class="pg-meta">1.5時間・徒歩約1.6km</span></a>
+    <a class="pg-next" data-set="geo" href="g13.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">13</span><ruby>新田義貞<rt>にったよしさだ</rt></ruby>、<ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>伝説</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:11.8%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:88.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>極楽寺<rt>ごくらくじ</rt></ruby>駅</span><span>稲村ヶ崎駅</span></span><span class="pg-meta">1.5時間・徒歩約1.6km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g11.html">← 前：江戸期、鎌倉が「名所」になる</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

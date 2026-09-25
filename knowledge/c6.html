@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -560,6 +572,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -571,7 +584,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C6 西御門・二階堂② 未収録の社寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C6 <ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</p>
   </div>
 </header>
 
@@ -587,24 +600,24 @@
     <h1><span class="no">C6</span><span data-i18n="kn.c6.title">西御門・二階堂② 未収録の社寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="鎌倉宮バス停から十二所バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:34.3%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:65.7%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:89.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉宮バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="鎌倉宮バス停から十二所バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:34.3%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:65.7%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:89.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span></div>
     <div class="meta-row">
       <span>2.5時間</span>
       <span class="dist">施設間の徒歩距離 約3.6km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c6.story">観光客がほとんど来ない住宅地に、頼朝ゆかりの神社が静かに残っています。鎌倉宮の周辺には、頼朝が迎えたという熊野信仰の神社がいくつも残っています。来迎寺（西御門）、八雲神社（西御門）は、観光客の少ない住宅地の中に、静かに立っています。光触寺は僧・<ruby>一遍<rt>いっぺん</rt></ruby>にゆかりのあるお寺です。鎌倉宮から十二所へ向かう道は、有名な場所の裏にある、鎌倉の日常を見せてくれます。観光の主役から一歩外れるだけでこの静かさに、頭がくらくらんぽします。十二所へ向かう道の静けさは、歩いた人だけが知っています。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉宮バス停</span></div></li><li><span class="leg">鎌倉宮バス停から 徒歩600m・約9分</span><div class="row"><span class="sname">白旗神社（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">白旗神社（西御門）から 徒歩300m・約4分</span><div class="row"><span class="sname">八雲神社（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">八雲神社（西御門）から 徒歩300m・約4分</span><div class="row"><span class="sname">来迎寺（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">来迎寺（西御門）から 徒歩500m・約7分</span><div class="row"><span class="sname">熊野新宮</span><span class="sfee">無料</span></div></li><li><span class="leg">熊野新宮から 徒歩700m・約10分</span><div class="row"><span class="sname">熊野神社（浄明寺）</span><span class="sfee">無料</span></div><span class="snote">源頼朝勧請と伝わる。</span></li><li><span class="leg">熊野神社（浄明寺）から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>十二所<rt>じゅうにそ</rt></ruby>神社</span><span class="sfee">無料</span></div><span class="snote">熊野三山の神を勧請した社の総称。</span></li><li><span class="leg"><ruby>十二所<rt>じゅうにそ</rt></ruby>神社から 徒歩400m・約6分</span><div class="row"><span class="sname">光触寺</span><span class="sfee">無料</span></div><span class="snote">一遍ゆかり。本尊拝観は要予約300円。</span></li><li class="endleg"><span class="leg">光触寺から 徒歩300m・約4分</span><div class="row"><span class="sname">解散地点：<ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></div></li></ul>
+    <p class="story" data-i18n="kn.c6.story">観光客がほとんど来ない住宅地に、頼朝ゆかりの神社が静かに残っています。鎌倉宮の周辺には、頼朝が迎えたという熊野信仰の神社がいくつも残っています。<ruby>来迎寺<rt>らいこうじ</rt></ruby>（西御門）、<ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>（西御門）は、観光客の少ない住宅地の中に、静かに立っています。<ruby>光触寺<rt>こうそくじ</rt></ruby>は僧・<ruby>一遍<rt>いっぺん</rt></ruby>にゆかりのあるお寺です。鎌倉宮から十二所へ向かう道は、有名な場所の裏にある、鎌倉の日常を見せてくれます。観光の主役から一歩外れるだけでこの静かさに、頭がくらくらんぽします。十二所へ向かう道の静けさは、歩いた人だけが知っています。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉宮バス停</span></div></li><li><span class="leg">鎌倉宮バス停から 徒歩600m・約9分</span><div class="row"><span class="sname"><ruby>白旗神社<rt>しらはたじんじゃ</rt></ruby>（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">白旗神社（西御門）から 徒歩300m・約4分</span><div class="row"><span class="sname">八雲神社（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">八雲神社（西御門）から 徒歩300m・約4分</span><div class="row"><span class="sname">来迎寺（西御門）</span><span class="sfee">無料</span></div></li><li><span class="leg">来迎寺（西御門）から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>熊野新宮<rt>くまのしんぐう</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">熊野新宮から 徒歩700m・約10分</span><div class="row"><span class="sname"><ruby>熊野神社<rt>くまのじんじゃ</rt></ruby>（<ruby class="o1">浄明寺<rt>じょうみょうじ</rt></ruby>）</span><span class="sfee">無料</span></div><span class="snote"><ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby><ruby class="o1">勧請<rt>かんじょう</rt></ruby>と伝わる。</span></li><li><span class="leg">熊野神社（浄明寺）から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>十二所<rt>じゅうにそ</rt></ruby>神社</span><span class="sfee">無料</span></div><span class="snote">熊野三山の神を勧請した社の総称。</span></li><li><span class="leg"><ruby>十二所<rt>じゅうにそ</rt></ruby>神社から 徒歩400m・約6分</span><div class="row"><span class="sname">光触寺</span><span class="sfee">無料</span></div><span class="snote">一遍ゆかり。本尊拝観は要予約300円。</span></li><li class="endleg"><span class="leg">光触寺から 徒歩300m・約4分</span><div class="row"><span class="sname">解散地点：<ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
-  <p class="spots-line">白旗神社・八雲神社（西御門）・来迎寺（西御門）・熊野新宮・熊野神社（浄明寺）・十二所神社・光触寺</p>
+  <p class="spots-line">白旗神社・八雲神社（西御門）・来迎寺（西御門）・熊野新宮・熊野神社（浄明寺）・<ruby>十二所神社<rt>じゅうにそうじんじゃ</rt></ruby>・光触寺</p>
   <div class="lens-tags"><span data-i18n="kn.lens.05">05 権力との関係</span><span data-i18n="kn.lens.07">07 土地との関係</span></div>
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E5%AE%AE" target="_blank" rel="noopener">出発：鎌倉宮</a></div>
   <dl class="terms" data-i18n="kn.c6.terms">
     <div class="term"><dt><ruby>熊野信仰<rt>くまのしんこう</rt></ruby><span class="cat">05</span></dt><dd>頼朝が勧請したという熊野三山の信仰。十二所神社・熊野新宮などがこれにあたり、熊野という遠隔地の信仰が鎌倉に移された例。</dd></div>
-    <div class="term"><dt><ruby>一遍<rt>いっぺん</rt></ruby><span class="cat">04</span></dt><dd>時宗の開祖。光触寺ゆかりの僧。</dd></div>
+    <div class="term"><dt><ruby>一遍<rt>いっぺん</rt></ruby><span class="cat">04</span></dt><dd><ruby>時宗<rt>じしゅう</rt></ruby>の開祖。光触寺ゆかりの僧。</dd></div>
   </dl>
 
     <script>
@@ -666,7 +679,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c7.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C7</span>長谷② 未収録の社寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:27.9%"></i><i class="r-dot" style="left:38.9%"></i><i class="r-dot" style="left:55.5%"></i><i class="r-dot" style="left:69.4%"></i><i class="r-dot" style="left:80.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>長谷駅</span><span>長谷駅</span></span><span class="pg-meta">1.5時間・徒歩約3.4km</span></a>
+    <a class="pg-next" data-set="complete" href="c7.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C7</span><ruby>長谷<rt>はせ</rt></ruby>② 未収録の社寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:27.9%"></i><i class="r-dot" style="left:38.9%"></i><i class="r-dot" style="left:55.5%"></i><i class="r-dot" style="left:69.4%"></i><i class="r-dot" style="left:80.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>長谷駅</span><span>長谷駅</span></span><span class="pg-meta">1.5時間・徒歩約3.4km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c5.html">← 前：材木座② 未収録寺</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

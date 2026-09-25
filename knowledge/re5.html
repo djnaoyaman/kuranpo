@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "龍口寺輪番八ヶ寺（宗教でめぐる）", "description": "龍口法難の現場・龍口寺を中心に、輪番で法要を担う八ヶ寺が腰越に残る。江の島の観光地としての顔とは別の、信仰の共同体としての腰越が見えてくる。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/re5.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/re5.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/re5.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
@@ -494,6 +506,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +518,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 05 龍口寺輪番八ヶ寺</p>
+    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 05 <ruby>龍口寺<rt>りゅうこうじ</rt></ruby><ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺</p>
   </div>
 </header>
 
@@ -521,10 +534,10 @@
     <h1><span class="no" style="color:var(--moss)">05</span><span>龍口寺<ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="religion" aria-label="江ノ島駅から腰越駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:15.8%"></i><i class="r-dot" style="left:28.6%"></i><i class="r-dot" style="left:41.5%"></i><i class="r-dot" style="left:54.3%"></i><i class="r-dot" style="left:67.1%"></i><i class="r-dot" style="left:79.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>江ノ島駅</span><span>腰越駅</span></span></div>
+    <div class="kn-route" data-set="religion" aria-label="江ノ島駅から腰越駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:15.8%"></i><i class="r-dot" style="left:28.6%"></i><i class="r-dot" style="left:41.5%"></i><i class="r-dot" style="left:54.3%"></i><i class="r-dot" style="left:67.1%"></i><i class="r-dot" style="left:79.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>江ノ島<rt>えのしま</rt></ruby>駅</span><span><ruby>腰越<rt>こしごえ</rt></ruby>駅</span></span></div>
     <div class="meta-row"><span>1.5時間</span><span class="dist">施設間の徒歩距離 約2.2km</span><span class="fee">大人合計 無料</span></div>
-    <p class="story">江ノ島の賑わいのすぐ隣に、こんな静かな信仰の共同体があります。<ruby class=o1>龍口法難<rt>たつのくちほうなん</rt></ruby>の現場・龍口寺を中心に、<ruby>輪番<rt>りんばん</rt></ruby>で法要を担う八ヶ寺が腰越に残っています。江の島の観光地としての顔とは別の、信仰の共同体としての腰越が見えてきます。観光客であれだけ賑わう場所のすぐ裏にこれがあると、頭がくらくらんぽします。輪番の寺々を実際に回ってみると、腰越という土地の結びつきの強さが分かります。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：江ノ島駅</span></div></li><li><span class="leg">江ノ島駅から 徒歩300m・約4分</span><div class="row"><span class="sname">龍口寺</span><span class="sfee">無料</span></div></li><li><span class="leg">龍口寺から 徒歩300m・約4分</span><div class="row"><span class="sname">勧行寺</span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">勧行寺から 徒歩300m・約4分</span><div class="row"><span class="sname">本龍寺</span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">本龍寺から 徒歩300m・約4分</span><div class="row"><span class="sname">東漸寺</span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">東漸寺から 徒歩300m・約4分</span><div class="row"><span class="sname">法源寺</span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">法源寺から 徒歩300m・約4分</span><div class="row"><span class="sname">本成寺</span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li class="endleg"><span class="leg">本成寺から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：腰越駅</span></div></li></ul>
+    <p class="story">江ノ島の賑わいのすぐ隣に、こんな静かな信仰の共同体があります。<ruby class=o1>龍口法難<rt>たつのくちほうなん</rt></ruby>の現場・龍口寺を中心に、<ruby>輪番<rt>りんばん</rt></ruby>で法要を担う八ヶ寺が腰越に残っています。<ruby>江の島<rt>えのしま</rt></ruby>の観光地としての顔とは別の、信仰の共同体としての腰越が見えてきます。観光客であれだけ賑わう場所のすぐ裏にこれがあると、頭がくらくらんぽします。輪番の寺々を実際に回ってみると、腰越という土地の結びつきの強さが分かります。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：江ノ島駅</span></div></li><li><span class="leg">江ノ島駅から 徒歩300m・約4分</span><div class="row"><span class="sname">龍口寺</span><span class="sfee">無料</span></div></li><li><span class="leg">龍口寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>勧行寺<rt>かんぎょうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">勧行寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>本龍寺<rt>ほんりゅうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">本龍寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>東漸寺<rt>とうぜんじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">東漸寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>法源寺<rt>ほうげんじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li><span class="leg">法源寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>本成寺<rt>ほんじょうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">※志納制が通例。現地確認推奨。</span></li><li class="endleg"><span class="leg">本成寺から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：腰越駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -575,7 +588,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#temple:manpukuji">お寺：満福寺編</a><a href="../quiz.html#person:nichiren">人物：日蓮編</a></div>
+      <div class="dm-links"><a href="../quiz.html#temple:manpukuji">お寺：<ruby>満福寺<rt>まんぷくじ</rt></ruby>編</a><a href="../quiz.html#person:nichiren">人物：<ruby>日蓮<rt>にちれん</rt></ruby>編</a></div>
     </div>
 
 
@@ -592,7 +605,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="religion" href="re6.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">06</span>光明寺・九品寺・安養院</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:52.2%"></i><i class="r-dot" style="left:67.9%"></i><i class="r-dot" style="left:85.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span>材木座バス停</span></span><span class="pg-meta">2時間・徒歩約4.2km</span></a>
+    <a class="pg-next" data-set="religion" href="re6.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">06</span><ruby>光明寺<rt>こうみょうじ</rt></ruby>・<ruby>九品寺<rt>くほんじ</rt></ruby>・<ruby>安養院<rt>あんよういん</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:52.2%"></i><i class="r-dot" style="left:67.9%"></i><i class="r-dot" style="left:85.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span><ruby>材木座<rt>ざいもくざ</rt></ruby>バス停</span></span><span class="pg-meta">2時間・徒歩約4.2km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="re4.html">← 前：妙本寺〜妙長寺 8ヶ寺</a><a class="pg-list" href="../index.html#tab-religion">一覧へ</a></div>
   </nav>
 </main>

@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡（年表でめぐる）", "description": "鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡。頼朝が鎌倉に入ってから死ぬまでの間に作られた、都市の骨格をたどる。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/ti2.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/ti2.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/ti2.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
@@ -494,6 +506,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +518,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-timeline">年表でめぐる</a> ／ 02 鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡</p>
+    <p class="crumb"><a href="../index.html#tab-timeline">年表でめぐる</a> ／ 02 <ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>・<ruby class="o2">勝長寿院跡<rt>しょうちょうじゅいんあと</rt></ruby>・<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>・<ruby>法華堂跡<rt>ほっけどうあと</rt></ruby></p>
   </div>
 </header>
 
@@ -521,10 +534,10 @@
     <h1><span class="no" style="color:var(--ochre-ink)">02</span><span>鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="timeline" aria-label="鎌倉駅東口から鎌倉宮バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:31.0%"></i><i class="r-dot" style="left:54.1%"></i><i class="r-dot" style="left:67.3%"></i><i class="r-dot" style="left:73.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span></div>
+    <div class="kn-route" data-set="timeline" aria-label="鎌倉駅東口から鎌倉宮バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:31.0%"></i><i class="r-dot" style="left:54.1%"></i><i class="r-dot" style="left:67.3%"></i><i class="r-dot" style="left:73.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span></span></div>
     <div class="meta-row"><span>2時間</span><span class="dist">施設間の徒歩距離 約2.9km</span><span class="fee">大人合計 無料（＋任意 ¥200）</span></div>
     <p class="story">一人の男が鎌倉に入ってから死ぬまでの間に、都市の骨格ができました。鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡。頼朝が鎌倉に入ってから死ぬまでの間に作られた、都市の骨格をたどります。一人の生涯の間に、都市の形そのものが決まったと知ると、頭がくらくらんぽします。頼朝の生涯を辿ると、都市の骨格ができる速さに驚きます。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の氏神として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><span class="leg">鶴岡八幡宮から 徒歩700m・約10分</span><div class="row"><span class="sname">勝長寿院跡</span><span class="sfee">無料</span></div><span class="snote">1184年建立。頼朝が父義朝の菩提のために建てた鎌倉最初の大寺院（現在は跡地）。</span></li><li><span class="leg">勝長寿院跡から 徒歩400m・約6分</span><div class="row"><span class="sname">大倉幕府跡</span><span class="sfee">無料</span></div><span class="snote">頼朝以来の幕府庭地。</span></li><li><span class="leg">大倉幕府跡から 徒歩200m・約3分</span><div class="row"><span class="sname">法華堂跡</span><span class="sfee">無料</span></div><span class="snote">頼朝の墓。</span></li><li class="endleg"><span class="leg">法華堂跡から 徒歩700m・約10分</span><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の<ruby>氏神<rt>うじがみ</rt></ruby>として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><span class="leg">鶴岡八幡宮から 徒歩700m・約10分</span><div class="row"><span class="sname">勝長寿院跡</span><span class="sfee">無料</span></div><span class="snote">1184年建立。頼朝が父義朝の<ruby>菩提<rt>ぼだい</rt></ruby>のために建てた鎌倉最初の大寺院（現在は跡地）。</span></li><li><span class="leg">勝長寿院跡から 徒歩400m・約6分</span><div class="row"><span class="sname">大倉幕府跡</span><span class="sfee">無料</span></div><span class="snote">頼朝以来の幕府庭地。</span></li><li><span class="leg">大倉幕府跡から 徒歩200m・約3分</span><div class="row"><span class="sname">法華堂跡</span><span class="sfee">無料</span></div><span class="snote">頼朝の墓。</span></li><li class="endleg"><span class="leg">法華堂跡から 徒歩700m・約10分</span><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -575,7 +588,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a><a href="../quiz.html#person:yoritomo">人物：源頼朝編</a></div>
+      <div class="dm-links"><a href="../quiz.html#history:yoritomo_era">歴史：頼朝期編</a><a href="../quiz.html#person:yoritomo">人物：<ruby class="o3">源頼朝<rt>みなもとのよりとも</rt></ruby>編</a></div>
     </div>
 
 
@@ -592,8 +605,8 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="timeline" href="ti3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">03</span>寿福寺・浄光明寺・海蔵寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:17.8%"></i><i class="r-dot" style="left:25.3%"></i><i class="r-dot" style="left:35.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>北鎌倉駅</span></span><span class="pg-meta">2時間・徒歩約3.8km</span></a>
-    <div class="pg-sub"><a class="pg-prev" href="ti1.html">← 前：杉本寺・<ruby>由比若宮<rt>ゆいわかみや</rt></ruby></a><a class="pg-list" href="../index.html#tab-timeline">一覧へ</a></div>
+    <a class="pg-next" data-set="timeline" href="ti3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">03</span><ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>・<ruby>海蔵寺<rt>かいぞうじ</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:17.8%"></i><i class="r-dot" style="left:25.3%"></i><i class="r-dot" style="left:35.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>北鎌倉駅</span></span><span class="pg-meta">2時間・徒歩約3.8km</span></a>
+    <div class="pg-sub"><a class="pg-prev" href="ti1.html">← 前：杉本寺・由比若宮</a><a class="pg-list" href="../index.html#tab-timeline">一覧へ</a></div>
   </nav>
 </main>
 

@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "寿福寺・浄光明寺・海蔵寺（年表でめぐる）", "description": "寿福寺（1200年）・浄光明寺（1251年）は、北条氏が執権として権力を固めていく時期に建てられた。海蔵寺は1394年（応永元年）に上杉氏定が再興したもので…", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/ti3.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/ti3.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/ti3.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
@@ -494,6 +506,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +518,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-timeline">年表でめぐる</a> ／ 03 寿福寺・浄光明寺・海蔵寺</p>
+    <p class="crumb"><a href="../index.html#tab-timeline">年表でめぐる</a> ／ 03 <ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>・<ruby>海蔵寺<rt>かいぞうじ</rt></ruby></p>
   </div>
 </header>
 
@@ -523,8 +536,8 @@
   <div class="practical">
     <div class="kn-route" data-set="timeline" aria-label="鎌倉駅西口から北鎌倉駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:17.8%"></i><i class="r-dot" style="left:25.3%"></i><i class="r-dot" style="left:35.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>北鎌倉駅</span></span></div>
     <div class="meta-row"><span>2時間</span><span class="dist">施設間の徒歩距離 約3.8km</span><span class="fee">大人合計 無料（＋任意 ¥300）</span></div>
-    <p class="story">権力が固まっていく時期に、寺の建立ラッシュが起きました。寿福寺（1200年）・浄光明寺（1251年）は、北条氏が<ruby>執権<rt>しっけん</rt></ruby>として権力を固めていく時期に建てられました。海蔵寺は1394年（応永元年）に<ruby>上杉氏定<rt>うえすぎうじさだ</rt></ruby>が再興したもので、時代はやや下ります。亀ヶ谷坂を越えて北鎌倉へ抜ける、少し骨のあるコースです。同じ谷に、200年近い時代差のある寺が並んでいることに、頭がくらくらんぽします。亀ヶ谷坂を越える道のりは、時代の重なりを体で感じさせてくれます。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅西口</span></div></li><li><span class="leg">鎌倉駅西口から 徒歩600m・約9分</span><div class="row"><span class="sname">寿福寺</span><span class="sfee">無料</span></div><span class="snote">北条政子が<ruby>明菴栄西<rt>みんなんえいさい</rt></ruby>を招いて開山。鎌倉五山第三位。</span></li><li><span class="leg">寿福寺から 徒歩300m・約4分</span><div class="row"><span class="sname">浄光明寺</span><span class="sfee">無料</span></div><span class="snote">北条長時開基。鎌倉三十三観音第二十五番。</span><span class="opt">＋阿弥陀堂・収蔵庫（木・土・日・祝のみ公開、年齢区分不明のため一律扱い） ¥200（一律）</span></li><li><span class="leg">浄光明寺から 徒歩400m・約6分</span><div class="row"><span class="sname">海蔵寺</span><span class="sfee">無料</span></div><span class="opt">＋十六井戸（年齢区分なし） ¥100（一律）</span></li><li class="endleg"><span class="leg">海蔵寺から 徒歩2.5km・約36分</span><div class="row"><span class="sname">解散地点：北鎌倉駅</span></div></li></ul>
+    <p class="story">権力が固まっていく時期に、寺の建立ラッシュが起きました。寿福寺（1200年）・浄光明寺（1251年）は、北条氏が<ruby>執権<rt>しっけん</rt></ruby>として権力を固めていく時期に建てられました。海蔵寺は1394年（応永元年）に<ruby>上杉氏定<rt>うえすぎうじさだ</rt></ruby>が再興したもので、時代はやや下ります。<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>を越えて北鎌倉へ抜ける、少し骨のあるコースです。同じ谷に、200年近い時代差のある寺が並んでいることに、頭がくらくらんぽします。亀ヶ谷坂を越える道のりは、時代の重なりを体で感じさせてくれます。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅西口</span></div></li><li><span class="leg">鎌倉駅西口から 徒歩600m・約9分</span><div class="row"><span class="sname">寿福寺</span><span class="sfee">無料</span></div><span class="snote"><ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>を招いて<ruby>開山<rt>かいさん</rt></ruby>。鎌倉五山第三位。</span></li><li><span class="leg">寿福寺から 徒歩300m・約4分</span><div class="row"><span class="sname">浄光明寺</span><span class="sfee">無料</span></div><span class="snote"><ruby class="o1">北条長時<rt>ほうじょうながとき</rt></ruby><ruby>開基<rt>かいき</rt></ruby>。鎌倉三十三観音第二十五番。</span><span class="opt">＋阿弥陀堂・収蔵庫（木・土・日・祝のみ公開、年齢区分不明のため一律扱い） ¥200（一律）</span></li><li><span class="leg">浄光明寺から 徒歩400m・約6分</span><div class="row"><span class="sname">海蔵寺</span><span class="sfee">無料</span></div><span class="opt">＋十六井戸（年齢区分なし） ¥100（一律）</span></li><li class="endleg"><span class="leg">海蔵寺から 徒歩2.5km・約36分</span><div class="row"><span class="sname">解散地点：北鎌倉駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -592,7 +605,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="timeline" href="ti4.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">04</span>常楽寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:50.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>大船駅</span><span>大船駅</span></span><span class="pg-meta">1時間・徒歩約2.0km</span></a>
+    <a class="pg-next" data-set="timeline" href="ti4.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">04</span><ruby>常楽寺<rt>じょうらくじ</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:50.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>大船<rt>おおふな</rt></ruby>駅</span><span>大船駅</span></span><span class="pg-meta">1時間・徒歩約2.0km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="ti2.html">← 前：鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡</a><a class="pg-list" href="../index.html#tab-timeline">一覧へ</a></div>
   </nav>
 </main>

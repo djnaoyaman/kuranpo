@@ -441,6 +441,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -570,6 +582,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -581,7 +594,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C8 腰越② 未収録の社寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C8 <ruby>腰越<rt>こしごえ</rt></ruby>② 未収録の社寺</p>
   </div>
 </header>
 
@@ -597,14 +610,14 @@
     <h1><span class="no">C8</span><span data-i18n="kn.c8.title">腰越② 未収録の社寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="腰越駅から江ノ島駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:10.8%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:36.9%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:57.8%"></i><i class="r-dot" style="left:70.9%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:86.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>腰越駅</span><span>江ノ島駅</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="腰越駅から江ノ島駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:10.8%"></i><i class="r-dot" style="left:18.7%"></i><i class="r-dot" style="left:26.5%"></i><i class="r-dot" style="left:36.9%"></i><i class="r-dot" style="left:47.4%"></i><i class="r-dot" style="left:57.8%"></i><i class="r-dot" style="left:70.9%"></i><i class="r-dot" style="left:78.7%"></i><i class="r-dot" style="left:86.6%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>腰越駅</span><span><ruby>江ノ島<rt>えのしま</rt></ruby>駅</span></span></div>
     <div class="meta-row">
       <span>1.5時間</span>
       <span class="dist">施設間の徒歩距離 約3.6km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c8.story">弁慶が下書きを書いた手紙が、今も寺に残っています。<ruby>龍口寺<rt>りゅうこうじ</rt></ruby><ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺として知られる<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>のお寺のほかにも、腰越の浦には満福寺があります。ここは源義経が兄・頼朝に鎌倉入りを許してもらえず、許しを乞う手紙「腰越状」をしたためた場所——その下書きは弁慶が書いたと伝わっています。本堂には義経・弁慶・静御前を描いた襖絵も残されています。江ノ島の賑わいから一歩入ると、漁師町としての腰越の顔が見えてきます。頼朝に会えないまま京へ帰らされた義経のことを思うと、頭がくらくらんぽします。弁慶の腰掛石や手玉石、実際に触れてみると、伝説がすこし近くなります。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：腰越駅</span></div></li><li><span class="leg">腰越駅から 徒歩300m・約4分</span><div class="row"><span class="sname">浄泉寺</span><span class="sfee">無料</span></div></li><li><span class="leg">浄泉寺から 徒歩300m・約4分</span><div class="row"><span class="sname">宝善院</span><span class="sfee">無料</span></div></li><li><span class="leg">宝善院から 徒歩300m・約4分</span><div class="row"><span class="sname">本行寺</span><span class="sfee">無料</span></div></li><li><span class="leg">本行寺から 徒歩400m・約6分</span><div class="row"><span class="sname">満福寺</span><span class="sfee">無料</span></div><span class="snote">志納。義経と弁慶ゆかり。</span></li><li><span class="leg">満福寺から 徒歩400m・約6分</span><div class="row"><span class="sname">妙典寺</span><span class="sfee">無料</span></div></li><li><span class="leg">妙典寺から 徒歩400m・約6分</span><div class="row"><span class="sname">霊鷲寺</span><span class="sfee">無料</span></div></li><li><span class="leg">霊鷲寺から 徒歩500m・約7分</span><div class="row"><span class="sname">小動神社</span><span class="sfee">無料</span></div></li><li><span class="leg">小動神社から 徒歩300m・約4分</span><div class="row"><span class="sname">龍口明神社</span><span class="sfee">無料</span></div></li><li><span class="leg">龍口明神社から 徒歩300m・約4分</span><div class="row"><span class="sname">八坂大神</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">八坂大神から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：江ノ島駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c8.story">弁慶が下書きを書いた手紙が、今も寺に残っています。<ruby>龍口寺<rt>りゅうこうじ</rt></ruby><ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺として知られる<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>のお寺のほかにも、腰越の浦には<ruby>満福寺<rt>まんぷくじ</rt></ruby>があります。ここは<ruby class="o3">源義経<rt>みなもとのよしつね</rt></ruby>が兄・頼朝に鎌倉入りを許してもらえず、許しを乞う手紙「腰越状」をしたためた場所——その下書きは弁慶が書いたと伝わっています。本堂には義経・弁慶・静御前を描いた襖絵も残されています。江ノ島の賑わいから一歩入ると、漁師町としての腰越の顔が見えてきます。頼朝に会えないまま京へ帰らされた義経のことを思うと、頭がくらくらんぽします。弁慶の腰掛石や手玉石、実際に触れてみると、伝説がすこし近くなります。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：腰越駅</span></div></li><li><span class="leg">腰越駅から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>浄泉寺<rt>じょうせんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">浄泉寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>宝善院<rt>ほうぜんいん</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">宝善院から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>本行寺<rt>ほんぎょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">本行寺から 徒歩400m・約6分</span><div class="row"><span class="sname">満福寺</span><span class="sfee">無料</span></div><span class="snote">志納。義経と弁慶ゆかり。</span></li><li><span class="leg">満福寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>妙典寺<rt>みょうてんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">妙典寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>霊鷲寺<rt>りょうじゅじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">霊鷲寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>小動神社<rt>こゆるぎじんじゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">小動神社から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby class="o2">龍口明神社<rt>りゅうこうみょうじんしゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">龍口明神社から 徒歩300m・約4分</span><div class="row"><span class="sname">八坂大神</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">八坂大神から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：江ノ島駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -681,7 +694,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C9</span>七里ヶ浜エリア</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:35.9%"></i><i class="r-dot" style="left:64.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>七里ヶ浜駅</span><span>七里ヶ浜駅</span></span><span class="pg-meta">1時間・徒歩約2.0km</span></a>
+    <a class="pg-next" data-set="complete" href="c9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C9</span><ruby>七里ヶ浜<rt>しちりがはま</rt></ruby>エリア</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:35.9%"></i><i class="r-dot" style="left:64.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>七里ヶ浜駅</span><span>七里ヶ浜駅</span></span><span class="pg-meta">1時間・徒歩約2.0km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c7.html">← 前：長谷② 未収録の社寺</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -603,7 +616,7 @@
   </svg>
     <h1><span class="no">08</span><span data-i18n="kn.g8.title">幕府滅亡と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>の悲劇</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>9〜10月・彼岸花</b>：覚園寺周辺は彼岸花（曼珠沙華）が見られることで知られる時期。</p><p class="sn-item"><b>11〜12月・紅葉</b>：覚園寺・瑞泉寺は紅葉の名所としても知られる。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>9〜10月・彼岸花</b>：<ruby>覚園寺<rt>かくおんじ</rt></ruby>周辺は彼岸花（曼珠沙華）が見られることで知られる時期。</p><p class="sn-item"><b>11〜12月・紅葉</b>：覚園寺・<ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>は紅葉の名所としても知られる。</p></div>
 <div class="practical">
     <div class="kn-route" data-set="geo" aria-label="鎌倉駅東口から瑞泉寺バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:21.2%"></i><i class="r-dot" style="left:35.3%"></i><i class="r-dot" style="left:60.5%"></i><i class="r-dot" style="left:71.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>瑞泉寺バス停</span></span></div>
     <div class="meta-row">
@@ -611,8 +624,8 @@
       <span class="dist">施設間の徒歩距離 約3.4km</span>
       <span class="fee">大人合計 ¥800（＋任意 ¥300）</span>
     </div>
-    <p class="story" data-i18n="kn.g8.story">同じ谷で、一つの時代が終わり、次の時代が始まりました。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍に攻められた<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>は、東勝寺で一族と一緒に自害しました。宝戒寺は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられています。鎌倉宮は、幕府をたおすのに力を尽くした<ruby>護良親王<rt>もりよししんのう</rt></ruby>をまつっています。覚園寺には<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が書いた文字が残っています。滅んだことと、その直後に始まった新しい時代が、同じ谷に重なって残っている——3時間、鎌倉で一番重い歴史を歩くコースです。滅びと始まりが同じ谷に重なっていることに、頭がくらくらんぽします。3時間歩き終えた後の空気の重さは、言葉より先に体に来ます。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩650m・約9分</span><div class="row"><span class="sname">宝戒寺</span><span class="sfee">大人¥100／小人¥50</span></div><span class="snote">北条氏邸跡。</span></li><li><span class="leg">宝戒寺から 徒歩500m・約7分</span><div class="row"><span class="sname">東勝寺跡</span><span class="sfee">無料</span></div><span class="snote">北条高時ら一族が自刃した地。</span></li><li><span class="leg">東勝寺跡から 徒歩900m・約13分</span><div class="row"><span class="sname">鎌倉宮</span><span class="sfee">無料</span></div><span class="snote"><ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る。境内は無料。</span><span class="opt">＋土牢・宝物館・神苑 大人¥300／小人¥150</span></li><li><span class="leg">鎌倉宮から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote">北条貞時建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span></li><li><span class="leg"><ruby>覚園寺<rt>かくおんじ</rt></ruby>から 徒歩900m・約13分</span><div class="row"><span class="sname">瑞泉寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote"><ruby>夢窓疎石<rt>むそうそせき</rt></ruby>。</span></li></ul>
+    <p class="story" data-i18n="kn.g8.story">同じ谷で、一つの時代が終わり、次の時代が始まりました。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍に攻められた<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>は、<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と一緒に自害しました。<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられています。<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>は、幕府をたおすのに力を尽くした<ruby>護良親王<rt>もりよししんのう</rt></ruby>をまつっています。覚園寺には<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が書いた文字が残っています。滅んだことと、その直後に始まった新しい時代が、同じ谷に重なって残っている——3時間、鎌倉で一番重い歴史を歩くコースです。滅びと始まりが同じ谷に重なっていることに、頭がくらくらんぽします。3時間歩き終えた後の空気の重さは、言葉より先に体に来ます。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩650m・約9分</span><div class="row"><span class="sname">宝戒寺</span><span class="sfee">大人¥100／小人¥50</span></div><span class="snote">北条氏邸跡。</span></li><li><span class="leg">宝戒寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>東勝寺跡<rt>とうしょうじあと</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">北条高時ら一族が自刃した地。</span></li><li><span class="leg">東勝寺跡から 徒歩900m・約13分</span><div class="row"><span class="sname">鎌倉宮</span><span class="sfee">無料</span></div><span class="snote"><ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る。境内は無料。</span><span class="opt">＋土牢・宝物館・神苑 大人¥300／小人¥150</span></li><li><span class="leg">鎌倉宮から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote"><ruby class="o1">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span></li><li><span class="leg"><ruby>覚園寺<rt>かくおんじ</rt></ruby>から 徒歩900m・約13分</span><div class="row"><span class="sname">瑞泉寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote"><ruby>夢窓疎石<rt>むそうそせき</rt></ruby>。</span></li></ul>
     <div class="extra-notes">
       <div class="note-item note-season">
         <p class="note-label">季節の見どころ</p>
@@ -630,7 +643,7 @@
     <div class="term"><dt><ruby>新田義貞<rt>にったよしさだ</rt></ruby><span class="cat">05</span></dt><dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>方の武将。鎌倉に攻め入り幕府を滅ぼしました。</dd></div>
     <div class="term"><dt><ruby>護良親王<rt>もりよししんのう</rt></ruby><span class="cat">03</span></dt><dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の皇子。倒幕に功がありましたが、後に鎌倉で幽閉され、命を落としました。鎌倉宮はこの非業の死者を祀っています。</dd></div>
     <div class="term"><dt><ruby class=o1>北条貞時<rt>ほうじょうさだとき</rt></ruby><span class="cat">05</span></dt><dd>9代<ruby>執権<rt>しっけん</rt></ruby>。覚園寺を建立しました。</dd></div>
-    <div class="term"><dt><ruby>薬師三尊<rt>やくしさんぞん</rt></ruby><span class="cat">03</span></dt><dd>覚園寺の本尊。病を癒す薬師如来を中心とした三尊像。</dd></div>
+    <div class="term"><dt><ruby>薬師三尊<rt>やくしさんぞん</rt></ruby><span class="cat">03</span></dt><dd>覚園寺の本尊。病を癒す<ruby>薬師如来<rt>やくしにょらい</rt></ruby>を中心とした三尊像。</dd></div>
     <div class="term"><dt><ruby>夢窓疎石<rt>むそうそせき</rt></ruby><span class="cat">04</span></dt><dd>瑞泉寺を開いた禅僧・庭園作家。政治から距離を置いた禅僧個人の仕事の跡。</dd></div>
   </dl>
 
@@ -693,8 +706,8 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">09</span>足利氏と金沢街道</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.1%"></i><i class="r-dot" style="left:36.4%"></i><i class="r-dot" style="left:78.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>浄明寺バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class="pg-meta">2時間・徒歩約1.6km</span></a>
-    <div class="pg-sub"><a class="pg-prev" href="g7.html">← 前：<ruby>日蓮<rt>にちれん</rt></ruby>、鎌倉で法難に遭う</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
+    <a class="pg-next" data-set="geo" href="g9.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">09</span>足利氏と<ruby>金沢街道<rt>かなざわかいどう</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.1%"></i><i class="r-dot" style="left:36.4%"></i><i class="r-dot" style="left:78.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby class="o1">浄明寺<rt>じょうみょうじ</rt></ruby>バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class="pg-meta">2時間・徒歩約1.6km</span></a>
+    <div class="pg-sub"><a class="pg-prev" href="g7.html">← 前：日蓮、鎌倉で法難に遭う</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>
 

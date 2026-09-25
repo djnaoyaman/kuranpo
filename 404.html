@@ -343,6 +343,17 @@
   {font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .story{letter-spacing:.02em;}
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
 </style>
 <script type="application/ld+json">
 {
@@ -393,6 +404,7 @@
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="profile.html">編者プロフィール</a>
@@ -403,7 +415,7 @@
 
 <main class="notfound">
   <div class="nf-inner">
-    <p class="kicker reveal-line" data-i18n="p404.kicker">切通の途中で、道が途切れました</p>
+    <p class="kicker reveal-line" data-i18n="p404.kicker"><ruby class="o1">切通<rt>きりどおし</rt></ruby>の途中で、道が途切れました</p>
     <p class="no reveal-line">404</p>
     <span class="nf-road" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:22%"></i><i class="r-dot" style="left:38%"></i><i class="nf-cut" style="left:52%"></i></span>
     <h1 class="mincho reveal-line" data-i18n="p404.h1">この先、道はありません</h1>

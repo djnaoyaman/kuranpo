@@ -13,27 +13,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#F4F1EA">
-<title>編者プロフィール｜鎌・くらんぽ</title>
-<meta name="description" content="鎌・くらんぽ編者「クランポック」のプロフィール。本名・経歴・他の名義（一見坊・湯気文吾・djnaoyaman）について。">
+<title>古写真で歩く鎌倉｜鎌・くらんぽ</title>
+<meta name="description" content="幕末から明治に撮られた鎌倉大仏と鶴岡八幡宮寺の大塔の写真を、年の順にたどります。神仏分離で取り壊される前の塔の姿も。撮影者・年代・所蔵館がはっきりしたパブリックドメインの写真だけを載せています。">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/profile.html">
+<link rel="canonical" href="https://djnaoyaman.github.io/kuranpo/photos.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="鎌・くらんぽ">
-<meta property="og:title" content="編者プロフィール｜鎌・くらんぽ">
-<meta property="og:description" content="鎌・くらんぽ編者「クランポック」のプロフィール。本名・経歴・他の名義（一見坊・湯気文吾・djnaoyaman）について。">
-<meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/profile.html">
-<meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/profile.png">
+<meta property="og:title" content="古写真で歩く鎌倉｜鎌・くらんぽ">
+<meta property="og:description" content="幕末から明治に撮られた鎌倉大仏と鶴岡八幡宮寺の大塔の写真を、年の順にたどります。神仏分離で取り壊される前の塔の姿も。撮影者・年代・所蔵館がはっきりしたパブリックドメインの写真だけを載せています。">
+<meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/photos.html">
+<meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="編者プロフィール｜鎌・くらんぽ">
-<meta name="twitter:image:alt" content="編者プロフィール｜鎌・くらんぽ">
+<meta property="og:image:alt" content="鎌・くらんぽ">
+<meta name="twitter:image:alt" content="鎌・くらんぽ">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="編者プロフィール｜鎌・くらんぽ">
-<meta name="twitter:description" content="鎌・くらんぽ編者「クランポック」のプロフィール。本名・経歴・他の名義（一見坊・湯気文吾・djnaoyaman）について。">
-<meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/ogp/profile.png">
+<meta name="twitter:title" content="古写真で歩く鎌倉｜鎌・くらんぽ">
+<meta name="twitter:description" content="幕末から明治に撮られた鎌倉大仏と鶴岡八幡宮寺の大塔の写真を、年の順にたどります。神仏分離で取り壊される前の塔の姿も。撮影者・年代・所蔵館がはっきりしたパブリックドメインの写真だけを載せています。">
+<meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/og-image.png">
 <meta name="robots" content="index,follow">
 <meta name="author" content="クランポック">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,13 +62,14 @@
   a{color:inherit;}
 
   header.site{
-    padding:40px 20px 26px; border-bottom:1px solid var(--line);
+    padding:40px 20px 28px; border-bottom:1px solid var(--line);
     background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);
   }
   header.site .inner{max-width:var(--max); margin:0 auto;}
   header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
-  header.site h1{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:clamp(26px,5vw,36px); margin:0 0 6px;}
+  header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
+  header.site h1{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
 
   @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
   .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
@@ -77,27 +78,43 @@
   header.site h1.reveal-line{animation-delay:.18s;}
   header.site p.reveal-line{animation-delay:.32s;}
   @media (prefers-reduced-motion: reduce){ .reveal-line{opacity:1; animation:none; transform:none;} }
-  header.site .yomi{font-size:15px; color:var(--ink-soft); margin:0;}
+  header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
 
-  main{max-width:var(--max); margin:0 auto; padding:36px 20px 60px;}
-  .lead{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:18px; line-height:2; max-width:640px; margin:0 0 40px;}
-
-  section.block{max-width:720px; margin:0 0 40px; padding-top:28px; border-top:1px solid var(--line);}
-  section.block:first-of-type{border-top:none; padding-top:0;}
-  section.block h2{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:21.5px; margin:0 0 16px;}
-  section.block h3{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:15px; color:var(--ink-soft); letter-spacing:.06em; margin:20px 0 8px;}
-  section.block p{font-size:16px; margin:0 0 12px; color:var(--ink);}
-  section.block ul{margin:0 0 12px; padding-left:1.1em;}
-  section.block li{font-size:15.5px; margin-bottom:6px; color:var(--ink);}
-  section.block li .note{display:block; color:var(--ink-soft); font-size:14px; margin-top:2px;}
-  section.block a.ext{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
-
-  .pen-names{
-    display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px;
+  nav.jump{
+    position:sticky; top:0; z-index:10; display:flex; overflow-x:auto; gap:0;
+    background:var(--bg); border-bottom:1px solid var(--line); padding:0 20px; scrollbar-width:none;
   }
-  .pen-names span{
-    font-family:var(--voice); font-style:italic; font-size:14px; padding:5px 12px; border:1px solid var(--line); background:var(--card); color:var(--ink-soft);
+  nav.jump::-webkit-scrollbar{display:none;}
+  nav.jump .inner{display:flex; max-width:var(--max); margin:0 auto; width:100%;}
+  nav.jump a{
+    flex:0 0 auto; padding:14px 14px 12px; font-size:15px; color:var(--ink-soft);
+    text-decoration:none; border-bottom:2px solid transparent; white-space:nowrap;
   }
+  nav.jump a:hover{color:var(--ink); border-bottom-color:var(--vermilion);}
+
+  main{max-width:var(--max); margin:0 auto; padding:32px 20px 60px;}
+
+  section.group{max-width:760px; margin:0 0 44px; padding-top:26px; border-top:1px solid var(--line);}
+  section.group:first-of-type{border-top:none; padding-top:0;}
+  section.group h2{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:21.5px; margin:0 0 6px;}
+  section.group .group-note{font-size:14.5px; color:var(--ink-soft); margin:0 0 18px;}
+
+  dl.terms{margin:0;}
+  .term{
+    display:block; padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .term:last-child{border-bottom:none;}
+  .term dt{
+    font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:18px; margin:0 0 6px;
+    display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  }
+  .term dt .yomi{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:400; font-size:13.5px; color:var(--ink-soft);}
+  .term dd{margin:0; font-size:15.5px; color:var(--ink);}
+  .term dd .map{
+    display:inline-block; margin-top:8px; font-size:14px; color:var(--vermilion);
+    text-decoration:underline; text-decoration-color:var(--line);
+  }
+  .term dd .map::before{content:"📍 ";}
 
   footer.site{
     max-width:var(--max); margin:0 auto; padding:20px 20px 60px; color:var(--ink-soft);
@@ -105,13 +122,16 @@
   }
   footer.site .inner{max-width:640px;}
   footer.site a{color:var(--vermilion); text-decoration:underline; text-decoration-color:var(--line);}
+  footer.site .last-updated{display:block; margin-top:6px; font-size:13px; color:var(--ink-soft);}
 
   @media (min-width:768px){
-    header.site{padding:56px 32px 32px;}
+    header.site{padding:64px 32px 40px;}
     main, footer.site{padding-left:32px; padding-right:32px;}
+    section.group dl.terms{column-count:2; column-gap:32px;}
+    section.group .term{break-inside:avoid;}
   }
   @media (min-width:1024px){
-    header.site{padding:72px 40px 40px;}
+    header.site{padding:80px 40px 48px;}
     main, footer.site{padding-left:40px; padding-right:40px;}
   }
   /* ---------- topbar ---------- */
@@ -197,6 +217,40 @@
   .share-label{font-size:13px; color:var(--ink-soft); margin-right:2px;}
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
+
+  /* ---------- 大まかな図解（年表・人物・宗教）共通 ---------- */
+  .diagram-intro{font-size:15.5px; color:var(--ink-soft); margin:0 0 28px; max-width:640px;}
+  .tl-diagram{position:relative; padding-left:26px; border-left:2px solid var(--line); margin:0 0 40px;}
+  .tl-era{position:relative; padding-bottom:32px;}
+  .tl-era:last-child{padding-bottom:0;}
+  .tl-dot{position:absolute; left:-33px; top:4px; width:13px; height:13px; border-radius:50%; background:var(--vermilion); border:3px solid var(--bg);}
+  .tl-period{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:18px; font-weight:700; margin:0 0 4px;}
+  .tl-range{font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--ink-soft); margin:0 0 8px;}
+  .tl-temples{font-size:15px; line-height:1.9; margin:0;}
+  .tl-temples .yr{font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--ink-soft);}
+
+  .rel-group{margin:0 0 32px; padding:18px 20px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
+  .rel-group.moss{border-left-color:var(--moss);}
+  .rel-group.indigo{border-left-color:var(--indigo);}
+  .rel-group.ochre{border-left-color:var(--ochre);}
+  .rel-group h3{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:19px; margin:0 0 12px;}
+  .rel-person{margin:0 0 12px; padding-left:14px; border-left:2px solid var(--line);}
+  .rel-person:last-child{margin-bottom:0;}
+  .rel-person .name{font-weight:700; font-size:16px;}
+  .rel-person .name .yomi{font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--ink-soft); font-weight:400; margin-left:4px;}
+  .rel-person .note{font-size:14.5px; color:var(--ink-soft); line-height:1.8; margin:4px 0 0;}
+  .rel-arrow{font-size:13px; color:var(--ink-soft); margin:2px 0 2px 14px;}
+
+  .tree-root{margin:0 0 32px;}
+  .tree-root > .tree-label{font-family:var(--voice); font-style:italic; font-size:24px; font-weight:500; padding:0; background:none; color:var(--vermilion); display:inline-block; margin:0 0 18px; border-bottom:1px solid var(--line); padding-bottom:10px;}
+  .tree-branch{margin:0 0 20px 0; padding-left:20px; border-left:2px solid var(--line);}
+  .tree-branch .b-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:16.5px; font-weight:700; color:var(--vermilion); margin:0 0 6px;}
+  .tree-branch.moss .b-label{color:var(--moss);}
+  .tree-branch.indigo .b-label{color:var(--indigo);}
+  .tree-branch.ochre .b-label{color:var(--ochre);}
+  .tree-leaves{font-size:14.5px; color:var(--ink-soft); line-height:1.9; margin:0;}
+
+  .diagram-intro b, .tl-temples b, .rel-person .note b, .tree-leaves b{color:var(--vermilion); font-weight:700;}
   /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
   :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;}
   @media (min-width:768px){:root{--gutter:40px;}}
@@ -284,6 +338,8 @@
   .season-note .sn-label{color:var(--vermilion);}
   .note-season, .note-trivia, .note-detour{border-left-color:var(--ink-soft);}
   .note-season .note-label, .note-trivia .note-label, .note-detour .note-label{color:var(--ink-soft);}
+  /* 19. 図解ページの構造の色は、そのページの軸の色（苔）だけにする。本文の強調の朱はサイト共通 */
+  .tree-root > .tree-label, .tree-branch .b-label, .tree-branch.moss .b-label, .tree-branch.indigo .b-label, .tree-branch.ochre .b-label{color:var(--moss);}
   /* 21. 罫線は1px＝区切り／2px＝強調の2種類だけ（計算後の値で3px以上が残っていた9種類を揃える。年表の点の縁取りは線ではないので除く） */
   .course, article.course, .fw-closing, .fw-example, .fw-ref, .guard-item, .rel-group, .sign, .season-note{border-left-width:2px;}
   .editor-mark-section{border-top:1px solid var(--line);}
@@ -320,6 +376,14 @@
     font-size:clamp(34px, 9.4vw, 54px); line-height:1.12; letter-spacing:.06em; font-weight:700;}
   header.site .inner > :not(.back):not(h1){grid-column:1;}
   header.site .inner > .kicker{margin-top:.3em;}
+  /* 32. 幹（仏教・神道）から宗派が枝分かれする線に。宗派ごとに点を置く */
+  .tree-root{margin:0 0 36px;}
+  .tree-branch, .tree-branch.moss{position:relative; margin:0 !important; padding:0 0 26px 28px !important; border:none !important; border-left:1px solid var(--moss) !important;}
+  .tree-branch::before{content:""; position:absolute; left:-5.5px; top:.5em; width:10px; height:10px; border-radius:50%; background:var(--moss);}
+  .tree-branch:last-child{border-left-color:transparent !important;}
+  .tree-branch .b-label{font-size:17px; font-weight:500;}
+  /* 36. このページで使っているのに定義が欠けていた色を補う */
+  :root{--moss:#6E6D1C;}
   /* 37. 長い題字は意味の切れ目で二列に組む（背表紙の題字のように。最初の画面を題字だけで埋めない） */
   header.site .inner > h1 .h1-l{display:block;}
   header.site .inner > h1{line-height:1.3;}
@@ -351,13 +415,6 @@
   footer.colophon .footnotes{margin:0 0 8px; border:none; background:none;}
   footer.colophon .fn-item{padding:14px 0; border:none; border-top:1px solid var(--line); background:none;}
   footer.colophon .fn-item:first-child{border-top:none;}
-  /* 43. 学歴と経歴は、時の順に並ぶ線の上の点に。時の順でない箇条は点だけ */
-  main ul{list-style:none; padding:0; margin:12px 0 28px;}
-  main ul li{position:relative; padding:0 0 12px 22px; line-height:1.8;}
-  main ul li::before{content:""; position:absolute; left:0; top:.62em; width:7px; height:7px; border-radius:50%; background:var(--vermilion);}
-  main ul.life-line li{border-left:1px solid var(--vermilion); margin-left:4px; padding-left:22px;}
-  main ul.life-line li::before{left:-5px; width:9px; height:9px;}
-  main ul.life-line li:last-child{border-left-color:transparent;}
   .co-book{grid-template-columns:minmax(0,1fr) auto;} .co-dl div, .co-dl dd{min-width:0;} .co-dl dd{overflow-wrap:anywhere;}  /* 狭い画面で所在の長い文字列が題字を押し出さないように */
   header.site .inner > h1{font-size:clamp(28px, min(9.4vw, 7svh), 54px);}  /* 画面の高さでも大きさを決める */
   /* 46. 読む段落は、行を字詰めいっぱいまで組む（iPhoneのSafariは text-wrap:pretty を段落全体で解釈し、行を早めに折り返して右端に空きを残すため使わない）。釣り合いは見出しなど短い文だけ */
@@ -390,51 +447,109 @@
   .editor-mark-section .editor-mark{color:var(--on-ink);}
   .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
   .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  /* 52. 宗教関係図：30年に点が集まる年の線／出来事の縦の道／歩いて訪ねる寺／見分ける手がかり */
+  .rs-fig{margin:8px 0 44px;}
+  .rs-top{position:relative; height:30px;}
+  .rs-bracket{position:absolute; bottom:4px; height:9px; border:1px solid var(--moss); border-bottom:none; box-sizing:border-box;}
+  .rs-bracket span{position:absolute; bottom:12px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:13px; font-weight:500; color:var(--moss);}
+  .rs-line{position:relative; height:22px;}
+  .rs-line::before{content:""; position:absolute; left:3%; right:3%; top:10px; height:1px; background:var(--moss);}
+  .rs-dot{position:absolute; top:6px; width:9px; height:9px; margin-left:-4.5px; border-radius:50%; background:var(--moss);}
+  .rs-labels{position:relative; height:46px;}
+  .rs-labels span{position:absolute; top:4px; transform:translateX(-50%); font-size:12px; line-height:1.45; text-align:center; color:var(--ink-soft); white-space:nowrap;}
+  .rs-labels em{font-family:var(--voice); font-style:italic; font-size:13px;}
+  .rs-fig figcaption{margin:10px 0 0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .rs-sec{margin:52px 0 0;}
+  .rs-sec > h2{font-size:21px; font-weight:700; margin:0 0 10px; padding-top:28px; border-top:1px solid var(--line);}
+  .rs-note{margin:0 0 22px; font-size:15px; line-height:1.85; color:var(--ink-read);}
+  .ev-list{list-style:none; margin:0; padding:0;}
+  .ev-list li{position:relative; margin:0 0 0 5px; padding:0 0 26px 24px; border-left:1px solid var(--moss);}
+  .ev-list li:last-child{border-left-color:transparent;}
+  .ev-list li::before{content:""; position:absolute; left:-5.5px; top:.5em; width:10px; height:10px; border-radius:50%; background:var(--moss);}
+  .ev-y{display:block; margin:0 0 4px; font-family:var(--voice); font-style:italic; font-size:21px; line-height:1.1; color:var(--moss);}
+  .ev-t{margin:0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .ev-p{margin:8px 0 0; font-size:13.5px; color:var(--ink-soft);}
+  .ev-p a, .rs-walk a{color:var(--vermilion);}
+  .tree-branch h3.b-label{margin:0 0 8px; font-size:17px; font-weight:500; line-height:1.5; color:var(--moss);}
+  .rs-walk{margin:10px 0 0; font-size:13.5px; line-height:1.9; color:var(--ink-soft);}
+  .rs-cues{margin:0;}
+  .rs-cues div{padding:18px 0; border-top:1px solid var(--line);}
+  .rs-cues div:first-child{border-top:none; padding-top:4px;}
+  .rs-cues dt{margin:0 0 6px; font-size:17px; font-weight:500;}
+  .rs-cues dd{margin:0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .rs-close{margin-top:48px;}
+  /* 53. なぜこの時代に・なぜ鎌倉へ（目次／4つの背景／ひねり／祖師と鎌倉） */
+  .rs-toc-wrap{margin:0 0 8px;}
+  .rs-toc{list-style:none; margin:0; padding:0; border-top:1px solid var(--line);}
+  .rs-toc li{border-bottom:1px solid var(--line);}
+  .rs-toc a{display:flex; gap:12px; align-items:baseline; padding:12px 0; color:var(--ink); text-decoration:none; font-size:15px; line-height:1.6;}
+  .rs-toc a:hover{color:var(--vermilion);}
+  .rs-toc .n{flex:0 0 1.2em; font-family:var(--voice); font-style:italic; font-size:17px; color:var(--moss);}
+  .why-list{list-style:none; margin:0; padding:0;}
+  .why-list li{padding:20px 0; border-top:1px solid var(--line);}
+  .why-h{display:flex; gap:12px; align-items:baseline; margin:0 0 8px; font-size:18px; font-weight:500; line-height:1.5;}
+  .why-no{flex:0 0 1em; font-family:var(--voice); font-style:italic; font-size:26px; line-height:1; color:var(--moss);}
+  .why-list p, .rs-twist p{margin:0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .rs-twist{margin:12px 0 0; padding:20px 20px 22px; background:var(--card); border-left:2px solid var(--moss);}
+  .rs-twist .why-h{font-size:17px; color:var(--moss);}
+  .founders{list-style:none; margin:0; padding:0;}
+  .founders li{padding:18px 0; border-top:1px solid var(--line);}
+  .fd-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; margin:0 0 8px;}
+  .fd-name{font-size:18px; font-weight:500;}
+  .fd-sect{font-size:13px; color:var(--moss);}
+  .fd-tag{margin-left:auto; font-size:12.5px; color:var(--ink-soft); border:1px solid var(--line); padding:2px 9px;}
+  .fd-t{margin:0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  @media (min-width:900px){ .founders{display:grid; grid-template-columns:1fr 1fr; column-gap:48px;} }
+  /* 54. 関係図（学び・招き・対立の3つの線）／境目の地図／祈りの暦／出典 */
+  .rel-h{display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 12px; margin:30px 0 12px; font-size:18px; font-weight:500; color:var(--moss);}
+  .rel-h span{font-size:13.5px; font-weight:400; color:var(--ink-soft);}
+  .rel-svg{display:block; width:100%; max-width:520px; height:auto; margin:4px auto 0;}
+  .rel-line{stroke:var(--moss); stroke-width:1; fill:none;}
+  .rel-dot{fill:var(--moss);}
+  .rel-t{font-size:14px; fill:var(--ink);}
+  .rel-b{font-size:16px; font-weight:700;}
+  .rel-s{font-size:12px; fill:var(--ink-soft);}
+  .rel-y{font-family:var(--voice); font-style:italic; font-size:14px; fill:var(--ink-soft);}
+  .rel-cap{margin:10px 0 0; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .lineage{display:grid; gap:18px;}
+  @media (min-width:900px){ .lineage{grid-template-columns:repeat(3,1fr); column-gap:32px;} }
+  .lg-src{margin:0 0 8px; font-size:13.5px; color:var(--ink-soft);}
+  .lg-list{list-style:none; margin:0; padding:0 0 0 18px; border-left:1px solid var(--moss);}
+  .lg-list li{position:relative; padding:6px 0 6px 14px;}
+  .lg-list li::before{content:""; position:absolute; left:-18px; top:1.15em; width:26px; height:1px; background:var(--moss);}
+  .lg-list .lg-list{margin-top:4px;}
+  .lg-name{font-size:16px; font-weight:500; margin-right:10px;}
+  .lg-sect{font-size:13px; color:var(--ink-soft);}
+  .per-list{list-style:none; margin:0 auto; padding:0 0 0 22px; max-width:520px; border-left:1px solid var(--moss);}
+  .per-list li{position:relative; padding:4px 0 10px; font-size:15px; line-height:1.7; color:var(--ink);}
+  .per-list li::before{content:""; position:absolute; left:-27px; top:.55em; width:9px; height:9px; border-radius:50%; background:var(--moss);}
+  .per-list .ev-y{display:inline; font-size:17px; margin-right:10px;}
+  .edge-hill{stroke:var(--ink-soft); stroke-width:1; fill:none;}
+  .edge-pass{fill:var(--bg); stroke:var(--ink-soft); stroke-width:1;}
+  .edge-ref{fill:var(--ink-soft);}
+  .rs-body{margin:14px 0 0; font-size:16px; line-height:1.9; letter-spacing:.02em; color:var(--ink);}
+  .cal-d{font-size:18px;}
+  .cal-h{margin:0 0 4px; font-size:17px; font-weight:500;}
+  .src-list{margin:0; padding:0 0 0 1.6em; font-size:13.5px; line-height:1.9; color:var(--ink-read);}
+  .src-list li{padding:2px 0;}
+  .src-list a{color:var(--ink-read); text-decoration:none; border-bottom:1px solid var(--line);}
+  .src-list a:hover{color:var(--vermilion);}
+  .rs-note a{color:var(--vermilion);}
   /* 55. ふりがなの入った語は折り返せないため、狭い画面で列が押し広げられないようにする */
   header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "ProfilePage",
- "dateCreated": "2026-09-24",
- "dateModified": "2026-09-25",
- "mainEntity": {
-  "@type": "Person",
-  "name": "クランポック",
-  "alternateName": [
-   "宮崎直哉",
-   "一見坊",
-   "湯気文吾",
-   "djnaoyaman"
-  ],
-  "url": "https://djnaoyaman.github.io/kuranpo/profile.html",
-  "jobTitle": "ブランドマネージャー・マーケター",
-  "description": "鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する「鎌・くらんぽ」の編者。ブランドマネージャー・マーケターとして複数のウェルネス・ヘルスケア領域企業でマーケティングディレクターを務め、岩手県紫波町では東根エリアのブランディングプロデューサーも担う。",
-  "knowsAbout": [
-   "鎌倉の歴史",
-   "神社仏閣",
-   "地域ブランディング"
-  ],
-  "alumniOf": [
-   "明治大学"
-  ],
-  "sameAs": [
-   "https://djnaoyaman.github.io/kuranpo/",
-   "https://djnaoyaman.github.io/youkai/index.html",
-   "https://note.com/djnaoyaman",
-   "https://sauna-ikitai.com/saunners/12991",
-   "https://djnaoyaman.github.io/sakanamushi/",
-   "https://djnaoyaman.github.io/ppp/about.html"
-  ]
- },
- "isPartOf": {
-  "@type": "WebSite",
-  "name": "鎌・くらんぽ",
-  "url": "https://djnaoyaman.github.io/kuranpo/"
- }
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "古写真で歩く鎌倉", "description": "幕末から明治に撮られた鎌倉大仏と鶴岡八幡宮寺の大塔の写真を、年の順にたどります。神仏分離で取り壊される前の塔の姿も。撮影者・年代・所蔵館がはっきりしたパブリックドメインの写真だけを載せています。", "url": "https://djnaoyaman.github.io/kuranpo/photos.html", "inLanguage": "ja", "isPartOf": {"@type": "WebSite", "name": "鎌・くらんぽ", "url": "https://djnaoyaman.github.io/kuranpo/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "鎌・くらんぽ", "item": "https://djnaoyaman.github.io/kuranpo/"}, {"@type": "ListItem", "position": 2, "name": "古写真で歩く鎌倉", "item": "https://djnaoyaman.github.io/kuranpo/photos.html"}]}</script>
 </head>
 <body>
 <div class="topbar">
@@ -482,69 +597,34 @@
 <header class="site">
   <div class="inner">
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
-    <h1 class="mincho reveal-line"><span class="h1-l">編者</span><span class="h1-l">プロフィール</span></h1>
-    <p class="yomi reveal-line">クランポック</p>
+    <p class="kicker reveal-line">散歩の前に、5分だけ</p>
+    <h1 class="mincho reveal-line"><span class="h1-l">鎌・くらんぽ</span><span class="h1-l">古写真で歩く</span></h1>
+    <p class="lead reveal-line">幕末、横浜に写真館を開いた写真家フェリーチェ・ベアトは、鎌倉を訪れて大仏や八幡宮を撮りました。そのうち八幡宮の塔は、数年後の明治の<ruby>神仏分離<rt>しんぶつぶんり</rt></ruby>で取り壊されています。百五十年前の鎌倉を、写真でたどります。</p>
   </div>
 </header>
 
 <main>
-  <p class="lead reveal-line" data-i18n="profile.lead">「鎌・くらんぽ」の「くらんぽ」は、娘が鎌倉を散歩することをそう呼んでいたことから、アイデアをもらいました。家族で歩くのが楽しくなったことがきっかけで、この散歩コースを作るようになりました。「<ruby class="o1">切通<rt>きりどおし</rt></ruby>」は、鎌倉特有の、山を切り開いてつくられた古道の名です。<ruby>谷戸<rt>やと</rt></ruby>から谷戸へ、人が歩いて越えてきた道そのものを指します。「歩」は、その名の通り歩く人。この「切通歩（きりどおしあゆむ）」をカタカナにしたのが、今の編者名「クランポック」です。</p>
+  <p class="diagram-intro">ここに並べたのは、撮影者と撮影の年代、所蔵館がはっきりしている写真だけです。いずれも著作権の保護期間が終わったパブリックドメインの写真で、所蔵館が公開している画像を表示しています。</p>
 
-  <section class="block">
-    <h2 class="mincho" data-i18n="profile.h2.career">本名としての経歴</h2>
-    <p data-i18n="profile.p.career">本名は<ruby>宮崎直哉<rt>みやざきなおや</rt></ruby>です。ブランドマネージャー・マーケターとして、複数のウェルネス・ヘルスケア領域企業でマーケティングディレクターを務めています。岩手県紫波町では東根エリアのブランディングプロデューサーも担っています。</p>
-
-    <h3 data-i18n="profile.h3.education">学歴</h3>
-    <ul class="life-line" data-i18n="profile.ul.education">
-      <li>足立区立梅島小学校 卒業</li>
-      <li>足立区立第四中学校 卒業</li>
-      <li>明治学院高校 卒業</li>
-      <li>青山学院大学 文学部 教育学科 中退</li>
-      <li>明治大学 商学部 商学科 卒業</li>
-    </ul>
-
-    <h3 data-i18n="profile.h3.work">経歴</h3>
-    <ul class="life-line" data-i18n="profile.ul.work">
-      <li>みずほ情報総研株式会社（ロンドン・ニューヨーク向け大規模決済処理システム構築、ビジネスコンサルタント）</li>
-      <li>株式会社サイバーエージェント（インターネット広告代理事業部 マネジメント）</li>
-      <li>株式会社リッツ・インターナショナル 取締役（美容サービス事業およびクリニック経営を担当）</li>
-      <li>株式会社フライング・ブレイン 代表取締役（上流マーケティング企画会社として、アパレル・ウェルネスを中心に50以上のブランドの上流マーケティング・ブランディングを担当）</li>
-      <li>紫波金魚 代表</li>
-      <li>あづまねエリアブランディングプロデューサー（岩手県紫波郡紫波町、2024年〜）。地方活性化のプロジェクトには、複数の自治体を横断して関わっています。</li>
-    </ul>
-
-    <h3 data-i18n="profile.h3.talks">講演実績</h3>
-    <p data-i18n="profile.p.talks">東京工科大学、関東学院大学、神奈川大学、和光大学、専修大学、紫波町、五島市、砥部市、他。</p>
+  <section class="rs-sec" aria-labelledby="ph-road">
+  <h2 id="ph-road">古い順に、たどる</h2>
+  <ol class="ev-list ph-list">
+    <li><span class="ev-y">1863</span><p class="cal-h">鎌倉の村</p><figure class="plate"><div class="pl-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900" alt="幕末の鎌倉の村の家並みを写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">ベアトが撮った鎌倉の村です。撮られた場所は分かっていません。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89897）所蔵、パブリックドメイン。<a href="https://commons.wikimedia.org/wiki/File:KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure></li>
+    <li><span class="ev-y">1863</span><p class="cal-h">鎌倉大仏</p><figure class="plate"><div class="pl-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900" alt="幕末の鎌倉大仏を正面から写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">1498年の大地震で大<ruby>仏殿<rt>ぶつでん</rt></ruby>を失ってから、大仏は屋根のない露座のまま残ってきました。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89895）所蔵、パブリックドメイン。<a href="https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure><p class="ev-p">ゆかりのコース：<a href="knowledge/g11.html"><ruby>長谷<rt>はせ</rt></ruby>のコース（エリア別 11）</a>、<a href="knowledge/re10.html">宗教でめぐる 10</a></p></li>
+    <li><span class="ev-y">1867</span><p class="cal-h"><ruby>鶴岡八幡宮寺<rt>つるがおかはちまんぐうじ</rt></ruby>の大塔</p><figure class="plate"><div class="pl-frame"><img src="https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg" alt="幕末の鶴岡八幡宮寺の大塔（多宝塔）を写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">画像を読み込めませんでした。所蔵館のページで見る</a></div><figcaption><span class="pl-cap">明治の神仏分離で取り壊される数年前の大塔（多宝塔）です。当時の<ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>は、神と仏をあわせて祀る八幡宮寺でした。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1867〜68年。J・ポール・ゲッティ美術館所蔵（パブリックドメイン）。<a href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">所蔵館のページで見る</a></span></figcaption></figure><p class="ev-p">ゆかりのコース：<a href="knowledge/re11.html">鶴岡八幡宮（宗教でめぐる 11）</a>、<a href="religions.html#rs-ev">宗教関係図の1868年</a></p></li>
+    <li><span class="ev-y">1890</span><p class="cal-h">鎌倉大仏、ふたたび</p><figure class="plate"><div class="pl-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif?width=900" alt="明治中期の鎌倉大仏を写した写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">ベアトの写真から、およそ25年後の大仏です。</span><span class="pl-cr"><ruby>日下部金兵衛<rt>くさかべきんべえ</rt></ruby>撮影、1890年ごろ。ライデン大学図書館（KITLV 110621）所蔵、パブリックドメイン。<a href="https://commons.wikimedia.org/wiki/File:KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure><p class="ev-p">ゆかりのコース：<a href="knowledge/g11.html">長谷のコース（エリア別 11）</a></p></li>
+  </ol>
   </section>
 
-  <section class="block">
-    <h2 class="mincho" data-i18n="profile.h2.names">名義について</h2>
-    <p data-i18n="profile.p.names">活動領域ごとに名義を分けています。「クランポック」は鎌倉の歴史・地理を扱うこのサイトのための名義です。</p>
-    <div class="pen-names" data-i18n="profile.pennames">
-      <span>クランポック ― 鎌・くらんぽ（本サイト）</span>
-      <span>一見坊 ― 妖怪関連</span>
-      <span>湯気文吾 ― サウナ関連</span>
-      <span>djnaoyaman ― DJ</span>
-    </div>
+  <p class="diagram-intro rs-close">二枚の大仏の写真のあいだのおよそ25年に、八幡宮の大塔は取り壊されました。同じ百五十年前でも、一枚目と四枚目の鎌倉は、もう違う町です。頭がくらくらんぽしませんか。</p>
+
+  <section class="rs-sec" aria-labelledby="ph-about">
+  <h2 id="ph-about">写真について</h2>
+  <p class="rs-note">幕末から明治に撮られた写真は、撮影者の没後長い年月がたち、著作権の保護期間が終わっています。ここでは、ゲッティ美術館とライデン大学図書館が公開している画像を、所蔵館の住所から表示しています。画像を読み込めない時は、所蔵館のページへの案内が出ます。</p>
+  <ol class="src-list"><li><a href="https://commons.wikimedia.org/wiki/File:KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">フェリーチェ・ベアト「鎌倉の村」（ライデン大学図書館 KITLV 89897／ウィキメディア・コモンズ）</a></li><li><a href="https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">フェリーチェ・ベアト「鎌倉大仏」（ライデン大学図書館 KITLV 89895／ウィキメディア・コモンズ）</a></li><li><a href="https://www.getty.edu/art/collection/object/109BY7" target="_blank" rel="noopener">フェリーチェ・ベアト「鎌倉・八幡宮の一層の塔」（J・ポール・ゲッティ美術館 2007.26.207.5）</a></li><li><a href="https://commons.wikimedia.org/wiki/File:KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif" target="_blank" rel="noopener">日下部金兵衛「鎌倉大仏」（ライデン大学図書館 KITLV 110621／ウィキメディア・コモンズ）</a></li><li><a href="https://www.kotoku-in.jp/about.html" target="_blank" rel="noopener">鎌倉大仏殿<ruby>高徳院<rt>こうとくいん</rt></ruby>「鎌倉大仏と高徳院」（大仏殿の倒壊）</a></li><li><a href="https://www.engakuji.or.jp/blog/40781/" target="_blank" rel="noopener"><ruby class="o1">臨済宗<rt>りんざいしゅう</rt></ruby>大本山 <ruby>円覚寺<rt>えんがくじ</rt></ruby>「鶴岡八幡宮へ」（神仏分離で撤去された建物）</a></li></ol>
   </section>
 
-  <section class="block">
-    <h2 class="mincho" data-i18n="profile.h2.works">制作物・関連プロジェクト</h2>
-    <ul data-i18n="profile.ul.works">
-      <li>鎌・くらんぽ（本サイト）<span class="note">鎌倉市内の神社仏閣を、出発点と解散点を定めた散歩コースで整理し、拝観料・徒歩距離・歴史的背景をまとめた個人編集のガイドです。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/youkai/index.html?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">一見坊の【日本妖怪学体系】</a><span class="note">47都道府県と全国区の日本の妖怪を、伝承・出典・信頼度つきでまとめた個人編集のデータベースです。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/sakanamushi/?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">花鳥風月、そして魚と虫</a><span class="note">魚偏・虫偏をはじめとする難読漢字（380字超）を、一字ずつ大きく読んで答えるクイズ図鑑です。</span></li>
-      <li><a class="ext" href="https://djnaoyaman.github.io/ppp/about.html?utm_source=kuranpo&utm_medium=referral&utm_campaign=profile">掌蹠膿疱症.com</a><span class="note">個人の記録と公開資料をもとに整理した情報サイトです。</span></li>
-      <li><a class="ext" href="https://note.com/djnaoyaman">note.com（djnaoyaman）</a><span class="note">エッセイ、DJ関連の連載などを執筆しています。</span></li>
-      <li><a class="ext" href="https://sauna-ikitai.com/saunners/12991">サウナイキタイ</a><span class="note">ペンネーム「湯気文吾」で、全国のサウナを巡り記録するプロジェクトです。</span></li>
-    </ul>
-  </section>
-
-  <section class="block">
-    <h2 class="mincho" data-i18n="profile.h2.stance">このサイトの姿勢</h2>
-    <p data-i18n="profile.p.stance">鎌倉の社寺には、史料で確認できる事実と、語り継がれるうちに姿を変えてきた伝承の両方があります。このサイトでは、その二つをできるだけ分けて書くことを心がけています。拝観料や距離のように確認できる数字は公式サイト等で確かめ、伝承や逸話には「伝わる」「という」といった言葉を残します。鎌倉を面白く紹介することだけでなく、何が確認できて、何が伝承なのかを残しておきたいと思っています。</p>
-  </section>
-
+  <p class="diagram-intro">写真の場所を、実際に歩いてみませんか。<a href="knowledge/g11.html">長谷のコース</a>・<a href="knowledge/re11.html">鶴岡八幡宮のコース</a></p>
   <div class="share-buttons">
     <span class="share-label">この記事をシェア</span>
     <a class="share-btn" href="#" id="shareX" target="_blank" rel="noopener">X</a>
@@ -552,10 +632,12 @@
     <a class="share-btn" href="#" id="shareFb" target="_blank" rel="noopener">Facebook</a>
     <a class="share-btn" href="#" id="shareHatena" target="_blank" rel="noopener">はてブ</a>
   </div>
+
 </main>
 
 <footer class="colophon">
   <div class="co-in">
+    <p class="co-pagenote">ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p>
     <div class="co-book">
       <p class="co-name">鎌・くらんぽ</p>
       <p class="co-en">Kamakura + Sanpo</p>

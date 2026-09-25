@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -560,6 +572,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -571,7 +584,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C4 大町② 未収録の社寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C4 <ruby>大町<rt>おおまち</rt></ruby>② 未収録の社寺</p>
   </div>
 </header>
 
@@ -587,14 +600,14 @@
     <h1><span class="no">C4</span><span data-i18n="kn.c4.title">大町② 未収録の社寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="鎌倉駅南口から和田塚駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:19.0%"></i><i class="r-dot" style="left:21.3%"></i><i class="r-dot" style="left:35.1%"></i><i class="r-dot" style="left:44.3%"></i><i class="r-dot" style="left:55.7%"></i><i class="r-dot" style="left:71.8%"></i><i class="r-dot" style="left:85.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span>和田塚駅</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="鎌倉駅南口から和田塚駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:19.0%"></i><i class="r-dot" style="left:21.3%"></i><i class="r-dot" style="left:35.1%"></i><i class="r-dot" style="left:44.3%"></i><i class="r-dot" style="left:55.7%"></i><i class="r-dot" style="left:71.8%"></i><i class="r-dot" style="left:85.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅南口</span><span><ruby>和田塚<rt>わだづか</rt></ruby>駅</span></span></div>
     <div class="meta-row">
       <span>2時間</span>
       <span class="dist">施設間の徒歩距離 約4.1km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c4.story">病気の流行から住民を守るために、京都の神さまを呼んだ神社があります。「お天王さん」と呼ばれる八雲神社は、病気の流行に苦しんでいた住民のために、京都の祇園社の神さまを迎えたのが始まりという、大町の暮らしに根づいた神社です。妙法寺の苔むした石段、別願寺の観音霊場としての格式——住宅地の間に、<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の小さなお寺が静かに並んでいます。観光地としての大町とは違う顔を見せるコースです。住宅地にこれだけの信仰の跡が埋め込まれていることに、頭がくらくらんぽします。苔むした石段の一段一段は、実際に上ってみないと分かりません。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅南口</span></div></li><li><span class="leg">鎌倉駅南口から 徒歩700m・約10分</span><div class="row"><span class="sname">八雲神社（大町）</span><span class="sfee">無料</span></div><span class="snote">「お天王さん」と親しまれる大町の厄除け社。</span></li><li><span class="leg">八雲神社（大町）から 徒歩100m・約1分</span><div class="row"><span class="sname">蛭子神社</span><span class="sfee">無料</span></div></li><li><span class="leg">蛭子神社から 徒歩600m・約9分</span><div class="row"><span class="sname">大宝寺</span><span class="sfee">無料</span></div></li><li><span class="leg">大宝寺から 徒歩400m・約6分</span><div class="row"><span class="sname">別願寺</span><span class="sfee">無料</span></div><span class="snote">鎌倉三十三観音第十三番。</span></li><li><span class="leg">別願寺から 徒歩500m・約7分</span><div class="row"><span class="sname">本興寺</span><span class="sfee">無料</span></div></li><li><span class="leg">本興寺から 徒歩700m・約10分</span><div class="row"><span class="sname">妙法寺</span><span class="sfee">無料</span></div><span class="snote">苔の石段で知られる。</span></li><li><span class="leg">妙法寺から 徒歩600m・約9分</span><div class="row"><span class="sname">妙隆寺</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">妙隆寺から 徒歩500m・約7分</span><div class="row"><span class="sname">解散地点：和田塚駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c4.story">病気の流行から住民を守るために、京都の神さまを呼んだ神社があります。「お天王さん」と呼ばれる<ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>は、病気の流行に苦しんでいた住民のために、京都の祇園社の神さまを迎えたのが始まりという、大町の暮らしに根づいた神社です。<ruby>妙法寺<rt>みょうほうじ</rt></ruby>の苔むした石段、<ruby>別願寺<rt>べつがんじ</rt></ruby>の観音霊場としての格式——住宅地の間に、<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の小さなお寺が静かに並んでいます。観光地としての大町とは違う顔を見せるコースです。住宅地にこれだけの信仰の跡が埋め込まれていることに、頭がくらくらんぽします。苔むした石段の一段一段は、実際に上ってみないと分かりません。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅南口</span></div></li><li><span class="leg">鎌倉駅南口から 徒歩700m・約10分</span><div class="row"><span class="sname">八雲神社（大町）</span><span class="sfee">無料</span></div><span class="snote">「お天王さん」と親しまれる大町の厄除け社。</span></li><li><span class="leg">八雲神社（大町）から 徒歩100m・約1分</span><div class="row"><span class="sname"><ruby>蛭子神社<rt>ひるこじんじゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">蛭子神社から 徒歩600m・約9分</span><div class="row"><span class="sname"><ruby>大宝寺<rt>だいほうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">大宝寺から 徒歩400m・約6分</span><div class="row"><span class="sname">別願寺</span><span class="sfee">無料</span></div><span class="snote">鎌倉三十三観音第十三番。</span></li><li><span class="leg">別願寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>本興寺<rt>ほんこうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">本興寺から 徒歩700m・約10分</span><div class="row"><span class="sname">妙法寺</span><span class="sfee">無料</span></div><span class="snote">苔の石段で知られる。</span></li><li><span class="leg">妙法寺から 徒歩600m・約9分</span><div class="row"><span class="sname"><ruby class="o1">妙隆寺<rt>みょうりゅうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">妙隆寺から 徒歩500m・約7分</span><div class="row"><span class="sname">解散地点：和田塚駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -603,7 +616,7 @@
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85%E5%8D%97%E5%8F%A3" target="_blank" rel="noopener">出発：鎌倉駅南口</a></div>
   <dl class="terms" data-i18n="kn.c4.terms">
-    <div class="term"><dt><ruby class=o3>源義光<rt>みなもとのよしみつ</rt></ruby><span class="cat">04</span></dt><dd><ruby>新羅三郎<rt>しんらさぶろう</rt></ruby>。八雲神社（大町）を勧請したと伝わる人物。</dd></div>
+    <div class="term"><dt><ruby class=o3>源義光<rt>みなもとのよしみつ</rt></ruby><span class="cat">04</span></dt><dd><ruby>新羅三郎<rt>しんらさぶろう</rt></ruby>。八雲神社（大町）を<ruby class="o1">勧請<rt>かんじょう</rt></ruby>したと伝わる人物。</dd></div>
     <div class="term"><dt><ruby>祇園信仰<rt>ぎおんしんこう</rt></ruby><span class="cat">06</span></dt><dd>疫病除けの信仰。京都祇園社を勧請したのが八雲神社の由来とされる、庶民の疫病への恐れが形になった信仰。</dd></div>
   </dl>
 
@@ -649,7 +662,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#religion:nichirenshu">宗教：日蓮宗編</a></div>
+      <div class="dm-links"><a href="../quiz.html#religion:nichirenshu">宗教：<ruby>日蓮<rt>にちれん</rt></ruby>宗編</a></div>
     </div>
 
 
@@ -666,7 +679,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c5.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C5</span>材木座② 未収録寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:25.1%"></i><i class="r-dot" style="left:36.2%"></i><i class="r-dot" style="left:44.5%"></i><i class="r-dot" style="left:52.8%"></i><i class="r-dot" style="left:66.6%"></i><i class="r-dot" style="left:77.6%"></i><i class="r-dot" style="left:85.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>和田塚駅</span><span>材木座バス停</span></span><span class="pg-meta">2時間・徒歩約3.4km</span></a>
+    <a class="pg-next" data-set="complete" href="c5.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C5</span><ruby>材木座<rt>ざいもくざ</rt></ruby>② 未収録寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:25.1%"></i><i class="r-dot" style="left:36.2%"></i><i class="r-dot" style="left:44.5%"></i><i class="r-dot" style="left:52.8%"></i><i class="r-dot" style="left:66.6%"></i><i class="r-dot" style="left:77.6%"></i><i class="r-dot" style="left:85.9%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>和田塚駅</span><span>材木座バス停</span></span><span class="pg-meta">2時間・徒歩約3.4km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c3.html">← 前：扇ガ谷② 未収録寺</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

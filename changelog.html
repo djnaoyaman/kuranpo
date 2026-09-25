@@ -380,6 +380,19 @@
   {font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .story{letter-spacing:.02em;}
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  /* 55. ふりがなの入った語は折り返せないため、狭い画面で列が押し広げられないようにする */
+  header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
 </style>
 <script type="application/ld+json">
 {
@@ -432,6 +445,7 @@
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="profile.html">編者プロフィール</a>
@@ -453,18 +467,18 @@
 
 <section class="guard">
   <h2 class="mincho">先祖返り注意リスト</h2>
-  <p>一度直したのに、後の編集で気づかずに元へ戻してしまうと厄介なものです。特に次の5点に注意しています。</p>
+  <p>一度直したのに、後の編集で気づかずに元へ戻してしまうと厄介なものです。特に次の9点に注意しています。</p>
   <div class="guard-item">
-    <p class="g-wrong">報国寺を「関東十刹」と書く</p>
-    <p class="g-right">報国寺は「諸山」で、関東十刹は大慶寺などです（Wikipediaで確認済み）。</p>
+    <p class="g-wrong"><ruby>報国寺<rt>ほうこくじ</rt></ruby>を「関東十刹」と書く</p>
+    <p class="g-right">報国寺は「<ruby>諸山<rt>しょさん</rt></ruby>」で、関東十刹は<ruby>大慶寺<rt>だいけいじ</rt></ruby>などです（Wikipediaで確認済み）。</p>
   </div>
   <div class="guard-item">
-    <p class="g-wrong">東慶寺の覚山尼を「北条時宗の子・貞時の姉」と書く</p>
+    <p class="g-wrong"><ruby>東慶寺<rt>とうけいじ</rt></ruby>の<ruby>覚山尼<rt>かくさんに</rt></ruby>を「<ruby class="o1">北条時宗<rt>ほうじょうときむね</rt></ruby>の子・貞時の姉」と書く</p>
     <p class="g-right">覚山尼は時宗の妻で、貞時の母です。</p>
   </div>
   <div class="guard-item">
-    <p class="g-wrong">杉本寺の拝観料を「大人200円・小人100円」の2段階で書く</p>
-    <p class="g-right">公式サイトの表記は「一般（高校生以上）300円・中学生200円・小学生100円」の3段階です。英勝寺も同じく3段階（大人300円・高校生200円・中小学生100円）です。</p>
+    <p class="g-wrong"><ruby>杉本寺<rt>すぎもとでら</rt></ruby>の拝観料を「大人200円・小人100円」の2段階で書く</p>
+    <p class="g-right">公式サイトの表記は「一般（高校生以上）300円・中学生200円・小学生100円」の3段階です。<ruby>英勝寺<rt>えいしょうじ</rt></ruby>も同じく3段階（大人300円・高校生200円・中小学生100円）です。</p>
   </div>
   <div class="guard-item">
     <p class="g-wrong">拝観料をコースごとに個別に入力する</p>
@@ -474,14 +488,32 @@
     <p class="g-wrong">「徒歩◯km」を、境内を歩き回る分も含む距離として説明する</p>
     <p class="g-right">この距離は施設間の距離（駅・バス停を含む、次の施設までの区間距離）で、境内を歩き回る分は含みません。ラベルにもその旨を明記しています。</p>
   </div>
+    <div class="guard-item">
+      <p class="g-wrong"><ruby>高徳院<rt>こうとくいん</rt></ruby>（鎌倉大仏）を「<ruby>単立<rt>たんりつ</rt></ruby>」と書く</p>
+      <p class="g-right">高徳院は、<ruby>法然<rt>ほうねん</rt></ruby>を開祖とする浄土宗の寺です（公式サイトで確認済み）。単立なのは<ruby>長谷寺<rt>はせでら</rt></ruby>で、浄土宗の流れをくみます。</p>
+    </div>
+    <div class="guard-item">
+      <p class="g-wrong"><ruby>海蔵寺<rt>かいぞうじ</rt></ruby>を<ruby class="o1">真言宗<rt>しんごんしゅう</rt></ruby>の寺として書く</p>
+      <p class="g-right">海蔵寺は<ruby class="o1">臨済宗<rt>りんざいしゅう</rt></ruby><ruby>建長寺<rt>けんちょうじ</rt></ruby>派の寺です。もとは真言宗で、1333年に焼けた後、1394年に禅の寺として再建されました。</p>
+    </div>
+    <div class="guard-item">
+      <p class="g-wrong"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>を「えがらてんじんじゃ」と読む</p>
+      <p class="g-right">神社の公式の読みは「えがらてんじんしゃ」です。社名が「天神のやしろ」を意味するためです。</p>
+    </div>
+    <div class="guard-item">
+      <p class="g-wrong"><ruby class="o1">明菴栄西<rt>みょうあんえいさい</rt></ruby>を「みんなんえいさい」と読む</p>
+      <p class="g-right">明菴は「みょうあん」です（みょうあんえいさい）。<ruby>栄西<rt>えいさい</rt></ruby>は「えいさい」と読むのが一般的で、<ruby>建仁寺<rt>けんにんじ</rt></ruby>の寺伝では「ようさい」です。</p>
+    </div>
+
+
 </section>
 
 <section class="log">
   <h2 class="mincho">主な変更</h2>
   <ol class="log-list">
     <li><span class="tag">公開</span>鎌倉市内の神社仏閣を、出発点と解散点を決めた1〜3時間の散歩コースで巡るサイトとして公開しました。エリア別のコースと、宗教・人物・年表の3つの軸で巡るプランを用意しています。（2026年9月24日）</li>
-    <li><span class="tag">追加</span>欠けていた勝長寿院跡・寿福寺・浄智寺・覚園寺・浄光明寺・稲村ヶ崎などをコースに加えました。エリア別14コースで訪ねなかった社寺を拾う「コンプリート版」16コースも加えています。（2026年9月24日）</li>
-    <li><span class="tag">訂正</span>全コースの記述を事実の面から確かめ直し、勝長寿院の建立時期、大仏造立と北条泰時の年代関係、報国寺の寺格（十刹→諸山）、覚山尼の続柄（子・姉→妻・母）、建長寺と元寇の前後関係などの誤りを訂正しました。（2026年9月24日）</li>
+    <li><span class="tag">追加</span>欠けていた<ruby class="o2">勝長寿院跡<rt>しょうちょうじゅいんあと</rt></ruby>・<ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby>浄智寺<rt>じょうちじ</rt></ruby>・<ruby>覚園寺<rt>かくおんじ</rt></ruby>・<ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>・<ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>などをコースに加えました。エリア別14コースで訪ねなかった社寺を拾う「コンプリート版」16コースも加えています。（2026年9月24日）</li>
+    <li><span class="tag">訂正</span>全コースの記述を事実の面から確かめ直し、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>の建立時期、大仏造立と<ruby class="o1">北条泰時<rt>ほうじょうやすとき</rt></ruby>の年代関係、報国寺の寺格（十刹→諸山）、覚山尼の続柄（子・姉→妻・母）、建長寺と<ruby>元寇<rt>げんこう</rt></ruby>の前後関係などの誤りを訂正しました。（2026年9月24日）</li>
     <li><span class="tag">訂正</span>同じ寺でも表示する場所によって拝観料が違っていたため、拝観料を寺社ごとに一か所で管理する形に改めました。杉本寺・英勝寺などの3段階の料金にも対応しています。（2026年9月24日）</li>
     <li><span class="tag">追加</span>歩く前の基礎知識、コース別・歴史の基本知識、各コースの知識ページ（67ページ）、年表・人物相関図・宗教関係図、編者プロフィールを加えました。（2026年9月24日）</li>
     <li><span class="tag">追加</span>歴史・お寺・宗教・人物の4種類のクイズを、テーマごとの「編」で順に学べるドリルとして加え、各知識ページにも理解度チェックを設けました。（2026年9月24日）</li>
@@ -498,8 +530,18 @@
     <li><span class="tag">訂正</span>71ページで、使っているのに定義されていなかった色（苔・紺・タンなど）を補いました。クイズの正解の色などが、これまで表示されていませんでした。（2026年9月25日）</li>
     <li><span class="tag">改善</span>メニューを全ページ共通の形にし、トップと同じ6つの入口から選べるようにしました。ページの最後には奥付を加え、知識ページには拝観料と距離の根拠を添えています。知識ページの最後には「次に歩く」コースを線つきで示し、SNSで共有される画像にも、そのコースの線を描き込みました。（2026年9月25日）</li>
     <li><span class="tag">改善</span>リニューアルの総点検を行いました。人物と年表で同名だった4組のページタイトルに軸の名前を添えて区別し、短すぎた説明文を補い、共有画像の大きさと代わりの文字、上位ページのパンくず、トップの全67コースの一覧を構造化データに加えました。更新日とサイトマップを改め、404ページは検索の対象から外し、AI向けの案内（llms.txt）も今の構造に合わせています。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>背景を役割で3つに分けました。読む・選ぶ場所は紙、必要な時に確かめる情報（見方について・注記・奥付）は一段沈んだ付録の地、最後の一画面の署名は墨の地です。（2026年9月25日）</li>
+    <li><span class="tag">訂正</span>高徳院（鎌倉大仏）を「単立」としていた誤りを直しました。高徳院は浄土宗の寺で、単立なのは長谷寺です。宗教関係図・基礎知識・トップ・宗教でめぐる10番・クイズの5か所を直しています。（2026年9月25日）</li>
+    <li><span class="tag">訂正</span>海蔵寺を真言宗の寺として扱っていた誤りを直しました。海蔵寺は、もとは真言宗で、1394年に禅の寺として再建された臨済宗建長寺派の寺です。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>宗教関係図を書き直しました。宗派どうしの関係を、史料や寺の由緒で確かめられる15の出来事でたどり、宗派ごとに誰が持ち込み、誰が支え、今どこで見られるかをまとめています。現地で宗派を見分ける手がかりも加えました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>宗教関係図に、鎌倉時代に新しい仏教が次々に生まれた4つの背景（<ruby>末法<rt>まっぽう</rt></ruby>の思想、戦と災害、<ruby>比叡山<rt>ひえいざん</rt></ruby>で学んだ僧たちの選択、武士の台頭）と、祖師たちが鎌倉とどう関わったかを加え、ページを組み直しました。当時の主流は古い仏教だったとする研究の見方も紹介しています。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>宗教関係図に、学び・招き・対立の3つの線で描いた関係図、鎌倉七口と新しい教えの拠点を重ねた模式図、今も続く祈りの暦、出典の一覧を加えました。クイズに「鎌倉新仏教編」を加えています。（2026年9月25日）</li>
+    <li><span class="tag">訂正</span>ふりがなの誤りを直しました。荏柄天神社（えがらてんじんしゃ）と明菴栄西（みょうあんえいさい）の読み、ふりがなの掛かる範囲がずれていた2か所、<ruby class="o1">英勝院<rt>えいしょういん</rt></ruby>に読みが二重に付いていた1か所です。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>人名・寺社などの施設名・地名・難読語に、各ページの初出でふりがなを付けました（約1,300か所）。読みは寺社の公式情報や辞典で確かめ、確かめられなかった小さな寺社には付けていません。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>読みを確かめられていなかった9つの寺社（貞宗寺・久成寺・円久寺・等覚寺・霊鷲寺・今泉寺・顕証寺・霊光寺・第六天社）に、ふりがなを付けました。（2026年9月25日）</li>
+    <li><span class="tag">追加</span>新しいページ「古写真で歩く鎌倉」を加えました。幕末から明治に撮られた鎌倉大仏と、神仏分離で取り壊される前の鶴岡八幡宮寺の大塔の写真を、年の順にたどります。宗教関係図と、大仏・鶴岡八幡宮のコースページにも写真を加えています。（2026年9月25日）</li>
   </ol>
-  <p class="log-current">現在のバージョン：v18.3.7（2026年9月25日）</p>
+  <p class="log-current">現在のバージョン：v18.9.0（2026年9月25日）</p>
 </section>
 
   <div class="share-buttons">

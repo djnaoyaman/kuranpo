@@ -397,6 +397,19 @@
   {font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .story{letter-spacing:.02em;}
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  /* 55. ふりがなの入った語は折り返せないため、狭い画面で列が押し広げられないようにする */
+  header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
 </style>
 <script type="application/ld+json">
 {
@@ -449,6 +462,7 @@
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="profile.html">編者プロフィール</a>
@@ -462,7 +476,7 @@
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line" data-i18n="basics.kicker">散歩前に、5分だけ</p>
     <h1 class="mincho reveal-line" data-i18n="basics.h1"><span class="h1-l">歩く前の</span><span class="h1-l">基礎知識</span></h1>
-    <p class="lead reveal-line" data-i18n="basics.lead">「切通」「谷戸」「鎌倉五山」。コースの説明には、こうした言葉が断りなく出てきます。歩く前に知っておくと社寺の見え方が変わる言葉を、ここにまとめました。場所の分かる言葉には、Google Mapsへのリンクも付けています。歩きながら迷ったら、いつでもここに戻ってきてください。</p>
+    <p class="lead reveal-line" data-i18n="basics.lead">「<ruby class="o1">切通<rt>きりどおし</rt></ruby>」「<ruby>谷戸<rt>やと</rt></ruby>」「鎌倉五山」。コースの説明には、こうした言葉が断りなく出てきます。歩く前に知っておくと社寺の見え方が変わる言葉を、ここにまとめました。場所の分かる言葉には、Google Mapsへのリンクも付けています。歩きながら迷ったら、いつでもここに戻ってきてください。</p>
   </div>
 </header>
 
@@ -497,11 +511,11 @@
       </div>
       <div class="term">
         <dt><ruby>元寇<rt>げんこう</rt></ruby>（1274年・1281年）</dt>
-        <dd><ruby>文永の役<rt>ぶんえいのえき</rt></ruby>（1274年）と<ruby>弘安の役<rt>こうあんのえき</rt></ruby>（1281年）、二度にわたる蒙古襲来です。軍事的には撃退しましたが、恩賞を十分に与えられなかった御家人の不満が積もり、幕府が衰える一因になったとされます。円覚寺は、この戦いの戦没者を弔うために建てられました。</dd>
+        <dd><ruby>文永の役<rt>ぶんえいのえき</rt></ruby>（1274年）と<ruby>弘安の役<rt>こうあんのえき</rt></ruby>（1281年）、二度にわたる<ruby>蒙古襲来<rt>もうこしゅうらい</rt></ruby>です。軍事的には撃退しましたが、恩賞を十分に与えられなかった<ruby>御家人<rt>ごけにん</rt></ruby>の不満が積もり、幕府が衰える一因になったとされます。<ruby>円覚寺<rt>えんがくじ</rt></ruby>は、この戦いの戦没者を弔うために建てられました。</dd>
       </div>
       <div class="term">
         <dt>鎌倉幕府の滅亡（1333年）</dt>
-        <dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の呼びかけに応じて、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>・<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>らが兵を挙げました。新田軍が鎌倉に攻め入り、<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>ら北条氏一門は東勝寺で自刃します。約150年続いた鎌倉幕府は、ここで終わりました。</dd>
+        <dd><ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の呼びかけに応じて、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>・<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>らが兵を挙げました。新田軍が鎌倉に攻め入り、<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>ら北条氏一門は<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で自刃します。約150年続いた鎌倉幕府は、ここで終わりました。</dd>
       </div>
       <div class="term">
         <dt><ruby>建武の新政<rt>けんむのしんせい</rt></ruby>と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>（1333〜1392年）</dt>
@@ -512,7 +526,7 @@
         <dd>室町幕府は関東を治めるために<ruby>鎌倉府<rt>かまくらふ</rt></ruby>を置き、足利氏の一門を「<ruby>鎌倉公方<rt>かまくらくぼう</rt></ruby>」として鎌倉に常駐させました。政治の中心は京都に移りましたが、鎌倉は関東を治める拠点として、引き続き重要な土地でした。</dd>
       </div>
       <div class="term">
-        <dt>玉縄北条氏（戦国期）と鎌倉北条氏の違い</dt>
+        <dt><ruby>玉縄<rt>たまなわ</rt></ruby>北条氏（戦国期）と鎌倉北条氏の違い</dt>
         <dd>鎌倉時代の<ruby>執権<rt>しっけん</rt></ruby>北条氏とは血筋のつながらない、伊勢氏を出自とする戦国大名「<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>」の一族です。<ruby class=o1>北条早雲<rt>ほうじょうそううん</rt></ruby>の子・氏時が玉縄城主となり、以後は玉縄北条氏として鎌倉の近郊を支配しました。同じ「北条」でも別の家なので、注意が必要です。このサイトのコース説明でも、二つを区別して書いています。</dd>
       </div>
     </dl>
@@ -524,7 +538,7 @@
     <dl class="terms" data-i18n="basics.chihei.terms">
       <div class="term">
         <dt><ruby class=o1>切通<rt>きりどおし</rt></ruby>（きりどおし）</dt>
-        <dd>鎌倉は、三方を山に、一方を海に囲まれた要塞のような都市です。外との行き来のために山を切り開いてつくった道を、こう呼びます。<ruby>朝夷奈<rt>あさいな</rt></ruby>切通・<ruby>名越<rt>なごえ</rt></ruby>切通・<ruby>化粧坂<rt>けわいざか</rt></ruby>切通・<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>切通・大仏<ruby class=o1>切通<rt>きりどおし</rt></ruby>・極楽寺坂<ruby class=o1>切通<rt>きりどおし</rt></ruby>・<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>切通などがあり、まとめて「鎌倉七<ruby class=o1>切通<rt>きりどおし</rt></ruby>」と呼ばれることがよくあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">亀ヶ谷坂<ruby class=o1>切通<rt>きりどおし</rt></ruby>の位置</a></dd>
+        <dd>鎌倉は、三方を山に、一方を海に囲まれた要塞のような都市です。外との行き来のために山を切り開いてつくった道を、こう呼びます。<ruby>朝夷奈<rt>あさいな</rt></ruby>切通・<ruby>名越<rt>なごえ</rt></ruby>切通・<ruby>化粧坂<rt>けわいざか</rt></ruby>切通・<ruby>亀ヶ谷坂<rt>かめがやつざか</rt></ruby>切通・大仏<ruby class=o1>切通<rt>きりどおし</rt></ruby>・<ruby>極楽寺坂<rt>ごくらくじざか</rt></ruby><ruby class=o1>切通<rt>きりどおし</rt></ruby>・<ruby>巨福呂坂<rt>こぶくろざか</rt></ruby>切通などがあり、まとめて「鎌倉七<ruby class=o1>切通<rt>きりどおし</rt></ruby>」と呼ばれることがよくあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E3%83%B6%E8%B0%B7%E5%9D%82%E5%88%87%E9%80%9A%E3%81%97%E3%80%80%E9%8E%8C%E5%80%89%E5%B8%82" target="_blank" rel="noopener">亀ヶ谷坂<ruby class=o1>切通<rt>きりどおし</rt></ruby>の位置</a></dd>
       </div>
       <div class="term">
         <dt><ruby>谷戸<rt>やと</rt></ruby>（やと）</dt>
@@ -532,11 +546,11 @@
       </div>
       <div class="term">
         <dt>やぐら</dt>
-        <dd>鎌倉特有の、岩肌に横穴を掘ってつくった中世の墓所・納骨堂です。北鎌倉や長谷の寺の裏山などに、今も数百基単位で残っています。明月院やぐらは、鎌倉で最大の規模とされます。</dd>
+        <dd>鎌倉特有の、岩肌に横穴を掘ってつくった中世の墓所・納骨堂です。北鎌倉や<ruby>長谷<rt>はせ</rt></ruby>の寺の裏山などに、今も数百基単位で残っています。<ruby>明月院<rt>めいげついん</rt></ruby>やぐらは、鎌倉で最大の規模とされます。</dd>
       </div>
       <div class="term">
         <dt>鎌倉石</dt>
-        <dd>鎌倉周辺でとれる、加工しやすい軟らかな砂岩です。<ruby class=o1>切通<rt>きりどおし</rt></ruby>の岩壁や石段、寺の基礎などに広く使われてきましたが、風化しやすく、苔がつきやすい性質もあります。杉本寺や<ruby>覚園寺<rt>かくおんじ</rt></ruby>の苔むした石段も、この石の性質によるものです。</dd>
+        <dd>鎌倉周辺でとれる、加工しやすい軟らかな砂岩です。<ruby class=o1>切通<rt>きりどおし</rt></ruby>の岩壁や石段、寺の基礎などに広く使われてきましたが、風化しやすく、苔がつきやすい性質もあります。<ruby>杉本寺<rt>すぎもとでら</rt></ruby>や<ruby>覚園寺<rt>かくおんじ</rt></ruby>の苔むした石段も、この石の性質によるものです。</dd>
       </div>
     </dl>
   </section>
@@ -547,7 +561,7 @@
     <dl class="terms" data-i18n="basics.kenchiku.terms">
       <div class="term">
         <dt><ruby>開山<rt>かいさん</rt></ruby>・<ruby>開基<rt>かいき</rt></ruby></dt>
-        <dd>「<ruby>開山<rt>かいさん</rt></ruby>」は寺を実際に開いた僧、「<ruby>開基<rt>かいき</rt></ruby>」は建立のための土地や資金を出した人（多くは武家）を指します。両者は別人であることが多く、たとえば建長寺は、<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>が<ruby>開山<rt>かいさん</rt></ruby>、<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby>開基<rt>かいき</rt></ruby>です。</dd>
+        <dd>「<ruby>開山<rt>かいさん</rt></ruby>」は寺を実際に開いた僧、「<ruby>開基<rt>かいき</rt></ruby>」は建立のための土地や資金を出した人（多くは武家）を指します。両者は別人であることが多く、たとえば<ruby>建長寺<rt>けんちょうじ</rt></ruby>は、<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>が<ruby>開山<rt>かいさん</rt></ruby>、<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>が<ruby>開基<rt>かいき</rt></ruby>です。</dd>
       </div>
       <div class="term">
         <dt><ruby class=o1>塔頭<rt>たっちゅう</rt></ruby>（たっちゅう）</dt>
@@ -555,11 +569,11 @@
       </div>
       <div class="term">
         <dt>鎌倉五山</dt>
-        <dd>建長寺・円覚寺・寿福寺・浄智寺・浄妙寺の5つです。臨済宗の寺の格を序列にした制度で、北条氏が中国の制度にならって定めたとされます。</dd>
+        <dd>建長寺・円覚寺・<ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby>浄智寺<rt>じょうちじ</rt></ruby>・<ruby class="o1">浄妙寺<rt>じょうみょうじ</rt></ruby>の5つです。<ruby class="o1">臨済宗<rt>りんざいしゅう</rt></ruby>の寺の格を序列にした制度で、北条氏が中国の制度にならって定めたとされます。</dd>
       </div>
       <div class="term">
         <dt><ruby>関東十刹<rt>かんとうじっさつ</rt></ruby>（かんとうじっさつ）</dt>
-        <dd>五山に次ぐ格式とされた10の禅寺です。大慶寺などがこれに数えられます。報国寺は、これより一段下の「<ruby>諸山<rt>しょさん</rt></ruby>」という寺格にあたります（誤って十刹と紹介される例があるため、注記しておきます）。</dd>
+        <dd>五山に次ぐ格式とされた10の禅寺です。<ruby>大慶寺<rt>だいけいじ</rt></ruby>などがこれに数えられます。<ruby>報国寺<rt>ほうこくじ</rt></ruby>は、これより一段下の「<ruby>諸山<rt>しょさん</rt></ruby>」という寺格にあたります（誤って十刹と紹介される例があるため、注記しておきます）。</dd>
       </div>
       <div class="term">
         <dt><ruby>志納<rt>しのう</rt></ruby>（しのう）</dt>
@@ -567,7 +581,7 @@
       </div>
       <div class="term">
         <dt><ruby>単立<rt>たんりつ</rt></ruby>（たんりつ）</dt>
-        <dd>特定の宗派の本山の傘下に入らず、独立した宗教法人として運営される寺院です。高徳院（大仏）や長谷寺がこれにあたります。</dd>
+        <dd>特定の宗派の本山の傘下に入らず、独立した宗教法人として運営される寺院です。<ruby>長谷寺<rt>はせでら</rt></ruby>がこれにあたります（浄土宗の流れをくみます）。大仏で知られる<ruby>高徳院<rt>こうとくいん</rt></ruby>は、浄土宗の寺です。</dd>
       </div>
     </dl>
   </section>
@@ -582,11 +596,11 @@
       </div>
       <div class="term">
         <dt>鎌倉二十四地蔵</dt>
-        <dd>地蔵菩薩を祀る24の場所をめぐる巡礼路です。建長寺の心平地蔵・済田地蔵などが含まれます。</dd>
+        <dd><ruby>地蔵菩薩<rt>じぞうぼさつ</rt></ruby>を祀る24の場所をめぐる巡礼路です。建長寺の心平地蔵・済田地蔵などが含まれます。</dd>
       </div>
       <div class="term">
-        <dt>鎌倉・江の島七福神</dt>
-        <dd>七福神を祀る7つの社寺をめぐる巡礼路です。浄智寺・宝戒寺・妙隆寺などが含まれます。</dd>
+        <dt>鎌倉・<ruby>江の島<rt>えのしま</rt></ruby>七福神</dt>
+        <dd>七福神を祀る7つの社寺をめぐる巡礼路です。浄智寺・<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>・<ruby class="o1">妙隆寺<rt>みょうりゅうじ</rt></ruby>などが含まれます。</dd>
       </div>
       <div class="term">
         <dt>坂東三十三観音霊場</dt>
@@ -594,7 +608,7 @@
       </div>
       <div class="term">
         <dt>鎌倉十井（じっせい）</dt>
-        <dd>水質の良さで知られた、鎌倉に残る10の古井戸です。海蔵寺の十六井戸・底脱ノ井、浄智寺の甘露ノ井などが含まれます。</dd>
+        <dd>水質の良さで知られた、鎌倉に残る10の古井戸です。<ruby>海蔵寺<rt>かいぞうじ</rt></ruby>の十六井戸・底脱ノ井、浄智寺の甘露ノ井などが含まれます。</dd>
       </div>
     </dl>
   </section>
@@ -617,7 +631,7 @@
       </div>
       <div class="term">
         <dt>喪中・月曜休み</dt>
-        <dd>安国論寺など、月曜を定休日とする寺があります（祝日は開門）。事前に確認してください。</dd>
+        <dd><ruby>安国論寺<rt>あんこくろんじ</rt></ruby>など、月曜を定休日とする寺があります（祝日は開門）。事前に確認してください。</dd>
       </div>
     </dl>
   </section>
@@ -628,23 +642,23 @@
     <dl class="terms" data-i18n="basics.kotsu.terms">
       <div class="term">
         <dt>鎌倉駅 東口・西口</dt>
-        <dd>東口は鶴岡八幡宮・小町通り・若宮大路の方面、西口は銭洗弁財天・佐助稲荷・寿福寺の方面です。同じ「鎌倉駅」でも、出口を間違えると15分以上のロスになります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">鎌倉駅の位置</a></dd>
+        <dd>東口は<ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>・<ruby>小町<rt>こまち</rt></ruby>通り・<ruby>若宮大路<rt>わかみやおおじ</rt></ruby>の方面、西口は<ruby class="o1">銭洗弁財天<rt>ぜにあらいべんざいてん</rt></ruby>・<ruby>佐助<rt>さすけ</rt></ruby>稲荷・寿福寺の方面です。同じ「鎌倉駅」でも、出口を間違えると15分以上のロスになります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">鎌倉駅の位置</a></dd>
       </div>
       <div class="term">
         <dt>北鎌倉駅</dt>
-        <dd>円覚寺・建長寺・明月院・東慶寺・浄智寺など、禅寺が集まるエリアの起点です。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">北鎌倉駅の位置</a></dd>
+        <dd>円覚寺・建長寺・明月院・<ruby>東慶寺<rt>とうけいじ</rt></ruby>・浄智寺など、禅寺が集まるエリアの起点です。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%8E%8C%E5%80%89%E9%A7%85" target="_blank" rel="noopener">北鎌倉駅の位置</a></dd>
       </div>
       <div class="term">
-        <dt>江ノ電（江ノ島電鉄）</dt>
-        <dd>鎌倉駅から長谷・極楽寺・稲村ヶ崎・七里ヶ浜・腰越・江ノ島の方面へ向かう、単線の私鉄です。本数が少なく単線のため、休日は行き違いの待ち合わせで遅れることがあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">長谷駅の位置</a></dd>
+        <dt>江ノ電（<ruby>江ノ島<rt>えのしま</rt></ruby>電鉄）</dt>
+        <dd>鎌倉駅から長谷・<ruby>極楽寺<rt>ごくらくじ</rt></ruby>・<ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>・<ruby>七里ヶ浜<rt>しちりがはま</rt></ruby>・<ruby>腰越<rt>こしごえ</rt></ruby>・江ノ島の方面へ向かう、単線の私鉄です。本数が少なく単線のため、休日は行き違いの待ち合わせで遅れることがあります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E9%95%B7%E8%B0%B7%E9%A7%85" target="_blank" rel="noopener">長谷駅の位置</a></dd>
       </div>
       <div class="term">
-        <dt>金沢街道（六浦路）</dt>
+        <dt><ruby>金沢街道<rt>かなざわかいどう</rt></ruby>（<ruby>六浦<rt>むつら</rt></ruby>路）</dt>
         <dd>鎌倉駅東口から浄妙寺・報国寺・<ruby>十二所<rt>じゅうにそ</rt></ruby>の方面へ延びる旧道です。バスを使うのが基本で、歩くと鎌倉駅から30分ほどかかります。</dd>
       </div>
       <div class="term">
-        <dt>大船駅・湘南深沢駅</dt>
-        <dd>常楽寺・龍宝寺・大船観音寺や、深沢エリアの寺社への起点です。旧市街からは離れますが、玉縄北条氏の歴史を歩くなら、ここが起点になります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">大船駅の位置</a></dd>
+        <dt><ruby>大船<rt>おおふな</rt></ruby>駅・<ruby class="o1">湘南深沢<rt>しょうなんふかさわ</rt></ruby>駅</dt>
+        <dd><ruby>常楽寺<rt>じょうらくじ</rt></ruby>・<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>・<ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby>や、<ruby>深沢<rt>ふかさわ</rt></ruby>エリアの寺社への起点です。旧市街からは離れますが、玉縄北条氏の歴史を歩くなら、ここが起点になります。<a class="map" href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E8%88%B9%E9%A7%85" target="_blank" rel="noopener">大船駅の位置</a></dd>
       </div>
     </dl>
   </section>

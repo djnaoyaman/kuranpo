@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -603,7 +616,7 @@
   </svg>
     <h1><span class="no">02</span><span data-i18n="kn.g2.title">頼朝、鎌倉に入る</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>3〜4月・桜</b>：段葛・鶴岡八幡宮の参道は桜の名所。段葛は特に舗装が新しくなり歩きやすい。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>3〜4月・桜</b>：<ruby class="o1">段葛<rt>だんかずら</rt></ruby>・<ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>の参道は桜の名所。段葛は特に舗装が新しくなり歩きやすい。</p></div>
 <div class="practical">
     <div class="kn-route" data-set="geo" aria-label="鎌倉駅東口から鎌倉駅東口までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:35.6%"></i><i class="r-dot" style="left:35.6%"></i><i class="r-dot" style="left:74.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉駅東口</span></span></div>
     <div class="meta-row">
@@ -611,8 +624,8 @@
       <span class="dist">施設間の徒歩距離 約2.5km</span>
       <span class="fee">大人合計 無料（＋任意 ¥200）</span>
     </div>
-    <p class="story" data-i18n="kn.g2.story">鎌倉という街の形は、実は一人の男の好みで決まりました。1180年、<ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>は、三方を山、一方を海に囲まれたこの土地を選びました。若宮大路のまん中を通る段葛を歩き、頼朝が一族の神さまとして建てた鶴岡八幡宮へ向かいます。少し歩けば、頼朝が来るより前からあった由比若宮にも着きます。鎌倉という町が「どこから始まったか」を、自分の足で確かめてみませんか。段葛が神社に近づくほどわずかに狭くなる仕掛けに気づくと、頭がくらくらんぽするかもしれません。実際に自分の足で歩いてみると、どこで気づくかは人によって違うはずです。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の氏神として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><div class="row"><span class="sname">段葛</span><span class="sfee">無料</span></div><span class="snote">若宮大路の参道。境内と一体で歩く。</span></li><li><span class="leg">段葛から 徒歩1.0km・約14分</span><div class="row"><span class="sname"><ruby>由比若宮<rt>ゆいわかみや</rt></ruby>（元八幡）</span><span class="sfee">無料</span></div><span class="snote">頼朝が鎌倉入りする以前からの八幡宮。</span></li><li class="endleg"><span class="leg"><ruby>由比若宮<rt>ゆいわかみや</rt></ruby>（元八幡）から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：鎌倉駅東口</span></div></li></ul>
+    <p class="story" data-i18n="kn.g2.story">鎌倉という街の形は、実は一人の男の好みで決まりました。1180年、<ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>は、三方を山、一方を海に囲まれたこの土地を選びました。<ruby>若宮大路<rt>わかみやおおじ</rt></ruby>のまん中を通る段葛を歩き、頼朝が一族の神さまとして建てた鶴岡八幡宮へ向かいます。少し歩けば、頼朝が来るより前からあった<ruby>由比若宮<rt>ゆいわかみや</rt></ruby>にも着きます。鎌倉という町が「どこから始まったか」を、自分の足で確かめてみませんか。段葛が神社に近づくほどわずかに狭くなる仕掛けに気づくと、頭がくらくらんぽするかもしれません。実際に自分の足で歩いてみると、どこで気づくかは人によって違うはずです。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩850m・約12分</span><div class="row"><span class="sname">鶴岡八幡宮</span><span class="sfee">無料</span></div><span class="snote">源氏の<ruby>氏神<rt>うじがみ</rt></ruby>として造営。境内は無料。</span><span class="opt">＋宝物殿 大人¥200／小人¥100</span></li><li><div class="row"><span class="sname">段葛</span><span class="sfee">無料</span></div><span class="snote">若宮大路の参道。境内と一体で歩く。</span></li><li><span class="leg">段葛から 徒歩1.0km・約14分</span><div class="row"><span class="sname"><ruby>由比若宮<rt>ゆいわかみや</rt></ruby>（元八幡）</span><span class="sfee">無料</span></div><span class="snote">頼朝が鎌倉入りする以前からの八幡宮。</span></li><li class="endleg"><span class="leg"><ruby>由比若宮<rt>ゆいわかみや</rt></ruby>（元八幡）から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：鎌倉駅東口</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -626,13 +639,13 @@
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
   <p class="spots-line">鶴岡八幡宮・段葛・由比若宮</p>
-  <div class="lens-tags"><span data-i18n="kn.lens.01">01 神仏習合</span><span data-i18n="kn.lens.03">03 祀られているもの</span><span data-i18n="kn.lens.07">07 土地との関係</span></div>
+  <div class="lens-tags"><span data-i18n="kn.lens.01">01 <ruby class="o1">神仏習合<rt>しんぶつしゅうごう</rt></ruby></span><span data-i18n="kn.lens.03">03 祀られているもの</span><span data-i18n="kn.lens.07">07 土地との関係</span></div>
     <p class="fw-ref" data-i18n="kn.fwref">この知識の見方（神社と寺の違い・建築を見る目など7つの視点）は、<a href="../history.html#framework">コース別・歴史の基本知識のトップ</a>で解説しています。</p>
   <div class="maplinks"><a href="https://www.google.com/maps/search/?api=1&query=%E9%B6%B4%E5%B2%A1%E5%85%AB%E5%B9%A1%E5%AE%AE" target="_blank" rel="noopener">鶴岡八幡宮の位置</a></div>
   <dl class="terms" data-i18n="kn.g2.terms">
-    <div class="term"><dt>応神天皇・比売神・神功皇后<span class="cat">03</span></dt><dd>鶴岡八幡宮の祭神。八幡神は本来武運の神とされ、源氏の氏神として篤く信仰されました。</dd></div>
-    <div class="term"><dt>鶴岡八幡宮寺<span class="cat">01</span></dt><dd>明治の神仏分離令（1868年）以前の呼称。僧侶が管理する神仏習合の施設でした。</dd></div>
-    <div class="term"><dt><ruby>石清水八幡宮<rt>いわしみずはちまんぐう</rt></ruby><span class="cat">05</span></dt><dd>京都の八幡宮。由比若宮・鶴岡八幡宮はこれを勧請したもの。</dd></div>
+    <div class="term"><dt>応神天皇・比売神・神功皇后<span class="cat">03</span></dt><dd>鶴岡八幡宮の<ruby>祭神<rt>さいじん</rt></ruby>。八幡神は本来武運の神とされ、源氏の氏神として篤く信仰されました。</dd></div>
+    <div class="term"><dt><ruby>鶴岡八幡宮寺<rt>つるがおかはちまんぐうじ</rt></ruby><span class="cat">01</span></dt><dd>明治の<ruby>神仏分離<rt>しんぶつぶんり</rt></ruby>令（1868年）以前の呼称。僧侶が管理する神仏習合の施設でした。</dd></div>
+    <div class="term"><dt><ruby>石清水八幡宮<rt>いわしみずはちまんぐう</rt></ruby><span class="cat">05</span></dt><dd>京都の八幡宮。由比若宮・鶴岡八幡宮はこれを<ruby class="o1">勧請<rt>かんじょう</rt></ruby>したもの。</dd></div>
     <div class="term"><dt><ruby class=o3>源頼義<rt>みなもとのよりよし</rt></ruby><span class="cat">04</span></dt><dd>頼朝の先祖。1063年、由比若宮を創建したと伝わります。</dd></div>
     <div class="term"><dt>段葛<span class="cat">07</span></dt><dd>若宮大路の中央に一段高く盛った参道。頼朝が<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>の安産を祈願して築いたと伝わる、地形そのものへの手入れ。</dd></div>
   </dl>
@@ -696,7 +709,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">03</span>頼朝の菩提と草創期の鎌倉</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.4%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:64.7%"></i><i class="r-dot" style="left:79.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span><span class="pg-meta">2.5時間・徒歩約3.2km</span></a>
+    <a class="pg-next" data-set="geo" href="g3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">03</span>頼朝の<ruby>菩提<rt>ぼだい</rt></ruby>と草創期の鎌倉</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.4%"></i><i class="r-dot" style="left:41.2%"></i><i class="r-dot" style="left:47.1%"></i><i class="r-dot" style="left:64.7%"></i><i class="r-dot" style="left:79.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span></span><span class="pg-meta">2.5時間・徒歩約3.2km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g1.html">← 前：古代信仰の基層</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

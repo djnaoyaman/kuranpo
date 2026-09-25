@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -603,16 +616,16 @@
   </svg>
     <h1><span class="no">04</span><span data-i18n="kn.g4.title">北条氏と禅宗の輸入</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>6月・あじさい</b>：明月院はあじさいの名所として知られ、この時期のみ本堂後庭園も特別公開される。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>6月・あじさい</b>：<ruby>明月院<rt>めいげついん</rt></ruby>はあじさいの名所として知られ、この時期のみ本堂後庭園も特別公開される。</p></div>
 <div class="practical">
-    <div class="kn-route" data-set="geo" aria-label="北鎌倉駅から建長寺バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.9%"></i><i class="r-dot" style="left:54.0%"></i><i class="r-dot" style="left:75.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span>建長寺バス停</span></span></div>
+    <div class="kn-route" data-set="geo" aria-label="北鎌倉駅から建長寺バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:29.9%"></i><i class="r-dot" style="left:54.0%"></i><i class="r-dot" style="left:75.5%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span><ruby>建長寺<rt>けんちょうじ</rt></ruby>バス停</span></span></div>
     <div class="meta-row">
       <span>2.5時間</span>
       <span class="dist">施設間の徒歩距離 約3.5km</span>
       <span class="fee">大人合計 ¥1,200（＋任意 ¥500）</span>
     </div>
-    <p class="story" data-i18n="kn.g4.story">あじさいで有名なあの寺に、権力者が世を捨てた記憶が眠っています。<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>は、宋（中国）から<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>というお坊さんを招き、鎌倉に禅を根づかせました。明月院の前の姿・最明寺は、時頼自身が出家したお寺です。建長寺は日本で最初の、禅宗だけを修行する寺として、今も厳しい空気を残しています。あじさいで有名な明月院ですが、その前身は、権力者が俗世を捨てた場所でした——今の華やかさとのギャップに、頭がくらくらんぽするはずです。あの丸窓から実際に何が見えるかは、覗いてみるまでのお楽しみです。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩1.0km・約14分</span><div class="row"><span class="sname">明月院</span><span class="sfee">大人¥500／小人¥300</span></div><span class="snote">前身は時頼創建の最明寺・禅興寺。高校生以上500円・小中学生300円。</span><span class="opt">＋本堂後庭園（花菖蒲期・紅葉期のみ公開） ¥500（一律）</span></li><li><span class="leg">明月院から 徒歩900m・約13分</span><div class="row"><span class="sname">建長寺</span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote">塔頭含む。</span></li><li><span class="leg">建長寺から 徒歩800m・約11分</span><div class="row"><span class="sname">円応寺</span><span class="sfee">¥200（一律）</span></div><span class="snote">閻魔大王を祀る。高齢者・障害者は無料。</span></li><li class="endleg"><span class="leg">円応寺から 徒歩800m・約11分</span><div class="row"><span class="sname">解散地点：建長寺バス停</span></div></li></ul>
+    <p class="story" data-i18n="kn.g4.story">あじさいで有名なあの寺に、権力者が世を捨てた記憶が眠っています。<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>は、宋（中国）から<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>というお坊さんを招き、鎌倉に禅を根づかせました。明月院の前の姿・<ruby>最明寺<rt>さいみょうじ</rt></ruby>は、時頼自身が出家したお寺です。建長寺は日本で最初の、禅宗だけを修行する寺として、今も厳しい空気を残しています。あじさいで有名な明月院ですが、その前身は、権力者が俗世を捨てた場所でした——今の華やかさとのギャップに、頭がくらくらんぽするはずです。あの丸窓から実際に何が見えるかは、覗いてみるまでのお楽しみです。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩1.0km・約14分</span><div class="row"><span class="sname">明月院</span><span class="sfee">大人¥500／小人¥300</span></div><span class="snote">前身は時頼創建の最明寺・<ruby>禅興寺<rt>ぜんこうじ</rt></ruby>。高校生以上500円・小中学生300円。</span><span class="opt">＋本堂後庭園（花菖蒲期・紅葉期のみ公開） ¥500（一律）</span></li><li><span class="leg">明月院から 徒歩900m・約13分</span><div class="row"><span class="sname">建長寺</span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote"><ruby class="o1">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li><li><span class="leg">建長寺から 徒歩800m・約11分</span><div class="row"><span class="sname"><ruby>円応寺<rt>えんのうじ</rt></ruby></span><span class="sfee">¥200（一律）</span></div><span class="snote">閻魔大王を祀る。高齢者・障害者は無料。</span></li><li class="endleg"><span class="leg">円応寺から 徒歩800m・約11分</span><div class="row"><span class="sname">解散地点：建長寺バス停</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -632,7 +645,7 @@
   <dl class="terms" data-i18n="kn.g4.terms">
     <div class="term"><dt><ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby><span class="cat">05</span></dt><dd>5代<ruby>執権<rt>しっけん</rt></ruby>。建長寺を開き、晩年は最明寺で出家しました。</dd></div>
     <div class="term"><dt><ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby><span class="cat">04</span></dt><dd>建長寺の<ruby>開山<rt>かいさん</rt></ruby>。宋から渡来した禅僧で、中国式の禅宗様式をそのまま鎌倉に持ち込みました。</dd></div>
-    <div class="term"><dt>地蔵菩薩<span class="cat">03</span></dt><dd>建長寺の本尊。処刑場だった当地の霊を慰めるためとも伝わり、地獄で苦しむ者を救う菩薩とされます。</dd></div>
+    <div class="term"><dt><ruby>地蔵菩薩<rt>じぞうぼさつ</rt></ruby><span class="cat">03</span></dt><dd>建長寺の本尊。処<ruby class="o1">刑場<rt>けいじょう</rt></ruby>だった当地の霊を慰めるためとも伝わり、地獄で苦しむ者を救う菩薩とされます。</dd></div>
     <div class="term"><dt><ruby class=o1>十王信仰<rt>じゅうおうしんこう</rt></ruby><span class="cat">06</span></dt><dd>死後の審判を司る10王を祀る民間信仰。円応寺の<ruby>閻魔大王<rt>えんまだいおう</rt></ruby>もこの系譜にある、死後の世界への恐れが形になったもの。</dd></div>
   </dl>
 
@@ -695,7 +708,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="geo" href="g5.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">05</span>蒙古襲来と鎮魂の寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:16.4%"></i><i class="r-dot" style="left:56.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span>浄智寺前</span></span><span class="pg-meta">2時間・徒歩約0.7km</span></a>
+    <a class="pg-next" data-set="geo" href="g5.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">05</span><ruby>蒙古襲来<rt>もうこしゅうらい</rt></ruby>と鎮魂の寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:16.4%"></i><i class="r-dot" style="left:56.7%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>北鎌倉駅</span><span><ruby>浄智寺<rt>じょうちじ</rt></ruby>前</span></span><span class="pg-meta">2時間・徒歩約0.7km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="g3.html">← 前：頼朝の菩提と草創期の鎌倉</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>

@@ -433,6 +433,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -562,6 +574,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -573,7 +586,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C2 北鎌倉② 円覚寺・建長寺周辺の未収録社寺</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C2 北鎌倉② <ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>建長寺<rt>けんちょうじ</rt></ruby>周辺の未収録社寺</p>
   </div>
 </header>
 
@@ -595,8 +608,8 @@
       <span class="dist">施設間の徒歩距離 約2.1km</span>
       <span class="fee">大人合計 ¥400</span>
     </div>
-    <p class="story" data-i18n="kn.c2.story">鎌倉で一番古くて一番大きい庚申塔は、有名な寺の門前に、ひっそり立っています。円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われています。長寿寺は、建長寺を開いたお坊さん・<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>のお墓があるお寺で、期間限定で公開される庭を持っています。有名なお寺の隙間に、意外と知られていない場所が残る、北鎌倉の裏道コースです。鎌倉最古最大という庚申塔がこんな場所にあると、頭がくらくらんぽします。有名な寺の門前で、それを見つけられるかどうかは、あなたの観察力次第です。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩300m・約4分</span><div class="row"><span class="sname">八雲神社（山ノ内）</span><span class="sfee">無料</span></div><span class="snote">円覚寺門前。鎌倉最古最大という庚申塔がある。</span></li><li><span class="leg">八雲神社（山ノ内）から 徒歩700m・約10分</span><div class="row"><span class="sname">光照寺</span><span class="sfee">¥100（一律）</span></div><span class="snote">隠れキリシタン保護の伝承を持つ。志納。</span></li><li><span class="leg">光照寺から 徒歩900m・約13分</span><div class="row"><span class="sname">長寿寺</span><span class="sfee">¥300（一律）</span></div><span class="snote">建長寺の開山塔所。限定公開の庭園がある。</span></li><li class="endleg"><span class="leg">長寿寺から 徒歩200m・約3分</span><div class="row"><span class="sname">解散地点：北鎌倉駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c2.story">鎌倉で一番古くて一番大きい庚申塔は、有名な寺の門前に、ひっそり立っています。円覚寺の門の前に立つ<ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>の庚申塔は、鎌倉で一番古くて一番大きいと言われています。<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby>は、建長寺を開いたお坊さん・<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>のお墓があるお寺で、期間限定で公開される庭を持っています。有名なお寺の隙間に、意外と知られていない場所が残る、北鎌倉の裏道コースです。鎌倉最古最大という庚申塔がこんな場所にあると、頭がくらくらんぽします。有名な寺の門前で、それを見つけられるかどうかは、あなたの観察力次第です。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：北鎌倉駅</span></div></li><li><span class="leg">北鎌倉駅から 徒歩300m・約4分</span><div class="row"><span class="sname">八雲神社（<ruby>山ノ内<rt>やまのうち</rt></ruby>）</span><span class="sfee">無料</span></div><span class="snote">円覚寺門前。鎌倉最古最大という庚申塔がある。</span></li><li><span class="leg">八雲神社（山ノ内）から 徒歩700m・約10分</span><div class="row"><span class="sname"><ruby>光照寺<rt>こうしょうじ</rt></ruby></span><span class="sfee">¥100（一律）</span></div><span class="snote">隠れキリシタン保護の伝承を持つ。志納。</span></li><li><span class="leg">光照寺から 徒歩900m・約13分</span><div class="row"><span class="sname">長寿寺</span><span class="sfee">¥300（一律）</span></div><span class="snote">建長寺の<ruby>開山<rt>かいさん</rt></ruby>塔所。限定公開の庭園がある。</span></li><li class="endleg"><span class="leg">長寿寺から 徒歩200m・約3分</span><div class="row"><span class="sname">解散地点：北鎌倉駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-season">
         <p class="note-label">季節の見どころ</p>
@@ -668,7 +681,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="complete" href="c3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C3</span>扇ガ谷② 未収録寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:33.2%"></i><i class="r-dot" style="left:43.3%"></i><i class="r-dot" style="left:53.4%"></i><i class="r-dot" style="left:70.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>鎌倉駅西口</span></span><span class="pg-meta">1時間・徒歩約2.8km</span></a>
+    <a class="pg-next" data-set="complete" href="c3.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">C3</span><ruby>扇ガ谷<rt>おうぎがやつ</rt></ruby>② 未収録寺</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:33.2%"></i><i class="r-dot" style="left:43.3%"></i><i class="r-dot" style="left:53.4%"></i><i class="r-dot" style="left:70.1%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>鎌倉駅西口</span></span><span class="pg-meta">1時間・徒歩約2.8km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="c1.html">← 前：源氏山・銭洗弁天エリア</a><a class="pg-list" href="../index.html#tab-complete">一覧へ</a></div>
   </nav>
 </main>

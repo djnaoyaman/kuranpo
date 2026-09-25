@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#F4F1EA">
 <title>杉本寺・高徳院・長谷寺（宗教でめぐる）｜鎌・くらんぽ</title>
-<meta name="description" content="杉本寺は鎌倉最古の寺、高徳院・長谷寺は単立という独立した立場。同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違う。">
+<meta name="description" content="杉本寺は天台宗、大仏の高徳院は浄土宗、長谷観音の長谷寺はどの宗派にも属さない単立。宗派の違う3つの古寺をめぐります。">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="鎌・くらんぽ">
 <meta property="og:title" content="杉本寺・高徳院・長谷寺（宗教でめぐる）｜鎌・くらんぽ">
-<meta property="og:description" content="杉本寺は鎌倉最古の寺、高徳院・長谷寺は単立という独立した立場。同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違う。">
+<meta property="og:description" content="杉本寺は天台宗、大仏の高徳院は浄土宗、長谷観音の長谷寺はどの宗派にも属さない単立。宗派の違う3つの古寺をめぐります。">
 <meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/knowledge/re10.html">
 <meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/re10.png">
 <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="杉本寺・高徳院・長谷寺（宗教でめぐる）｜鎌・くらんぽ">
-<meta name="twitter:description" content="杉本寺は鎌倉最古の寺、高徳院・長谷寺は単立という独立した立場。同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違う。">
+<meta name="twitter:description" content="杉本寺は天台宗、大仏の高徳院は浄土宗、長谷観音の長谷寺はどの宗派にも属さない単立。宗派の違う3つの古寺をめぐります。">
 <meta name="twitter:image" content="https://djnaoyaman.github.io/kuranpo/ogp/re10.png">
 <meta name="robots" content="index,follow">
 <meta name="author" content="クランポック">
@@ -431,8 +431,30 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "杉本寺・高徳院・長谷寺（宗教でめぐる）", "description": "杉本寺は鎌倉最古の寺、高徳院・長谷寺は単立という独立した立場。同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違う。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/re10.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/re10.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/re10.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "杉本寺・高徳院・長谷寺（宗教でめぐる）", "description": "杉本寺は天台宗、大仏の高徳院は浄土宗、長谷観音の長谷寺はどの宗派にも属さない単立。宗派の違う3つの古寺をめぐります。", "url": "https://djnaoyaman.github.io/kuranpo/knowledge/re10.html", "image": "https://djnaoyaman.github.io/kuranpo/ogp/re10.png", "inLanguage": "ja", "author": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "publisher": {"@type": "Person", "name": "クランポック", "alternateName": ["宮崎直哉", "一見坊", "湯気文吾", "djnaoyaman"], "url": "https://djnaoyaman.github.io/kuranpo/profile.html", "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。", "knowsAbout": ["鎌倉の歴史", "神社仏閣", "地域ブランディング"], "sameAs": ["https://djnaoyaman.github.io/kuranpo/", "https://djnaoyaman.github.io/youkai/index.html", "https://note.com/djnaoyaman", "https://sauna-ikitai.com/saunners/12991", "https://djnaoyaman.github.io/sakanamushi/", "https://djnaoyaman.github.io/ppp/about.html"]}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://djnaoyaman.github.io/kuranpo/knowledge/re10.html"}, "datePublished": "2026-09-24", "dateModified": "2026-09-25"}</script>
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -494,6 +516,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -505,7 +528,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 10 杉本寺・高徳院・長谷寺</p>
+    <p class="crumb"><a href="../index.html#tab-religion">宗教でめぐる</a> ／ 10 <ruby>杉本寺<rt>すぎもとでら</rt></ruby>・<ruby>高徳院<rt>こうとくいん</rt></ruby>・<ruby>長谷寺<rt>はせでら</rt></ruby></p>
   </div>
 </header>
 
@@ -521,10 +544,10 @@
     <h1><span class="no" style="color:var(--moss)">10</span><span>杉本寺・高徳院・長谷寺</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="religion" aria-label="鎌倉駅東口から長谷駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:30.6%"></i><i class="r-dot" style="left:91.0%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>長谷駅</span></span></div>
+    <div class="kn-route" data-set="religion" aria-label="鎌倉駅東口から長谷駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:30.6%"></i><i class="r-dot" style="left:91.0%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span><ruby>長谷<rt>はせ</rt></ruby>駅</span></span></div>
     <div class="meta-row"><span>2時間</span><span class="dist">施設間の徒歩距離 約5.5km</span><span class="fee">大人合計 ¥800（＋任意 ¥220）</span></div>
-    <p class="story">同じ「単立」という立場でも、信仰のされ方はまるで違います。杉本寺は鎌倉最古の寺、高徳院・長谷寺は<ruby>単立<rt>たんりつ</rt></ruby>という独立した立場です。同じ「単立」でも、大仏と長谷観音では信仰のされ方がまるで違うことに、頭がくらくらんぽします。大仏の実際の大きさは、写真で見るのと真下に立つのとでは、まったく印象が変わります。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩1.6km・約23分</span><div class="row"><span class="sname">杉本寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">734年、行基開山の伝承。坂東三十三観音第一番。一般(高校生以上)300円・中学生200円・小学生100円、未就学児無料。</span></li><li><span class="leg">杉本寺から 徒歩3.5km・約50分</span><div class="row"><span class="sname">高徳院</span><span class="sfee">大人¥200／小人¥150</span></div><span class="snote">鎌倉大仏。</span><span class="opt">＋大仏胎内拝観（年齢区分なし） ¥20（一律）</span></li><li><span class="leg">高徳院から 徒歩350m・約5分</span><div class="row"><span class="sname">長谷寺</span><span class="sfee">大人¥300／小人¥100</span></div><span class="opt">＋宝物館 大人¥200／小人¥100</span></li><li class="endleg"><div class="row"><span class="sname">解散地点：長谷駅</span></div></li></ul>
+    <p class="story">三つの寺は、それぞれ違う宗派に属しています。鎌倉最古と伝わる杉本寺は<ruby class="o1">天台宗<rt>てんだいしゅう</rt></ruby>、大仏のある高徳院は浄土宗、長谷観音の長谷寺は、どの宗派にも属さない<ruby>単立<rt>たんりつ</rt></ruby>の寺です。長谷寺は江戸時代のはじめに浄土宗となり、第二次世界大戦の後に浄土宗から離れました。歩いてすぐの距離にある大仏と長谷観音が、今は別々の立場にあることに、頭がくらくらんぽします。大仏の実際の大きさは、写真で見るのと真下に立つのとでは、まったく印象が変わります。</p><figure class="plate"><div class="pl-frame"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900" alt="幕末の鎌倉大仏を正面から写した白黒写真" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure').classList.add('pl-fail')"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">百五十年前の大仏。1498年の大地震で大<ruby>仏殿<rt>ぶつでん</rt></ruby>を失ってから、大仏は屋根のない露座のまま、この姿で残ってきました。</span><span class="pl-cr">フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89895）所蔵、パブリックドメイン。<a href="https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩1.6km・約23分</span><div class="row"><span class="sname">杉本寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">734年、<ruby>行基<rt>ぎょうき</rt></ruby><ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。一般(高校生以上)300円・中学生200円・小学生100円、未就学児無料。</span></li><li><span class="leg">杉本寺から 徒歩3.5km・約50分</span><div class="row"><span class="sname">高徳院</span><span class="sfee">大人¥200／小人¥150</span></div><span class="snote">浄土宗。本尊は鎌倉大仏（阿弥陀如来坐像）。</span><span class="opt">＋大仏胎内拝観（年齢区分なし） ¥20（一律）</span></li><li><span class="leg">高徳院から 徒歩350m・約5分</span><div class="row"><span class="sname">長谷寺</span><span class="sfee">大人¥300／小人¥100</span></div><span class="opt">＋宝物館 大人¥200／小人¥100</span></li><li class="endleg"><div class="row"><span class="sname">解散地点：長谷駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -579,7 +602,7 @@ function initMiniDrill(containerId, questions){
     </div>
 
 
-<script>initMiniDrill("miniDrill_re10", [{"q": "杉本寺の宗派は？", "choices": ["天台宗", "真言宗", "日蓮宗", "臨済宗"], "answer": 0, "note": "鎌倉最古の杉本寺は天台宗です。"}, {"q": "高徳院・長谷寺は宗派上どんな位置づけ？", "choices": ["臨済宗", "日蓮宗", "単立", "浄土宗"], "answer": 2, "note": "いずれも単立という独立した立場です。"}, {"q": "大仏と長谷観音、同じ「単立」という言葉で分類できるとしても、実際の参拝者の様子まで同じだと考えてよいか？", "choices": ["よい。同じ分類なら同じ様子になる", "よくない。制度上の立場が同じでも、実際の信仰のされ方はまるで違う", "参拝者の様子は分類と無関係", "単立という分類自体が誤り"], "answer": 1, "note": "「単立」という制度的な立場だけでは、実際の信仰の形までは決まらないことが分かります。"}]);</script>
+<script>initMiniDrill("miniDrill_re10", [{"q": "杉本寺の宗派は？", "choices": ["天台宗", "真言宗", "日蓮宗", "臨済宗"], "answer": 0, "note": "鎌倉最古の杉本寺は天台宗です。"}, {"q": "高徳院（鎌倉大仏）の宗派は？", "choices": ["臨済宗", "日蓮宗", "単立", "浄土宗"], "answer": 3, "note": "高徳院は、法然を開祖とする浄土宗の寺です。"}, {"q": "長谷寺は、宗派上どんな立場？", "choices": ["天台宗", "浄土宗", "単立", "臨済宗"], "answer": 2, "note": "長谷寺は浄土宗の流れをくみますが、戦後に浄土宗から離れ、どの宗派にも属さない単立の寺になりました。"}]);</script>
 
 <div class="share-buttons">
       <span class="share-label">この記事をシェア</span>
@@ -592,7 +615,7 @@ function initMiniDrill(containerId, questions){
   </article>
 
   <nav class="pager" aria-label="前後のコース">
-    <a class="pg-next" data-set="religion" href="re11.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">11</span>鶴岡八幡宮・<ruby>荏柄天神社<rt>えがらてんじんじゃ</rt></ruby>・鎌倉宮</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:37.0%"></i><i class="r-dot" style="left:73.0%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span><span class="pg-meta">1.5時間・徒歩約2.4km</span></a>
+    <a class="pg-next" data-set="religion" href="re11.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">11</span><ruby class="o1">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>・<ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>・<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby></span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:37.0%"></i><i class="r-dot" style="left:73.0%"></i><i class="r-dot" style="left:97.0%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉宮バス停</span></span><span class="pg-meta">1.5時間・徒歩約2.4km</span></a>
     <div class="pg-sub"><a class="pg-prev" href="re9.html">← 前：浄光明寺・海蔵寺</a><a class="pg-list" href="../index.html#tab-religion">一覧へ</a></div>
   </nav>
 </main>

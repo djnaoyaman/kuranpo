@@ -448,6 +448,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -577,6 +589,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -588,7 +601,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 09 足利氏と金沢街道</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ 09 足利氏と<ruby>金沢街道<rt>かなざわかいどう</rt></ruby></p>
   </div>
 </header>
 
@@ -603,16 +616,16 @@
   </svg>
     <h1><span class="no">09</span><span data-i18n="kn.g9.title">足利氏と金沢街道</span></h1>
   </div>
-  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>11〜12月・紅葉</b>：報国寺の竹林と紅葉の組み合わせが見どころ。</p></div>
+  <div class="season-note"><p class="sn-label">SEASONAL PICK — このコースがおすすめの季節</p><p class="sn-item"><b>11〜12月・紅葉</b>：<ruby>報国寺<rt>ほうこくじ</rt></ruby>の竹林と紅葉の組み合わせが見どころ。</p></div>
 <div class="practical">
-    <div class="kn-route" data-set="geo" aria-label="浄明寺バス停から十二所バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.1%"></i><i class="r-dot" style="left:36.4%"></i><i class="r-dot" style="left:78.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>浄明寺バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span></div>
+    <div class="kn-route" data-set="geo" aria-label="浄明寺バス停から十二所バス停までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:12.1%"></i><i class="r-dot" style="left:36.4%"></i><i class="r-dot" style="left:78.8%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby class="o1">浄明寺<rt>じょうみょうじ</rt></ruby>バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span></div>
     <div class="meta-row">
       <span>2時間</span>
       <span class="dist">施設間の徒歩距離 約1.6km</span>
       <span class="fee">大人合計 ¥100（＋任意 ¥200）</span>
     </div>
-    <p class="story" data-i18n="kn.g9.story">後に室町幕府を開く一族も、最初はただの一御家人でした。室町幕府をつくる前から、足利氏はすでに鎌倉で力を持つ武士でした。浄妙寺は<ruby>足利貞氏<rt>あしかがさだうじ</rt></ruby>のため、報国寺は<ruby>足利家時<rt>あしかがいえとき</rt></ruby>のために建てられたお寺で、それぞれ五山5位・<ruby>諸山<rt>しょさん</rt></ruby>という格を持ちます。報国寺の竹林は今も静かで、鎌倉駅の周りとは違う、ゆったりした時間が流れています。旧六浦路をのんびり歩いて、次の時代の主役になる一族の足あとを辿ってみましょう。まだ将軍でも何でもなかった頃の足あとと知ると、頭がくらくらんぽします。竹林に入った瞬間の空気の変わり方は、写真では伝わりません。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：浄明寺バス停</span></div></li><li><span class="leg">浄明寺バス停から 徒歩150m・約2分</span><div class="row"><span class="sname">浄妙寺</span><span class="sfee">大人¥100／小人¥50</span></div><span class="snote">足利貞氏。鎌倉五山第五位。</span></li><li><span class="leg">浄妙寺から 徒歩400m・約6分</span><div class="row"><span class="sname">報国寺</span><span class="sfee">無料</span></div><span class="snote">足利家時。</span><span class="opt">＋竹庭（年齢区分なし） ¥200（一律）</span></li><li><span class="leg">報国寺から 徒歩700m・約10分</span><div class="row"><span class="sname">明王院</span><span class="sfee">無料</span></div><span class="snote">藤原頼経。</span></li><li class="endleg"><span class="leg">明王院から 徒歩300m・約4分</span><div class="row"><span class="sname">解散地点：<ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></div></li></ul>
+    <p class="story" data-i18n="kn.g9.story">後に室町幕府を開く一族も、最初はただの一<ruby>御家人<rt>ごけにん</rt></ruby>でした。室町幕府をつくる前から、足利氏はすでに鎌倉で力を持つ武士でした。<ruby class="o1">浄妙寺<rt>じょうみょうじ</rt></ruby>は<ruby>足利貞氏<rt>あしかがさだうじ</rt></ruby>のため、報国寺は<ruby>足利家時<rt>あしかがいえとき</rt></ruby>のために建てられたお寺で、それぞれ五山5位・<ruby>諸山<rt>しょさん</rt></ruby>という格を持ちます。報国寺の竹林は今も静かで、鎌倉駅の周りとは違う、ゆったりした時間が流れています。旧<ruby>六浦<rt>むつら</rt></ruby>路をのんびり歩いて、次の時代の主役になる一族の足あとを辿ってみましょう。まだ将軍でも何でもなかった頃の足あとと知ると、頭がくらくらんぽします。竹林に入った瞬間の空気の変わり方は、写真では伝わりません。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：浄明寺バス停</span></div></li><li><span class="leg">浄明寺バス停から 徒歩150m・約2分</span><div class="row"><span class="sname">浄妙寺</span><span class="sfee">大人¥100／小人¥50</span></div><span class="snote">足利貞氏。鎌倉五山第五位。</span></li><li><span class="leg">浄妙寺から 徒歩400m・約6分</span><div class="row"><span class="sname">報国寺</span><span class="sfee">無料</span></div><span class="snote">足利家時。</span><span class="opt">＋竹庭（年齢区分なし） ¥200（一律）</span></li><li><span class="leg">報国寺から 徒歩700m・約10分</span><div class="row"><span class="sname"><ruby class="o1">明王院<rt>みょうおういん</rt></ruby></span><span class="sfee">無料</span></div><span class="snote"><ruby class="o1">藤原頼経<rt>ふじわらのよりつね</rt></ruby>。</span></li><li class="endleg"><span class="leg">明王院から 徒歩300m・約4分</span><div class="row"><span class="sname">解散地点：<ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">
         <p class="note-label">トリビア</p>
@@ -679,7 +692,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#history:nanboku_era">歴史：南北朝・室町期編</a><a href="../quiz.html#temple:hokokuji">お寺：報国寺編</a><a href="../quiz.html#person:nitta_ashikaga">人物：新田義貞・足利氏編</a></div>
+      <div class="dm-links"><a href="../quiz.html#history:nanboku_era">歴史：南北朝・室町期編</a><a href="../quiz.html#temple:hokokuji">お寺：報国寺編</a><a href="../quiz.html#person:nitta_ashikaga">人物：<ruby>新田義貞<rt>にったよしさだ</rt></ruby>・足利氏編</a></div>
     </div>
 
 
@@ -697,7 +710,7 @@ function initMiniDrill(containerId, questions){
 
   <nav class="pager" aria-label="前後のコース">
     <a class="pg-next" data-set="geo" href="g10.html"><span class="pg-label">次に歩く</span><span class="pg-title"><span class="pg-no">10</span>尼寺と女性たちの鎌倉</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:19.8%"></i><i class="r-dot" style="left:39.9%"></i><i class="r-dot" style="left:50.0%"></i><i class="r-dot" style="left:63.4%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅西口</span><span>鎌倉駅西口</span></span><span class="pg-meta">2時間・徒歩約2.8km</span></a>
-    <div class="pg-sub"><a class="pg-prev" href="g8.html">← 前：幕府滅亡と<ruby class=o1>南北朝<rt>なんぼくちょう</rt></ruby>の悲劇</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
+    <div class="pg-sub"><a class="pg-prev" href="g8.html">← 前：幕府滅亡と南北朝の悲劇</a><a class="pg-list" href="../index.html#tab-geo">一覧へ</a></div>
   </nav>
 </main>
 

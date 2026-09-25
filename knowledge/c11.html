@@ -431,6 +431,18 @@
   @media (min-width:900px){ .intro p, .hero-lead, header.site p.lead, .fw-item > p:not(.fw-no), .tl-temples, .rel-person .note, .tree-leaves, .diagram-intro, .term dd{font-size:16.5px;} }
   /* 49. 話題ごとに分けた短い段落の間をあける */
   .intro p + p{margin-top:.85em;} .fn-text + .fn-text{margin-top:.7em;}
+  /* 51. 地は3つだけ。紙＝読む・選ぶ場所／付録の地＝必要な時に確かめる情報（見方について・注記・奥付）／墨の地＝最後の一画面の署名（裏表紙） */
+  :root{--paper-appendix:#EAE4D8; --ink-ground:#2A2521; --on-ink:#F4F1EA; --on-ink-soft:#BDB3A6; --vermilion-on-ink:#E08A70;}
+  .intro, footer.colophon{--line:#D3CAB8;}
+  .intro{background:var(--paper-appendix); max-width:none !important; margin:56px 0 0 !important; padding:44px max(var(--gutter), calc((100% - 1120px) / 2 + var(--gutter))) 40px !important;}  /* 地は画面の端まで、文字は他の節と同じ列に */
+  footer.colophon{background:var(--paper-appendix); border-top:none; margin-top:56px;}
+  .intro + footer.colophon{margin-top:0;}
+  .intro + footer.colophon .co-in{padding-top:8px;}
+  .editor-mark-section{background:var(--ink-ground); border-top:none;}
+  .editor-mark-section .editor-mark{color:var(--on-ink);}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
+  .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
+  .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
 </style>
 <script type="application/ld+json">
 {
@@ -560,6 +572,7 @@
   <a class="drawer-link" href="../timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="../persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="../religions.html">鎌・くらんぽ宗教関係図</a>
+    <a class="drawer-link" href="../photos.html">古写真で歩く鎌倉</a>
   <a class="drawer-link" href="../quiz.html">鎌・くらんぽクイズ</a>
   <p class="drawer-label">このサイトについて</p>
   <a class="drawer-link" href="../profile.html">編者プロフィール</a>
@@ -571,7 +584,7 @@
 <header class="site">
   <div class="inner">
     <a class="back" href="../index.html">鎌・くらんぽ トップへ</a>
-    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C11 玉縄エリア②</p>
+    <p class="crumb"><a href="../history.html">コース別・歴史の基本知識</a> ／ C11 <ruby>玉縄<rt>たまなわ</rt></ruby>エリア②</p>
   </div>
 </header>
 
@@ -587,14 +600,14 @@
     <h1><span class="no">C11</span><span data-i18n="kn.c11.title">玉縄エリア②</span></h1>
   </div>
   <div class="practical">
-    <div class="kn-route" data-set="complete" aria-label="大船駅から大船駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:35.1%"></i><i class="r-dot" style="left:46.6%"></i><i class="r-dot" style="left:55.7%"></i><i class="r-dot" style="left:67.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>大船駅</span><span>大船駅</span></span></div>
+    <div class="kn-route" data-set="complete" aria-label="大船駅から大船駅までの道"><span class="r-line"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:35.1%"></i><i class="r-dot" style="left:46.6%"></i><i class="r-dot" style="left:55.7%"></i><i class="r-dot" style="left:67.2%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span><ruby>大船<rt>おおふな</rt></ruby>駅</span><span>大船駅</span></span></div>
     <div class="meta-row">
       <span>2時間</span>
       <span class="dist">施設間の徒歩距離 約4.1km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c11.story">城下町の面影が、住宅地の中にひっそり残っています。玉縄北条氏の城下町だったこの一帯には、家臣や領民が建てたとされるお寺が、いくつも残っています。派手さはありませんが、龍宝寺・大船観音寺を見た後にちょっと足を延ばすと、玉縄という地域の輪郭が見えてきます。城そのものは残っていないのに、家臣たちの寺だけが今も建っていることに、頭がくらくらんぽします。城の縄張りがどこにあったかは、住宅地の坂道を歩いてみないと分かりません。</p>
-    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.4km・約20分</span><div class="row"><span class="sname">円光寺</span><span class="sfee">無料</span></div></li><li><span class="leg">円光寺から 徒歩500m・約7分</span><div class="row"><span class="sname">久成寺</span><span class="sfee">無料</span></div></li><li><span class="leg">久成寺から 徒歩400m・約6分</span><div class="row"><span class="sname">貞宗寺</span><span class="sfee">無料</span></div></li><li><span class="leg">貞宗寺から 徒歩500m・約7分</span><div class="row"><span class="sname">金剛寺</span><span class="sfee">無料</span></div><span class="snote">2001年創建。</span></li><li class="endleg"><span class="leg">金剛寺から 徒歩1.3km・約19分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
+    <p class="story" data-i18n="kn.c11.story">城下町の面影が、住宅地の中にひっそり残っています。玉縄北条氏の城下町だったこの一帯には、家臣や領民が建てたとされるお寺が、いくつも残っています。派手さはありませんが、<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>・<ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby>を見た後にちょっと足を延ばすと、玉縄という地域の輪郭が見えてきます。城そのものは残っていないのに、家臣たちの寺だけが今も建っていることに、頭がくらくらんぽします。城の縄張りがどこにあったかは、住宅地の坂道を歩いてみないと分かりません。</p>
+    <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.4km・約20分</span><div class="row"><span class="sname"><ruby>円光寺<rt>えんこうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">円光寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>久成寺<rt>くじょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">久成寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>貞宗寺<rt>ていそうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">貞宗寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>金剛寺<rt>こんごうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">2001年創建。</span></li><li class="endleg"><span class="leg">金剛寺から 徒歩1.3km・約19分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     
   </div>
   <p class="section-divider" data-i18n="kn.sectiondivider">歴史の基本知識</p>
@@ -648,7 +661,7 @@ function initMiniDrill(containerId, questions){
     </div>
     <div class="drill-more">
       <p class="dm-label">もっと学ぶ</p>
-      <div class="dm-links"><a href="../quiz.html#history:modern_era">歴史：戦国〜昭和編</a><a href="../quiz.html#person:tsunashige">人物：北条綱成編</a></div>
+      <div class="dm-links"><a href="../quiz.html#history:modern_era">歴史：戦国〜昭和編</a><a href="../quiz.html#person:tsunashige">人物：<ruby class="o1">北条綱成<rt>ほうじょうつなしげ</rt></ruby>編</a></div>
     </div>
 
 

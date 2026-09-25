@@ -460,6 +460,8 @@
   .editor-mark-section .editor-mark:hover{color:var(--vermilion-on-ink);}
   .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
+  /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
+  .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -480,7 +482,7 @@
    "djnaoyaman"
   ],
   "url": "https://djnaoyaman.github.io/kuranpo/profile.html",
-  "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。",
+  "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドを、企画から編集・デザイン・制作まで手がける。",
   "knowsAbout": [
    "鎌倉の歴史",
    "神社仏閣",
@@ -505,7 +507,7 @@
    "djnaoyaman"
   ],
   "url": "https://djnaoyaman.github.io/kuranpo/profile.html",
-  "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドの編者。",
+  "description": "ブランドマネージャー・マーケター。鎌倉市内の神社仏閣を実地で歩き、公式資料と現地確認にもとづいて執筆・更新する個人ガイドを、企画から編集・デザイン・制作まで手がける。",
   "knowsAbout": [
    "鎌倉の歴史",
    "神社仏閣",
@@ -732,7 +734,7 @@ function initMiniDrill(containerId, questions){
       <p class="co-name">鎌・くらんぽ</p>
       <p class="co-en">Kamakura + Sanpo</p>
       <dl class="co-dl">
-        <div><dt>編集・文責</dt><dd><a href="../profile.html">クランポック</a></dd></div>
+        <div class="co-credit"><dt>企画・編集・デザイン・制作・文責</dt><dd><a href="../profile.html">クランポック</a></dd></div>
         <div><dt>最終更新</dt><dd>2026年9月25日</dd></div>
         <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
       </dl>
@@ -741,7 +743,7 @@ function initMiniDrill(containerId, questions){
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="../profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
+  <a class="editor-mark" href="../profile.html"><span class="em-label">企画・編集・デザイン・制作・文責：</span><span class="em-name">クランポック</span></a>
 </section>
 
 <script>

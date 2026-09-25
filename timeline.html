@@ -457,6 +457,8 @@
   .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
   /* 55. ふりがなの入った語は折り返せないため、狭い画面で列が押し広げられないようにする */
   header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
+  /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
+  .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -604,7 +606,7 @@
       <p class="co-name">鎌・くらんぽ</p>
       <p class="co-en">Kamakura + Sanpo</p>
       <dl class="co-dl">
-        <div><dt>編集・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
+        <div class="co-credit"><dt>企画・編集・デザイン・制作・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
         <div><dt>最終更新</dt><dd>2026年9月25日</dd></div>
         <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
       </dl>
@@ -613,7 +615,7 @@
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label">企画・編集・デザイン・制作・文責：</span><span class="em-name">クランポック</span></a>
   <p class="editor-mark-sub">最終更新：2026年9月25日</p>
 </section>
 

@@ -547,6 +547,8 @@
   .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
   .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
+  /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
+  .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "古写真で歩く鎌倉", "description": "幕末から大正に撮られた鎌倉大仏と鶴岡八幡宮の写真7枚を、年の順にたどります。神仏分離で取り壊される前の八幡宮の大塔や、五十年にわたる大仏の姿も。撮影者・年代・所蔵館がはっきりしたパブリックドメインの写真だけを載せています。", "url": "https://djnaoyaman.github.io/kuranpo/photos.html", "inLanguage": "ja", "isPartOf": {"@type": "WebSite", "name": "鎌・くらんぽ", "url": "https://djnaoyaman.github.io/kuranpo/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "鎌・くらんぽ", "item": "https://djnaoyaman.github.io/kuranpo/"}, {"@type": "ListItem", "position": 2, "name": "古写真で歩く鎌倉", "item": "https://djnaoyaman.github.io/kuranpo/photos.html"}]}</script>
@@ -645,7 +647,7 @@
       <p class="co-name">鎌・くらんぽ</p>
       <p class="co-en">Kamakura + Sanpo</p>
       <dl class="co-dl">
-        <div><dt>編集・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
+        <div class="co-credit"><dt>企画・編集・デザイン・制作・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
         <div><dt>最終更新</dt><dd>2026年9月25日</dd></div>
         <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
       </dl>
@@ -654,7 +656,7 @@
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label">企画・編集・デザイン・制作・文責：</span><span class="em-name">クランポック</span></a>
   <p class="editor-mark-sub">最終更新：2026年9月25日</p>
 </section>
 

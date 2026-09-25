@@ -12,6 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F4F1EA">
 <title>鎌・くらんぽ年表｜鎌・くらんぽ</title>
 <meta name="description" content="「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -24,6 +25,10 @@
 <meta property="og:description" content="「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。">
 <meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/timeline.html">
 <meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/timeline.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="鎌・くらんぽ年表｜鎌・くらんぽ">
+<meta name="twitter:image:alt" content="鎌・くらんぽ年表｜鎌・くらんぽ">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="鎌・くらんぽ年表｜鎌・くらんぽ">
@@ -44,16 +49,16 @@
     --vermilion:#A8402E;
     --vermilion-bg:#EEDCCF;
     --max:1120px;
-    --voice:"Cormorant Garamond", serif;
+    --voice:"Cormorant Garamond", "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
   body{
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:"Shippori Mincho", serif; line-height:1.8;
+    font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; line-height:1.8;
     -webkit-font-smoothing:antialiased;
   }
-  .mincho{font-family:"Shippori Mincho", serif;}
+  .mincho{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;}
   a{color:inherit;}
 
   header.site{
@@ -64,7 +69,7 @@
   header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
   header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
-  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
+  header.site h1{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:clamp(28px,6vw,44px); margin:0 0 10px;}
 
   @keyframes heroReveal{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
   .reveal-line{opacity:0; animation:heroReveal .7s cubic-bezier(.22,.61,.36,1) forwards;}
@@ -91,7 +96,7 @@
 
   section.group{max-width:760px; margin:0 0 44px; padding-top:26px; border-top:1px solid var(--line);}
   section.group:first-of-type{border-top:none; padding-top:0;}
-  section.group h2{font-family:"Shippori Mincho", serif; font-size:21.5px; margin:0 0 6px;}
+  section.group h2{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:21.5px; margin:0 0 6px;}
   section.group .group-note{font-size:14.5px; color:var(--ink-soft); margin:0 0 18px;}
 
   dl.terms{margin:0;}
@@ -100,10 +105,10 @@
   }
   .term:last-child{border-bottom:none;}
   .term dt{
-    font-family:"Shippori Mincho", serif; font-weight:700; font-size:18px; margin:0 0 6px;
+    font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:18px; margin:0 0 6px;
     display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
   }
-  .term dt .yomi{font-family:"Shippori Mincho", serif; font-weight:400; font-size:13.5px; color:var(--ink-soft);}
+  .term dt .yomi{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:400; font-size:13.5px; color:var(--ink-soft);}
   .term dd{margin:0; font-size:15.5px; color:var(--ink);}
   .term dd .map{
     display:inline-block; margin-top:8px; font-size:14px; color:var(--vermilion);
@@ -219,7 +224,7 @@
   .tl-era{position:relative; padding-bottom:32px;}
   .tl-era:last-child{padding-bottom:0;}
   .tl-dot{position:absolute; left:-33px; top:4px; width:13px; height:13px; border-radius:50%; background:var(--vermilion); border:3px solid var(--bg);}
-  .tl-period{font-family:"Shippori Mincho", serif; font-size:18px; font-weight:700; margin:0 0 4px;}
+  .tl-period{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:18px; font-weight:700; margin:0 0 4px;}
   .tl-range{font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--ink-soft); margin:0 0 8px;}
   .tl-temples{font-size:15px; line-height:1.9; margin:0;}
   .tl-temples .yr{font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--ink-soft);}
@@ -228,7 +233,7 @@
   .rel-group.moss{border-left-color:var(--moss);}
   .rel-group.indigo{border-left-color:var(--indigo);}
   .rel-group.ochre{border-left-color:var(--ochre);}
-  .rel-group h3{font-family:"Shippori Mincho", serif; font-size:19px; margin:0 0 12px;}
+  .rel-group h3{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:19px; margin:0 0 12px;}
   .rel-person{margin:0 0 12px; padding-left:14px; border-left:2px solid var(--line);}
   .rel-person:last-child{margin-bottom:0;}
   .rel-person .name{font-weight:700; font-size:16px;}
@@ -239,7 +244,7 @@
   .tree-root{margin:0 0 32px;}
   .tree-root > .tree-label{font-family:var(--voice); font-style:italic; font-size:24px; font-weight:500; padding:0; background:none; color:var(--vermilion); display:inline-block; margin:0 0 18px; border-bottom:1px solid var(--line); padding-bottom:10px;}
   .tree-branch{margin:0 0 20px 0; padding-left:20px; border-left:2px solid var(--line);}
-  .tree-branch .b-label{font-family:"Shippori Mincho", serif; font-size:16.5px; font-weight:700; color:var(--vermilion); margin:0 0 6px;}
+  .tree-branch .b-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:16.5px; font-weight:700; color:var(--vermilion); margin:0 0 6px;}
   .tree-branch.moss .b-label{color:var(--moss);}
   .tree-branch.indigo .b-label{color:var(--indigo);}
   .tree-branch.ochre .b-label{color:var(--ochre);}
@@ -247,7 +252,7 @@
 
   .diagram-intro b, .tl-temples b, .rel-person .note b, .tree-leaves b{color:var(--vermilion); font-weight:700;}
   /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
-  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;}
   @media (min-width:768px){:root{--gutter:40px;}}
 
   /* 1. グリッド：全コンテナの左端を一本に揃える */
@@ -266,7 +271,7 @@
   body{line-break:strict;}
   h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
   h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
-  p,li,dd{text-wrap:pretty;}
+  p,li,dd{text-wrap:wrap;}
 
   /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
   ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
@@ -307,7 +312,7 @@
   /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
   .spot-list .sname{flex:1 1 auto; min-width:0;}
   .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
-  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:wrap;}
   .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
   /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
   body{overflow-wrap:break-word;}
@@ -315,7 +320,7 @@
   /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
   header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
   .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
-  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:wrap;}
   /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
   .topbar-inner{max-width:1120px;}
   @media (min-width:768px){
@@ -342,15 +347,15 @@
   html{font-variant-numeric:lining-nums;}
   /* 24. 元のデザインの名残を今の言葉に置き換える */
   /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
-  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
-  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12.5px;}
   .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
-  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .locator-group-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12px; letter-spacing:.04em;}
   .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
   .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
   .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
   .tl-temples .yr{font-family:inherit; font-size:inherit;}
-  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12px;}
   /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
   .topbar{background:rgba(244,241,234,0.92);}
   .md-choice{background:var(--bg);}
@@ -362,6 +367,73 @@
   article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
   /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
   .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
+  /* 26. 4色の定義が欠けていたページに補う（紺・タンの指定が効いていなかった） */
+  :root{--indigo:#2E4A63; --ochre:#B8935A;}
+  /* 28. 上位ページの題字を、トップと同じ縦組みに（本の扉のように、ページの名前を立てる） */
+  header.site .inner{display:grid; grid-template-columns:1fr auto; column-gap:22px; align-items:start;}
+  header.site .inner > .back{grid-column:1 / -1; grid-row:1; margin-bottom:24px;}
+  header.site .inner > h1{grid-column:2; grid-row:2 / span 6; margin:0; writing-mode:vertical-rl; white-space:nowrap; text-wrap:nowrap;
+    font-size:clamp(34px, 9.4vw, 54px); line-height:1.12; letter-spacing:.06em; font-weight:700;}
+  header.site .inner > :not(.back):not(h1){grid-column:1;}
+  header.site .inner > .kicker{margin-top:.3em;}
+  /* 30. 時期の長さを、実際の年数の比率どおりの帯で見せる（鎌倉幕府の153年が、1200年のうちどれほどか） */
+  .tl-strip{margin:8px 0 44px; padding:0;}
+  .ts-top{position:relative; height:34px;}
+  .ts-bracket{position:absolute; bottom:4px; height:10px; border:1px solid var(--ochre-ink); border-bottom:none; box-sizing:border-box;}
+  .ts-bracket span{position:absolute; bottom:14px; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:13px; font-weight:500; color:var(--ochre-ink);}
+  .ts-bar{display:flex; gap:1px; height:14px;}
+  .ts-seg{background:var(--ochre); opacity:.45;}
+  .ts-seg.ts-k{background:var(--ochre-ink); opacity:1;}
+  .ts-names, .ts-years{position:relative; height:34px;}
+  .ts-names span{position:absolute; top:8px; transform:translateX(-50%); font-size:12.5px; line-height:1.3; text-align:center; color:var(--ink-soft);}
+  .ts-years{height:22px;}
+  .ts-years span{position:absolute; top:2px; transform:translateX(-50%); font-family:var(--voice); font-style:italic; font-size:14px; color:var(--ink-soft);}
+  .ts-years span:first-child{transform:none;} .ts-years span:last-child{transform:translateX(-100%);}
+  .tl-strip figcaption{margin:10px 0 0; font-size:14px; line-height:1.85; color:var(--ink);}
+  /* 36. このページで使っているのに定義が欠けていた色を補う */
+  :root{--moss:#6E6D1C;}
+  /* 37. 長い題字は意味の切れ目で二列に組む（背表紙の題字のように。最初の画面を題字だけで埋めない） */
+  header.site .inner > h1 .h1-l{display:block;}
+  header.site .inner > h1{line-height:1.3;}
+  /* 38. メニューは全ページ共通。トップの「選ぶ」と同じ6つの入口（色の点と件数）と、読みもの、このサイトについて */
+  .dl-set{display:flex; align-items:center; gap:10px;}
+  .dl-set .n{margin-left:auto; font-family:var(--voice); font-style:italic; color:var(--ink-soft);}
+  .sw{width:7px; height:7px; border-radius:50%; display:inline-block; flex:0 0 auto; background:var(--vermilion);}
+  .sw-religion{background:var(--moss);} .sw-person{background:var(--indigo);} .sw-timeline{background:var(--ochre-ink);}
+  /* 39. ページの最後は奥付に（画面いっぱいの署名をやめ、題字・編者・最終更新・所在を小さく正確に記す） */
+  footer.colophon{border-top:1px solid var(--line); margin-top:48px;}
+  .co-in{max-width:var(--max); margin:0 auto; padding:32px var(--gutter) 72px; box-sizing:border-box;}
+  .co-pagenote{margin:0 0 24px; font-size:13px; line-height:1.9; color:var(--ink-soft);}
+  .co-pagenote a{color:var(--vermilion);}
+  .co-book{display:grid; grid-template-columns:1fr auto; column-gap:24px; align-items:start; padding:26px 0; border-top:1px solid var(--line);}
+  .co-name{grid-column:2; grid-row:1 / span 2; margin:0; writing-mode:vertical-rl; font-size:22px; font-weight:700; letter-spacing:.08em; color:var(--ink);}
+  .co-en{grid-column:1; margin:0 0 14px; font-family:var(--voice); font-style:italic; font-size:14px; color:var(--vermilion);}
+  .co-dl{grid-column:1; margin:0; display:grid; gap:8px;}
+  .co-dl div{display:flex; gap:14px; font-size:13.5px; line-height:1.6;}
+  .co-dl dt{flex:0 0 5.5em; color:var(--ink-soft);}
+  .co-dl dd{margin:0; color:var(--ink);}
+  .co-dl a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .co-links{display:flex; flex-wrap:wrap; gap:8px 18px; padding:18px 0 0; border-top:1px solid var(--line); font-size:13px;}
+  .co-links a{color:var(--ink-soft); text-decoration:none;}
+  .co-links a:hover, .co-dl a:hover{color:var(--vermilion);}
+  .co-notes{margin:0 0 24px; font-size:13px; color:var(--ink-soft);}
+  .co-notes summary{cursor:pointer; list-style:none; display:inline-block; padding:0 0 6px; border-bottom:1px solid var(--line);}
+  .co-notes summary::-webkit-details-marker{display:none;}
+  .co-notes summary::after{content:" ↓"; font-family:var(--voice); font-style:italic; color:var(--vermilion);}
+  footer.colophon .footnotes{margin:0 0 8px; border:none; background:none;}
+  footer.colophon .fn-item{padding:14px 0; border:none; border-top:1px solid var(--line); background:none;}
+  footer.colophon .fn-item:first-child{border-top:none;}
+  .co-book{grid-template-columns:minmax(0,1fr) auto;} .co-dl div, .co-dl dd{min-width:0;} .co-dl dd{overflow-wrap:anywhere;}  /* 狭い画面で所在の長い文字列が題字を押し出さないように */
+  header.site .inner > h1{font-size:clamp(28px, min(9.4vw, 7svh), 54px);}  /* 画面の高さでも大きさを決める */
+  /* 46. 読む段落は、行を字詰めいっぱいまで組む（iPhoneのSafariは text-wrap:pretty を段落全体で解釈し、行を早めに折り返して右端に空きを残すため使わない）。釣り合いは見出しなど短い文だけ */
+  p, li, dd{text-wrap:wrap;}
+  /* 47. ページの最後の一画面は、編者の署名（元のデザインのまま残す） */
+  .editor-mark-section{min-height:100vh; min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; box-sizing:border-box; padding:40px var(--gutter); border-top:1px solid var(--line);}
+  .editor-mark-section .editor-mark{color:var(--ink); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:10px; transition:color .2s ease;}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark-section .em-label{font-size:15px; opacity:.6;}
+  .editor-mark-section .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .editor-mark-section .editor-mark-sub{font-size:12.5px; color:var(--ink-soft); margin:0;}
 </style>
 <script type="application/ld+json">
 {
@@ -378,6 +450,7 @@
  }
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "鎌・くらんぽ", "item": "https://djnaoyaman.github.io/kuranpo/"}, {"@type": "ListItem", "position": 2, "name": "鎌・くらんぽ年表", "item": "https://djnaoyaman.github.io/kuranpo/timeline.html"}]}</script>
 </head>
 <body>
 <div class="topbar">
@@ -400,12 +473,16 @@
     <span class="mincho">鎌・くらんぽ</span>
     <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
   </div>
-  <p class="drawer-label">コースを見る</p>
-  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
-  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
-  <p class="drawer-label">読みもの</p>
+  <p class="drawer-label">コースを選ぶ</p>
+  <a class="drawer-link dl-set" href="index.html#tab-geo"><i class="sw sw-geo"></i><span class="dl-set-t">エリア別コース</span><span class="n">14</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-kids"><i class="sw sw-kids"></i><span class="dl-set-t">子供向けコース</span><span class="n">4</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-complete"><i class="sw sw-complete"></i><span class="dl-set-t">コンプリート版</span><span class="n">16</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-religion"><i class="sw sw-religion"></i><span class="dl-set-t">宗教でめぐる</span><span class="n">12</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-person"><i class="sw sw-person"></i><span class="dl-set-t">人物でめぐる</span><span class="n">15</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-timeline"><i class="sw sw-timeline"></i><span class="dl-set-t">年表でめぐる</span><span class="n">10</span></a>
+  <p class="drawer-label">歩く前に、読む</p>
   <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
-  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
@@ -421,7 +498,7 @@
   <div class="inner">
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line">散歩の前に、5分だけ</p>
-    <h1 class="mincho reveal-line">鎌・くらんぽ年表</h1>
+    <h1 class="mincho reveal-line"><span class="h1-l">鎌・くらんぽ</span><span class="h1-l">年表</span></h1>
     <p class="lead reveal-line">今立っている場所は、鎌倉800年のどのあたりでしょうか。「年表でめぐる」コースを歩く前に大きな流れを知っておくと、それが分かるようになり、同じ道がぐっと楽しくなります。ここにまとめたのは、コースを楽しむための前提知識です。細かい年号は、歩きながら覚えていけば足ります。</p>
   </div>
 </header>
@@ -429,6 +506,13 @@
 <main>
 
   <p class="diagram-intro">鎌倉800年は、実は一人の男が作った土台の上に、何度も塗り重ねられてきた歴史です。7つの時期を追いながら、その塗り重ねを大まかに辿ります。</p>
+  <figure class="tl-strip">
+    <div class="ts-top"><span class="ts-bracket" style="left:36.38%; width:12.48%"><span>鎌倉幕府　153年</span></span></div>
+    <div class="ts-bar" aria-hidden="true"><span class="ts-seg" style="flex:446" title="古代　734〜1180年"></span><span class="ts-seg ts-k" style="flex:19" title="頼朝期　1180〜1199年"></span><span class="ts-seg ts-k" style="flex:50" title="執権確立期　1200〜1250年"></span><span class="ts-seg ts-k" style="flex:34" title="蒙古襲来期　1250〜1284年"></span><span class="ts-seg ts-k" style="flex:49" title="幕府動揺・滅亡期　1284〜1333年"></span><span class="ts-seg" style="flex:134" title="南北朝・室町期　1333〜1467年"></span><span class="ts-seg" style="flex:493" title="戦国〜昭和　1467〜1960年"></span></div>
+    <div class="ts-names" aria-hidden="true"><span style="left:18.19%">古代</span><span style="left:54.32%">南北朝<br>室町</span><span style="left:79.85%">戦国〜昭和</span></div>
+    <div class="ts-years" aria-hidden="true"><span style="left:0">734</span><span style="left:36.38%">1180</span><span style="left:48.86%">1333</span><span style="left:100%">1960</span></div>
+    <figcaption>734年の創建と伝わる杉本寺から、1960年に完成した大船観音まで。このサイトの寺社は、およそ1200年にまたがります。そのうち鎌倉幕府の時代は、153年です。</figcaption>
+  </figure>
 
   <div class="tl-diagram">
     <div class="tl-era">
@@ -489,15 +573,26 @@
 
 </main>
 
-<footer class="site">
-  <div class="inner">
-    <p>ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p><p><span class="last-updated">最終更新日：2026年9月25日</span></p>
-    <p><a href="history.html">コース別・歴史の基本知識を見る</a> ／ <a href="changelog.html">修正履歴</a> ／ <a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+<footer class="colophon">
+  <div class="co-in">
+    <p class="co-pagenote">ここで示した年代・関係性は、いずれも大まかな見取り図であり、厳密な系図・教義上の分類ではない。各コースの詳細は個別の知識ページを参照してほしい。</p>
+    <div class="co-book">
+      <p class="co-name">鎌・くらんぽ</p>
+      <p class="co-en">Kamakura + Sanpo</p>
+      <dl class="co-dl">
+        <div><dt>編集・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
+        <div><dt>最終更新</dt><dd>2026年9月25日</dd></div>
+        <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
+      </dl>
+    </div>
+    <nav class="co-links" aria-label="サイトの中のページ"><a href="index.html">トップ</a><a href="basics.html">歩く前の基礎知識</a><a href="history.html">コース別・歴史の基本知識</a><a href="timeline.html">鎌・くらんぽ年表</a><a href="persons.html">鎌・くらんぽ人物相関図</a><a href="religions.html">鎌・くらんぽ宗教関係図</a><a href="quiz.html">鎌・くらんぽクイズ</a><a href="profile.html">編者プロフィール</a><a href="changelog.html">修正履歴</a></nav>
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
+  <p class="editor-mark-sub">最終更新：2026年9月25日</p>
 </section>
+
 
 
 <script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */

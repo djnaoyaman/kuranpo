@@ -12,6 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F4F1EA">
 <title>修正履歴｜鎌・くらんぽ</title>
 <meta name="description" content="鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -24,6 +25,10 @@
 <meta property="og:description" content="鎌・くらんぽで行った事実の訂正と、大きな変更の記録。誤りを元に戻さないための注意リストつき。">
 <meta property="og:url" content="https://djnaoyaman.github.io/kuranpo/changelog.html">
 <meta property="og:image" content="https://djnaoyaman.github.io/kuranpo/ogp/changelog.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="修正履歴｜鎌・くらんぽ">
+<meta name="twitter:image:alt" content="修正履歴｜鎌・くらんぽ">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="修正履歴｜鎌・くらんぽ">
@@ -37,19 +42,19 @@
 <style>
   :root{
     --bg:#F4F1EA; --card:#FBF9F4; --ink:#262220; --ink-soft:#6B6058; --line:#DCD5C4;
-    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px; --voice:"Cormorant Garamond", serif;
+    --vermilion:#A8402E; --moss:#6E6D1C; --max:1120px; --voice:"Cormorant Garamond", "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;
   }
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
-  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Shippori Mincho", serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
-  .mincho{font-family:"Shippori Mincho", serif;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; line-height:1.8; -webkit-font-smoothing:antialiased;}
+  .mincho{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;}
   a{color:inherit;}
 
   header.site{padding:40px 20px 28px; border-bottom:1px solid var(--line); background:radial-gradient(circle at 88% 12%, rgba(232,23,31,0.07), transparent 55%), var(--bg);}
   header.site .inner{max-width:var(--max); margin:0 auto;}
   header.site .back{font-size:14.5px; color:var(--ink-soft); text-decoration:none; display:inline-block; margin-bottom:14px;}
   header.site .back::before{content:"← ";}
-  header.site h1{font-family:"Shippori Mincho", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
+  header.site h1{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:clamp(26px,5vw,40px); margin:0 0 10px;}
   header.site .kicker{font-size:13.5px; letter-spacing:.14em; color:var(--ink-soft); margin:0 0 14px;}
   header.site p.lead{max-width:38em; margin:0; color:var(--ink-soft); font-size:16.5px;}
 
@@ -70,7 +75,7 @@
   }
 
   section.guard{max-width:760px; margin:0 0 56px;}
-  section.guard h2{font-family:"Shippori Mincho", serif; font-size:22.5px; margin:0 0 8px;}
+  section.guard h2{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:22.5px; margin:0 0 8px;}
   section.guard > p{font-size:15px; color:var(--ink-soft); margin:0 0 20px;}
   .guard-item{padding:14px 16px; margin:0 0 10px; background:var(--card); border:1px solid var(--line); border-left:4px solid var(--vermilion);}
   .guard-item .g-wrong{font-size:14.5px; color:var(--ink-soft); text-decoration:line-through; margin:0 0 4px;}
@@ -78,7 +83,7 @@
   .guard-item .g-right::before{content:"→ ";color:var(--vermilion);}
 
   section.log{max-width:760px;}
-  section.log h2{font-family:"Shippori Mincho", serif; font-size:22.5px; margin:0 0 4px;}
+  section.log h2{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:22.5px; margin:0 0 4px;}
   .log-date{font-size:14px; color:var(--ink-soft); letter-spacing:.06em; margin:0 0 20px; padding-bottom:12px; border-bottom:1px solid var(--line);}
   ol.log-list{list-style:none; margin:0; padding:0; counter-reset:rev;}
   ol.log-list li{
@@ -88,7 +93,7 @@
   ol.log-list li:first-child{border-top:none;}
   ol.log-list li::before{
     content:counter(rev, decimal-leading-zero);
-    font-family:"Shippori Mincho", serif; font-weight:700; font-size:15px; color:var(--vermilion);
+    font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-weight:700; font-size:15px; color:var(--vermilion);
     position:absolute; left:0; top:14px;
   }
   ol.log-list .tag{
@@ -195,7 +200,7 @@
   .share-btn{font-size:13px; color:var(--ink-soft); text-decoration:none; padding:6px 13px; border:1px solid var(--line); transition:color .2s ease, border-color .2s ease;}
   .share-btn:hover{color:var(--vermilion); border-color:var(--vermilion);}
   /* ===== v17 design layer：一本の縦の線／和文は正体／細部の統一（全ページ共通・最後に適用） ===== */
-  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho",serif;}
+  :root{--gutter:20px; --voice:"Cormorant Garamond","Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif;}
   @media (min-width:768px){:root{--gutter:40px;}}
 
   /* 1. グリッド：全コンテナの左端を一本に揃える */
@@ -214,7 +219,7 @@
   body{line-break:strict;}
   h1,h2,h3,.tagline{font-feature-settings:"palt" 1;}
   h1,h2,h3,.tagline,.ch-tagline,.sn-label,.qp-desc,.ft-hook{word-break:auto-phrase; text-wrap:balance;}
-  p,li,dd{text-wrap:pretty;}
+  p,li,dd{text-wrap:wrap;}
 
   /* 3. ルビ：ブラウザ本来の禁則は保ったまま、長いルビは前後にはみ出させて親文字を間延びさせない（実験で禁則違反0を確認） */
   ruby rt{font-size:.5em; letter-spacing:0; font-weight:400; font-style:normal;}
@@ -255,7 +260,7 @@
   /* 10. 立ち寄り先の1行は「名前……値段」だけにし、説明と追加料金の注記はその下に全幅で置く（説明が細い柱に押し込まれない・注記が画面外へはみ出さない） */
   .spot-list .sname{flex:1 1 auto; min-width:0;}
   .spot-list .sfee{flex:0 1 auto; margin-left:auto; white-space:normal;}
-  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:pretty;}
+  .spot-list li > .snote{display:block; margin-top:4px; word-break:auto-phrase; text-wrap:wrap;}
   .spot-list li > .opt{display:block; margin-top:4px; font-family:var(--voice); font-style:italic; font-size:12.5px; color:var(--ink-soft); text-align:right; word-break:auto-phrase; text-wrap:balance;}
   /* 11. URLやコードのような切れ目のない文字列は、はみ出す時だけ折り返す */
   body{overflow-wrap:break-word;}
@@ -263,7 +268,7 @@
   /* 13. 読む段落（3行以上になるもの）は文字単位で改行し、行頭揃え（両端揃えはルビで短くなった行の字間を引き伸ばすため使わない）。文節改行は見出しと1〜2行の短い文に限る */
   header.site p.lead, .story, .intro p, .panel-note, .diagram-intro, .fw-intro, .fw-item p, .fw-example, .fw-ref, .fw-closing p,
   .tl-temples, .tree-leaves, .rel-person .note, .rel-arrow, .term dd, .note-text, .g-right, .block p, .section-head p,
-  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:pretty;}
+  .stats .rate, .stats .breakdown, .lang-note, .notice, ol.log-list li, .nf-inner .body-text, .md-q{word-break:normal; text-align:start; text-wrap:wrap;}
   /* 15. ヘッダーは全ページ同じ。広い画面では主要4リンク＋全体メニュー（クイズ・年表などへの入口を消さない）、狭い画面では全体メニューのみ */
   .topbar-inner{max-width:1120px;}
   @media (min-width:768px){
@@ -292,15 +297,15 @@
   html{font-variant-numeric:lining-nums;}
   /* 24. 元のデザインの名残を今の言葉に置き換える */
   /* 24-1. 元の数値用の等幅フォントをやめる。和文のラベルは明朝、欧文と数字は欧文イタリック */
-  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", serif; font-size:11.5px; letter-spacing:.04em;}
-  .ft-meta{font-family:"Shippori Mincho", serif; font-size:12.5px;}
+  .ft-tag, .quiz-cat .qc-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:11.5px; letter-spacing:.04em;}
+  .ft-meta{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12.5px;}
   .ch .ch-en{font-family:var(--voice); font-style:italic; font-size:14px; letter-spacing:.02em;}
-  .locator-group-label{font-family:"Shippori Mincho", serif; font-size:12px; letter-spacing:.04em;}
+  .locator-group-label{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12px; letter-spacing:.04em;}
   .season-all .sa-month{font-family:var(--voice); font-style:italic; font-size:15px; letter-spacing:.02em;}
   .quiz-progress{font-family:var(--voice); font-style:italic; font-size:16px;}
   .tl-range{font-family:var(--voice); font-style:italic; font-size:15px; color:var(--ochre-ink);}
   .tl-temples .yr{font-family:inherit; font-size:inherit;}
-  .rel-person .name .yomi{font-family:"Shippori Mincho", serif; font-size:12px;}
+  .rel-person .name .yomi{font-family:"Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; font-size:12px;}
   /* 24-2. 配色：固定バーを今の地の色に。選択肢の純白、カード文字の純黒をやめる */
   .topbar{background:rgba(244,241,234,0.92);}
   .md-choice{background:var(--bg);}
@@ -312,6 +317,59 @@
   article.course .maplinks a::after, .term dd .map::after{content:"↗"; margin-left:3px; font-size:.9em;}
   /* 24-5. 知識ページの節見出しを、トップの節見出しと同じ言葉に */
   .section-divider{font-size:16px; font-weight:500; color:var(--vermilion); margin:40px 0 14px; padding-top:28px; border-top:1px solid var(--line);}
+  /* 26. 4色の定義が欠けていたページに補う（紺・タンの指定が効いていなかった） */
+  :root{--indigo:#2E4A63; --ochre:#B8935A;}
+  /* 28. 上位ページの題字を、トップと同じ縦組みに（本の扉のように、ページの名前を立てる） */
+  header.site .inner{display:grid; grid-template-columns:1fr auto; column-gap:22px; align-items:start;}
+  header.site .inner > .back{grid-column:1 / -1; grid-row:1; margin-bottom:24px;}
+  header.site .inner > h1{grid-column:2; grid-row:2 / span 6; margin:0; writing-mode:vertical-rl; white-space:nowrap; text-wrap:nowrap;
+    font-size:clamp(34px, 9.4vw, 54px); line-height:1.12; letter-spacing:.06em; font-weight:700;}
+  header.site .inner > :not(.back):not(h1){grid-column:1;}
+  header.site .inner > .kicker{margin-top:.3em;}
+  /* 38. メニューは全ページ共通。トップの「選ぶ」と同じ6つの入口（色の点と件数）と、読みもの、このサイトについて */
+  .dl-set{display:flex; align-items:center; gap:10px;}
+  .dl-set .n{margin-left:auto; font-family:var(--voice); font-style:italic; color:var(--ink-soft);}
+  .sw{width:7px; height:7px; border-radius:50%; display:inline-block; flex:0 0 auto; background:var(--vermilion);}
+  .sw-religion{background:var(--moss);} .sw-person{background:var(--indigo);} .sw-timeline{background:var(--ochre-ink);}
+  /* 39. ページの最後は奥付に（画面いっぱいの署名をやめ、題字・編者・最終更新・所在を小さく正確に記す） */
+  footer.colophon{border-top:1px solid var(--line); margin-top:48px;}
+  .co-in{max-width:var(--max); margin:0 auto; padding:32px var(--gutter) 72px; box-sizing:border-box;}
+  .co-pagenote{margin:0 0 24px; font-size:13px; line-height:1.9; color:var(--ink-soft);}
+  .co-pagenote a{color:var(--vermilion);}
+  .co-book{display:grid; grid-template-columns:1fr auto; column-gap:24px; align-items:start; padding:26px 0; border-top:1px solid var(--line);}
+  .co-name{grid-column:2; grid-row:1 / span 2; margin:0; writing-mode:vertical-rl; font-size:22px; font-weight:700; letter-spacing:.08em; color:var(--ink);}
+  .co-en{grid-column:1; margin:0 0 14px; font-family:var(--voice); font-style:italic; font-size:14px; color:var(--vermilion);}
+  .co-dl{grid-column:1; margin:0; display:grid; gap:8px;}
+  .co-dl div{display:flex; gap:14px; font-size:13.5px; line-height:1.6;}
+  .co-dl dt{flex:0 0 5.5em; color:var(--ink-soft);}
+  .co-dl dd{margin:0; color:var(--ink);}
+  .co-dl a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line);}
+  .co-links{display:flex; flex-wrap:wrap; gap:8px 18px; padding:18px 0 0; border-top:1px solid var(--line); font-size:13px;}
+  .co-links a{color:var(--ink-soft); text-decoration:none;}
+  .co-links a:hover, .co-dl a:hover{color:var(--vermilion);}
+  .co-notes{margin:0 0 24px; font-size:13px; color:var(--ink-soft);}
+  .co-notes summary{cursor:pointer; list-style:none; display:inline-block; padding:0 0 6px; border-bottom:1px solid var(--line);}
+  .co-notes summary::-webkit-details-marker{display:none;}
+  .co-notes summary::after{content:" ↓"; font-family:var(--voice); font-style:italic; color:var(--vermilion);}
+  footer.colophon .footnotes{margin:0 0 8px; border:none; background:none;}
+  footer.colophon .fn-item{padding:14px 0; border:none; border-top:1px solid var(--line); background:none;}
+  footer.colophon .fn-item:first-child{border-top:none;}
+  /* 44. 主な変更を、時の流れの線の上の点に */
+  ol.log-list{list-style:none !important; padding:0 !important; margin:12px 0 0 !important;}
+  ol.log-list li{position:relative; border:none !important; border-left:1px solid var(--vermilion) !important; margin:0 0 0 4px !important; padding:0 0 22px 24px !important;}
+  ol.log-list li:last-child{border-left-color:transparent !important;}
+  ol.log-list li::before{content:"" !important; position:absolute; left:-5px; top:.55em; width:9px; height:9px; border-radius:50%; background:var(--vermilion);}
+  .co-book{grid-template-columns:minmax(0,1fr) auto;} .co-dl div, .co-dl dd{min-width:0;} .co-dl dd{overflow-wrap:anywhere;}  /* 狭い画面で所在の長い文字列が題字を押し出さないように */
+  header.site .inner > h1{font-size:clamp(28px, min(9.4vw, 7svh), 54px);}  /* 画面の高さでも大きさを決める */
+  /* 46. 読む段落は、行を字詰めいっぱいまで組む（iPhoneのSafariは text-wrap:pretty を段落全体で解釈し、行を早めに折り返して右端に空きを残すため使わない）。釣り合いは見出しなど短い文だけ */
+  p, li, dd{text-wrap:wrap;}
+  /* 47. ページの最後の一画面は、編者の署名（元のデザインのまま残す） */
+  .editor-mark-section{min-height:100vh; min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; box-sizing:border-box; padding:40px var(--gutter); border-top:1px solid var(--line);}
+  .editor-mark-section .editor-mark{color:var(--ink); text-decoration:none; display:flex; flex-direction:column; align-items:center; gap:10px; transition:color .2s ease;}
+  .editor-mark-section .editor-mark:hover{color:var(--vermilion);}
+  .editor-mark-section .em-label{font-size:15px; opacity:.6;}
+  .editor-mark-section .em-name{font-size:clamp(36px,9vw,58px); font-weight:700; line-height:1;}
+  .editor-mark-section .editor-mark-sub{font-size:12.5px; color:var(--ink-soft); margin:0;}
 </style>
 <script type="application/ld+json">
 {
@@ -328,6 +386,7 @@
  }
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "鎌・くらんぽ", "item": "https://djnaoyaman.github.io/kuranpo/"}, {"@type": "ListItem", "position": 2, "name": "修正履歴", "item": "https://djnaoyaman.github.io/kuranpo/changelog.html"}]}</script>
 </head>
 <body>
 <div class="topbar">
@@ -350,12 +409,16 @@
     <span class="mincho">鎌・くらんぽ</span>
     <button class="drawer-close" id="drawerClose" aria-label="メニューを閉じる">×</button>
   </div>
-  <p class="drawer-label">コースを見る</p>
-  <a class="drawer-link" href="index.html#chapters">エリア別コース一覧へ</a>
-  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
-  <p class="drawer-label">読みもの</p>
+  <p class="drawer-label">コースを選ぶ</p>
+  <a class="drawer-link dl-set" href="index.html#tab-geo"><i class="sw sw-geo"></i><span class="dl-set-t">エリア別コース</span><span class="n">14</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-kids"><i class="sw sw-kids"></i><span class="dl-set-t">子供向けコース</span><span class="n">4</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-complete"><i class="sw sw-complete"></i><span class="dl-set-t">コンプリート版</span><span class="n">16</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-religion"><i class="sw sw-religion"></i><span class="dl-set-t">宗教でめぐる</span><span class="n">12</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-person"><i class="sw sw-person"></i><span class="dl-set-t">人物でめぐる</span><span class="n">15</span></a>
+  <a class="drawer-link dl-set" href="index.html#tab-timeline"><i class="sw sw-timeline"></i><span class="dl-set-t">年表でめぐる</span><span class="n">10</span></a>
+  <p class="drawer-label">歩く前に、読む</p>
   <a class="drawer-link" href="basics.html">歩く前の基礎知識</a>
-  <a class="drawer-link" href="history.html#framework">神社仏閣を見る7つの視点</a>
+  <a class="drawer-link" href="history.html">コース別・歴史の基本知識</a>
   <a class="drawer-link" href="timeline.html">鎌・くらんぽ年表</a>
   <a class="drawer-link" href="persons.html">鎌・くらんぽ人物相関図</a>
   <a class="drawer-link" href="religions.html">鎌・くらんぽ宗教関係図</a>
@@ -419,8 +482,14 @@
     <li><span class="tag">改善</span>サイト全体の本文を丁寧語にそろえ、トップページと年表・人物相関図・宗教関係図の導入文を書き改めました。（2026年9月25日）</li>
     <li><span class="tag">改善</span>コース数の統計と「今どこにいますか」の中身をHTMLにも書き出し、JavaScriptが動かない環境や検索エンジンからも読めるようにしました。（2026年9月25日）</li>
     <li><span class="tag">改善</span>元のデザインが残っていた箇所（数値用の等幅フォント、上部の固定バーの古い背景色、選択肢の純白、地図リンクの絵文字、知識ページの節見出しなど）を、今のデザインに揃えました。両端揃えで字間が引き伸ばされていた行も直しています。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>トップページを、訪れる人の「今日、どれを歩くか」から組み直しました。縦組みの題字、目的・時間・場所の三つの入口、出発から解散までを一本の線で描き、立ち寄り先を実際の距離の比率どおりに置いたコース一覧に改めています。知識ページの冒頭にも同じ線を引きました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>Google Fontsが読み込めない環境でも明朝で表示され、縦組みも崩れないよう、端末の明朝を控えに加えました。人物・年表のページで効いていなかった紺とタンの色も直しています。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>サイト全体を同じ考え方で組み直しました。知識ページの立ち寄り先は出発から解散まで上から下へたどる縦の道に、年表は時期の長さを実際の年数の比率で並べた帯に、人物相関図は一族の系譜の線に、宗教関係図は幹から宗派が枝分かれする線にしています。歴史知識のコース一覧もトップと同じ線で描き、上位ページの題字は縦組みに揃えました。（2026年9月25日）</li>
+    <li><span class="tag">訂正</span>71ページで、使っているのに定義されていなかった色（苔・紺・タンなど）を補いました。クイズの正解の色などが、これまで表示されていませんでした。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>メニューを全ページ共通の形にし、トップと同じ6つの入口から選べるようにしました。ページの最後には奥付を加え、知識ページには拝観料と距離の根拠を添えています。知識ページの最後には「次に歩く」コースを線つきで示し、SNSで共有される画像にも、そのコースの線を描き込みました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>リニューアルの総点検を行いました。人物と年表で同名だった4組のページタイトルに軸の名前を添えて区別し、短すぎた説明文を補い、共有画像の大きさと代わりの文字、上位ページのパンくず、トップの全67コースの一覧を構造化データに加えました。更新日とサイトマップを改め、404ページは検索の対象から外し、AI向けの案内（llms.txt）も今の構造に合わせています。（2026年9月25日）</li>
   </ol>
-  <p class="log-current">現在のバージョン：v17.7.0（2026年9月25日）</p>
+  <p class="log-current">現在のバージョン：v18.3.1（2026年9月25日）</p>
 </section>
 
   <div class="share-buttons">
@@ -432,14 +501,25 @@
   </div>
 </main>
 
-<footer class="site">
-  <div class="inner">
-    <p><a href="index.html">鎌・くらんぽ トップへ戻る</a></p>
+<footer class="colophon">
+  <div class="co-in">
+    <div class="co-book">
+      <p class="co-name">鎌・くらんぽ</p>
+      <p class="co-en">Kamakura + Sanpo</p>
+      <dl class="co-dl">
+        <div><dt>編集・文責</dt><dd><a href="profile.html">クランポック</a></dd></div>
+        <div><dt>最終更新</dt><dd>2026年9月25日</dd></div>
+        <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
+      </dl>
+    </div>
+    <nav class="co-links" aria-label="サイトの中のページ"><a href="index.html">トップ</a><a href="basics.html">歩く前の基礎知識</a><a href="history.html">コース別・歴史の基本知識</a><a href="timeline.html">鎌・くらんぽ年表</a><a href="persons.html">鎌・くらんぽ人物相関図</a><a href="religions.html">鎌・くらんぽ宗教関係図</a><a href="quiz.html">鎌・くらんぽクイズ</a><a href="profile.html">編者プロフィール</a><a href="changelog.html">修正履歴</a></nav>
   </div>
 </footer>
 <section class="editor-mark-section">
-  <a class="editor-mark" href="profile.html"><span class="em-label" data-i18n="footer.credit.label">編集・文責：</span><span class="em-name" data-i18n="footer.credit.editor">クランポック</span></a>
+  <a class="editor-mark" href="profile.html"><span class="em-label">編集・文責：</span><span class="em-name">クランポック</span></a>
+  <p class="editor-mark-sub">最終更新：2026年9月25日</p>
 </section>
+
 
 
 <script>/* ===================== FOOTPRINT TRAIL（歩いた軌跡） ===================== */

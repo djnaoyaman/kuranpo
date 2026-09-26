@@ -455,6 +455,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -618,7 +628,7 @@
       <span class="dist">施設間の徒歩距離 約2.8km</span>
       <span class="fee">大人合計 ¥300（＋任意 ¥300）</span>
     </div>
-    <p class="story" data-i18n="kn.g10.story">政治の記録には、女性の名前がほとんど出てきません。それでも。<ruby>英勝寺<rt>えいしょうじ</rt></ruby>は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）です。<ruby>寿福寺<rt>じゅふくじ</rt></ruby>は<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど、鎌倉の女性たちが実際に動かした歴史を辿るコースです。政治の記録に残らないだけで、実際は大きく動かしていたと知ると、頭がくらくらんぽします。竹の庭に射す光の角度は、時間によって毎回違います。</p>
+    <p class="story" data-i18n="kn.g10.story">政治の記録には、女性の名前がほとんど出てきません。それでも。<ruby>英勝寺<rt>えいしょうじ</rt></ruby>は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）です。<ruby>寿福寺<rt>じゅふくじ</rt></ruby>は<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど、鎌倉の女性たちが実際に動かした歴史を辿るコースです。政治の記録に残らないだけで、実際は大きく動かしていたと知ると、頭がくらくらんぽします。竹の庭に射す光の角度は、時間によって毎回違います。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-zue-komyoji.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/1000,843/0/default.jpg|https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/500,422/0/default.jpg" alt="『東海道名所図会』の「光明寺」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/2559319/1/46" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">1797年（寛政9年）の『東海道名所図会』に描かれた「<ruby>光明寺<rt>こうみょうじ</rt></ruby>」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/2559319/1/46" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅西口</span></div></li><li><span class="leg">鎌倉駅西口から 徒歩500m・約7分</span><div class="row"><span class="sname">英勝寺</span><span class="sfee">一般¥300／中学生¥200／小学生¥100</span></div><span class="snote">水戸徳川家。<ruby>太田道灌<rt>おおたどうかん</rt></ruby>の子孫。大人300円・高校生200円・中小学生100円。</span></li><li><span class="leg">英勝寺から 徒歩600m・約9分</span><div class="row"><span class="sname">寿福寺</span><span class="sfee">無料</span></div><span class="snote">北条政子が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>を招いて<ruby>開山<rt>かいさん</rt></ruby>。鎌倉五山第三位。</span></li><li><span class="leg">寿福寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote"><ruby class="o1">北条長時<rt>ほうじょうながとき</rt></ruby><ruby>開基<rt>かいき</rt></ruby>。鎌倉三十三観音第二十五番。</span><span class="opt">＋阿弥陀堂・収蔵庫（木・土・日・祝のみ公開、年齢区分不明のため一律扱い） ¥200（一律）</span></li><li><span class="leg">浄光明寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>海蔵寺<rt>かいぞうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="opt">＋十六井戸（年齢区分なし） ¥100（一律）</span></li><li class="endleg"><span class="leg">海蔵寺から 徒歩1.0km・約14分</span><div class="row"><span class="sname">解散地点：鎌倉駅西口</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">

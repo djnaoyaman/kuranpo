@@ -462,6 +462,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -626,7 +636,7 @@
       <span class="dist">施設間の徒歩距離 約1.6km</span>
       <span class="fee">大人合計 無料（＋任意 ¥300）</span>
     </div>
-    <p class="story" data-i18n="kn.g13.story">剣を一本、海に投げ入れただけで、道ができたと言われています。軍記物語『<ruby>太平記<rt>たいへいき</rt></ruby>』によると、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>は稲村ヶ崎で剣を海に投げ入れ、龍神に祈りました。すると潮が引いて、その道を渡って鎌倉に攻め入った、と伝わっています。これは本当にあったと確認された出来事ではなく、『<ruby>太平記<rt>たいへいき</rt></ruby>』に書かれた伝説です。極楽寺、<ruby class="o1">成就院<rt>じょうじゅいん</rt></ruby>と一緒に歩くと、幕府が滅びる直前の数日間を、地形から辿る短いコースになります。剣一本で潮が引いたという伝説に、頭がくらくらんぽします。実際にその場に立って海を見ると、伝説が急に近いものに感じられます。</p>
+    <p class="story" data-i18n="kn.g13.story">剣を一本、海に投げ入れただけで、道ができたと言われています。軍記物語『<ruby>太平記<rt>たいへいき</rt></ruby>』によると、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>は稲村ヶ崎で剣を海に投げ入れ、龍神に祈りました。すると潮が引いて、その道を渡って鎌倉に攻め入った、と伝わっています。これは本当にあったと確認された出来事ではなく、『<ruby>太平記<rt>たいへいき</rt></ruby>』に書かれた伝説です。極楽寺、<ruby class="o1">成就院<rt>じょうじゅいん</rt></ruby>と一緒に歩くと、幕府が滅びる直前の数日間を、地形から辿る短いコースになります。剣一本で潮が引いたという伝説に、頭がくらくらんぽします。実際にその場に立って海を見ると、伝説が急に近いものに感じられます。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-meisho-inamura.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,614/0/default.jpg|https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,200/0/default.jpg" alt="『日本之名勝』の「稲村ケ崎」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/762809/1/176" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">1900年（明治33年）の写真帖『日本之名勝』に載った「稲村ケ崎」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/762809/1/176" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：極楽寺駅</span></div></li><li><span class="leg">極楽寺駅から 徒歩150m・約2分</span><div class="row"><span class="sname">極楽寺</span><span class="sfee">無料</span></div><span class="snote"><ruby class=o1>忍性<rt>にんしょう</rt></ruby>が社会事業とともに営んだ寺。</span><span class="opt">＋宝物館（春・秋の特定日のみ開館） ¥300（一律）</span></li><li><span class="leg">極楽寺から 徒歩500m・約7分</span><div class="row"><span class="sname">成就院</span><span class="sfee">無料</span></div></li><li><span class="leg">成就院から 徒歩100m・約1分</span><div class="row"><span class="sname"><ruby>星井寺<rt>ほしいでら</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">成就院が管理する境外仏堂。</span></li><li><span class="leg">星井寺から 徒歩700m・約10分</span><div class="row"><span class="sname">稲村ヶ崎公園</span><span class="sfee">無料</span></div><span class="snote">太刀を投じた伝説の地。</span></li><li class="endleg"><span class="leg">稲村ヶ崎公園から 徒歩150m・約2分</span><div class="row"><span class="sname">解散地点：稲村ヶ崎駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-season">

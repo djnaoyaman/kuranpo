@@ -445,6 +445,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -608,7 +618,7 @@
       <span class="dist">施設間の徒歩距離 約3.4km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c5.story">小さな寺が、寄り添うように並んでいる路地があります。材木座の路地には、時宗・浄土宗の小さなお寺が、寄り添うように残っています。<ruby>延命寺<rt>えんめいじ</rt></ruby>は<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>の妻が建てたと伝わります。一つひとつは小さいけれど、合わせて歩くと、材木座という土地にどれだけ多くの信仰が集まっていたかが見えてきます。小さな寺がこれだけ密集していることに、頭がくらくらんぽします。路地を一本入るごとに空気が変わるのを、体で確かめてみてください。</p>
+    <p class="story" data-i18n="kn.c5.story">小さな寺が、寄り添うように並んでいる路地があります。材木座の路地には、時宗・浄土宗の小さなお寺が、寄り添うように残っています。<ruby>延命寺<rt>えんめいじ</rt></ruby>は<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>の妻が建てたと伝わります。一つひとつは小さいけれど、合わせて歩くと、材木座という土地にどれだけ多くの信仰が集まっていたかが見えてきます。小さな寺がこれだけ密集していることに、頭がくらくらんぽします。路地を一本入るごとに空気が変わるのを、体で確かめてみてください。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-fukei-yuigahama.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,200/0/default.jpg" alt="『東海道風景図会 2編』の「鎌倉由比か濱」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/2550826/1/17" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">このコースの近くの風景です。錦絵「鎌倉由比か濱」です（『東海道風景図会 2編』より）。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/2550826/1/17" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：和田塚駅</span></div></li><li><span class="leg">和田塚駅から 徒歩800m・約11分</span><div class="row"><span class="sname">延命寺</span><span class="sfee">無料</span></div></li><li><span class="leg">延命寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>啓運寺<rt>けいうんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">啓運寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>向福寺<rt>こうふくじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">向福寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>千手院<rt>せんじゅいん</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">千手院から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>補陀洛寺<rt>ふだらくじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">志納。</span></li><li><span class="leg">補陀洛寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>来迎寺<rt>らいこうじ</rt></ruby>（材木座）</span><span class="sfee">無料</span></div></li><li><span class="leg">来迎寺（材木座）から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby class="o1">蓮乗院<rt>れんじょういん</rt></ruby></span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">蓮乗院から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：材木座バス停</span></div></li></ul>
     
   </div>

@@ -395,6 +395,16 @@
   header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -466,6 +476,7 @@
 </header>
 
 <main>
+  <figure class="plate"><div class="pl-frame"><img src="img/old/ndl-meisho-yuigahama.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,604/0/default.jpg|https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,200/0/default.jpg" alt="『日本之名勝』の「由比ガ浜」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/762809/1/176" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">1900年（明治33年）の写真帖『日本之名勝』に載った「由比ガ浜」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/762809/1/176" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
 
 <section class="guard">
   <h2 class="mincho">先祖返り注意リスト</h2>
@@ -547,8 +558,11 @@
     <li><span class="tag">訂正</span>「古写真で歩く鎌倉」の共有画像が、リニューアル前の古いデザインのままだった誤りを直しました。今のデザインで作り直し、サイト共通の画像も差し替えています。（2026年9月25日）</li>
     <li><span class="tag">訂正</span>クイズの共有画像が、基礎知識の画像を指していた誤りと、ラベルが「TOP」になっていた誤りを直しました。（2026年9月25日）</li>
     <li><span class="tag">改善</span>サイト共通の共有画像を、トップの複製ではなく専用のものとして作り直しました。宗教関係図の共有画像のキャッチも、今の中身に合わせています。（2026年9月25日）</li>
+    <li><span class="tag">追加</span>国立国会図書館が所蔵する明治から昭和初期の写真帖の写真と、1797年の『東海道名所図会』の挿絵などを、48のコースページと上位ページに加えました。立ち寄り先そのものの写真がないコースには、近くの風景であることを書き添えています。「古写真で歩く鎌倉」には、1900年の写真帖『日本之名勝』の9枚と、名所図会の7図のまとまりを加えました。（2026年9月25日）</li>
+    <li><span class="tag">改善</span>古写真47点を、所蔵館サイトの直接表示からサイト内の画像に切り替えました。84か所の表示を差し替え、読み込みの安定性を高めています。（2026年9月26日）</li>
+    <li><span class="tag">追加</span>写真のなかった3つのコース（浄妙寺・報国寺を巡る2コース、明王院を加えた1コース）に『新編鎌倉志』（1685年）の挿絵「浄妙寺図」を、寿福寺のコースに「寿福寺図」を、英勝寺のコースに「英勝寺図」を加えました。他のno-photoコースは、資料に該当する挿絵が見つからなかったため、空欄のままにしています。（2026年9月26日）</li>
   </ol>
-  <p class="log-current">現在のバージョン：v18.10.0（2026年9月25日）</p>
+  <p class="log-current">現在のバージョン：v18.13.0（2026年9月26日）</p>
 </section>
 
   <div class="share-buttons">

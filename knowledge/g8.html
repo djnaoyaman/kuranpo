@@ -462,6 +462,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -626,7 +636,7 @@
       <span class="dist">施設間の徒歩距離 約3.4km</span>
       <span class="fee">大人合計 ¥800（＋任意 ¥300）</span>
     </div>
-    <p class="story" data-i18n="kn.g8.story">同じ谷で、一つの時代が終わり、次の時代が始まりました。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍に攻められた<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>は、<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と一緒に自害しました。<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられています。<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>は、幕府をたおすのに力を尽くした<ruby>護良親王<rt>もりよししんのう</rt></ruby>をまつっています。覚園寺には<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が書いた文字が残っています。滅んだことと、その直後に始まった新しい時代が、同じ谷に重なって残っている——3時間、鎌倉で一番重い歴史を歩くコースです。滅びと始まりが同じ谷に重なっていることに、頭がくらくらんぽします。3時間歩き終えた後の空気の重さは、言葉より先に体に来ます。</p>
+    <p class="story" data-i18n="kn.g8.story">同じ谷で、一つの時代が終わり、次の時代が始まりました。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍に攻められた<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>は、<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と一緒に自害しました。<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられています。<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>は、幕府をたおすのに力を尽くした<ruby>護良親王<rt>もりよししんのう</rt></ruby>をまつっています。覚園寺には<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が書いた文字が残っています。滅んだことと、その直後に始まった新しい時代が、同じ谷に重なって残っている——3時間、鎌倉で一番重い歴史を歩くコースです。滅びと始まりが同じ谷に重なっていることに、頭がくらくらんぽします。3時間歩き終えた後の空気の重さは、言葉より先に体に来ます。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-dai-kamakuragu.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,200/0/default.jpg" alt="『日本名勝風俗大写真帖』の「鎌倉の宮」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/12984526/1/34" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">写真帖『日本名勝風俗大写真帖』に載った「鎌倉の宮」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/12984526/1/34" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩650m・約9分</span><div class="row"><span class="sname">宝戒寺</span><span class="sfee">大人¥100／小人¥50</span></div><span class="snote">北条氏邸跡。</span></li><li><span class="leg">宝戒寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>東勝寺跡<rt>とうしょうじあと</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">北条高時ら一族が自刃した地。</span></li><li><span class="leg">東勝寺跡から 徒歩900m・約13分</span><div class="row"><span class="sname">鎌倉宮</span><span class="sfee">無料</span></div><span class="snote"><ruby>護良親王<rt>もりよししんのう</rt></ruby>を祀る。境内は無料。</span><span class="opt">＋土牢・宝物館・神苑 大人¥300／小人¥150</span></li><li><span class="leg">鎌倉宮から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span><span class="sfee">大人¥500／小人¥200</span></div><span class="snote"><ruby class="o1">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span></li><li><span class="leg"><ruby>覚園寺<rt>かくおんじ</rt></ruby>から 徒歩900m・約13分</span><div class="row"><span class="sname">瑞泉寺</span><span class="sfee">大人¥200／小人¥100</span></div><span class="snote"><ruby>夢窓疎石<rt>むそうそせき</rt></ruby>。</span></li></ul>
     <div class="extra-notes">
       <div class="note-item note-season">

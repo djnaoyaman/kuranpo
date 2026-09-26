@@ -455,6 +455,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -618,7 +628,7 @@
       <span class="dist">施設間の徒歩距離 約3.6km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c8.story">弁慶が下書きを書いた手紙が、今も寺に残っています。<ruby>龍口寺<rt>りゅうこうじ</rt></ruby><ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺として知られる<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>のお寺のほかにも、腰越の浦には<ruby>満福寺<rt>まんぷくじ</rt></ruby>があります。ここは<ruby class="o3">源義経<rt>みなもとのよしつね</rt></ruby>が兄・頼朝に鎌倉入りを許してもらえず、許しを乞う手紙「腰越状」をしたためた場所——その下書きは弁慶が書いたと伝わっています。本堂には義経・弁慶・静御前を描いた襖絵も残されています。江ノ島の賑わいから一歩入ると、漁師町としての腰越の顔が見えてきます。頼朝に会えないまま京へ帰らされた義経のことを思うと、頭がくらくらんぽします。弁慶の腰掛石や手玉石、実際に触れてみると、伝説がすこし近くなります。</p>
+    <p class="story" data-i18n="kn.c8.story">弁慶が下書きを書いた手紙が、今も寺に残っています。<ruby>龍口寺<rt>りゅうこうじ</rt></ruby><ruby>輪番<rt>りんばん</rt></ruby>八ヶ寺として知られる<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>のお寺のほかにも、腰越の浦には<ruby>満福寺<rt>まんぷくじ</rt></ruby>があります。ここは<ruby class="o3">源義経<rt>みなもとのよしつね</rt></ruby>が兄・頼朝に鎌倉入りを許してもらえず、許しを乞う手紙「腰越状」をしたためた場所——その下書きは弁慶が書いたと伝わっています。本堂には義経・弁慶・静御前を描いた襖絵も残されています。江ノ島の賑わいから一歩入ると、漁師町としての腰越の顔が見えてきます。頼朝に会えないまま京へ帰らされた義経のことを思うと、頭がくらくらんぽします。弁慶の腰掛石や手玉石、実際に触れてみると、伝説がすこし近くなります。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-meisho-shichiri.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,620/0/default.jpg|https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,200/0/default.jpg" alt="『日本之名勝』の「七里ヶ浜」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/762809/1/184" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">このコースの近くの風景です。1900年（明治33年）の写真帖『日本之名勝』に載った「<ruby>七里ヶ浜<rt>しちりがはま</rt></ruby>」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/762809/1/184" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：腰越駅</span></div></li><li><span class="leg">腰越駅から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>浄泉寺<rt>じょうせんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">浄泉寺から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>宝善院<rt>ほうぜんいん</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">宝善院から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby>本行寺<rt>ほんぎょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">本行寺から 徒歩400m・約6分</span><div class="row"><span class="sname">満福寺</span><span class="sfee">無料</span></div><span class="snote">志納。義経と弁慶ゆかり。</span></li><li><span class="leg">満福寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>妙典寺<rt>みょうてんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">妙典寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>霊鷲寺<rt>りょうじゅじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">霊鷲寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>小動神社<rt>こゆるぎじんじゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">小動神社から 徒歩300m・約4分</span><div class="row"><span class="sname"><ruby class="o2">龍口明神社<rt>りゅうこうみょうじんしゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">龍口明神社から 徒歩300m・約4分</span><div class="row"><span class="sname">八坂大神</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">八坂大神から 徒歩400m・約6分</span><div class="row"><span class="sname">解散地点：江ノ島駅</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">

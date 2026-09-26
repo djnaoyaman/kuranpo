@@ -437,6 +437,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -600,7 +610,7 @@
       <span class="dist">施設間の徒歩距離 約2.0km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c9.story">中世の寺ばかりの鎌倉に、比較的新しい信仰の風景があります。鎌倉山のはずれ、七里ヶ浜には、近代になってから建てられたお寺が二つ——<ruby>顕証寺<rt>けんしょうじ</rt></ruby>と<ruby>霊光寺<rt>れいこうじ</rt></ruby>です。海を眺めながら歩ける短いコースで、古い鎌倉とは少し違う空気が味わえます。何百年も続く寺の隙間に、まだ100年に満たない寺があると知ると、頭がくらくらんぽします。海を背にした境内の静かさは、歩いてみるとよく分かります。</p>
+    <p class="story" data-i18n="kn.c9.story">中世の寺ばかりの鎌倉に、比較的新しい信仰の風景があります。鎌倉山のはずれ、七里ヶ浜には、近代になってから建てられたお寺が二つ——<ruby>顕証寺<rt>けんしょうじ</rt></ruby>と<ruby>霊光寺<rt>れいこうじ</rt></ruby>です。海を眺めながら歩ける短いコースで、古い鎌倉とは少し違う空気が味わえます。何百年も続く寺の隙間に、まだ100年に満たない寺があると知ると、頭がくらくらんぽします。海を背にした境内の静かさは、歩いてみるとよく分かります。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-kanto-koshigoe.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,200/0/default.jpg" alt="『日本名勝旧蹟産業写真集 関東地方之部 新訂』の「七里ヶ浜より越塚及江嶋を望む」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/12767897/1/62" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">このコースの近くの風景です。写真帖『日本名勝旧蹟産業写真集 関東地方之部 新訂』に載った「七里ヶ浜より越塚及江嶋を望む」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/12767897/1/62" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：七里ヶ浜駅</span></div></li><li><span class="leg">七里ヶ浜駅から 徒歩700m・約10分</span><div class="row"><span class="sname">顕証寺</span><span class="sfee">無料</span></div></li><li><span class="leg">顕証寺から 徒歩600m・約9分</span><div class="row"><span class="sname">霊光寺</span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">霊光寺から 徒歩700m・約10分</span><div class="row"><span class="sname">解散地点：七里ヶ浜駅</span></div></li></ul>
     
   </div>

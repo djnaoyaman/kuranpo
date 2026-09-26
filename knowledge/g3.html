@@ -462,6 +462,16 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -626,7 +636,7 @@
       <span class="dist">施設間の徒歩距離 約3.2km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.g3.story">何もない場所ほど、実は語ることが多い——そう思ったことはありますか。1184年、頼朝は父・<ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby>の霊を慰めるため、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>というお寺を建てました。頼朝自身が亡くなったのは1199年のこと。その体は<ruby>法華堂<rt>ほっけどう</rt></ruby>に埋葬されたと伝わっています。<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>、<ruby>法華堂跡<rt>ほっけどうあと</rt></ruby>、そして後にできた<ruby>永福寺跡<rt>ようふくじあと</rt></ruby>を一緒に歩くと、昔の鎌倉の中心が、今の観光地とはちょっと違う場所にあったことが分かります。建物は残っていませんが、そこに何があったかを辿るコースです。何もない場所が、かつて幕府の中心だったと知ると、頭がくらくらんぽします。立ってみると、その「何もなさ」が思いのほか語りかけてきます。</p>
+    <p class="story" data-i18n="kn.g3.story">何もない場所ほど、実は語ることが多い——そう思ったことはありますか。1184年、頼朝は父・<ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby>の霊を慰めるため、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>というお寺を建てました。頼朝自身が亡くなったのは1199年のこと。その体は<ruby>法華堂<rt>ほっけどう</rt></ruby>に埋葬されたと伝わっています。<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>、<ruby>法華堂跡<rt>ほっけどうあと</rt></ruby>、そして後にできた<ruby>永福寺跡<rt>ようふくじあと</rt></ruby>を一緒に歩くと、昔の鎌倉の中心が、今の観光地とはちょっと違う場所にあったことが分かります。建物は残っていませんが、そこに何があったかを辿るコースです。何もない場所が、かつて幕府の中心だったと知ると、頭がくらくらんぽします。立ってみると、その「何もなさ」が思いのほか語りかけてきます。</p><figure class="plate"><div class="pl-frame"><img src="../img/old/ndl-kanto-kamakuragu.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,200/0/default.jpg" alt="『日本名勝旧蹟産業写真集 関東地方之部 新訂』の「鎌倉宮」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/12767897/1/51" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">このコースの近くの風景です。写真帖『日本名勝旧蹟産業写真集 関東地方之部 新訂』に載った「鎌倉宮」です。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/12767897/1/51" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：鎌倉駅東口</span></div></li><li><span class="leg">鎌倉駅東口から 徒歩900m・約13分</span><div class="row"><span class="sname"><ruby class="o2">勝長寿院跡<rt>しょうちょうじゅいんあと</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">1184年建立。頼朝が父義朝の菩提のために建てた鎌倉最初の大寺院（現在は跡地）。</span></li><li><span class="leg">勝長寿院跡から 徒歩400m・約6分</span><div class="row"><span class="sname">大倉幕府跡</span><span class="sfee">無料</span></div><span class="snote">頼朝以来の幕府庭地。</span></li><li><span class="leg">大倉幕府跡から 徒歩200m・約3分</span><div class="row"><span class="sname">法華堂跡</span><span class="sfee">無料</span></div><span class="snote">頼朝の墓。</span></li><li><span class="leg">法華堂跡から 徒歩600m・約9分</span><div class="row"><span class="sname">永福寺跡</span><span class="sfee">無料</span></div><span class="snote">奥州合戦の戦没者供養のため頼朝が建立。</span></li><li><span class="leg">永福寺跡から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">平安後期創建の古社。</span></li><li class="endleg"><span class="leg"><ruby>荏柄天神社<rt>えがらてんじんしゃ</rt></ruby>から 徒歩600m・約9分</span><div class="row"><span class="sname">解散地点：鎌倉宮バス停</span></div></li></ul>
     <div class="extra-notes">
       <div class="note-item note-trivia">

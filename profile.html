@@ -394,6 +394,16 @@
   header.site .inner{grid-template-columns:minmax(0,1fr) auto;} header.site .inner > :not(.back):not(h1){min-width:0; overflow-wrap:anywhere;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -490,6 +500,7 @@
 </header>
 
 <main>
+  <figure class="plate"><div class="pl-frame"><img src="img/old/ndl-hasui-shichiri.jpg" data-fb="https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,200/0/default.jpg" alt="『川瀬巴水版画集 1』の「相州七里ヶ浜」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/2586549/1/33" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">川瀬巴水の版画「相州<ruby>七里ヶ浜<rt>しちりがはま</rt></ruby>」です（『川瀬巴水版画集 1』より）。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/2586549/1/33" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
   <p class="lead reveal-line" data-i18n="profile.lead">「鎌・くらんぽ」の「くらんぽ」は、娘が鎌倉を散歩することをそう呼んでいたことから、アイデアをもらいました。家族で歩くのが楽しくなったことがきっかけで、この散歩コースを作るようになりました。「<ruby class="o1">切通<rt>きりどおし</rt></ruby>」は、鎌倉特有の、山を切り開いてつくられた古道の名です。<ruby>谷戸<rt>やと</rt></ruby>から谷戸へ、人が歩いて越えてきた道そのものを指します。「歩」は、その名の通り歩く人。この「切通歩（きりどおしあゆむ）」をカタカナにしたのが、今の編者名「クランポック」です。</p>
 
   <section class="block">

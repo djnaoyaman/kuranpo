@@ -445,6 +445,17 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -608,7 +619,7 @@
       <span class="dist">施設間の徒歩距離 約4.1km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c11.story">城下町の面影が、住宅地の中にひっそり残っています。玉縄北条氏の城下町だったこの一帯には、家臣や領民が建てたとされるお寺が、いくつも残っています。派手さはありませんが、<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>・<ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby>を見た後にちょっと足を延ばすと、玉縄という地域の輪郭が見えてきます。城そのものは残っていないのに、家臣たちの寺だけが今も建っていることに、頭がくらくらんぽします。城の縄張りがどこにあったかは、住宅地の坂道を歩いてみないと分かりません。</p>
+    <p class="story" data-i18n="kn.c11.story">城下町の面影が、住宅地の中にひっそり残っています。玉縄北条氏の城下町だったこの一帯には、家臣や領民が建てたとされるお寺が、いくつも残っています。派手さはありませんが、<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>・<ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby>を見た後にちょっと足を延ばすと、玉縄という地域の輪郭が見えてきます。城そのものは残っていないのに、家臣たちの寺だけが今も建っていることに、頭がくらくらんぽします。城の縄張りがどこにあったかは、住宅地の坂道を歩いてみないと分かりません。</p><figure class="plate"><div class="pl-frame"><img src="../img/photo/c11-enkoji.jpg" data-fb="https://commons.wikimedia.org/wiki/Special:FilePath/Enko-ji,_Kamakura.jpg" alt="円光寺の参道" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">2024年に撮られた、円光寺の参道です。</span><span class="pl-cr">撮影：運動会プロテインパワー（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）。ウィキメディア・コモンズ。<a href="https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.4km・約20分</span><div class="row"><span class="sname"><ruby>円光寺<rt>えんこうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">円光寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>久成寺<rt>くじょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">久成寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>貞宗寺<rt>ていそうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">貞宗寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>金剛寺<rt>こんごうじ</rt></ruby></span><span class="sfee">無料</span></div><span class="snote">2001年創建。</span></li><li class="endleg"><span class="leg">金剛寺から 徒歩1.3km・約19分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     
   </div>

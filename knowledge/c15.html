@@ -440,6 +440,17 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -603,7 +614,7 @@
       <span class="dist">施設間の徒歩距離 約5.1km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c15.story">神主さんが常にいるとは限らない神社が、こんなに残っています。台という地域には、小さな神社がいくつも残っています。観光では普通は通らない道ですが、鎌倉の信仰が「有名なお寺や神社」だけでできているわけではないことを、実感できます。無人の社がこれだけ大切に守られていることに、頭がくらくらんぽします。地図に頼らず、偶然見つける楽しさがあるコースです。</p>
+    <p class="story" data-i18n="kn.c15.story">神主さんが常にいるとは限らない神社が、こんなに残っています。台という地域には、小さな神社がいくつも残っています。観光では普通は通らない道ですが、鎌倉の信仰が「有名なお寺や神社」だけでできているわけではないことを、実感できます。無人の社がこれだけ大切に守られていることに、頭がくらくらんぽします。地図に頼らず、偶然見つける楽しさがあるコースです。</p><figure class="plate"><div class="pl-frame"><img src="../img/photo/c15-shinmei.jpg" data-fb="https://commons.wikimedia.org/wiki/Special:FilePath/Shinmei_Shrine_in_Kamakura_city.jpg" alt="神明神社の拝殿" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">2024年に撮られた、神明神社の拝殿です。</span><span class="pl-cr">撮影：ブルーノ・プラス（<a href="https://creativecommons.org/licenses/by/4.0/deed.ja" target="_blank" rel="noopener">CC BY 4.0</a>）。ウィキメディア・コモンズ。<a href="https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.5km・約21分</span><div class="row"><span class="sname"><ruby>稲荷神社<rt>いなりじんじゃ</rt></ruby>（台）</span><span class="sfee">無料</span></div></li><li><span class="leg">稲荷神社（台）から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>神明神社<rt>しんめいじんじゃ</rt></ruby>（台）</span><span class="sfee">無料</span></div></li><li><span class="leg">神明神社（台）から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>水天宮<rt>すいてんぐう</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">水天宮から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby>塩釜神社<rt>しおがまじんじゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">塩釜神社から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>八幡神社<rt>はちまんじんじゃ</rt></ruby>（台）</span><span class="sfee">無料</span></div></li><li><span class="leg">八幡神社（台）から 徒歩600m・約9分</span><div class="row"><span class="sname"><ruby>白山神社<rt>はくさんじんじゃ</rt></ruby></span><span class="sfee">無料</span></div></li><li class="endleg"><span class="leg">白山神社から 徒歩1.2km・約17分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     <p class="card-footnote">いずれも神職が常駐しない小規模な社。訪れる際は、静かに参拝してください。</p>
   </div>

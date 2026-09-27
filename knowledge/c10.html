@@ -445,6 +445,17 @@
   .pg-sub{flex-wrap:wrap; gap:6px 16px;} .pg-sub .pg-prev{min-width:0;} .pg-sub .pg-list{margin-left:auto;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <script type="application/ld+json">
 {
@@ -608,7 +619,7 @@
       <span class="dist">施設間の徒歩距離 約5.4km</span>
       <span class="fee">大人合計 無料</span>
     </div>
-    <p class="story" data-i18n="kn.c10.story">観光地図にまず載らない場所に、北条氏ゆかりの寺があります。大船の北、今泉・岩瀬には、街から少し離れたお寺や神社が残っています。<ruby>大長寺<rt>だいちょうじ</rt></ruby>は<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>にゆかりがあると言われていますが、詳しい記録は多くありません。観光地になっていない鎌倉のはずれを歩くコースです。有名な武将の名前が出てくるのに詳細が分からないというのも、頭がくらくらんぽする話です。人の少ない道を、自分のペースで歩けます。</p>
+    <p class="story" data-i18n="kn.c10.story">観光地図にまず載らない場所に、北条氏ゆかりの寺があります。大船の北、今泉・岩瀬には、街から少し離れたお寺や神社が残っています。<ruby>大長寺<rt>だいちょうじ</rt></ruby>は<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>にゆかりがあると言われていますが、詳しい記録は多くありません。観光地になっていない鎌倉のはずれを歩くコースです。有名な武将の名前が出てくるのに詳細が分からないというのも、頭がくらくらんぽする話です。人の少ない道を、自分のペースで歩けます。</p><figure class="plate"><div class="pl-frame"><img src="../img/photo/c10-shomyoji.jpg" data-fb="https://commons.wikimedia.org/wiki/Special:FilePath/Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg" alt="称名寺の不動堂" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg" target="_blank" rel="noopener">画像を読み込めませんでした。ウィキメディア・コモンズで見る</a></div><figcaption><span class="pl-cap">2015年に撮られた、称名寺の不動堂です。</span><span class="pl-cr">撮影：Twkz0731（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）。ウィキメディア・コモンズ。<a href="https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg" target="_blank" rel="noopener">ウィキメディア・コモンズで見る</a></span></figcaption></figure>
     <ul class="spot-list"><li class="startleg"><div class="row"><span class="sname">出発地点：大船駅</span></div></li><li><span class="leg">大船駅から 徒歩1.8km・約26分</span><div class="row"><span class="sname"><ruby>今泉寺<rt>こんせんじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">今泉寺から 徒歩400m・約6分</span><div class="row"><span class="sname"><ruby class="o1">称名寺<rt>しょうみょうじ</rt></ruby></span><span class="sfee">無料</span></div></li><li><span class="leg">称名寺から 徒歩500m・約7分</span><div class="row"><span class="sname"><ruby>稲荷神社<rt>いなりじんじゃ</rt></ruby>（今泉）</span><span class="sfee">無料</span></div></li><li><span class="leg">稲荷神社（今泉）から 徒歩1.5km・約21分</span><div class="row"><span class="sname">大長寺</span><span class="sfee">無料</span></div><span class="snote">北条綱成ゆかり。</span></li><li class="endleg"><span class="leg">大長寺から 徒歩1.2km・約17分</span><div class="row"><span class="sname">解散地点：大船駅</span></div></li></ul>
     
   </div>

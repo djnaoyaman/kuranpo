@@ -384,3 +384,135 @@
 - 置き場所: img/old/ndl-re7-eishoji.jpg
 - 出典のページ: https://dl.ndl.go.jp/pid/2563543/1/111
 - クレジット: 国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション
+
+## ndl_kamakurashi_jomyoji
+- 表示中の画像: https://dl.ndl.go.jp/api/iiif/2563542/R0000158/pct:1,22,47,58/1400,1525/0/default.jpg
+- 代わりの画像: なし
+- 出典のページ: https://dl.ndl.go.jp/pid/2563542/1/158
+- 置き場所: img/old/ndl-g9-jomyoji.jpg
+- クレジット: 国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション
+
+## ndl_kamakurashi_jufukuji
+- 表示中の画像: https://dl.ndl.go.jp/api/iiif/2563543/R0000103/pct:54,12,38,72/1400,2284/0/default.jpg
+- 代わりの画像: なし
+- 出典のページ: https://dl.ndl.go.jp/pid/2563543/1/103
+- 置き場所: img/old/ndl-pe3-jufukuji.jpg
+- クレジット: 国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション
+
+## ndl_kamakurashi_eishoji
+- 表示中の画像: https://dl.ndl.go.jp/api/iiif/2563543/R0000111/pct:6,13,46,71/1400,1862/0/default.jpg
+- 代わりの画像: なし
+- 出典のページ: https://dl.ndl.go.jp/pid/2563543/1/111
+- 置き場所: img/old/ndl-re7-eishoji.jpg
+- クレジット: 国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション
+
+## 作業C：no-photoページ用の現在の写真（13点。notes/fetch_photos_c.py で取得済み）
+
+作業Bで空欄のままだった14ページに、ウィキメディア・コモンズの現在の写真を採用（うち常楽寺の1点はpe5.html／ti4.htmlの2ページで共用）。いずれもCC BY-SA/CC BYで、山門・本堂・鳥居など建物名が写真の説明文自体に明記されているものだけを選んだ。
+
+### photo_zeniarai（銭洗弁財天・鳥居）
+- 使用ページ: knowledge/c1.html
+- ファイル: Row of Timber Torii at the Zeniarai Benzaiten Shrine.jpg
+- 撮影者: Ethan Doyle White／ライセンス: CC BY-SA 4.0／撮影日: 2019年3月18日
+- 置き場所: img/photo/c1-zeniarai.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Row_of_Timber_Torii_at_the_Zeniarai_Benzaiten_Shrine.jpg
+- クレジット: 撮影：Ethan Doyle White（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_yakuoji（薬王寺・本堂）
+- 使用ページ: knowledge/c3.html
+- ファイル: Yakuouji kamakura 01.JPG
+- 撮影者: kamakura／ライセンス: CC BY-SA 3.0／撮影日: 2010年4月19日
+- 置き場所: img/photo/c3-yakuoji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Yakuouji_kamakura_01.JPG
+- クレジット: 撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ
+
+### photo_ofuna_kannon（大船観音寺・参道）
+- 使用ページ: knowledge/g12.html
+- ファイル: Approach to Ofuna Kannonji Temple.jpg
+- 撮影者: ブルーノ・プラス／ライセンス: CC BY 4.0／撮影日: 2024年11月
+- 置き場所: img/photo/g12-ofuna-kannon.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Approach_to_Ofuna_Kannonji_Temple.jpg
+- クレジット: 撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ
+- 備考: 大船観音の像そのものは日本の著作権法46条（美術の著作物の保護）の対象になり得るため、像自体ではなく参道の写真を選んだ。
+
+### photo_jorakuji（常楽寺・本堂）
+- 使用ページ: knowledge/pe5.html, knowledge/ti4.html（同じ写真を共用）
+- ファイル: Jōraku-ji Ōfuna Kamakura, Main hall (2015-03-31).jpg
+- 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2015年3月31日
+- 置き場所: img/photo/pe5-jorakuji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_(2015-03-31).jpg
+- クレジット: 撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_ryuhoji_sanmon（龍宝寺・山門）
+- 使用ページ: knowledge/pe7.html
+- ファイル: Ryuhouji01.jpg
+- 撮影者: kamakura／ライセンス: CC BY-SA 2.5／撮影日: 2007年5月16日
+- 置き場所: img/photo/pe7-ryuhoji-sanmon.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Ryuhouji01.jpg
+- クレジット: 撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ
+
+### photo_ryuhoji_hondo（龍宝寺・本堂）
+- 使用ページ: knowledge/ti10.html
+- ファイル: Ryuhouji03.jpg
+- 撮影者: kamakura／ライセンス: CC BY-SA 2.5／撮影日: 2007年5月16日
+- 置き場所: img/photo/ti10-ryuhoji-hondo.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Ryuhouji03.jpg
+- クレジット: 撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ
+
+### photo_shomyoji（称名寺・不動堂）
+- 使用ページ: knowledge/c10.html
+- ファイル: Shōmyō-ji Imaizumi Kamakura, Acala hall (2015-09-20).jpg
+- 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2015年9月20日
+- 置き場所: img/photo/c10-shomyoji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg
+- クレジット: 撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_enkoji（円光寺・参道）
+- 使用ページ: knowledge/c11.html
+- ファイル: Enko-ji, Kamakura.jpg
+- 撮影者: 運動会プロテインパワー／ライセンス: CC BY-SA 4.0／撮影日: 2024年8月
+- 置き場所: img/photo/c11-enkoji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg
+- クレジット: 撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_tamonin（多聞院・本堂）
+- 使用ページ: knowledge/c12.html
+- ファイル: Tamon-in Ōfuna Kamakura, Main hall (2025-08-20).jpg
+- 撮影者: Twkz0731／ライセンス: CC BY 4.0／撮影日: 2025年8月20日
+- 置き場所: img/photo/c12-tamonin.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Tamon-in_%C5%8Dfuna_Kamakura,_Main_hall_(2025-08-20).jpg
+- クレジット: 撮影：Twkz0731（CC BY 4.0）。ウィキメディア・コモンズ
+
+### photo_seirenji（青蓮寺・山門）
+- 使用ページ: knowledge/c13.html
+- ファイル: P4280005 Seirenji temple main gate.JPG
+- 撮影者: KMR／ライセンス: CC BY-SA 3.0／撮影日: 2007年4月28日
+- 置き場所: img/photo/c13-seirenji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:P4280005_Seirenji_temple_main_gate.JPG
+- クレジット: 撮影：KMR（CC BY-SA 3.0）。ウィキメディア・コモンズ
+- 備考: 元画像が1,024×768pxで、ブリーフの推奨（長い辺1400px以上）に届かない。他に代わりとなる候補が見つからなかったため、最良のものとして採用。
+
+### photo_bukkoji（仏行寺・山門）
+- 使用ページ: knowledge/c14.html
+- ファイル: 仏行寺.jpg
+- 撮影者: C2revenge／ライセンス: CC BY-SA 4.0／撮影日: 2020年12月20日
+- 置き場所: img/photo/c14-bukkoji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg
+- クレジット: 撮影：C2revenge（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_shinmei（神明神社・拝殿）
+- 使用ページ: knowledge/c15.html
+- ファイル: Shinmei Shrine in Kamakura city.jpg
+- 撮影者: ブルーノ・プラス／ライセンス: CC BY 4.0／撮影日: 2024年10月
+- 置き場所: img/photo/c15-shinmei.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg
+- クレジット: 撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ
+- 備考: GPS Exifの撮影地点をNominatimで逆ジオコーディングし、「神明神社、台五丁目、鎌倉市」と一致することを確認済み。
+
+### photo_suwa（諏訪神社・鳥居）
+- 使用ページ: knowledge/c16.html
+- ファイル: Suwa-jinja, Kamakura-Ueki.jpg
+- 撮影者: 運動会プロテインパワー／ライセンス: CC BY-SA 4.0／撮影日: 2024年8月
+- 置き場所: img/photo/c16-suwa.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Suwa-jinja,_Kamakura-Ueki.jpg
+- クレジット: 撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ

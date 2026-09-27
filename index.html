@@ -818,6 +818,16 @@
   .editor-mark-section .em-label, .editor-mark-section .editor-mark-sub{color:var(--on-ink-soft); opacity:1;}
   /* 57. 奥付の作り手の行は、役割を上・名前を下に組む（役割が5つあるため） */
   .co-dl .co-credit{flex-direction:column; gap:2px;} .co-dl .co-credit dt{flex:none;}
+  /* 56. 古写真の図版（細い枠・キャプションは本の口絵のように。読み込めない時は所蔵館への案内に切り替える） */
+  .plate{margin:18px 0 8px;}
+  .pl-frame{position:relative; background:var(--card); border:1px solid var(--line); padding:8px;}
+  .pl-frame img{display:block; width:100%; height:auto; max-height:72svh; object-fit:contain; background:var(--card);}
+  .pl-alt{display:none; padding:28px 12px; font-size:14px; line-height:1.8; text-align:center; color:var(--ink-soft); text-decoration:none; border-bottom:none;}
+  .pl-fail img{display:none;} .pl-fail .pl-alt{display:block;}
+  .plate figcaption{margin:10px 0 0;}
+  .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
+  .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
+  .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
 </style>
 <noscript><style>.card{opacity:1 !important;} .drawer, .hamburger{display:none !important;}</style></noscript>
 <script type="application/ld+json">
@@ -1151,6 +1161,7 @@
 <section class="read">
   <h2 class="sec-label">歩く前に、読む</h2>
   <ul class="read-list"><li><a href="basics.html"><span class="rd-t">歩く前の基礎知識</span><span class="rd-d"><ruby class="o1">切通<rt>きりどおし</rt></ruby>・谷戸・鎌倉五山など、コースに断りなく出てくる言葉。</span><span class="rd-go">→</span></a></li><li><a href="history.html"><span class="rd-t">コース別・歴史の基本知識</span><span class="rd-d">神社仏閣を見る7つの視点と、全30コースの知識。</span><span class="rd-go">→</span></a></li><li><a href="timeline.html"><span class="rd-t">鎌・くらんぽ年表</span><span class="rd-d">7つの時期と、その頃に建てられた寺社。</span><span class="rd-go">→</span></a></li><li><a href="persons.html"><span class="rd-t">鎌・くらんぽ人物相関図</span><span class="rd-d">源氏・北条氏・足利氏など、一族と人の関係。</span><span class="rd-go">→</span></a></li><li><a href="religions.html"><span class="rd-t">鎌・くらんぽ宗教関係図</span><span class="rd-d">新しい仏教が次々に生まれた理由と、宗派どうしに起きた出来事。</span><span class="rd-go">→</span></a></li><li><a href="photos.html"><span class="rd-t">古写真で歩く鎌倉</span><span class="rd-d">幕末から明治の大仏と、取り壊される前の八幡宮の塔。</span><span class="rd-go">→</span></a></li><li><a href="quiz.html"><span class="rd-t">鎌・くらんぽクイズ</span><span class="rd-d">歩いた後に、テーマごとの「編」で確かめるドリル。</span><span class="rd-go">→</span></a></li></ul>
+<figure class="plate"><div class="pl-frame"><img src="img/old/ndl-meisho-daibutsu.jpg" data-fb="https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_180a.jpg|https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_180a.webp" alt="『日本之名勝』の「大仏」" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}"><a class="pl-alt" href="https://dl.ndl.go.jp/pid/762809/1/180" target="_blank" rel="noopener">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class="pl-cap">1900年（明治33年）の写真帖『日本之名勝』に載った「大仏」です。ほかの古写真は、<a href="photos.html">古写真で歩く鎌倉</a>で見られます。</span><span class="pl-cr">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href="https://dl.ndl.go.jp/pid/762809/1/180" target="_blank" rel="noopener">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>
 </section>
 
 <div class="intro">

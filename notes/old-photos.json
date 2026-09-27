@@ -1,465 +1,609 @@
 [
- {
-  "key": "daito",
-  "urls": [
-   "https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg"
-  ],
-  "local": "img/old/tsurugaoka-daito-1868.jpg",
-  "page": "https://www.getty.edu/art/collection/object/109BY7",
-  "credit": "フェリーチェ・ベアト撮影、1867〜68年。J・ポール・ゲッティ美術館所蔵（パブリックドメイン）"
- },
- {
-  "key": "daibutsu_beato",
-  "urls": [
-   "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900"
-  ],
-  "local": "img/old/daibutsu-beato-1863.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif",
-  "credit": "フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89895）所蔵、パブリックドメイン"
- },
- {
-  "key": "daibutsu_kusakabe",
-  "urls": [
-   "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif?width=900"
-  ],
-  "local": "img/old/daibutsu-kusakabe-1890.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif",
-  "credit": "日下部金兵衛撮影、1890年ごろ。ライデン大学図書館（KITLV 110621）所蔵、パブリックドメイン"
- },
- {
-  "key": "village",
-  "urls": [
-   "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900"
-  ],
-  "local": "img/old/kamakura-village-beato-1863.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif",
-  "credit": "フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89897）所蔵、パブリックドメイン"
- },
- {
-  "key": "hachiman_kusakabe",
-  "urls": [
-   "https://onlinecollections.syr.edu/internal/media/dispatcher/18393/preview"
-  ],
-  "local": "img/old/tsurugaoka-kusakabe-19c.jpg",
-  "page": "https://onlinecollections.syr.edu/objects/31184/shinto-temple-hachiman-kamakura",
-  "credit": "日下部金兵衛撮影、19世紀。シラキュース大学美術館所蔵（1986.475、パブリックドメイン）"
- },
- {
-  "key": "daibutsu_1902",
-  "urls": [
-   "https://commons.wikimedia.org/wiki/Special:FilePath/Japan_and_her_people_(1902)_(14773933184).jpg?width=900"
-  ],
-  "local": "img/old/daibutsu-1902.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Japan_and_her_people_(1902)_(14773933184).jpg",
-  "credit": "『Japan and her people』（1902年）より。パブリックドメイン"
- },
- {
-  "key": "daibutsu_ogawa",
-  "urls": [
-   "https://commons.wikimedia.org/wiki/Special:FilePath/Plate_14_-_Sights_and_scenes_in_fair_Japan,_by_Kazumasa_Ogawa_(1860-1930),_published_in_1914,_from_The_Clark_Digital_Collections_-_p1325coll1_3417_full.jpg?width=900"
-  ],
-  "local": "img/old/daibutsu-ogawa-1914.jpg",
-  "page": "https://commons.wikimedia.org/wiki/File:Plate_14_-_Sights_and_scenes_in_fair_Japan,_by_Kazumasa_Ogawa_(1860-1930),_published_in_1914,_from_The_Clark_Digital_Collections_-_p1325coll1_3417_full.jpg",
-  "credit": "小川一真撮影、写真集『Sights and Scenes in Fair Japan』（1914年）の図版14。クラーク美術館所蔵、パブリックドメイン"
- },
- {
-  "key": "ndl_meisho_enkakuji_sanmon",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1418,1831,910,600/,600/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1418,1831,910,600/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-meisho-enkakuji-sanmon.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/181",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_kenchoji_sanmon",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1406,1083,920,606/,606/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1406,1083,920,606/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-meisho-kenchoji-sanmon.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/181",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_hase",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_180b.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_180b.webp"
-  ],
-  "local": "img/old/ndl-meisho-hase.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/180",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_180a.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_180a.webp"
-  ],
-  "local": "img/old/ndl-meisho-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/180",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_hachiman",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_179a.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_179a.webp"
-  ],
-  "local": "img/old/ndl-meisho-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/179",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_yuigahama",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,604/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-meisho-yuigahama.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/176",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_inamura",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,614/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-meisho-inamura.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/176",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_shichiri",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,620/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-meisho-shichiri.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/184",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_meisho_ryukoji",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_182a.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_182a.webp"
-  ],
-  "local": "img/old/ndl-meisho-ryukoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762809/1/182",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hyakkei_kane",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762810_38.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762810_38.webp"
-  ],
-  "local": "img/old/ndl-hyakkei-kane.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762810/1/38",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hyakkei_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762810_36.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762810_36.webp"
-  ],
-  "local": "img/old/ndl-hyakkei-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762810/1/36",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hyakkei_hachiman",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762810/R0000037/1434,1017,2020,1322/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762810/R0000037/1434,1017,2020,1322/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-hyakkei-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762810/1/37",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_chiri_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/761460_14.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/761460_14.webp"
-  ],
-  "local": "img/old/ndl-chiri-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/761460/1/14",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zufu_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762837_13.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762837_13.webp"
-  ],
-  "local": "img/old/ndl-zufu-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762837/1/13",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zufu_hachiman",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762837/R0000012/1104,874,2356,1792/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762837/R0000012/1104,874,2356,1792/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zufu-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762837/1/12",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_fuzoku_daibutsu",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/762817/R0000021/1420,862,2616,1760/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/762817/R0000021/1420,862,2616,1760/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-fuzoku-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/762817/1/21",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/12767897_54.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/12767897_54.webp"
-  ],
-  "local": "img/old/ndl-kanto-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/54",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_enkakuji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000053/1096,498,2292,1596/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000053/1096,498,2292,1596/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-kanto-enkakuji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/53",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_kenchoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000052/1168,478,2280,1596/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000052/1168,478,2280,1596/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-kanto-kenchoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/52",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_kamakuragu",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-kanto-kamakuragu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/51",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_hachiman",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/12767897_50.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/12767897_50.webp"
-  ],
-  "local": "img/old/ndl-kanto-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/50",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_koshigoe",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-kanto-koshigoe.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/62",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_kanto_yugyoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000049/1136,478,2288,1572/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12767897/R0000049/1136,478,2288,1572/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-kanto-yugyoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12767897/1/49",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_dai_kamakuragu",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-dai-kamakuragu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_dai_enkakuji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4576,666,1768,1072/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4576,666,1768,1072/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-dai-enkakuji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_dai_kenchoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/6372,690,1360,1060/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/6372,690,1360,1060/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-dai-kenchoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_dai_hachiman",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/5936,1774,1784,1056/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/5936,1774,1784,1056/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-dai-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_dai_enoshima",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000029/1040,622,3128,2132/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/12984526/R0000029/1040,622,3128,2132/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-dai-enoshima.jpg",
-  "page": "https://dl.ndl.go.jp/pid/12984526/1/29",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_hachiman",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000022/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000022/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/22",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_ichinotorii",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000023/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000023/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-ichinotorii.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/23",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_yuihama",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000024/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000024/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-yuihama.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/24",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_kenchoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000035/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000035/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-kenchoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/35",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_enkakuji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000038/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000038/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-enkakuji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/38",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_komyoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-komyoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/46",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_zue_yugyoji",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000053/full/1000,843/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2559319/R0000053/full/500,422/0/default.jpg"
-  ],
-  "local": "img/old/ndl-zue-yugyoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2559319/1/53",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hasui_daibutsu",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/2586549_30.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/2586549_30.webp"
-  ],
-  "local": "img/old/ndl-hasui-daibutsu.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2586549/1/30",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hasui_kenchoji",
-  "urls": [
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc/2586549_51.jpg",
-   "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/2586549_51.webp"
-  ],
-  "local": "img/old/ndl-hasui-kenchoji.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2586549/1/51",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hasui_shichiri",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-hasui-shichiri.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2586549/1/33",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_hasui_hachiman",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2586550/R0000021/1104,937,5184,7872/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2586550/R0000021/1104,937,5184,7872/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-hasui-hachiman.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2586550/1/21",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- },
- {
-  "key": "ndl_fukei_yuigahama",
-  "urls": [
-   "https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,900/0/default.jpg",
-   "https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,200/0/default.jpg"
-  ],
-  "local": "img/old/ndl-fukei-yuigahama.jpg",
-  "page": "https://dl.ndl.go.jp/pid/2550826/1/17",
-  "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
- }
+  {
+    "key": "daito",
+    "urls": [
+      "https://media.getty.edu/iiif/image/0e79db7a-96de-4ee0-807f-04457a415d7a/full/!900,900/0/default.jpg"
+    ],
+    "local": "img/old/tsurugaoka-daito-1868.jpg",
+    "page": "https://www.getty.edu/art/collection/object/109BY7",
+    "credit": "フェリーチェ・ベアト撮影、1867〜68年。J・ポール・ゲッティ美術館所蔵（パブリックドメイン）"
+  },
+  {
+    "key": "daibutsu_beato",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900"
+    ],
+    "local": "img/old/daibutsu-beato-1863.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif",
+    "credit": "フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89895）所蔵、パブリックドメイン"
+  },
+  {
+    "key": "daibutsu_kusakabe",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif?width=900"
+    ],
+    "local": "img/old/daibutsu-kusakabe-1890.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_110621_-_Kusakabe,_Kimbei_-_Buddha_statue_at_Daibutsu,_Kamakura,_Japan_-_circa_1890.tif",
+    "credit": "日下部金兵衛撮影、1890年ごろ。ライデン大学図書館（KITLV 110621）所蔵、パブリックドメイン"
+  },
+  {
+    "key": "village",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif?width=900"
+    ],
+    "local": "img/old/kamakura-village-beato-1863.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:KITLV_-_89897_-_Beato,_Felice_-_Village_at_Kamakura_in_Japan_-_presumably_1863-1865.tif",
+    "credit": "フェリーチェ・ベアト撮影、1863〜65年ごろ。ライデン大学図書館（KITLV 89897）所蔵、パブリックドメイン"
+  },
+  {
+    "key": "hachiman_kusakabe",
+    "urls": [
+      "https://onlinecollections.syr.edu/internal/media/dispatcher/18393/preview"
+    ],
+    "local": "img/old/tsurugaoka-kusakabe-19c.jpg",
+    "page": "https://onlinecollections.syr.edu/objects/31184/shinto-temple-hachiman-kamakura",
+    "credit": "日下部金兵衛撮影、19世紀。シラキュース大学美術館所蔵（1986.475、パブリックドメイン）"
+  },
+  {
+    "key": "daibutsu_1902",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Japan_and_her_people_(1902)_(14773933184).jpg?width=900"
+    ],
+    "local": "img/old/daibutsu-1902.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Japan_and_her_people_(1902)_(14773933184).jpg",
+    "credit": "『Japan and her people』（1902年）より。パブリックドメイン"
+  },
+  {
+    "key": "daibutsu_ogawa",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Plate_14_-_Sights_and_scenes_in_fair_Japan,_by_Kazumasa_Ogawa_(1860-1930),_published_in_1914,_from_The_Clark_Digital_Collections_-_p1325coll1_3417_full.jpg?width=900"
+    ],
+    "local": "img/old/daibutsu-ogawa-1914.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Plate_14_-_Sights_and_scenes_in_fair_Japan,_by_Kazumasa_Ogawa_(1860-1930),_published_in_1914,_from_The_Clark_Digital_Collections_-_p1325coll1_3417_full.jpg",
+    "credit": "小川一真撮影、写真集『Sights and Scenes in Fair Japan』（1914年）の図版14。クラーク美術館所蔵、パブリックドメイン"
+  },
+  {
+    "key": "ndl_meisho_enkakuji_sanmon",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1418,1831,910,600/,600/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1418,1831,910,600/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-meisho-enkakuji-sanmon.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/181",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_kenchoji_sanmon",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1406,1083,920,606/,606/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000181/1406,1083,920,606/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-meisho-kenchoji-sanmon.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/181",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_hase",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_180b.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_180b.webp"
+    ],
+    "local": "img/old/ndl-meisho-hase.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/180",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_180a.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_180a.webp"
+    ],
+    "local": "img/old/ndl-meisho-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/180",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_hachiman",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_179a.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_179a.webp"
+    ],
+    "local": "img/old/ndl-meisho-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/179",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_yuigahama",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,604/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2616,1843,894,604/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-meisho-yuigahama.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/176",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_inamura",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,614/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000176/2632,1091,910,614/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-meisho-inamura.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/176",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_shichiri",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,620/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762809/R0000184/3636,1857,910,620/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-meisho-shichiri.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/184",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_meisho_ryukoji",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762809_182a.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762809_182a.webp"
+    ],
+    "local": "img/old/ndl-meisho-ryukoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762809/1/182",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hyakkei_kane",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762810_38.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762810_38.webp"
+    ],
+    "local": "img/old/ndl-hyakkei-kane.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762810/1/38",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hyakkei_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762810_36.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762810_36.webp"
+    ],
+    "local": "img/old/ndl-hyakkei-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762810/1/36",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hyakkei_hachiman",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762810/R0000037/1434,1017,2020,1322/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762810/R0000037/1434,1017,2020,1322/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-hyakkei-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762810/1/37",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_chiri_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/761460_14.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/761460_14.webp"
+    ],
+    "local": "img/old/ndl-chiri-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/761460/1/14",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zufu_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/762837_13.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/762837_13.webp"
+    ],
+    "local": "img/old/ndl-zufu-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762837/1/13",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zufu_hachiman",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762837/R0000012/1104,874,2356,1792/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762837/R0000012/1104,874,2356,1792/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zufu-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762837/1/12",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_fuzoku_daibutsu",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/762817/R0000021/1420,862,2616,1760/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/762817/R0000021/1420,862,2616,1760/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-fuzoku-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/762817/1/21",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/12767897_54.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/12767897_54.webp"
+    ],
+    "local": "img/old/ndl-kanto-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/54",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_enkakuji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000053/1096,498,2292,1596/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000053/1096,498,2292,1596/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-kanto-enkakuji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/53",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_kenchoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000052/1168,478,2280,1596/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000052/1168,478,2280,1596/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-kanto-kenchoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/52",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_kamakuragu",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000051/1172,490,2280,1616/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-kanto-kamakuragu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/51",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_hachiman",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/12767897_50.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/12767897_50.webp"
+    ],
+    "local": "img/old/ndl-kanto-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/50",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_koshigoe",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000062/1080,534,2284,1548/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-kanto-koshigoe.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/62",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kanto_yugyoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000049/1136,478,2288,1572/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12767897/R0000049/1136,478,2288,1572/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-kanto-yugyoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12767897/1/49",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_dai_kamakuragu",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4568,1778,1344,1028/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-dai-kamakuragu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_dai_enkakuji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4576,666,1768,1072/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/4576,666,1768,1072/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-dai-enkakuji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_dai_kenchoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/6372,690,1360,1060/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/6372,690,1360,1060/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-dai-kenchoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_dai_hachiman",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/5936,1774,1784,1056/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000034/5936,1774,1784,1056/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-dai-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12984526/1/34",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_dai_enoshima",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000029/1040,622,3128,2132/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/12984526/R0000029/1040,622,3128,2132/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-dai-enoshima.jpg",
+    "page": "https://dl.ndl.go.jp/pid/12984526/1/29",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_hachiman",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000022/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000022/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/22",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_ichinotorii",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000023/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000023/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-ichinotorii.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/23",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_yuihama",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000024/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000024/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-yuihama.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/24",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_kenchoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000035/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000035/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-kenchoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/35",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_enkakuji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000038/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000038/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-enkakuji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/38",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_komyoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000046/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-komyoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/46",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_zue_yugyoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000053/full/1000,843/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2559319/R0000053/full/500,422/0/default.jpg"
+    ],
+    "local": "img/old/ndl-zue-yugyoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2559319/1/53",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hasui_daibutsu",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/2586549_30.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/2586549_30.webp"
+    ],
+    "local": "img/old/ndl-hasui-daibutsu.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2586549/1/30",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hasui_kenchoji",
+    "urls": [
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc/2586549_51.jpg",
+      "https://ndlsearch.ndl.go.jp/files/imagebank/dc_t/2586549_51.webp"
+    ],
+    "local": "img/old/ndl-hasui-kenchoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2586549/1/51",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hasui_shichiri",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-hasui-shichiri.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2586549/1/33",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_hasui_hachiman",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2586550/R0000021/1104,937,5184,7872/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2586550/R0000021/1104,937,5184,7872/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-hasui-hachiman.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2586550/1/21",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_fukei_yuigahama",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,900/0/default.jpg",
+      "https://dl.ndl.go.jp/api/iiif/2550826/R0000017/852,738,3416,2520/,200/0/default.jpg"
+    ],
+    "local": "img/old/ndl-fukei-yuigahama.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2550826/1/17",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」"
+  },
+  {
+    "key": "ndl_kamakurashi_jomyoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2563542/R0000158/pct:1,22,47,58/1400,1525/0/default.jpg"
+    ],
+    "local": "img/old/ndl-g9-jomyoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2563542/1/158",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション"
+  },
+  {
+    "key": "ndl_kamakurashi_jufukuji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2563543/R0000103/pct:54,12,38,72/1400,2284/0/default.jpg"
+    ],
+    "local": "img/old/ndl-pe3-jufukuji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2563543/1/103",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション"
+  },
+  {
+    "key": "ndl_kamakurashi_eishoji",
+    "urls": [
+      "https://dl.ndl.go.jp/api/iiif/2563543/R0000111/pct:6,13,46,71/1400,1862/0/default.jpg"
+    ],
+    "local": "img/old/ndl-re7-eishoji.jpg",
+    "page": "https://dl.ndl.go.jp/pid/2563543/1/111",
+    "credit": "国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション"
+  },
+  {
+    "key": "photo_zeniarai",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Row_of_Timber_Torii_at_the_Zeniarai_Benzaiten_Shrine.jpg"
+    ],
+    "local": "img/photo/c1-zeniarai.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Row_of_Timber_Torii_at_the_Zeniarai_Benzaiten_Shrine.jpg",
+    "credit": "撮影：Ethan Doyle White（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_yakuoji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakuouji_kamakura_01.JPG"
+    ],
+    "local": "img/photo/c3-yakuoji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Yakuouji_kamakura_01.JPG",
+    "credit": "撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_ofuna_kannon",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Approach_to_Ofuna_Kannonji_Temple.jpg"
+    ],
+    "local": "img/photo/g12-ofuna-kannon.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Approach_to_Ofuna_Kannonji_Temple.jpg",
+    "credit": "撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_jorakuji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_(2015-03-31).jpg"
+    ],
+    "local": "img/photo/pe5-jorakuji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_(2015-03-31).jpg",
+    "credit": "撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_ryuhoji_sanmon",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ryuhouji01.jpg"
+    ],
+    "local": "img/photo/pe7-ryuhoji-sanmon.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ryuhouji01.jpg",
+    "credit": "撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_ryuhoji_hondo",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Ryuhouji03.jpg"
+    ],
+    "local": "img/photo/ti10-ryuhoji-hondo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ryuhouji03.jpg",
+    "credit": "撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_shomyoji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg"
+    ],
+    "local": "img/photo/c10-shomyoji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg",
+    "credit": "撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_enkoji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Enko-ji,_Kamakura.jpg"
+    ],
+    "local": "img/photo/c11-enkoji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg",
+    "credit": "撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_tamonin",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Tamon-in_%C5%8Dfuna_Kamakura,_Main_hall_(2025-08-20).jpg"
+    ],
+    "local": "img/photo/c12-tamonin.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamon-in_%C5%8Dfuna_Kamakura,_Main_hall_(2025-08-20).jpg",
+    "credit": "撮影：Twkz0731（CC BY 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_seirenji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/P4280005_Seirenji_temple_main_gate.JPG"
+    ],
+    "local": "img/photo/c13-seirenji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:P4280005_Seirenji_temple_main_gate.JPG",
+    "credit": "撮影：KMR（CC BY-SA 3.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_bukkoji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg"
+    ],
+    "local": "img/photo/c14-bukkoji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg",
+    "credit": "撮影：C2revenge（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_shinmei",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Shinmei_Shrine_in_Kamakura_city.jpg"
+    ],
+    "local": "img/photo/c15-shinmei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg",
+    "credit": "撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_suwa",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Suwa-jinja,_Kamakura-Ueki.jpg"
+    ],
+    "local": "img/photo/c16-suwa.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Suwa-jinja,_Kamakura-Ueki.jpg",
+    "credit": "撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  }
 ]

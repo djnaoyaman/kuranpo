@@ -406,9 +406,20 @@
 - 置き場所: img/old/ndl-re7-eishoji.jpg
 - クレジット: 国立国会図書館所蔵。出典：国立国会図書館デジタルコレクション
 
-## 作業C：no-photoページ用の現在の写真（13点。notes/fetch_photos_c.py で取得済み）
+## 作業C：no-photoページ用の現在の写真（見直し後・10点）
 
-作業Bで空欄のままだった14ページに、ウィキメディア・コモンズの現在の写真を採用（うち常楽寺の1点はpe5.html／ti4.htmlの2ページで共用）。いずれもCC BY-SA/CC BYで、山門・本堂・鳥居など建物名が写真の説明文自体に明記されているものだけを選んだ。
+作業Bで空欄のままだった14ページに、ウィキメディア・コモンズの現在の写真を採用。最初は13点・14ページ全てに写真を入れたが、なおちゃんからの指摘（1.Altにサイト名・撮影者名を併記／2.記事本文に出てこない建物は使わない／3.複数ページでの写真の使い回しをやめる／4.美しく建物や空間を感じられる写真に絞る）を受けて見直し、次の4ページは写真を外して空欄に戻した。
+
+- c3（扇ガ谷② 未収録寺）：本文で名前が出るのは護国寺・英勝寺・海蔵寺のみ（薬王寺は立ち寄り先一覧にしかない）。護国寺はウィキペディアにも項目がなく、ウィキメディア・コモンズにも写真が見つからなかったため、空欄に戻した。
+- c11（玉縄エリア②）：本文が「家臣や領民が建てたとされるお寺」という書き方で、円光寺・久成寺・貞宗寺・金剛寺のどれも名指ししていない。本文で名前が出る龍宝寺・大船観音寺はpe7/ti10/g12で使用済みのため使い回しになる。空欄に戻した。
+- c14（深沢エリア② 常盤・笛田・梶原）：本文で名前が出るのは三嶋神社のみ（仏行寺は立ち寄り先一覧にしかない）。三嶋神社（笛田）はウィキメディア・コモンズに写真が見つからなかったため、空欄に戻した。
+- c15（台エリア 未収録の社）：本文が「小さな神社がいくつも残っています」という書き方で、神明神社を含めどの社も名指ししていない。空欄に戻した。
+
+置き換え・追加：
+- c10：本文で名前が出るのは大長寺のみ（称名寺は立ち寄り先一覧にしかない）。称名寺の写真を外し、大長寺の写真に差し替えた。
+- pe5／ti4：どちらも本文で「常楽寺」と名指ししているため写真自体は必要だが、同じ1枚を2ページで使い回していたのをやめ、ti4には別カット（桜の時期のもの）を新たに採用した。pe5は元の写真のまま。
+
+Alt属性は「{寺社名}の{写っているもの}（撮影：{撮影者}、ウィキメディア・コモンズ）」の形に統一し、サイト名（ウィキメディア・コモンズ）と撮影者名を必ず併記するようにした。
 
 ### photo_zeniarai（銭洗弁財天・鳥居）
 - 使用ページ: knowledge/c1.html
@@ -416,15 +427,8 @@
 - 撮影者: Ethan Doyle White／ライセンス: CC BY-SA 4.0／撮影日: 2019年3月18日
 - 置き場所: img/photo/c1-zeniarai.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Row_of_Timber_Torii_at_the_Zeniarai_Benzaiten_Shrine.jpg
+- Alt: 銭洗弁財天の鳥居（撮影：Ethan Doyle White、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：Ethan Doyle White（CC BY-SA 4.0）。ウィキメディア・コモンズ
-
-### photo_yakuoji（薬王寺・本堂）
-- 使用ページ: knowledge/c3.html
-- ファイル: Yakuouji kamakura 01.JPG
-- 撮影者: kamakura／ライセンス: CC BY-SA 3.0／撮影日: 2010年4月19日
-- 置き場所: img/photo/c3-yakuoji.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:Yakuouji_kamakura_01.JPG
-- クレジット: 撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ
 
 ### photo_ofuna_kannon（大船観音寺・参道）
 - 使用ページ: knowledge/g12.html
@@ -432,16 +436,28 @@
 - 撮影者: ブルーノ・プラス／ライセンス: CC BY 4.0／撮影日: 2024年11月
 - 置き場所: img/photo/g12-ofuna-kannon.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Approach_to_Ofuna_Kannonji_Temple.jpg
+- Alt: 大船観音寺の参道（撮影：ブルーノ・プラス、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ
-- 備考: 大船観音の像そのものは日本の著作権法46条（美術の著作物の保護）の対象になり得るため、像自体ではなく参道の写真を選んだ。
+- 備考: 観音像そのものは日本の著作権法46条の対象になり得るため、像自体ではなく参道の写真を選んだ。
 
 ### photo_jorakuji（常楽寺・本堂）
-- 使用ページ: knowledge/pe5.html, knowledge/ti4.html（同じ写真を共用）
+- 使用ページ: knowledge/pe5.html
 - ファイル: Jōraku-ji Ōfuna Kamakura, Main hall (2015-03-31).jpg
 - 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2015年3月31日
 - 置き場所: img/photo/pe5-jorakuji.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_(2015-03-31).jpg
+- Alt: 常楽寺の本堂（撮影：Twkz0731、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ
+
+### photo_jorakuji_sakura（常楽寺・本堂／桜）
+- 使用ページ: knowledge/ti4.html
+- ファイル: Jōraku-ji Ōfuna Kamakura, Main hall with Sakura (2015-03-31).jpg
+- 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2015年3月31日
+- 置き場所: img/photo/ti4-jorakuji-sakura.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_with_Sakura_(2015-03-31).jpg
+- Alt: 桜の時期の常楽寺の本堂（撮影：Twkz0731、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
+- クレジット: 撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ
+- 備考: pe5と同じ寺だが、写真の使い回しを避けるため別カット（桜の時期）を採用。
 
 ### photo_ryuhoji_sanmon（龍宝寺・山門）
 - 使用ページ: knowledge/pe7.html
@@ -449,6 +465,7 @@
 - 撮影者: kamakura／ライセンス: CC BY-SA 2.5／撮影日: 2007年5月16日
 - 置き場所: img/photo/pe7-ryuhoji-sanmon.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Ryuhouji01.jpg
+- Alt: 龍宝寺の山門（撮影：kamakura、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ
 
 ### photo_ryuhoji_hondo（龍宝寺・本堂）
@@ -457,23 +474,18 @@
 - 撮影者: kamakura／ライセンス: CC BY-SA 2.5／撮影日: 2007年5月16日
 - 置き場所: img/photo/ti10-ryuhoji-hondo.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Ryuhouji03.jpg
+- Alt: 龍宝寺の本堂（撮影：kamakura、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ
 
-### photo_shomyoji（称名寺・不動堂）
+### photo_daichoji（大長寺・本堂）
 - 使用ページ: knowledge/c10.html
-- ファイル: Shōmyō-ji Imaizumi Kamakura, Acala hall (2015-09-20).jpg
-- 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2015年9月20日
-- 置き場所: img/photo/c10-shomyoji.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg
+- ファイル: Daichō-ji Iwase Kamakura, Main hall (2016-10-31).jpg
+- 撮影者: Twkz0731／ライセンス: CC BY-SA 4.0／撮影日: 2016年10月31日
+- 置き場所: img/photo/c10-daichoji.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Daich%C5%8D-ji_Iwase_Kamakura,_Main_hall_(2016-10-31).jpg
+- Alt: 大長寺の本堂（撮影：Twkz0731、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ
-
-### photo_enkoji（円光寺・参道）
-- 使用ページ: knowledge/c11.html
-- ファイル: Enko-ji, Kamakura.jpg
-- 撮影者: 運動会プロテインパワー／ライセンス: CC BY-SA 4.0／撮影日: 2024年8月
-- 置き場所: img/photo/c11-enkoji.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg
-- クレジット: 撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ
+- 備考: 称名寺（本文に登場しない）から差し替え。
 
 ### photo_tamonin（多聞院・本堂）
 - 使用ページ: knowledge/c12.html
@@ -481,33 +493,18 @@
 - 撮影者: Twkz0731／ライセンス: CC BY 4.0／撮影日: 2025年8月20日
 - 置き場所: img/photo/c12-tamonin.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Tamon-in_%C5%8Dfuna_Kamakura,_Main_hall_(2025-08-20).jpg
+- Alt: 多聞院の本堂（撮影：Twkz0731、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：Twkz0731（CC BY 4.0）。ウィキメディア・コモンズ
 
-### photo_seirenji（青蓮寺・山門）
+### photo_seirenji_hondo（青蓮寺・本堂）
 - 使用ページ: knowledge/c13.html
-- ファイル: P4280005 Seirenji temple main gate.JPG
-- 撮影者: KMR／ライセンス: CC BY-SA 3.0／撮影日: 2007年4月28日
-- 置き場所: img/photo/c13-seirenji.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:P4280005_Seirenji_temple_main_gate.JPG
-- クレジット: 撮影：KMR（CC BY-SA 3.0）。ウィキメディア・コモンズ
-- 備考: 元画像が1,024×768pxで、ブリーフの推奨（長い辺1400px以上）に届かない。他に代わりとなる候補が見つからなかったため、最良のものとして採用。
-
-### photo_bukkoji（仏行寺・山門）
-- 使用ページ: knowledge/c14.html
-- ファイル: 仏行寺.jpg
-- 撮影者: C2revenge／ライセンス: CC BY-SA 4.0／撮影日: 2020年12月20日
-- 置き場所: img/photo/c14-bukkoji.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg
-- クレジット: 撮影：C2revenge（CC BY-SA 4.0）。ウィキメディア・コモンズ
-
-### photo_shinmei（神明神社・拝殿）
-- 使用ページ: knowledge/c15.html
-- ファイル: Shinmei Shrine in Kamakura city.jpg
-- 撮影者: ブルーノ・プラス／ライセンス: CC BY 4.0／撮影日: 2024年10月
-- 置き場所: img/photo/c15-shinmei.jpg
-- ファイルのページ: https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg
-- クレジット: 撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ
-- 備考: GPS Exifの撮影地点をNominatimで逆ジオコーディングし、「神明神社、台五丁目、鎌倉市」と一致することを確認済み。
+- ファイル: Kusaridaishi01.jpg
+- 撮影者: kamakura／ライセンス: CC BY-SA 3.0／撮影日: 2005年3月24日
+- 置き場所: img/photo/c13-seirenji-hondo.jpg
+- ファイルのページ: https://commons.wikimedia.org/wiki/File:Kusaridaishi01.jpg
+- Alt: 青蓮寺の本堂（撮影：kamakura、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
+- クレジット: 撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ
+- 備考: 「全体をカラーで芸術性の高いものに」との指摘を受けて見直し。山門の写真（電線・幟が写り込み、960×720程度）から、飯盛山を背にした本堂の写真に差し替えた。
 
 ### photo_suwa（諏訪神社・鳥居）
 - 使用ページ: knowledge/c16.html
@@ -515,4 +512,5 @@
 - 撮影者: 運動会プロテインパワー／ライセンス: CC BY-SA 4.0／撮影日: 2024年8月
 - 置き場所: img/photo/c16-suwa.jpg
 - ファイルのページ: https://commons.wikimedia.org/wiki/File:Suwa-jinja,_Kamakura-Ueki.jpg
+- Alt: 諏訪神社の鳥居（撮影：運動会プロテインパワー、ウィキメディア・コモンズ）｜鎌・くらんぽ（クランポック制作）
 - クレジット: 撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ

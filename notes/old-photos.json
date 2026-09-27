@@ -499,15 +499,6 @@
     "credit": "撮影：Ethan Doyle White（CC BY-SA 4.0）。ウィキメディア・コモンズ"
   },
   {
-    "key": "photo_yakuoji",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Yakuouji_kamakura_01.JPG"
-    ],
-    "local": "img/photo/c3-yakuoji.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Yakuouji_kamakura_01.JPG",
-    "credit": "撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ"
-  },
-  {
     "key": "photo_ofuna_kannon",
     "urls": [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Approach_to_Ofuna_Kannonji_Temple.jpg"
@@ -544,24 +535,6 @@
     "credit": "撮影：kamakura（CC BY-SA 2.5）。ウィキメディア・コモンズ"
   },
   {
-    "key": "photo_shomyoji",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg"
-    ],
-    "local": "img/photo/c10-shomyoji.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dmy%C5%8D-ji_Imaizumi_Kamakura,_Acala_hall_(2015-09-20).jpg",
-    "credit": "撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ"
-  },
-  {
-    "key": "photo_enkoji",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Enko-ji,_Kamakura.jpg"
-    ],
-    "local": "img/photo/c11-enkoji.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Enko-ji,_Kamakura.jpg",
-    "credit": "撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ"
-  },
-  {
     "key": "photo_tamonin",
     "urls": [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Tamon-in_%C5%8Dfuna_Kamakura,_Main_hall_(2025-08-20).jpg"
@@ -571,33 +544,6 @@
     "credit": "撮影：Twkz0731（CC BY 4.0）。ウィキメディア・コモンズ"
   },
   {
-    "key": "photo_seirenji",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/P4280005_Seirenji_temple_main_gate.JPG"
-    ],
-    "local": "img/photo/c13-seirenji.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:P4280005_Seirenji_temple_main_gate.JPG",
-    "credit": "撮影：KMR（CC BY-SA 3.0）。ウィキメディア・コモンズ"
-  },
-  {
-    "key": "photo_bukkoji",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg"
-    ],
-    "local": "img/photo/c14-bukkoji.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:%E4%BB%8F%E8%A1%8C%E5%AF%BA.jpg",
-    "credit": "撮影：C2revenge（CC BY-SA 4.0）。ウィキメディア・コモンズ"
-  },
-  {
-    "key": "photo_shinmei",
-    "urls": [
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Shinmei_Shrine_in_Kamakura_city.jpg"
-    ],
-    "local": "img/photo/c15-shinmei.jpg",
-    "page": "https://commons.wikimedia.org/wiki/File:Shinmei_Shrine_in_Kamakura_city.jpg",
-    "credit": "撮影：ブルーノ・プラス（CC BY 4.0）。ウィキメディア・コモンズ"
-  },
-  {
     "key": "photo_suwa",
     "urls": [
       "https://commons.wikimedia.org/wiki/Special:FilePath/Suwa-jinja,_Kamakura-Ueki.jpg"
@@ -605,5 +551,32 @@
     "local": "img/photo/c16-suwa.jpg",
     "page": "https://commons.wikimedia.org/wiki/File:Suwa-jinja,_Kamakura-Ueki.jpg",
     "credit": "撮影：運動会プロテインパワー（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_daichoji",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Daich%C5%8D-ji_Iwase_Kamakura,_Main_hall_(2016-10-31).jpg"
+    ],
+    "local": "img/photo/c10-daichoji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Daich%C5%8D-ji_Iwase_Kamakura,_Main_hall_(2016-10-31).jpg",
+    "credit": "撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_jorakuji_sakura",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_with_Sakura_(2015-03-31).jpg"
+    ],
+    "local": "img/photo/ti4-jorakuji-sakura.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:J%C5%8Draku-ji_%C5%8Dfuna_Kamakura,_Main_hall_with_Sakura_(2015-03-31).jpg",
+    "credit": "撮影：Twkz0731（CC BY-SA 4.0）。ウィキメディア・コモンズ"
+  },
+  {
+    "key": "photo_seirenji_hondo",
+    "urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Kusaridaishi01.jpg"
+    ],
+    "local": "img/photo/c13-seirenji-hondo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Kusaridaishi01.jpg",
+    "credit": "撮影：kamakura（CC BY-SA 3.0）。ウィキメディア・コモンズ"
   }
 ]

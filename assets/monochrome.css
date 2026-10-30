@@ -221,6 +221,18 @@ html[data-theme="monochrome"] .reveal-line,html[data-theme="monochrome"] .card{o
 @media(forced-colors:active){html[data-theme="monochrome"] .hero,html[data-theme="monochrome"] .kn-hero,html[data-theme="monochrome"] header.site{background:Canvas}
 html[data-theme="monochrome"] button,html[data-theme="monochrome"] a{forced-color-adjust:auto}
 }
+html[data-theme="monochrome"] body[data-page] *{font-family:var(--voice);font-style:normal}
+html[data-theme="monochrome"] header.site .inner{display:block}
+html[data-theme="monochrome"] header.site .inner>h1{writing-mode:horizontal-tb;white-space:normal;text-wrap:balance;display:block;grid-column:auto;grid-row:auto;font-family:var(--voice);font-size:clamp(38px,5.4vw,78px);font-weight:800;line-height:1.25;letter-spacing:-.065em;margin:65px 0 35px 23%;max-width:950px}
+html[data-theme="monochrome"] header.site .inner>h1 .h1-l{display:block;writing-mode:horizontal-tb;white-space:normal}
+html[data-theme="monochrome"] header.site .inner>p.lead{margin-left:23%;max-width:730px}
+@media(max-width:900px){html[data-theme="monochrome"] header.site .inner>h1,html[data-theme="monochrome"] header.site .inner>p.lead{margin-left:12%}
+}
+@media(max-width:600px){html[data-theme="monochrome"] header.site .inner>h1{font-size:37px;line-height:1.35;margin:45px 0 30px 8%}
+html[data-theme="monochrome"] header.site .inner>p.lead{font-size:15px;margin-left:8%}
+}
+@media(max-width:360px){html[data-theme="monochrome"] header.site .inner>h1{font-size:31px}
+}
 
 
 .theme-switch{display:flex;align-items:center;gap:6px;font:11px/1.4 Arial,sans-serif;white-space:nowrap;margin-left:auto;color:inherit}.theme-switch select{font:12px Arial,sans-serif;min-height:36px;max-width:125px;border:1px solid currentColor;background:transparent;color:inherit;border-radius:0;padding:6px}.theme-switch select:focus-visible{outline:2px solid currentColor;outline-offset:3px}html:not([data-theme="monochrome"]) .mono-progress{display:none}@media(max-width:767px){.theme-switch{font-size:0;gap:0}.theme-switch select{font-size:10px;max-width:108px;min-height:36px;padding:5px}.topbar-inner{gap:10px}}

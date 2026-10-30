@@ -9,7 +9,7 @@ const selectedBMarkup="<section class=\"type-hero\"><span class=\"tiny top-note\
 function cancel(){active.forEach(a=>a.cancel());active.clear();}
 function animate(el,frames,options={}){
  if(root.dataset.theme!=='monochrome'||reduced.matches||!el?.animate)return;
- const a=el.animate(frames,{duration:light?300:650,easing:'cubic-bezier(.2,.7,.2,1)',...options});
+ const a=el.animate(frames,{duration:light?300:650,easing:'cubic-bezier(.2,.7,.2,1)',fill:'backwards',...options});
  active.add(a);a.finished.catch(()=>{}).finally(()=>active.delete(a));
 }
 function group(parent,nodes,name){
@@ -21,7 +21,7 @@ function compose(){
  if(document.body.dataset.page==='index'){scene=document.createElement('div');scene.className='b-scene';scene.innerHTML=selectedBMarkup;document.querySelector('.hero').before(scene);}
  const hero=document.querySelector('.hero');
  if(hero){const nodes=[...hero.children];group(hero,nodes.filter(n=>n.matches('.hero-title,.hero-tag')),'mono-statement');group(hero,nodes.filter(n=>!n.matches('.hero-title,.hero-tag')),'mono-context');}
- if(document.body.dataset.page==='course')document.querySelectorAll('.practical').forEach(p=>{const nodes=[...p.children];group(p,nodes.filter(n=>n.matches('.story,.plate')),'mono-reading');group(p,nodes.filter(n=>!n.matches('.story,.plate')),'mono-itinerary');});
+ if(document.body.dataset.page==='course')document.querySelectorAll('.practical').forEach(p=>{const nodes=[...p.children];group(p,nodes.filter(n=>n.matches('.plate')).concat(nodes.filter(n=>n.matches('.story'))),'mono-reading');group(p,nodes.filter(n=>!n.matches('.story,.plate')),'mono-itinerary');});
 }
 function restore(){scene?.remove();scene=null;moved.forEach(([n,m])=>m.replaceWith(n));moved.length=0;wrappers.forEach(w=>w.remove());wrappers.length=0;}
 const control=document.createElement('label');control.className='theme-switch';control.append(document.createTextNode('デザイン '));

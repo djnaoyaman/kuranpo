@@ -19,7 +19,7 @@ for(const mobile of [false,true])test('normal motion recording '+(mobile?'mobile
  const p=await context.newPage();await p.route('https://www.googletagmanager.com/**',r=>r.abort());
  await p.goto('http://127.0.0.1:4173/index.html');
  await expect.poll(()=>p.evaluate(()=>document.getAnimations().filter(a=>a.playState==='running').length)).toBeGreaterThan(0);
- const animated=await p.evaluate(()=>document.getAnimations().filter(a=>a.effect?.target?.matches('.type-hero h1 span')).map(a=>a.effect.getTiming().delay));expect(animated.length).toBe(4);expect(new Set(animated).size).toBe(4);
+ const animated=await p.evaluate(()=>document.getAnimations().filter(a=>a.effect?.target?.matches('.type-hero h1 span')).map(a=>a.effect.getTiming().delay));expect(animated.length).toBe(4);expect(new Set(animated).size).toBe(4);expect(await p.evaluate(()=>document.getAnimations().filter(a=>a.effect?.target?.matches('.type-hero h1 span')).every(a=>a.effect.getTiming().fill==='backwards'))).toBe(true);
  await p.waitForTimeout(2300);await p.screenshot({path:`test-results/normal-motion-settled-${width}.jpg`});
  await p.evaluate(()=>document.querySelector('.type-statement').scrollIntoView({behavior:'smooth'}));await p.waitForTimeout(1500);
  await p.evaluate(()=>document.querySelector('.type-work').scrollIntoView({behavior:'smooth'}));await p.waitForTimeout(1000);

@@ -1,0 +1,26 @@
+from pathlib import Path
+from html.parser import HTMLParser
+import subprocess,os
+ROOT=Path(__file__).resolve().parents[1];BASE=os.environ.get('BASE_REF','65fd428ac08878258ee3bcbbdd1d7b5ec225978a')
+class Audit(HTMLParser):
+ def __init__(self,s):super().__init__(convert_charrefs=True);self.tokens=[];self.skip=0;self.feed(s)
+ def handle_starttag(self,t,a):
+  a=dict(a)
+  if t=='script' and ('data-theme-bootstrap'in a or a.get('src','').endswith('assets/monochrome.js')):self.skip=1;return
+  if t=='link' and a.get('href','').endswith('assets/monochrome.css'):return
+  if self.skip:return
+  if t=='body':a.pop('data-page',None)
+  self.tokens.append(('open',t,tuple(sorted(a.items()))))
+ def handle_endtag(self,t):
+  if self.skip:
+   if t=='script':self.skip=0
+   return
+  self.tokens.append(('close',t))
+ def handle_data(self,s):
+  if not self.skip and s.strip():self.tokens.append(('text',s.strip()))
+files=sorted(ROOT.glob('*.html'))+sorted((ROOT/'knowledge').glob('*.html'));assert len(files)==78
+for f in files:
+ old=subprocess.check_output(['git','show',BASE+':'+str(f.relative_to(ROOT))],cwd=ROOT,text=True);new=f.read_text()
+ assert Audit(old).tokens==Audit(new).tokens,f
+ assert new.count('assets/monochrome.css')==new.count('assets/monochrome.js')==1
+print('PASS: all 78 pages exact original parsed markup, content, scripts, metadata, links and image references, excluding only theme integration.')

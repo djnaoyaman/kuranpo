@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<script data-theme-bootstrap>try{document.documentElement.dataset.theme=localStorage.getItem("kuranpo-design")==="traditional"?"traditional":"monochrome"}catch(e){document.documentElement.dataset.theme="monochrome"}</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RDXKF3Y622"></script>
 <script>
@@ -515,8 +516,9 @@
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "鎌・くらんぽ", "item": "https://djnaoyaman.github.io/kuranpo/"}, {"@type": "ListItem", "position": 2, "name": "鎌・くらんぽクイズ", "item": "https://djnaoyaman.github.io/kuranpo/quiz.html"}]}</script>
 <script>(function(){'use strict';if(window.NaoyamanAnalytics)return;var schemas={creator_site_visit:['target_site'],quiz_start:['quiz_mode'],quiz_answer:[],quiz_timeout:[],quiz_complete:[],quiz_restart:[],encyclopedia_expand:[],reading_mode_select:['reading_mode'],encyclopedia_navigate:['content_group'],walk_filter:['filter_group'],video_open:[],video_seek_request:['position_seconds'],catalog_filter:['filter_group'],music_play:['item_id'],music_pause:['item_id'],music_complete:['item_id'],music_filter:['filter_group'],art_display_open:[],share:['method','content_type']};window.NaoyamanAnalytics={track:function(name,values){try{if(location.hostname!=='djnaoyaman.github.io'||typeof window.gtag!=='function'||!schemas[name])return;var p={send_to:'G-RDXKF3Y622',transport_type:'beacon',page_location:location.origin+location.pathname,page_referrer:document.referrer.split(/[?#]/)[0]};schemas[name].forEach(function(k){var v=(values||{})[k];if(typeof v==='number'&&Number.isFinite(v))p[k]=v;else if(typeof v==='string'&&/^[a-zA-Z0-9_-]{1,80}$/.test(v))p[k]=v;});window.gtag('event',name,p);}catch(_){}}};document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-creator-site]');if(a)window.NaoyamanAnalytics.track('creator_site_visit',{target_site:a.dataset.creatorSite});});})();</script>
-<script src="/kuranpo/course-events.js"></script></head>
-<body>
+<script src="/kuranpo/course-events.js"></script><link rel="stylesheet" href="assets/monochrome.css">
+</head>
+<body data-page="quiz">
 <div class="topbar">
   <div class="topbar-inner">
     <a class="topbar-brand mincho" href="index.html">鎌・くらんぽ</a>
@@ -1049,6 +1051,7 @@
   });
 })();
 </script>
+<script src="assets/monochrome.js" defer></script>
 </body>
 </html>
 

@@ -1,0 +1,15 @@
+[
+  {
+    "path": "index.html",
+    "before": "<meta property=\"og:image\" content=\"https://djnaoyaman.github.io/kuranpo/ogp/index.png?v=20261031-po-mark\">",
+    "after": "<meta property=\"og:image\" content=\"https://djnaoyaman.github.io/kuranpo/ogp/index.png?v=20261031-po-mark\">\n<meta property=\"og:image:type\" content=\"image/png\">",
+    "before_offsets": [
+      1759
+    ],
+    "occurrences": 1,
+    "reason": "Declare MIME type of the existing PNG sharing card; preserve its URL, artwork and all page content.",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/blob/699f6ff319a9bd7944ff205170d7580a8e70f4d6/ogp/index.png"
+    ]
+  }
+]

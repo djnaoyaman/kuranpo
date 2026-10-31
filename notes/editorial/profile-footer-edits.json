@@ -1,0 +1,34 @@
+[
+  {
+    "path": "profile.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 34715,
+    "before_length": 230,
+    "before_sha256": "f2469623983faadbace602e344804d221b72dd0795afa42d0b8b9b2892e6a308",
+    "before_offsets": [
+      34715
+    ],
+    "occurrences": 1,
+    "after": "",
+    "reason": "作者紹介を最小限にする依頼に合わせ、重複した大きい署名と役割列挙を整理。出典と本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 34110,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      34110
+    ],
+    "occurrences": 1,
+    "after": "編集",
+    "reason": "作者紹介を最小限にする依頼に合わせ、重複した大きい署名と役割列挙を整理。出典と本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  }
+]

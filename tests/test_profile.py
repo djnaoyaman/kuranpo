@@ -11,6 +11,8 @@ class Profile(unittest.TestCase):
  def test_compact_intro(self):
   s=(R/'profile.html').read_text();self.assertIn('鎌倉を歩く楽しみから、このサイトは始まりました。道の先にある歴史も、散歩と一緒に楽しめたら。',s);self.assertIn('史料で確かめられることと、語り継がれた話を分けて紹介しています。',s);self.assertIn(f'href="{URL}">作者について</a>',s)
   main=re.search(r'<main>(.*?)</main>',s,re.S)[1];self.assertEqual(main.count('<section'),1);self.assertLess(main.index('class="lead'),main.index('<figure'))
+ def test_no_duplicate_signature(self):
+  s=(R/'profile.html').read_text();self.assertNotIn('class="editor-mark-section"',s);self.assertNotIn('企画・編集・デザイン・制作・文責',s)
  def test_author_schema(self):
   count=0
   for p in [*R.glob('*.html'),*(R/'knowledge').glob('*.html')]:

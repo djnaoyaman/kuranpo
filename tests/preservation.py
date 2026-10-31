@@ -8,6 +8,7 @@ def normalize_update_dates(s):
  return re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\1@UPDATE_DATE@',s)
 # Each authorized editorial replacement is reversible, scoped and source-linked.
 EDITS=json.loads((ROOT/'notes/editorial/edits.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/profile-footer-edits.json').read_text())
 def before_editorial(path,s):
  for e in reversed(EDITS):
   if e['path']!=path:continue

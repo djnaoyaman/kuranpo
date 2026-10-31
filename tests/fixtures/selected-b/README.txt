@@ -1,0 +1,1 @@
+Visual geometry fixture extracted unchanged from owner-selected Site commit 339dd94471b15de2f8815422c994271b28c012fa. Admission fee copy removed per user instruction; images resolve to existing production assets. Not a production page or new design. Original private source remains in original Site Git repository.

@@ -19,11 +19,6 @@ class Editorial(unittest.TestCase):
     for q in qs:
      self.assertEqual(len(q['choices']),4);self.assertEqual(len(set(q['choices'])),4);self.assertIn(q['answer'],range(4));self.assertTrue(q['q'] and q['note'])
   self.assertEqual(total,254)
- def test_moss_stairs_access(self):
-  s=(ROOT/"knowledge/c4.html").read_text()
-  self.assertNotIn("苔むした石段の一段一段は、実際に上って",s)
-  self.assertIn("苔の石段は、保護のため通行できません",s)
-  self.assertIn("苔の石段は通行不可。脇の迂回路",s)
  def test_genealogy(self):
   s=(ROOT/'persons.html').read_text()
   for edge in ['政子の甥（弟・義時の子）','泰時の孫（時氏の子）','貞時の子']:self.assertIn(edge,s)
@@ -36,7 +31,12 @@ class Editorial(unittest.TestCase):
  def test_sharing_cards(self):
   for key in json.loads((ROOT/'notes/editorial/ogp-corrections.json').read_text()):
    b=(ROOT/'ogp'/f'{key}.png').read_bytes();self.assertEqual(b[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',b[16:24]),(1200,630))
-   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f'ogp/{key}.png?v=20261031-editorial1',p.read_text())
+   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f'ogp/{key}.png?v=20261031-editorial2',p.read_text())
  def test_ledger_sources(self):
   for e in json.loads((ROOT/'notes/editorial/edits.json').read_text()):self.assertTrue(e['sources']);self.assertEqual(len(e['before_offsets']),e['occurrences'])
+ def test_moss_stairs_access(self):
+  s=(ROOT/"knowledge/c4.html").read_text()
+  self.assertNotIn("苔むした石段の一段一段は、実際に上って",s)
+  self.assertIn("苔の石段は、保護のため通行できません",s)
+  self.assertIn("苔の石段は通行不可。脇の迂回路",s)
 if __name__=='__main__':unittest.main()

@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Render restrained, article-first monochrome OGP. Icons are never changed."""
 from pathlib import Path
-import json,html,subprocess
+import json,html,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'notes/editorial/ogp-corrections.json'
 def text(x,y,s,size=24,weight=400,spacing=0,anchor='start'):
  return f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" letter-spacing="{spacing}" text-anchor="{anchor}">{html.escape(s)}</text>'
 def logo():
  s=(ROOT/'assets/kuranpo-logo.svg').read_text()
+ scale=190/float(ET.fromstring(s).get('width'))
  s=s[s.index('>')+1:s.rindex('</svg>')]
- return '<g transform="translate(930,22) scale(.5135)">'+s+'</g>'
+ return f'<g transform="translate(930,22) scale({scale})">'+s+'</g>'
 def main():
  out=ROOT/'ogp/source';out.mkdir(exist_ok=True)
  for key,d in json.loads(DATA.read_text()).items():

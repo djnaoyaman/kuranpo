@@ -6562,5 +6562,1256 @@
     "before_offsets": [
       34657
     ]
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 27511,
+    "before_length": 1138,
+    "before_sha256": "a96c911f8d0d29adcfac523e60f4a5988b8dc035c2e10c7f70fa30ec385b0c6e",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"ProfilePage\",\n \"dateCreated\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\",\n \"mainEntity\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"isPartOf\": {\n  \"@type\": \"WebSite\",\n  \"name\": \"鎌・くらんぽ\",\n  \"url\": \"https://djnaoyaman.github.io/kuranpo/\"\n }\n}",
+    "before_offsets": [
+      27511
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "index.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 56492,
+    "before_length": 1001,
+    "before_sha256": "d994a01a9c22176075483bb3d29a11bb51366498d4629c8a62eba3ac9af7dbfd",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"WebSite\",\n \"name\": \"鎌・くらんぽ\",\n \"alternateName\": \"鎌倉散歩、まるごと\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/\",\n \"description\": \"鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅する個人編集のガイド。\",\n \"inLanguage\": [\n  \"ja\",\n  \"en\",\n  \"zh\",\n  \"ko\"\n ],\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n }\n}",
+    "before_offsets": [
+      56492
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34082,
+    "before_length": 1814,
+    "before_sha256": "db97f7c20f6d34808e0cb9b6d7054c4c080354327d62fc52eb47200a0d8dc98c",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"鎌倉宮・覚園寺・瑞泉寺・浄妙寺・報国寺（年表でめぐる）\",\n \"description\": \"この区分に純粋に収まるのは報国寺（1334年）だけ。覚園寺（1296年）・瑞泉寺（1327年）はいずれも幕府滅亡（1333年）より前の建立で…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti9.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti9.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti9.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34082
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34008,
+    "before_length": 1766,
+    "before_sha256": "5d88f249d14f8b227a45c96d9de6796091d300012367546e8fb2e2392165ded0",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"稲村ヶ崎公園（年表でめぐる）\",\n \"description\": \"稲村ヶ崎公園。幕府滅亡の直前、新田義貞がここから鎌倉に攻め入ったという。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti8.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti8.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti8.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34008
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34003,
+    "before_length": 1761,
+    "before_sha256": "e13c7916205f3bd196b064d737a223cd2f2e3578c4bf230068a405cbc723b6a7",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"東勝寺跡・宝戒寺（年表でめぐる）\",\n \"description\": \"東勝寺跡・宝戒寺。鎌倉幕府が終わる、その最後の場所を歩く。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti7.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti7.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti7.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34003
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33961,
+    "before_length": 1779,
+    "before_sha256": "ad03d549e662e6fa03d1c3a21597189c59808f6e8e293ab89c31828f1e945b12",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"極楽寺・成就院・高徳院（年表でめぐる）\",\n \"description\": \"極楽寺・成就院・高徳院。同じ時期、鎌倉の西側では社会事業と大仏の造立が同時に進んでいた。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti6.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti6.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti6.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33961
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34070,
+    "before_length": 1818,
+    "before_sha256": "56e4a0912d7b47ef46e3b3ac8ab0c3357726b75f9cc1ee2b314fdbb616b7398d",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"建長寺・円覚寺（年表でめぐる）\",\n \"description\": \"建長寺は蒙古襲来に先立つ1253年、禅の専門道場として建てられた。円覚寺はその後の1282年、実際の元寇の戦没者供養のために建てられている。年代は近いが、建立の事情は異なる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti5.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti5.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti5.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34070
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33982,
+    "before_length": 1761,
+    "before_sha256": "55566867638a059e92a8c550c507a30b9569c02c819f139a40b0ea5f6a7be42e",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"常楽寺（年表でめぐる）\",\n \"description\": \"常楽寺。同じ時期、大船という郊外にも北条氏の祈りの場が作られていた。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti4.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti4.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti4.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33982
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34071,
+    "before_length": 1815,
+    "before_sha256": "c211ecd31ab38ecfc33fdbda8abd66e92faa5815dab56d1bd17d1b43b7112ce9",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"寿福寺・浄光明寺・海蔵寺（年表でめぐる）\",\n \"description\": \"寿福寺（1200年）・浄光明寺（1251年）は、北条氏が執権として権力を固めていく時期に建てられた。海蔵寺は1394年（応永元年）に上杉氏定が再興したもので…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti3.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti3.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti3.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34071
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34006,
+    "before_length": 1793,
+    "before_sha256": "d740e89421c83994cb52f501665dbbe15b62e1c8bfabe4b36dbeb701d6d048cd",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡（年表でめぐる）\",\n \"description\": \"八幡宮と、政治・祈りの跡地。幕府が形になる時代をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti2.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti2.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti2.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34006
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33974,
+    "before_length": 1786,
+    "before_sha256": "4f8fc69c87fd412e7d892359431f236bf70b3ccd287cc47e6083b82d34223bf6",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"龍宝寺・大船観音寺（年表でめぐる）\",\n \"description\": \"龍宝寺・大船観音寺。鎌倉時代が終わってから何百年も経って、この土地にはまた新しい祈りの場が加わった。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti10.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti10.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti10.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33974
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33937,
+    "before_length": 1773,
+    "before_sha256": "2feb1f3a70f9a20894fdcd41642dd1d7a8a9b791c3b9ff71001b2ad49375466d",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"杉本寺・由比若宮（年表でめぐる）\",\n \"description\": \"杉本寺・由比若宮。鎌倉が武家の都になる、はるか前からここにあったものたちを訪ねる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti1.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/ti1.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/ti1.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33937
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33241,
+    "before_length": 1801,
+    "before_sha256": "526e617bad3d6641d785da0b28e03bd3f86efa97ce600677d2a2ee53760c6d6d",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"浄光明寺・海蔵寺（宗教でめぐる）\",\n \"description\": \"浄光明寺は北条長時の開基。海蔵寺は1394年（応永元年）に上杉氏定が再興した古寺。同じ扇ガ谷に、開いた人物も時代もそれぞれ異なる寺が並ぶ。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re9.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re9.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re9.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33241
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33990,
+    "before_length": 1789,
+    "before_sha256": "3b7ffa5afca1787a688131203140a7d4788d6463ea7ec5eea78afde20329266e",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"極楽寺・成就院・星井寺（宗教でめぐる）\",\n \"description\": \"忍性の律宗と、古くからの真言宗が重なる極楽寺周辺。祈ることと助けることが分かれていなかった時代の輪郭が残る。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re8.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re8.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re8.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33990
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33901,
+    "before_length": 1771,
+    "before_sha256": "0c62174b132ccf84fe3867455b8bdb632bd3a63ab758c86f867a479971bcecae",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"英勝寺（宗教でめぐる）\",\n \"description\": \"お勝の方と水戸徳川家。女性たちが支えた寺を訪ねる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re7.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re7.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re7.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33901
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33214,
+    "before_length": 1790,
+    "before_sha256": "2f21aac2a68bd72b23db0e5e6b209a306aeeb25239c4abc9953cf939240ef184",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"光明寺・九品寺・安養院（宗教でめぐる）\",\n \"description\": \"光明寺・九品寺・安養院。北条氏や新田義貞という、争う立場だった人々がそれぞれ浄土宗の寺を建てているのが面白い。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re6.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re6.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re6.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33214
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34023,
+    "before_length": 1802,
+    "before_sha256": "5835390a3f22cfabbcf7239a6b6f21ba1671d3f0e0a43bcfed3570b2e2231649",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"龍口寺輪番八ヶ寺（宗教でめぐる）\",\n \"description\": \"龍口法難の現場・龍口寺を中心に、輪番で法要を担う八ヶ寺が腰越に残る。江の島の観光地としての顔とは別の、信仰の共同体としての腰越が見えてくる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re5.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re5.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re5.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34023
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34044,
+    "before_length": 1807,
+    "before_sha256": "919339fa50dacfad761333abe0da2d313dbdbf56dc90e6e2107223b33c525aae",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"妙本寺〜妙長寺 8ヶ寺（宗教でめぐる）\",\n \"description\": \"日蓮への迫害の記憶が集まる大町・材木座には、日蓮宗の寺が特に密集している。一つ一つを訪ねると、この土地でどれほど深く信仰が根を張ったかが分かる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re4.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re4.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re4.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34044
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34009,
+    "before_length": 1798,
+    "before_sha256": "d8ad78ecbde0dd42cc1c736cee59c96d1a7ae871b3d01d0d69289a698be3146a",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"浄妙寺・報国寺（宗教でめぐる）\",\n \"description\": \"浄妙寺・報国寺は足利氏という次の時代の主役のための寺。竹林で知られる報国寺の静けさは、この宗派が武家と結びついていた歴史の延長にある。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re3.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re3.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re3.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34009
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33935,
+    "before_length": 1777,
+    "before_sha256": "4d1c84560f79ce354b4369e41e4812e271f00117272c06499081777030996d3a",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"明月院・建長寺・円応寺（宗教でめぐる）\",\n \"description\": \"明月院・建長寺・円応寺。建物と仏像を見比べる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re2.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re2.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re2.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33935
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34006,
+    "before_length": 1796,
+    "before_sha256": "e61ec1193691623dfe8cd4cab39e78c67ddc4bebd4294949bf4ffeb75ef90e80",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"甘縄神明神社・御霊神社（宗教でめぐる）\",\n \"description\": \"甘縄神明神社は鎌倉最古の神社という伝承を持ち、御霊神社は平安時代から続く。長谷という土地の信仰の古さを感じるコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re12.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re12.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re12.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34006
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34050,
+    "before_length": 1808,
+    "before_sha256": "1f40bea51ef5556905ee689c78dded09f53997c2d9133afb66eb0612a1d6a9d8",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"鶴岡八幡宮・荏柄天神社・鎌倉宮（宗教でめぐる）\",\n \"description\": \"鶴岡八幡宮・荏柄天神社・鎌倉宮。源氏の氏神、学問の神、非業の死を遂げた親王。祀られている理由がそれぞれまったく違う神社を続けて歩く。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re11.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re11.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re11.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34050
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34006,
+    "before_length": 1796,
+    "before_sha256": "5180856d40d05226e63251e3990e2365c8c24cdb48bbea496da840f25cb9e2d3",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"杉本寺・高徳院・長谷寺（宗教でめぐる）\",\n \"description\": \"杉本寺は天台宗、大仏の高徳院は浄土宗、長谷観音の長谷寺はどの宗派にも属さない単立。宗派の違う3つの古寺をめぐります。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re10.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re10.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re10.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34006
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34041,
+    "before_length": 1806,
+    "before_sha256": "278b0eba8ddb8401af09074f15e0c7a2430b4c14cd1d47797a963a4f719fdcce",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"円覚寺・東慶寺・浄智寺（宗教でめぐる）\",\n \"description\": \"円覚寺は元寇の戦没者供養のために北条時宗が建てた寺。東慶寺は後に女性を救う「縁切寺」となり、浄智寺は北条氏の傍流の菩提寺になる。同じ宗派でも…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re1.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/re1.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/re1.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34041
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34041,
+    "before_length": 1802,
+    "before_sha256": "b046edca81a16a13c61ec0c1943847193efe1ee0b5889f2fecadc6708655a85f",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"妙本寺・安国論寺・長勝寺・本覚寺（人物でめぐる）\",\n \"description\": \"妙本寺・安国論寺・長勝寺・本覚寺。日蓮という一人の僧が、この土地でどれだけの迫害と、どれだけの支持を同時に受けたかをたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe9.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe9.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe9.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34041
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33964,
+    "before_length": 1785,
+    "before_sha256": "59be66d4fa4acfd55315b2428c83662575a7d01fcb0a1975f6a76930cee58e58",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"極楽寺（人物でめぐる）\",\n \"description\": \"極楽寺だけを訪ねる、忍性という一人の僧に集中するコース。祈りと社会事業を同時に担った、その仕事の跡を感じたい人向け。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe8.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe8.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe8.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33964
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33928,
+    "before_length": 1775,
+    "before_sha256": "e0417816a1b06d8d060ec2719812ad32b83be9eb6eab6c6a41e536f7d88a4ed6",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"龍宝寺・大船観音寺（人物でめぐる）\",\n \"description\": \"戦国時代の歴史をたどり、昭和の大船観音へ歩く。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe7.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe7.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe7.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33928
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34080,
+    "before_length": 1821,
+    "before_sha256": "b95f660e21bfeeaaf7a65a24eea46cf47e9dc86cf82bfeeddf788c147802381e",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"成就院・高徳院（人物でめぐる）\",\n \"description\": \"泰時が開いた成就院。大仏（高徳院）は、僧浄光の勧進により1238年に木造の像として造立が発願されたと伝わり、これは泰時の在任期にあたる。現在の銅造の大仏に改められたのは1252年…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe6.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe6.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe6.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34080
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33938,
+    "before_length": 1776,
+    "before_sha256": "a291ae6394cf4f8e3bbf2e8c1974ab5d35b46599473f565eab064fcd53ce6f72",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"常楽寺（人物でめぐる）\",\n \"description\": \"常楽寺は北条泰時が夫人の母の追善供養のために建てた寺。鎌倉の法制度を整えた執権の、私的な祈りの場。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe5.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe5.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe5.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33938
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33957,
+    "before_length": 1781,
+    "before_sha256": "4bb6dcdea1dd77ba5e855c5d9306149553088303d6c7ef6a0395e5f6dbc58319",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"明月院・建長寺・円覚寺・東慶寺（人物でめぐる）\",\n \"description\": \"時頼・時宗・覚山尼。一族と寺のつながりを見る。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe4.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe4.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe4.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33957
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33963,
+    "before_length": 1782,
+    "before_sha256": "d73a8af44447c780db1f7540867f791da146e0a6f12995c4a2d5629cdb7827d0",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"寿福寺・海蔵寺（人物でめぐる）\",\n \"description\": \"寿福寺は政子が明菴栄西を招いて開山した寺。海蔵寺と合わせて、政子というもう一つの側面を追う短いコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe3.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe3.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe3.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33963
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33969,
+    "before_length": 1784,
+    "before_sha256": "cfdd5bfea61b1958dc316553dd4cd7df83cee4a5d8a1e12a33eb4fb3547649e0",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"安養院・教恩寺（人物でめぐる）\",\n \"description\": \"政子が開いた安養院と、後北条氏の氏康が建てた教恩寺。時代も立場も違う二人が、同じ材木座に痕跡を残している。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe2.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe2.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe2.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33969
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33974,
+    "before_length": 1788,
+    "before_sha256": "a03f51eb3fcca152de44cd57252f11392607df4d7e0cb3a98fd916ed4bd28b56",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"稲村ヶ崎公園（人物でめぐる）\",\n \"description\": \"稲村ヶ崎公園だけを訪ねる、新田義貞の伝説の地。『太平記』に記された、剣を海に投じて潮を退けたという逸話の舞台。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe15.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe15.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe15.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33974
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33969,
+    "before_length": 1785,
+    "before_sha256": "6c47c7d1f11f98a009462685318438bcdf5b1ab62f58cbb63201352331fca998",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"東勝寺跡・宝戒寺（人物でめぐる）\",\n \"description\": \"東勝寺跡・宝戒寺。鎌倉幕府を滅ぼした側と、滅ぼされた側の記憶が、同じ小町の谷に隣り合って残っている。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe14.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe14.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe14.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33969
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33944,
+    "before_length": 1781,
+    "before_sha256": "be49d78cd8693ed6af750ab28499385f19c2aa3bc848d231e665d274672cc754",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"浄妙寺・報国寺・明王院（人物でめぐる）\",\n \"description\": \"浄妙寺・報国寺・明王院。寺を支えた人物をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe13.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe13.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe13.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33944
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33956,
+    "before_length": 1784,
+    "before_sha256": "d8b13c91707d994c476af83f11af561d6f23a2c40167d57c3a1657011f30aa0a",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"覚園寺（人物でめぐる）\",\n \"description\": \"覚園寺だけを訪ねる。足利尊氏の銘が残るこの寺は、北条貞時という一人の執権が残した、意外と知られていない足跡。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe12.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe12.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe12.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33956
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33901,
+    "before_length": 1772,
+    "before_sha256": "aa75f602cf2ff2510e13e1a135f0ca9896727de77dd481ea41dc8f2b5db59648",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"瑞泉寺（人物でめぐる）\",\n \"description\": \"岩盤を生かした庭から、禅と作庭の文化をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe11.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe11.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe11.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33901
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33992,
+    "before_length": 1792,
+    "before_sha256": "5e5d02f4a09f4ee7a04c73af5cd66107dac473bbb2de93290eae145f97118256",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"龍口寺・輪番八ヶ寺（人物でめぐる）\",\n \"description\": \"処刑寸前まで追い込まれた龍口法難の現場と、その後を担った輪番八ヶ寺。日蓮という人物の最も過酷な瞬間の記憶が残る。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe10.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe10.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe10.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33992
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33936,
+    "before_length": 1778,
+    "before_sha256": "fc2ff6b5c2419f53576a3377e68b87642f46709957afa605383376b6e8a30727",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"鶴岡八幡宮〜杉本寺（人物でめぐる）\",\n \"description\": \"八幡宮と寺の跡をつなぎ、武士の政治の始まりをたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe1.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/pe1.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/pe1.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33936
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34951,
+    "before_length": 1923,
+    "before_sha256": "b90af8293f137eba434c5b6f28f458bbee2cb81e701dcdc868c0157483194731",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"足利氏と金沢街道\",\n \"description\": \"浄妙寺・報国寺・明王院。人物と寺の関係をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g9.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g9.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g9.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34951
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34975,
+    "before_length": 1929,
+    "before_sha256": "7097bce24cc415b33950bf87aca6a894c85d1711e68a437b41931d8df45c7391",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"幕府滅亡と南北朝の悲劇\",\n \"description\": \"出来事の時代と、建物の時代。その違いに目を向けて歩く。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g8.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g8.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g8.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34975
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34545,
+    "before_length": 1931,
+    "before_sha256": "c0d00cb40844917ddf685481fcfd66ac3961ccd618897c60f225225e84dbb86e",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"日蓮、鎌倉で法難に遭う\",\n \"description\": \"教えと迫害の記憶を伝える寺へ。鎌倉に根づいた信仰をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g7.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g7.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g7.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34545
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34736,
+    "before_length": 1989,
+    "before_sha256": "bb100d0ee84de792de7d882a9718c8f20dcdff408eb1929b2728ebe1853b68d4",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"律宗と社会事業の記憶\",\n \"description\": \"忍性は、貧しい人を助けること、病気を治すこと、道を直すことまで、全部お寺の仕事だと考えたお坊さん。極楽寺はその拠点で、昔は薬を作る場所や病人が休む場所を備えた、一種の福祉施設だった。1時間で終わる短いコースだけど…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g6.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g6.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g6.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34736
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34959,
+    "before_length": 1925,
+    "before_sha256": "ed4d4ff37574983dd793fc944f660ce5dd9c8ed9b86f3ca63bca4539e4feeca2",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"蒙古襲来と鎮魂の寺\",\n \"description\": \"円覚寺・東慶寺・浄智寺。寺が担った役割を見比べる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g5.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g5.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g5.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34959
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34953,
+    "before_length": 1923,
+    "before_sha256": "b383a7f0f4aad28df813b18ec88537cd3a5903e842268c36305a6b070b9fff04",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"北条氏と禅宗の輸入\",\n \"description\": \"建長寺・明月院を歩き、寺の成り立ちを見比べる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g4.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g4.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g4.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34953
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34974,
+    "before_length": 1928,
+    "before_sha256": "648490806a25a1114f07b0c4232557cc7f7aa05c5bd679acc55ef61753d46cd6",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"頼朝の菩提と草創期の鎌倉\",\n \"description\": \"建物のない場所にも残る、政治と祈りの歴史をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g3.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g3.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g3.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34974
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34966,
+    "before_length": 1928,
+    "before_sha256": "ebf9ba14c854822dc3c7a4125663601e8cd46db23b2485c65203f80a5e2dad74",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"頼朝、鎌倉に入る\",\n \"description\": \"鶴岡八幡宮・段葛・由比若宮。神社と道から町の始まりを見る。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g2.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g2.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g2.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34966
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34537,
+    "before_length": 1930,
+    "before_sha256": "af3b42401a83c603e7a5df787883d37f3e25e3e5bb3a787e698e5d295305238c",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"腰越・龍口寺輪番八ヶ寺\",\n \"description\": \"日蓮の法難を伝える地へ。寺を守ってきた人々の歴史。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g14.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g14.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g14.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34537
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 35190,
+    "before_length": 1996,
+    "before_sha256": "2e2523c30b5f9094690e5bfece945958e44b9d5e41ef008aa10ef25edc1cd677",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"新田義貞、稲村ヶ崎伝説\",\n \"description\": \"軍記物語『太平記』によると、新田義貞は稲村ヶ崎で剣を海に投げ入れ、龍神に祈った。すると潮が引いて、その道を渡って鎌倉に攻め入った、と伝わる。これは本当にあったと確認された出来事ではなく、『太平記』に書かれた伝説。極楽寺…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g13.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g13.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g13.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      35190
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34982,
+    "before_length": 1932,
+    "before_sha256": "ba4dd9b25d74a3dc3403a05d52b243348c9a059af772f979ff242dbfa77a86ee",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"玉縄北条氏と昭和への接続\",\n \"description\": \"常楽寺・龍宝寺・大船観音。鎌倉、戦国、昭和をたどる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g12.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g12.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g12.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34982
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 35190,
+    "before_length": 1994,
+    "before_sha256": "bcd0ac7152faa28f34e2c30cf319c56262ec359a8c699c528b9434603c0543be",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"江戸期、鎌倉が「名所」になる\",\n \"description\": \"鎌倉大仏は、鎌倉が武士の都として栄えなくなった後も、変わらずそこに座り続けた。江戸時代、鎌倉は幕府の中心ではなくなり、代わりに「見どころの多い場所」として人を集めるようになった。長谷寺、甘縄神明神社まで歩くと…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g11.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g11.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g11.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      35190
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34535,
+    "before_length": 1930,
+    "before_sha256": "e03123eb72463a633a00334b8e64fba71a35a2e45877fdef0ab71f8c962229fe",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"尼寺と女性たちの鎌倉\",\n \"description\": \"北条政子と、お勝の方。寿福寺・英勝寺から歴史を読む。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g10.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g10.png?v=20261031-kura119\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g10.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34535
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34661,
+    "before_length": 1966,
+    "before_sha256": "5397ae7a4070210b802c6b42e7c122e7718516420ac6ac9ede936ba663acb4de",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"古代信仰の基層\",\n \"description\": \"頼朝が鎌倉にやって来るより、450年も前。この谷には、もう祈りの場所があった。杉本寺は734年、行基というお坊さんが開いたと伝わる、鎌倉で一番古いお寺。苔でおおわれた石段は…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g1.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/g1.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/g1.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34661
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33215,
+    "before_length": 1954,
+    "before_sha256": "1e7a9f89f9202ac2856456ac4aa665ada5dd9287a13b0468f3fbbe120d67e11f",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"七里ヶ浜エリア\",\n \"description\": \"鎌倉山のはずれ、七里ヶ浜には、近代になってから建てられたお寺が二つある。中世の鎌倉とはちがう、比較的新しい信仰の風景。海を眺めながら歩ける短いコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c9.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c9.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c9.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33215
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34694,
+    "before_length": 1975,
+    "before_sha256": "25cfcf3b2e79fa5379fdbe6f974af1012fbd5dd381f615e9f1fbcdcc42e3870a",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"腰越② 未収録の社寺\",\n \"description\": \"龍口寺輪番八ヶ寺として知られる日蓮宗のお寺のほかにも、腰越の浦には満福寺（義経と弁慶が腰越状という手紙を書いたと伝わるお寺）など、小さな社寺が点在している。江ノ島の賑わいから一歩入ると…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c8.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c8.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c8.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34694
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34745,
+    "before_length": 1992,
+    "before_sha256": "1c7e429b5940d512b8088c8df37e7d684ae160dadef0483635308a831525e8d9",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"長谷② 未収録の社寺\",\n \"description\": \"大仏・長谷寺の賑わいのすぐ裏に、光則寺という静かなお寺がある。日朗というお坊さんが閉じ込められたと伝わり、花の寺としても知られる。五所神社、巽神社と一緒に歩けば、観光の主役の裏にある、長谷のもう一つの顔に出会えるコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c7.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c7.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c7.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34745
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34019,
+    "before_length": 1957,
+    "before_sha256": "c69c6aacbdf87dee2db5b35f135a5e33d8abbd5d8ff2290b80c82daf4f149b66",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"西御門・二階堂② 未収録の社寺\",\n \"description\": \"鎌倉宮の周辺には、頼朝が迎えたという熊野信仰の神社がいくつも残っている。来迎寺（西御門）、八雲神社（西御門）は、観光客の少ない住宅地の中に…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c6.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c6.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c6.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34019
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34132,
+    "before_length": 1990,
+    "before_sha256": "e7afa3bdbb11497c67bc05fc732af843a362e32460da1596e5031f34c383fde0",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"材木座② 未収録寺\",\n \"description\": \"材木座の路地には、時宗・浄土宗の小さなお寺が、寄り添うように残っている。延命寺は北条時頼の妻が建てたと伝わる。一つひとつは小さいけれど、合わせて歩くと、材木座という土地にどれだけ多くの信仰が集まっていたかが見えてくる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c5.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c5.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c5.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34132
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34108,
+    "before_length": 1990,
+    "before_sha256": "607cdebb397643054f8b8f51068de107760e889978e65c73ec962863753989b3",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"大町② 未収録の社寺\",\n \"description\": \"「お天王さん」と呼ばれる八雲神社は、病気の流行に苦しんでいた住民のために、京都の祇園社の神さまを迎えたのが始まりという、大町の暮らしに根づいた神社。妙法寺の苔むした石段、別願寺の観音霊場としての格式——住宅地の間に…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c4.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c4.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c4.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34108
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34095,
+    "before_length": 1986,
+    "before_sha256": "170b6371e3af295040931906fcb006ba48055fd9c7e0dda2ef863d0aa78131a5",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"扇ガ谷② 未収録寺\",\n \"description\": \"英勝寺・海蔵寺の周辺には、場所を移したり宗派を変えたりして小さくなったお寺が、いくつも残っている。護国寺は昭和になって移ってきたお寺で、扇谷の歴史の中では一番新しい部分を担っている。有名なお寺を歩き終えた後の…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c3.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c3.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c3.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34095
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33977,
+    "before_length": 1989,
+    "before_sha256": "21ca9a6c7abeccc45ce48d28321e49c95ead55e145a6205ab6a725b86d90eafe",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"北鎌倉② 円覚寺・建長寺周辺の未収録社寺\",\n \"description\": \"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、建長寺を開いたお坊さん・蘭渓道隆のお墓があるお寺で、期間限定で公開される庭を持つ。有名なお寺の隙間に…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c2.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c2.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c2.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33977
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34028,
+    "before_length": 1964,
+    "before_sha256": "bc231c39830f1a98ad0291c5fd800e408091386e5e1c166c6ed6d85072f5c4a1",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"玉縄エリア③ 残余の社\",\n \"description\": \"諏訪神社、稲荷神社、鎌倉山神社、北野神社。玉縄・手広・植木に残る、最後の神社たちを歩く。エリア別コースとコンプリート版で拾える社寺は、だいたいここで終わり。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c16.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c16.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c16.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34028
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33609,
+    "before_length": 1980,
+    "before_sha256": "01eb85210827e6b4e195accc4afcd7ea7a50b09c20f3ce405af9811a1da05433",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"台エリア 未収録の社\",\n \"description\": \"神主さんが常にいるわけではない小さな神社が、台という地域にいくつも残っている。観光では普通は通らない道だけど、鎌倉の信仰が「有名なお寺や神社」だけでできているわけではないことを、実感できる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c15.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c15.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c15.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33609
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33260,
+    "before_length": 1965,
+    "before_sha256": "ecc5c216bb50008671f6ee2c320c09d5446a9752f9f760c06b1cda41c78fa8e3",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"深沢エリア② 常盤・笛田・梶原\",\n \"description\": \"常盤・笛田・梶原に点在するお寺と、三嶋神社。一つひとつは目立たないけれど、深沢という土地に、どれだけ広く信仰が根付いていたかを、まとめて感じるコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c14.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c14.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c14.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33260
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33287,
+    "before_length": 1976,
+    "before_sha256": "89f3eff6a3afb317cf7eb3ff38f7c056bc6f34e8c32dbde5d426888a9f705f63",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"深沢エリア① 手広・寺分\",\n \"description\": \"青蓮寺は、空海というお坊さんが開いたと伝わる古いお寺。大慶寺は関東十刹という格式を持つお寺。観光地図にあまり出てこない深沢というエリアに、意外と古くて格式の高いお寺が残っている。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c13.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c13.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c13.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      33287
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34036,
+    "before_length": 1966,
+    "before_sha256": "d2406360c8e0680d53ac02bfb1c8a4a627987bc6870dbe2de91a71906643bb08",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"大船・岡本エリア 未収録\",\n \"description\": \"大船観音のふもとには、曹洞宗の多聞院や黙仙寺など、地域に根づいたお寺が点在している。観音像の大きさに驚いた後、その周りの静かなお寺の町にも目を向けたいコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c12.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c12.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c12.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34036
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34063,
+    "before_length": 1979,
+    "before_sha256": "a85cb8bc327da5c03c9f8654bc553b3602dd9b0f3d62a7ead924a706a2a992a0",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"玉縄エリア②\",\n \"description\": \"玉縄北条氏の城下町だったこの一帯には、家臣や領民が建てたとされるお寺が、いくつも残っている。派手さはないけれど、龍宝寺・大船観音寺を見た後にちょっと足を延ばすと、玉縄という地域の輪郭が見えてくる。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c11.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c11.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c11.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34063
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34058,
+    "before_length": 1976,
+    "before_sha256": "07a2c333bf0106ff7fc9eef8e6097726acac4f1882dcad336efbb773c5d4d987",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"今泉・岩瀬エリア\",\n \"description\": \"大船の北、今泉・岩瀬には、街から少し離れたお寺や神社が残っている。大長寺は北条綱成にゆかりがあると言われているけれど、詳しい記録は多くない。観光地になっていない鎌倉のはずれを歩くコース。\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c10.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c10.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c10.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      34058
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 35154,
+    "before_length": 1982,
+    "before_sha256": "666307df0c3a59c0a763172f445c7796ed6ca1159c4b34f30b7c3c14cca8ed9f",
+    "after": "{\n \"@context\": \"https://schema.org\",\n \"@type\": \"Article\",\n \"headline\": \"源氏山・銭洗弁天エリア\",\n \"description\": \"源頼朝が兵を挙げる時期を占ったという佐助稲荷。洞窟の湧き水でお金を洗うと福が増すという銭洗弁財天。鎌倉には、歴史の教科書には出てこない「ご利益」を求める信仰も、もう一つの層としてある。葛原岡神社は…\",\n \"url\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c1.html\",\n \"image\": \"https://djnaoyaman.github.io/kuranpo/ogp/c1.png\",\n \"inLanguage\": \"ja\",\n \"author\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"publisher\": {\n  \"@type\": \"Person\",\n  \"name\": \"クランポック\",\n  \"url\": \"https://djnaoyaman.github.io/profile.html\",\n  \"description\": \"鎌・くらんぽの編者。\"\n },\n \"mainEntityOfPage\": {\n  \"@type\": \"WebPage\",\n  \"@id\": \"https://djnaoyaman.github.io/kuranpo/knowledge/c1.html\"\n },\n \"datePublished\": \"2026-09-24\",\n \"dateModified\": \"2026-10-31\"\n}",
+    "before_offsets": [
+      35154
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "作者の経歴・名義一覧を簡潔な編者情報と中央プロフィールへ集約。"
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 33981,
+    "before_length": 4847,
+    "before_sha256": "6ecc07047625b2753e9e1be546f784f914a8accc2bbc10a420a4f423016d1121",
+    "after": "  <p class=\"lead reveal-line\">鎌倉を歩く楽しみから、このサイトは始まりました。道の先にある歴史も、散歩と一緒に楽しめたら。</p>\n\n  <section class=\"block\">\n    <h2 class=\"mincho\">このサイトの姿勢</h2>\n    <p>史料で確かめられることと、語り継がれた話を分けて紹介しています。</p>\n    <p><a class=\"ext\" data-creator-site=\"naoyamiyazaki\" href=\"https://djnaoyaman.github.io/profile.html\">作者について</a></p>\n  </section>\n\n",
+    "before_offsets": [
+      33222
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "プロフィールを制作の動機と編集方針に絞り、経歴や家族情報、制作物一覧は掲載しない。"
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 756,
+    "before_length": 91,
+    "before_sha256": "eab4e3ea4af44e802951e424bfaf6f83716e4dd47e3f29f1d6ebb009f2e732e5",
+    "after": "鎌倉を歩く楽しみから、このサイトは始まりました。道の先にある歴史も、散歩と一緒に楽しめたら。",
+    "before_offsets": [
+      756,
+      1297,
+      1974
+    ],
+    "occurrences": 3,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "共有説明も経歴ではなく制作の動機へ。"
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 1548,
+    "before_length": 15,
+    "before_sha256": "15a70d811373a620a48488a497a8c67b7b863881c6fc1a1c52881d3c98e6530c",
+    "after": "ogp/profile.png?v=20261031-profile",
+    "before_offsets": [
+      1458,
+      2006
+    ],
+    "occurrences": 2,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "プロフィール共有画像の新版を参照。"
+  },
+  {
+    "path": "llms.txt",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 590,
+    "before_length": 119,
+    "before_sha256": "4ae43bbbd4f7c996a36ebf1b8ff46ef01a272d8e163a0f1b93e06a99a099da00",
+    "after": "- [編者プロフィール](https://djnaoyaman.github.io/kuranpo/profile.html): 散歩から始まったサイトの動機と編集方針。作者については https://djnaoyaman.github.io/profile.html 。",
+    "before_offsets": [
+      590
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "AI向け案内から経歴・別名の列挙を除き、サイトの動機と作者導線へ。"
+  },
+  {
+    "path": "changelog.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 42494,
+    "before_length": 146,
+    "before_sha256": "3b7808c7e0d18d105c4845a20cbd5caa8c37d057b7d99704c8594041adf01a43",
+    "after": "    <li><span class=\"tag\">改善</span>編者プロフィールの構成を見直しました。（2026年10月7日）</li>",
+    "before_offsets": [
+      42494
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "過去のプロフィール改訂記録から個人経歴の詳細な見出しを省略。"
+  },
+  {
+    "path": "changelog.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 34657,
+    "before_length": 23,
+    "before_sha256": "758eaf9befc52b2266340c1782e36009aad61d096b1a6a8685e328706f01c448",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">改善</span>編者紹介を、散歩から始まったサイトの動機と編集方針に絞りました。作者の案内はNAOYAMIYAZAKIへまとめています。（2026年10月31日）</li>",
+    "before_offsets": [
+      34657
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "プロフィール整理を変更履歴へ記録。"
+  },
+  {
+    "path": "changelog.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 42327,
+    "before_length": 166,
+    "before_sha256": "95e8ef2ac24220abd21b4412ba7c536259c5fd4ea29938998831cbe70cc8ff2e",
+    "after": "    <li><span class=\"tag\">追加</span>編者プロフィールの関連プロジェクト案内を更新しました。（2026年10月7日）</li>",
+    "before_offsets": [
+      42441
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "過去の日付と更新事実を残し、プロフィール名義の再列挙は省略。"
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 32994,
+    "before_length": 987,
+    "before_sha256": "101f1c64dfe8092878be2bd1ff0017995da2ba8fe4e874f1957cf0283411ab45",
+    "after": "",
+    "before_offsets": [
+      32138
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "制作の動機を最初に読めるよう、出典付き画像を紹介文の後へ移動。"
+  },
+  {
+    "path": "profile.html",
+    "before_ref": "90f9f7d5fa1a89e2f2ba09f820f10d4f796b1ad0",
+    "before_source_start": 38828,
+    "before_length": 29,
+    "before_sha256": "65e65415287aa539a3578e77f41e95cc2ab67d120b2d0a81768452be65d1d789",
+    "after": "  <figure class=\"plate\"><div class=\"pl-frame\"><img src=\"img/old/ndl-hasui-shichiri.jpg\" data-fb=\"https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,900/0/default.jpg|https://dl.ndl.go.jp/api/iiif/2586549/R0000033/1112,1412,6048,3984/,200/0/default.jpg\" alt=\"『川瀬巴水版画集 1』の「相州七里ヶ浜」｜鎌・くらんぽ（クランポック制作）\" loading=\"lazy\" decoding=\"async\" referrerpolicy=\"no-referrer\" onerror=\"var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.closest('figure').classList.add('pl-fail')}\"><a class=\"pl-alt\" href=\"https://dl.ndl.go.jp/pid/2586549/1/33\" target=\"_blank\" rel=\"noopener\">画像を読み込めませんでした。国立国会図書館デジタルコレクションで見る</a></div><figcaption><span class=\"pl-cap\">川瀬巴水の版画「相州<ruby>七里ヶ浜<rt>しちりがはま</rt></ruby>」です（『川瀬巴水版画集 1』より）。</span><span class=\"pl-cr\">国立国会図書館所蔵。出典：国立国会図書館「錦絵と写真でめぐる日本の名所」。<a href=\"https://dl.ndl.go.jp/pid/2586549/1/33\" target=\"_blank\" rel=\"noopener\">国立国会図書館デジタルコレクションで見る</a></span></figcaption></figure>\n\n  <div class=\"share-buttons\">",
+    "before_offsets": [
+      32461
+    ],
+    "occurrences": 1,
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ],
+    "reason": "画像と出典を欠落させず、簡潔な紹介文の後に維持。"
   }
 ]

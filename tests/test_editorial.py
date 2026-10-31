@@ -29,9 +29,9 @@ class Editorial(unittest.TestCase):
    links=lambda s:[t for t in re.findall(r'<link\b[^>]+>',s) if re.search(r'rel="(?:icon|shortcut icon|apple-touch-icon)"',t)]
    self.assertEqual(links(p.read_text()),links(old(p.relative_to(ROOT).as_posix())),str(p))
  def test_sharing_cards(self):
-  for key in json.loads((ROOT/'notes/editorial/ogp-corrections.json').read_text()):
+  for key,card in json.loads((ROOT/'notes/editorial/ogp-corrections.json').read_text()).items():
    b=(ROOT/'ogp'/f'{key}.png').read_bytes();self.assertEqual(b[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',b[16:24]),(1200,630))
-   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f'ogp/{key}.png?v=20261031-kura119',p.read_text())
+   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f"ogp/{key}.png?v={card.get('version','20261031-kura119')}",p.read_text())
  def test_ledger_sources(self):
   for e in json.loads((ROOT/'notes/editorial/edits.json').read_text()):self.assertTrue(e['sources']);self.assertEqual(len(e['before_offsets']),e['occurrences'])
 if __name__=='__main__':unittest.main()

@@ -1,6 +1,6 @@
 from pathlib import Path
 from html.parser import HTMLParser
-import subprocess,os,re,json
+import subprocess,os,re,json,hashlib
 ROOT=Path(__file__).resolve().parents[1];BASE=os.environ.get('BASE_REF','65fd428ac08878258ee3bcbbdd1d7b5ec225978a')
 def normalize_update_dates(s):
  s=re.sub(r'(最終更新</dt><dd>)[^<]+',r'\1@UPDATE_DATE@',s)
@@ -8,16 +8,22 @@ def normalize_update_dates(s):
  return re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\1@UPDATE_DATE@',s)
 # Each authorized editorial replacement is reversible, scoped and source-linked.
 EDITS=json.loads((ROOT/'notes/editorial/edits.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/profile-footer-edits.json').read_text())
 def before_editorial(path,s):
  for e in reversed(EDITS):
   if e['path']!=path:continue
   assert e['sources'] and e['reason'], 'Unexplained editorial change: '+path
   assert len(e['before_offsets'])==e['occurrences'], 'Editorial scope count: '+path
-  delta=len(e['after'])-len(e['before'])
+  before=e.get('before')
+  if before is None:
+   source=subprocess.check_output(['git','show',e['before_ref']+':'+path],cwd=ROOT,text=True)
+   before=source[e['before_source_start']:e['before_source_start']+e['before_length']]
+   assert hashlib.sha256(before.encode()).hexdigest()==e['before_sha256'], 'Historical reference mismatch: '+path
+  delta=len(e['after'])-len(before)
   for i,pos in reversed(list(enumerate(e['before_offsets']))):
    start=pos+i*delta; end=start+len(e['after'])
    assert s[start:end]==e['after'], 'Editorial ledger position mismatch: '+path
-   s=s[:start]+e['before']+s[end:]
+   s=s[:start]+before+s[end:]
  return s
 class Audit(HTMLParser):
  def __init__(self,s):super().__init__(convert_charrefs=True);self.tokens=[];self.skip=0;self.feed(normalize_update_dates(s))

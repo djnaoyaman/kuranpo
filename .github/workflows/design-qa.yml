@@ -19,6 +19,10 @@ jobs:
       - run: python3 scripts/update_page_dates.py --check
       - run: python3 -m unittest discover -s tests -p "test_dates.py"
       - run: python3 -m unittest discover -s tests -p "test_editorial.py"
+      - run: python3 -m unittest discover -s tests -p "test_changelog.py"
+      - run: python3 scripts/check_release_changelog.py
+        env:
+          CHANGELOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
       - run: python3 tests/preservation.py
       - run: node --check assets/monochrome.js
       - run: npm install --ignore-scripts

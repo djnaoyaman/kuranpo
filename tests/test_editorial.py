@@ -31,7 +31,7 @@ class Editorial(unittest.TestCase):
  def test_sharing_cards(self):
   for key in json.loads((ROOT/'notes/editorial/ogp-corrections.json').read_text()):
    b=(ROOT/'ogp'/f'{key}.png').read_bytes();self.assertEqual(b[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',b[16:24]),(1200,630))
-   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f'ogp/{key}.png?v=20261031-editorial1',p.read_text())
+   p=ROOT/(f'{key}.html' if (ROOT/f'{key}.html').exists() else f'knowledge/{key}.html');self.assertIn(f'ogp/{key}.png?v=20261031-editorial2',p.read_text())
  def test_ledger_sources(self):
   for e in json.loads((ROOT/'notes/editorial/edits.json').read_text()):self.assertTrue(e['sources']);self.assertEqual(len(e['before_offsets']),e['occurrences'])
 if __name__=='__main__':unittest.main()

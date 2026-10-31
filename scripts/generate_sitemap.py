@@ -10,7 +10,7 @@ sitemap.xml 自動生成スクリプト
 """
 import os
 import re
-import datetime
+import json
 import xml.etree.ElementTree as ET
 
 BASE_URL = "https://djnaoyaman.github.io/kuranpo"
@@ -57,14 +57,14 @@ def priority_for(rel_path):
 
 def build_sitemap(rel_paths):
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    today = datetime.date.today().isoformat()
+    dates = json.load(open(os.path.join(ROOT, "page-updates.json"), encoding="utf-8"))["pages"]
     for rel in rel_paths:
         prio, freq = priority_for(rel)
         # トップページは index.html を省略したルートURLで出力する
         loc = f"{BASE_URL}/" if rel == "index.html" else f"{BASE_URL}/{rel}"
         url_el = ET.SubElement(urlset, "url")
         ET.SubElement(url_el, "loc").text = loc
-        ET.SubElement(url_el, "lastmod").text = today
+        ET.SubElement(url_el, "lastmod").text = dates[rel]["modified"]
         ET.SubElement(url_el, "changefreq").text = freq
         ET.SubElement(url_el, "priority").text = f"{prio:.1f}"
     return urlset

@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: '22'
       - run: python3 -m unittest discover -s tests -p "test_sitemap.py"
+      - run: python3 scripts/update_page_dates.py --check
+      - run: python3 -m unittest discover -s tests -p "test_dates.py"
       - run: python3 tests/preservation.py
       - run: node --check assets/monochrome.js
       - run: npm install --ignore-scripts

@@ -1,9 +1,13 @@
 from pathlib import Path
 from html.parser import HTMLParser
-import subprocess,os
+import subprocess,os,re
 ROOT=Path(__file__).resolve().parents[1];BASE=os.environ.get('BASE_REF','65fd428ac08878258ee3bcbbdd1d7b5ec225978a')
+def normalize_update_dates(s):
+ s=re.sub(r'(最終更新</dt><dd>)[^<]+',r'\1@UPDATE_DATE@',s)
+ s=re.sub(r'(最終更新：)\d{4}年\d+月\d+日',r'\1@UPDATE_DATE@',s)
+ return re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\1@UPDATE_DATE@',s)
 class Audit(HTMLParser):
- def __init__(self,s):super().__init__(convert_charrefs=True);self.tokens=[];self.skip=0;self.feed(s)
+ def __init__(self,s):super().__init__(convert_charrefs=True);self.tokens=[];self.skip=0;self.feed(normalize_update_dates(s))
  def handle_starttag(self,t,a):
   a=dict(a)
   if t=='script' and ('data-theme-bootstrap'in a or a.get('src','').endswith('assets/monochrome.js')):self.skip=1;return
@@ -23,4 +27,4 @@ for f in files:
  old=subprocess.check_output(['git','show',BASE+':'+str(f.relative_to(ROOT))],cwd=ROOT,text=True);new=f.read_text()
  assert Audit(old).tokens==Audit(new).tokens,f
  assert new.count('assets/monochrome.css')==new.count('assets/monochrome.js')==1
-print('PASS: all 78 pages exact original parsed markup, content, scripts, metadata, links and image references, excluding only theme integration.')
+print('PASS: all 78 pages exact original parsed markup, content, scripts, metadata, links and image references, excluding only theme integration and explicitly managed update dates; datePublished and historical entries unchanged.')

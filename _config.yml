@@ -1,0 +1,5 @@
+# QA fixtures/reports are repository inputs, not public website pages.
+exclude:
+  - tests
+  - test-results
+  - playwright-report

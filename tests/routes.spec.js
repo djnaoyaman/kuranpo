@@ -3,6 +3,7 @@ for(const theme of ['traditional','monochrome'])for(const key of ['c6','c7'])tes
  await page.setViewportSize({width:390,height:844});await page.emulateMedia({reducedMotion:'reduce'});await page.addInitScript(t=>localStorage.setItem('kuranpo-design',t),theme);await page.goto(`/knowledge/${key}.html`);
  await expect(page.locator('.story')).toContainText('再確認中');await expect(page.locator('.dist')).toContainText('再確認中');
  expect(await page.locator('.spot-list .leg').allTextContents()).toEqual(expect.arrayContaining(['区間距離・所要時間は再確認中']));
+ await page.locator('img').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0),{},{timeout:10000});
  await page.screenshot({path:`test-results/pending-${key}-${theme}.png`,fullPage:true});
 });
 test('pending routes excluded from time filter',async({page})=>{

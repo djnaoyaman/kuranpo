@@ -11,7 +11,7 @@ def normalize(s):
  return re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\1@UPDATE_DATE@',s)
 def fingerprint(path):
  h=hashlib.sha256(normalize((ROOT/path).read_text()).encode())
- for shared in ['assets/monochrome.css','assets/monochrome.js']:
+ for shared in ['assets/monochrome.css','assets/monochrome.js','assets/brand.css','assets/kuranpo-logo.svg']:
   h.update(shared.encode());h.update((ROOT/shared).read_bytes())
  return h.hexdigest()
 def stamp(path,date):

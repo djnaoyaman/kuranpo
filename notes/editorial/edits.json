@@ -2685,5 +2685,2203 @@
       2112,
       34284
     ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      32126
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      31983
+    ]
+  },
+  {
+    "path": "religions.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      38651
+    ]
+  },
+  {
+    "path": "religions.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      38507
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36633
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36494
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      30180
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      30038
+    ]
+  },
+  {
+    "path": "photos.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      38842
+    ]
+  },
+  {
+    "path": "photos.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      38701
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      32227
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      32085
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html#top\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html#top\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      68387
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      68246
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      33843
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      33701
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      28893
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      28749
+    ]
+  },
+  {
+    "path": "basics.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      28425
+    ]
+  },
+  {
+    "path": "basics.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      28284
+    ]
+  },
+  {
+    "path": "404.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"index.html\"><img class=\"brand-logo\" src=\"assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      25379
+    ]
+  },
+  {
+    "path": "404.html",
+    "before": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      25241
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36654
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36510
+    ]
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36519
+    ]
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36375
+    ]
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36511
+    ]
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36367
+    ]
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36490
+    ]
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36346
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36634
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36490
+    ]
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36485
+    ]
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36341
+    ]
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36637
+    ]
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36493
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36569
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36425
+    ]
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36509
+    ]
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36365
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36457
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36313
+    ]
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      35789
+    ]
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      35645
+    ]
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36529
+    ]
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36385
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36423
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36279
+    ]
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      35754
+    ]
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      35610
+    ]
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36572
+    ]
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36428
+    ]
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36601
+    ]
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36457
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36553
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36409
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36471
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36327
+    ]
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36553
+    ]
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36409
+    ]
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36613
+    ]
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36469
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36553
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36409
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36597
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36453
+    ]
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36598
+    ]
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36454
+    ]
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36491
+    ]
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36347
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36460
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36316
+    ]
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36647
+    ]
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36503
+    ]
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36456
+    ]
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36312
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36501
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36357
+    ]
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36491
+    ]
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36347
+    ]
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36499
+    ]
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36355
+    ]
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36508
+    ]
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36364
+    ]
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36502
+    ]
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36358
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36485
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36341
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36483
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36339
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36425
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36281
+    ]
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36533
+    ]
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36389
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36471
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36327
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37629
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37485
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37662
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37518
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37234
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37090
+    ]
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37473
+    ]
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37329
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37640
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37496
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37632
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37488
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37661
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37517
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37649
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37505
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37226
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37082
+    ]
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37936
+    ]
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37792
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37674
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37530
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37937
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37793
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37223
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37079
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37372
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37228
+    ]
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      35914
+    ]
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      35770
+    ]
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37417
+    ]
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37273
+    ]
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37485
+    ]
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37341
+    ]
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36729
+    ]
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36585
+    ]
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36869
+    ]
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36725
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36846
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36702
+    ]
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36828
+    ]
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36684
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36724
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36580
+    ]
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36742
+    ]
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36598
+    ]
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36338
+    ]
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36194
+    ]
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      35979
+    ]
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      35835
+    ]
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36014
+    ]
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      35870
+    ]
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36753
+    ]
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36609
+    ]
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36787
+    ]
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36643
+    ]
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      36781
+    ]
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      36637
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before": "<a class=\"topbar-brand mincho\" href=\"../index.html\">鎌・くらんぽ</a>",
+    "after": "<a class=\"topbar-brand mincho\" href=\"../index.html\"><img class=\"brand-logo\" src=\"../assets/kuranpo-logo.svg\" width=\"370\" height=\"126\" alt=\"鎌・くらんぽ\"></a>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用された第12案「起点」を共通ヘッダーへ。正式名とリンク先を保持。",
+    "occurrences": 1,
+    "before_offsets": [
+      37885
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">",
+    "after": "<link rel=\"stylesheet\" href=\"../assets/monochrome.css\">\n<link rel=\"stylesheet\" href=\"../assets/brand.css\">",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "両テーマ共通のロゴ寸法と小画面の操作領域を定義。",
+    "occurrences": 1,
+    "before_offsets": [
+      37741
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">改善</span>ロゴを「くらんぽ」を主役に、左上へ小さな丸囲みの「鎌」を添える形にしました。両デザインのヘッダーと共有画像に適用。正式名称とサイトアイコンは変えていません。（2026年10月31日）</li>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo",
+      "library://libfile_c61c670ca89481919e7a7cf2f82de514"
+    ],
+    "reason": "採用ロゴの変更内容を同時に記録。",
+    "occurrences": 1,
+    "before_offsets": [
+      34657
+    ]
   }
 ]

@@ -1,0 +1,18 @@
+/* Selected logo 12: outlined Noto Serif glyphs, original optical spacing. */
+.topbar-brand{display:inline-flex!important;align-items:center;flex:0 0 auto;line-height:1!important}
+.topbar-brand .brand-logo{display:block;width:142px;height:auto;max-width:none;flex:none}
+html[data-theme="monochrome"] .topbar-brand .brand-logo{width:180px}
+.topbar-brand:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+@media(max-width:900px){html[data-theme="monochrome"] .topbar-brand .brand-logo{width:154px}}
+@media(max-width:767px){
+ .topbar-inner,html[data-theme="monochrome"] .topbar-inner{gap:8px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+ .topbar-brand .brand-logo,html[data-theme="monochrome"] .topbar-brand .brand-logo{width:142px}
+ .theme-switch{min-width:0;flex-shrink:1}
+ .theme-switch select{max-width:100px;min-height:40px}
+ .hamburger{flex-shrink:0}
+}
+@media(max-width:359px){
+ .topbar-brand .brand-logo,html[data-theme="monochrome"] .topbar-brand .brand-logo{width:132px}
+ .theme-switch select{max-width:96px;font-size:10px;padding:4px 2px}
+ .topbar-inner,html[data-theme="monochrome"] .topbar-inner{gap:6px;padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+}

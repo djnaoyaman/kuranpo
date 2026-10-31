@@ -3,315 +3,315 @@
   "pages": {
     "404.html": {
       "modified": "2026-10-31",
-      "source_sha256": "c1eb00e9c69708213efebbf2a2c6e9e08d7d02b5b3c2a6d9f2950c4741383f0d"
+      "source_sha256": "b1c1f1ff39a2ae9a5a9fc6266f362b7906a19921767d81c9bec3f8676f64af7b"
     },
     "basics.html": {
       "modified": "2026-10-31",
-      "source_sha256": "f1f14eb6c52f22978fced0bc2b609f01eead507c356cf36f38b2e4a73e70e441"
+      "source_sha256": "499bd7ba187c3f997c63b092ebc51b977a18b39d60733ace2d3c7c40b14e8817"
     },
     "changelog.html": {
       "modified": "2026-10-31",
-      "source_sha256": "3364d6a4f0f6760f1a1bd31029991e8c7988051fadbecc7fc4f0ce1e563cb23f"
+      "source_sha256": "5730d4be909b685de4ea099d10603953e275f6d57102133b30c7cca1fcbb569c"
     },
     "history.html": {
       "modified": "2026-10-31",
-      "source_sha256": "6e5ff0296cfcc8c29bcfd9e01cb29b0eeff2a22c3bf8c7fefca1556739313233"
+      "source_sha256": "36f8588c5b9d36ba4e1bbc864bcc452219fc02314e79402f373d8e6f7dae470f"
     },
     "index.html": {
       "modified": "2026-10-31",
-      "source_sha256": "db7f5f9920b88960f0105764302c5159e500b3b41d69f4deb9d4b1cefeec2ea6"
+      "source_sha256": "3cacfa978be777958215b8ef74ebf992029e70840bd404934b03eb3cd7c8544b"
     },
     "knowledge/c1.html": {
       "modified": "2026-10-31",
-      "source_sha256": "87b0357a5d44c9c949b1c86be60624d5f72479989fccf1eadf76e5a96bfac951"
+      "source_sha256": "6861683f1c0de4c3f9bf595de0e7b0ba745edaef1148188394488a16be3edb64"
     },
     "knowledge/c10.html": {
       "modified": "2026-10-31",
-      "source_sha256": "44ca1bd1ed943f5ed067e976d960e8ed12b89555c64a9c9675cd99bd99292523"
+      "source_sha256": "087b6fc89f4b16bfcd35377531e28e59fa9ce2b62b4e44d034383081a169c4bc"
     },
     "knowledge/c11.html": {
       "modified": "2026-10-31",
-      "source_sha256": "9ec3850b3c948038392bdd2c108f8f91047e1c861d6db0cc7cd7ff3711bccbe5"
+      "source_sha256": "48c5aa851a1fedfdffbe64a308a8de2fd5227743b3da7dbfe192fbc15159fc4c"
     },
     "knowledge/c12.html": {
       "modified": "2026-10-31",
-      "source_sha256": "0a26f0852ea5aed5ec36f4b2483dccc7376b69555f222bc91dfb6814b8d122e8"
+      "source_sha256": "563e6539e4fcacff0b7b0090c6a649de097c3b8cbc875f88fe06af4aecd66de6"
     },
     "knowledge/c13.html": {
       "modified": "2026-10-31",
-      "source_sha256": "855fb775fe6a709fffb2492ec898a8402e54dab6d49c4993bb7e991262f17e51"
+      "source_sha256": "886ce2100e07bcfb717584eb6696fa120503be19cc4d47f4de0f491627fbcf04"
     },
     "knowledge/c14.html": {
       "modified": "2026-10-31",
-      "source_sha256": "e3d5b005d4ac95a5844b039417952959551907e31f47784b784b6eee26884293"
+      "source_sha256": "48a3efd717db14e021a9f64db1d90d38193ae889c61f408d7a66a9369e5669c8"
     },
     "knowledge/c15.html": {
       "modified": "2026-10-31",
-      "source_sha256": "cd4cd5133c2b668403f7c5653b1c590b032ec4b0db4fb4ea0b46f358cc61b7f1"
+      "source_sha256": "d0ac74f9b956667c741e4c66bf664fe111ee15560c651f08454d4b1369831f9c"
     },
     "knowledge/c16.html": {
       "modified": "2026-10-31",
-      "source_sha256": "7c55122300852306f1d2b5a62ddd4e63c0f6bae916109097dcdce514c68514d1"
+      "source_sha256": "c662cf5b89fa61579d290a394fb3afd6fbe11ac2069c3f3b0824ab364f3245a0"
     },
     "knowledge/c2.html": {
       "modified": "2026-10-31",
-      "source_sha256": "f1b7bb89a38295f04e5ce70563bee30ef1ac38ee0a94e3a2c54fc2427f594f15"
+      "source_sha256": "233e3186cab90dc173fa5c470ab7bc3642101653217d0815219854ccbdb51b51"
     },
     "knowledge/c3.html": {
       "modified": "2026-10-31",
-      "source_sha256": "818365e196bb821f40e34a53f3e7d11c402c1d0847ed0b73d34e312ca3bb2868"
+      "source_sha256": "7a8dbd885ac546a125ffc7de2d23c0f4747098474695b732de84ca6ff1d147fd"
     },
     "knowledge/c4.html": {
       "modified": "2026-10-31",
-      "source_sha256": "056c6bc5edf5aaaaab0070f9ed5d4d359b0fade9be0bd20443867a9354fe63eb"
+      "source_sha256": "b73ab0d3149f878cb444b8f42d36aa2ed683e8488b2ed4085cf1f86e812cd18f"
     },
     "knowledge/c5.html": {
       "modified": "2026-10-31",
-      "source_sha256": "020383bbb7cf03f5d76aabdfa50c3e8ad096d95e202237cbdb3a93eb407f0e1a"
+      "source_sha256": "33ad50546bebdc8f380de5ae7d9d2b29faf7399b3e1751dfd321d6542750ae9d"
     },
     "knowledge/c6.html": {
       "modified": "2026-10-31",
-      "source_sha256": "361a3b518ed5dde18dbfb72d2017f867abdce9b399c12673ba0ff968bdde6429"
+      "source_sha256": "7c6316a0c50c8d70a980aa1514cd1e4ad5ff6059b3df3848f755f92d50987aa3"
     },
     "knowledge/c7.html": {
       "modified": "2026-10-31",
-      "source_sha256": "a99af76bad30e60527dbc256cca20f9fba387b915721975b3837a28179f1b286"
+      "source_sha256": "1f030c935ba1c2df4d3d29fecfe29ff21b81b08f75e71d8c24d737afbdafd6e9"
     },
     "knowledge/c8.html": {
       "modified": "2026-10-31",
-      "source_sha256": "c3e1252164651f776ac575ea2e87b2c334003d5e933ac17761ae1039732db679"
+      "source_sha256": "e77ec03015b779471465c2ffb529a1e18da3516b6f1d51227c44659f52f875fe"
     },
     "knowledge/c9.html": {
       "modified": "2026-10-31",
-      "source_sha256": "7896a1d22a0fcf310cac5a6e6367478820ff2ec728280b7833642e0af4a20a3e"
+      "source_sha256": "6f7bd7757a743ef3b3d16a7ad1d1289c6cfa32c592eec35f2faf774bf794af4e"
     },
     "knowledge/g1.html": {
       "modified": "2026-10-31",
-      "source_sha256": "23eb4f4ed90ccb16daeae434c84406ceb830893eccb0c42704a4034aaa4b69fd"
+      "source_sha256": "175c796cd724826329183e32c3d8696dfa0f9ab77376f0f958fecd88ab2d94dd"
     },
     "knowledge/g10.html": {
       "modified": "2026-10-31",
-      "source_sha256": "02a8f9e617e6c394cc15e5eda05ed18b378c9e54b34abe773c3fbe9115174c2f"
+      "source_sha256": "5de3d41396a40740c50c45dfca4e33c28057b8f3e0d29e537788896fdc975e4f"
     },
     "knowledge/g11.html": {
       "modified": "2026-10-31",
-      "source_sha256": "b4259fc2458ff1e22fc09cce2ac0b368ce406f0bdbf39b7b20a1b62e81734b18"
+      "source_sha256": "40e23e0a784ea67916bc155a5f1d3b4a22c8b8071d951cfebe9ff3973a38181e"
     },
     "knowledge/g12.html": {
       "modified": "2026-10-31",
-      "source_sha256": "7fccda7af5034076f2cb752f034ca7fa201384488dca83c3eda0ae0ca5f15a91"
+      "source_sha256": "41e8267bd28fdb8c1da1a84709f3a35df09710fc5f44a849988b4de7b2c6c4e5"
     },
     "knowledge/g13.html": {
       "modified": "2026-10-31",
-      "source_sha256": "fe4b484121bdcf2f166f2c35807b49c9b6376218a4147b4c204cf55926483f08"
+      "source_sha256": "e181d733ddf27995ee03019aa2cbc60dc2cdda558572902f7ff3079223ffacc0"
     },
     "knowledge/g14.html": {
       "modified": "2026-10-31",
-      "source_sha256": "a4c83581ab0a9f2bdf006410107345bd0020398d083dc02123e68860c51204f4"
+      "source_sha256": "a028261307d370fd69fde2afcf2084d894fc546cf967e23d81ab3f974a593245"
     },
     "knowledge/g2.html": {
       "modified": "2026-10-31",
-      "source_sha256": "a0787bdd8a2c4dc0b1a182f90e790a7c1d18ad9ee032a1991813994f1f3c6d02"
+      "source_sha256": "9ae8f6d9002ea86a8eecb104a6fd5c6a9abf40f4e75b5c76e6454281844f3a8c"
     },
     "knowledge/g3.html": {
       "modified": "2026-10-31",
-      "source_sha256": "637e5efcf6d7a8dac085926a884b368889d610abb5e2fc66d30c817b5ab337b8"
+      "source_sha256": "65a262a2226711d3e0278e365e5cb528e4e110e71dfc467988e57f3d888c5463"
     },
     "knowledge/g4.html": {
       "modified": "2026-10-31",
-      "source_sha256": "863fb2b1035f6b5e21254e145802a68f87996635d776f61ddabaa553d42e5042"
+      "source_sha256": "0e548c6f93bf71f9ee4a08b319a768611de3ada39ba578c5220f66db152fc815"
     },
     "knowledge/g5.html": {
       "modified": "2026-10-31",
-      "source_sha256": "a2984d83320ddd54b6f56ab6ccf8733b16d03e8c3825fc7efff46046e5d4b987"
+      "source_sha256": "fb8093c7ecbfbd145abf5a373991dc91104dc91a12a6f00d3e87aaea615992b4"
     },
     "knowledge/g6.html": {
       "modified": "2026-10-31",
-      "source_sha256": "854328d2bd199e457279fb0ee96b8149d5094146d541dd29be6d809294051ff7"
+      "source_sha256": "a3aaa287c9353500ab3406a12f05f222fabf56528df35219375df7f2017e36b0"
     },
     "knowledge/g7.html": {
       "modified": "2026-10-31",
-      "source_sha256": "596d15acedba51f6a3a568992d71f8537f009ac9d129db1fff347eab1259ed3f"
+      "source_sha256": "f5d9217b6f29f11272c0b342ad8ee888d521c903295e74c6b71dfd6d61130fc0"
     },
     "knowledge/g8.html": {
       "modified": "2026-10-31",
-      "source_sha256": "73929b4793a82c64bab99d9b8ea4321c760c5ffc486bdb7ec77f07d454cc7080"
+      "source_sha256": "10e0643b5e20da83699882e26e30498064139689fea8335d37a490039b375c47"
     },
     "knowledge/g9.html": {
       "modified": "2026-10-31",
-      "source_sha256": "8785e7059557113e8aedfe20c65459e3c222d609e854ea464c247871af0efd2b"
+      "source_sha256": "908d51c8765fa3c4139ee2f32b72f69eac34da7cbf4469a2bc9862fc779f8852"
     },
     "knowledge/pe1.html": {
       "modified": "2026-10-31",
-      "source_sha256": "dfdc8b59c31666dac8fce3d231a89c4ff5cfe4f00c51998ad3071f478dc8e34a"
+      "source_sha256": "8b6afffaffc1fe5ede84616edba5b841e320c65eef38059b8980f343b335068c"
     },
     "knowledge/pe10.html": {
       "modified": "2026-10-31",
-      "source_sha256": "4b2a80eccac66cae39b368d784f4c99976739fd7eb1026d904a12a16e726df75"
+      "source_sha256": "d952bc06d135c46f3062cd9fb5f579c0027262d7660c9744ce947f2b81060109"
     },
     "knowledge/pe11.html": {
       "modified": "2026-10-31",
-      "source_sha256": "707e173fd1ba8f7c075d5926b6ad95444ee001b85cbe6c77ff06f3883bb997a1"
+      "source_sha256": "ad585668a2cfe9db1c40d8ae8909fc0eadfc861291f536a2bde3db91c66b8224"
     },
     "knowledge/pe12.html": {
       "modified": "2026-10-31",
-      "source_sha256": "2bba63d2c73f71849f7342a80b9d5953d7183e051fe9648d81183be8ceae59bb"
+      "source_sha256": "2dbdbd6147b5c7c9b485a7c116fd2cbe283b4ab13a59f2c8e5fd2bf84688116a"
     },
     "knowledge/pe13.html": {
       "modified": "2026-10-31",
-      "source_sha256": "9df5153559d11f9157a58babf49c931962554963da98fe24150e26288e77693b"
+      "source_sha256": "05dd4a7ee472395a99a510892d28eeffeeb874288f46b515c94b9e6a467e7a24"
     },
     "knowledge/pe14.html": {
       "modified": "2026-10-31",
-      "source_sha256": "2db144e2413b600d8c5611090841712307842cb1057e1cbeb7990c7b25ebd911"
+      "source_sha256": "bee8c8eca3757a8c5ac17c83efc014ac39a1fdb0feb0e10383de160d53ab9ac2"
     },
     "knowledge/pe15.html": {
       "modified": "2026-10-31",
-      "source_sha256": "534abc9953a7d35361ce3eadaeb151f919685a754ae9f36cd5dd051013bc5f9b"
+      "source_sha256": "c6e7865921c565fdb0c9fc6d8af268449100454be848b99d7c03c5c9fa0f0848"
     },
     "knowledge/pe2.html": {
       "modified": "2026-10-31",
-      "source_sha256": "c905889787c85105049cd4311ababdfde9afd21b0214fb5b732443e4c7f44ead"
+      "source_sha256": "c79e2035acb77e5a96d47aac4a0b8a53cd0cadab199c2b37031e9e92943df1be"
     },
     "knowledge/pe3.html": {
       "modified": "2026-10-31",
-      "source_sha256": "5a0726b887fc4bc743652b4d7e17336cc9314ce8105257ece5bf56688aa9cc60"
+      "source_sha256": "b901505114ef693c50f908a1a4ae12750c164e4a083c313b81755c480eaa7c64"
     },
     "knowledge/pe4.html": {
       "modified": "2026-10-31",
-      "source_sha256": "4620c4793a6b941784f46fd37424c4db32409639ae39eec3a5994bd035fe35b3"
+      "source_sha256": "6a8e9b7d139035b9fc9ee1d28dfc3953cb854ba255d514118063477d4a597152"
     },
     "knowledge/pe5.html": {
       "modified": "2026-10-31",
-      "source_sha256": "cc270d98cab76fb430253548c4acdc5fa83164d5de74943366d80d3f3dd09eb1"
+      "source_sha256": "974535a89a6eca7c40ada480cea615f7fc65774fa5ebeac66bd1fc2868c38362"
     },
     "knowledge/pe6.html": {
       "modified": "2026-10-31",
-      "source_sha256": "1f6f4218ffc21098e97fe5f9f2770c211244a44fab11be0f773917c409c0d530"
+      "source_sha256": "c11ea543d68c5e3a4d4beaee0d7117857531aad6ada83bb7b03082d53bc0647b"
     },
     "knowledge/pe7.html": {
       "modified": "2026-10-31",
-      "source_sha256": "402423da592d1daf8e0abe809371b346e8812d7c97787d17444f7cf9b5397f85"
+      "source_sha256": "8c91b9e249beb62a4b5972de5eef2f5738eae6358dc0e3bc405883f3922ee570"
     },
     "knowledge/pe8.html": {
       "modified": "2026-10-31",
-      "source_sha256": "cb03077d6e5fc752768a834054a4fe0279dab2dc7734040bc126d347da79c474"
+      "source_sha256": "28acf8c7f7152b14c9f5a6b35dde10f7765fd3d227fedd37eea8a5c043fd0b21"
     },
     "knowledge/pe9.html": {
       "modified": "2026-10-31",
-      "source_sha256": "322b47560bc5c70e62c859f6494ecf262d095ea476887d5540b39566f9e8422e"
+      "source_sha256": "17b27bd3fc8aa5eb12693fda52775ba2eabdb865503646b5dac8d943e14e9831"
     },
     "knowledge/re1.html": {
       "modified": "2026-10-31",
-      "source_sha256": "3314ffd8dcdceba70f23663d13a551a6aa6c08377055aeed8ccc5c5967c07cfd"
+      "source_sha256": "cf49439f7d6edfe0a42409415acc495f17231e0ecfa3089e24d454b502c858cf"
     },
     "knowledge/re10.html": {
       "modified": "2026-10-31",
-      "source_sha256": "d93acb385935b3046cd50bf0dd668b4d3f571996d2e3c4b4935db4e9d586323c"
+      "source_sha256": "45c7fff5ca9135bc58b6beb9b0ad350d92ac8cb1e147243d1bfdc80186aac5ad"
     },
     "knowledge/re11.html": {
       "modified": "2026-10-31",
-      "source_sha256": "b50adf8c3f46493099c7ea9f4b1fcf66b256ac6c5740a03aa688fd6dc2ade7c6"
+      "source_sha256": "ddc23fbcac2c2f56758e60c7b0ecd70f09d989938c70792458ce0c8d674e3ea7"
     },
     "knowledge/re12.html": {
       "modified": "2026-10-31",
-      "source_sha256": "c70c168b8ced89b98201678db056b5c4db6a6a3bc6ccae37f9a8862c72538641"
+      "source_sha256": "49c9b422084f91dcad0068371366436044d530fd2ebccc07ae2244213b765722"
     },
     "knowledge/re2.html": {
       "modified": "2026-10-31",
-      "source_sha256": "8a2ddad7b1afcfee753b75757addc257cf2e072626b3699e9fa3a37c791af423"
+      "source_sha256": "12933d5eb4b5852d4d9416528892abfa8e22b549be456dfc4236b012f60f4020"
     },
     "knowledge/re3.html": {
       "modified": "2026-10-31",
-      "source_sha256": "12b76f62ba698db52ff015d1dbd64f182d24efc21f28e15bc3ae04d53c2f25b4"
+      "source_sha256": "62f47803228a2b771fdb5a883088c050280191a01e1eba83e548d4bca964a20f"
     },
     "knowledge/re4.html": {
       "modified": "2026-10-31",
-      "source_sha256": "6c1f8166954a6f686f3a879e19fbb36fbe0f2721c00101aa8512f4135940cbce"
+      "source_sha256": "a4a2bc5f62e73ce7e2b7e8123ef88418cff12b1a830e7486784fe8d61a1111a5"
     },
     "knowledge/re5.html": {
       "modified": "2026-10-31",
-      "source_sha256": "72329d1600f7ef662e6e1ef412e0f292296fff38e1d78e0fbcb57091d5b42cf5"
+      "source_sha256": "b4297ee8b42599ea483e6c8c33b79b41e92f6805f50a72e95a27d9c172c90e52"
     },
     "knowledge/re6.html": {
       "modified": "2026-10-31",
-      "source_sha256": "697082adf3e7f2af2927479c8627dfe280c4ca268d9f7f7f7ba38adff4ea1b22"
+      "source_sha256": "76fce2fcc60b7b5421645e3bda9769f913e0235ae6cd2a3be63888a4689b5dc4"
     },
     "knowledge/re7.html": {
       "modified": "2026-10-31",
-      "source_sha256": "4474e08cd1cc78a0cd8046cd0fb80eb389cf0f346d15ef22dd71949268b5babb"
+      "source_sha256": "ed7f723f613b47d8a65300ed74dfdd5021f19b19c4ebeaa90f9df519538b6fcc"
     },
     "knowledge/re8.html": {
       "modified": "2026-10-31",
-      "source_sha256": "41d2091695ddbb73e6e29da79523b791734bf561517332729653e31cd86cb0c0"
+      "source_sha256": "6c9170fd9f2008e1f951438604b97bbc0b297ab1f1a08ae669a60e6c17149eb7"
     },
     "knowledge/re9.html": {
       "modified": "2026-10-31",
-      "source_sha256": "5592ac7718853c6033daf73e3225b123a2598ee12fc55d1304e58c42aa632508"
+      "source_sha256": "252087a97d260db3d1d8c6e5ec7967a24a3b0df44b8090f2457bed997a5cf33c"
     },
     "knowledge/ti1.html": {
       "modified": "2026-10-31",
-      "source_sha256": "eb287db1633d5b19134bcac4b8c28aa7682856f9f8d5dc44f5c09d58f40299a4"
+      "source_sha256": "8f04bb11eef5ac3a577655c3f7ee0772e041384611452cea06038b416c4b72e0"
     },
     "knowledge/ti10.html": {
       "modified": "2026-10-31",
-      "source_sha256": "2e648101d6c9dee4a9cd3943dc89886013c8b3ee603b257f8ead8f568bbc1ac0"
+      "source_sha256": "82288e2c92d94e1f0071d02cdb5708d45c31ff59983c3ec8b1dfae403e65d9d6"
     },
     "knowledge/ti2.html": {
       "modified": "2026-10-31",
-      "source_sha256": "9b7af570ce21c86349b8bc908202df8d88b3cc2c93d9b7dcaaa697cfe0e471cc"
+      "source_sha256": "641089b2b9d7f0d634fab5383d44b4a09dd1c4b1b76209db84ecf9c5311dd455"
     },
     "knowledge/ti3.html": {
       "modified": "2026-10-31",
-      "source_sha256": "b7e6e5a29d958294a6d45cf3417ed08ab043fae0180af597af2346055951447d"
+      "source_sha256": "8df417be23510f2daf4430e6f5bb763fb917447c1ea6be45177c113148bf4651"
     },
     "knowledge/ti4.html": {
       "modified": "2026-10-31",
-      "source_sha256": "12b2c394cbd86f9949e0ed3f5335aad6278fdf5cf1ec04d54b0aab0efb78018f"
+      "source_sha256": "616976555ee34a7528a8824605aa116b311df2db707cb3811da0bbdf8a6088e1"
     },
     "knowledge/ti5.html": {
       "modified": "2026-10-31",
-      "source_sha256": "fbfa5465a0f67c07c2679a2a99c1f53f97cba449fa033df0ee6d23a9a353ba92"
+      "source_sha256": "3869088d0e9ce708f88d9674c45a64508e4731755f4f883698e287db9a993df3"
     },
     "knowledge/ti6.html": {
       "modified": "2026-10-31",
-      "source_sha256": "73739557880270130d59df059690b0331df66486eeedc83fb0fdf0a4db3a2696"
+      "source_sha256": "f17f410d49492fbfdab1f46c75947405a79b658b4bf2c07195c3e62342abc751"
     },
     "knowledge/ti7.html": {
       "modified": "2026-10-31",
-      "source_sha256": "5b37746a0f34b5e877073fe0deaf1ecf5970bb0ca7de4020c930596b0f66ae27"
+      "source_sha256": "876d9880b160cecb81b3ad931e5300f9a22fdbd975eb31dc802875bd09d483a0"
     },
     "knowledge/ti8.html": {
       "modified": "2026-10-31",
-      "source_sha256": "60a76c0cfcf127dc0789a89560288049fc3c2bc10ece2c90809ea9310ddd5097"
+      "source_sha256": "e74940b4838758d2d1a135d0ffcfc0d7b31e90ecbfb14d624877f821a4b03540"
     },
     "knowledge/ti9.html": {
       "modified": "2026-10-31",
-      "source_sha256": "f7464011b926559db100e19ad103df8618e3ae05e5c6589be38d470d9a0e4b5a"
+      "source_sha256": "9571d9e3db3a4300ba02a0cd8f1aae0763a7143cabba20b750d5d60ccbb7cb24"
     },
     "persons.html": {
       "modified": "2026-10-31",
-      "source_sha256": "de2e8ab71d0403ff32dd5ce05482c6f515011a68a7388147d455d27308b9be40"
+      "source_sha256": "b3239def27b5e18e923a050cd543e8003275ca906a57ce367b4e167380eed519"
     },
     "photos.html": {
       "modified": "2026-10-31",
-      "source_sha256": "0eacb6276c864fbe01910d13cbe554a034364583328ea74aebbd0657c2375be5"
+      "source_sha256": "86ecb7a246a7dcca282714bcfa11a5b4202be5129de8b0ad012a960efcf72580"
     },
     "profile.html": {
       "modified": "2026-10-31",
-      "source_sha256": "bc6a597f8db87ec43eaeddd58c83596be99b23ad064e69ecb9d0cb9e0781ce31"
+      "source_sha256": "36d9516c5fbce7cb0db08a22599ec6410710ffab16c952633167d44876999c9b"
     },
     "quiz.html": {
       "modified": "2026-10-31",
-      "source_sha256": "bee7d679537afc9888bd45289688ccf65832793a73f0fbd40e67cd77a2c67bab"
+      "source_sha256": "b7e0d994527e735b4c287320ab3627effb234c6cc6f6c9cff3a5443cd355110e"
     },
     "religions.html": {
       "modified": "2026-10-31",
-      "source_sha256": "d1aeaa2771d314fb0044c70108c18c54c53b29b0514db888ec00dd8a0caf617e"
+      "source_sha256": "9575f849c2051f8b2103564721e6a6d013aea13bc79162feb9858279f87fecbe"
     },
     "timeline.html": {
       "modified": "2026-10-31",
-      "source_sha256": "a747f881a063176a89d552539ac2e7c0b9e6bb96b13c0c84427c7ccc71a2059a"
+      "source_sha256": "a39abc6f224b6af8331d1449929d0adeaf543feac4ef067ff06856df70882a03"
     }
   }
 }

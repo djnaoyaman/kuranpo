@@ -11,6 +11,7 @@ EDITS=json.loads((ROOT/'notes/editorial/edits.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/profile-footer-edits.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/po-brand-edits.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/access-corrections.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/route-corrections.json').read_text())
 def before_editorial(path,s):
  for e in reversed(EDITS):
   if e['path']!=path:continue

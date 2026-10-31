@@ -1,0 +1,41 @@
+[
+  {
+    "path": "knowledge/c4.html",
+    "before": "苔むした石段の一段一段は、実際に上ってみないと分かりません。",
+    "after": "妙法寺の苔の石段は、保護のため通行できません。上へ進む際は脇の迂回路を使い、現地の案内に従いましょう。",
+    "sources": [
+      "https://enokama.jp/spot/7689/"
+    ],
+    "reason": "苔保護で通行できない石段へ上る勧めを撤回し、公式観光案内に沿って迂回路と現地案内を示す。",
+    "occurrences": 1,
+    "before_offsets": [
+      40612
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "<span class=\"snote\">苔の石段で知られる。</span>",
+    "after": "<span class=\"snote\">苔の石段は通行不可。脇の迂回路を使い、現地の案内に従ってください。</span>",
+    "sources": [
+      "https://enokama.jp/spot/7689/"
+    ],
+    "reason": "散歩中に見る立ち寄り一覧にも通行制限を明記。",
+    "occurrences": 1,
+    "before_offsets": [
+      42528
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">訂正</span>大町コースの妙法寺で、苔の石段へ上る案内を訂正しました。石段は保護のため通行できず、脇の迂回路と現地の案内に従います。（2026年10月31日）</li>",
+    "sources": [
+      "https://enokama.jp/spot/7689/"
+    ],
+    "reason": "実際の通行制限の訂正を履歴へ記録。",
+    "occurrences": 1,
+    "before_offsets": [
+      35095
+    ]
+  }
+]

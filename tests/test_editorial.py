@@ -19,6 +19,11 @@ class Editorial(unittest.TestCase):
     for q in qs:
      self.assertEqual(len(q['choices']),4);self.assertEqual(len(set(q['choices'])),4);self.assertIn(q['answer'],range(4));self.assertTrue(q['q'] and q['note'])
   self.assertEqual(total,254)
+ def test_moss_stairs_access(self):
+  s=(ROOT/'knowledge/c4.html').read_text()
+  self.assertNotIn('苔むした石段の一段一段は、実際に上って',s)
+  self.assertIn('苔の石段は、保護のため通行できません',s)
+  self.assertIn('苔の石段は通行不可。脇の迂回路',s)
  def test_genealogy(self):
   s=(ROOT/'persons.html').read_text()
   for edge in ['政子の甥（弟・義時の子）','泰時の孫（時氏の子）','貞時の子']:self.assertIn(edge,s)

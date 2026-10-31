@@ -13,6 +13,9 @@ class Profile(unittest.TestCase):
   main=re.search(r'<main>(.*?)</main>',s,re.S)[1];self.assertEqual(main.count('<section'),1);self.assertLess(main.index('class="lead'),main.index('<figure'))
  def test_no_duplicate_signature(self):
   s=(R/'profile.html').read_text();self.assertNotIn('class="editor-mark-section"',s);self.assertNotIn('企画・編集・デザイン・制作・文責',s)
+ def test_all_page_author_credits(self):
+  pages=[*R.glob('*.html'),*(R/'knowledge').glob('*.html')];self.assertEqual(len(pages),78)
+  for p in pages:self.assertNotIn('企画・編集・デザイン・制作・文責',p.read_text(),str(p))
  def test_author_schema(self):
   count=0
   for p in [*R.glob('*.html'),*(R/'knowledge').glob('*.html')]:

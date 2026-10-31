@@ -30,5 +30,1315 @@
     "sources": [
       "https://djnaoyaman.github.io/profile.html"
     ]
+  },
+  {
+    "path": "404.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 30110,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      30110,
+      30821
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "basics.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44316,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44316,
+      45027
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 40073,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      40073,
+      43333,
+      44044
+    ],
+    "occurrences": 3,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "history.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 72702,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      72702,
+      73413
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "index.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 152293,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      152293,
+      153004
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 41648,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      41648,
+      42359
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "photos.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 69868,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      69868,
+      70579
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45446,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45446,
+      46157
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "religions.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 75515,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      75515,
+      76226
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 40912,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      40912,
+      41623
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49142,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49142,
+      49886
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46291,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46291,
+      47035
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45237,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45237,
+      45981
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46385,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46385,
+      47129
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45341,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45341,
+      46085
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44328,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44328,
+      45072
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45033,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45033,
+      45777
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45554,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45554,
+      46298
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46617,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46617,
+      47361
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45848,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45848,
+      46592
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47397,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47397,
+      48141
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47268,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47268,
+      48012
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47492,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47492,
+      48236
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48101,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48101,
+      48845
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48358,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48358,
+      49102
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44684,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44684,
+      45428
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49735,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49735,
+      50479
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47986,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47986,
+      48730
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49296,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49296,
+      50040
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48300,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48300,
+      49044
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48721,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48721,
+      49465
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47547,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47547,
+      48291
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49238,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49238,
+      49982
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49225,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49225,
+      49969
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48657,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48657,
+      49401
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48858,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48858,
+      49602
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48098,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48098,
+      48842
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48577,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48577,
+      49321
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 49094,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      49094,
+      49838
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 48581,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      48581,
+      49325
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46290,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46290,
+      47034
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45618,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45618,
+      46362
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45002,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45002,
+      45746
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45654,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45654,
+      46398
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45871,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45871,
+      46615
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45526,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45526,
+      46270
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44846,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44846,
+      45590
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45538,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45538,
+      46282
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45544,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45544,
+      46288
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45946,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45946,
+      46690
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45454,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45454,
+      46198
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45816,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45816,
+      46560
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45349,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45349,
+      46093
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45666,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45666,
+      46410
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46104,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46104,
+      46848
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46007,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46007,
+      46751
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46204,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46204,
+      46948
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46286,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46286,
+      47030
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45032,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45032,
+      45776
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45781,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45781,
+      46525
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46127,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46127,
+      46871
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47074,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47074,
+      47818
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46647,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46647,
+      47391
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44696,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44696,
+      45440
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45255,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45255,
+      45999
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46005,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46005,
+      46749
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 44947,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      44947,
+      45691
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46854,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46854,
+      47598
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45134,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45134,
+      45878
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46314,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46314,
+      47058
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 46374,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      46374,
+      47118
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45425,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45425,
+      46169
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45812,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45812,
+      46556
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45673,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45673,
+      46417
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45500,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45500,
+      46244
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 45525,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      45525,
+      46269
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before_ref": "2b322c7f0eedc39706c95acb5bd107935a87fe73",
+    "before_source_start": 47176,
+    "before_length": 16,
+    "before_sha256": "9e4f5cb74b16da48d74c24499efe18b8527b2be3f06a9b1550fd960eab1af55a",
+    "before_offsets": [
+      47176,
+      47920
+    ],
+    "occurrences": 2,
+    "after": "編集",
+    "reason": "全ページ共通の本人役割列挙を短く統一。氏名・著作権・出典・本文は保持。",
+    "sources": [
+      "https://djnaoyaman.github.io/profile.html"
+    ]
   }
 ]

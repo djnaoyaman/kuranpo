@@ -1,0 +1,158 @@
+[
+  {
+    "path": "timeline.html",
+    "before": "実権は、頼朝の妻の一族・<ruby>北条氏<rt>ほうじょうし</rt></ruby>に移ります。政子が<ruby>寿福寺<rt>じゅふくじ</rt></ruby>を開き（1200年）、泰時が<ruby class=\"o1\">浄光明寺<rt>じょうこうみょうじ</rt></ruby>（1251年）を経て法律（御成敗式目）を整えた時代。<b>「頼朝の妻」から「執権の一族」へ</b>、権力の重心が静かに移動した時期です。",
+    "after": "頼朝の死後、将軍を補佐する<ruby>執権<rt>しっけん</rt></ruby>に就いた北条氏が、政治の実権を強めます。1221年の<ruby>承久の乱<rt>じょうきゅうのらん</rt></ruby>では幕府が朝廷側に勝ちました。1232年、<ruby>北条泰時<rt>ほうじょうやすとき</rt></ruby>は<ruby>御成敗式目<rt>ごせいばいしきもく</rt></ruby>を定め、武士の権利や裁判の基準を示します。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.city.kamakura.kanagawa.jp/fuuchi/documents/1shou.pdf"
+    ],
+    "reason": "泰時・浄光明寺1251・式目1232の混同を解消。役割と政治の流れに絞る。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "鎌倉という街の形は、実は一人の男の好みで決まりました。1180年、<ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>は、三方を山、一方を海に囲まれたこの土地を選びました。<ruby>若宮大路<rt>わかみやおおじ</rt></ruby>のまん中を通る段葛を歩き、頼朝が一族の神さまとして建てた鶴岡八幡宮へ向かいます。少し歩けば、頼朝が来るより前からあった<ruby>由比若宮<rt>ゆいわかみや</rt></ruby>にも着きます。鎌倉という町が「どこから始まったか」を、自分の足で確かめてみませんか。段葛が神社に近づくほどわずかに狭くなる仕掛けに気づくと、頭がくらくらんぽするかもしれません。実際に自分の足で歩いてみると、どこで気づくかは人によって違うはずです。",
+    "after": "1180年、<ruby>源頼朝<rt>みなもとのよりとも</rt></ruby>は鎌倉を拠点とし、先祖ゆかりの<ruby>鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>を現在の場所へ移しました。このコースでは、以前の場所にある<ruby>由比若宮<rt>ゆいわかみや</rt></ruby>と、八幡宮へ延びる<ruby>若宮大路<rt>わかみやおおじ</rt></ruby>を訪ねます。神社と道の位置から、頼朝の町づくりを見てみましょう。",
+    "sources": [
+      "https://www.hachimangu.or.jp/knowledge/",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html"
+    ],
+    "reason": "一人の好みという断定と重複勧誘を削除。新築ではなく移転を明示。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "性格のまるで違う3つの寺が、なぜ徒歩数分の距離に並んでいるのでしょう。1281年、2度目の<ruby>元寇<rt>げんこう</rt></ruby>（<ruby>弘安の役<rt>こうあんのえき</rt></ruby>）を退けた<ruby class=o1>北条時宗<rt>ほうじょうときむね</rt></ruby>は、その翌年、戦って死んだ人たちの霊を慰めるために円覚寺を建てました。招かれた<ruby>無学祖元<rt>むがくそげん</rt></ruby>は、日本に来る前、中国のお寺が元の軍に襲われても動じなかったという、すごいお坊さんです。東慶寺は後に、女性を救う「<ruby>縁切寺<rt>えんきりでら</rt></ruby>」になりました。浄智寺は北条氏の別の家系・師時が建てています。国を守る、死んだ人を慰める、そして後の女性を救う——性格の違う3つのお寺を、短い距離でつなぐコースです。歩く順番によって印象が変わるので、頭がくらくらんぽする組み合わせを探してみてください。3つの空気の違いは、続けて歩いてこそ体で分かるものです。",
+    "after": "<ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>東慶寺<rt>とうけいじ</rt></ruby>・<ruby>浄智寺<rt>じょうちじ</rt></ruby>を歩き、寺が担った役割を見比べます。円覚寺は1282年、北条時宗が禅を広め、元寇の死者を敵味方ともに弔うために開いた寺。東慶寺は、のちに離婚を求める女性を支えた「縁切寺」として知られました。近くにある寺でも、たどった歴史は異なります。",
+    "sources": [
+      "https://www.engakuji.or.jp/about/",
+      "https://tokeiji.com/en"
+    ],
+    "reason": "強い人物評と創建者の単純化を避け、各寺の役割を短く対比。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "1184年建立。頼朝が父義朝の菩提のために建てた鎌倉最初の大寺院（現在は跡地）。",
+    "after": "1185年、頼朝が父・義朝を弔うために建てた寺。現在は跡地。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "1184年建立。頼朝が父義朝の<ruby>菩提<rt>ぼだい</rt></ruby>のために建てた鎌倉最初の大寺院（現在は跡地）。",
+    "after": "1185年、頼朝が父・義朝を弔うために建てた寺。現在は跡地。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "1184年建立。頼朝が父義朝の<ruby>菩提<rt>ぼだい</rt></ruby>のために建てた鎌倉最初の大寺院（現在は跡地）。",
+    "after": "1185年、頼朝が父・義朝を弔うために建てた寺。現在は跡地。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "何もない場所ほど、実は語ることが多い——そう思ったことはありますか。1184年、頼朝は父・<ruby class=o3>源義朝<rt>みなもとのよしとも</rt></ruby>の霊を慰めるため、<ruby class=\"o2\">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>というお寺を建てました。頼朝自身が亡くなったのは1199年のこと。その体は<ruby>法華堂<rt>ほっけどう</rt></ruby>に埋葬されたと伝わっています。<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>、<ruby>法華堂跡<rt>ほっけどうあと</rt></ruby>、そして後にできた<ruby>永福寺跡<rt>ようふくじあと</rt></ruby>を一緒に歩くと、昔の鎌倉の中心が、今の観光地とはちょっと違う場所にあったことが分かります。建物は残っていませんが、そこに何があったかを辿るコースです。何もない場所が、かつて幕府の中心だったと知ると、頭がくらくらんぽします。立ってみると、その「何もなさ」が思いのほか語りかけてきます。",
+    "after": "<ruby>大倉幕府跡<rt>おおくらばくふあと</rt></ruby>や、頼朝ゆかりの寺の跡を歩きます。<ruby>勝長寿院<rt>しょうちょうじゅいん</rt></ruby>は1185年に頼朝が父・義朝を弔うために建てた寺。<ruby>永福寺<rt>ようふくじ</rt></ruby>は奥州合戦の戦没者を弔う寺でした。建物のない跡地にも、政治と祈りの場が近くにあった鎌倉の姿をたどれます。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "年代訂正と重複した感想・勧誘の整理。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "政治の記録には、女性の名前がほとんど出てきません。それでも。<ruby>英勝寺<rt>えいしょうじ</rt></ruby>は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）です。<ruby>寿福寺<rt>じゅふくじ</rt></ruby>は<ruby>北条政子<rt>ほうじょうまさこ</rt></ruby>が<ruby>明菴栄西<rt>みょうあんえいさい</rt></ruby>というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど、鎌倉の女性たちが実際に動かした歴史を辿るコースです。政治の記録に残らないだけで、実際は大きく動かしていたと知ると、頭がくらくらんぽします。竹の庭に射す光の角度は、時間によって毎回違います。",
+    "after": "<ruby>寿福寺<rt>じゅふくじ</rt></ruby>を開いた北条政子と、<ruby>英勝寺<rt>えいしょうじ</rt></ruby>ゆかりの<ruby>お勝の方<rt>おかつのかた</rt></ruby>。鎌倉時代と江戸時代、それぞれの女性が支えた寺を訪ねます。英勝寺では、のちに水戸徳川家の女性たちが住職を務めました。近くに並ぶ寺を、時代の違いにも目を向けて歩きましょう。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
+    ],
+    "reason": "英勝寺創建と後代の住職を区別。「女性の記録がほぼない」の一括断定を削除。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "英勝寺の建つ土地は、もとは<ruby class=\"o3\">源頼朝<rt>みなもとのよりとも</rt></ruby>の父・義朝の屋敷があった場所です。鎌倉時代には寿福寺に変わり、江戸時代になって<ruby class=o1>英勝院<rt>えいしょういん</rt></ruby>（<ruby>徳川家康<rt>とくがわいえやす</rt></ruby>の側室）が現在の英勝寺を建てました。同じ土地の上に、何層もの時代が重なっているのです。",
+    "after": "英勝寺は、太田道灌の屋敷跡と伝わる場所に1636年に創建されました。近くの寿福寺は、源義朝の旧邸跡とされる場所に建つ寺です。二つは別の寺、別の由緒です。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
+    ],
+    "reason": "英勝寺と寿福寺の土地の混同を訂正。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "後に室町幕府を開く一族も、最初はただの一<ruby>御家人<rt>ごけにん</rt></ruby>でした。室町幕府をつくる前から、足利氏はすでに鎌倉で力を持つ武士でした。<ruby class=\"o1\">浄妙寺<rt>じょうみょうじ</rt></ruby>は<ruby>足利貞氏<rt>あしかがさだうじ</rt></ruby>のため、報国寺は<ruby>足利家時<rt>あしかがいえとき</rt></ruby>のために建てられたお寺で、それぞれ五山5位・<ruby>諸山<rt>しょさん</rt></ruby>という格を持ちます。報国寺の竹林は今も静かで、鎌倉駅の周りとは違う、ゆったりした時間が流れています。旧<ruby>六浦<rt>むつら</rt></ruby>路をのんびり歩いて、次の時代の主役になる一族の足あとを辿ってみましょう。まだ将軍でも何でもなかった頃の足あとと知ると、頭がくらくらんぽします。竹林に入った瞬間の空気の変わり方は、写真では伝わりません。",
+    "after": "<ruby>浄妙寺<rt>じょうみょうじ</rt></ruby>と<ruby>報国寺<rt>ほうこくじ</rt></ruby>には、足利氏とのつながりが残ります。浄妙寺は足利義兼の創建と伝わり、尊氏の父・貞氏が寺を支えました。報国寺が開かれたのは、鎌倉幕府滅亡の翌年、1334年。続く<ruby>明王院<rt>みょうおういん</rt></ruby>は、鎌倉幕府の将軍・藤原頼経が建てた寺です。寺を支えた人物を分けて見ると、時代の違いが見えてきます。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html"
+    ],
+    "reason": "浄妙寺開基と中興、報国寺の時期、頼経の系統を区別。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "の父。浄妙寺の<ruby>開基<rt>かいき</rt></ruby>とされます。",
+    "after": "の父。浄妙寺を支えた中興開基です。創建者とは区別されます。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html"
+    ],
+    "reason": "足利貞氏を創建者と混同しない。",
+    "occurrences": 1
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "後に室町幕府を開く一族も、最初はただの一<ruby>御家人<rt>ごけにん</rt></ruby>でした。浄妙寺・報国寺・明王院。足利氏という、後に室町幕府を開く一族が、鎌倉時代にはまだ一御家人として建てていた寺々です。まだ将軍でも何でもなかった頃の足あとと知ると、頭がくらくらんぽします。浄妙寺から明王院まで歩くと、まだ無名だった頃の足利氏の気配が感じられます。",
+    "after": "足利氏ゆかりの<ruby>浄妙寺<rt>じょうみょうじ</rt></ruby>・<ruby>報国寺<rt>ほうこくじ</rt></ruby>と、将軍・<ruby>藤原頼経<rt>ふじわらのよりつね</rt></ruby>が建てた<ruby>明王院<rt>みょうおういん</rt></ruby>を巡ります。頼経は足利氏ではなく、京都の公家から迎えられた鎌倉幕府の将軍です。寺を支えた人々をたどり、武士と公家のつながりに目を向けます。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/21/t210901-6-7.html"
+    ],
+    "reason": "頼経を足利氏とする誤りを訂正。",
+    "occurrences": 1
+  },
+  {
+    "path": "index.html",
+    "before": "足利氏（貞氏・家時・頼経）",
+    "after": "足利氏と将軍・藤原頼経",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html"
+    ],
+    "reason": "コース分類の人物系統を訂正。",
+    "occurrences": 2
+  },
+  {
+    "path": "index.html",
+    "before": "<ruby>足利貞氏<rt>あしかがさだうじ</rt></ruby>・家時・頼経、足利氏3代にゆかりのある寺々。",
+    "after": "足利氏ゆかりの寺と、将軍・藤原頼経が建てた寺を巡る。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html"
+    ],
+    "reason": "頼経を足利氏3代に数えない。",
+    "occurrences": 1
+  }
+]

@@ -42,3 +42,21 @@ class Editorial(unittest.TestCase):
  def test_ledger_sources(self):
   for e in json.loads((ROOT/'notes/editorial/edits.json').read_text()):self.assertTrue(e['sources']);self.assertEqual(len(e['before_offsets']),e['occurrences'])
 if __name__=='__main__':unittest.main()
+
+class RouteStatus(unittest.TestCase):
+ def test_pending_routes_have_no_actionable_distances(self):
+  for key in ['c6','c7']:
+   s=(ROOT/f'knowledge/{key}.html').read_text();spots=re.search(r'<ul class="spot-list">.*?</ul>',s,re.S)[0]
+   self.assertNotRegex(spots,r'徒歩\d|約\d+分');self.assertIn('経路・距離を再確認中',s);self.assertNotIn('観光ガイド記事の実測値',s)
+   for label in re.findall(r'<span class="leg">(.*?)</span>',spots):self.assertEqual(label,'区間距離・所要時間は再確認中')
+ def test_removed_stops_and_maps(self):
+  for key,names in [('c6',['熊野新宮']),('c7',['五所神社','巽神社','第六天社'])]:
+   s=(ROOT/f'knowledge/{key}.html').read_text();spots=re.search(r'<ul class="spot-list">.*?</ul>',s,re.S)[0]
+   for name in names:self.assertNotIn(name,spots)
+   self.assertNotIn('/maps/dir/',s)
+  s=(ROOT/'knowledge/c7.html').read_text();self.assertIn('通常非公開',s);self.assertIn('立ち入らず',s)
+ def test_cards_do_not_promise_durations(self):
+  s=(ROOT/'index.html').read_text()
+  for key in ['c6','c7']:
+   card=re.search(r'<li class="route"[^>]*><a href="knowledge/'+key+r'.html">.*?</li>',s,re.S)[0]
+   self.assertIn('data-dur="unknown"',card);self.assertNotIn('徒歩約',card);self.assertIn('所要時間を再確認中',card)

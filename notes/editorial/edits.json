@@ -2359,5 +2359,31 @@
     "before_offsets": [
       44476
     ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "苔むした石段の一段一段は、実際に上ってみないと分かりません。",
+    "after": "妙法寺の苔の石段は、保護のため通行できません。上へ進む際は脇の迂回路を使い、現地の案内に従いましょう。",
+    "sources": [
+      "https://enokama.jp/spot/7689/"
+    ],
+    "reason": "苔保護で通行できない石段へ上る勧めを撤回し、公式観光案内に沿って迂回路と現地案内を示す。",
+    "occurrences": 1,
+    "before_offsets": [
+      41183
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "<span class=\"snote\">苔の石段で知られる。</span>",
+    "after": "<span class=\"snote\">苔の石段は通行不可。脇の迂回路を使い、現地の案内に従ってください。</span>",
+    "sources": [
+      "https://enokama.jp/spot/7689/"
+    ],
+    "reason": "散歩中に見る立ち寄り一覧にも通行制限を明記。",
+    "occurrences": 1,
+    "before_offsets": [
+      43099
+    ]
   }
 ]

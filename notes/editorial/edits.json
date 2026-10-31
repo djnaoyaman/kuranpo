@@ -8,7 +8,10 @@
       "https://www.city.kamakura.kanagawa.jp/fuuchi/documents/1shou.pdf"
     ],
     "reason": "泰時・浄光明寺1251・式目1232の混同を解消。役割と政治の流れに絞る。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      38503
+    ]
   },
   {
     "path": "knowledge/g2.html",
@@ -19,7 +22,10 @@
       "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html"
     ],
     "reason": "一人の好みという断定と重複勧誘を削除。新築ではなく移転を明示。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      41807
+    ]
   },
   {
     "path": "knowledge/g5.html",
@@ -30,7 +36,10 @@
       "https://tokeiji.com/en"
     ],
     "reason": "強い人物評と創建者の単純化を避け、各寺の役割を短く対比。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      41906
+    ]
   },
   {
     "path": "knowledge/g3.html",
@@ -40,7 +49,10 @@
       "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
     ],
     "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      43828
+    ]
   },
   {
     "path": "knowledge/pe1.html",
@@ -50,7 +62,10 @@
       "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
     ],
     "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      42160
+    ]
   },
   {
     "path": "knowledge/ti2.html",
@@ -60,7 +75,10 @@
       "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
     ],
     "reason": "建立年を1185年に修正。「最初」の断定を避け、菩提を平易化。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      42161
+    ]
   },
   {
     "path": "knowledge/g3.html",
@@ -70,7 +88,10 @@
       "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
     ],
     "reason": "年代訂正と重複した感想・勧誘の整理。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      42073
+    ]
   },
   {
     "path": "knowledge/g10.html",
@@ -81,7 +102,10 @@
       "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
     ],
     "reason": "英勝寺創建と後代の住職を区別。「女性の記録がほぼない」の一括断定を削除。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      41274
+    ]
   },
   {
     "path": "knowledge/g10.html",
@@ -92,7 +116,10 @@
       "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
     ],
     "reason": "英勝寺と寿福寺の土地の混同を訂正。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      43667
+    ]
   },
   {
     "path": "knowledge/g9.html",
@@ -104,7 +131,10 @@
       "https://www.myooin.com/engi.html"
     ],
     "reason": "浄妙寺開基と中興、報国寺の時期、頼経の系統を区別。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      41943
+    ]
   },
   {
     "path": "knowledge/g9.html",
@@ -116,7 +146,10 @@
       "https://www.myooin.com/engi.html"
     ],
     "reason": "足利貞氏を創建者と混同しない。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      45022
+    ]
   },
   {
     "path": "knowledge/pe13.html",
@@ -129,7 +162,10 @@
       "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/21/t210901-6-7.html"
     ],
     "reason": "頼経を足利氏とする誤りを訂正。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      40465
+    ]
   },
   {
     "path": "index.html",
@@ -141,7 +177,11 @@
       "https://www.myooin.com/engi.html"
     ],
     "reason": "コース分類の人物系統を訂正。",
-    "occurrences": 2
+    "occurrences": 2,
+    "before_offsets": [
+      139084,
+      139253
+    ]
   },
   {
     "path": "index.html",
@@ -153,6 +193,2003 @@
       "https://www.myooin.com/engi.html"
     ],
     "reason": "頼経を足利氏3代に数えない。",
-    "occurrences": 1
+    "occurrences": 1,
+    "before_offsets": [
+      139359
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "鎌倉800年は、実は一人の男が作った土台の上に、何度も塗り重ねられてきた歴史です。7つの時期を追いながら、その塗り重ねを大まかに辿ります。",
+    "after": "鎌倉の歴史は、幕府だけではありません。頼朝以前の信仰から、武士の政治、幕府滅亡後の町まで、7つの時期でたどります。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html"
+    ],
+    "reason": "一人の人物が全時代を作ったという断定を削り、ページの目的を明示。",
+    "occurrences": 1,
+    "before_offsets": [
+      36040
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "鎌倉幕府　153年",
+    "after": "1180〜1333年",
+    "sources": [
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/"
+    ],
+    "reason": "幕府成立を1180年に固定せず図の範囲として示す。",
+    "occurrences": 1,
+    "before_offsets": [
+      36219
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "そのうち鎌倉幕府の時代は、153年です。",
+    "after": "図の1180〜1333年は、頼朝の鎌倉入りから幕府滅亡まで。幕府の仕組みは、その間の初めに段階的に整いました。",
+    "sources": [
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/"
+    ],
+    "reason": "年数と幕府成立の区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      37294
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "鎌倉が「武士の都」と呼ばれるより<b>450年近く前</b>から、この土地にはすでに祈りの場がありました。<span class=\"yr\">734年</span> 杉本寺、<span class=\"yr\">1063年</span> <ruby>由比若宮<rt>ゆいわかみや</rt></ruby>——武士の物語が始まる前に、もう一つの物語がここにあったのです。",
+    "after": "<ruby>杉本寺<rt>すぎもとでら</rt></ruby>は734年の創建と伝わります。1063年には、源頼義が八幡宮をまつりました。今の<ruby>由比若宮<rt>ゆいわかみや</rt></ruby>はその旧地にあります。頼朝以前からの信仰と、源氏とのつながりを知る時期です。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=46"
+    ],
+    "reason": "杉本寺創建を伝承と明示。由比若宮の源氏との関係を整理。",
+    "occurrences": 1,
+    "before_offsets": [
+      37561
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "1180年、<ruby class=o3>源頼朝<rt>みなもとのよりとも</rt></ruby>がこの地を選んだことで、すべてが動き出します。まず<ruby>若宮大路<rt>わかみやおおじ</rt></ruby>の突端に<ruby class=\"o1\">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>を据え、そこから東へ少し歩いた谷に<ruby>大倉<rt>おおくら</rt></ruby>幕府、さらに奥に<ruby>法華堂<rt>ほっけどう</rt></ruby>、南には<ruby class=\"o2\">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>——政治の場と、祈りの場と、死者を弔う場が、徒歩数十分の範囲に次々と配置されていきました。<b>わずか19年</b>で、都市の骨格ができあがったのです。頼朝が死ぬと、この骨組みの上に次の時代が積み重なっていきます。",
+    "after": "1180年、<ruby>源頼朝<rt>みなもとのよりとも</rt></ruby>は鎌倉を拠点に武士をまとめ、政治の組織を整え始めます。1185年には<ruby>守護<rt>しゅご</rt></ruby>・<ruby>地頭<rt>じとう</rt></ruby>を置く権限を得て、1192年に征夷大将軍となりました。幕府は一度にできたのではなく、段階的に形になったのです。",
+    "sources": [
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.city.kamakura.kanagawa.jp/fuuchi/documents/1shou.pdf"
+    ],
+    "reason": "成立を単一年・一人の都市計画に還元せず、組織形成を説明。",
+    "occurrences": 1,
+    "before_offsets": [
+      37880
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "そして鎌倉に、最大の危機が訪れます。<b>二度の<ruby>元寇<rt>げんこう</rt></ruby></b>。時頼が<ruby>建長寺<rt>けんちょうじ</rt></ruby>で本格的に禅を根づかせたのは1253年、まだ元軍来襲の気配もない頃でした。それから29年後の1282年、時宗は同じ北鎌倉の谷筋、建長寺から歩いてすぐの場所に<ruby>円覚寺<rt>えんがくじ</rt></ruby>を建てます——今度は、実際に海を越えてきた敵の戦没者を慰めるために。同じ場所に建つ二つの禅寺の間には、平和な時代から危機の時代へと移った29年の重みがあります。同じ頃、鎌倉の西側では、<ruby>極楽寺<rt>ごくらくじ</rt></ruby>の<ruby class=\"o1\">忍性<rt>にんしょう</rt></ruby>が、<ruby>高徳院<rt>こうとくいん</rt></ruby>の大仏が、それぞれ別の形で時代と向き合っていました。",
+    "after": "1253年、北条時頼が<ruby>建長寺<rt>けんちょうじ</rt></ruby>を開き、禅を支えました。1274年と1281年には、元の軍が九州へ襲来します。翌1282年、北条時宗が開いた<ruby>円覚寺<rt>えんがくじ</rt></ruby>には、禅を広め、戦没者を敵味方ともに弔う願いがありました。",
+    "sources": [
+      "https://www.engakuji.or.jp/about/",
+      "https://www.kenchoji.com/about/",
+      "https://museum.city.fukuoka.jp/sp/exhibition/588/"
+    ],
+    "reason": "敵軍だけの供養という誤り、平和から危機への単純図式を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      38698
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "元寇を退けた栄光も、長くは続きませんでした。<b>それから約50年後の1333年</b>、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の攻撃により、14代執権・高時は<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と共に自害します。鎌倉幕府、滅亡。<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>は、その無念を弔うために建てられました。",
+    "after": "北条氏への権力集中や武士の不満、後醍醐天皇の倒幕運動などが重なり、幕府の支配が揺らぎます。1333年、足利尊氏らが幕府に背き、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍が鎌倉を攻めました。北条高時らは<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で自害し、幕府は滅びます。",
+    "sources": [
+      "https://www.sundaigakuen.ac.jp/news/5392/",
+      "https://ch.kanagawa-museum.jp/uploads/caption-201807.pdf",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html"
+    ],
+    "reason": "蒙古襲来から滅亡までを単一原因でつながず、政治過程を示す。",
+    "occurrences": 1,
+    "before_offsets": [
+      39036
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "滅亡の直後、この土地の主役は交代します。まだ無名だった<ruby>足利氏<rt>あしかがし</rt></ruby>が、<ruby>金沢街道<rt>かなざわかいどう</rt></ruby>という同じ一本の道沿いに、静かに勢力を広げていました。<ruby>覚園寺<rt>かくおんじ</rt></ruby>（1296年）から<ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>（1327年）まで31年、そこから<ruby>報国寺<rt>ほうこくじ</rt></ruby>（1334年）まで7年——道を奥へ奥へと進むように、寺が一つずつ増えていく速さです。<b>次の時代を作る一族は、いつも前の時代の隙間から現れる</b>——この土地の、繰り返されるパターンです。",
+    "after": "幕府滅亡後、後醍醐天皇の新しい政治を経て、足利氏が京都に室町幕府を開きます。鎌倉には東国を治める<ruby>鎌倉府<rt>かまくらふ</rt></ruby>が置かれました。鎌倉は政治の拠点として続き、<ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>や報国寺にも足利氏の歴史が残ります。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://houkokuji.or.jp/about/",
+      "https://www.kamakura-zuisenji.or.jp/about/"
+    ],
+    "reason": "足利無名論と寺の建築順から勢力拡大を推測する記述を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      39377
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "鎌倉時代が終わってから200年以上を経て、また新しい「北条」が現れます。ただし<b>血のつながりはありません</b>——<ruby>玉縄<rt>たまなわ</rt></ruby>城主・<ruby class=\"o1\">北条綱成<rt>ほうじょうつなしげ</rt></ruby>です（<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>）。そして昭和、大船観音という、まったく新しい祈りの場がこの土地に加わりました。",
+    "after": "戦国時代には、小田原を拠点とした<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>が、この地域を治めました。鎌倉幕府の執権北条氏とは区別します。さらに時代が下り、1960年には大船観音像が完成しました。今歩ける寺社は、鎌倉時代のものだけではありません。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://oofuna-kannon.or.jp/en-about-us/"
+    ],
+    "reason": "一族全員の血縁を否定する断定を避け、時代の違いに絞る。",
+    "occurrences": 1,
+    "before_offsets": [
+      39701
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "頼朝の19年、北条氏の約150年、そして足利氏へ——鎌倉の主役は、この800年で何度も入れ替わっています。次にどの時代を歩いてみますか。頭がくらくらんぽしませんか。",
+    "after": "まずは「頼朝が組織を整える → 北条氏が政治を担う → 幕府が滅び、鎌倉府へ」という流れを押さえましょう。気になる時代から歩くコースを選べます。",
+    "sources": [
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html"
+    ],
+    "reason": "北条氏150年の誤った区分と反復勧誘を整理。",
+    "occurrences": 1,
+    "before_offsets": [
+      39888
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "あじさいで有名なあの寺に、権力者が世を捨てた記憶が眠っています。<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>は、宋（中国）から<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>というお坊さんを招き、鎌倉に禅を根づかせました。明月院の前の姿・<ruby>最明寺<rt>さいみょうじ</rt></ruby>は、時頼自身が出家したお寺です。建長寺は日本で最初の、禅宗だけを修行する寺として、今も厳しい空気を残しています。あじさいで有名な明月院ですが、その前身は、権力者が俗世を捨てた場所でした——今の華やかさとのギャップに、頭がくらくらんぽするはずです。あの丸窓から実際に何が見えるかは、覗いてみるまでのお楽しみです。",
+    "after": "<ruby>建長寺<rt>けんちょうじ</rt></ruby>は1253年、北条時頼が宋の禅僧・<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を迎えて開いた寺です。<ruby>明月院<rt>めいげついん</rt></ruby>は、時頼ゆかりの最明寺の後身・禅興寺に属した寺。二つの寺を歩き、北条氏が禅を支えた歴史に触れます。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70",
+      "https://www.kenchoji.com/about/"
+    ],
+    "reason": "明月院と最明寺の同一視を解消し、現在の寺と歴史の関係を整理。",
+    "occurrences": 1,
+    "before_offsets": [
+      41833
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "あじさいで有名なあの寺の奥に、権力者が世を捨てた記憶が眠っています。明月院・建長寺・円応寺は、いずれも<ruby class=o1>北条時頼<rt>ほうじょうときより</rt></ruby>の時代に禅が本格的に根づいた流れの中にあります。あじさいの寺として有名な明月院の奥に、権力者の出家という重い話があることを知って歩いてみませんか。今の華やかさとのギャップに、頭がくらくらんぽするはずです。6月、明月院ブルーと呼ばれるあじさいが咲く頃、その静けさの奥にある歴史を思い出してみてください。",
+    "after": "<ruby>明月院<rt>めいげついん</rt></ruby>・建長寺・円応寺を巡り、禅の寺の建物と仏像を見比べます。建長寺は北条時頼が開いた寺。明月院は、時頼ゆかりの最明寺の後身にあたる禅興寺の一部でした。今の寺名だけでは見えない、寺の移り変わりにも注目しましょう。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70",
+      "https://www.kenchoji.com/about/"
+    ],
+    "reason": "時頼の出家の場を現在の明月院と同一視しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      40487
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "一つの一族が、複数の世代にわたって同じ道にのめり込みました。明月院・建長寺は時頼、円覚寺は時宗、東慶寺は時宗の妻・<ruby>覚山尼<rt>かくさんに</rt></ruby>が<ruby>開山<rt>かいさん</rt></ruby>した寺です。<ruby>覚山尼<rt>かくさんに</rt></ruby>は後の<ruby>執権<rt>しっけん</rt></ruby>貞時の母でもあります。北条氏一族の複数の世代にわたる禅への傾倒を、北鎌倉だけで一日かけて追えます。親子・夫婦で同じ信仰にのめり込んでいたと知ると、頭がくらくらんぽします。北鎌倉を一日かけて回ると、一族の禅への傾倒の深さが体感できます。",
+    "after": "建長寺を開いた時頼、円覚寺を開いた時宗、東慶寺を開いた時宗の妻・<ruby>覚山尼<rt>かくさんに</rt></ruby>。北鎌倉の寺をつなぎ、北条氏が禅を支えた歴史をたどります。明月院では、時頼ゆかりの最明寺と、その後身・禅興寺の歴史にも目を向けます。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70",
+      "https://www.kenchoji.com/about/",
+      "https://www.engakuji.or.jp/about/",
+      "https://tokeiji.com/en"
+    ],
+    "reason": "明月院を時頼開山とする誤りを訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      40544
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "徳川の時代になっても、鎌倉に寺を構える意味がありました。英勝寺は水戸徳川家の姫が開いた鎌倉唯一の尼寺御所です。鎌倉時代がとうに終わった江戸の世になっても、この土地に寺を構える意味があったことを示す一寺です。竹林の奥に、そんな時代を超えた思いが眠っていると知ると、頭がくらくらんぽします。春の藤、初夏のあじさいが、その静かな竹の庭を彩ります。",
+    "after": "1636年、徳川家康の側室だった<ruby>お勝の方<rt>おかつのかた</rt></ruby>（英勝院）ゆかりの寺として開かれた<ruby>英勝寺<rt>えいしょうじ</rt></ruby>を訪ねます。のちに水戸徳川家の女性たちが住職を務めました。江戸時代の建物と竹林から、武士の都とは違う時代の鎌倉を見てみましょう。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "創建者と後代住職の混同を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      40166
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "水戸徳川家の姫が開いた、鎌倉唯一の尼寺御所。浄土宗。",
+    "after": "お勝の方ゆかりの英勝寺。水戸徳川家に支えられた浄土宗の尼寺。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "一覧と本文の創建者情報を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      124597
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "政治から距離を置いた僧が、庭だけを残しました。瑞泉寺だけを訪ねる、<ruby>夢窓疎石<rt>むそうそせき</rt></ruby>の庭を見るためのコースです。政治から少し距離を置いた、禅僧個人の仕事に触れる時間です。権力者の寺が多い鎌倉で、庭だけで名を残した僧がいると知ると、頭がくらくらんぽします。瑞泉寺の庭は、政治から距離を置いた僧の仕事を静かに伝えています。",
+    "after": "<ruby>夢窓疎石<rt>むそうそせき</rt></ruby>が開いた<ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>で、岩盤を削ってつくられた庭を見ます。夢窓は作庭だけでなく、後醍醐天皇や足利氏にも敬われた禅僧です。国の名勝に指定された庭から、鎌倉の地形と禅の文化を感じてみましょう。",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html"
+    ],
+    "reason": "政治と無関係で庭だけを残したとの誤りを訂正。ユーザー指定の石庭を自然に組み込む。",
+    "occurrences": 1,
+    "before_offsets": [
+      40186
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "政治から距離を置いた禅僧個人の仕事の跡。",
+    "after": "後醍醐天皇や足利氏にも敬われ、作庭でも知られます。",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html"
+    ],
+    "reason": "夢窓の権力者との関係を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      46370
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"水戸徳川家の姫が開いた、鎌倉唯一の尼寺御所は？\", \"choices\": [\"東慶寺\", \"英勝寺\", \"安養院\", \"教恩寺\"], \"answer\": 1, \"note\": \"英勝寺は江戸期に、水戸徳川家の姫によって開かれました。\"}",
+    "after": "{\"q\": \"お勝の方（英勝院）ゆかりの、江戸時代に開かれた尼寺は？\", \"choices\": [\"東慶寺\", \"英勝寺\", \"安養院\", \"教恩寺\"], \"answer\": 1, \"note\": \"英勝寺は1636年に創建。のちに水戸徳川家の女性たちが住職を務めました。\"}",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      55673
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"あじさいで特に知られる、北条時頼ゆかりの寺は？\", \"choices\": [\"円覚寺\", \"明月院\", \"東慶寺\", \"浄智寺\"], \"answer\": 1, \"note\": \"明月院ブルーと呼ばれるあじさいで有名で、前身は時頼創建の最明寺です。\"}",
+    "after": "{\"q\": \"あじさいで特に知られる、北条時頼ゆかりの寺は？\", \"choices\": [\"円覚寺\", \"明月院\", \"東慶寺\", \"浄智寺\"], \"answer\": 1, \"note\": \"明月院は、時頼ゆかりの最明寺の後身・禅興寺の塔頭でした。最明寺と明月院は同じ寺ではありません。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      54786
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"時頼が出家した後の寺の前身となったのは？\", \"choices\": [\"最明寺\", \"円応寺\", \"浄智寺\", \"東慶寺\"], \"answer\": 0, \"note\": \"時頼が出家してもなお実権を握った最明寺は、後の明月院の前身です。\"}",
+    "after": "{\"q\": \"北条時頼が出家した寺は？\", \"choices\": [\"最明寺\", \"円応寺\", \"浄智寺\", \"東慶寺\"], \"answer\": 0, \"note\": \"時頼は最明寺で出家しました。その後身が禅興寺で、明月院は禅興寺の塔頭でした。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      59632
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"鎌倉幕府最後の執権となったのは何代目？\", \"choices\": [\"12代\", \"13代\", \"14代\", \"15代\"], \"answer\": 2, \"note\": \"北条高時は14代執権として、鎌倉幕府の終わりを迎えました。\"}",
+    "after": "{\"q\": \"北条高時が務めた執権は何代目？\", \"choices\": [\"12代\", \"13代\", \"14代\", \"15代\"], \"answer\": 2, \"note\": \"高時は14代執権。幕府滅亡時の執権は北条守時で、高時はすでに執権を退いていました。\"}",
+    "sources": [
+      "https://www.pref.tottori.lg.jp/item/636883.htm",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      60532
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"夢窓疎石が手がけたことで知られる、瑞泉寺の見どころは？\", \"choices\": [\"竹林\", \"庭園\", \"五重塔\", \"仁王門\"], \"answer\": 1, \"note\": \"瑞泉寺の庭園は夢窓疎石が手がけ、政治から距離を置いた仕事として名を残しました。\"}",
+    "after": "{\"q\": \"夢窓疎石が手がけたことで知られる、瑞泉寺の見どころは？\", \"choices\": [\"竹林\", \"庭園\", \"五重塔\", \"仁王門\"], \"answer\": 1, \"note\": \"夢窓疎石は瑞泉寺の庭園を手がけました。後醍醐天皇や足利氏にも敬われた禅僧です。\"}",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      61613
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"日本初の徳政令を発したのは誰？\", \"choices\": [\"北条時宗\", \"北条貞時\", \"北条高時\", \"足利尊氏\"], \"answer\": 1, \"note\": \"9代執権・北条貞時が1297年に永仁の徳政令を出しました。\"}",
+    "after": "{\"q\": \"1297年の永仁の徳政令が出されたときの執権は？\", \"choices\": [\"北条時宗\", \"北条貞時\", \"北条高時\", \"足利尊氏\"], \"answer\": 1, \"note\": \"9代執権・北条貞時が1297年に永仁の徳政令を出しました。\"}",
+    "sources": [
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      52753
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"貞時が1297年に発し、日本初とされる法令は？\", \"choices\": [\"御成敗式目\", \"永仁の徳政令\", \"建武式目\", \"撰銭令\"], \"answer\": 1, \"note\": \"永仁の徳政令は、御家人の借金を帳消しにする法令でしたが、翌年撤回されました。\"}",
+    "after": "{\"q\": \"貞時の執権在任中、1297年に出された法令は？\", \"choices\": [\"御成敗式目\", \"永仁の徳政令\", \"建武式目\", \"撰銭令\"], \"answer\": 1, \"note\": \"永仁の徳政令は、御家人の売却地をもとへ返すなど、土地問題に対処する法令でした。\"}",
+    "sources": [
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      60352
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"足利尊氏が新田義貞を破り、室町幕府成立のきっかけとなった戦いは？\", \"choices\": [\"霜月騒動\", \"湊川の戦い\", \"中先代の乱\", \"平禅門の乱\"], \"answer\": 1, \"note\": \"1336年の湊川の戦いで尊氏が義貞を破り、征夷大将軍として室町幕府を開きました。\"}",
+    "after": "{\"q\": \"足利尊氏が新田義貞を破り、室町幕府成立のきっかけとなった戦いは？\", \"choices\": [\"霜月騒動\", \"湊川の戦い\", \"中先代の乱\", \"平禅門の乱\"], \"answer\": 1, \"note\": \"湊川の戦いは1336年。尊氏が征夷大将軍となったのは、その2年後の1338年です。\"}",
+    "sources": [
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      61968
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"極楽寺が属する宗派は？\", \"choices\": [\"日蓮宗\", \"律宗\", \"浄土宗\", \"臨済宗\"], \"answer\": 1, \"note\": \"極楽寺は律宗に属し、真言宗と重なる系譜も持ちます。\"}",
+    "after": "{\"q\": \"極楽寺が属する宗派は？\", \"choices\": [\"日蓮宗\", \"真言律宗\", \"浄土宗\", \"臨済宗\"], \"answer\": 1, \"note\": \"極楽寺は真言律宗の寺院です。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/sekaiisan/documents/p8_27.pdf"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      54477
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"忍性の律宗と重なる系譜を持つ、極楽寺周辺のもう一つの宗派は？\", \"choices\": [\"浄土宗\", \"日蓮宗\", \"真言宗\", \"臨済宗\"], \"answer\": 2, \"note\": \"極楽寺周辺は、律宗と古くからの真言宗が重なる系譜を持ちます。\"}",
+    "after": "{\"q\": \"極楽寺の現在の宗派は？\", \"choices\": [\"天台宗\", \"真言律宗\", \"浄土宗\", \"日蓮宗\"], \"answer\": 1, \"note\": \"極楽寺は真言律宗。開山の忍性は人々の救済にも力を尽くしました。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/sekaiisan/documents/p8_27.pdf"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      57409
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"龍口寺を中心とする腰越の日蓮宗寺院群の呼び方は？\", \"choices\": [\"輪番八ヶ寺\", \"鎌倉五山\", \"坂東三十三観音\", \"関東十刹\"], \"answer\": 0, \"note\": \"龍口寺と輪番で法要を担う八ヶ寺が、腰越に残っています。\"}",
+    "after": "{\"q\": \"かつて龍口寺を順番に守った、近隣の寺々の呼び名は？\", \"choices\": [\"輪番八ヶ寺\", \"鎌倉五山\", \"坂東三十三観音\", \"関東十刹\"], \"answer\": 0, \"note\": \"輪番八ヶ寺が交代で龍口寺を守った歴史があります。現在は龍口寺の貫首を中心に運営されています。\"}",
+    "sources": [
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      57021
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"頼朝が父・源義朝の菩提を弔うために建てた寺は？\", \"choices\": [\"杉本寺\", \"勝長寿院\", \"寿福寺\", \"浄妙寺\"], \"answer\": 1, \"note\": \"勝長寿院は現在跡地のみが残り、頼朝没後の鎌倉最初の大寺院群の一つでした。\"}",
+    "after": "{\"q\": \"頼朝が父・源義朝の菩提を弔うために建てた寺は？\", \"choices\": [\"杉本寺\", \"勝長寿院\", \"寿福寺\", \"浄妙寺\"], \"answer\": 1, \"note\": \"頼朝が父・義朝を弔うため、1185年に建てた寺です。頼朝が亡くなる前の建立で、現在は跡地です。\"}",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      58734
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"戦国時代の玉縄城主・北条綱成は、鎌倉北条氏とどんな関係？\", \"choices\": [\"直系の子孫\", \"血のつながりのない別系統\", \"政子の子孫\", \"頼朝の子孫\"], \"answer\": 1, \"note\": \"同じ「北条」姓ですが、血のつながりのない後北条氏です。\"}",
+    "after": "{\"q\": \"玉縄城主・北条綱成は、どの時代・一族の人物？\", \"choices\": [\"直系の子孫\", \"戦国時代の後北条氏に属する人物\", \"政子の子孫\", \"頼朝の子孫\"], \"answer\": 1, \"note\": \"戦国時代の後北条氏の武将です。鎌倉幕府の執権北条氏と区別します。\"}",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      53569
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"戦国時代の玉縄城主・北条綱成は、鎌倉幕府の北条氏とどんな関係？\", \"choices\": [\"直系の子孫\", \"血のつながりのない別系統\", \"政子の子孫\", \"頼朝の子孫\"], \"answer\": 1, \"note\": \"同じ「北条」姓ですが、後北条氏という血のつながりのない別系統です。\"}",
+    "after": "{\"q\": \"北条綱成を、鎌倉幕府の北条氏と区別する説明は？\", \"choices\": [\"直系の子孫\", \"戦国時代の後北条氏に属する人物\", \"政子の子孫\", \"頼朝の子孫\"], \"answer\": 1, \"note\": \"戦国時代の後北条氏の武将です。鎌倉幕府の執権北条氏と区別します。\"}",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      62330
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "{\"q\": \"英勝寺を開いたのは、どの時代の誰？\", \"choices\": [\"鎌倉時代の頼朝\", \"江戸時代の水戸徳川家の姫\", \"室町時代の足利氏\", \"戦国時代の北条綱成\"], \"answer\": 1, \"note\": \"江戸期に水戸徳川家の姫が開いた尼寺御所です。\"}",
+    "after": "{\"q\": \"英勝寺を開いたのは、どの時代の誰？\", \"choices\": [\"鎌倉時代の頼朝\", \"江戸時代のお勝の方（英勝院）\", \"室町時代の足利氏\", \"戦国時代の北条綱成\"], \"answer\": 1, \"note\": \"英勝院ゆかりの寺として1636年に創建され、のちに水戸徳川家の女性が住職を務めました。\"}",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      43582
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "{\"q\": \"英勝寺（水戸徳川家の姫）と寿福寺（北条政子）、時代の異なる2人の女性が開いた寺を同じコースで歩くことに、どんな意味がある？\", \"choices\": [\"単なる偶然の組み合わせ\", \"時代を超えて、女性が鎌倉の信仰に関わり続けてきたことを実感できる\", \"江戸時代の方が重要という主張\", \"鎌倉時代の方が重要という主張\"], \"answer\": 1, \"note\": \"鎌倉時代の政子から江戸時代の姫まで、時代を超えて女性が信仰に関わってきた歴史を辿れます。\"}",
+    "after": "{\"q\": \"英勝寺ゆかりのお勝の方と、寿福寺を開いた北条政子。二人が生きた時代の組み合わせは？\", \"choices\": [\"二人とも江戸時代\", \"お勝の方は戦国〜江戸時代、政子は平安末〜鎌倉時代\", \"二人とも鎌倉時代\", \"二人とも明治時代\"], \"answer\": 1, \"note\": \"二つの寺を歩くと、異なる時代の女性と寺のつながりをたどれます。\"}",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      46914
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "{\"q\": \"明月院の前身・最明寺は、時頼にとってどんな場所だった？\", \"choices\": [\"政務を執った場所\", \"時頼自身が出家した場所\", \"時頼が生まれた場所\", \"時頼が戦死した場所\"], \"answer\": 1, \"note\": \"権力者だった時頼が、自ら俗世を捨てて出家した場所でした。\"}",
+    "after": "{\"q\": \"明月院がかつて属していた寺は？\", \"choices\": [\"建長寺\", \"禅興寺\", \"円覚寺\", \"高徳院\"], \"answer\": 1, \"note\": \"明月院は禅興寺の塔頭でした。禅興寺の前身は時頼ゆかりの最明寺です。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      47670
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "{\"q\": \"あじさいで有名な明月院の「今の華やかさ」と「前身が持つ意味」の間にあるギャップとは？\", \"choices\": [\"観光地としての賑わいと、権力者が世を捨てた重い記憶との対比\", \"建物の古さと新しさの対比\", \"値段の高さと安さの対比\", \"場所の広さと狭さの対比\"], \"answer\": 0, \"note\": \"あじさいを楽しむ今の姿の奥に、権力者が俗世を捨てた記憶が眠っているというギャップです。\"}",
+    "after": "{\"q\": \"明月院と最明寺の関係として適切なのは？\", \"choices\": [\"最明寺の後身・禅興寺に、明月院が塔頭として属した\", \"二つは同じ寺の今と昔の名前\", \"最明寺は明月院の現在の正式名\", \"二つとも江戸時代に開かれた\"], \"answer\": 0, \"note\": \"寺の一部としての関係と、寺名の変更を区別しましょう。\"}",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      47795
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "{\"q\": \"夢窓疎石が「庭だけを残した」ことについて、本文はどんな意味を見出す？\", \"choices\": [\"何も残さなかったに等しい\", \"政治から距離を置いた仕事としての価値\", \"失敗の証\", \"権力者への反抗\"], \"answer\": 1, \"note\": \"権力者の寺が多い鎌倉で、庭だけで名を残したという独自性です。\"}",
+    "after": "{\"q\": \"瑞泉寺の庭園で特徴となっているものは？\", \"choices\": [\"近代の鉄塔\", \"岩盤を削った池や洞\", \"海上の舞台\", \"巨大な五重塔\"], \"answer\": 1, \"note\": \"夢窓疎石の作とされる庭は、鎌倉の岩山の地形を生かしています。\"}",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      43772
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "{\"q\": \"浄妙寺・報国寺・明王院にゆかりのある足利氏3代は誰の代？\", \"choices\": [\"貞氏・家時・頼経ら\", \"尊氏・義詮・義満\", \"義満・義持・義教\", \"不明\"], \"answer\": 0, \"note\": \"まだ将軍でも何でもなかった頃の足利氏です。\"}",
+    "after": "{\"q\": \"明王院を建てた鎌倉幕府の将軍は？\", \"choices\": [\"藤原頼経\", \"足利尊氏\", \"徳川家康\", \"源義経\"], \"answer\": 0, \"note\": \"1235年、4代将軍・藤原頼経が建立しました。頼経は足利氏ではありません。\"}",
+    "sources": [
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      44447
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "{\"q\": \"浄妙寺・報国寺・明王院にゆかりのある一族は？\", \"choices\": [\"北条氏\", \"足利氏\", \"新田氏\", \"上杉氏\"], \"answer\": 1, \"note\": \"足利氏3代にゆかりのある寺々です。\"}",
+    "after": "{\"q\": \"浄妙寺・報国寺とゆかりの深い一族は？\", \"choices\": [\"北条氏\", \"足利氏\", \"新田氏\", \"上杉氏\"], \"answer\": 1, \"note\": \"浄妙寺は足利義兼の創建と伝わり、報国寺は足利家時を弔う寺です。明王院の藤原頼経とは区別します。\"}",
+    "sources": [
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      44580
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "{\"q\": \"玉縄城主・北条綱成は、鎌倉北条氏とどんな関係？\", \"choices\": [\"直系の子孫\", \"血のつながりのない別系統\", \"傍流の親戚\", \"頼朝の子孫\"], \"answer\": 1, \"note\": \"後北条氏という別系統です。\"}",
+    "after": "{\"q\": \"玉縄北条氏ゆかりの龍宝寺と関係する人物は？\", \"choices\": [\"鎌倉時代の北条泰時\", \"戦国時代の北条綱成\", \"平安時代の源頼義\", \"江戸時代の徳川家康\"], \"answer\": 1, \"note\": \"龍宝寺は北条綱成が建てた寺を起源とすると伝わります。鎌倉幕府の執権北条氏とは時代を分けて見ます。\"}",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      44151
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "{\"q\": \"龍宝寺（後北条氏・綱成ゆかり）と常楽寺（鎌倉北条氏・泰時の墓）、血のつながらない2つの北条氏が同じ地名に眠っていることは、何を意味する？\", \"choices\": [\"単なる名前の偶然の一致\", \"同じ「北条」という名を名乗った、全く別の歴史を持つ一族が同じ土地に集まったこと\", \"実は血縁関係があった証拠\", \"記録の間違いである\"], \"answer\": 1, \"note\": \"名字は同じでも血縁のない、異なる時代の2つの「北条氏」が、同じ地名の中に眠っているという驚きです。\"}",
+    "after": "{\"q\": \"玉縄北条氏ゆかりの龍宝寺と関係する人物は？\", \"choices\": [\"鎌倉時代の北条泰時\", \"戦国時代の北条綱成\", \"平安時代の源頼義\", \"江戸時代の徳川家康\"], \"answer\": 1, \"note\": \"龍宝寺は北条綱成が建てた寺を起源とすると伝わります。鎌倉幕府の執権北条氏とは時代を分けて見ます。\"}",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      47537
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "{\"q\": \"鎌倉北条氏滅亡から約200年後に現れた、血のつながりのない別の「北条」（綱成）。この「約200年」という時間の長さは、何を強調するために示されている？\", \"choices\": [\"200年はさほど長くない期間\", \"一つの姓が完全に滅んだとされてから、全く無関係な一族が同じ姓を名乗るまでの、長い空白期間\", \"綱成は実は鎌倉北条氏の子孫である\", \"200年という数字に特に意味はない\"], \"answer\": 1, \"note\": \"200年という長い空白を経て、無関係な一族が同じ「北条」を名乗ったという、時間の重みを示しています。\"}",
+    "after": "{\"q\": \"龍宝寺ゆかりの玉縄北条氏が活動した時代は？\", \"choices\": [\"奈良時代\", \"戦国時代\", \"明治時代\", \"昭和時代\"], \"answer\": 1, \"note\": \"鎌倉幕府の時代より後の、戦国時代の歴史です。\"}",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "関連本文に合わせて設問・正答・解説を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      44425
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "前身は時頼創建の最明寺・<ruby>禅興寺<rt>ぜんこうじ</rt></ruby>。",
+    "after": "最明寺の後身・禅興寺に属した塔頭。現在は独立した寺。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "最明寺・禅興寺・明月院の関係を一覧でも整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      43204
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "前身は時頼創建の<ruby>最明寺<rt>さいみょうじ</rt></ruby>・<ruby>禅興寺<rt>ぜんこうじ</rt></ruby>。",
+    "after": "最明寺の後身・禅興寺に属した塔頭。現在は独立した寺。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "最明寺・禅興寺・明月院の関係を一覧でも整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      41809
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "前身は時頼創建の<ruby>最明寺<rt>さいみょうじ</rt></ruby>・<ruby>禅興寺<rt>ぜんこうじ</rt></ruby>。",
+    "after": "最明寺の後身・禅興寺に属した塔頭。現在は独立した寺。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "最明寺・禅興寺・明月院の関係を一覧でも整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      41839
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "あじさいで知られる明月院の前身は、時頼自身が出家した<ruby>最明寺<rt>さいみょうじ</rt></ruby>。",
+    "after": "明月院は、時頼ゆかりの最明寺の後身・禅興寺に属した寺。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html"
+    ],
+    "reason": "一覧と記事の前身関係を統一。",
+    "occurrences": 1,
+    "before_offsets": [
+      119966
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "鎌倉北条氏が滅んでから約200年後、まったく別の「北条」が現れました。戦国期、<ruby>玉縄<rt>たまなわ</rt></ruby>城主として一帯を支配した<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>。龍宝寺と大船観音寺を結ぶと、鎌倉北条氏とは別の「もう一つの北条」が見えてきます。血のつながりが無いのに同じ姓を名乗っていたと知ると、頭がくらくらんぽします。龍宝寺の空気は、鎌倉北条氏とはまったく違う時代のものだと実感できます。",
+    "after": "戦国時代の玉縄城主・<ruby>北条綱成<rt>ほうじょうつなしげ</rt></ruby>ゆかりの<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>を訪ねます。鎌倉幕府の執権北条氏とは、時代を分けて見ましょう。コースの終わりは、1960年に完成した大船観音像。こちらは近代の信仰の場で、綱成の時代のものではありません。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html"
+    ],
+    "reason": "無血縁断定を避け、綱成と大船観音を同時代・直接ゆかりと誤解させない。",
+    "occurrences": 1,
+    "before_offsets": [
+      40328
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "同じ「北条」という名字なのに、血のつながりがない二つの一族があります。鎌倉の北条氏が滅んだ後も、戦国時代には、別の一族の北条氏（<ruby>後北条氏<rt>ごほうじょうし</rt></ruby>）が玉縄城を築き、この一帯を支配しました。<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>は、その城主・<ruby class=o1>北条綱成<rt>ほうじょうつなしげ</rt></ruby>が建てたと伝わります。<ruby>常楽寺<rt>じょうらくじ</rt></ruby>には<ruby>執権<rt>しっけん</rt></ruby>・<ruby class=o1>北条泰時<rt>ほうじょうやすとき</rt></ruby>の墓があります——鎌倉時代と戦国時代、血のつながらない北条氏が、同じ地名の中で眠っているのです。大船観音は昭和になって加わった、いちばん新しい祈りの場所です。同じ「北条」なのに血のつながりが無いと知ると、頭がくらくらんぽします。常楽寺の竹林の静けさは、その驚きが落ち着くのを待ってくれるくらい深いものです。",
+    "after": "常楽寺では鎌倉時代の北条泰時、龍宝寺では戦国時代の玉縄北条氏の歴史をたどります。同じ「北条」でも、時代と役割は別です。さらに、1960年に完成した大船観音像へ。大船周辺に残る、鎌倉・戦国・昭和の三つの時代を歩きます。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750"
+    ],
+    "reason": "血縁に関する断定と反復を削除し、各スポットの時代の違いを明示。",
+    "occurrences": 1,
+    "before_offsets": [
+      41869
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "（鎌倉北条氏とは血統上無関係）の武将で、",
+    "after": "の武将で、",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "無血縁断定を削除し、別時代の一族として区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      45013
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "複数の寺が順番に法要などを担う制度。龍口寺は8ヶ寺による<ruby>輪番<rt>りんばん</rt></ruby>制で護持される、共同体としての信仰の形。",
+    "after": "複数の寺が順番に法要などを担う制度。龍口寺は、かつて近隣の8ヶ寺が輪番で守りました。現在は貫首を中心に法灯を継いでいます。",
+    "sources": [
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "輪番制の歴史と現在の運営を区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      45241
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "同じ谷で、一つの時代が終わり、次の時代が始まりました。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の軍に攻められた<ruby class=o1>北条高時<rt>ほうじょうたかとき</rt></ruby>は、<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と一緒に自害しました。<ruby>宝戒寺<rt>ほうかいじ</rt></ruby>は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられています。<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>は、幕府をたおすのに力を尽くした<ruby>護良親王<rt>もりよししんのう</rt></ruby>をまつっています。覚園寺には<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>が書いた文字が残っています。滅んだことと、その直後に始まった新しい時代が、同じ谷に重なって残っている——3時間、鎌倉で一番重い歴史を歩くコースです。滅びと始まりが同じ谷に重なっていることに、頭がくらくらんぽします。3時間歩き終えた後の空気の重さは、言葉より先に体に来ます。",
+    "after": "1333年に滅んだ鎌倉幕府と、その後に人々を弔った寺社を歩きます。宝戒寺は北条氏を弔う寺。護良親王をまつる鎌倉宮は、ずっと後の1869年に創建された神社です。出来事の時代と、それを伝える建物の時代を分けて見てみましょう。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=16",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=59"
+    ],
+    "reason": "鎌倉宮の創建が近代であることを明示。",
+    "occurrences": 1,
+    "before_offsets": [
+      42011
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "北条氏（鎌倉）——4代・約150年、北鎌倉の谷筋に代々の寺が並ぶ",
+    "after": "北条氏——執権と寺のつながり",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC"
+    ],
+    "reason": "誤った世代数と期間を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      36818
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "政子から高時まで約150年——今の感覚なら、明治のはじめから令和の今日までの隔たりに近い長さです。その間に、<ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby>常楽寺<rt>じょうらくじ</rt></ruby>・<ruby>明月院<rt>めいげついん</rt></ruby>・<ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>覚園寺<rt>かくおんじ</rt></ruby>と、北鎌倉から<ruby>金沢街道<rt>かなざわかいどう</rt></ruby>にかけての谷筋に、代々の寺が少しずつ積み重なっていきました。",
+    "after": "将軍を補佐する執権の地位を占めた北条氏。その一族のうち、コースに関わる人物を抜き出して紹介します。矢印は親族関係で、執権の就任順をすべて示したものではありません。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC",
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html"
+    ],
+    "reason": "親族関係と役職の代数の混同を防ぐ。",
+    "occurrences": 1,
+    "before_offsets": [
+      36863
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "↓ 子・約20年後",
+    "after": "↓ 政子の甥（弟・義時の子）",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC"
+    ],
+    "reason": "泰時は政子の子ではない。",
+    "occurrences": 1,
+    "before_offsets": [
+      37257
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "↓ 子孫・約30年後",
+    "after": "↓ 泰時の孫（時氏の子）",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC"
+    ],
+    "reason": "時頼との関係を具体化し、根拠不明な年差を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      37639
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "↓ 子・約15年後",
+    "after": "↓ 時頼の子",
+    "sources": [
+      "https://www.engakuji.or.jp/about/",
+      "https://tokeiji.com/en"
+    ],
+    "reason": "親子関係と執権就任時期を混同しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      38082
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "3代<ruby>執権<rt>しっけん</rt></ruby>・武士のための法律を初めて作った男",
+    "after": "3代<ruby>執権<rt>しっけん</rt></ruby>・御成敗式目を定める",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html"
+    ],
+    "reason": "一切の武士の法律が初めてという過大な表現を避ける。",
+    "occurrences": 1,
+    "before_offsets": [
+      37432
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "3代執権。<b>御成敗式目という法律を整えた</b>、実務家タイプ。常楽寺・<ruby class=\"o1\">成就院<rt>じょうじゅいん</rt></ruby>を建立。",
+    "after": "3代執権。1232年、武士の権利や裁判の基準を示す<ruby>御成敗式目<rt>ごせいばいしきもく</rt></ruby>を定めました。常楽寺ゆかりの人物です。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750"
+    ],
+    "reason": "役割と寺との関係に絞り、人物評を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      37506
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "5代執権。<ruby class=\"o1\">蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を招き、禅を根づかせました。<ruby>建長寺<rt>けんちょうじ</rt></ruby>を建立、<ruby>最明寺<rt>さいみょうじ</rt></ruby>で出家（後の明月院）——<b>権力者自らが俗世を捨てた</b>という、重い話が残る人物です。",
+    "after": "5代執権。1253年、宋の禅僧・<ruby>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>を迎えて建長寺を開きました。最明寺で出家した後も政治の実権を保ちました。最明寺の後身が禅興寺で、明月院はその塔頭でした。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.kenchoji.com/about/",
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC"
+    ],
+    "reason": "出家＝政治引退、最明寺＝明月院という二つの混同を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      37852
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "8代執権・二度の<ruby>元寇<rt>げんこう</rt></ruby>を退けた男",
+    "after": "8代執権・蒙古襲来への対応",
+    "sources": [
+      "https://www.engakuji.or.jp/about/",
+      "https://tokeiji.com/en"
+    ],
+    "reason": "一人の功績として断定しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      38171
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "8代執権。<b>二度の元寇を退けた</b>、この一族の頂点にいた人物。円覚寺を建立。妻は、<ruby>東慶寺<rt>とうけいじ</rt></ruby>を開いた<ruby>覚山尼<rt>かくさんに</rt></ruby>です。",
+    "after": "8代執権。二度の蒙古襲来に対応し、1282年に円覚寺を開きました。妻の<ruby>覚山尼<rt>かくさんに</rt></ruby>は、のちに東慶寺を開いた人物です。",
+    "sources": [
+      "https://www.engakuji.or.jp/about/",
+      "https://tokeiji.com/en"
+    ],
+    "reason": "一族の頂点という評価を除き、年代・関係を整理。",
+    "occurrences": 1,
+    "before_offsets": [
+      38218
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "9代執権・日本初の徳政令を出した男",
+    "after": "9代執権・永仁の徳政令",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html"
+    ],
+    "reason": "徳政一般と永仁の徳政令を区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      38505
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "9代執権。1297年、借金に苦しむ<ruby>御家人<rt>ごけにん</rt></ruby>を救うため、所領の売買を取り消す徳政令を出しました——<b>日本で初めての徳政令</b>と伝わります。覚園寺ゆかりの人物。",
+    "after": "9代執権。在任中の1297年、幕府は<ruby>永仁の徳政令<rt>えいにんのとくせいれい</rt></ruby>を出し、御家人の売却地を戻すなど、土地問題への対処を図りました。",
+    "sources": [
+      "https://www.pref.hiroshima.lg.jp/soshiki_file/monjokan/nenpyou/nenpyou-cyusei1.pdf"
+    ],
+    "reason": "初めてという断定を除き、法令の内容を平易化。",
+    "occurrences": 1,
+    "before_offsets": [
+      38550
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "14代執権・鎌倉幕府を終わらせた男",
+    "after": "14代執権",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html"
+    ],
+    "reason": "幕府崩壊を高時一人に帰す表現を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      38851
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "14代執権。政子から数えて約150年——<b>この一族の最後の代</b>。1333年、<ruby>新田義貞<rt>にったよしさだ</rt></ruby>の攻撃を受け、<ruby>東勝寺<rt>とうしょうじ</rt></ruby>で一族と共に自害。鎌倉幕府、滅亡。",
+    "after": "14代執権。1333年、鎌倉が攻められると、東勝寺で一族らと自害しました。この時には執権を退いており、幕府最後の執権は北条守時です。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.pref.tottori.lg.jp/item/636883.htm"
+    ],
+    "reason": "高時を最後の執権・北条一族最後の代とする誤解を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      38890
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "鎌倉時代はまだ一御家人。<ruby class=\"o1\">浄妙寺<rt>じょうみょうじ</rt></ruby>・<ruby>報国寺<rt>ほうこくじ</rt></ruby>にゆかり。目立たなかった一族が、次の時代の主役に変わったのは、偶然ではありません。1333年、鎌倉幕府滅亡の直後に始まった後醍醐天皇の「建武の新政」（天皇中心の政治）は、貴族優先で武士の不満を買います。<b>家格の高さと軍事力を持つ足利尊氏のもとに、不満を持つ武士たちが集まっていった</b>のです。1336年、湊川の戦いで新田義貞を破った尊氏は、征夷大将軍となり室町幕府を開きます——かつて共に鎌倉を攻めた二人が、次の政権を巡って敵同士になった、というのがこの転換の実相です。覚園寺には尊氏の銘が残ります。",
+    "after": "鎌倉幕府に仕えた有力な武士の一族で、浄妙寺・報国寺にゆかりがあります。足利尊氏は幕府を倒した後、後醍醐天皇と対立。京都に新しい武家政権を築き、1338年に征夷大将軍となりました。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://houkokuji.or.jp/about/",
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html"
+    ],
+    "reason": "無名の一族・1336将軍就任・尊氏も鎌倉を攻撃という誤解を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      39626
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "北条高時を滅ぼした武将。<ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>で剣を海に投じ、潮を退けたという伝説（『太平記』）——<b>この一族の終わりを演出した人物</b>です。ただしこの後、義貞にとっては残酷な展開が待っていました。倒幕最大の功労者でありながら、<ruby>後醍醐天皇<rt>ごだいごてんのう</rt></ruby>の新政権では思うように取り立てられず、やがて<b>かつて共に鎌倉を攻めた同志・<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>と敵対する</b>ことになります。",
+    "after": "1333年に鎌倉を攻めた武将。稲村ヶ崎で剣を海に投じて潮を退けたという話は、『太平記』に記された伝説です。幕府滅亡後は、後醍醐天皇側に立って足利尊氏と戦いました。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.artm.pref.hyogo.jp/bungaku/kikaku/taiheiki/",
+      "https://www.arc.ritsumei.ac.jp/opengadaiwiki/index.php/%E6%96%B0%E7%94%B0%E7%BE%A9%E8%B2%9E"
+    ],
+    "reason": "最大の功労者等の評価と尊氏との鎌倉共闘の混同を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      39212
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "戦国期の玉縄城主。同じ「北条」でも、鎌倉北条氏とは<b>血のつながりのない別系統</b>。<ruby>龍宝寺<rt>りゅうほうじ</rt></ruby>・<ruby>大船観音寺<rt>おおふなかんのんじ</rt></ruby>にゆかり。",
+    "after": "戦国時代の玉縄城主。後北条氏の武将で、龍宝寺の前身となる寺を建てたと伝わります。鎌倉幕府の執権北条氏とは、時代と役割を分けて見ます。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "無血縁断定と近代の大船観音との直接ゆかりを削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      39778
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "権力の外を歩いた僧たち",
+    "after": "教えを広め、寺を支えた僧たち",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/"
+    ],
+    "reason": "すべての僧が権力と無関係だったという分類を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      39925
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "政治から距離を置いた禅僧。<ruby>瑞泉寺<rt>ずいせんじ</rt></ruby>の庭という、権力とは別の仕事で名を残しました。",
+    "after": "後醍醐天皇や足利氏にも敬われた禅僧。瑞泉寺を開き、岩盤を生かした庭を手がけました。政治の担い手とも関わりながら、禅と作庭の文化を伝えた人物です。",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/"
+    ],
+    "reason": "夢窓の実際の政治権力との関係を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      40797
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "たった一人で、幕府と正面から向き合った僧がいました。<ruby>日蓮<rt>にちれん</rt></ruby>は「正しいのは法華経だけだ」と信じていました。だから当時、幕府が大事にしていた念仏（浄土宗）と禅を、名前を出して厳しく批判しました。1260年に書いた『<ruby class=o1>立正安国論<rt>りっしょうあんこくろん</rt></ruby>』では、続く災害や病気の理由を「幕府が間違った教えを許しているからだ」と言い切っています。このままでは他の国に攻められる、とも警告しました。これは幕府への批判でもありました。しかも日蓮は、<ruby>比叡山<rt>ひえいざん</rt></ruby>で学んだあと一人で新しい教えを立てた僧でした。禅僧たちのように北条氏に守られてはいません。強い言葉で相手を批判したのに、守ってくれる人がいない——だから日蓮は、幕府から二度も命を狙われたと伝わっています。一度目は住んでいた小屋を焼かれた<ruby>松葉ヶ谷<rt>まつばがやつ</rt></ruby>法難、二度目は処刑されそうになった<ruby class=o1>龍口法難<rt>たつのくちほうなん</rt></ruby>です。<ruby>安国論寺<rt>あんこくろんじ</rt></ruby>は彼がその本を書いた小屋のあった場所、<ruby>妙本寺<rt>みょうほんじ</rt></ruby>は<ruby>比企<rt>ひき</rt></ruby>一族が滅んだ屋敷の跡地にあります。<ruby>大町<rt>おおまち</rt></ruby>・<ruby>材木座<rt>ざいもくざ</rt></ruby>には、迫害の記憶を持ちながらも根を張った<ruby class=o1>日蓮宗<rt>にちれんしゅう</rt></ruby>の寺が集まっています。二度も命を狙われてなお教えを曲げなかったと知ると、頭がくらくらんぽします。小屋があった場所に立つと、その緊張感が今も少し残っている気がします。",
+    "after": "<ruby>日蓮<rt>にちれん</rt></ruby>は鎌倉で法華経の教えを説き、1260年に『<ruby>立正安国論<rt>りっしょうあんこくろん</rt></ruby>』を幕府へ提出しました。大町・材木座には、その活動と迫害の記憶を伝える寺が集まっています。安国論寺や妙本寺を訪ね、教えがこの町に根づいた歴史をたどります。",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "一人で支持者なし・幕府から二度命を狙われたという断定を避ける。",
+    "occurrences": 1,
+    "before_offsets": [
+      41364
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "鎌倉で布教し、二度の法難に遭いました。",
+    "after": "鎌倉で教えを広め、流罪などの迫害を受けました。",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "法難が全部で二度との誤解を防ぐ。",
+    "occurrences": 1,
+    "before_offsets": [
+      44543
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "法華経を説き、幕府の宗教政策を批判。<b>二度の<ruby>法難<rt>ほうなん</rt></ruby>（<ruby>松葉ヶ谷<rt>まつばがやつ</rt></ruby>・龍口）を受けてなお、教えを曲げなかった</b>人物。<ruby>妙本寺<rt>みょうほんじ</rt></ruby>・<ruby>安国論寺<rt>あんこくろんじ</rt></ruby>・<ruby>龍口寺<rt>りゅうこうじ</rt></ruby>にゆかり。",
+    "after": "法華経を重んじ、1260年に『立正安国論』を幕府へ提出した僧。迫害や流罪を経験しながら教えを広めました。安国論寺・妙本寺・龍口寺などに活動の記憶が残ります。",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "法難の回数を限定せず、事実と関連寺を整理。",
+    "occurrences": 1,
+    "before_offsets": [
+      40118
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"日蓮が「正しいのは法華経だけだ」と信じ、名前を出して厳しく批判した2つの教えは？\", \"choices\": [\"禅と律宗\", \"念仏（浄土宗）と禅\", \"真言宗と天台宗\", \"浄土宗と日蓮宗\"], \"answer\": 1, \"note\": \"当時幕府が大事にしていた念仏（浄土宗）と禅を、名前を出して批判しました。\"}",
+    "after": "{\"q\": \"日蓮が信仰の中心に置いた経典は？\", \"choices\": [\"阿弥陀経\", \"法華経\", \"般若心経\", \"大日経\"], \"answer\": 1, \"note\": \"日蓮は法華経を重んじ、その教えから社会の平安を求めました。\"}",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "日蓮の教えと法難に関する過度な単純化を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      60854
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "{\"q\": \"日蓮が受けた二度の法難は、松葉ヶ谷ともう一つはどこ？\", \"choices\": [\"龍口\", \"極楽寺坂\", \"稲村ヶ崎\", \"名越\"], \"answer\": 0, \"note\": \"松葉ヶ谷と龍口、二度の法難を受けてなお、日蓮は教えを曲げませんでした。\"}",
+    "after": "{\"q\": \"日蓮が処刑されそうになったと伝わる、鎌倉近くの法難の地は？\", \"choices\": [\"龍口\", \"極楽寺坂\", \"稲村ヶ崎\", \"名越\"], \"answer\": 0, \"note\": \"龍口法難の地です。日蓮の迫害はこの一件だけではなく、松葉ヶ谷・伊豆・小松原・龍口は四大法難と呼ばれます。\"}",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "日蓮の教えと法難に関する過度な単純化を訂正。",
+    "occurrences": 1,
+    "before_offsets": [
+      60978
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "{\"q\": \"日蓮が受けた「二度の法難」とは、それぞれ何が起きたこと？\", \"choices\": [\"両方とも投獄された\", \"一度目は住居を焼かれ、二度目は処刑されそうになった\", \"両方とも流罪になった\", \"両方とも無傷で済んだ\"], \"answer\": 1, \"note\": \"松葉ヶ谷法難（小屋を焼かれる）と龍口法難（処刑寸前）、性質の異なる二度の危機でした。\"}",
+    "after": "{\"q\": \"松葉ヶ谷法難と龍口法難について、寺に伝わる話の組み合わせは？\", \"choices\": [\"両方とも投獄された\", \"一度目は住居を焼かれ、二度目は処刑されそうになった\", \"両方とも流罪になった\", \"両方とも無傷で済んだ\"], \"answer\": 1, \"note\": \"松葉ヶ谷は草庵の襲撃、龍口は処刑の危機を伝えます。日蓮の法難がこの二つだけだったという意味ではありません。\"}",
+    "sources": [
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "地域の二例と法難の総数を区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      47347
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "↓ 子孫・約50年後",
+    "after": "↓ 貞時の子",
+    "sources": [
+      "https://ir.library.osaka-u.ac.jp/repo/ouka/all/27199/mgsl053_001.pdf"
+    ],
+    "reason": "大学論文p.18で父子関係を確認。根拠不明の50年差を削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      38680
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "鎌倉に武家政権を開いた、たった一人の男。<ruby class=\"o1\">鶴岡八幡宮<rt>つるがおかはちまんぐう</rt></ruby>・<ruby class=\"o2\">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>を建て、<ruby>杉本寺<rt>すぎもとでら</rt></ruby>を再興。<b>この土地の「かたち」を最初に決めた人物</b>です。1199年没、<ruby>法華堂<rt>ほっけどう</rt></ruby>に葬られたと伝わります。",
+    "after": "1180年から鎌倉を拠点に武士をまとめ、幕府の組織を整えた人物。先祖ゆかりの鶴岡八幡宮を今の場所へ移し、勝長寿院などの寺を建てました。1199年に亡くなりました。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.hachimangu.or.jp/knowledge/"
+    ],
+    "reason": "頼朝一人が全都市を決定したという断定を削り、移転と創建を区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      36504
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "源氏——すべての始まり",
+    "after": "源頼朝——武士の政権を整える",
+    "sources": [
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/"
+    ],
+    "reason": "頼朝以前にも歴史があることと整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      36290
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "常楽寺に眠る北条泰時と、龍宝寺を建てた北条綱成。同じ「北条」でも血のつながりはありません。鎌倉時代の北条氏が滅んでから約200年後、まったく別の一族が同じ姓を名乗って、この土地にやってきたのです。",
+    "after": "常楽寺の北条泰時は鎌倉時代、龍宝寺ゆかりの北条綱成は戦国時代の人物です。同じ「北条」という名だけで結びつけず、それぞれの時代と寺の由緒を見比べましょう。",
+    "sources": [
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "無血縁と200年空白の断定を注記からも削除。",
+    "occurrences": 1,
+    "before_offsets": [
+      43952
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "英勝寺は水戸徳川家の姫が開いた鎌倉唯一の尼寺御所。徳川の時代になっても、鎌倉に寺を構える意味があったことを示す一寺。",
+    "after": "お勝の方（英勝院）ゆかりの英勝寺へ。江戸時代の建物と、水戸徳川家の女性たちが寺を支えた歴史をたどるコース。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "description/OG/twitter/JSON-LDにも創建者の訂正を反映。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1285,
+      1940,
+      34060
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "鎌倉市内の神社仏閣を、出発点と解散点を定めた1〜3時間の散歩コースで網羅。エリア別14コース＋コンプリート版16コース、徒歩距離・歴史知識つき。編者：クランポック。",
+    "after": "寺社と史跡をつなぐ67コース。地図・距離・写真から選ぶ。",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 1,
+    "before_offsets": [
+      733
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/index.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/index.png?v=20261031-editorial1",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 2,
+    "before_offsets": [
+      1372,
+      1930
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "「人物でめぐる」コースを楽しむための前提知識。源頼朝・北条氏・足利氏ら、主要人物の関係を掴んでおく。",
+    "after": "将軍・執権・僧たち。役割と親族関係を整理する。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://houkokuji.or.jp/about/",
+      "https://ir.library.osaka-u.ac.jp/repo/ouka/all/27199/mgsl053_001.pdf",
+      "https://ryuukoji.com/about/",
+      "https://tokeiji.com/en",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC",
+      "https://www.arc.ritsumei.ac.jp/opengadaiwiki/index.php/%E6%96%B0%E7%94%B0%E7%BE%A9%E8%B2%9E",
+      "https://www.artm.pref.hyogo.jp/bungaku/kikaku/taiheiki/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.hachimangu.or.jp/knowledge/",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750",
+      "https://www.kenchoji.com/about/",
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://www.pref.hiroshima.lg.jp/soshiki_file/monjokan/nenpyou/nenpyou-cyusei1.pdf",
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html",
+      "https://www.pref.tottori.lg.jp/item/636883.htm",
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1262,
+      1907,
+      31490
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/persons.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/persons.png?v=20261031-editorial1",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://houkokuji.or.jp/about/",
+      "https://ir.library.osaka-u.ac.jp/repo/ouka/all/27199/mgsl053_001.pdf",
+      "https://ryuukoji.com/about/",
+      "https://tokeiji.com/en",
+      "https://www.arc.ritsumei.ac.jp/artwiki/index.php/%E6%9C%80%E6%98%8E%E5%AF%BA%E6%99%82%E9%A0%BC",
+      "https://www.arc.ritsumei.ac.jp/opengadaiwiki/index.php/%E6%96%B0%E7%94%B0%E7%BE%A9%E8%B2%9E",
+      "https://www.artm.pref.hyogo.jp/bungaku/kikaku/taiheiki/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.city.kamakura.kanagawa.jp/taiga/documents/ferisgaido.pdf",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.hachimangu.or.jp/knowledge/",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750",
+      "https://www.kenchoji.com/about/",
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://www.pref.hiroshima.lg.jp/soshiki_file/monjokan/nenpyou/nenpyou-cyusei1.pdf",
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html",
+      "https://www.pref.tottori.lg.jp/item/636883.htm",
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 2,
+    "before_offsets": [
+      1381,
+      1915
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "「年表でめぐる」コースを楽しむための前提知識。鎌倉800年を7つの時期に分けて、大きな流れを掴んでおく。",
+    "after": "頼朝の政治から、執権と鎌倉府へ。時代を分けて、町を読む。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://ch.kanagawa-museum.jp/uploads/caption-201807.pdf",
+      "https://houkokuji.or.jp/about/",
+      "https://museum.city.fukuoka.jp/sp/exhibition/588/",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.city.kamakura.kanagawa.jp/fuuchi/documents/1shou.pdf",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.kenchoji.com/about/",
+      "https://www.sundaigakuen.ac.jp/news/5392/",
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=46"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      756,
+      1259,
+      1899,
+      31375
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/timeline.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/timeline.png?v=20261031-editorial1",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://ch.kanagawa-museum.jp/uploads/caption-201807.pdf",
+      "https://houkokuji.or.jp/about/",
+      "https://museum.city.fukuoka.jp/sp/exhibition/588/",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.city.kamakura.kanagawa.jp/fuuchi/documents/1shou.pdf",
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.kenchoji.com/about/",
+      "https://www.sundaigakuen.ac.jp/news/5392/",
+      "https://www.teikokushoin.co.jp/junior/faq/detail/941/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=46"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 2,
+    "before_offsets": [
+      1387,
+      1918
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "鎌倉の歴史・お寺・宗教・人物にまつわる4種類のドリル。源頼朝編・古代編など、テーマごとに1つずつ確実に学べる。全編を終えたら総合テストで確かめられる。",
+    "after": "人物・寺社・言葉を復習。歩く前にも、歩いた後にも。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://ryuukoji.com/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.city.kamakura.kanagawa.jp/sekaiisan/documents/p8_27.pdf",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html",
+      "https://www.pref.tottori.lg.jp/item/636883.htm",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75",
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      757,
+      1280,
+      1938,
+      34643
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/quiz.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/quiz.png?v=20261031-editorial1",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://ryuukoji.com/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.city.kamakura.kanagawa.jp/sekaiisan/documents/p8_27.pdf",
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.library-archives.pref.fukui.lg.jp/fukui/07/nenpyo/rekishi/chrn13.html",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/",
+      "https://www.pref.tochigi.lg.jp/c05/intro/tochigiken/hakken/jinbutsu1_08.html",
+      "https://www.pref.tottori.lg.jp/item/636883.htm",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75",
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 2,
+    "before_offsets": [
+      1375,
+      1902
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "1180年、源頼朝は、三方を山、一方を海に囲まれたこの土地を選んだ。若宮大路のまん中を通る段葛を歩き、頼朝が一族の神さまとして建てた鶴岡八幡宮へ向かう。少し歩けば…",
+    "after": "鶴岡八幡宮・段葛・由比若宮。神社と道から町の始まりを見る。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.hachimangu.or.jp/knowledge/"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      756,
+      1302,
+      1970,
+      35188
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g2.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g2.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun-rekishi.html",
+      "https://www.hachimangu.or.jp/knowledge/"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1406,
+      1932,
+      35138
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "1184年、頼朝は父・源義朝の霊を慰めるため、勝長寿院というお寺を建てた。頼朝自身が亡くなったのは1199年。その体は法華堂に埋葬されたと伝わる。大倉幕府跡、法華堂跡、そして後にできた永福寺跡を一緒に歩くと…",
+    "after": "建物のない場所にも残る、政治と祈りの歴史をたどる。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      760,
+      1332,
+      2034,
+      35278
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g3.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g3.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1406,
+      1940,
+      35146
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "執権・北条時頼は、宋（中国）から蘭渓道隆というお坊さんを招き、鎌倉に禅を根づかせた。明月院の前の姿・最明寺は、時頼自身が出家したお寺。建長寺は日本で最初の、禅宗だけを修行する寺として…",
+    "after": "建長寺・明月院を歩き、寺の成り立ちを見比べる。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      757,
+      1314,
+      1995,
+      35224
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g4.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g4.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1396,
+      1919,
+      35120
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "1281年、2度目の元寇（弘安の役）を退けた北条時宗は、その翌年、戦って死んだ人たちの霊を慰めるために円覚寺を建てた。招かれた無学祖元は、日本に来る前、中国のお寺が元の軍に襲われても動じなかったという…",
+    "after": "円覚寺・東慶寺・浄智寺。寺が担った役割を見比べる。",
+    "sources": [
+      "https://tokeiji.com/en",
+      "https://www.engakuji.or.jp/about/"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      757,
+      1323,
+      2013,
+      35251
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g5.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g5.png?v=20261031-editorial1",
+    "sources": [
+      "https://tokeiji.com/en",
+      "https://www.engakuji.or.jp/about/"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1400,
+      1925,
+      35128
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "日蓮は「正しいのは法華経だけ」と信じ、幕府が大事にしていた念仏と禅を名前を出して批判した。守ってくれる人がいなかったことも重なり、二度の法難（松葉ヶ谷・龍口）を招いたと伝わる。",
+    "after": "教えと迫害の記憶を伝える寺へ。鎌倉に根づいた信仰をたどる。",
+    "sources": [
+      "https://ryuukoji.com/about/",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1314,
+      1997,
+      34788
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g7.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g7.png?v=20261031-editorial1",
+    "sources": [
+      "https://ryuukoji.com/about/",
+      "https://www.nichiren.or.jp/goibun/id1/",
+      "https://www.nichiren.or.jp/oteratabi/vol19/"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1412,
+      1947,
+      34720
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "1333年、新田義貞の軍に攻められた北条高時は、東勝寺で一族と一緒に自害した。宝戒寺は、その北条氏の屋敷があった場所に、無念の死をとげた人たちを慰めるために建てられた。鎌倉宮は…",
+    "after": "出来事の時代と、建物の時代。その違いに目を向けて歩く。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=16",
+      "https://www.trip-kamakura.com/facility/detail.php?id=59"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1315,
+      1999,
+      35227
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g8.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g8.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/treasury/toshojiato.html",
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html",
+      "https://www.trip-kamakura.com/facility/detail.php?area=3&id=16",
+      "https://www.trip-kamakura.com/facility/detail.php?id=59"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1408,
+      1941,
+      35148
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "室町幕府をつくる前から、足利氏はすでに鎌倉で力を持つ武士だった。浄妙寺は足利貞氏のため、報国寺は足利家時のために建てられたお寺で、それぞれ五山5位・諸山という格を持つ。報国寺の竹林は今も静かで、鎌倉駅の周りとは違う…",
+    "after": "浄妙寺・報国寺・明王院。人物と寺の関係をたどる。",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      756,
+      1328,
+      2022,
+      35266
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g9.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g9.png?v=20261031-editorial1",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1396,
+      1917,
+      35118
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "英勝寺は、水戸徳川家のお姫様が開いた、鎌倉で唯一の尼寺御所（お姫様が住職になるお寺）。寿福寺は北条政子が明菴栄西というお坊さんを招いて開いたお寺で、鎌倉五山のひとつです。政治の記録には残りにくいけれど…",
+    "after": "北条政子と、お勝の方。寿福寺・英勝寺から歴史を読む。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      758,
+      1326,
+      2021,
+      34825
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g10.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g10.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34",
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1406,
+      1936,
+      34707
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "鎌倉の北条氏が滅んだ後も、戦国時代には、別の一族の北条氏（後北条氏）が玉縄城を築き、この一帯を支配した。龍宝寺は、その城主・北条綱成が建てたと伝わる。常楽寺は執権・北条泰時の墓——鎌倉時代と戦国時代…",
+    "after": "常楽寺・龍宝寺・大船観音。鎌倉、戦国、昭和をたどる。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      760,
+      1329,
+      2029,
+      35271
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g12.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g12.png?v=20261031-editorial1",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.kanagawa-kankou.or.jp/features/kamakuradono-column409750",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1410,
+      1946,
+      35156
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "日蓮が処刑されそうになった「龍口法難」の現場が、この龍口寺。大町・材木座からは少し離れているけれど、日蓮宗へのつらい歴史の記憶はここにも続いている。江ノ島の賑わいのすぐ隣に、こんな静かなお寺の町が残っていることに驚く…",
+    "after": "日蓮の法難を伝える地へ。寺を守ってきた人々の歴史。",
+    "sources": [
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1336,
+      2042,
+      34855
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/g14.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/g14.png?v=20261031-editorial1",
+    "sources": [
+      "https://ryuukoji.com/about/"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1406,
+      1938,
+      34709
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "鶴岡八幡宮から勝長寿院跡、法華堂跡（頼朝の墓）、そして再興した杉本寺まで。鎌倉という都市そのものを作った人物の足跡を、建てたもの・弔われた場所という順でたどる。",
+    "after": "八幡宮と寺の跡をつなぎ、武士の政治の始まりをたどる。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      765,
+      1319,
+      2014,
+      34164
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/pe1.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/pe1.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1420,
+      1971,
+      34107
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "明月院・建長寺は時頼、円覚寺は時宗、東慶寺は時宗の妻・覚山尼が開山した寺。覚山尼は後の執権貞時の母でもある。北条氏一族の複数の世代にわたる禅への傾倒を…",
+    "after": "時頼・時宗・覚山尼。一族と寺のつながりを見る。",
+    "sources": [
+      "https://tokeiji.com/en",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      771,
+      1327,
+      2036,
+      34188
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/pe4.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/pe4.png?v=20261031-editorial1",
+    "sources": [
+      "https://tokeiji.com/en",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.engakuji.or.jp/about/",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1426,
+      1992,
+      34131
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "戦国期、玉縄城主として一帯を支配した北条綱成。龍宝寺と大船観音寺を結ぶと、鎌倉北条氏とは別の「もう一つの北条」が見えてくる。",
+    "after": "戦国時代の歴史をたどり、昭和の大船観音へ歩く。",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      765,
+      1301,
+      1978,
+      34111
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/pe7.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/pe7.png?v=20261031-editorial1",
+    "sources": [
+      "https://archives.pref.kanagawa.jp/business/document-guide/chuse.html",
+      "https://oofuna-kannon.or.jp/en-about-us/",
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1414,
+      1962,
+      34096
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "瑞泉寺だけを訪ねる、夢窓疎石の庭を見るためのコース。政治から少し距離を置いた、禅僧個人の仕事に触れる時間。",
+    "after": "岩盤を生かした庭から、禅と作庭の文化をたどる。",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1281,
+      1933,
+      34051
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/pe11.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/pe11.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.kamakura-zuisenji.or.jp/about/",
+      "https://www.nabunken.go.jp/org/bunka/jgd/pages/GardenAtZuisenji.html"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1404,
+      1935,
+      34064
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "浄妙寺・報国寺・明王院。足利氏という、後に室町幕府を開く一族が、鎌倉時代にはまだ一御家人として建てていた寺々。",
+    "after": "浄妙寺・報国寺・明王院。寺を支えた人物をたどる。",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/21/t210901-6-7.html",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      767,
+      1299,
+      1977,
+      34105
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/pe13.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/pe13.png?v=20261031-editorial1",
+    "sources": [
+      "https://houkokuji.or.jp/about/",
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/21/t210901-6-7.html",
+      "https://www.myooin.com/engi.html",
+      "https://www.trip-kamakura.com/facility/detail.php?id=42"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1422,
+      1978,
+      34116
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "明月院・建長寺・円応寺は、いずれも北条時頼の時代に禅が本格的に根づいた流れの中にある。あじさいの寺として有名な明月院の奥に、権力者の出家という重い話があることを知って歩く。",
+    "after": "明月院・建長寺・円応寺。建物と仏像を見比べる。",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      767,
+      1329,
+      2036,
+      34192
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/re2.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/re2.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kouhou/kamakura/h25/t131015-8.html",
+      "https://www.kenchoji.com/about/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=70"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1418,
+      1972,
+      34105
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "お勝の方（英勝院）ゆかりの英勝寺へ。江戸時代の建物と、水戸徳川家の女性たちが寺を支えた歴史をたどるコース。",
+    "after": "お勝の方と水戸徳川家。女性たちが支えた寺を訪ねる。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      759,
+      1280,
+      1930,
+      34045
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/re7.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/re7.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1406,
+      1938,
+      34065
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "鶴岡八幡宮・勝長寿院跡・大倉幕府跡・法華堂跡。頼朝が鎌倉に入ってから死ぬまでの間に作られた、都市の骨格をたどる。",
+    "after": "八幡宮と、政治・祈りの跡地。幕府が形になる時代をたどる。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "変更した本文・共有画像に合わせてdescription/OG/twitter/既存JSON-LD要約を整合。",
+    "occurrences": 4,
+    "before_offsets": [
+      778,
+      1321,
+      2031,
+      34169
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "https://djnaoyaman.github.io/kuranpo/ogp/ti2.png",
+    "after": "https://djnaoyaman.github.io/kuranpo/ogp/ti2.png?v=20261031-editorial1",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "訂正済み共有画像を参照し、旧画像キャッシュとの混在を避ける。",
+    "occurrences": 3,
+    "before_offsets": [
+      1450,
+      2042,
+      34192
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "大船観音寺の完成",
+    "after": "大船観音像の完成",
+    "sources": [
+      "https://oofuna-kannon.or.jp/en-about-us/"
+    ],
+    "reason": "寺の成立と像の完成を区別。",
+    "occurrences": 1,
+    "before_offsets": [
+      45214
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "玉縄北条氏ゆかりの龍宝寺と関係する人物は？",
+    "after": "龍宝寺の前身となる寺を建てたと伝わる人物は？",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "独立レビュー：家康も関係者なので、前身創建に問いを限定して一意の正答にする。",
+    "occurrences": 1,
+    "before_offsets": [
+      46915
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "玉縄北条氏ゆかりの龍宝寺と関係する人物は？",
+    "after": "龍宝寺の前身となる寺を建てたと伝わる人物は？",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=75"
+    ],
+    "reason": "独立レビュー：家康も関係者なので、前身創建に問いを限定して一意の正答にする。",
+    "occurrences": 1,
+    "before_offsets": [
+      43996
+    ]
   }
 ]

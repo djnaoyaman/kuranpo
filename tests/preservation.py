@@ -12,8 +12,12 @@ def before_editorial(path,s):
  for e in reversed(EDITS):
   if e['path']!=path:continue
   assert e['sources'] and e['reason'], 'Unexplained editorial change: '+path
-  assert s.count(e['after'])==e['occurrences'], 'Editorial ledger mismatch: '+path
-  s=s.replace(e['after'],e['before'])
+  assert len(e['before_offsets'])==e['occurrences'], 'Editorial scope count: '+path
+  delta=len(e['after'])-len(e['before'])
+  for i,pos in reversed(list(enumerate(e['before_offsets']))):
+   start=pos+i*delta; end=start+len(e['after'])
+   assert s[start:end]==e['after'], 'Editorial ledger position mismatch: '+path
+   s=s[:start]+e['before']+s[end:]
  return s
 class Audit(HTMLParser):
  def __init__(self,s):super().__init__(convert_charrefs=True);self.tokens=[];self.skip=0;self.feed(normalize_update_dates(s))

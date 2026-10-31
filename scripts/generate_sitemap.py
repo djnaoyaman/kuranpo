@@ -17,7 +17,7 @@ BASE_URL = "https://djnaoyaman.github.io/kuranpo"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # 除外するディレクトリ・ファイル
-EXCLUDE_DIRS = {".git", "scripts", "node_modules", ".github"}
+EXCLUDE_DIRS = {".git", "scripts", "node_modules", ".github", "tests", "test-results", "playwright-report"}
 EXCLUDE_FILES = {"404.html"}  # 404ページはインデックス対象外
 
 # 優先度とページ更新頻度の目安（パスの先頭一致で判定、無ければデフォルト）

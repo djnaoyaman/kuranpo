@@ -6,6 +6,6 @@ for(const theme of ['traditional','monochrome'])for(const key of ['c6','c7'])tes
  await page.screenshot({path:`test-results/pending-${key}-${theme}.png`,fullPage:true});
 });
 test('pending routes excluded from time filter',async({page})=>{
- await page.goto('/index.html');await page.locator('[data-mode="time"]').click();await page.locator('.opts button').first().click();
+ await page.goto('/index.html');await page.locator('[data-mode="time"]').click();await page.locator('.opts[data-for="time"] button').first().click();
  for(const key of ['c6','c7'])await expect(page.locator(`.route:has(a[href="knowledge/${key}.html"])`)).toBeHidden();
 });

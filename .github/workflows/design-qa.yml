@@ -23,6 +23,7 @@ jobs:
       - run: python3 -m unittest discover -s tests -p "test_profile.py"
       - run: python3 -m unittest discover -s tests -p "test_preservation_dates.py"
       - run: python3 -m unittest discover -s tests -p "test_course_inventory.py"
+      - run: python3 tests/launch-metadata.py
       - run: python3 tests/preservation.py
       - run: node --check assets/monochrome.js
       - run: npm install --ignore-scripts

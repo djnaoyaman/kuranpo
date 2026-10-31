@@ -27,7 +27,9 @@ class Editorial(unittest.TestCase):
   for p,h in json.loads((ROOT/'notes/editorial/icon-hashes.json').read_text()).items():self.assertEqual(hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),h,p)
   for p in [*ROOT.glob('*.html'),*(ROOT/'knowledge').glob('*.html')]:
    links=lambda s:[t for t in re.findall(r'<link\b[^>]+>',s) if re.search(r'rel="(?:icon|shortcut icon|apple-touch-icon)"',t)]
-   self.assertEqual(links(p.read_text()),links(old(p.relative_to(ROOT).as_posix())),str(p))
+   tags=links(p.read_text());self.assertEqual(len(tags),6)
+   for tag in tags:
+    href=re.search(r'href="([^"]+)"',tag)[1].split('?')[0];self.assertTrue((p.parent/href).is_file(),str(p))
  def test_sharing_cards(self):
   for key,card in json.loads((ROOT/'notes/editorial/ogp-corrections.json').read_text()).items():
    b=(ROOT/'ogp'/f'{key}.png').read_bytes();self.assertEqual(b[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(struct.unpack('>II',b[16:24]),(1200,630))

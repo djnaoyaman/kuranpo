@@ -13,3 +13,9 @@ for(const width of [320,375,390,768,1440])for(const theme of ['traditional','mon
  await page.getByLabel('サイトのデザイン').selectOption(theme==='traditional'?'monochrome':'traditional');await expect(logo).toBeVisible();
  await page.goto('/knowledge/c1.html');await expect(page.locator('.topbar-brand')).toHaveAttribute('href','../index.html');expect(await page.locator('.brand-logo').evaluate(i=>i.complete&&i.naturalWidth>0)).toBe(true);
 });
+for(const theme of ['traditional','monochrome'])test(`logo and header at 200 percent ${theme}`,async({page})=>{
+ await page.setViewportSize({width:768,height:1000});await page.emulateMedia({reducedMotion:'reduce'});await page.addInitScript(t=>localStorage.setItem('kuranpo-design',t),theme);await page.goto('/index.html');
+ await page.evaluate(()=>document.documentElement.style.zoom='2');await expect(page.locator('.brand-logo')).toBeVisible();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
+ await page.screenshot({path:`test-results/logo-${theme}-zoom200.png`});
+});

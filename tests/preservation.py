@@ -12,7 +12,14 @@ EDITS+=json.loads((ROOT/'notes/editorial/profile-footer-edits.json').read_text()
 EDITS+=json.loads((ROOT/'notes/editorial/po-brand-edits.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/access-corrections.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/route-corrections.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/course-inventory-corrections.json').read_text())
 def before_editorial(path,s):
+ # Ledgers were recorded against the 2026-10-31 release-date rendering.
+ # Date content is checked separately by the date contract; stabilize its
+ # length before replaying positional edits, without touching historical dates.
+ s=re.sub(r'("dateModified"\s*:\s*")[^"]+',r'\g<1>2026-10-31',s)
+ s=re.sub(r'(最終更新</dt><dd>)[^<]+',r'\g<1>2026年10月31日',s)
+ s=re.sub(r'(最終更新：)\d{4}年\d+月\d+日',r'\g<1>2026年10月31日',s)
  for e in reversed(EDITS):
   if e['path']!=path:continue
   assert e['sources'] and e['reason'], 'Unexplained editorial change: '+path

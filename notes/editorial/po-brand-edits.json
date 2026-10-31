@@ -1,0 +1,2396 @@
+[
+  {
+    "path": "timeline.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      32271
+    ]
+  },
+  {
+    "path": "religions.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      38802
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36778
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      29475
+    ]
+  },
+  {
+    "path": "photos.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      38993
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      32372
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      67953
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      33994
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      29044
+    ]
+  },
+  {
+    "path": "basics.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      28576
+    ]
+  },
+  {
+    "path": "404.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      25530
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35809
+    ]
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35674
+    ]
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35666
+    ]
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35645
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35789
+    ]
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35640
+    ]
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35792
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35715
+    ]
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35664
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35612
+    ]
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      34944
+    ]
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35684
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35569
+    ]
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      34909
+    ]
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35727
+    ]
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35756
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35708
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35617
+    ]
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35708
+    ]
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35768
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35708
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35752
+    ]
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35753
+    ]
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35646
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35606
+    ]
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35802
+    ]
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35611
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35647
+    ]
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35646
+    ]
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35654
+    ]
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35663
+    ]
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35657
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35631
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35638
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35571
+    ]
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35688
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35617
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36616
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36649
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36221
+    ]
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36469
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36627
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36619
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36648
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36636
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36213
+    ]
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36932
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36661
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36933
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36210
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36368
+    ]
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      34910
+    ]
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36413
+    ]
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36481
+    ]
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35725
+    ]
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35865
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35842
+    ]
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35824
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35720
+    ]
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35738
+    ]
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35334
+    ]
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      34975
+    ]
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35010
+    ]
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35749
+    ]
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35783
+    ]
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      35777
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before": "width=\"383\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "after": "width=\"347\" height=\"126\" alt=\"鎌・くらんぽ\"",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用した丸鎌半濁点ロゴの縦横比へ更新。",
+    "occurrences": 1,
+    "before_offsets": [
+      36881
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "ogp/index.png?v=20261031-kura119",
+    "after": "ogp/index.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 2,
+    "before_offsets": [
+      1409,
+      1986
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "ogp/persons.png?v=20261031-kura119",
+    "after": "ogp/persons.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 2,
+    "before_offsets": [
+      1418,
+      1971
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "ogp/timeline.png?v=20261031-kura119",
+    "after": "ogp/timeline.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 2,
+    "before_offsets": [
+      1424,
+      1974
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "ogp/quiz.png?v=20261031-kura119",
+    "after": "ogp/quiz.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 2,
+    "before_offsets": [
+      1412,
+      1958
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "ogp/g2.png?v=20261031-kura119",
+    "after": "ogp/g2.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1988,
+      35212
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "ogp/g3.png?v=20261031-kura119",
+    "after": "ogp/g3.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1996,
+      35220
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "ogp/g4.png?v=20261031-kura119",
+    "after": "ogp/g4.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1433,
+      1975,
+      35194
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "ogp/g5.png?v=20261031-kura119",
+    "after": "ogp/g5.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1437,
+      1981,
+      35202
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "ogp/g7.png?v=20261031-kura119",
+    "after": "ogp/g7.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1449,
+      2003,
+      34794
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "ogp/g8.png?v=20261031-kura119",
+    "after": "ogp/g8.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1445,
+      1997,
+      35222
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "ogp/g9.png?v=20261031-kura119",
+    "after": "ogp/g9.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1433,
+      1973,
+      35192
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "ogp/g10.png?v=20261031-kura119",
+    "after": "ogp/g10.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1992,
+      34781
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "ogp/g12.png?v=20261031-kura119",
+    "after": "ogp/g12.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1447,
+      2002,
+      35230
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "ogp/g14.png?v=20261031-kura119",
+    "after": "ogp/g14.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1994,
+      34783
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "ogp/pe1.png?v=20261031-kura119",
+    "after": "ogp/pe1.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1457,
+      2027,
+      34189
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "ogp/pe4.png?v=20261031-kura119",
+    "after": "ogp/pe4.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1463,
+      2048,
+      34213
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "ogp/pe7.png?v=20261031-kura119",
+    "after": "ogp/pe7.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1451,
+      2018,
+      34178
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "ogp/pe11.png?v=20261031-kura119",
+    "after": "ogp/pe11.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1441,
+      1991,
+      34146
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "ogp/pe13.png?v=20261031-kura119",
+    "after": "ogp/pe13.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1459,
+      2034,
+      34198
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "ogp/re2.png?v=20261031-kura119",
+    "after": "ogp/re2.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1455,
+      2028,
+      34187
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "ogp/re7.png?v=20261031-kura119",
+    "after": "ogp/re7.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1994,
+      34147
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "ogp/ti2.png?v=20261031-kura119",
+    "after": "ogp/ti2.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      1487,
+      2098,
+      34274
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before": "ogp/profile.png?v=20261031-profile",
+    "after": "ogp/profile.png?v=20261031-po-mark",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの共有画像を更新。",
+    "occurrences": 2,
+    "before_offsets": [
+      1458,
+      2025
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">改善</span>ロゴの「ぽ」の丸に「鎌」を組み込み、太い輪郭に整えました。サイト上部と共有画像のロゴを統一しました。（2026年10月31日）</li>",
+    "sources": [
+      "library://libfile_21b8ca9869d88191933f8e805d8ccf59/version/1"
+    ],
+    "reason": "採用ロゴの一体化を記録。",
+    "occurrences": 1,
+    "before_offsets": [
+      34657
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      787
+    ]
+  },
+  {
+    "path": "religions.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      840
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      785
+    ]
+  },
+  {
+    "path": "profile.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      805
+    ]
+  },
+  {
+    "path": "photos.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      873
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      785
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      764
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      815
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      801
+    ]
+  },
+  {
+    "path": "basics.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      815
+    ]
+  },
+  {
+    "path": "404.html",
+    "before": "<link rel=\"icon\" href=\"favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      821
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      849
+    ]
+  },
+  {
+    "path": "knowledge/ti8.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      833
+    ]
+  },
+  {
+    "path": "knowledge/ti7.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      830
+    ]
+  },
+  {
+    "path": "knowledge/ti6.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      814
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      853
+    ]
+  },
+  {
+    "path": "knowledge/ti4.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      826
+    ]
+  },
+  {
+    "path": "knowledge/ti3.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      850
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      809
+    ]
+  },
+  {
+    "path": "knowledge/ti10.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      818
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      808
+    ]
+  },
+  {
+    "path": "knowledge/re9.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      836
+    ]
+  },
+  {
+    "path": "knowledge/re8.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      824
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      787
+    ]
+  },
+  {
+    "path": "knowledge/re6.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      825
+    ]
+  },
+  {
+    "path": "knowledge/re5.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      837
+    ]
+  },
+  {
+    "path": "knowledge/re4.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      842
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      833
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      793
+    ]
+  },
+  {
+    "path": "knowledge/re12.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      828
+    ]
+  },
+  {
+    "path": "knowledge/re11.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      840
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      828
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      841
+    ]
+  },
+  {
+    "path": "knowledge/pe9.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      837
+    ]
+  },
+  {
+    "path": "knowledge/pe8.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      820
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      791
+    ]
+  },
+  {
+    "path": "knowledge/pe6.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      856
+    ]
+  },
+  {
+    "path": "knowledge/pe5.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      811
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      797
+    ]
+  },
+  {
+    "path": "knowledge/pe3.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      817
+    ]
+  },
+  {
+    "path": "knowledge/pe2.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      819
+    ]
+  },
+  {
+    "path": "knowledge/pe15.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      820
+    ]
+  },
+  {
+    "path": "knowledge/pe14.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      817
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      794
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      816
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      785
+    ]
+  },
+  {
+    "path": "knowledge/pe10.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      824
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      794
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      783
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      789
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      791
+    ]
+  },
+  {
+    "path": "knowledge/g6.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      868
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      785
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      783
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      788
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      788
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      787
+    ]
+  },
+  {
+    "path": "knowledge/g13.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      872
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      789
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      870
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      787
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      845
+    ]
+  },
+  {
+    "path": "knowledge/c9.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      833
+    ]
+  },
+  {
+    "path": "knowledge/c8.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      854
+    ]
+  },
+  {
+    "path": "knowledge/c7.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      871
+    ]
+  },
+  {
+    "path": "knowledge/c6.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      836
+    ]
+  },
+  {
+    "path": "knowledge/c5.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      895
+    ]
+  },
+  {
+    "path": "knowledge/c4.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      869
+    ]
+  },
+  {
+    "path": "knowledge/c3.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      865
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      868
+    ]
+  },
+  {
+    "path": "knowledge/c16.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      840
+    ]
+  },
+  {
+    "path": "knowledge/c15.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      856
+    ]
+  },
+  {
+    "path": "knowledge/c14.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      841
+    ]
+  },
+  {
+    "path": "knowledge/c13.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      852
+    ]
+  },
+  {
+    "path": "knowledge/c12.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      842
+    ]
+  },
+  {
+    "path": "knowledge/c11.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      855
+    ]
+  },
+  {
+    "path": "knowledge/c10.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      852
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before": "<link rel=\"icon\" href=\"../favicon.ico\" sizes=\"any\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png\">\n<link rel=\"apple-touch-icon\" href=\"../apple-touch-icon.png\">",
+    "after": "<link rel=\"icon\" href=\"../favicon.ico?v=20261031-po\" sizes=\"16x16 32x32 48x48\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../favicon-32x32.png?v=20261031-po\">\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../favicon-16x16.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../apple-touch-icon.png?v=20261031-po\">\n<link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"../apple-touch-icon-167x167.png\">\n<link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"../apple-touch-icon-152x152.png\">\n<link rel=\"mask-icon\" href=\"../safari-pinned-tab.svg\" color=\"#141411\">\n<link rel=\"manifest\" href=\"../site.webmanifest\">",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "採用明朝を等サイズ二段にしたApple・関連アイコンを案内。極小faviconは鎌内字のみ簡略化。",
+    "occurrences": 1,
+    "before_offsets": [
+      861
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "サイト上部と共有画像のロゴを統一しました。",
+    "after": "サイト上部と共有画像のロゴを統一し、Appleなどのアイコンは等サイズの「くら／んぽ」二段組みにしました。",
+    "sources": [
+      "library://libfile_47d14447d0e88191ae4616ad6954af2e"
+    ],
+    "reason": "アイコン用途別更新を同じ履歴へ追記。",
+    "occurrences": 1,
+    "before_offsets": [
+      35183
+    ]
+  }
+]

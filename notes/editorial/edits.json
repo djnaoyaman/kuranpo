@@ -4883,5 +4883,331 @@
     "before_offsets": [
       34657
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "ogp/index.png?v=20261031-editorial2",
+    "after": "ogp/index.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 2,
+    "before_offsets": [
+      1409,
+      1989
+    ]
+  },
+  {
+    "path": "persons.html",
+    "before": "ogp/persons.png?v=20261031-editorial2",
+    "after": "ogp/persons.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 2,
+    "before_offsets": [
+      1418,
+      1974
+    ]
+  },
+  {
+    "path": "timeline.html",
+    "before": "ogp/timeline.png?v=20261031-editorial2",
+    "after": "ogp/timeline.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 2,
+    "before_offsets": [
+      1424,
+      1977
+    ]
+  },
+  {
+    "path": "quiz.html",
+    "before": "ogp/quiz.png?v=20261031-editorial2",
+    "after": "ogp/quiz.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 2,
+    "before_offsets": [
+      1412,
+      1961
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "ogp/g2.png?v=20261031-editorial2",
+    "after": "ogp/g2.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1991,
+      35219
+    ]
+  },
+  {
+    "path": "knowledge/g3.html",
+    "before": "ogp/g3.png?v=20261031-editorial2",
+    "after": "ogp/g3.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1999,
+      35227
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "ogp/g4.png?v=20261031-editorial2",
+    "after": "ogp/g4.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1433,
+      1978,
+      35201
+    ]
+  },
+  {
+    "path": "knowledge/g5.html",
+    "before": "ogp/g5.png?v=20261031-editorial2",
+    "after": "ogp/g5.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1437,
+      1984,
+      35209
+    ]
+  },
+  {
+    "path": "knowledge/g7.html",
+    "before": "ogp/g7.png?v=20261031-editorial2",
+    "after": "ogp/g7.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1449,
+      2006,
+      34801
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "ogp/g8.png?v=20261031-editorial2",
+    "after": "ogp/g8.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1445,
+      2000,
+      35229
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "ogp/g9.png?v=20261031-editorial2",
+    "after": "ogp/g9.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1433,
+      1976,
+      35199
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "ogp/g10.png?v=20261031-editorial2",
+    "after": "ogp/g10.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1995,
+      34788
+    ]
+  },
+  {
+    "path": "knowledge/g12.html",
+    "before": "ogp/g12.png?v=20261031-editorial2",
+    "after": "ogp/g12.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1447,
+      2005,
+      35237
+    ]
+  },
+  {
+    "path": "knowledge/g14.html",
+    "before": "ogp/g14.png?v=20261031-editorial2",
+    "after": "ogp/g14.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1997,
+      34790
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "ogp/pe1.png?v=20261031-editorial2",
+    "after": "ogp/pe1.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1457,
+      2030,
+      34188
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "ogp/pe4.png?v=20261031-editorial2",
+    "after": "ogp/pe4.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1463,
+      2051,
+      34212
+    ]
+  },
+  {
+    "path": "knowledge/pe7.html",
+    "before": "ogp/pe7.png?v=20261031-editorial2",
+    "after": "ogp/pe7.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1451,
+      2021,
+      34177
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "ogp/pe11.png?v=20261031-editorial2",
+    "after": "ogp/pe11.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1441,
+      1994,
+      34145
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "ogp/pe13.png?v=20261031-editorial2",
+    "after": "ogp/pe13.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1459,
+      2037,
+      34197
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "ogp/re2.png?v=20261031-editorial2",
+    "after": "ogp/re2.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1455,
+      2031,
+      34186
+    ]
+  },
+  {
+    "path": "knowledge/re7.html",
+    "before": "ogp/re7.png?v=20261031-editorial2",
+    "after": "ogp/re7.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1443,
+      1997,
+      34146
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "ogp/ti2.png?v=20261031-editorial2",
+    "after": "ogp/ti2.png?v=20261031-logo12",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/9"
+    ],
+    "reason": "採用ロゴを反映した共有画像の版を更新し、古い画像キャッシュと区別。",
+    "occurrences": 3,
+    "before_offsets": [
+      1487,
+      2101,
+      34273
+    ]
   }
 ]

@@ -2685,5 +2685,39 @@
       2112,
       34284
     ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<h2 class=\"mincho\">主な変更</h2>",
+    "after": "<h2 class=\"mincho\">主な変更</h2>\n  <p>日付は日本時間です。以下は公開済みの変更で、全ページの文章整理と経路の再確認は続けています。</p>\n  <ol class=\"log-list\" aria-label=\"最近の変更\">\n    <li><span class=\"tag\">訂正</span>人物の続柄、寺院の創建者・年代などを訂正し、関連する本文とクイズの食い違いを直しました。トップページと関連ページの共有画像も、見出しを主役にした白黒のデザインへ改めました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/5\">PR5</a>）</li>\n    <li><span class=\"tag\">改善</span>画面の最終更新日・構造化データ・サイトマップを整合させ、変更したページの更新漏れを自動検査する仕組みを加えました。検査用ページは公開対象とサイトマップから外しました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/4\">PR4</a>）</li>\n    <li><span class=\"tag\">改善</span>白黒デザインのトップを、選定した試作の四行の文字組みと4枚の写真配置に合わせて修正しました。文字と写真の順次表示を整え、動きを減らす端末設定にも対応しています。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/3\">PR3</a>）</li>\n    <li><span class=\"tag\">追加</span>全78ページで、従来のTraditionalと白黒デザインを切り替えられるようにしました。選択は保存され、記事・写真・コースは両方のデザインで共通です。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/2\">PR2</a>）</li>\n    <li><span class=\"tag\">訂正</span>変動する拝観料の情報を、コースの合計・施設ごとの案内・注記などから削除しました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/1\">PR1</a>）</li>\n  </ol>\n  <h3>これまでの変更</h3>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/1",
+      "https://github.com/djnaoyaman/kuranpo/pull/2",
+      "https://github.com/djnaoyaman/kuranpo/pull/3",
+      "https://github.com/djnaoyaman/kuranpo/pull/4",
+      "https://github.com/djnaoyaman/kuranpo/pull/5"
+    ],
+    "reason": "公開済みPR1〜5の更新履歴を実際の日本時間日付で追記。未公開の修正は含めない。",
+    "occurrences": 1,
+    "before_offsets": [
+      34494
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "全コースの記述を事実の面から確かめ直し、",
+    "after": "コースの記述を見直し、",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/1",
+      "https://github.com/djnaoyaman/kuranpo/pull/2",
+      "https://github.com/djnaoyaman/kuranpo/pull/3",
+      "https://github.com/djnaoyaman/kuranpo/pull/4",
+      "https://github.com/djnaoyaman/kuranpo/pull/5"
+    ],
+    "reason": "過去の訂正内容と日付を保ち、全事実の検証完了と誤読される表現を限定。",
+    "occurrences": 1,
+    "before_offsets": [
+      36136
+    ]
   }
 ]

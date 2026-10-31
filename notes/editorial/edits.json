@@ -2191,5 +2191,73 @@
     "before_offsets": [
       43996
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "頼朝没後、菩提を弔うために営まれた鎌倉最初の大寺院群。現在は跡地が中心。",
+    "after": "頼朝が政治と祈りの拠点を築いた大倉周辺。寺院や御所の跡から、幕府草創期をたどる。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "一覧カードにも本文の事実訂正を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      93829
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "政子・<ruby>覚山尼<rt>かくさんに</rt></ruby>など、鎌倉の女性たちが開いた・支えた寺。",
+    "after": "寿福寺の北条政子、英勝寺のお勝の方。異なる時代の女性と寺のつながりをたどる。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
+    ],
+    "reason": "一覧カードにも本文の事実訂正を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      99602
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "頼朝没後、菩提を弔うために営まれた鎌倉最初の大寺院群。現在は跡地が中心。",
+    "after": "頼朝が政治と祈りの拠点を築いた大倉周辺。寺院や御所の跡から、幕府草創期をたどる。",
+    "sources": [
+      "https://www.yokosuka-moa.jp/static/file/event/2022/%E9%81%8B%E6%85%B6%E5%B1%95/%E9%80%A3%E7%B6%9A%E8%AC%9B%E5%BA%A72.pdf"
+    ],
+    "reason": "一覧カードにも本文の事実訂正を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      44435
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "足利氏ゆかりの寺が連なる旧六浦路。浄妙寺は鎌倉五山第五位。",
+    "after": "浄妙寺・報国寺には足利氏、明王院には将軍・藤原頼経の歴史が重なる。",
+    "sources": [
+      "https://www.myooin.com/engi.html",
+      "https://houkokuji.or.jp/about/"
+    ],
+    "reason": "一覧カードにも本文の事実訂正を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      50298
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "政子・<ruby>覚山尼<rt>かくさんに</rt></ruby>など、鎌倉の女性たちが開いた・支えた寺。",
+    "after": "寿福寺の北条政子、英勝寺のお勝の方。異なる時代の女性と寺のつながりをたどる。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?id=7",
+      "https://www.trip-kamakura.com/facility/detail.php?area=4&id=34"
+    ],
+    "reason": "一覧カードにも本文の事実訂正を反映。",
+    "occurrences": 1,
+    "before_offsets": [
+      51164
+    ]
   }
 ]

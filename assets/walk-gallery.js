@@ -51,7 +51,7 @@
     card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,0,0)`;
     card.style.opacity=String(1-Math.min(abs,1)*.35);card.style.setProperty('--walk-info-opacity',String(Math.max(0,1-abs)));card.style.zIndex=String(10-Math.round(abs));
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
-    card.inert=!current;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
+    card.inert=!current&&card!==gesture?.anchor;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
    const visibleIndex=wrap(center);if(displayed!==visibleIndex){displayed=visibleIndex;status.textContent=String(visibleIndex+1).padStart(2,'0')+' / '+courses.length;if(document.activeElement!==select)select.value=courses[visibleIndex].href;}
    gallery.dataset.index=visibleIndex;gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
@@ -72,7 +72,7 @@
   function begin(id,x,y,time,target,touch=false){
    if(gesture)return;
    const wasMoving=motion.phase==='coast'||motion.phase==='snap';
-   gesture={id,x,lastX:x,y,position:motion.position,axis:null,moved:false,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')};
+   gesture={id,x,lastX:x,y,position:motion.position,axis:null,moved:false,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')||courses[wrap(Math.round(motion.position))].href};
    suppressUntil=0;
   }
   function track(x,y,time,event){

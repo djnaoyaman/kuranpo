@@ -72,14 +72,14 @@
   function begin(id,x,y,time,target,touch=false){
    if(gesture)return;
    const wasMoving=motion.phase==='coast'||motion.phase==='snap';
-   gesture={id,x,lastX:x,y,position:motion.position,axis:null,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')};
+   gesture={id,x,lastX:x,y,position:motion.position,axis:null,moved:false,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')};
    suppressUntil=0;
   }
   function track(x,y,time,event){
-   const g=gesture;if(!g)return;const dx=x-g.x,dy=y-g.y;g.lastX=x;
-   if(!g.axis&&(Math.abs(dx)>=6&&Math.abs(dx)>=Math.abs(dy)*.85||Math.abs(dy)>=12&&Math.abs(dy)>Math.abs(dx)*1.35)){
+   const g=gesture;if(!g)return;const dx=x-g.x,dy=y-g.y;g.lastX=x;g.moved ||= Math.hypot(dx,dy)>6;
+   if(!g.axis&&(Math.abs(dx)>=6&&Math.abs(dx)>=Math.abs(dy)*.85||Math.abs(dy)>=12)){
     // Tiny initial wobble is undecided, not a permanent vertical lock.
-    // Horizontal intent locks at 6px; vertical intent needs 12px and clear dominance.
+    // Horizontal intent locks at 6px; remaining vertical intent is handed off at 12px.
     g.axis=Math.abs(dx)>=Math.abs(dy)*.85?'x':'y';
     if(g.axis==='x'){
      if(g.touch&&!event.cancelable){g.axis='y';return;}
@@ -93,7 +93,7 @@
   }
   function finish(id,time,cancel=false){
    if(!gesture||gesture.id!==id)return;const g=gesture;gesture=null;viewport.classList.remove('is-dragging');
-   if(g.axis)suppressUntil=performance.now()+700;
+   if(g.axis||g.moved)suppressUntil=performance.now()+700;
    if(g.axis==='x'){
     if(cancel)motion.snap(Math.round(motion.position),reduced.matches);
     else if(reduced.matches){const d=motion.position-g.position;motion.snap(Math.abs(d)>.18&&Math.abs(d)<.5?Math.round(g.position)+Math.sign(d):Math.round(motion.position),true);}
@@ -101,7 +101,7 @@
    }
    // A vertical gesture, opening credits, or simply touching the wheel is not a brake.
    if(!g.touch&&viewport.hasPointerCapture(id))viewport.releasePointerCapture(id);
-   if(!cancel&&!g.axis&&g.wasMoving&&g.href){save();location.assign(g.href);return;}
+   if(!cancel&&!g.moved&&!g.axis&&g.wasMoving&&g.href){try{sessionStorage.setItem(key,g.href);}catch(_){}location.assign(g.href);return;}
    draw();if(motion.phase!=='idle')schedule();
   }
   viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||!e.isPrimary||e.button!==0)return;begin(e.pointerId,e.clientX,e.clientY,e.timeStamp,e.target);});
@@ -117,7 +117,7 @@
    if(!gesture?.touch)return;if(e.touches.length!==1){finish(gesture.id,e.timeStamp,true);return;}
    const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t)track(t.clientX,t.clientY,e.timeStamp,e);
   },{passive:false});
-  for(const type of ['touchend','touchcancel'])viewport.addEventListener(type,e=>{if(!gesture?.touch)return;const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t)finish(t.identifier,e.timeStamp,type==='touchcancel');},{passive:true});
+  for(const type of ['touchend','touchcancel'])viewport.addEventListener(type,e=>{if(!gesture?.touch)return;const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t){gesture.moved ||= Math.hypot(t.clientX-gesture.x,t.clientY-gesture.y)>6;finish(t.identifier,e.timeStamp,type==='touchcancel');}},{passive:true});
   viewport.addEventListener('click',e=>{if(e.detail>0&&performance.now()<suppressUntil){e.preventDefault();e.stopPropagation();}},true);
   const resize=new ResizeObserver(measure);resize.observe(viewport);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)settleImmediately();},{signal:controller.signal});

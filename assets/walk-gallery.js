@@ -17,12 +17,12 @@
   const hint=make('p','walk-hint','指でめくる。軽くはじくと、くるくる。');hint.id='walk-hint';
   const viewport=make('div','walk-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','コースをめくる');viewport.setAttribute('aria-describedby','walk-hint');viewport.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Home End');
   const stage=make('div','walk-stage');viewport.append(stage);
-  const controls=make('div','walk-controls'),prev=make('button','walk-prev','←'),next=make('button','walk-next','→'),status=make('span','walk-status');prev.type=next.type='button';prev.setAttribute('aria-label','前のコース');next.setAttribute('aria-label','次のコース');status.setAttribute('aria-live','polite');status.setAttribute('aria-atomic','true');controls.append(prev,status,next);
+  const controls=make('div','walk-controls'),prev=make('button','walk-prev','←'),next=make('button','walk-next','→'),status=make('span','walk-status');prev.type=next.type='button';prev.setAttribute('aria-label','前のコース');next.setAttribute('aria-label','次のコース');status.setAttribute('aria-hidden','true');const announcement=make('span','walk-announcement');announcement.setAttribute('aria-live','polite');announcement.setAttribute('aria-atomic','true');controls.append(prev,status,next,announcement);
   const label=make('label','walk-picker','コースを選ぶ'),select=make('select','walk-select');select.setAttribute('aria-label','全コースから選ぶ');courses.forEach(c=>{const o=make('option','',c.id+' '+c.title);o.value=c.href;select.append(o);});label.append(select);
   const details=make('details','walk-credits'),summary=make('summary','','表示中の写真・資料の出典'),credit=make('div','walk-credit-text');details.append(summary,credit);
   gallery.append(hint,viewport,controls,label,details);orbit.replaceChildren(gallery);orbit.classList.add('walk-orbit');scene.querySelector('.b-photo-credits')?.remove();scene.querySelector('.section-title h2').textContent='Walk 01—'+courses.length;
   const motion=new Motion(selected),pool=new Map(),controller=new AbortController();
-  let frame=0,lastTime=0,pitch=1,cardWidth=1,gesture=null,suppressUntil=0,announced=-1,dead=false;
+  let frame=0,lastTime=0,pitch=1,cardWidth=1,gesture=null,suppressUntil=0,announced=-1,displayed=-1,dead=false;
   function save(){selected=wrap(Math.round(motion.position));try{sessionStorage.setItem(key,courses[selected].href);}catch(_){}}
   function photoFor(card,course){
    const photo=photos[course.href],frame=card.querySelector('.walk-photo');frame.replaceChildren();
@@ -36,7 +36,7 @@
   }
   function announce(){
    const i=wrap(Math.round(motion.position));save();if(announced===i)return;announced=i;
-   status.textContent=String(i+1).padStart(2,'0')+' / '+courses.length;select.value=courses[i].href;
+   announcement.textContent=(i+1)+' / '+courses.length+'、'+courses[i].id+' '+courses[i].title;select.value=courses[i].href;
    credit.replaceChildren();for(let d=-2;d<=2;d++){const c=courses[wrap(i+d)],p=photos[c.href];if(!p)continue;const block=make('div','walk-credit');block.append(make('strong','',c.id));const text=make('div');text.innerHTML=p.credit;block.append(text);credit.append(block);}details.hidden=!credit.children.length;
   }
   function draw(){
@@ -50,7 +50,8 @@
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
-   gallery.dataset.index=wrap(center);gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
+   const visibleIndex=wrap(center);if(displayed!==visibleIndex){displayed=visibleIndex;status.textContent=String(visibleIndex+1).padStart(2,'0')+' / '+courses.length;if(document.activeElement!==select)select.value=courses[visibleIndex].href;}
+   gallery.dataset.index=visibleIndex;gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
    if(motion.phase==='idle')announce();
   }
   function tick(now){frame=0;if(dead)return;const dt=lastTime?(now-lastTime)/1000:1/60;lastTime=now;const active=motion.step(dt);draw();if(active)frame=requestAnimationFrame(tick);else lastTime=0;}

@@ -30,3 +30,5 @@ html[data-theme="monochrome"] .b-scene .walk-photo.is-loaded img{opacity:1}
 .walk-gallery :focus-visible{outline:2px solid currentColor;outline-offset:4px}.walk-viewport:focus-visible{outline-offset:-3px}
 @media(max-width:600px){.walk-hint{font-size:10px}.walk-controls{margin-top:0;gap:20px}.walk-credits{margin-top:14px}.walk-select{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.walk-gallery *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+.walk-announcement{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}

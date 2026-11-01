@@ -63,5 +63,20 @@
     "before_offsets": [
       164040
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "?v=20261101-momentum-2",
+    "after": "?v=20261101-freewheel-1",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/17"
+    ],
+    "reason": "ユーザーの追加依頼による長いフリーホイール版を通常再読込で取得するため、ホーム限定JS/CSSのcache識別を更新。",
+    "occurrences": 3,
+    "before_offsets": [
+      163930,
+      163988,
+      164062
+    ]
   }
 ]

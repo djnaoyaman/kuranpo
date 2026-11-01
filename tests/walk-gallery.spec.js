@@ -8,8 +8,8 @@ for(const width of [320,390,768,1440])test('gallery screen and 67-course ring '+
  const labels=await page.locator('#routes .route').evaluateAll(rows=>rows.map(row=>{const plain=n=>{const c=n?.cloneNode(true);c?.querySelectorAll('rt,rp').forEach(n=>n.remove());return c?.textContent.trim()||''};return [plain(row.querySelector('.r-grp')),plain(row.querySelector('.r-title'))].filter(Boolean).join(' — ')}));
  const reached=[];for(let i=0;i<67;i++){await index(page,i);const link=page.locator('.walk-current');const href=await link.getAttribute('href');expect(href).toBe(hrefs[i]);await expect(link.locator('h3')).toHaveText(labels[i]);await expect(link.locator('.walk-id')).toHaveText(href.split('/').pop().replace('.html','').toUpperCase());reached.push(href);await page.locator('.walk-next').click();}
  await index(page,0);expect(new Set(reached).size).toBe(67);await page.locator('.walk-prev').click();await index(page,66);await page.locator('.walk-next').click();await index(page,0);
- await expect(page.locator('.walk-current')).toHaveCount(1);await expect(page.locator('.walk-preview[aria-hidden=true][inert]')).toHaveCount(2);
- await expect(page.locator('.walk-gallery img')).toHaveCount(3);expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+2);
+ await expect(page.locator('.walk-current')).toHaveCount(1);await expect(page.locator('.walk-preview[aria-hidden=true][inert]')).toHaveCount(6);
+ await expect(page.locator('.walk-gallery img')).toHaveCount(7);expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+2);
  await page.locator('.walk-gallery').screenshot({path:`test-results/walk-gallery-${width}.png`});await page.locator('.walk-gallery').evaluate(e=>window.scrollTo({top:scrollY+e.getBoundingClientRect().top-100,behavior:'instant'}));await page.screenshot({path:`test-results/walk-viewport-${width}.png`});expect(errors).toEqual([]);
 });
 test('drag, vertical movement, keyboard and repeated input',async({page})=>{

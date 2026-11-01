@@ -14,7 +14,7 @@ def fingerprint(path):
  for shared in ['assets/monochrome.css','assets/monochrome.js','assets/brand.css','assets/kuranpo-logo.svg']:
   h.update(shared.encode());h.update((ROOT/shared).read_bytes())
  if path=='index.html':
-  for asset in ['assets/walk-gallery.css','assets/walk-gallery.js','assets/walk-photos.json']:
+  for asset in ['assets/walk-gallery.css','assets/walk-gallery.js','assets/walk-photos.json','assets/walk-motion.js']:
    h.update(asset.encode());h.update((ROOT/asset).read_bytes())
  return h.hexdigest()
 def stamp(path,date):

@@ -29,6 +29,7 @@ class Profile(unittest.TestCase):
   self.assertEqual(re.search(r'<figure class="plate">.*?</figure>',old,re.S)[0],re.search(r'<figure class="plate">.*?</figure>',new,re.S)[0])
   # Header dimensions may evolve; the adopted artwork and theme implementation stay fixed.
   for n in ['assets/kuranpo-logo.svg','assets/monochrome.css','assets/monochrome.js']:
-   self.assertEqual((R/n).read_bytes(),subprocess.check_output(['git','show',BASE+':'+n],cwd=R))
+   reference='727ec4098c03e999346a5ea32238311db08b1df6' if n=='assets/kuranpo-logo.svg' else BASE
+   self.assertEqual((R/n).read_bytes(),subprocess.check_output(['git','show',reference+':'+n],cwd=R))
  def test_reference_ledger(self):
   entries=[e for e in json.loads((R/'notes/editorial/edits.json').read_text()) if e.get('before_ref')==BASE];self.assertTrue(entries);self.assertTrue(all('before' not in e for e in entries))

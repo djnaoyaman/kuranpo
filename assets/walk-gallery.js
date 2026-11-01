@@ -45,13 +45,12 @@
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
    for(const [n,card] of pool){
     const distance=n-motion.position,abs=Math.abs(distance),current=n===center;
-    const scale=1-Math.min(abs,1)*.12;
-    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,${Math.min(abs,1)*20}px,0) scale(${scale})`;
+    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,0,0)`;
     card.style.opacity=String(1-Math.min(abs,1)*.35);card.style.setProperty('--walk-info-opacity',String(Math.max(0,1-abs)));card.style.zIndex=String(10-Math.round(abs));
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
-   gallery.dataset.index=wrap(center);gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;
+   gallery.dataset.index=wrap(center);gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
    if(motion.phase==='idle')announce();
   }
   function tick(now){frame=0;if(dead)return;const dt=lastTime?(now-lastTime)/1000:1/60;lastTime=now;const active=motion.step(dt);draw();if(active)frame=requestAnimationFrame(tick);else lastTime=0;}

@@ -1,0 +1,15 @@
+[
+  {
+    "path": "index.html",
+    "before": "<script src=\"assets/monochrome.js\" defer></script>",
+    "after": "<script src=\"assets/monochrome.js\" defer></script><link rel=\"stylesheet\" href=\"assets/walk-gallery.css\"><script src=\"assets/walk-gallery.js\" defer></script>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo"
+    ],
+    "reason": "ユーザー指定のトップ写真カードを全既存コースの循環ギャラリーにする、ホーム限定の追加資産。",
+    "occurrences": 1,
+    "before_offsets": [
+      163828
+    ]
+  }
+]

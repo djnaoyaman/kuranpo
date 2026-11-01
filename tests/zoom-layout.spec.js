@@ -1,4 +1,4 @@
-const {test,expect}=require('@playwright/test');
+const {test,expect}=require('./local-fixture');
 // Reflow at half the CSS viewport models the layout part of 200% browser zoom.
 // CSS style.zoom is a separate synthetic stress case, not browser UI zoom.
 for(const width of [320,375,384,390,640,720])test(`hero text fits reduced CSS viewport ${width}`,async({page})=>{

@@ -1,4 +1,4 @@
-const {test,expect}=require('@playwright/test'),fs=require('fs');
+const {test,expect}=require('./local-fixture'),fs=require('fs');
 const all=[...fs.readdirSync('.').filter(f=>f.endsWith('.html')),...fs.readdirSync('knowledge').filter(f=>f.endsWith('.html')).map(f=>'knowledge/'+f)];
 const errors=new WeakMap();
 async function heading(page){const h=page.locator('h1:visible');await expect(h).toBeVisible();const result=await h.evaluate(e=>{const boxes=[...e.querySelectorAll('.h1-l')].map(x=>x.getBoundingClientRect());return {mode:getComputedStyle(e).writingMode,font:getComputedStyle(e).fontFamily,overlap:boxes.some((r,i)=>i>0&&r.top<boxes[i-1].bottom-1)}});expect(result.mode).toBe('horizontal-tb');expect(result.overlap).toBe(false);expect(result.font).toContain('sans-serif');}

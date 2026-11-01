@@ -13,6 +13,9 @@ def fingerprint(path):
  h=hashlib.sha256(normalize((ROOT/path).read_text()).encode())
  for shared in ['assets/monochrome.css','assets/monochrome.js','assets/brand.css','assets/kuranpo-logo.svg']:
   h.update(shared.encode());h.update((ROOT/shared).read_bytes())
+ if path=='index.html':
+  for asset in ['assets/walk-gallery.css','assets/walk-gallery.js','assets/walk-photos.json']:
+   h.update(asset.encode());h.update((ROOT/asset).read_bytes())
  return h.hexdigest()
 def stamp(path,date):
  d=datetime.date.fromisoformat(date);label=f'{d.year}年{d.month}月{d.day}日';p=ROOT/path;s=p.read_text()

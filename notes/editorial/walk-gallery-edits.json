@@ -24,5 +24,44 @@
     "before_offsets": [
       163932
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "assets/walk-gallery.css\"",
+    "after": "assets/walk-gallery.css?v=20261101-momentum-2\"",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/17"
+    ],
+    "reason": "直前版を開いていた利用者が通常再読込で慣性版JS/CSSを取得できる、ホーム限定キャッシュ更新識別。",
+    "occurrences": 1,
+    "before_offsets": [
+      163907
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "assets/walk-motion.js\"",
+    "after": "assets/walk-motion.js?v=20261101-momentum-2\"",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/17"
+    ],
+    "reason": "直前版を開いていた利用者が通常再読込で慣性版JS/CSSを取得できる、ホーム限定キャッシュ更新識別。",
+    "occurrences": 1,
+    "before_offsets": [
+      163967
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "assets/walk-gallery.js\"",
+    "after": "assets/walk-gallery.js?v=20261101-momentum-2\"",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/17"
+    ],
+    "reason": "直前版を開いていた利用者が通常再読込で慣性版JS/CSSを取得できる、ホーム限定キャッシュ更新識別。",
+    "occurrences": 1,
+    "before_offsets": [
+      164040
+    ]
   }
 ]

@@ -60,7 +60,7 @@
   function measure(){const w=viewport.clientWidth;cardWidth=w*(w>=900?.40:w<=600?.72:.56);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');stage.style.height=(cardWidth*1.25+240)+'px';if(gesture){gesture.position=motion.position;gesture.x=gesture.lastX;gesture.samples=[];}draw();}
   function move(delta){const base=motion.phase==='snap'?motion.target:Math.round(motion.position);motion.snap(base+delta,reduced.matches);draw();schedule();}
   prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));select.addEventListener('change',()=>{const i=courses.findIndex(c=>c.href===select.value);if(i>=0){stopFrame();gesture=null;motion.snap(i,true);draw();}});
-  viewport.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;const i=wrap(Math.round(motion.position)),d={ArrowLeft:-1,ArrowRight:1,Home:-i,End:courses.length-1-i};if(e.key in d){e.preventDefault();if(e.target.closest('.walk-card'))viewport.focus({preventScroll:true});move(d[e.key]);}});
+  viewport.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;const i=wrap(Math.round(motion.position)),d={ArrowLeft:-1,ArrowRight:1,Home:-i,End:courses.length-1-i};if(e.key in d){e.preventDefault();if(e.target.closest('.walk-card'))viewport.focus({preventScroll:true});if(e.key==='Home'||e.key==='End')motion.stop();move(d[e.key]);}});
   viewport.addEventListener('dragstart',e=>e.preventDefault());
   viewport.addEventListener('pointerdown',e=>{
    if(!e.isPrimary||e.button!==0)return;const wasMoving=motion.phase==='coast'||motion.phase==='snap';stopFrame();motion.stop();

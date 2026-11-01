@@ -101,7 +101,7 @@
    }
    // A vertical gesture, opening credits, or simply touching the wheel is not a brake.
    if(!g.touch&&viewport.hasPointerCapture(id))viewport.releasePointerCapture(id);
-   if(!cancel&&!g.moved&&!g.axis&&g.wasMoving&&g.href){try{sessionStorage.setItem(key,g.href);}catch(_){}location.assign(g.href);return;}
+   if(!cancel&&!g.moved&&!g.axis&&g.wasMoving&&g.href){suppressUntil=performance.now()+700;try{sessionStorage.setItem(key,g.href);}catch(_){}location.assign(g.href);return;}
    draw();if(motion.phase!=='idle')schedule();
   }
   viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||!e.isPrimary||e.button!==0)return;begin(e.pointerId,e.clientX,e.clientY,e.timeStamp,e.target);});
@@ -117,7 +117,7 @@
    if(!gesture?.touch)return;if(e.touches.length!==1){finish(gesture.id,e.timeStamp,true);return;}
    const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t)track(t.clientX,t.clientY,e.timeStamp,e);
   },{passive:false});
-  for(const type of ['touchend','touchcancel'])viewport.addEventListener(type,e=>{if(!gesture?.touch)return;const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t){gesture.moved ||= Math.hypot(t.clientX-gesture.x,t.clientY-gesture.y)>6;finish(t.identifier,e.timeStamp,type==='touchcancel');}},{passive:true});
+  for(const type of ['touchend','touchcancel'])viewport.addEventListener(type,e=>{if(!gesture?.touch)return;const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t){gesture.moved ||= Math.hypot(t.clientX-gesture.x,t.clientY-gesture.y)>6;if(type==='touchend'&&gesture.wasMoving&&!gesture.moved&&!gesture.axis&&e.cancelable)e.preventDefault();finish(t.identifier,e.timeStamp,type==='touchcancel');}},{passive:false});
   viewport.addEventListener('click',e=>{if(e.detail>0&&performance.now()<suppressUntil){e.preventDefault();e.stopPropagation();}},true);
   const resize=new ResizeObserver(measure);resize.observe(viewport);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)settleImmediately();},{signal:controller.signal});

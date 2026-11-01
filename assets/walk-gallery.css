@@ -19,6 +19,8 @@ html[data-theme="monochrome"] .b-scene .walk-photo.is-loaded img{opacity:1}
 .walk-open{font-size:12px;border-bottom:1px solid currentColor;padding-bottom:3px}
 .walk-preview{pointer-events:none}
 .walk-card .walk-info{opacity:var(--walk-info-opacity,1)}
+.walk-foreground .walk-slice{box-shadow:0 20px 40px -20px rgba(0,0,0,.55)}
+.walk-background .walk-photo{box-shadow:0 16px 40px -25px rgba(0,0,0,.3);filter:brightness(var(--walk-depth-light,1))}
 .walk-photo > img,.walk-photo > .walk-photo-placeholder{visibility:hidden!important}
 .walk-slice{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;backface-visibility:hidden;will-change:transform;box-shadow:0 18px 36px -25px rgba(0,0,0,.36)}
 .walk-slice-left{left:0;transform-origin:0 50%;transform:translate3d(calc(var(--walk-split,0px)*-1),0,0) perspective(1200px) rotateY(var(--walk-turn,0deg))}

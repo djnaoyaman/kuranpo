@@ -22,7 +22,7 @@
   const details=make('details','walk-credits'),summary=make('summary','','表示中の写真・資料の出典'),credit=make('div','walk-credit-text');details.append(summary,credit);
   gallery.append(hint,viewport,controls,label,details);orbit.replaceChildren(gallery);orbit.classList.add('walk-orbit');scene.querySelector('.b-photo-credits')?.remove();scene.querySelector('.section-title h2').textContent='Walk 01—'+courses.length;
   const motion=new Motion(selected),pool=new Map(),controller=new AbortController();
-  let frame=0,lastTime=0,pitch=1,cardWidth=1,gesture=null,suppressUntil=0,announced=-1,displayed=-1,dead=false;
+  let frame=0,lastTime=0,pitch=1,cardWidth=1,gesture=null,suppressUntil=0,announced=-1,displayed=-1,dead=false,passage=null,lastPosition=selected;
   function save(){selected=wrap(Math.round(motion.position));try{sessionStorage.setItem(key,courses[selected].href);}catch(_){}}
   function photoFor(card,course){
    const photo=photos[course.href],frame=card.querySelector('.walk-photo');frame.replaceChildren();
@@ -54,21 +54,46 @@
    const center=Math.round(motion.position),low=center-2,high=center+2;
    for(const [n,card] of pool)if((n<low||n>high)&&card!==gesture?.anchor){card.remove();pool.delete(n);}
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
+   const position=motion.position,lower=Math.floor(position),fraction=position-lower;
+   const atRest=fraction<.00001||fraction>.99999;
+   if(atRest)passage=null;
+   else if(!passage||passage.lower!==lower){
+    const direction=Math.sign(position-lastPosition)||Math.sign(motion.velocity)||1;
+    passage={lower,front:direction>0?lower:lower+1,back:direction>0?lower+1:lower};
+   }
+   lastPosition=position;
+   const front=passage?passage.front:center,back=passage?passage.back:null;
+   const progress=passage?Math.abs(position-front):0;
+   const advance=progress*progress*(3-2*progress);
    for(const [n,card] of pool){
     const distance=n-motion.position,abs=Math.abs(distance),current=n===center;
-    // A close landscape parts sideways while the next one approaches from depth.
-    const depth=Math.min(abs,2),near=Math.min(abs,1);
-    const x=Math.sign(distance)*(Math.max(0,abs-1)*.72+near*.09)*cardWidth;
-    const scale=1-depth*.20;
-    const opening=reduced.matches?0:near*cardWidth*.58;
-    card.style.transform=reduced.matches
-     ? `translate3d(${distance*pitch-cardWidth/2}px,16px,0)`
-     : `translate3d(${x-cardWidth/2}px,${16-depth*12}px,0) scale(${scale})`;
-    card.style.opacity=String(Math.max(0,1-Math.max(0,abs-1)*1.25));
+    const foreground=n===front,background=n===back;
+    let x=0,y=16,scale=1,opacity=1,opening=0,info=0,z=10;
+    if(reduced.matches){
+     x=distance*pitch;opacity=1-Math.min(abs,1)*.35;info=Math.max(0,1-abs);z=100-Math.round(abs*20);
+    }else if(foreground){
+     // The outgoing photograph stays ABOVE the incoming one for the ENTIRE passage.
+     // Its two banks pass the viewer; their aperture exposes one intact scene below.
+     scale=1+advance*.12;opening=advance*cardWidth*.78;
+     opacity=1-Math.max(0,(progress-.88)/.12);
+     info=Math.max(0,1-progress*3);z=100;
+    }else if(background){
+     // Never split the next landscape. It advances from the same central vanishing point.
+     scale=.62+.38*advance;y=16+(1-advance)*cardWidth*.10;
+     info=Math.max(0,(progress-.72)/.28);z=80;
+    }else{
+     x=Math.sign(n-front)*cardWidth*.94;scale=.72;
+     opacity=(1-Math.min(1,progress*4))*.42*(Math.abs(n-front)===1?1:0);
+    }
+    card.style.transform=`translate3d(${x-cardWidth/2}px,${y}px,0) scale(${scale})`;
+    card.style.opacity=String(opacity);
     card.style.setProperty('--walk-split',opening+'px');
-    card.style.setProperty('--walk-turn',(near*9)+'deg');
-    card.style.setProperty('--walk-info-opacity',String(Math.max(0,1-abs*1.85)));
-    card.style.zIndex=String(100-Math.round(abs*20));
+    card.style.setProperty('--walk-depth-light',String(background?.72+.28*advance:1));
+    card.style.setProperty('--walk-turn','0deg');
+    card.style.setProperty('--walk-info-opacity',String(info));
+    card.style.zIndex=String(z);
+    card.classList.toggle('walk-foreground',foreground&&!reduced.matches);
+    card.classList.toggle('walk-background',background&&!reduced.matches);
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current&&card!==gesture?.anchor;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }

@@ -1402,7 +1402,7 @@ function switchTab(t){ if(window.selectSet) window.selectSet(t); }
   window.addEventListener("resize", build);
 })();
 </script>
-<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('button[data-mode],button[data-v]');if(!b||b.disabled)return;window.NaoyamanAnalytics&&window.NaoyamanAnalytics.track('walk_filter',{filter_group:b.hasAttribute('data-mode')?'planning_mode':'route_option'});});</script><script src="assets/monochrome.js" defer></script><link rel="stylesheet" href="assets/walk-gallery.css?v=20261101-passage-1"><script src="assets/walk-motion.js?v=20261101-passage-1" defer></script><script src="assets/walk-gallery.js?v=20261101-passage-1" defer></script>
+<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('button[data-mode],button[data-v]');if(!b||b.disabled)return;window.NaoyamanAnalytics&&window.NaoyamanAnalytics.track('walk_filter',{filter_group:b.hasAttribute('data-mode')?'planning_mode':'route_option'});});</script><script src="assets/monochrome.js" defer></script><link rel="stylesheet" href="assets/walk-gallery.css?v=20261101-passage-depth-2"><script src="assets/walk-motion.js?v=20261101-passage-depth-2" defer></script><script src="assets/walk-gallery.js?v=20261101-passage-depth-2" defer></script>
 </body>
 </html>
 

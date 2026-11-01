@@ -5,7 +5,8 @@ async function drag(page,dx,dy=0){const b=await page.locator('.walk-current .wal
 for(const width of [320,390,768,1440])test('gallery screen and 67-course ring '+width,async({page})=>{
  await open(page,width);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const hrefs=await page.locator('#routes .route>a').evaluateAll(a=>a.map(a=>a.getAttribute('href')));expect(hrefs.length).toBe(67);expect(new Set(hrefs).size).toBe(67);
- const reached=[];for(let i=0;i<67;i++){await index(page,i);const link=page.locator('.walk-current');const href=await link.getAttribute('href');expect(href).toBe(hrefs[i]);reached.push(href);await page.locator('.walk-next').click();}
+ const labels=await page.locator('#routes .route').evaluateAll(rows=>rows.map(row=>{const plain=n=>{const c=n?.cloneNode(true);c?.querySelectorAll('rt,rp').forEach(n=>n.remove());return c?.textContent.trim()||''};return [plain(row.querySelector('.r-grp')),plain(row.querySelector('.r-title'))].filter(Boolean).join(' — ')}));
+ const reached=[];for(let i=0;i<67;i++){await index(page,i);const link=page.locator('.walk-current');const href=await link.getAttribute('href');expect(href).toBe(hrefs[i]);await expect(link.locator('h3')).toHaveText(labels[i]);await expect(link.locator('.walk-id')).toHaveText(href.split('/').pop().replace('.html','').toUpperCase());reached.push(href);await page.locator('.walk-next').click();}
  await index(page,0);expect(new Set(reached).size).toBe(67);await page.locator('.walk-prev').click();await index(page,66);await page.locator('.walk-next').click();await index(page,0);
  await expect(page.locator('.walk-current')).toHaveCount(1);await expect(page.locator('.walk-preview[aria-hidden=true][inert]')).toHaveCount(2);
  await expect(page.locator('.walk-gallery img')).toHaveCount(3);expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+2);
@@ -17,6 +18,7 @@ test('drag, vertical movement, keyboard and repeated input',async({page})=>{
  await page.locator('.walk-next').evaluate(b=>{for(let i=0;i<135;i++)b.click()});await index(page,1);
  await page.locator('.walk-viewport').dispatchEvent('pointerdown',{pointerId:3,isPrimary:true,button:2,clientX:200,clientY:100});await page.locator('.walk-viewport').dispatchEvent('pointermove',{pointerId:3,isPrimary:true,clientX:50,clientY:100});await page.locator('.walk-viewport').dispatchEvent('pointerup',{pointerId:3,isPrimary:true,button:2,clientX:50,clientY:100});await index(page,1);
  await page.locator('.walk-viewport').dispatchEvent('pointerdown',{pointerId:4,isPrimary:true,button:0,clientX:200,clientY:100});await page.locator('.walk-viewport').dispatchEvent('pointercancel',{pointerId:4,isPrimary:true});await index(page,1);
+ const b=await page.locator('.walk-current .walk-photo').boundingBox();await page.mouse.move(b.x+100,b.y+100);await page.mouse.down();await page.mouse.move(b.x+30,b.y+100,{steps:5});await page.locator('.walk-viewport').dispatchEvent('pointercancel',{pointerId:1,isPrimary:true});await page.mouse.up();await index(page,1);expect(await page.locator('.walk-stage').evaluate(e=>e.style.getPropertyValue('--walk-drag'))).toBe('');
  expect(await page.evaluate(()=>document.querySelector('.walk-current').getAnimations().length)).toBe(0);
 });
 test('selected link, back, resize, themes and missing photo course',async({page})=>{
@@ -29,5 +31,7 @@ test('selected link, back, resize, themes and missing photo course',async({page}
 test('real touch swipe and vertical scroll',async({browser})=>{
  const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true,reducedMotion:'reduce'});const page=await context.newPage();await open(page);const cdp=await context.newCDPSession(page);const b=await page.locator('.walk-current .walk-photo').boundingBox();const x=b.x+b.width/2,y=b.y+100;
  async function touch(dx,dy){await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});for(let i=1;i<=8;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/8,y:y+dy*i/8}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});}
- await touch(-90,0);await index(page,1);await expect(page).toHaveURL(/index.html/);await touch(0,-90);await index(page,1);await page.locator('.walk-current').tap();await expect(page).toHaveURL(/knowledge\/g2.html/);await context.close();
+ await touch(-90,0);await index(page,1);await expect(page).toHaveURL(/index.html/);const beforeScroll=await page.evaluate(()=>scrollY);await touch(0,-90);await index(page,1);await expect.poll(()=>page.evaluate(()=>scrollY)).toBeGreaterThan(beforeScroll+5);await page.locator('.walk-current').tap();await expect(page).toHaveURL(/knowledge\/g2.html/);await context.close();
 });
+
+test('no JavaScript retains every original course link',async({browser})=>{const c=await browser.newContext({javaScriptEnabled:false});const p=await c.newPage();await p.goto('http://127.0.0.1:4173/index.html');await expect(p.locator('#routes .route>a')).toHaveCount(67);await expect(p.locator('.walk-gallery')).toHaveCount(0);await expect(p.locator('.hero-title')).toBeVisible();await c.close();});

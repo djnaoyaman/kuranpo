@@ -24,3 +24,10 @@ test('pointer follows 1:1 and cancellation/hidden/slow images are safe',async({b
  await p.locator('.walk-next').click();await p.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});document.dispatchEvent(new Event('visibilitychange'));});await expect(p.locator('.walk-gallery')).toHaveAttribute('data-motion','idle');await c.close();
  const delayed=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});await delayed.route('**/img/**',async r=>{await new Promise(resolve=>setTimeout(resolve,700));await r.continue();});const d=await delayed.newPage();await d.goto('http://127.0.0.1:4173/index.html',{waitUntil:'domcontentloaded'});await expect(d.locator('.walk-card')).toHaveCount(7);const height=await d.locator('.walk-stage').evaluate(e=>e.offsetHeight);await expect(d.locator('.walk-current .walk-photo')).toHaveClass(/is-loaded/);expect(await d.locator('.walk-stage').evaluate(e=>e.offsetHeight)).toBe(height);await delayed.close();
 });
+
+test('opening attribution pauses the wheel and describes the visible course',async({browser})=>{
+ const c=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true,reducedMotion:'no-preference'}),p=await setup(c),touch=await touchDriver(c,p);
+ await touch.down();await touch.move(-195);await touch.up();await p.waitForTimeout(300);await expect(p.locator('.walk-gallery')).toHaveAttribute('data-motion','coast');
+ await p.locator('.walk-credits summary').click();await settled(p);const id=await p.locator('.walk-current .walk-id').textContent();await expect(p.locator('.walk-credit>strong')).toContainText([id]);
+ await c.close();
+});

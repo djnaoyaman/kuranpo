@@ -1,4 +1,4 @@
-/* Continuous, bounded virtual track. The untouched route list supplies every link. */
+/* Virtual orbital carousel. Nine cards travel around an ellipse; recycling is hidden behind it. */
 (()=>{
  'use strict';
  if(document.body.dataset.page!=='index'||!window.WalkMotion)return;
@@ -14,8 +14,8 @@
   const scene=document.querySelector('.b-scene');if(scene===mounted)return;dispose();mounted=scene;if(!scene)return;
   const orbit=scene.querySelector('.orbit');if(!orbit)return;
   const gallery=make('div','walk-gallery');gallery.setAttribute('role','region');gallery.setAttribute('aria-roledescription','カルーセル');gallery.setAttribute('aria-label','全散歩コース');
-  const hint=make('p','walk-hint','指でめくる。軽くはじくと、くるくる。');hint.id='walk-hint';
-  const viewport=make('div','walk-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','コースをめくる');viewport.setAttribute('aria-describedby','walk-hint');viewport.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Home End');
+  const hint=make('p','walk-hint','指でまわす。鎌倉の道が、公転する。');hint.id='walk-hint';
+  const viewport=make('div','walk-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','コースを立体軌道でまわす');viewport.setAttribute('aria-describedby','walk-hint');viewport.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Home End');
   const stage=make('div','walk-stage');viewport.append(stage);
   const controls=make('div','walk-controls'),prev=make('button','walk-prev','←'),next=make('button','walk-next','→'),status=make('span','walk-status');prev.type=next.type='button';prev.setAttribute('aria-label','前のコース');next.setAttribute('aria-label','次のコース');status.setAttribute('aria-hidden','true');const announcement=make('span','walk-announcement');announcement.setAttribute('aria-live','polite');announcement.setAttribute('aria-atomic','true');controls.append(prev,status,next,announcement);
   const label=make('label','walk-picker','コースを選ぶ'),select=make('select','walk-select');select.setAttribute('aria-label','全コースから選ぶ');courses.forEach(c=>{const o=make('option','',c.id+' '+c.title);o.value=c.href;select.append(o);});label.append(select);
@@ -43,13 +43,22 @@
    credit.replaceChildren();for(let d=-2;d<=2;d++){const c=courses[wrap(i+d)],p=photos[c.href];if(!p)continue;const block=make('div','walk-credit');block.append(make('strong','',c.id));const text=make('div');text.innerHTML=p.credit;block.append(text);credit.append(block);}details.hidden=!credit.children.length;
   }
   function draw(){
-   const center=Math.round(motion.position),low=center-3,high=center+3;
+   const center=Math.round(motion.position),low=center-4,high=center+4;
    for(const [n,card] of pool)if((n<low||n>high)&&card!==gesture?.anchor){card.remove();pool.delete(n);}
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
    for(const [n,card] of pool){
     const distance=n-motion.position,abs=Math.abs(distance),current=n===center;
-    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,0,0)`;
-    card.style.opacity=String(1-Math.min(abs,1)*.35);card.style.setProperty('--walk-info-opacity',String(Math.max(0,1-abs)));card.style.zIndex=String(10-Math.round(abs));
+    // Same curve at every frame; the rear seam fades out before a slot is recycled.
+    const angle=distance*Math.PI*2/9,depth=(1-Math.cos(angle))/2;
+    const scale=1-depth*.64,x=Math.sin(angle)*cardWidth*1.12;
+    const y=24-depth*cardWidth*.24;
+    const opacity=Math.max(0,Math.min(1,(4.15-abs)/.65))*(1-depth*.66);
+    card.style.transform=reduced.matches
+     ? `translate3d(${distance*pitch-cardWidth/2}px,24px,0)`
+     : `translate3d(${x-cardWidth/2}px,${y}px,0) scale(${scale}) perspective(1100px) rotateY(${-Math.sin(angle)*24}deg) rotateZ(${Math.sin(angle)*3}deg)`;
+    card.style.opacity=String(reduced.matches?1-Math.min(abs,1)*.35:opacity);
+    card.style.setProperty('--walk-info-opacity',String(Math.max(0,1-abs*1.65)));
+    card.style.zIndex=String(100-Math.round(depth*80));
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current&&card!==gesture?.anchor;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
@@ -61,7 +70,7 @@
   function schedule(){if(!frame&&!dead){lastTime=0;frame=requestAnimationFrame(tick);}}
   function stopFrame(){if(frame)cancelAnimationFrame(frame);frame=0;lastTime=0;}
   function settleImmediately(){stopFrame();gesture=null;motion.snap(Math.round(motion.position),true);viewport.classList.remove('is-dragging');draw();}
-  function measure(){const w=viewport.clientWidth;cardWidth=w*(w>=900?.40:w<=600?.72:.56);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');stage.style.height=(cardWidth*1.25+240)+'px';if(gesture){gesture.position=motion.position;gesture.x=gesture.lastX;gesture.samples=[];}draw();}
+  function measure(){const w=viewport.clientWidth;cardWidth=w*(w>=900?.36:w<=600?.62:.48);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');stage.style.height=(cardWidth*1.25+210)+'px';if(gesture){gesture.position=motion.position;gesture.x=gesture.lastX;gesture.samples=[];}draw();}
   function move(delta){const base=motion.phase==='snap'?motion.target:Math.round(motion.position);motion.snap(base+delta,reduced.matches);draw();schedule();}
   details.addEventListener('toggle',()=>{const i=wrap(Math.round(motion.position));summary.textContent=details.open?'写真・資料の出典（'+courses[i].id+'付近・開いた時点）':'表示中の写真・資料の出典';if(details.open)showCredits(i);});
   prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));select.addEventListener('change',()=>{const i=courses.findIndex(c=>c.href===select.value);if(i>=0){stopFrame();gesture=null;motion.snap(i,true);draw();}});

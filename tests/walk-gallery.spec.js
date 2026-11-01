@@ -10,7 +10,7 @@ for(const width of [320,390,768,1440])test('gallery screen and 67-course ring '+
  await index(page,0);expect(new Set(reached).size).toBe(67);await page.locator('.walk-prev').click();await index(page,66);await page.locator('.walk-next').click();await index(page,0);
  await expect(page.locator('.walk-current')).toHaveCount(1);await expect(page.locator('.walk-preview[aria-hidden=true][inert]')).toHaveCount(2);
  await expect(page.locator('.walk-gallery img')).toHaveCount(3);expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width+2);
- await page.locator('.walk-gallery').screenshot({path:`test-results/walk-gallery-${width}.png`});expect(errors).toEqual([]);
+ await page.locator('.walk-gallery').screenshot({path:`test-results/walk-gallery-${width}.png`});await page.locator('.walk-gallery').evaluate(e=>window.scrollTo({top:scrollY+e.getBoundingClientRect().top-100,behavior:'instant'}));await page.screenshot({path:`test-results/walk-viewport-${width}.png`});expect(errors).toEqual([]);
 });
 test('drag, vertical movement, keyboard and repeated input',async({page})=>{
  await open(page);await drag(page,-85);await index(page,1);await expect(page).toHaveURL(/index.html/);await drag(page,85);await index(page,0);await drag(page,5,90);await index(page,0);

@@ -49,7 +49,9 @@
   viewport.addEventListener('pointerdown',e=>{if(!e.isPrimary||e.button!==0)return;suppressUntil=0;gesture={id:e.pointerId,x:e.clientX,y:e.clientY,dx:0,axis:null};});
   viewport.addEventListener('pointermove',e=>{if(!gesture||gesture.id!==e.pointerId)return;const g=gesture,dx=e.clientX-g.x,dy=e.clientY-g.y;if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>10){g.axis=Math.abs(dx)>Math.abs(dy)*1.2?'x':'y';if(g.axis==='x')viewport.setPointerCapture(e.pointerId);}if(g.axis==='x'){e.preventDefault();g.dx=dx;stage.style.setProperty('--walk-drag',Math.max(-100,Math.min(100,dx))+'px');}});
   function finish(e,cancel=false){if(!gesture||gesture.id!==e.pointerId)return;const g=gesture;gesture=null;stage.style.removeProperty('--walk-drag');if(g.axis)suppressUntil=performance.now()+700;if(g.axis==='x'&&!cancel&&Math.abs(g.dx)>=45)move(g.dx<0?1:-1);if(viewport.hasPointerCapture(e.pointerId))viewport.releasePointerCapture(e.pointerId);}
-  viewport.addEventListener('pointerup',e=>finish(e));viewport.addEventListener('pointercancel',e=>finish(e,true));viewport.addEventListener('lostpointercapture',e=>finish(e,true));
+  viewport.addEventListener('pointerup',e=>finish(e));viewport.addEventListener('pointercancel',e=>finish(e,true));// Touch begins with implicit capture on the image. Ignore its bubbled loss
+  // when ownership moves to the viewport after horizontal intent is clear.
+  viewport.addEventListener('lostpointercapture',e=>{if(e.target===viewport)finish(e,true);});
   viewport.addEventListener('click',e=>{if(e.detail>0&&performance.now()<suppressUntil){e.preventDefault();e.stopPropagation();}},true);
   render();gallery._refresh=()=>render();
  }

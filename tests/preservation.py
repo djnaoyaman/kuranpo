@@ -14,6 +14,7 @@ EDITS+=json.loads((ROOT/'notes/editorial/access-corrections.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/route-corrections.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/course-inventory-corrections.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/sharing-metadata.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/walk-gallery-edits.json').read_text())
 def before_editorial(path,s):
  # Ledgers were recorded against the 2026-10-31 release-date rendering.
  # Date content is checked separately by the date contract; stabilize its

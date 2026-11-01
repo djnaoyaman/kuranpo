@@ -1,4 +1,4 @@
-const {test,expect}=require('@playwright/test');
+const {test,expect}=require('./local-fixture');
 for(const theme of ['traditional','monochrome'])for(const key of ['c6','c7'])test(`pending route ${key} ${theme}`,async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.emulateMedia({reducedMotion:'reduce'});await page.addInitScript(t=>localStorage.setItem('kuranpo-design',t),theme);await page.goto(`/knowledge/${key}.html`);
  await expect(page.locator('.story')).toContainText('再確認中');await expect(page.locator('.dist')).toContainText('再確認中');

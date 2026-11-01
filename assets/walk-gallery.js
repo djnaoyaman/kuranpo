@@ -37,14 +37,14 @@
   function announce(){
    const i=wrap(Math.round(motion.position));save();if(announced===i)return;announced=i;
    announcement.textContent=(i+1)+' / '+courses.length+'、'+courses[i].id+' '+courses[i].title;select.value=courses[i].href;
-   showCredits(i);
+   if(!details.open)showCredits(i);
   }
   function showCredits(i){
    credit.replaceChildren();for(let d=-2;d<=2;d++){const c=courses[wrap(i+d)],p=photos[c.href];if(!p)continue;const block=make('div','walk-credit');block.append(make('strong','',c.id));const text=make('div');text.innerHTML=p.credit;block.append(text);credit.append(block);}details.hidden=!credit.children.length;
   }
   function draw(){
    const center=Math.round(motion.position),low=center-3,high=center+3;
-   for(const [n,card] of pool)if(n<low||n>high){card.remove();pool.delete(n);}
+   for(const [n,card] of pool)if((n<low||n>high)&&card!==gesture?.anchor){card.remove();pool.delete(n);}
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
    for(const [n,card] of pool){
     const distance=n-motion.position,abs=Math.abs(distance),current=n===center;
@@ -53,7 +53,7 @@
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
-   const visibleIndex=wrap(center);if(displayed!==visibleIndex){displayed=visibleIndex;status.textContent=String(visibleIndex+1).padStart(2,'0')+' / '+courses.length;if(document.activeElement!==select)select.value=courses[visibleIndex].href;if(details.open)showCredits(visibleIndex);}
+   const visibleIndex=wrap(center);if(displayed!==visibleIndex){displayed=visibleIndex;status.textContent=String(visibleIndex+1).padStart(2,'0')+' / '+courses.length;if(document.activeElement!==select)select.value=courses[visibleIndex].href;}
    gallery.dataset.index=visibleIndex;gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
    if(motion.phase==='idle')announce();
   }
@@ -63,30 +63,61 @@
   function settleImmediately(){stopFrame();gesture=null;motion.snap(Math.round(motion.position),true);viewport.classList.remove('is-dragging');draw();}
   function measure(){const w=viewport.clientWidth;cardWidth=w*(w>=900?.40:w<=600?.72:.56);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');stage.style.height=(cardWidth*1.25+240)+'px';if(gesture){gesture.position=motion.position;gesture.x=gesture.lastX;gesture.samples=[];}draw();}
   function move(delta){const base=motion.phase==='snap'?motion.target:Math.round(motion.position);motion.snap(base+delta,reduced.matches);draw();schedule();}
-  details.addEventListener('toggle',()=>{if(!details.open)return;if(motion.phase==='coast'||motion.phase==='snap'){stopFrame();motion.stop();motion.snap(Math.round(motion.position),reduced.matches);draw();schedule();}showCredits(wrap(Math.round(motion.position)));});
+  details.addEventListener('toggle',()=>{const i=wrap(Math.round(motion.position));summary.textContent=details.open?'写真・資料の出典（'+courses[i].id+'付近・開いた時点）':'表示中の写真・資料の出典';if(details.open)showCredits(i);});
   prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));select.addEventListener('change',()=>{const i=courses.findIndex(c=>c.href===select.value);if(i>=0){stopFrame();gesture=null;motion.snap(i,true);draw();}});
   viewport.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;const i=wrap(Math.round(motion.position)),d={ArrowLeft:-1,ArrowRight:1,Home:-i,End:courses.length-1-i};if(e.key in d){e.preventDefault();if(e.target.closest('.walk-card'))viewport.focus({preventScroll:true});if(e.key==='Home'||e.key==='End')motion.stop();move(d[e.key]);}});
   viewport.addEventListener('dragstart',e=>e.preventDefault());
-  viewport.addEventListener('pointerdown',e=>{
-   if(!e.isPrimary||e.button!==0)return;const wasMoving=motion.phase==='coast'||motion.phase==='snap';stopFrame();motion.stop();
-   suppressUntil=wasMoving?performance.now()+700:0;gesture={id:e.pointerId,x:e.clientX,lastX:e.clientX,y:e.clientY,position:motion.position,axis:null,samples:[{t:e.timeStamp,p:motion.position}],wasMoving};draw();
-  });
-  viewport.addEventListener('pointermove',e=>{
-   if(!gesture||gesture.id!==e.pointerId)return;const g=gesture,dx=e.clientX-g.x,dy=e.clientY-g.y;g.lastX=e.clientX;
-   if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>6){g.axis=Math.abs(dx)>Math.abs(dy)*1.15?'x':'y';if(g.axis==='x'){viewport.setPointerCapture(e.pointerId);viewport.classList.add('is-dragging');}}
-   if(g.axis!=='x')return;e.preventDefault();
-   const events=e.getCoalescedEvents?.()||[];for(const sample of events.length?events:[e])g.samples.push({t:sample.timeStamp,p:g.position-(sample.clientX-g.x)/pitch});
-   g.samples=g.samples.filter(s=>s.t>=e.timeStamp-150);motion.drag(g.position-dx/pitch);schedule();
-  });
-  function finish(e,cancel=false){
-   if(!gesture||gesture.id!==e.pointerId)return;const g=gesture;gesture=null;viewport.classList.remove('is-dragging');
-   if(g.axis||g.wasMoving)suppressUntil=performance.now()+700;
-   if(g.axis==='x'&&!cancel){const velocity=releaseVelocity(g.samples,e.timeStamp);if(reduced.matches){const d=motion.position-g.position;motion.snap(Math.abs(d)>.18&&Math.abs(d)<.5?Math.round(g.position)+Math.sign(d):Math.round(motion.position),true);}else motion.release(velocity);}else motion.snap(Math.round(motion.position),reduced.matches);
-   if(viewport.hasPointerCapture(e.pointerId))viewport.releasePointerCapture(e.pointerId);schedule();
+  // Touch Events arbitrate scrolling before the browser commits a native pan.
+  // Pointer-event cancellation alone cannot cancel viewport scrolling on iOS.
+  function begin(id,x,y,time,target,touch=false){
+   if(gesture)return;
+   const wasMoving=motion.phase==='coast'||motion.phase==='snap';
+   gesture={id,x,lastX:x,y,position:motion.position,axis:null,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')};
+   suppressUntil=0;
   }
-  viewport.addEventListener('pointerup',e=>finish(e));viewport.addEventListener('pointercancel',e=>finish(e,true));
-  viewport.addEventListener('lostpointercapture',e=>{if(e.target===viewport)finish(e,true);});
-  viewport.addEventListener('click',e=>{if(e.detail>0&&(performance.now()<suppressUntil||motion.phase!=='idle')){e.preventDefault();e.stopPropagation();}},true);
+  function track(x,y,time,event){
+   const g=gesture;if(!g)return;const dx=x-g.x,dy=y-g.y;g.lastX=x;
+   if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>=4){
+    // Slight diagonals belong to the wheel; predominantly vertical intent scrolls.
+    g.axis=Math.abs(dx)>=Math.abs(dy)*.85?'x':'y';
+    if(g.axis==='x'){
+     if(g.touch&&!event.cancelable){g.axis='y';return;}
+     g.position=motion.position;stopFrame();motion.stop();g.samples=[{t:time,p:g.position}];
+     if(!g.touch)viewport.setPointerCapture(g.id);viewport.classList.add('is-dragging');
+    }
+   }
+   if(g.axis!=='x')return;
+   if(event.cancelable)event.preventDefault();
+   motion.drag(g.position-dx/pitch);g.samples.push({t:time,p:motion.position});g.samples=g.samples.filter(s=>s.t>=time-150);schedule();
+  }
+  function finish(id,time,cancel=false){
+   if(!gesture||gesture.id!==id)return;const g=gesture;gesture=null;viewport.classList.remove('is-dragging');
+   if(g.axis)suppressUntil=performance.now()+700;
+   if(g.axis==='x'){
+    if(cancel)motion.snap(Math.round(motion.position),reduced.matches);
+    else if(reduced.matches){const d=motion.position-g.position;motion.snap(Math.abs(d)>.18&&Math.abs(d)<.5?Math.round(g.position)+Math.sign(d):Math.round(motion.position),true);}
+    else motion.release(releaseVelocity(g.samples,time));
+   }
+   // A vertical gesture, opening credits, or simply touching the wheel is not a brake.
+   if(!g.touch&&viewport.hasPointerCapture(id))viewport.releasePointerCapture(id);
+   if(!cancel&&!g.axis&&g.wasMoving&&g.href){save();location.assign(g.href);return;}
+   draw();if(motion.phase!=='idle')schedule();
+  }
+  viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||!e.isPrimary||e.button!==0)return;begin(e.pointerId,e.clientX,e.clientY,e.timeStamp,e.target);});
+  viewport.addEventListener('pointermove',e=>{if(gesture&&!gesture.touch&&gesture.id===e.pointerId)track(e.clientX,e.clientY,e.timeStamp,e);});
+  viewport.addEventListener('pointerup',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp);});
+  viewport.addEventListener('pointercancel',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp,true);});
+  viewport.addEventListener('lostpointercapture',e=>{if(e.target===viewport&&!gesture?.touch)finish(e.pointerId,e.timeStamp,true);});
+  viewport.addEventListener('touchstart',e=>{
+   if(e.touches.length!==1){if(gesture?.touch)finish(gesture.id,e.timeStamp,true);return;}
+   const t=e.changedTouches[0];begin(t.identifier,t.clientX,t.clientY,e.timeStamp,e.target,true);
+  },{passive:true});
+  viewport.addEventListener('touchmove',e=>{
+   if(!gesture?.touch)return;if(e.touches.length!==1){finish(gesture.id,e.timeStamp,true);return;}
+   const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t)track(t.clientX,t.clientY,e.timeStamp,e);
+  },{passive:false});
+  for(const type of ['touchend','touchcancel'])viewport.addEventListener(type,e=>{if(!gesture?.touch)return;const t=[...e.changedTouches].find(t=>t.identifier===gesture.id);if(t)finish(t.identifier,e.timeStamp,type==='touchcancel');},{passive:true});
+  viewport.addEventListener('click',e=>{if(e.detail>0&&performance.now()<suppressUntil){e.preventDefault();e.stopPropagation();}},true);
   const resize=new ResizeObserver(measure);resize.observe(viewport);
   document.addEventListener('visibilitychange',()=>{if(document.hidden)settleImmediately();},{signal:controller.signal});
   window.addEventListener('blur',settleImmediately,{signal:controller.signal});

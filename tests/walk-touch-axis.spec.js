@@ -1,0 +1,14 @@
+const {test,expect}=require('./local-fixture'),fs=require('fs');
+test('real touch diagonal axis ownership, vertical escape, coast and cancel',async({browser})=>{
+ const c=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'no-preference',recordVideo:{dir:'test-results/touch-axis',size:{width:390,height:844}}}),p=await c.newPage();
+ await p.goto('http://127.0.0.1:4173/index.html');await expect(p.locator('.walk-card')).toHaveCount(7);await p.waitForTimeout(1400);
+ const cdp=await c.newCDPSession(p),records=[];
+ async function align(){await p.locator('.walk-gallery').evaluate(e=>scrollTo({top:scrollY+e.getBoundingClientRect().top-90,behavior:'instant'}));await p.waitForTimeout(200);}
+ async function gesture(dx,dy,cancel=false){const x=250,y=250;const before=await p.evaluate(()=>({y:scrollY,p:+document.querySelector('.walk-gallery').dataset.position}));await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});for(let i=1;i<=8;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/8,y:y+dy*i/8}]});await cdp.send('Input.dispatchTouchEvent',{type:cancel?'touchCancel':'touchEnd',touchPoints:[]});const after=await p.evaluate(()=>({y:scrollY,p:+document.querySelector('.walk-gallery').dataset.position}));records.push({dx,dy,cancel,before,after});return {before,after};}
+ for(const [dx,dy] of [[-140,0],[-140,-45],[-140,90],[-100,-100],[100,-70]]){await align();await p.locator('.walk-select').selectOption('knowledge/g1.html');const {before,after}=await gesture(dx,dy);expect(Math.abs(after.y-before.y)).toBeLessThan(1);expect(Math.abs(after.p-before.p)).toBeGreaterThan(.2);await expect(p).toHaveURL(/index.html/);}
+ // Native predominantly vertical scroll remains possible even while coasting.
+ await align();await p.locator('.walk-select').selectOption('knowledge/g1.html');await gesture(-150,35);await expect(p.locator('.walk-gallery')).toHaveAttribute('data-motion','coast');const {before,after}=await gesture(12,-150);await expect.poll(()=>p.evaluate(()=>scrollY)).toBeGreaterThan(before.y+30);await expect(p.locator('.walk-gallery')).toHaveAttribute('data-motion','coast');
+ await align();const cancelled=await gesture(120,25,true);expect(Math.abs(cancelled.after.y-cancelled.before.y)).toBeLessThan(1);await expect(p.locator('.walk-gallery')).toHaveAttribute('data-motion','idle');await expect(p.locator('.walk-viewport')).not.toHaveClass(/is-dragging/);
+ await align();await p.locator('.walk-select').selectOption('knowledge/c1.html');await p.waitForTimeout(750);await p.locator('.walk-current').tap();await expect(p).toHaveURL(/knowledge\/c1.html/);
+ fs.writeFileSync('test-results/touch-axis-observed.json',JSON.stringify(records,null,2));await c.close();
+});

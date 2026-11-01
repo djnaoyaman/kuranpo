@@ -30,7 +30,7 @@ jobs:
       - run: node --check assets/walk-gallery.js
       - run: node tests/walk-motion.test.js
       - run: npm install --ignore-scripts
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:responsive
       - uses: actions/upload-artifact@v4
         if: always()

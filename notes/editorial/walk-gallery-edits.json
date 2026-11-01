@@ -78,5 +78,20 @@
       163988,
       164062
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "?v=20261101-freewheel-1",
+    "after": "?v=20261101-touch-axis-1",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/18"
+    ],
+    "reason": "横スワイプと縦ページ操作の競合修正を通常再読込で取得するため。",
+    "occurrences": 3,
+    "before_offsets": [
+      163930,
+      163989,
+      164064
+    ]
   }
 ]

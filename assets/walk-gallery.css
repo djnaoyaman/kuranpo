@@ -1,16 +1,12 @@
-/* Home-only orbital carousel. Nine recycled cards, transform-only animation. */
+/* Kiridoshi passage: clipped photographic foregrounds, transform-only motion. */
 html[data-theme="monochrome"] .b-scene .orbit.walk-orbit{height:auto;margin:clamp(24px,5vw,64px) 0 0;position:relative}
 .walk-gallery{max-width:1080px;margin:auto;color:inherit}
 .walk-hint{text-align:center;font-size:12px;letter-spacing:.1em;margin:0 0 22px}
-.walk-viewport{position:relative;overflow:hidden;touch-action:pan-y pinch-zoom;overscroll-behavior-x:contain;-webkit-touch-callout:none;cursor:grab;padding:50px 0 0;isolation:isolate;contain:layout paint}
+.walk-viewport{position:relative;overflow:hidden;touch-action:pan-y pinch-zoom;overscroll-behavior-x:contain;-webkit-touch-callout:none;cursor:grab;padding:20px 0 0;isolation:isolate;contain:layout paint}
 .walk-viewport.is-dragging{cursor:grabbing}
 .walk-stage{position:relative;user-select:none;-webkit-user-select:none}
-.walk-stage::before{content:"";position:absolute;left:50%;top:calc(var(--walk-card-width)*.48);width:calc(var(--walk-card-width)*2.45);height:calc(var(--walk-card-width)*.52);border:1px solid currentColor;border-radius:50%;opacity:.13;transform:translate(-50%,-50%) rotate(-8deg);pointer-events:none}
-.walk-photo{box-shadow:0 12px 28px -20px rgba(0,0,0,.4)}
-.walk-current .walk-photo{box-shadow:0 24px 50px -28px rgba(0,0,0,.45)}
-@media(prefers-reduced-motion:reduce){.walk-stage::before{display:none}}
 .walk-card{display:block;position:absolute;left:50%;top:0;width:var(--walk-card-width);margin:0;color:inherit;text-decoration:none!important;min-width:0;transform-origin:50% 42%;will-change:transform,opacity;backface-visibility:hidden}
-.walk-photo{position:relative;aspect-ratio:4/5;background:#e9e7e2;overflow:hidden}
+.walk-photo{position:relative;aspect-ratio:4/5;background:transparent;overflow:visible}
 .walk-photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#5c5a55;background:linear-gradient(145deg,#f4f2ed,#dedcd5)}
 .walk-photo-placeholder>span{font-size:clamp(28px,8vw,90px);font-weight:600;letter-spacing:-.05em}.walk-photo-placeholder>small{font-size:11px;letter-spacing:.1em}
 html[data-theme="monochrome"] .b-scene .walk-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;translate:none!important;transform:none!important;filter:none;opacity:0}
@@ -23,7 +19,15 @@ html[data-theme="monochrome"] .b-scene .walk-photo.is-loaded img{opacity:1}
 .walk-open{font-size:12px;border-bottom:1px solid currentColor;padding-bottom:3px}
 .walk-preview{pointer-events:none}
 .walk-card .walk-info{opacity:var(--walk-info-opacity,1)}
-.walk-no-photo{border:1px solid #aaa}
+.walk-photo > img,.walk-photo > .walk-photo-placeholder{visibility:hidden!important}
+.walk-slice{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;backface-visibility:hidden;will-change:transform;box-shadow:0 18px 36px -25px rgba(0,0,0,.36)}
+.walk-slice-left{left:0;transform-origin:0 50%;transform:translate3d(calc(var(--walk-split,0px)*-1),0,0) perspective(1200px) rotateY(var(--walk-turn,0deg))}
+.walk-slice-right{right:0;transform-origin:100% 50%;transform:translate3d(var(--walk-split,0px),0,0) perspective(1200px) rotateY(calc(var(--walk-turn,0deg)*-1))}
+.walk-landscape{position:absolute;top:0;bottom:0;width:200%;overflow:hidden;background:#e9e7e2}
+.walk-slice-left .walk-landscape{left:0}
+.walk-slice-right .walk-landscape{right:0}
+.walk-no-photo .walk-landscape{box-shadow:inset 0 0 0 1px #aaa}
+.walk-photo.is-loaded .walk-landscape .walk-photo-placeholder{visibility:hidden}
 .walk-controls{display:flex;align-items:center;justify-content:center;gap:28px;margin:10px 0 24px}
 .walk-controls button{width:48px;height:48px;padding:0;border:1px solid currentColor;border-radius:50%;background:transparent;color:inherit;font-size:22px;cursor:pointer}
 .walk-controls button:hover{background:#111;color:#fff}.walk-status{font-size:14px;font-variant-numeric:tabular-nums;min-width:64px;text-align:center}

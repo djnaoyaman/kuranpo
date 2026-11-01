@@ -77,8 +77,9 @@
   }
   function track(x,y,time,event){
    const g=gesture;if(!g)return;const dx=x-g.x,dy=y-g.y;g.lastX=x;
-   if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>=4){
-    // Slight diagonals belong to the wheel; predominantly vertical intent scrolls.
+   if(!g.axis&&(Math.abs(dx)>=6&&Math.abs(dx)>=Math.abs(dy)*.85||Math.abs(dy)>=12&&Math.abs(dy)>Math.abs(dx)*1.35)){
+    // Tiny initial wobble is undecided, not a permanent vertical lock.
+    // Horizontal intent locks at 6px; vertical intent needs 12px and clear dominance.
     g.axis=Math.abs(dx)>=Math.abs(dy)*.85?'x':'y';
     if(g.axis==='x'){
      if(g.touch&&!event.cancelable){g.axis='y';return;}

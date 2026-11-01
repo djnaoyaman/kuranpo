@@ -11,5 +11,18 @@
     "before_offsets": [
       163828
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "<script src=\"assets/walk-gallery.js\" defer></script>",
+    "after": "<script src=\"assets/walk-motion.js\" defer></script><script src=\"assets/walk-gallery.js\" defer></script>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/16"
+    ],
+    "reason": "ユーザーの実機フィードバックに従い、連続追従・慣性・減速・スナップを担うホーム限定物理モデルを追加。",
+    "occurrences": 1,
+    "before_offsets": [
+      163932
+    ]
   }
 ]

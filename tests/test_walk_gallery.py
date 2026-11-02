@@ -19,5 +19,7 @@ class WalkGallery(unittest.TestCase):
 
  def test_momentum_assets_have_cache_revision(self):
   s=(ROOT/'index.html').read_text()
-  for name in ['walk-gallery.css','walk-motion.js','walk-gallery.js']:
+  for name in ['walk-gallery.css','walk-gallery.js']:
    self.assertEqual(s.count('assets/'+name+'?v=20261101-passage-depth-2'),1)
+
+  self.assertEqual(s.count('assets/walk-motion.js?v=20261102-brake-1'),1)

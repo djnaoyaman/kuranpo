@@ -11,15 +11,15 @@
     },
     "changelog.html": {
       "modified": "2026-11-02",
-      "source_sha256": "52f72b586ba0670593d9281d7b49f278471dd5a7d01af2cfc26f53fc36de3b01"
+      "source_sha256": "91c9c6eec36b0ed220cd3e7d4ce3f215867d8c0b5e8779d0200e33997922cd49"
     },
     "history.html": {
       "modified": "2026-11-01",
       "source_sha256": "0a37f647a41501f9458560d1b26179d3afaa1c1d592dc428f0b9b9adf9d2d908"
     },
     "index.html": {
-      "modified": "2026-11-01",
-      "source_sha256": "b90c53fd34f470a1286103e90db4a351e0da13154387b4dfc856845e72a3f721"
+      "modified": "2026-11-02",
+      "source_sha256": "d1f88ac4140a54fb540778c1cb9938521e71c3aa2e1c0c3834bc51bdd8b77186"
     },
     "knowledge/c1.html": {
       "modified": "2026-10-31",

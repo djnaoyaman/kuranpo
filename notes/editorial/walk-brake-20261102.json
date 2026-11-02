@@ -1,0 +1,30 @@
+[
+  {
+    "path": "index.html",
+    "before": "assets/walk-motion.js?v=20261101-passage-depth-2",
+    "after": "assets/walk-motion.js?v=20261102-brake-1",
+    "sources": [
+      "Owner request 2026-11-02T07:55:05Z: 少しブレーキを強めてでした",
+      "assets/walk-motion.js"
+    ],
+    "reason": "Slightly stronger coast after release, preserve drag and landscape composition",
+    "occurrences": 1,
+    "before_offsets": [
+      163972
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">調整</span>散歩コースのスワイプは、指を離したあとのブレーキを少し強めました。指への追従と、滑らかに流れて止まる動きはそのままです。（2026年11月2日）</li>",
+    "sources": [
+      "Owner request 2026-11-02T07:55:05Z: 少しブレーキを強めてでした",
+      "assets/walk-motion.js"
+    ],
+    "reason": "Slightly stronger coast after release, preserve drag and landscape composition",
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
+  }
+]

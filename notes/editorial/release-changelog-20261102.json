@@ -77,5 +77,31 @@
     "before_offsets": [
       44576
     ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "</style>",
+    "after": "  /* 縦組みへ横組み用の字幅調整を持ち込まない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{font-feature-settings:normal;}\n</style>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41406774749"
+    ],
+    "reason": "実ブラウザ成果物で見つけたTraditional見出しの文字重なりを、このページだけで修正。",
+    "occurrences": 1,
+    "before_offsets": [
+      28398
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">改善</span>修正履歴ページのTraditional表示で、縦書き見出しの文字が重ならないよう字送りを整えました。（2026年11月2日）</li>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41406774749"
+    ],
+    "reason": "変更ページの表示修正を履歴に残す。",
+    "occurrences": 1,
+    "before_offsets": [
+      35283
+    ]
   }
 ]

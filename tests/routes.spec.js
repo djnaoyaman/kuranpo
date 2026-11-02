@@ -4,6 +4,7 @@ for(const theme of ['traditional','monochrome'])for(const key of ['c6','c7'])tes
  await expect(page.locator('.story')).toContainText('再確認中');await expect(page.locator('.dist')).toContainText('再確認中');
  expect(await page.locator('.spot-list .leg').allTextContents()).toEqual(expect.arrayContaining(['区間距離・所要時間は再確認中']));
  await page.locator('img').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));await page.waitForFunction(()=>[...document.images].every(i=>i.complete&&i.naturalWidth>0),{},{timeout:10000});
+ if(key==='c7'){await expect(page.locator('body')).toContainText('光則寺の海棠（カイドウ）は、鎌倉市指定の天然記念物です。');await expect(page.locator('body')).not.toContainText('樹齢200年以上');}
  await page.screenshot({path:`test-results/pending-${key}-${theme}.png`,fullPage:true});
 });
 test('pending routes excluded from time filter',async({page})=>{

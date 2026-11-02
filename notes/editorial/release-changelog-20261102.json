@@ -103,5 +103,31 @@
     "before_offsets": [
       35283
     ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "/* 縦組みへ横組み用の字幅調整を持ち込まない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{font-feature-settings:normal;}",
+    "after": "/* 各字を独立した行にし、代替フォントでも縦の題字を重ねない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{display:flex;flex-direction:column;writing-mode:horizontal-tb;align-items:center;font-feature-settings:normal;letter-spacing:0;}",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41407768835"
+    ],
+    "reason": "字幅設定だけでは代替フォントの縦字送りが0のため直らなかった。4文字を独立行にして縦の題字を維持する。",
+    "occurrences": 1,
+    "before_offsets": [
+      28400
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<h1 class=\"mincho reveal-line\" data-i18n=\"cl.h1\">修正履歴</h1>",
+    "after": "<h1 class=\"mincho reveal-line\" data-i18n=\"cl.h1\"><span>修</span><span>正</span><span>履</span><span>歴</span></h1>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41407768835"
+    ],
+    "reason": "テキストと縦の外観を保ち、見出し4文字が各行の高さを確保する。",
+    "occurrences": 1,
+    "before_offsets": [
+      32274
+    ]
   }
 ]

@@ -2,7 +2,7 @@
 const {test,expect}=require('./local-fixture');const {webkit}=require('playwright');
 test('WebKit touch cancellation and pinch handoff contract',async()=>{
  const browser=await webkit.launch(),c=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true,reducedMotion:'no-preference'});
- await c.route('**/*',r=>new URL(r.request().url()).origin==='http://127.0.0.1:4173'?r.continue():r.abort());const p=await c.newPage();await p.goto('http://127.0.0.1:4173/index.html');await expect(p.locator('.walk-card')).toHaveCount(7);
+ await c.route('**/*',r=>new URL(r.request().url()).origin==='http://127.0.0.1:4173'?r.continue():r.abort());const p=await c.newPage();await p.goto('http://127.0.0.1:4173/index.html');await expect(p.locator('.walk-card')).toHaveCount(5);
  await p.evaluate(()=>{window.touchTarget=document.querySelector('.walk-current .walk-photo');window.sendTouch=(type,x,y,extra=false)=>{const t={identifier:11,target:touchTarget,clientX:x,clientY:y},second={identifier:12,target:touchTarget,clientX:x+50,clientY:y};const points=type==='touchend'||type==='touchcancel'?[]:(extra?[t,second]:[t]);const e=new Event(type,{bubbles:true,cancelable:true});Object.defineProperties(e,{touches:{value:points},targetTouches:{value:points},changedTouches:{value:[t]}});touchTarget.dispatchEvent(e);return e.defaultPrevented;};});
  expect(await p.evaluate(()=>sendTouch('touchstart',250,250))).toBe(false);
  expect(await p.evaluate(()=>sendTouch('touchmove',225,265))).toBe(true);

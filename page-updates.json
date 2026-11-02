@@ -10,8 +10,8 @@
       "source_sha256": "9cae5740e9e018d78f7fb6ae438b0078a0427d4898428f45389ee0a7969033eb"
     },
     "changelog.html": {
-      "modified": "2026-11-01",
-      "source_sha256": "cd50b1eedaa4461bfba89f6b391802c4808673c542fced1b05d344e1a5224fb6"
+      "modified": "2026-11-02",
+      "source_sha256": "3e9161b563ab99c3369afe145657274be874145aba9613d924e2449df87c033f"
     },
     "history.html": {
       "modified": "2026-11-01",
@@ -19,7 +19,7 @@
     },
     "index.html": {
       "modified": "2026-11-01",
-      "source_sha256": "616d45c749bcbb039e90e01a3eaf8179ba606f5901813173391ab7255f048c7e"
+      "source_sha256": "b90c53fd34f470a1286103e90db4a351e0da13154387b4dfc856845e72a3f721"
     },
     "knowledge/c1.html": {
       "modified": "2026-10-31",

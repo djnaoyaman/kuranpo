@@ -1,0 +1,133 @@
+[
+  {
+    "path": "index.html",
+    "before": "20261101-touch-axis-1",
+    "after": "20261101-passage-depth-2",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/commit/804d7099cce10ec3c7a999be82d0c2d8a2f23e9b"
+    ],
+    "reason": "既に公開済みの切通し風景表示のキャッシュ参照を可逆台帳へ記録。画像・演出・操作は変更しない。",
+    "occurrences": 3,
+    "before_offsets": [
+      163933,
+      163993,
+      164069
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<h2 class=\"mincho\">主な変更</h2>",
+    "after": "<h2 class=\"mincho\">主な変更</h2>\n  <p>日付は日本時間です。公開済みの変更を記録しています。全ページの史実・文章・経路の確認が完了したという意味ではありません。</p>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/1",
+      "https://github.com/djnaoyaman/kuranpo/pull/2",
+      "https://github.com/djnaoyaman/kuranpo/pull/3",
+      "https://github.com/djnaoyaman/kuranpo/pull/4",
+      "https://github.com/djnaoyaman/kuranpo/pull/5"
+    ],
+    "reason": "公開記録と全体の確認完了を区別する。",
+    "occurrences": 1,
+    "before_offsets": [
+      35066
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "    <li><span class=\"tag\">公開</span>鎌倉市内の神社仏閣を、",
+    "after": "    <li><span class=\"tag\">訂正</span>人物の続柄、寺院の創建者・年代などを訂正し、関連する本文とクイズの食い違いを直しました。トップページと関連ページの共有画像も、見出しを主役にした白黒のデザインへ改めました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/5\">PR5</a>）</li>\n    <li><span class=\"tag\">改善</span>画面の最終更新日・構造化データ・サイトマップを整合させ、変更したページの更新漏れを自動検査する仕組みを加えました。検査用ページは公開対象とサイトマップから外しました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/4\">PR4</a>）</li>\n    <li><span class=\"tag\">改善</span>当時の白黒デザインのトップを、選定した試作の四行の文字組みと4枚の写真配置に合わせて修正しました。文字と写真の順次表示を整え、動きを減らす端末設定にも対応しています。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/3\">PR3</a>）</li>\n    <li><span class=\"tag\">追加</span>当時の全78ページで、従来のTraditionalと白黒デザインを切り替えられるようにしました。選択は保存され、記事・写真・コースは両方のデザインで共通です。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/2\">PR2</a>）</li>\n    <li><span class=\"tag\">訂正</span>変動する拝観料の情報を、コースの合計・施設ごとの案内・注記などから削除しました。（2026年10月31日・<a href=\"https://github.com/djnaoyaman/kuranpo/pull/1\">PR1</a>）</li>\n  \n    <li><span class=\"tag\">公開</span>鎌倉市内の神社仏閣を、",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/1",
+      "https://github.com/djnaoyaman/kuranpo/pull/2",
+      "https://github.com/djnaoyaman/kuranpo/pull/3",
+      "https://github.com/djnaoyaman/kuranpo/pull/4",
+      "https://github.com/djnaoyaman/kuranpo/pull/5"
+    ],
+    "reason": "GitHubの実マージ日時を確認した公開済みPR1〜5を、後日の訂正を残して追記。",
+    "occurrences": 1,
+    "before_offsets": [
+      36055
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "全コースの記述を事実の面から確かめ直し、",
+    "after": "コースの記述を見直し、",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/pull/1",
+      "https://github.com/djnaoyaman/kuranpo/pull/2",
+      "https://github.com/djnaoyaman/kuranpo/pull/3",
+      "https://github.com/djnaoyaman/kuranpo/pull/4",
+      "https://github.com/djnaoyaman/kuranpo/pull/5"
+    ],
+    "reason": "個別訂正と全史実の確認完了を混同しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      37527
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "現在のバージョン：v18.15.4（2026年10月7日）",
+    "after": "初期公開後の記録を含みます。変更日は各項目をご覧ください。",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/commit/804d7099cce10ec3c7a999be82d0c2d8a2f23e9b"
+    ],
+    "reason": "古い版番号を現在版として案内しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      44576
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "</style>",
+    "after": "  /* 縦組みへ横組み用の字幅調整を持ち込まない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{font-feature-settings:normal;}\n</style>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41406774749"
+    ],
+    "reason": "実ブラウザ成果物で見つけたTraditional見出しの文字重なりを、このページだけで修正。",
+    "occurrences": 1,
+    "before_offsets": [
+      28398
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">改善</span>修正履歴ページのTraditional表示で、縦書き見出しの文字が重ならないよう字送りを整えました。（2026年11月2日）</li>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41406774749"
+    ],
+    "reason": "変更ページの表示修正を履歴に残す。",
+    "occurrences": 1,
+    "before_offsets": [
+      35283
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "/* 縦組みへ横組み用の字幅調整を持ち込まない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{font-feature-settings:normal;}",
+    "after": "/* 各字を独立した行にし、代替フォントでも縦の題字を重ねない。 */\n  html[data-theme=\"traditional\"] header.site .inner > h1{display:flex;flex-direction:column;writing-mode:horizontal-tb;align-items:center;font-feature-settings:normal;letter-spacing:0;}",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41407768835"
+    ],
+    "reason": "字幅設定だけでは代替フォントの縦字送りが0のため直らなかった。4文字を独立行にして縦の題字を維持する。",
+    "occurrences": 1,
+    "before_offsets": [
+      28400
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<h1 class=\"mincho reveal-line\" data-i18n=\"cl.h1\">修正履歴</h1>",
+    "after": "<h1 class=\"mincho reveal-line\" data-i18n=\"cl.h1\"><span>修</span><span>正</span><span>履</span><span>歴</span></h1>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/actions/runs/41407768835"
+    ],
+    "reason": "テキストと縦の外観を保ち、見出し4文字が各行の高さを確保する。",
+    "occurrences": 1,
+    "before_offsets": [
+      32274
+    ]
+  }
+]

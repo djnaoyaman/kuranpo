@@ -411,6 +411,8 @@
   .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
   .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
+  /* 各字を独立した行にし、代替フォントでも縦の題字を重ねない。 */
+  html[data-theme="traditional"] header.site .inner > h1{display:flex;flex-direction:column;writing-mode:horizontal-tb;align-items:center;font-feature-settings:normal;letter-spacing:0;}
 </style>
 <script type="application/ld+json">
 {
@@ -478,7 +480,7 @@
   <div class="inner">
     <a class="back reveal-line" href="index.html">鎌・くらんぽ トップへ</a>
     <p class="kicker reveal-line" data-i18n="cl.kicker">先祖返りを防ぐための記録</p>
-    <h1 class="mincho reveal-line" data-i18n="cl.h1">修正履歴</h1>
+    <h1 class="mincho reveal-line" data-i18n="cl.h1"><span>修</span><span>正</span><span>履</span><span>歴</span></h1>
     <p class="lead reveal-line" data-i18n="cl.lead">このサイトで行った事実の訂正と、大きな変更だけを記録しています。一度直した誤りを後の編集で元に戻さないよう、注意すべき点を先に掲げました。</p>
   </div>
 </header>
@@ -525,7 +527,9 @@
 
 <section class="log">
   <h2 class="mincho">主な変更</h2>
+  <p>日付は日本時間です。公開済みの変更を記録しています。全ページの史実・文章・経路の確認が完了したという意味ではありません。</p>
   <ol class="log-list">
+    <li><span class="tag">改善</span>修正履歴ページのTraditional表示で、縦書き見出しの文字が重ならないよう字送りを整えました。（2026年11月2日）</li>
     <li><span class="tag">訂正</span>トップの古い「全30コース」表記を修正しました。全体の掲載ページと、歴史一覧・詳細テキストに収録したエリア別・コンプリート版30コースを区別して案内します。（2026年11月1日）</li>
     <li><span class="tag">訂正</span>C6・C7から別地域の神社と対象未確認の社を外しました。両コースの経路・距離・所要時間は再確認中とし、閉鎖された参道へ入らない注意を加えました。（2026年10月31日）</li>
     <li><span class="tag">訂正</span>大町コースの妙法寺で、苔の石段へ上る案内を訂正しました。石段は保護のため通行できず、脇の迂回路と現地の案内に従います。（2026年10月31日）</li>
@@ -533,9 +537,15 @@
     <li><span class="tag">改善</span>編者紹介を、散歩から始まったサイトの動機と編集方針に絞りました。作者の案内はNAOYAMIYAZAKIへまとめています。（2026年10月31日）</li>
     <li><span class="tag">改善</span>ロゴの「く」だけでなく「くら」を大きくし、二文字をひとまとまりに整えました。左上の丸囲み「鎌」と採用書体はそのままです。（2026年10月31日）</li>
     <li><span class="tag">改善</span>ロゴを「くらんぽ」を主役に、左上へ小さな丸囲みの「鎌」を添える形にしました。両デザインのヘッダーと共有画像に適用。正式名称とサイトアイコンは変えていません。（2026年10月31日）</li>
+    <li><span class="tag">訂正</span>人物の続柄、寺院の創建者・年代などを訂正し、関連する本文とクイズの食い違いを直しました。トップページと関連ページの共有画像も、見出しを主役にした白黒のデザインへ改めました。（2026年10月31日・<a href="https://github.com/djnaoyaman/kuranpo/pull/5">PR5</a>）</li>
+    <li><span class="tag">改善</span>画面の最終更新日・構造化データ・サイトマップを整合させ、変更したページの更新漏れを自動検査する仕組みを加えました。検査用ページは公開対象とサイトマップから外しました。（2026年10月31日・<a href="https://github.com/djnaoyaman/kuranpo/pull/4">PR4</a>）</li>
+    <li><span class="tag">改善</span>当時の白黒デザインのトップを、選定した試作の四行の文字組みと4枚の写真配置に合わせて修正しました。文字と写真の順次表示を整え、動きを減らす端末設定にも対応しています。（2026年10月31日・<a href="https://github.com/djnaoyaman/kuranpo/pull/3">PR3</a>）</li>
+    <li><span class="tag">追加</span>当時の全78ページで、従来のTraditionalと白黒デザインを切り替えられるようにしました。選択は保存され、記事・写真・コースは両方のデザインで共通です。（2026年10月31日・<a href="https://github.com/djnaoyaman/kuranpo/pull/2">PR2</a>）</li>
+    <li><span class="tag">訂正</span>変動する拝観料の情報を、コースの合計・施設ごとの案内・注記などから削除しました。（2026年10月31日・<a href="https://github.com/djnaoyaman/kuranpo/pull/1">PR1</a>）</li>
+  
     <li><span class="tag">公開</span>鎌倉市内の神社仏閣を、出発点と解散点を決めた1〜3時間の散歩コースで巡るサイトとして公開しました。エリア別のコースと、宗教・人物・年表の3つの軸で巡るプランを用意しています。（2026年9月24日）</li>
     <li><span class="tag">追加</span>欠けていた<ruby class="o2">勝長寿院跡<rt>しょうちょうじゅいんあと</rt></ruby>・<ruby>寿福寺<rt>じゅふくじ</rt></ruby>・<ruby>浄智寺<rt>じょうちじ</rt></ruby>・<ruby>覚園寺<rt>かくおんじ</rt></ruby>・<ruby class="o1">浄光明寺<rt>じょうこうみょうじ</rt></ruby>・<ruby>稲村ヶ崎<rt>いなむらがさき</rt></ruby>などをコースに加えました。エリア別14コースで訪ねなかった社寺を拾う「コンプリート版」16コースも加えています。（2026年9月24日）</li>
-    <li><span class="tag">訂正</span>全コースの記述を事実の面から確かめ直し、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>の建立時期、大仏造立と<ruby class="o1">北条泰時<rt>ほうじょうやすとき</rt></ruby>の年代関係、報国寺の寺格（十刹→諸山）、覚山尼の続柄（子・姉→妻・母）、建長寺と<ruby>元寇<rt>げんこう</rt></ruby>の前後関係などの誤りを訂正しました。（2026年9月24日）</li>
+    <li><span class="tag">訂正</span>コースの記述を見直し、<ruby class="o2">勝長寿院<rt>しょうちょうじゅいん</rt></ruby>の建立時期、大仏造立と<ruby class="o1">北条泰時<rt>ほうじょうやすとき</rt></ruby>の年代関係、報国寺の寺格（十刹→諸山）、覚山尼の続柄（子・姉→妻・母）、建長寺と<ruby>元寇<rt>げんこう</rt></ruby>の前後関係などの誤りを訂正しました。（2026年9月24日）</li>
 
     <li><span class="tag">追加</span>歩く前の基礎知識、コース別・歴史の基本知識、各コースの知識ページ（67ページ）、年表・人物相関図・宗教関係図、編者プロフィールを加えました。（2026年9月24日）</li>
     <li><span class="tag">追加</span>歴史・お寺・宗教・人物の4種類のクイズを、テーマごとの「編」で順に学べるドリルとして加え、各知識ページにも理解度チェックを設けました。（2026年9月24日）</li>
@@ -579,7 +589,7 @@
     <li><span class="tag">追加</span>編者プロフィールの関連プロジェクト案内を更新しました。（2026年10月7日）</li>
     <li><span class="tag">改善</span>編者プロフィールの構成を見直しました。（2026年10月7日）</li>
   </ol>
-  <p class="log-current">現在のバージョン：v18.15.4（2026年10月7日）</p>
+  <p class="log-current">初期公開後の記録を含みます。変更日は各項目をご覧ください。</p>
 </section>
 
   <div class="share-buttons">
@@ -598,7 +608,7 @@
       <p class="co-en">Kamakura + Sanpo</p>
       <dl class="co-dl">
         <div class="co-credit"><dt>編集</dt><dd><a href="profile.html">クランポック</a></dd></div>
-        <div><dt>最終更新</dt><dd>2026年11月1日</dd></div>
+        <div><dt>最終更新</dt><dd>2026年11月2日</dd></div>
         <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
       </dl>
     </div>
@@ -607,7 +617,7 @@
 </footer>
 <section class="editor-mark-section">
   <a class="editor-mark" href="profile.html"><span class="em-label">編集：</span><span class="em-name">クランポック</span></a>
-  <p class="editor-mark-sub">最終更新：2026年11月1日</p>
+  <p class="editor-mark-sub">最終更新：2026年11月2日</p>
 </section>
 
 

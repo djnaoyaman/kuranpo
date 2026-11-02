@@ -1,0 +1,30 @@
+[
+  {
+    "path": "knowledge/c7.html",
+    "before": "光則寺の海棠（カイドウ）は樹齢200年以上と伝わり、鎌倉市の天然記念物です。",
+    "after": "光則寺の海棠（カイドウ）は、鎌倉市指定の天然記念物です。",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?genre=%E8%A6%B3%E3%82%8B&id=22",
+      "https://www.city.kamakura.kanagawa.jp/treasury/documents/tennenkinenbutsu20240215.pdf"
+    ],
+    "reason": "Existing200+ estimate differs from association~150; do not establish true age; retain independently corroborated municipal designation",
+    "occurrences": 1,
+    "before_offsets": [
+      42176
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">訂正</span>C7の光則寺のカイドウは、樹齢に資料間の食い違いがあるため年数の断定をやめ、市指定天然記念物であることを案内します。（2026年11月2日）</li>",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?genre=%E8%A6%B3%E3%82%8B&id=22",
+      "https://www.city.kamakura.kanagawa.jp/treasury/documents/tennenkinenbutsu20240215.pdf"
+    ],
+    "reason": "原典に基づく限定修正の記録。経路の再確認完了ではない。",
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
+  }
+]

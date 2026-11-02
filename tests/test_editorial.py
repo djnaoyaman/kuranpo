@@ -60,3 +60,15 @@ class RouteStatus(unittest.TestCase):
   for key in ['c6','c7']:
    card=re.search(r'<li class="route"[^>]*><a href="knowledge/'+key+r'.html">.*?</li>',s,re.S)[0]
    self.assertIn('data-dur="unknown"',card);self.assertNotIn('徒歩約',card);self.assertIn('所要時間を再確認中',card)
+
+class KosokujiSource(unittest.TestCase):
+ def test_confirmed_designation_not_disputed_age(self):
+  s=(ROOT/'knowledge/c7.html').read_text()
+  self.assertIn('光則寺の海棠（カイドウ）は、鎌倉市指定の天然記念物です。',s)
+  self.assertNotIn('樹齢200年以上',s)
+  self.assertNotIn('樹齢約150年',s)
+  self.assertIn('経路・距離を再確認中',s)
+  self.assertIn('通常非公開',s)
+  ledger=json.loads((ROOT/'notes/editorial/c7-kaido-source-20261102.json').read_text())
+  self.assertEqual({e['path'] for e in ledger},{'knowledge/c7.html','changelog.html'})
+  self.assertTrue(all(len(e['sources'])==2 for e in ledger))

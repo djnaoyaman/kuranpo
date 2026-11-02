@@ -1,0 +1,57 @@
+{
+  "checkedDate": "2026-11-02",
+  "base": "9d4f3462996bab4d311d2b531499eafe168c06d0",
+  "scope": "One coupled C7 seasonal paragraph and second mini-drill source calibration; no route edits.",
+  "sourceVerification": "Separate researcher and parent independently reopened official tourism flower list and FM Yokohama February2024 temple interview. Historical flower-map existence is supported; current availability and relative quietness are not established. No original wording/image reproduction beyond brief factual names.",
+  "limitations": [
+    "Not a claim that the flower map never existed or temple is always busy.",
+    "Seasonal source listing is not live bloom/crowd/map-supply confirmation.",
+    "C6/C7 routes distances times and access remain unverified; all unknown/no-entry warnings preserved.",
+    "C7 first drill/tradition wording/Kaido/no-age paragraph and all C6 changes untouched.",
+    "No source map/images downloaded, no outreach or YouTube."
+  ],
+  "changes": [
+    {
+      "path": "knowledge/c7.html",
+      "before": "光則寺は「花の寺」として知られ、4月上旬には海棠、冬には蝋梅、初夏にはヤマアジサイが咲きます。境内入口に山野草マップが置かれているので、拝観時にもらって歩くと見つけやすいです。すぐ隣の長谷寺があじさいで混雑する時期でも、光則寺は比較的落ち着いて見られる穴場です。",
+      "after": "光則寺は四季の花で知られ、<a href=\"https://www.trip-kamakura.com/facility/detail.php?id=22\" target=\"_blank\" rel=\"noopener\">鎌倉市観光協会</a>は春のカイドウ、夏のヤマアジサイ、冬のロウバイなどを紹介しています。花の案内図が置かれている場合は、現地の案内に従ってご利用ください。開花状況や混雑は訪問時にご確認ください。",
+      "occurrences": 1,
+      "before_offsets": [
+        42465
+      ],
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=22",
+        "https://www.fmyokohama.jp/mamet/2024/02/post-217.html",
+        "https://www.fmyokohama.jp/mamet/2024/02/post-216.html"
+      ],
+      "reason": "Retain source-backed seasonal flowers, make historically supported map availability conditional, remove unverified comparative-quietness and immediate-adjacency promise. This does not assert the old map was nonexistent or that the temple is always noisy."
+    },
+    {
+      "path": "knowledge/c7.html",
+      "before": "{\"q\": \"大仏・長谷寺を訪れた人が、そのまま少し足を延ばして光則寺にも寄ったら、どんなギャップに出会うと考えられる？\", \"choices\": [\"同じ賑わいが続いているだけ\", \"賑わいのすぐそばに、対照的な静けさが共存していること\", \"光則寺の方がもっと賑やかで驚く\", \"特にギャップは感じない\"], \"answer\": 1, \"note\": \"有名な観光地のすぐそばに、対照的な静けさが共存していることに気づくはずです。\"}",
+      "after": "{\"q\": \"鎌倉市観光協会が光則寺の花として紹介している、季節と花の組み合わせは？\", \"choices\": [\"春はロウバイ、夏はカイドウ、冬はヤマアジサイ\", \"春はカイドウ、夏はヤマアジサイ、冬はロウバイ\", \"春はヤマアジサイ、夏はロウバイ、冬はカイドウ\", \"春はカイドウ、夏はロウバイ、冬はヤマアジサイ\"], \"answer\": 1, \"note\": \"鎌倉市観光協会は、春のカイドウ、夏のヤマアジサイ、冬のロウバイなどを紹介しています。訪問日の開花状況や混雑、案内図の配布を保証するものではありません。\"}",
+      "occurrences": 1,
+      "before_offsets": [
+        45249
+      ],
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=22"
+      ],
+      "reason": "Replace a sole-correct-answer prediction of subjective quietness with a source-defined seasonal-flower question. Directly dependent on narrowed seasonal paragraph. Preserve first drill, two-drill count, four unique choices and valid answer index."
+    },
+    {
+      "path": "changelog.html",
+      "before": "    <li><span class=\"tag\">訂正</span>C6の出発停留所名を大塔宮（鎌倉宮）と明記し、",
+      "after": "    <li><span class=\"tag\">見直し</span>C7の光則寺は、季節の花を出典付きで紹介し、静けさや案内図の配布を保証しない表現に改めました。記事内の確認問題も花の内容にそろえました。（2026年11月2日）</li>\n    <li><span class=\"tag\">訂正</span>C6の出発停留所名を大塔宮（鎌倉宮）と明記し、",
+      "occurrences": 1,
+      "before_offsets": [
+        35465
+      ],
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=22",
+        "https://www.fmyokohama.jp/mamet/2024/02/post-217.html"
+      ],
+      "reason": "Concise release note for one coupled paragraph/drill correction; no route/age claim."
+    }
+  ]
+}

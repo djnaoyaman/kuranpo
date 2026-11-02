@@ -90,3 +90,5 @@ class C6VisitSources(unittest.TestCase):
   d=json.loads((ROOT/'notes/editorial/c6-visit-sources-20261102.json').read_text());self.assertEqual(d['checkedDate'],'2026-11-02');self.assertTrue(d['limitations'])
   for e in d['changes']:self.assertTrue(e['sources']);self.assertEqual(e['occurrences'],len(e['before_offsets']));self.assertNotEqual(e['path'],'knowledge/c7.html')
   self.assertIn('C6の出発停留所名を大塔宮（鎌倉宮）',(ROOT/'changelog.html').read_text())
+
+from test_c7_season import C7Season

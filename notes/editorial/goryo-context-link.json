@@ -1,0 +1,29 @@
+[
+  {
+    "path": "history.html",
+    "before": "  <div class=\"fw-item\" data-i18n=\"hist.fw.item03\">\n  <p class=\"fw-no mincho\">03</p>\n    <h3 class=\"mincho\">誰を祀っているか</h3>\n    <p>神様・仏様の名前と性格を知ると、その場所で人々が何を願ってきたのかが分かります。八幡神は武運の神、天神は学問と雷の神、観音は現世の苦しみを救う菩薩、地蔵は子供や旅人を守る菩薩というように、それぞれ役割が違います。</p>\n    <p class=\"fw-example\"><ruby>御霊神社<rt>ごりょうじんじゃ</rt></ruby>（<ruby>坂ノ下<rt>さかのした</rt></ruby>）が祀る<ruby>鎌倉権五郎景政<rt>かまくらごんごろうかげまさ</rt></ruby>は、実在した平安時代の武将です。神話の神ではなく、実在の人物を神として祀る「人神（ひとがみ）信仰」の例で、鎌倉にはこの型の神社が複数あります。</p>\n  </div>",
+    "after": "  <div class=\"fw-item\">\n    <div data-i18n=\"hist.fw.item03\">\n  <p class=\"fw-no mincho\">03</p>\n    <h3 class=\"mincho\">誰を祀っているか</h3>\n    <p>神様・仏様の名前と性格を知ると、その場所で人々が何を願ってきたのかが分かります。八幡神は武運の神、天神は学問と雷の神、観音は現世の苦しみを救う菩薩、地蔵は子供や旅人を守る菩薩というように、それぞれ役割が違います。</p>\n    <p class=\"fw-example\"><ruby>御霊神社<rt>ごりょうじんじゃ</rt></ruby>（<ruby>坂ノ下<rt>さかのした</rt></ruby>）が祀る<ruby>鎌倉権五郎景政<rt>かまくらごんごろうかげまさ</rt></ruby>は、実在した平安時代の武将です。神話の神ではなく、実在の人物を神として祀る「人神（ひとがみ）信仰」の例で、鎌倉にはこの型の神社が複数あります。</p>\n    </div>\n    <p>御霊神社の権五郎を、別の視点から。妖怪図鑑の<a href=\"https://djnaoyaman.github.io/youkai/kamakura.html#hypothesis-two\">「なぜ古都に妖怪が少ないのか」</a>では、神として祀られることと妖怪との関係を、編者の仮説として考えています。</p>\n  </div>",
+    "sources": [
+      "https://djnaoyaman.github.io/youkai/kamakura.html#hypothesis-two",
+      "https://djnaoyaman.github.io/kuranpo/history.html#framework"
+    ],
+    "reason": "御霊神社・権五郎の共通文脈で、編者の仮説と明記した記事内リンクを追加。既存翻訳ブロックを内側に移し、置換時も案内リンクを保持する。",
+    "occurrences": 1,
+    "before_offsets": [
+      40681
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "<section class=\"framework\" id=\"framework\">",
+    "after": "<section class=\"framework\" id=\"framework\" style=\"scroll-margin-top:250px\">",
+    "sources": [
+      "https://djnaoyaman.github.io/youkai/kamakura.html#hypothesis-two"
+    ],
+    "reason": "相互リンクの既存到着点 framework の見出しが Traditional の固定ナビに隠れないよう、当該セクションだけスクロール余白を確保。",
+    "occurrences": 1,
+    "before_offsets": [
+      39260
+    ]
+  }
+]

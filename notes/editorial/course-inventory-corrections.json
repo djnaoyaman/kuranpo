@@ -1,0 +1,122 @@
+[
+  {
+    "path": "index.html",
+    "before": "鎌・くらんぽ ― 鎌倉散歩、まるごと｜出発点から解散点まで、全30コース",
+    "after": "鎌・くらんぽ ― 鎌倉を歩く、歴史を読む",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      654
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "神社仏閣を見る7つの視点と、全30コースの知識。",
+    "after": "神社仏閣を見る7つの視点と、エリア別・コンプリート版の歴史解説。",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      148989
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "全30コースそれぞれの歴史知識",
+    "after": "エリア別・コンプリート版30コースの歴史知識",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 4,
+    "before_offsets": [
+      774,
+      1718,
+      2368,
+      33491
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "続いて全30コース（エリア別14・コンプリート版16）を並べました",
+    "after": "続いてエリア別14コースとコンプリート版16コースを並べました",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      37261
+    ]
+  },
+  {
+    "path": "llms.txt",
+    "before": "全30コースへのリンク一覧",
+    "after": "エリア別14・コンプリート版16の計30コースへのリンク一覧",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      575
+    ]
+  },
+  {
+    "path": "llms.txt",
+    "before": "全30コースの要約を含む詳細版",
+    "after": "エリア別・コンプリート版30コースの要約を含む詳細版",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      2266
+    ]
+  },
+  {
+    "path": "llms-full.txt",
+    "before": "# 鎌・くらんぽ ― 全30コース詳細",
+    "after": "# 鎌・くらんぽ ― エリア別・コンプリート版30コース詳細",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      0
+    ]
+  },
+  {
+    "path": "llms-full.txt",
+    "before": "鎌倉市内の神社仏閣を歩く全30コース（エリア別14＋コンプリート版16）",
+    "after": "掲載コースのうち30コース（エリア別14＋コンプリート版16）",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      56
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<h2 class=\"mincho\">主な変更</h2>\n  <ol class=\"log-list\">",
+    "after": "<h2 class=\"mincho\">主な変更</h2>\n  <ol class=\"log-list\">\n    <li><span class=\"tag\">訂正</span>トップの古い「全30コース」表記を修正しました。全体の掲載ページと、歴史一覧・詳細テキストに収録したエリア別・コンプリート版30コースを区別して案内します。（2026年11月1日）</li>",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/tree/893e83cf56382546dc1d7ba7cd2a5109a596ebf1"
+    ],
+    "reason": "実ファイルと一覧の掲載範囲を照合。67詳細ページと歴史一覧の30ページ抜粋を区別し、検証済経路数とは表現しない。",
+    "occurrences": 1,
+    "before_offsets": [
+      35066
+    ]
+  }
+]

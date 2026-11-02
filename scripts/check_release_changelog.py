@@ -20,3 +20,4 @@ if __name__=='__main__':
         print('PASS: public changes include a release-note update')
     else:
         print('SKIP PR-diff gate: no base SHA (unit tests still cover the policy)')
+

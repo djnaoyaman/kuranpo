@@ -8,9 +8,13 @@ class ReleaseNotes(unittest.TestCase):
   s=(ROOT/'changelog.html').read_text()
   for n in range(1,6):self.assertIn(f'https://github.com/djnaoyaman/kuranpo/pull/{n}',s)
   self.assertNotIn('全コースの記述を事実の面から確かめ直し',s)
+  self.assertNotIn('現在のバージョン：v18.15.4',s)
+  for text in ['全体の掲載ページ','C6・C7','苔の石段','ぽ','確認が完了したという意味ではありません']:self.assertIn(text,s)
+  for n in range(1,6):self.assertEqual(s.count(f'https://github.com/djnaoyaman/kuranpo/pull/{n}\"'),1)
  def test_public_change_requires_note(self):
   for path in ['index.html','knowledge/c1.html','assets/monochrome.js','ogp/c1.png','llms-full.txt']:
    with self.assertRaises(AssertionError):m.validate([path])
    m.validate([path,'changelog.html'])
  def test_internal_change_does_not_invent_release(self):
   m.validate(['tests/test_dates.py','notes/editorial/audit.md','page-updates.json'])
+

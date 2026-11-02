@@ -6,7 +6,7 @@ permissions:
   contents: read
 jobs:
   design-qa:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -23,10 +23,18 @@ jobs:
       - run: python3 scripts/check_release_changelog.py
         env:
           CHANGELOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      - run: python3 -m unittest discover -s tests -p "test_brand.py"
+      - run: python3 -m unittest discover -s tests -p "test_profile.py"
+      - run: python3 -m unittest discover -s tests -p "test_preservation_dates.py"
+      - run: python3 -m unittest discover -s tests -p "test_course_inventory.py"
+      - run: python3 -m unittest discover -s tests -p "test_walk_gallery.py"
+      - run: python3 tests/launch-metadata.py
       - run: python3 tests/preservation.py
       - run: node --check assets/monochrome.js
+      - run: node --check assets/walk-gallery.js
+      - run: node tests/walk-motion.test.js
       - run: npm install --ignore-scripts
-      - run: npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:responsive
       - uses: actions/upload-artifact@v4
         if: always()

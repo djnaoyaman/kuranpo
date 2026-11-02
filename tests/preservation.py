@@ -19,6 +19,7 @@ EDITS+=json.loads((ROOT/'notes/editorial/goryo-context-link.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/release-changelog-20261102.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/c7-kaido-source-20261102.json').read_text())
 EDITS+=json.loads((ROOT/'notes/editorial/walk-brake-20261102.json').read_text())
+EDITS+=json.loads((ROOT/'notes/editorial/c6-visit-sources-20261102.json').read_text())['changes']
 def before_editorial(path,s):
  # Ledgers were recorded against the 2026-10-31 release-date rendering.
  # Date content is checked separately by the date contract; stabilize its

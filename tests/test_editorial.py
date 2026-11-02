@@ -72,3 +72,21 @@ class KosokujiSource(unittest.TestCase):
   ledger=json.loads((ROOT/'notes/editorial/c7-kaido-source-20261102.json').read_text())
   self.assertEqual({e['path'] for e in ledger},{'knowledge/c7.html','changelog.html'})
   self.assertTrue(all(len(e['sources'])==2 for e in ledger))
+
+class C6VisitSources(unittest.TestCase):
+ def test_stop_name_and_reading_consistent(self):
+  s=(ROOT/'knowledge/c6.html').read_text()
+  self.assertIn('出発地点：大塔宮（鎌倉宮）バス停',s)
+  self.assertIn('じゅうにそじんじゃ',s);self.assertNotIn('じゅうにそうじんじゃ',s)
+  for file in ['index.html','history.html','knowledge/c5.html']:
+   a=re.findall(r'<a\b[^>]*href="(?:knowledge/)?c6.html".*?</a>',(ROOT/file).read_text(),re.S)
+   self.assertEqual(len(a),1);self.assertIn('大塔宮（',a[0]);self.assertNotIn('じゅうにそうじんじゃ',a[0]);self.assertIn('再確認中',a[0])
+ def test_admission_caveats_are_dated_and_narrow(self):
+  s=(ROOT/'knowledge/c6.html').read_text()
+  for t in ['2025年7月22日付案内','完全予約制・雨天休止','最新の拝観条件','本尊は','通常非公開','公開日・予約条件']:self.assertIn(t,s)
+  for u in ['https://www.trip-kamakura.com/helpful/pamphlet/img/data/jisyahaikanryou20250722.pdf','https://www.trip-kamakura.com/facility/detail.php?id=21','https://kousokuji.com/access/']:self.assertIn(u,s)
+  self.assertNotIn('本尊拝観は要予約。',s);self.assertNotIn('2026年6月13日',s)
+ def test_source_ledger_and_release_note(self):
+  d=json.loads((ROOT/'notes/editorial/c6-visit-sources-20261102.json').read_text());self.assertEqual(d['checkedDate'],'2026-11-02');self.assertTrue(d['limitations'])
+  for e in d['changes']:self.assertTrue(e['sources']);self.assertEqual(e['occurrences'],len(e['before_offsets']));self.assertNotEqual(e['path'],'knowledge/c7.html')
+  self.assertIn('C6の出発停留所名を大塔宮（鎌倉宮）',(ROOT/'changelog.html').read_text())

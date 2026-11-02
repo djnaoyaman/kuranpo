@@ -1,0 +1,175 @@
+{
+  "checkedDate": "2026-11-02",
+  "scope": "C6 visiting conditions, stop name and reading only; related C6 cards on index/history/c5 kept consistent. No complete route verified.",
+  "base": "7c38f73563316dd0dd2e585f0acb75fd9cd68ff1",
+  "changes": [
+    {
+      "path": "knowledge/c6.html",
+      "before": "出発地点：鎌倉宮バス停",
+      "after": "出発地点：大塔宮（鎌倉宮）バス停",
+      "occurrences": 1,
+      "before_offsets": [
+        41089
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": "aria-label=\"鎌倉宮バス停から十二所バス停までの道\"",
+      "after": "aria-label=\"大塔宮（鎌倉宮）バス停から十二所バス停までの道（経路は再確認中）\"",
+      "occurrences": 1,
+      "before_offsets": [
+        39602
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": "<span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span>",
+      "after": "<span>大塔宮（<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>）バス停</span>",
+      "occurrences": 1,
+      "before_offsets": [
+        39669
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "index.html",
+      "before": "<a href=\"knowledge/c6.html\"><span class=\"r-no\">C6</span><span class=\"r-title\"><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</span><span class=\"r-theme\">経路・距離を再確認中。出発前に記事の訂正案内をご確認ください。</span><span class=\"r-ends\"><span>鎌倉宮バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class=\"r-spots\"><ruby>白旗神社<rt>しらはたじんじゃ</rt></ruby>（西御門）・八雲神社（西御門）・来迎寺（西御門）・<ruby>熊野神社<rt>くまのじんじゃ</rt></ruby>（浄明寺）・<ruby>十二所<rt>じゅうにそ</rt></ruby>神社・<ruby>光触寺<rt>こうそくじ</rt></ruby></span><span class=\"r-meta\"><span>所要時間を再確認中</span><span>経路・距離を再確認中</span></span></a>",
+      "after": "<a href=\"knowledge/c6.html\"><span class=\"r-no\">C6</span><span class=\"r-title\"><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</span><span class=\"r-theme\">経路・距離を再確認中。出発前に記事の訂正案内をご確認ください。</span><span class=\"r-ends\"><span>大塔宮（鎌倉宮）バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class=\"r-spots\"><ruby>白旗神社<rt>しらはたじんじゃ</rt></ruby>（西御門）・八雲神社（西御門）・来迎寺（西御門）・<ruby>熊野神社<rt>くまのじんじゃ</rt></ruby>（浄明寺）・<ruby>十二所<rt>じゅうにそ</rt></ruby>神社・<ruby>光触寺<rt>こうそくじ</rt></ruby></span><span class=\"r-meta\"><span>所要時間を再確認中</span><span>経路・距離を再確認中</span></span></a>",
+      "occurrences": 1,
+      "before_offsets": [
+        108551
+      ],
+      "scope": "C6 anchor only; all unrelated course labels untouched",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. C6 anchor only; all unrelated course labels untouched"
+    },
+    {
+      "path": "history.html",
+      "before": "<a class=\"card-link\" href=\"knowledge/c6.html\">\n    <h3><span class=\"no\">C6</span><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</h3>\n    <p class=\"theme\">経路・距離を再確認中。出発前に記事の訂正案内をご確認ください。</p><span class=\"r-ends\"><span>鎌倉宮バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span>\n    <p class=\"spots-line\"><ruby>白旗神社<rt>しらはたじんじゃ</rt></ruby>・八雲神社（西御門）・来迎寺（西御門）・<ruby>熊野神社<rt>くまのじんじゃ</rt></ruby>（浄明寺）・<ruby>十二所神社<rt>じゅうにそうじんじゃ</rt></ruby>・<ruby>光触寺<rt>こうそくじ</rt></ruby></p><span class=\"r-meta\"><span>所要時間を再確認中</span><span>経路・距離を再確認中</span></span>\n    <div class=\"lens-tags\"><span>05 権力との関係</span><span>07 土地との関係</span></div>\n    <span class=\"read-more\">くわしく読む →</span>\n  </a>",
+      "after": "<a class=\"card-link\" href=\"knowledge/c6.html\">\n    <h3><span class=\"no\">C6</span><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</h3>\n    <p class=\"theme\">経路・距離を再確認中。出発前に記事の訂正案内をご確認ください。</p><span class=\"r-ends\"><span>大塔宮（鎌倉宮）バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span>\n    <p class=\"spots-line\"><ruby>白旗神社<rt>しらはたじんじゃ</rt></ruby>・八雲神社（西御門）・来迎寺（西御門）・<ruby>熊野神社<rt>くまのじんじゃ</rt></ruby>（浄明寺）・<ruby>十二所神社<rt>じゅうにそじんじゃ</rt></ruby>・<ruby>光触寺<rt>こうそくじ</rt></ruby></p><span class=\"r-meta\"><span>所要時間を再確認中</span><span>経路・距離を再確認中</span></span>\n    <div class=\"lens-tags\"><span>05 権力との関係</span><span>07 土地との関係</span></div>\n    <span class=\"read-more\">くわしく読む →</span>\n  </a>",
+      "occurrences": 1,
+      "before_offsets": [
+        61816
+      ],
+      "scope": "C6 anchor only; all unrelated course labels untouched",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16",
+        "https://www.kanagawa-jinja.or.jp/shrine/1205005-000/"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. C6 anchor only; all unrelated course labels untouched"
+    },
+    {
+      "path": "knowledge/c5.html",
+      "before": "<a class=\"pg-next\" data-set=\"complete\" href=\"c6.html\"><span class=\"pg-label\">次に歩く</span><span class=\"pg-title\"><span class=\"pg-no\">C6</span><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</span><span class=\"r-ends\"><span><ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class=\"pg-meta\">所要時間を再確認中・経路・距離を再確認中</span></a>",
+      "after": "<a class=\"pg-next\" data-set=\"complete\" href=\"c6.html\"><span class=\"pg-label\">次に歩く</span><span class=\"pg-title\"><span class=\"pg-no\">C6</span><ruby>西御門<rt>にしみかど</rt></ruby>・<ruby>二階堂<rt>にかいどう</rt></ruby>② 未収録の社寺</span><span class=\"r-ends\"><span>大塔宮（<ruby>鎌倉宮<rt>かまくらぐう</rt></ruby>）バス停</span><span><ruby>十二所<rt>じゅうにそ</rt></ruby>バス停</span></span><span class=\"pg-meta\">所要時間を再確認中・経路・距離を再確認中</span></a>",
+      "occurrences": 1,
+      "before_offsets": [
+        46062
+      ],
+      "scope": "C6 anchor only; all unrelated course labels untouched",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. C6 anchor only; all unrelated course labels untouched"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": "<span class=\"sname\">来迎寺（西御門）</span></div></li>",
+      "after": "<span class=\"sname\">来迎寺（西御門）</span></div><span class=\"snote\"><a href=\"https://www.trip-kamakura.com/helpful/pamphlet/img/data/jisyahaikanryou20250722.pdf\" target=\"_blank\" rel=\"noopener\">市観光課の2025年7月22日付案内</a>では、拝観は完全予約制・雨天休止。訪問前に最新の拝観条件をご確認ください。</span></li>",
+      "occurrences": 1,
+      "before_offsets": [
+        41446
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.trip-kamakura.com/helpful/pamphlet/img/data/jisyahaikanryou20250722.pdf"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": "一遍ゆかり。本尊拝観は要予約。",
+      "after": "一遍ゆかり。本尊は<a href=\"https://www.trip-kamakura.com/facility/detail.php?id=21\" target=\"_blank\" rel=\"noopener\">通常非公開</a>です。公開日・予約条件は<a href=\"https://kousokuji.com/access/\" target=\"_blank\" rel=\"noopener\">光触寺公式の案内</a>をご確認ください。",
+      "occurrences": 1,
+      "before_offsets": [
+        42206
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=21",
+        "https://kousokuji.com/access/"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": "<ruby>十二所神社<rt>じゅうにそうじんじゃ</rt></ruby>",
+      "after": "<ruby>十二所神社<rt>じゅうにそじんじゃ</rt></ruby>",
+      "occurrences": 1,
+      "before_offsets": [
+        42733
+      ],
+      "scope": "exact",
+      "sources": [
+        "https://www.kanagawa-jinja.or.jp/shrine/1205005-000/"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. exact"
+    },
+    {
+      "path": "knowledge/c6.html",
+      "before": ">出発：鎌倉宮</a>",
+      "after": ">出発付近：鎌倉宮</a>",
+      "occurrences": 1,
+      "before_offsets": [
+        43185
+      ],
+      "scope": "Existing landmark map search retained; not an exact verified route or bus-platform map",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. Existing landmark map search retained; not an exact verified route or bus-platform map"
+    },
+    {
+      "path": "changelog.html",
+      "before": "    <li><span class=\"tag\">調整</span>散歩コースのスワイプは、指を離したあとのブレーキを少し強めました。指への追従と、滑らかに流れて止まる動きはそのままです。（2026年11月2日）</li>",
+      "after": "    <li><span class=\"tag\">訂正</span>C6の出発停留所名を大塔宮（鎌倉宮）と明記し、十二所神社の読みを修正しました。来迎寺（西御門）と光触寺の拝観条件は出典付きで注意を補いました。C6・C7の経路・距離・所要時間は引き続き再確認中です。（2026年11月2日）</li>\n    <li><span class=\"tag\">調整</span>散歩コースのスワイプは、指を離したあとのブレーキを少し強めました。指への追従と、滑らかに流れて止まる動きはそのままです。（2026年11月2日）</li>",
+      "occurrences": 1,
+      "before_offsets": [
+        35465
+      ],
+      "scope": "one new release entry; existing history unchanged",
+      "sources": [
+        "https://www.trip-kamakura.com/facility/detail.php?id=16",
+        "https://www.trip-kamakura.com/helpful/pamphlet/img/data/jisyahaikanryou20250722.pdf",
+        "https://kousokuji.com/access/",
+        "https://www.kanagawa-jinja.or.jp/shrine/1205005-000/"
+      ],
+      "reason": "Source-verified C6 clarification, with route and admission availability limits preserved. one new release entry; existing history unchanged"
+    }
+  ],
+  "sourceVerification": "Parent independently reopened official page sources and inspected actual page0 pixels of city admission PDF. Correct 西御門 row confirmed, not 材木座. PDF2025-07-22 SHA256d6ad57c73b5eef17a80620770bd7acffc75daed2ebbf656166099cf193d1a335.",
+  "limitations": [
+    "Admission PDF dated2025-07-22; no present reservation or entry availability confirmed.",
+    "Temple access page includes reservation terms and suspension wording, so no routine booking promise or all-grounds closure implied.",
+    "Past June2026 special opening not treated as future/current availability.",
+    "C6/C7 complete route, distance, duration, entrances and safe path remain unverified.",
+    "C7 closure warning, Kaido designation/no-age wording, swipe brake, landscape carousel and logo unchanged.",
+    "No source images/artwork republished; no outreach, YouTube or browser outbound requests."
+  ]
+}

@@ -1,8 +1,8 @@
 /* Frame-rate independent carousel motion. Units: cards, seconds. No DOM dependency. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.WalkMotion=api;})(typeof globalThis!=='undefined'?globalThis:this,()=>{
  'use strict';
- // Low rolling resistance: normal flicks coast for roughly ten seconds.
- const FRICTION=.30,OMEGA=14,MAX_SPEED=18,FLING_SPEED=1.2;
+ // Slightly stronger rolling resistance; release speed and smooth landing stay intact.
+ const FRICTION=.35,OMEGA=14,MAX_SPEED=18,FLING_SPEED=1.2;
  const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
  class Motion {
   constructor(position=0){this.position=position;this.velocity=0;this.target=position;this.phase='idle';}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "index.html",
+    "before": "<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('button[data-mode],button[data-v]');if(!b||b.disabled)return;window.NaoyamanAnalytics&&window.NaoyamanAnalytics.track('walk_filter',{filter_group:b.hasAttribute('data-mode')?'planning_mode':'route_option'});});</script><script src=\"assets/monochrome.js\" defer></script><link rel=\"stylesheet\" href=\"assets/walk-gallery.css?v=20261101-passage-depth-2\"><script src=\"assets/walk-motion.js?v=20261102-brake-1\" defer></script><script src=\"assets/walk-gallery.js?v=20261101-passage-depth-2\" defer></script>\n",
+    "after": "<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('button[data-mode],button[data-v]');if(!b||b.disabled)return;window.NaoyamanAnalytics&&window.NaoyamanAnalytics.track('walk_filter',{filter_group:b.hasAttribute('data-mode')?'planning_mode':'route_option'});});</script><script src=\"assets/monochrome.js\" defer></script><link rel=\"stylesheet\" href=\"assets/walk-gallery.css?v=20261105-calm-1\"><script src=\"assets/walk-motion.js?v=20261105-calm-1\" defer></script><script src=\"assets/walk-gallery.js?v=20261105-calm-1\" defer></script>\n",
+    "occurrences": 1,
+    "before_offsets": [
+      163519
+    ],
+    "reason": "User-requested calm, one-course carousel controls and matching release note.",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/blob/main/assets/walk-gallery.js",
+      "User request: improve carousel usability (2026-11-05)."
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "",
+    "after": "    <li><span class=\"tag\">改善</span>トップの散歩コースは、1回のスワイプで1コースずつ選ぶ仕様に改めました。長い惰性回転と写真の分割・拡大をなくし、縦スクロール、矢印・キーボード、全67コースからの直接選択を使いやすく整えました。（2026年11月5日）\n",
+    "occurrences": 1,
+    "before_offsets": [
+      35465
+    ],
+    "reason": "User-requested calm, one-course carousel controls and matching release note.",
+    "sources": [
+      "https://github.com/djnaoyaman/kuranpo/blob/main/assets/walk-gallery.js",
+      "User request: improve carousel usability (2026-11-05)."
+    ]
+  }
+]

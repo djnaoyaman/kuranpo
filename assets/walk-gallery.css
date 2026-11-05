@@ -1,12 +1,12 @@
-/* Kiridoshi passage: clipped photographic foregrounds, transform-only motion. */
+/* Readable, compact course cards with restrained horizontal movement. */
 html[data-theme="monochrome"] .b-scene .orbit.walk-orbit{height:auto;margin:clamp(24px,5vw,64px) 0 0;position:relative}
 .walk-gallery{max-width:1080px;margin:auto;color:inherit}
-.walk-hint{text-align:center;font-size:12px;letter-spacing:.1em;margin:0 0 22px}
+.walk-hint{text-align:center;font-size:12px;letter-spacing:.1em;margin:14px 0 12px}
 .walk-viewport{position:relative;overflow:hidden;touch-action:pan-y pinch-zoom;overscroll-behavior-x:contain;-webkit-touch-callout:none;cursor:grab;padding:20px 0 0;isolation:isolate;contain:layout paint}
 .walk-viewport.is-dragging{cursor:grabbing}
 .walk-stage{position:relative;user-select:none;-webkit-user-select:none}
-.walk-card{display:block;position:absolute;left:50%;top:0;width:var(--walk-card-width);margin:0;color:inherit;text-decoration:none!important;min-width:0;transform-origin:50% 42%;will-change:transform,opacity;backface-visibility:hidden}
-.walk-photo{position:relative;aspect-ratio:4/5;background:transparent;overflow:visible}
+.walk-card{display:block;position:absolute;left:50%;top:0;width:var(--walk-card-width);margin:0;color:inherit;text-decoration:none!important;min-width:0;transform-origin:50% 42%;will-change:transform;backface-visibility:hidden}
+.walk-photo{position:relative;aspect-ratio:4/3;background:transparent;overflow:hidden}
 .walk-photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#5c5a55;background:linear-gradient(145deg,#f4f2ed,#dedcd5)}
 .walk-photo-placeholder>span{font-size:clamp(28px,8vw,90px);font-weight:600;letter-spacing:-.05em}.walk-photo-placeholder>small{font-size:11px;letter-spacing:.1em}
 html[data-theme="monochrome"] .b-scene .walk-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;translate:none!important;transform:none!important;filter:none;opacity:0}
@@ -18,27 +18,15 @@ html[data-theme="monochrome"] .b-scene .walk-photo.is-loaded img{opacity:1}
 .walk-info p{font-size:12px;margin:0 0 12px}
 .walk-open{font-size:12px;border-bottom:1px solid currentColor;padding-bottom:3px}
 .walk-preview{pointer-events:none}
-.walk-card .walk-info{opacity:var(--walk-info-opacity,1)}
-.walk-foreground .walk-slice{box-shadow:0 20px 40px -20px rgba(0,0,0,.55)}
-.walk-background .walk-photo{box-shadow:0 16px 40px -25px rgba(0,0,0,.3);filter:brightness(var(--walk-depth-light,1))}
-.walk-photo > img,.walk-photo > .walk-photo-placeholder{visibility:hidden!important}
-.walk-slice{position:absolute;top:0;bottom:0;width:50%;overflow:hidden;backface-visibility:hidden;will-change:transform;box-shadow:0 18px 36px -25px rgba(0,0,0,.36)}
-.walk-slice-left{left:0;transform-origin:0 50%;transform:translate3d(calc(var(--walk-split,0px)*-1),0,0) perspective(1200px) rotateY(var(--walk-turn,0deg))}
-.walk-slice-right{right:0;transform-origin:100% 50%;transform:translate3d(var(--walk-split,0px),0,0) perspective(1200px) rotateY(calc(var(--walk-turn,0deg)*-1))}
-.walk-landscape{position:absolute;top:0;bottom:0;width:200%;overflow:hidden;background:#e9e7e2}
-.walk-slice-left .walk-landscape{left:0}
-.walk-slice-right .walk-landscape{right:0}
-.walk-no-photo .walk-landscape{box-shadow:inset 0 0 0 1px #aaa}
-.walk-photo.is-loaded .walk-landscape .walk-photo-placeholder{visibility:hidden}
 .walk-controls{display:flex;align-items:center;justify-content:center;gap:28px;margin:10px 0 24px}
-.walk-controls button{width:48px;height:48px;padding:0;border:1px solid currentColor;border-radius:50%;background:transparent;color:inherit;font-size:22px;cursor:pointer}
-.walk-controls button:hover{background:#111;color:#fff}.walk-status{font-size:14px;font-variant-numeric:tabular-nums;min-width:64px;text-align:center}
+.walk-controls button{min-width:92px;min-height:48px;padding:8px 16px;border:1px solid currentColor;border-radius:4px;background:transparent;color:inherit;font-size:14px;cursor:pointer}
+@media(hover:hover){.walk-controls button:hover{background:#111;color:#fff}}.walk-status{font-size:14px;font-variant-numeric:tabular-nums;min-width:64px;text-align:center}
 .walk-picker{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11px;letter-spacing:.08em}
-.walk-select{display:block;width:min(100%,560px);max-width:100%;min-height:44px;padding:10px 34px 10px 12px;border:1px solid #aaa;border-radius:0;background:#fff;color:#111;font:inherit;font-size:13px;white-space:normal}
+.walk-select{display:block;width:min(100%,560px);max-width:100%;min-height:44px;padding:10px 34px 10px 12px;border:1px solid #aaa;border-radius:0;background:#fff;color:#111;font:inherit;font-size:16px;white-space:normal}
 .walk-credits{font-size:11px;line-height:1.8;max-width:560px;margin:22px auto 0;overflow-wrap:anywhere}
 .walk-credits summary{cursor:pointer;padding:8px 0}.walk-credit{margin:14px 0}.walk-credit strong{display:block;letter-spacing:.1em}.walk-credit .pl-cap,.walk-credit .pl-cr{font-size:11px!important}.walk-credit a{text-decoration:underline}
 .walk-gallery :focus-visible{outline:2px solid currentColor;outline-offset:4px}.walk-viewport:focus-visible{outline-offset:-3px}
-@media(max-width:600px){.walk-hint{font-size:10px}.walk-controls{margin-top:0;gap:20px}.walk-credits{margin-top:14px}.walk-select{font-size:12px}}
+@media(max-width:600px){.walk-hint{font-size:10px}.walk-controls{margin-top:0;gap:12px}.walk-controls button{min-width:80px}.walk-credits{margin-top:14px}.walk-select{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.walk-gallery *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
 .walk-announcement{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}

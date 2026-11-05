@@ -1,45 +1,35 @@
-/* Frame-rate independent carousel motion. Units: cards, seconds. No DOM dependency. */
+/* Bounded, frame-rate independent carousel motion. Units: cards, seconds. */
 (function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.WalkMotion=api;})(typeof globalThis!=='undefined'?globalThis:this,()=>{
  'use strict';
- // Slightly stronger rolling resistance; release speed and smooth landing stay intact.
- const FRICTION=.35,OMEGA=14,MAX_SPEED=18,FLING_SPEED=1.2;
+ const DURATION=.24,MAX_SPEED=18;
  const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
  class Motion {
   constructor(position=0){this.position=position;this.velocity=0;this.target=position;this.phase='idle';}
   stop(){this.velocity=0;this.phase='idle';this.target=this.position;}
   drag(position){this.position=position;this.velocity=0;this.target=position;this.phase='drag';}
-  release(velocity,reduced=false){
-   this.velocity=reduced?0:clamp(velocity,-MAX_SPEED,MAX_SPEED);
-   this.target=Math.round(this.position+(Math.abs(this.velocity)>=FLING_SPEED?this.velocity/FRICTION:0));
-   const distance=this.target-this.position;
-   this.phase=Math.abs(this.velocity)>=FLING_SPEED&&distance*this.velocity>0?'coast':'snap';
-   if(this.phase==='coast'){this.start=this.position;this.distance=distance;this.initialVelocity=this.velocity;this.duration=3*distance/this.velocity;this.elapsed=0;}
-   if(reduced){this.target=Math.round(this.position);this.velocity=0;}
+  release(velocity,reduced=false,origin=Math.round(this.position)){
+   const distance=this.position-origin;
+   // A deliberate drag or short flick advances just one card, never a freewheel.
+   const deliberate=Math.abs(distance)>=.18;
+   const flick=Math.abs(distance)>=.06&&Math.abs(velocity)>=1.2&&distance*velocity>0;
+   this.snap(origin+(deliberate||flick?Math.sign(distance):0),reduced);
   }
-  snap(target,reduced=false){this.target=target;this.phase='snap';if(reduced){this.position=target;this.velocity=0;this.phase='idle';}}
+  snap(target,reduced=false){
+   this.start=this.position;this.target=target;this.elapsed=0;this.duration=DURATION;this.velocity=0;
+   this.phase=reduced||Math.abs(target-this.position)<.00001?'idle':'snap';
+   if(this.phase==='idle')this.position=target;
+  }
   step(seconds){
-   if(this.phase==='idle'||this.phase==='drag')return false;
-   // A suspended/slow frame must never teleport the track across several cards.
-   const dt=clamp(seconds,0,.05);if(!dt)return true;
-   if(this.phase==='coast'){
-    // One trajectory, not a slow coast followed by a spring that speeds up again.
-    // T=3D/v preserves release velocity; both velocity and acceleration reach zero.
-    this.elapsed=Math.min(this.duration,this.elapsed+dt);
-    const remaining=1-this.elapsed/this.duration;
-    this.position=this.target-this.distance*remaining**3;
-    this.velocity=this.initialVelocity*remaining**2;
-    if(this.elapsed===this.duration){this.position=this.target;this.velocity=0;this.phase='idle';}
-   }else{
-    const x=this.position-this.target,c=this.velocity+OMEGA*x,e=Math.exp(-OMEGA*dt);
-    const next=this.target+(x+c*dt)*e;
-    this.position+=clamp(next-this.position,-MAX_SPEED*dt,MAX_SPEED*dt);
-    this.velocity=clamp((this.velocity-OMEGA*c*dt)*e,-MAX_SPEED,MAX_SPEED);
-    if(Math.abs(this.position-this.target)<.001&&Math.abs(this.velocity)<.015){this.position=this.target;this.velocity=0;this.phase='idle';}
-   }
+   if(this.phase!=='snap')return false;
+   this.elapsed=Math.min(this.duration,this.elapsed+clamp(seconds,0,.05));
+   const t=this.elapsed/this.duration,remaining=1-t;
+   this.position=this.target+(this.start-this.target)*remaining**3;
+   this.velocity=3*(this.target-this.start)*remaining**2/this.duration;
+   if(this.elapsed===this.duration){this.position=this.target;this.velocity=0;this.phase='idle';}
    return this.phase!=='idle';
   }
  }
- // Regress the last 100ms of actual pointer samples; a held finger has no fling.
+ // Only recent movement counts; holding a finger still does not trigger a flick.
  function releaseVelocity(samples,now){
   if(samples.length<2||now-samples[samples.length-1].t>100)return 0;
   const recent=samples.filter(s=>s.t>=now-100);if(recent.length<2)return 0;
@@ -47,5 +37,5 @@
   let covariance=0,variance=0;for(const s of recent){covariance+=(s.t-mt)*(s.p-mp);variance+=(s.t-mt)**2;}
   return variance?clamp(covariance/variance*1000,-MAX_SPEED,MAX_SPEED):0;
  }
- return {Motion,releaseVelocity,FRICTION,MAX_SPEED};
+ return {Motion,releaseVelocity,DURATION,MAX_SPEED};
 });

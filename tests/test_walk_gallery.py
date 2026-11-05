@@ -15,11 +15,11 @@ class WalkGallery(unittest.TestCase):
   self.assertEqual(len(routes),67);self.assertEqual(set(routes),set(json.loads((ROOT/'assets/walk-photos.json').read_text())))
  def test_home_only_integration(self):
   for p in (ROOT/'knowledge').glob('*.html'):self.assertNotIn('assets/walk-gallery',p.read_text())
-  self.assertEqual((ROOT/'index.html').read_text().count('src="assets/walk-gallery.js?v=20261101-passage-depth-2"'),1)
+  self.assertEqual((ROOT/'index.html').read_text().count('src="assets/walk-gallery.js?v=20261105-calm-1"'),1)
 
  def test_momentum_assets_have_cache_revision(self):
   s=(ROOT/'index.html').read_text()
   for name in ['walk-gallery.css','walk-gallery.js']:
-   self.assertEqual(s.count('assets/'+name+'?v=20261101-passage-depth-2'),1)
+   self.assertEqual(s.count('assets/'+name+'?v=20261105-calm-1'),1)
 
-  self.assertEqual(s.count('assets/walk-motion.js?v=20261102-brake-1'),1)
+  self.assertEqual(s.count('assets/walk-motion.js?v=20261105-calm-1'),1)

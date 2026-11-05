@@ -1,4 +1,4 @@
-/* Kiridoshi passage: split foregrounds reveal the next walk in depth. */
+/* One course per swipe, with quiet lateral motion and native vertical scrolling. */
 (()=>{
  'use strict';
  if(document.body.dataset.page!=='index'||!window.WalkMotion)return;
@@ -14,29 +14,22 @@
   const scene=document.querySelector('.b-scene');if(scene===mounted)return;dispose();mounted=scene;if(!scene)return;
   const orbit=scene.querySelector('.orbit');if(!orbit)return;
   const gallery=make('div','walk-gallery');gallery.setAttribute('role','region');gallery.setAttribute('aria-roledescription','カルーセル');gallery.setAttribute('aria-label','全散歩コース');
-  const hint=make('p','walk-hint','指でたどる。その先に、次の散歩道。');hint.id='walk-hint';
-  const viewport=make('div','walk-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','切通しを抜けるようにコースを選ぶ');viewport.setAttribute('aria-describedby','walk-hint');viewport.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Home End');
+  const hint=make('p','walk-hint','左右にスワイプ、または矢印で1コースずつ。');hint.id='walk-hint';
+  const viewport=make('div','walk-viewport');viewport.tabIndex=0;viewport.setAttribute('aria-label','散歩コースを選ぶ');viewport.setAttribute('aria-describedby','walk-hint');viewport.setAttribute('aria-keyshortcuts','ArrowLeft ArrowRight Home End');
   const stage=make('div','walk-stage');viewport.append(stage);
-  const controls=make('div','walk-controls'),prev=make('button','walk-prev','←'),next=make('button','walk-next','→'),status=make('span','walk-status');prev.type=next.type='button';prev.setAttribute('aria-label','前のコース');next.setAttribute('aria-label','次のコース');status.setAttribute('aria-hidden','true');const announcement=make('span','walk-announcement');announcement.setAttribute('aria-live','polite');announcement.setAttribute('aria-atomic','true');controls.append(prev,status,next,announcement);
+  const controls=make('div','walk-controls'),prev=make('button','walk-prev','← 前へ'),next=make('button','walk-next','次へ →'),status=make('span','walk-status');prev.type=next.type='button';prev.setAttribute('aria-label','前のコース');next.setAttribute('aria-label','次のコース');status.setAttribute('aria-hidden','true');const announcement=make('span','walk-announcement');announcement.setAttribute('aria-live','polite');announcement.setAttribute('aria-atomic','true');controls.append(prev,status,next,announcement);
   const label=make('label','walk-picker','コースを選ぶ'),select=make('select','walk-select');select.setAttribute('aria-label','全コースから選ぶ');courses.forEach(c=>{const o=make('option','',c.id+' '+c.title);o.value=c.href;select.append(o);});label.append(select);
   const details=make('details','walk-credits'),summary=make('summary','','表示中の写真・資料の出典'),credit=make('div','walk-credit-text');details.append(summary,credit);
-  gallery.append(hint,viewport,controls,label,details);orbit.replaceChildren(gallery);orbit.classList.add('walk-orbit');scene.querySelector('.b-photo-credits')?.remove();scene.querySelector('.section-title h2').textContent='Walk 01—'+courses.length;
+  gallery.append(label,hint,viewport,controls,details);orbit.replaceChildren(gallery);orbit.classList.add('walk-orbit');scene.querySelector('.b-photo-credits')?.remove();scene.querySelector('.section-title h2').textContent='Walk 01—'+courses.length;
   const motion=new Motion(selected),pool=new Map(),controller=new AbortController();
-  let frame=0,lastTime=0,pitch=1,cardWidth=1,gesture=null,suppressUntil=0,announced=-1,displayed=-1,dead=false,passage=null,lastPosition=selected;
+  let frame=0,lastTime=0,pitch=1,cardWidth=1,measuredWidth=-1,gesture=null,suppressUntil=0,announced=-1,displayed=-1,dead=false;
   function save(){selected=wrap(Math.round(motion.position));try{sessionStorage.setItem(key,courses[selected].href);}catch(_){}}
   function photoFor(card,course){
    const photo=photos[course.href],frame=card.querySelector('.walk-photo');frame.replaceChildren();
    frame.classList.toggle('walk-no-photo',!photo);frame.classList.remove('is-loaded');
    const placeholder=make('div','walk-photo-placeholder');placeholder.append(make('span','',course.id),make('small','',photo?'道の風景':'道と歴史を読む'));frame.append(placeholder);
    if(photo){const img=make('img');img.alt=photo.alt;img.draggable=false;img.decoding='async';img.addEventListener('load',()=>{if(img.parentNode===frame)frame.classList.add('is-loaded');},{once:true});img.src=photo.thumb||photo.src;frame.append(img);if(img.complete&&img.naturalWidth)frame.classList.add('is-loaded');}
-   // Both halves use the same full-width composition, with an exact seam at rest.
-   const source=[...frame.children];
-   for(const side of ['left','right']){
-    const slice=make('div','walk-slice walk-slice-'+side);slice.setAttribute('aria-hidden','true');
-    const landscape=make('div','walk-landscape');
-    source.forEach(node=>{const copy=node.cloneNode(true);if(copy.tagName==='IMG')copy.alt='';landscape.append(copy);});
-    slice.append(landscape);frame.append(slice);
-   }
+
   }
   function createCard(logical){
    const c=courses[wrap(logical)],card=make('a','walk-card');card.href=c.href;card.draggable=false;card.dataset.logical=logical;card.dataset.course=c.id;
@@ -54,77 +47,45 @@
    const center=Math.round(motion.position),low=center-2,high=center+2;
    for(const [n,card] of pool)if((n<low||n>high)&&card!==gesture?.anchor){card.remove();pool.delete(n);}
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
-   const position=motion.position,lower=Math.floor(position),fraction=position-lower;
-   const atRest=fraction<.00001||fraction>.99999;
-   if(atRest)passage=null;
-   else if(!passage||passage.lower!==lower){
-    const direction=Math.sign(position-lastPosition)||Math.sign(motion.velocity)||1;
-    passage={lower,front:direction>0?lower:lower+1,back:direction>0?lower+1:lower};
-   }
-   lastPosition=position;
-   const front=passage?passage.front:center,back=passage?passage.back:null;
-   const progress=passage?Math.abs(position-front):0;
-   const advance=progress*progress*(3-2*progress);
    for(const [n,card] of pool){
-    const distance=n-motion.position,abs=Math.abs(distance),current=n===center;
-    const foreground=n===front,background=n===back;
-    let x=0,y=16,scale=1,opacity=1,opening=0,info=0,z=10;
-    if(reduced.matches){
-     x=distance*pitch;opacity=1-Math.min(abs,1)*.35;info=Math.max(0,1-abs);z=100-Math.round(abs*20);
-    }else if(foreground){
-     // The outgoing photograph stays ABOVE the incoming one for the ENTIRE passage.
-     // Its two banks pass the viewer; their aperture exposes one intact scene below.
-     scale=1+advance*.12;opening=advance*cardWidth*.78;
-     opacity=1-Math.max(0,(progress-.88)/.12);
-     info=Math.max(0,1-progress*3);z=100;
-    }else if(background){
-     // Never split the next landscape. It advances from the same central vanishing point.
-     scale=.62+.38*advance;y=16+(1-advance)*cardWidth*.10;
-     info=Math.max(0,(progress-.72)/.28);z=80;
-    }else{
-     x=Math.sign(n-front)*cardWidth*.94;scale=.72;
-     opacity=(1-Math.min(1,progress*4))*.42*(Math.abs(n-front)===1?1:0);
-    }
-    card.style.transform=`translate3d(${x-cardWidth/2}px,${y}px,0) scale(${scale})`;
-    card.style.opacity=String(opacity);
-    card.style.setProperty('--walk-split',opening+'px');
-    card.style.setProperty('--walk-depth-light',String(background?.72+.28*advance:1));
-    card.style.setProperty('--walk-turn','0deg');
-    card.style.setProperty('--walk-info-opacity',String(info));
-    card.style.zIndex=String(z);
-    card.classList.toggle('walk-foreground',foreground&&!reduced.matches);
-    card.classList.toggle('walk-background',background&&!reduced.matches);
+    const distance=n-motion.position,current=n===center;
+    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,0,0)`;
+    card.style.opacity=current?'1':'.65';
+    card.style.zIndex=current?'2':'1';
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current&&card!==gesture?.anchor;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }
    const visibleIndex=wrap(center);if(displayed!==visibleIndex){displayed=visibleIndex;status.textContent=String(visibleIndex+1).padStart(2,'0')+' / '+courses.length;if(document.activeElement!==select)select.value=courses[visibleIndex].href;}
    gallery.dataset.index=visibleIndex;gallery.dataset.position=motion.position.toFixed(5);gallery.dataset.motion=motion.phase;gallery.dataset.velocity=motion.velocity.toFixed(5);
+   const infoHeight=Math.max(210,...[...pool.values()].map(card=>card.querySelector('.walk-info').offsetHeight+16));
+   stage.style.height=(cardWidth*.75+infoHeight)+'px';
    if(motion.phase==='idle')announce();
   }
   function tick(now){frame=0;if(dead)return;const dt=lastTime?(now-lastTime)/1000:1/60;lastTime=now;const active=motion.step(dt);draw();if(active)frame=requestAnimationFrame(tick);else lastTime=0;}
   function schedule(){if(!frame&&!dead){lastTime=0;frame=requestAnimationFrame(tick);}}
   function stopFrame(){if(frame)cancelAnimationFrame(frame);frame=0;lastTime=0;}
-  function settleImmediately(){stopFrame();gesture=null;motion.snap(Math.round(motion.position),true);viewport.classList.remove('is-dragging');draw();}
-  function measure(){const w=viewport.clientWidth;cardWidth=w*(w>=900?.40:w<=600?.72:.54);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');stage.style.height=(cardWidth*1.25+210)+'px';if(gesture){gesture.position=motion.position;gesture.x=gesture.lastX;gesture.samples=[];}draw();}
-  function move(delta){const base=motion.phase==='snap'?motion.target:Math.round(motion.position);motion.snap(base+delta,reduced.matches);draw();schedule();}
+  function clearGesture(){const g=gesture;gesture=null;if(g&&(g.moved||g.axis||g.wasMoving))suppressUntil=performance.now()+700;if(g&&!g.touch&&viewport.hasPointerCapture(g.id))viewport.releasePointerCapture(g.id);viewport.classList.remove('is-dragging');}
+  function settleImmediately(){stopFrame();clearGesture();motion.snap(Math.round(motion.position),true);draw();}
+  function measure(){const w=viewport.clientWidth;if(w===measuredWidth)return;measuredWidth=w;cardWidth=w*(w>=900?.40:w<=600?.82:.62);cardWidth=Math.min(cardWidth,w>=900?420:Infinity);pitch=cardWidth+Math.max(18,w*.035);stage.style.setProperty('--walk-card-width',cardWidth+'px');if(gesture)settleImmediately();else draw();}
+  function move(delta){const base=motion.phase==='snap'?motion.target:Math.round(motion.position);clearGesture();motion.snap(base+delta,reduced.matches);draw();schedule();}
   details.addEventListener('toggle',()=>{const i=wrap(Math.round(motion.position));summary.textContent=details.open?'写真・資料の出典（'+courses[i].id+'付近・開いた時点）':'表示中の写真・資料の出典';if(details.open)showCredits(i);});
-  prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));select.addEventListener('change',()=>{const i=courses.findIndex(c=>c.href===select.value);if(i>=0){stopFrame();gesture=null;motion.snap(i,true);draw();}});
-  viewport.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;const i=wrap(Math.round(motion.position)),d={ArrowLeft:-1,ArrowRight:1,Home:-i,End:courses.length-1-i};if(e.key in d){e.preventDefault();if(e.target.closest('.walk-card'))viewport.focus({preventScroll:true});if(e.key==='Home'||e.key==='End')motion.stop();move(d[e.key]);}});
+  prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));select.addEventListener('change',()=>{const i=courses.findIndex(c=>c.href===select.value);if(i>=0){settleImmediately();motion.snap(i,true);draw();}});
+  viewport.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.shiftKey)return;const i=wrap(Math.round(motion.position)),d={ArrowLeft:-1,ArrowRight:1,Home:-i,End:courses.length-1-i};if(e.key in d){e.preventDefault();if(e.target.closest('.walk-card'))viewport.focus({preventScroll:true});if(e.key==='Home'||e.key==='End'){settleImmediately();motion.snap(e.key==='Home'?0:courses.length-1,true);draw();}else move(d[e.key]);}});
   viewport.addEventListener('dragstart',e=>e.preventDefault());
   // Touch Events arbitrate scrolling before the browser commits a native pan.
   // Pointer-event cancellation alone cannot cancel viewport scrolling on iOS.
   function begin(id,x,y,time,target,touch=false){
    if(gesture)return;
-   const wasMoving=motion.phase==='coast'||motion.phase==='snap';
-   gesture={id,x,lastX:x,y,position:motion.position,axis:null,moved:false,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card'),href:target.closest?.('.walk-card')?.getAttribute('href')||courses[wrap(Math.round(motion.position))].href};
+   const wasMoving=motion.phase==='snap';
+   stopFrame();motion.stop();
+   gesture={id,x,lastX:x,y,position:motion.position,startIndex:Math.round(motion.position),axis:null,moved:false,samples:[{t:time,p:motion.position}],wasMoving,touch,anchor:target.closest?.('.walk-card')};
    suppressUntil=0;
   }
   function track(x,y,time,event){
    const g=gesture;if(!g)return;const dx=x-g.x,dy=y-g.y;g.lastX=x;g.moved ||= Math.hypot(dx,dy)>6;
-   if(!g.axis&&(Math.abs(dx)>=6&&Math.abs(dx)>=Math.abs(dy)*.85||Math.abs(dy)>=12)){
-    // Tiny initial wobble is undecided, not a permanent vertical lock.
-    // Horizontal intent locks at 6px; remaining vertical intent is handed off at 12px.
-    g.axis=Math.abs(dx)>=Math.abs(dy)*.85?'x':'y';
+   if(!g.axis&&Math.max(Math.abs(dx),Math.abs(dy))>=10){
+    // Ambiguous diagonals belong to the page, not the carousel.
+    g.axis=Math.abs(dx)>Math.abs(dy)*1.3?'x':'y';
     if(g.axis==='x'){
      if(g.touch&&!event.cancelable){g.axis='y';return;}
      g.position=motion.position;stopFrame();motion.stop();g.samples=[{t:time,p:g.position}];
@@ -133,25 +94,25 @@
    }
    if(g.axis!=='x')return;
    if(event.cancelable)event.preventDefault();
-   motion.drag(g.position-dx/pitch);g.samples.push({t:time,p:motion.position});g.samples=g.samples.filter(s=>s.t>=time-150);schedule();
+   motion.drag(Math.max(g.startIndex-1,Math.min(g.startIndex+1,g.position-dx/pitch)));g.samples.push({t:time,p:motion.position});g.samples=g.samples.filter(s=>s.t>=time-150);schedule();
   }
   function finish(id,time,cancel=false){
    if(!gesture||gesture.id!==id)return;const g=gesture;gesture=null;viewport.classList.remove('is-dragging');
    if(g.axis||g.moved)suppressUntil=performance.now()+700;
    if(g.axis==='x'){
-    if(cancel)motion.snap(Math.round(motion.position),reduced.matches);
-    else if(reduced.matches){const d=motion.position-g.position;motion.snap(Math.abs(d)>.18&&Math.abs(d)<.5?Math.round(g.position)+Math.sign(d):Math.round(motion.position),true);}
-    else motion.release(releaseVelocity(g.samples,time));
+    if(cancel)motion.snap(g.startIndex,reduced.matches);
+    else motion.release(releaseVelocity(g.samples,time),reduced.matches,g.startIndex);
+   }else if(g.wasMoving){
+    // A touch stops motion first; it must not unexpectedly open a moving link.
+    motion.snap(Math.round(motion.position),true);suppressUntil=performance.now()+700;
    }
-   // A vertical gesture, opening credits, or simply touching the wheel is not a brake.
    if(!g.touch&&viewport.hasPointerCapture(id))viewport.releasePointerCapture(id);
-   if(!cancel&&!g.moved&&!g.axis&&g.wasMoving&&g.href){suppressUntil=performance.now()+700;try{sessionStorage.setItem(key,g.href);}catch(_){}location.assign(g.href);return;}
    draw();if(motion.phase!=='idle')schedule();
   }
   viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||!e.isPrimary||e.button!==0)return;begin(e.pointerId,e.clientX,e.clientY,e.timeStamp,e.target);});
   viewport.addEventListener('pointermove',e=>{if(gesture&&!gesture.touch&&gesture.id===e.pointerId)track(e.clientX,e.clientY,e.timeStamp,e);});
-  viewport.addEventListener('pointerup',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp);});
-  viewport.addEventListener('pointercancel',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp,true);});
+  window.addEventListener('pointerup',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp);},{signal:controller.signal});
+  window.addEventListener('pointercancel',e=>{if(!gesture?.touch)finish(e.pointerId,e.timeStamp,true);},{signal:controller.signal});
   viewport.addEventListener('lostpointercapture',e=>{if(e.target===viewport&&!gesture?.touch)finish(e.pointerId,e.timeStamp,true);});
   viewport.addEventListener('touchstart',e=>{
    if(e.touches.length!==1){if(gesture?.touch)finish(gesture.id,e.timeStamp,true);return;}

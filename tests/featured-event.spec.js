@@ -50,8 +50,9 @@ test('home advertises active and upcoming visits separately while remaining comp
   await page.clock.setFixedTime(new Date('2026-11-24T12:00:00+09:00'));
   await page.goto(home);
   const section=page.locator('#local-events');
-  await expect(section.locator('article:visible')).toHaveCount(6);
-  for(const id of ['hasedera','hasedera-kaicho','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
+  await expect(section.locator('article:visible')).toHaveCount(7);
+  expect((await section.locator('article:visible').evaluateAll(els=>els.map(e=>e.id))).sort()).toEqual(['amadera','chojuji-autumn','hasedera','hasedera-kaicho','hokokuji','kakuonji','kenchoji'].map(id=>'event-'+id).sort());
+  for(const id of ['hasedera','hasedera-kaicho','kenchoji','chojuji-autumn']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
   for(const id of ['kakuonji','hokokuji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('開催予定');
   const layout=await section.evaluate(el=>({
     width:document.documentElement.clientWidth,

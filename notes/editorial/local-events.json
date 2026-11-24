@@ -1,0 +1,58 @@
+[
+  {
+    "path": "index.html",
+    "before": "</style>\n<noscript>",
+    "after": "\n  /* 開催期限のある催し：既存のポスター面と朱・余白を継承 */\n  .local-events{max-width:1120px;margin:0 auto;padding:24px var(--gutter) 0;}\n  .local-events[hidden],.local-event[hidden]{display:none;}\n  .local-event{margin-top:8px;padding:14px clamp(14px,3vw,24px);border:1px solid var(--line);border-left:2px solid var(--vermilion);background:var(--card);}\n  .local-event .event-period{font-size:.82rem;color:var(--vermilion);margin:0 0 4px;}\n  .local-event h3{font-size:clamp(18px,3vw,23px);margin:0 0 4px;line-height:1.45;}\n  .local-event p{margin:0 0 6px;}\n  .local-event .event-venue{color:var(--ink-soft);font-size:.86rem;}\n  .local-event .event-links{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0 0;}\n  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}\n  .local-events:not([hidden]) + .picks{padding-top:28px;}\n</style>\n<noscript>",
+    "reason": "Add a scoped event-card style using the existing site palette and spacing.",
+    "sources": [
+      "https://ci.nii.ac.jp/ncid/BD21180267",
+      "https://www.shonan-sh.jp/events/amadera/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56811
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<section class=\"picks\" aria-label=\"はじめての方と、今月のおすすめ\">",
+    "after": "<section class=\"local-events\" id=\"local-events\" aria-labelledby=\"local-events-heading\" hidden>\n  <h2 class=\"sec-label\" id=\"local-events-heading\">鎌倉の催し</h2>\n  <article class=\"local-event\" data-start=\"2026-09-19\" data-end=\"2026-11-28\" hidden>\n    <p class=\"event-period\">企画展｜<time datetime=\"2026-11-28\">2026年11月28日（土）まで</time></p>\n    <h3>鎌倉の尼寺</h3>\n    <p class=\"event-venue\">鎌倉歴史文化交流館</p>\n    <p>東慶寺に伝わった離縁状や、英勝寺の懐剣・化粧道具を通して、寺と女性たちの暮らしをたどります。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g10.html#amadera-exhibition-2026\">「尼寺と女性たちの鎌倉」を読む</a><a href=\"https://www.shonan-sh.jp/events/amadera/\">展示案内</a></p>\n  </article>\n<script id=\"local-events-visibility\">\n(() => {\n  const section = document.getElementById(\"local-events\");\n  // data-start is the first day the notice is shown, not necessarily the event opening day.\n  const entries = Array.from(section.querySelectorAll(\"[data-start][data-end]\"));\n  const day = 24 * 60 * 60 * 1000;\n  const midnightInJapan = date => /^\\d{4}-\\d{2}-\\d{2}$/.test(date)\n    ? Date.parse(date + \"T00:00:00+09:00\") : NaN;\n  let timer;\n  function refresh() {\n    clearTimeout(timer);\n    const now = Date.now();\n    let next = Infinity;\n    let any = false;\n    for (const entry of entries) {\n      const start = midnightInJapan(entry.dataset.start);\n      const end = midnightInJapan(entry.dataset.end) + day;\n      const valid = Number.isFinite(start) && Number.isFinite(end) && start < end;\n      const visible = valid && start <= now && now < end;\n      entry.hidden = !visible;\n      any ||= visible;\n      if (valid && now < start) next = Math.min(next, start);\n      if (visible) next = Math.min(next, end);\n    }\n    section.hidden = !any;\n    if (Number.isFinite(next)) timer = setTimeout(refresh, Math.min(day, next - now));\n  }\n  addEventListener(\"pageshow\", refresh);\n  document.addEventListener(\"visibilitychange\", refresh);\n  refresh();\n})();\n</script>\n</section>\n\n<section class=\"picks\" aria-label=\"はじめての方と、今月のおすすめ\">",
+    "reason": "Promote the dated exhibition near the top only during its eligible Japanese calendar dates.",
+    "sources": [
+      "https://ci.nii.ac.jp/ncid/BD21180267",
+      "https://www.shonan-sh.jp/events/amadera/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      72216
+    ]
+  },
+  {
+    "path": "knowledge/g10.html",
+    "before": "    </div>\n  </div>\n  <p class=\"section-divider\" data-i18n=\"kn.sectiondivider\">",
+    "after": "      <div class=\"note-item note-detour\" id=\"amadera-exhibition-2026\">\n        <p class=\"note-label\">資料でたどる｜2026年の企画展</p>\n        <p class=\"note-text\">鎌倉歴史文化交流館の企画展「鎌倉の尼寺」（会期：<time datetime=\"2026-09-19\">2026年9月19日</time>〜<time datetime=\"2026-11-28\">11月28日</time>）の展示資料には、東慶寺に伝わった離縁状と、英勝寺所蔵の懐剣（名号付きの脇差）・化粧道具があります。文書と身の回りの品を見比べると、寺と女性たちの暮らしとの関わりが見えてきます。<a href=\"https://ci.nii.ac.jp/ncid/BD21180267\">展覧会図録の書誌</a>／<a href=\"https://www.shonan-sh.jp/events/amadera/\">展示資料の案内</a></p>\n      </div>\n    </div>\n  </div>\n  <p class=\"section-divider\" data-i18n=\"kn.sectiondivider\">",
+    "reason": "Preserve exhibition evidence in the related walk article after the promotion expires.",
+    "sources": [
+      "https://ci.nii.ac.jp/ncid/BD21180267",
+      "https://www.shonan-sh.jp/events/amadera/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43167
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<ol class=\"log-list\">",
+    "after": "<ol class=\"log-list\">\n    <li><span class=\"tag\">追加</span>トップに会期付きの「鎌倉の催し」を加えました。最初は「鎌倉の尼寺」展を案内し、東慶寺と英勝寺の展示資料を<a href=\"knowledge/g10.html#amadera-exhibition-2026\">「尼寺と女性たちの鎌倉」</a>に追記しました。会期が終わるとトップの案内は消え、記事の資料紹介は残ります。（2026年11月24日）</li>",
+    "reason": "Log the publication and deliberate expiry behavior.",
+    "sources": [
+      "https://ci.nii.ac.jp/ncid/BD21180267",
+      "https://www.shonan-sh.jp/events/amadera/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35443
+    ]
+  }
+]

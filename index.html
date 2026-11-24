@@ -846,6 +846,7 @@
   .local-event h3{font-size:clamp(16px,2.5vw,20px);margin:0;line-height:1.45;}
   .local-event p{margin:0;}
   .local-event .event-venue{color:var(--ink-soft);font-size:.82rem;line-height:1.5;}
+  @media(max-width:399px){.local-events{padding-top:16px;}.local-events-grid{gap:6px;grid-template-columns:minmax(0,1fr);}.local-event{min-width:0;padding:6px 10px 1px;overflow-wrap:anywhere;}.local-event .event-venue{display:none;}}
   .local-event .event-links{display:flex;flex-wrap:wrap;gap:0 14px;margin:0;}
   .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;font-size:.85rem;}
   .local-event [data-event-day]:not([hidden]) ~ [data-event-day]:not([hidden])::before{content:"・";}

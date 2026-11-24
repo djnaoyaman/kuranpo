@@ -53,11 +53,15 @@ test('home advertises active and upcoming visits separately while remaining comp
   await expect(section.locator('article:visible')).toHaveCount(5);
   for(const id of ['hasedera','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
   for(const id of ['kakuonji','hokokuji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('開催予定');
-  expect(await section.evaluate(el=>{
-    const boxes=[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect());
-    return boxes.every(b=>b.left>=0&&b.right<=document.documentElement.clientWidth)
-      && el.getBoundingClientRect().height<720;
-  })).toBe(true);
+  const layout=await section.evaluate(el=>({
+    width:document.documentElement.clientWidth,
+    height:el.getBoundingClientRect().height,
+    boxes:[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect().toJSON()),
+    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a')].map(a=>a.getBoundingClientRect().height))
+  }));
+  expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
+  expect(layout.height).toBeLessThan(720);
+  expect(layout.minLinkHeight).toBeGreaterThanOrEqual(44);
   await section.locator('#event-hasedera').getByRole('link',{name:'コースを見る'}).click();
   await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera$/);
   await expect(page.locator('#event-at-hasedera')).toBeVisible();

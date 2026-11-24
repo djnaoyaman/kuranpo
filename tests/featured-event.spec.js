@@ -57,7 +57,7 @@ test('home advertises active and upcoming visits separately while remaining comp
     width:document.documentElement.clientWidth,
     height:el.getBoundingClientRect().height,
     boxes:[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect().toJSON()),
-    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].map(a=>a.getBoundingClientRect().height))
+    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].filter(a=>a.getClientRects().length>0).map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
   expect(layout.height).toBeLessThan(720);
@@ -157,6 +157,7 @@ test('Sugimoto-dera shows only the four official dates, in the four stopping rou
   await expect(card.locator('[data-event-day]:visible')).toHaveCount(4);
   await expect(card.locator('[data-event-status]')).toHaveText('開催予定');
   expect(await card.evaluate(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right<=document.documentElement.clientWidth;})).toBe(true);
+  expect((await card.getByRole('link').boundingBox()).height).toBeGreaterThanOrEqual(44);
   await card.getByRole('link').click();
   await expect(page).toHaveURL(/knowledge\/g1\.html#event-at-sugimotodera-kaicho$/);
   for(const route of ['g1','re10','pe1','ti1']){

@@ -835,6 +835,18 @@
   .pl-cap{display:block; font-size:15px; line-height:1.85; letter-spacing:.02em; color:var(--ink-read);}
   .pl-cr{display:block; margin-top:4px; font-size:12.5px; line-height:1.8; color:var(--ink-soft);}
   .pl-cr a{color:var(--ink-soft); border-bottom:1px solid var(--line); text-decoration:none;}
+
+  /* 開催期限のある催し：既存のポスター面と朱・余白を継承 */
+  .local-events{max-width:1120px;margin:0 auto;padding:24px var(--gutter) 0;}
+  .local-events[hidden],.local-event[hidden]{display:none;}
+  .local-event{margin-top:8px;padding:14px clamp(14px,3vw,24px);border:1px solid var(--line);border-left:2px solid var(--vermilion);background:var(--card);}
+  .local-event .event-period{font-size:.82rem;color:var(--vermilion);margin:0 0 4px;}
+  .local-event h3{font-size:clamp(18px,3vw,23px);margin:0 0 4px;line-height:1.45;}
+  .local-event p{margin:0 0 6px;}
+  .local-event .event-venue{color:var(--ink-soft);font-size:.86rem;}
+  .local-event .event-links{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0 0;}
+  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}
+  .local-events:not([hidden]) + .picks{padding-top:28px;}
 </style>
 <noscript><style>.card{opacity:1 !important;} .drawer, .hamburger{display:none !important;}</style></noscript>
 <script type="application/ld+json">{
@@ -915,6 +927,48 @@
     <a class="hero-go" href="#chapters">今日の一本を選ぶ<span>↓</span></a>
   </div>
 </header>
+
+<section class="local-events" id="local-events" aria-labelledby="local-events-heading" hidden>
+  <h2 class="sec-label" id="local-events-heading">鎌倉の催し</h2>
+  <article class="local-event" data-start="2026-09-19" data-end="2026-11-28" hidden>
+    <p class="event-period">企画展｜<time datetime="2026-11-28">2026年11月28日（土）まで</time></p>
+    <h3>鎌倉の尼寺</h3>
+    <p class="event-venue">鎌倉歴史文化交流館</p>
+    <p>東慶寺に伝わった離縁状や、英勝寺の懐剣・化粧道具を通して、寺と女性たちの暮らしをたどります。</p>
+    <p class="event-links"><a href="knowledge/g10.html#amadera-exhibition-2026">「尼寺と女性たちの鎌倉」を読む</a><a href="https://www.shonan-sh.jp/events/amadera/">展示案内</a></p>
+  </article>
+<script id="local-events-visibility">
+(() => {
+  const section = document.getElementById("local-events");
+  const entries = Array.from(section.querySelectorAll("[data-start][data-end]"));
+  const day = 24 * 60 * 60 * 1000;
+  const midnightInJapan = date => /^\d{4}-\d{2}-\d{2}$/.test(date)
+    ? Date.parse(date + "T00:00:00+09:00") : NaN;
+  let timer;
+  function refresh() {
+    clearTimeout(timer);
+    const now = Date.now();
+    let next = Infinity;
+    let any = false;
+    for (const entry of entries) {
+      const start = midnightInJapan(entry.dataset.start);
+      const end = midnightInJapan(entry.dataset.end) + day;
+      const valid = Number.isFinite(start) && Number.isFinite(end) && start < end;
+      const visible = valid && start <= now && now < end;
+      entry.hidden = !visible;
+      any ||= visible;
+      if (valid && now < start) next = Math.min(next, start);
+      if (visible) next = Math.min(next, end);
+    }
+    section.hidden = !any;
+    if (Number.isFinite(next)) timer = setTimeout(refresh, Math.min(day, next - now));
+  }
+  addEventListener("pageshow", refresh);
+  document.addEventListener("visibilitychange", refresh);
+  refresh();
+})();
+</script>
+</section>
 
 <section class="picks" aria-label="はじめての方と、今月のおすすめ">
   <div class="pick"><h2 class="sec-label">はじめての一本</h2><ul class="routes"><li class="route route-pick" data-set="geo" data-dur="1" data-areas="station" data-kids="1" data-spots="杉本寺|大巧寺"><a href="knowledge/g1.html"><span class="r-no">01</span><span class="r-title">古代信仰の基層</span><span class="r-theme"><ruby>杉本寺<rt>すぎもとでら</rt></ruby>の石段には、今も足を乗せられません。頼朝が鎌倉に来るより450年も前——この土地には、もう祈りの場所がありました。</span><span class="r-line" aria-hidden="true"><i class="r-end" style="left:3%"></i><i class="r-dot" style="left:48.6%"></i><i class="r-dot" style="left:91.3%"></i><i class="r-end" style="left:97%"></i></span><span class="r-ends"><span>鎌倉駅東口</span><span>鎌倉駅東口</span></span><span class="r-spots">杉本寺・<ruby>大巧寺<rt>だいぎょうじ</rt></ruby></span><span class="r-meta"><span>1時間</span><span>徒歩約3.3km</span></span></a></li></ul></div>

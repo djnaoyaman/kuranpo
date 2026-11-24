@@ -850,9 +850,10 @@
   .local-event .event-links{display:flex;flex-wrap:wrap;gap:0 14px;margin:0;}
   .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;font-size:.85rem;}
   @media(max-width:399px){
-    .local-event{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7.5em);column-gap:8px;align-items:start;}
-    .local-event .event-period,.local-event h3{grid-column:1;}
-    .local-event .event-links{display:grid;grid-column:2;grid-row:1 / span 2;gap:0;align-self:center;}
+    .local-event{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:6px;align-items:center;}
+    .local-event h3{grid-column:1 / -1;grid-row:1;}
+    .local-event .event-period{grid-column:1;grid-row:2;}
+    .local-event .event-links{display:flex;grid-column:2;grid-row:2;flex-wrap:nowrap;gap:6px;white-space:nowrap;}
     .local-event .event-links a{min-width:44px;}
   }
   .local-event [data-event-day]:not([hidden]) ~ [data-event-day]:not([hidden])::before{content:"・";}
@@ -945,7 +946,7 @@
     <p class="event-period"><span data-event-status></span>｜企画展｜<time datetime="2026-11-28">2026年11月28日（土）まで</time></p>
     <h3>鎌倉の尼寺</h3>
     <p class="event-venue">鎌倉歴史文化交流館</p>
-    <p class="event-links"><a href="knowledge/g10.html#amadera-exhibition-2026">「尼寺と女性たちの鎌倉」を読む</a><a href="https://www.shonan-sh.jp/events/amadera/">展示案内</a></p>
+    <p class="event-links"><a href="knowledge/g10.html#amadera-exhibition-2026" aria-label="「尼寺と女性たちの鎌倉」を読む">関連コース</a><a href="https://www.shonan-sh.jp/events/amadera/">展示案内</a></p>
   </article>
   <article class="local-event" id="event-hasedera" data-local-event="hasedera" data-start="2026-11-21" data-end="2026-12-06" hidden>
     <p class="event-period"><span data-event-status></span>｜2026年 <time datetime="2026-11-21">11月21日</time>〜<time datetime="2026-12-06">12月6日</time></p>

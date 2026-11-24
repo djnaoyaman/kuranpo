@@ -158,6 +158,11 @@ test('Sugimoto-dera shows only the four official dates, in the four stopping rou
   await expect(card.locator('[data-event-status]')).toHaveText('開催予定');
   expect(await card.evaluate(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right<=document.documentElement.clientWidth;})).toBe(true);
   expect((await card.getByRole('link').boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await page.setViewportSize({width:768,height:820});
+  await page.evaluate(()=>document.documentElement.style.zoom='2');
+  const zoom=await page.evaluate(()=>({viewport:innerWidth,page:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('.local-events *')].filter(e=>e.getClientRects().length&&e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>[e.className,e.textContent.trim().slice(0,35)])}));
+  expect(zoom.page,JSON.stringify(zoom)).toBeLessThanOrEqual(zoom.viewport+1);
+  await page.evaluate(()=>{document.documentElement.style.zoom='';});
   await card.getByRole('link').click();
   await expect(page).toHaveURL(/knowledge\/g1\.html#event-at-sugimotodera-kaicho$/);
   for(const route of ['g1','re10','pe1','ti1']){

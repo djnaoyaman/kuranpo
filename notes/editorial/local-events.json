@@ -686,5 +686,18 @@
     "before_offsets": [
       58993
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  @media(min-width:760px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}",
+    "after": "  .local-events{container-type:inline-size;}\n  @container (min-width:680px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}\n  .local-event{min-width:0;overflow-wrap:anywhere;}",
+    "reason": "Select columns from the actual available content width rather than the unzoomed viewport, preserving mobile and desktop flow at 200% zoom.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57031
+    ]
   }
 ]

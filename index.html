@@ -840,7 +840,9 @@
   .local-events{max-width:1120px;margin:0 auto;padding:24px var(--gutter) 0;}
   .local-events[hidden],.local-events [hidden]{display:none;}
   .local-events-grid{display:grid;gap:8px;}
-  @media(min-width:760px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  .local-events{container-type:inline-size;}
+  @container (min-width:680px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+  .local-event{min-width:0;overflow-wrap:anywhere;}
   .local-event{padding:9px 12px 4px;border:1px solid var(--line);border-left:2px solid var(--vermilion);background:var(--card);}
   .local-event .event-period{font-size:.82rem;color:var(--vermilion);margin:0;}
   .local-event h3{font-size:clamp(16px,2.5vw,20px);margin:0;line-height:1.45;}

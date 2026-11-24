@@ -435,5 +435,61 @@
     "before_offsets": [
       35443
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event\" id=\"event-kenchoji\"",
+    "after": "  <article class=\"local-event\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time></p>\n    <h3>長谷寺 十一面観音の全身総開帳</h3>\n    <p class=\"event-venue\">12年に一度、ふだんは隠れている御足まで拝観。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">コースを見る</a><a href=\"https://www.hasedera.jp/2026/10/20867/\">公式案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-kenchoji\"",
+    "reason": "Promote the confirmed twelve-year full viewing, independently from the existing night visit.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      73871
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span>",
+    "reason": "Add exact dates, distinct final-day activities and parking closure at the actual Hasedera stop.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43241
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span>",
+    "reason": "Add exact dates, distinct final-day activities and parking closure at the actual Hasedera stop.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42074
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">追加</span>長谷寺の十一面観音の全身総開帳（2026年12月18日まで）をトップと2つの長谷寺コースに掲載。最終日の法要中の一時休止、御足参り祈願と歳の市、駐車場の終日休止も案内しました。（2026年11月24日）</li>",
+    "reason": "Log the released event and distinguishing final-day information.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
   }
 ]

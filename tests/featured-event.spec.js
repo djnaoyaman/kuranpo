@@ -50,8 +50,9 @@ test('home advertises active and upcoming visits separately while remaining comp
   await page.clock.setFixedTime(new Date('2026-11-24T12:00:00+09:00'));
   await page.goto(home);
   const section=page.locator('#local-events');
-  await expect(section.locator('article:visible')).toHaveCount(6);
-  for(const id of ['hasedera','hasedera-kaicho','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
+  await expect(section.locator('article:visible')).toHaveCount(7);
+  expect((await section.locator('article:visible').evaluateAll(els=>els.map(e=>e.id))).sort()).toEqual(['amadera','chojuji-autumn','hasedera','hasedera-kaicho','hokokuji','kakuonji','kenchoji'].map(id=>'event-'+id).sort());
+  for(const id of ['hasedera','hasedera-kaicho','kenchoji','chojuji-autumn']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
   for(const id of ['kakuonji','hokokuji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('開催予定');
   const layout=await section.evaluate(el=>({
     width:document.documentElement.clientWidth,
@@ -60,7 +61,7 @@ test('home advertises active and upcoming visits separately while remaining comp
     minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].filter(a=>a.getClientRects().length>0).map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
-  expect(layout.height).toBeLessThan(720);
+  expect(layout.height,JSON.stringify(layout)).toBeLessThan(720);
   expect(layout.minLinkHeight).toBeGreaterThanOrEqual(44);
   await section.locator('#event-hasedera').getByRole('link',{name:'コースを見る'}).click();
   await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera$/);
@@ -185,4 +186,33 @@ test('Sugimoto-dera shows only the four official dates, in the four stopping rou
   await expect(card).toBeHidden();
   await page.goto('/kuranpo/knowledge/g1.html');
   await expect(note).toBeHidden();
+});
+
+
+test('C2: Chōjuji dates, walking loop time and temple history agree across the public paths', async ({page})=>{
+  const freeze=d=>page.clock.setFixedTime(new Date(d+'+09:00'));
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-12-07T12:00:00');
+  await page.goto(home);
+  const card=page.locator('#event-chojuji-autumn');
+  await expect(card).toBeVisible();
+  await expect(card).toContainText('12月7日まで');
+  await card.getByRole('link').click();
+  await expect(page).toHaveURL(/knowledge\/c2\.html#event-at-chojuji-autumn$/);
+  const stop=page.locator('#event-at-chojuji-autumn');
+  await expect(stop).toContainText(/10:00〜15:00.*雨天中止/);
+  await expect(page.locator('.leg').last()).toContainText('徒歩約900m・約15分');
+  await expect(page.locator('article .dist')).toContainText('約2.8km');
+  await expect(page.locator('#c2 .story')).toContainText('古先印元');
+  await expect(page.locator('#c2 .story')).not.toContainText('蘭渓道隆');
+  await freeze('2026-12-08T00:00:00');
+  await page.reload();
+  await expect(stop).toBeHidden();
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await expect(page.locator('li.route a[href="knowledge/c2.html"]')).toContainText('徒歩約2.8km');
+  await page.goto('/kuranpo/history.html');
+  await expect(page.locator('a.card-link[href="knowledge/c2.html"]')).toContainText('徒歩約2.8km');
+  await page.goto('/kuranpo/knowledge/c1.html');
+  await expect(page.locator('a.pg-next[href="c2.html"]')).toContainText('徒歩約2.8km');
 });

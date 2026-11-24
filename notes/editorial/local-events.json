@@ -699,5 +699,255 @@
     "before_offsets": [
       57031
     ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<meta name=\"description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、建長寺を開いたお坊さん・蘭渓道隆のお墓があるお寺で、期間限定で公開される庭を持つ。有名なお寺の隙間に…\">",
+    "after": "<meta name=\"description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、古先印元を開山とする建長寺の塔頭で、庭は季節限定で公開される。有名なお寺の隙間に…\">",
+    "reason": "Correct the same historical error in this individual page’s metadata.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      734
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<meta property=\"og:description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、建長寺を開いたお坊さん・蘭渓道隆のお墓があるお寺で、期間限定で公開される庭を持つ。有名なお寺の隙間に…\">",
+    "after": "<meta property=\"og:description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、古先印元を開山とする建長寺の塔頭で、庭は季節限定で公開される。有名なお寺の隙間に…\">",
+    "reason": "Correct the same historical error in this individual page’s metadata.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      1743
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<meta name=\"twitter:description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、建長寺を開いたお坊さん・蘭渓道隆のお墓があるお寺で、期間限定で公開される庭を持つ。有名なお寺の隙間に…\">",
+    "after": "<meta name=\"twitter:description\" content=\"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、古先印元を開山とする建長寺の塔頭で、庭は季節限定で公開される。有名なお寺の隙間に…\">",
+    "reason": "Correct the same historical error in this individual page’s metadata.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      2451
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": " \"description\": \"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、建長寺を開いたお坊さん・蘭渓道隆のお墓があるお寺で、期間限定で公開される庭を持つ。有名なお寺の隙間に…\",",
+    "after": " \"description\": \"円覚寺の門の前に立つ八雲神社の庚申塔は、鎌倉で一番古くて一番大きいと言われている。長寿寺は、古先印元を開山とする建長寺の塔頭で、庭は季節限定で公開される。有名なお寺の隙間に…\",",
+    "reason": "Correct the same historical error in this individual page’s metadata.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      34495
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby>は、建長寺を開いたお坊さん・<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>のお墓があるお寺で、期間限定で公開される庭を持っています。",
+    "after": "<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby>は、建長寺の<ruby>塔頭<rt>たっちゅう</rt></ruby>（ゆかりの小寺院）です。開山は<ruby>古先印元<rt>こせんいんげん</rt></ruby>。庭は季節を限って公開されます。",
+    "reason": "Name the correct founding priest and relationship to the head temple.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      40072
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<span class=\"sname\">長寿寺</span></div><span class=\"snote\">建長寺の<ruby>開山<rt>かいさん</rt></ruby>塔所。限定公開の庭園がある。</span>",
+    "after": "<span class=\"sname\">長寿寺</span></div><span class=\"snote\">建長寺の<ruby>塔頭<rt>たっちゅう</rt></ruby>。庭園は季節限定で公開。</span><span class=\"snote stop-event\" id=\"event-at-chojuji-autumn\" data-local-event=\"chojuji-autumn\" data-start=\"2026-11-23\" data-end=\"2026-12-07\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長寿寺 秋の特別拝観</strong><br>2026年は<time datetime=\"2026-12-07\">12月7日</time>まで毎日。10:00〜15:00、拝観料500円。雨天中止。<a href=\"https://www.trip-kamakura.com/facility/detail.php?area=2&amp;id=52\">鎌倉市観光協会の案内</a></span>",
+    "reason": "Place autumn opening and rain cancellation at the actual stop, without keeping it current after the end date.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41850
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "施設間の徒歩距離 約2.1km",
+    "after": "施設間の徒歩距離 約2.8km",
+    "reason": "Reconcile rounded walk between all stops including the return leg.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      39883
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "長寿寺から 徒歩200m・約3分",
+    "after": "長寿寺から 徒歩約900m・約15分",
+    "reason": "Use a rounded map distance and the association’s access time.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42428
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "所要分は、1分あたり70mで換算しています。",
+    "after": "所要分は、1分あたり70mで換算しています。長寿寺から北鎌倉駅に戻る区間は、距離を<a href=\"https://www.navitime.co.jp/poi?spot=00004-14165000084\">経路案内の概算</a>、時間を<a href=\"https://www.trip-kamakura.com/facility/detail.php?area=2&amp;id=52\">鎌倉市観光協会の案内</a>によっています（現地実測ではありません）。",
+    "reason": "Distinguish the final leg's route estimate and published time from the site’s general formula.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      47041
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<dt><ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby></dt><dd>長寿寺は<ruby class=o1>蘭渓道隆<rt>らんけいどうりゅう</rt></ruby>の塔所として建てられました。</dd>",
+    "after": "<dt><ruby>古先印元<rt>こせんいんげん</rt></ruby></dt><dd>長寿寺の開山。のちに建長寺の第38世を務めました。<a href=\"https://www.kenchoji.com/access/\">建長寺の案内</a></dd>",
+    "reason": "Make the glossary consistent with the head temple’s history.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43337
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "{\"q\": \"長寿寺に蘭渓道隆の墓があることは、建長寺の物語とどうつながっている？\", \"choices\": [\"無関係である\", \"建長寺を開いた僧自身の墓が、別の寺に残っているという継続性\", \"蘭渓道隆は建長寺と関係ない\", \"長寿寺の方が先に建てられた\"], \"answer\": 1, \"note\": \"建長寺を開いた蘭渓道隆本人の墓が、すぐ近くの長寿寺に残っているというつながりです。\"}",
+    "after": "{\"q\": \"長寿寺と建長寺のつながりは？\", \"choices\": [\"同じ寺の別名\", \"長寿寺は建長寺の塔頭で、開山の古先印元は建長寺の第38世も務めた\", \"長寿寺は建長寺の別の入口\", \"長寿寺と建長寺は無関係\"], \"answer\": 1, \"note\": \"長寿寺は建長寺の塔頭です。長寿寺の開山は古先印元。建長寺を開いた蘭渓道隆とは別の人です。\"}",
+    "reason": "Remove the false premise from the embedded quiz as well as the body.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      45305
+    ]
+  },
+  {
+    "path": "knowledge/c2.html",
+    "before": "<script src=\"../assets/monochrome.js\" defer></script>",
+    "after": "<script src=\"../assets/monochrome.js\" defer></script>\n<script defer src=\"../assets/local-events.js?v=20261124a\"></script>",
+    "reason": "Reuse the site’s existing JST event display script.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      54445
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<li class=\"route\" data-set=\"complete\" data-dur=\"1\" data-areas=\"kitakamakura\" data-spots=\"八雲神社（山ノ内）|光照寺|長寿寺\"><a href=\"knowledge/c2.html\"><span class=\"r-no\">C2</span><span class=\"r-title\">北鎌倉② 円覚寺・建長寺周辺の未収録社寺</span><span class=\"r-theme\">北鎌倉の<ruby>谷戸<rt>やと</rt></ruby>に点在する、あまり知られていない社寺。</span><span class=\"r-line\" aria-hidden=\"true\"><i class=\"r-end\" style=\"left:3%\"></i><i class=\"r-dot\" style=\"left:16.4%\"></i><i class=\"r-dot\" style=\"left:47.8%\"></i><i class=\"r-dot\" style=\"left:88.0%\"></i><i class=\"r-end\" style=\"left:97%\"></i></span><span class=\"r-ends\"><span>北鎌倉駅</span><span>北鎌倉駅</span></span><span class=\"r-spots\"><ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>（<ruby>山ノ内<rt>やまのうち</rt></ruby>）・<ruby>光照寺<rt>こうしょうじ</rt></ruby>・<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby></span><span class=\"r-meta\"><span>1時間</span><span>徒歩約2.1km</span></span></a></li>",
+    "after": "<li class=\"route\" data-set=\"complete\" data-dur=\"1\" data-areas=\"kitakamakura\" data-spots=\"八雲神社（山ノ内）|光照寺|長寿寺\"><a href=\"knowledge/c2.html\"><span class=\"r-no\">C2</span><span class=\"r-title\">北鎌倉② 円覚寺・建長寺周辺の未収録社寺</span><span class=\"r-theme\">北鎌倉の<ruby>谷戸<rt>やと</rt></ruby>に点在する、あまり知られていない社寺。</span><span class=\"r-line\" aria-hidden=\"true\"><i class=\"r-end\" style=\"left:3%\"></i><i class=\"r-dot\" style=\"left:13.1%\"></i><i class=\"r-dot\" style=\"left:36.6%\"></i><i class=\"r-dot\" style=\"left:66.8%\"></i><i class=\"r-end\" style=\"left:97%\"></i></span><span class=\"r-ends\"><span>北鎌倉駅</span><span>北鎌倉駅</span></span><span class=\"r-spots\"><ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>（<ruby>山ノ内<rt>やまのうち</rt></ruby>）・<ruby>光照寺<rt>こうしょうじ</rt></ruby>・<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby></span><span class=\"r-meta\"><span>1時間</span><span>徒歩約2.8km</span></span></a></li>",
+    "reason": "Synchronize the C2 card and cumulative distance diagram to 0.3, 1.0 and 1.9 km of 2.8 km.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      111211
+    ]
+  },
+  {
+    "path": "knowledge/c1.html",
+    "before": "    <a class=\"pg-next\" data-set=\"complete\" href=\"c2.html\"><span class=\"pg-label\">次に歩く</span><span class=\"pg-title\"><span class=\"pg-no\">C2</span>北鎌倉② <ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>建長寺<rt>けんちょうじ</rt></ruby>周辺の未収録社寺</span><span class=\"r-line\" aria-hidden=\"true\"><i class=\"r-end\" style=\"left:3%\"></i><i class=\"r-dot\" style=\"left:16.4%\"></i><i class=\"r-dot\" style=\"left:47.8%\"></i><i class=\"r-dot\" style=\"left:88.0%\"></i><i class=\"r-end\" style=\"left:97%\"></i></span><span class=\"r-ends\"><span>北鎌倉駅</span><span>北鎌倉駅</span></span><span class=\"pg-meta\">1時間・徒歩約2.1km</span></a>",
+    "after": "    <a class=\"pg-next\" data-set=\"complete\" href=\"c2.html\"><span class=\"pg-label\">次に歩く</span><span class=\"pg-title\"><span class=\"pg-no\">C2</span>北鎌倉② <ruby>円覚寺<rt>えんがくじ</rt></ruby>・<ruby>建長寺<rt>けんちょうじ</rt></ruby>周辺の未収録社寺</span><span class=\"r-line\" aria-hidden=\"true\"><i class=\"r-end\" style=\"left:3%\"></i><i class=\"r-dot\" style=\"left:13.1%\"></i><i class=\"r-dot\" style=\"left:36.6%\"></i><i class=\"r-dot\" style=\"left:66.8%\"></i><i class=\"r-end\" style=\"left:97%\"></i></span><span class=\"r-ends\"><span>北鎌倉駅</span><span>北鎌倉駅</span></span><span class=\"pg-meta\">1時間・徒歩約2.8km</span></a>",
+    "reason": "Synchronize the C2 card and cumulative distance diagram to 0.3, 1.0 and 1.9 km of 2.8 km.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      48186
+    ]
+  },
+  {
+    "path": "history.html",
+    "before": "    <p class=\"spots-line\"><ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>（<ruby>山ノ内<rt>やまのうち</rt></ruby>）・<ruby>光照寺<rt>こうしょうじ</rt></ruby>・<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby></p><span class=\"r-meta\"><span>1時間</span><span>徒歩約2.1km</span></span>",
+    "after": "    <p class=\"spots-line\"><ruby>八雲神社<rt>やくもじんじゃ</rt></ruby>（<ruby>山ノ内<rt>やまのうち</rt></ruby>）・<ruby>光照寺<rt>こうしょうじ</rt></ruby>・<ruby>長寿寺<rt>ちょうじゅじ</rt></ruby></p><span class=\"r-meta\"><span>1時間</span><span>徒歩約2.8km</span></span>",
+    "reason": "Correct the C2 walk estimate in the history index.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      58206
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event local-event--brief\" id=\"event-sugimotodera-kaicho\"",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-chojuji-autumn\" data-local-event=\"chojuji-autumn\" data-start=\"2026-11-23\" data-end=\"2026-12-07\" hidden>\n    <h3><a href=\"knowledge/c2.html#event-at-chojuji-autumn\">長寿寺 秋の特別拝観</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-07\">12月7日まで</time></p>\n  </article>\n  <article class=\"local-event local-event--brief\" id=\"event-sugimotodera-kaicho\"",
+    "reason": "Discoverable, date-limited entry with the established compact featured-card layout.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      75151
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<ol class=\"log-list\">",
+    "after": "<ol class=\"log-list\">\n    <li><span class=\"tag\">訂正</span><a href=\"knowledge/c2.html\">北鎌倉②コース</a>の長寿寺の開山と北鎌倉駅までの徒歩の目安を訂正。2026年12月7日までの秋の特別拝観も案内しました。（2026年11月25日）</li>",
+    "reason": "Retain a public record without presenting an expired notice as current.",
+    "sources": [
+      "https://www.kenchoji.com/access/",
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52",
+      "https://www.navitime.co.jp/poi?spot=00004-14165000084"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35443
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "after": "  @media(max-width:399px){\n    .local-events{padding-top:10px;}\n    .local-events-grid{gap:3px;}\n    .local-event{padding-top:2px;padding-bottom:0;}\n    .local-event h3{line-height:1.25;}\n  }\n  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "reason": "Keep the longer event list compact at 320px through padding, gap and title leading, without shrinking text, hiding events or reducing touch targets.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      59332
+    ]
   }
 ]

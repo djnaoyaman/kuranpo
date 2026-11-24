@@ -61,7 +61,7 @@ test('home advertises active and upcoming visits separately while remaining comp
     minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].filter(a=>a.getClientRects().length>0).map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
-  expect(layout.height).toBeLessThan(720);
+  expect(layout.height,JSON.stringify(layout)).toBeLessThan(720);
   expect(layout.minLinkHeight).toBeGreaterThanOrEqual(44);
   await section.locator('#event-hasedera').getByRole('link',{name:'コースを見る'}).click();
   await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera$/);

@@ -869,6 +869,12 @@
   }
   #event-sugimotodera-kaicho{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7.5em);overflow-wrap:anywhere;}
   #event-sugimotodera-kaicho h3,#event-sugimotodera-kaicho .event-period{grid-column:auto;grid-row:auto;min-width:0;}
+  @media(max-width:399px){
+    .local-events{padding-top:10px;}
+    .local-events-grid{gap:3px;}
+    .local-event{padding-top:2px;padding-bottom:0;}
+    .local-event h3{line-height:1.25;}
+  }
   .local-events:not([hidden]) + .picks{padding-top:28px;}
 </style>
 <noscript><style>.card{opacity:1 !important;} .drawer, .hamburger{display:none !important;}</style></noscript>

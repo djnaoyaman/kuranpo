@@ -936,5 +936,18 @@
     "before_offsets": [
       35443
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "after": "  @media(max-width:399px){\n    .local-events{padding-top:10px;}\n    .local-events-grid{gap:3px;}\n    .local-event{padding-top:2px;padding-bottom:0;}\n    .local-event h3{line-height:1.25;}\n  }\n  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "reason": "Keep the longer event list compact at 320px through padding, gap and title leading, without shrinking text, hiding events or reducing touch targets.",
+    "sources": [
+      "https://www.trip-kamakura.com/facility/detail.php?area=2&id=52"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      59332
+    ]
   }
 ]

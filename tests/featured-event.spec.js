@@ -57,7 +57,7 @@ test('home advertises active and upcoming visits separately while remaining comp
     width:document.documentElement.clientWidth,
     height:el.getBoundingClientRect().height,
     boxes:[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect().toJSON()),
-    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a')].map(a=>a.getBoundingClientRect().height))
+    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
   expect(layout.height).toBeLessThan(720);
@@ -118,16 +118,17 @@ test('Hasedera full viewing is distinct and stays visible through its own JST la
   await page.reload();
   await expect(card).toBeVisible();
   await expect(card.locator('[data-event-status]')).toHaveText('会期中');
-  await expect(card.getByRole('link',{name:'公式案内'})).toHaveAttribute('href','https://www.hasedera.jp/2026/10/20867/');
+  await expect(card).toContainText('12月18日まで');
   await freeze('2026-12-07T00:00:00');
   await page.reload();
   await expect(page.locator('#event-hasedera')).toBeHidden();
   await expect(card).toBeVisible();
-  await card.getByRole('link',{name:'コースを見る'}).click();
+  await card.getByRole('link',{name:'長谷寺 十一面観音の全身総開帳'}).click();
   await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera-kaicho$/);
   await expect(notice).toBeVisible();
   await expect(notice.locator('xpath=..')).toContainText('長谷寺');
   await expect(notice).toContainText('別の行事');
+  await expect(notice.getByRole('link',{name:'総開帳の公式案内'})).toHaveAttribute('href','https://www.hasedera.jp/2026/10/20867/');
   await expect(notice).toContainText('駐車場は終日利用できません');
   await expect(notice.getByRole('link',{name:'最終日の公式案内'})).toHaveAttribute('href','https://www.hasedera.jp/2026/11/14826/');
   for(const path of [home,'/kuranpo/knowledge/g11.html','/kuranpo/knowledge/re10.html']){

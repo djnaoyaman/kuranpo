@@ -530,5 +530,31 @@
     "before_offsets": [
       73611
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time></p>\n    <h3>長谷寺 十一面観音の全身総開帳</h3>\n    <p class=\"event-venue\">12年に一度、ふだんは隠れている御足まで拝観。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">コースを見る</a><a href=\"https://www.hasedera.jp/2026/10/20867/\">公式案内</a></p>\n  </article>",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">長谷寺 十一面観音の全身総開帳</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-18\">12月18日まで</time></p>\n  </article>",
+    "reason": "Flag full viewing with one touch action on the homepage; detailed opening dates and both official sources remain one tap away.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      74301
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "after": "  .local-event--brief{display:flex;align-items:center;justify-content:space-between;gap:6px;}\n  .local-event--brief h3 a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}\n  .local-event--brief .event-period{flex:0 0 auto;text-align:end;}\n  @media(max-width:399px){\n    .local-event--brief{display:flex;align-items:center;min-height:44px;}\n    .local-event--brief h3{line-height:1.25;font-size:14px;}\n    .local-event--brief .event-period{font-size:12px;line-height:1.25;}\n  }\n  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "reason": "Give the supplementary Hasedera event a single compact row without shrinking its link touch target.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      58482
+    ]
   }
 ]

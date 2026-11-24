@@ -857,6 +857,14 @@
     .local-event .event-links a{min-width:44px;}
   }
   .local-event [data-event-day]:not([hidden]) ~ [data-event-day]:not([hidden])::before{content:"・";}
+  .local-event--brief{display:flex;align-items:center;justify-content:space-between;gap:6px;}
+  .local-event--brief h3 a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}
+  .local-event--brief .event-period{flex:0 0 auto;text-align:end;}
+  @media(max-width:399px){
+    .local-event--brief{display:flex;align-items:center;min-height:44px;}
+    .local-event--brief h3{line-height:1.25;font-size:14px;}
+    .local-event--brief .event-period{font-size:12px;line-height:1.25;}
+  }
   .local-events:not([hidden]) + .picks{padding-top:28px;}
 </style>
 <noscript><style>.card{opacity:1 !important;} .drawer, .hamburger{display:none !important;}</style></noscript>
@@ -954,11 +962,9 @@
     <p class="event-venue">日没〜19:00閉門（19:30閉山）</p>
     <p class="event-links"><a href="knowledge/g11.html#event-at-hasedera">コースを見る</a><a href="https://www.hasedera.jp/2026/11/24185/">公式案内</a></p>
   </article>
-  <article class="local-event" id="event-hasedera-kaicho" data-local-event="hasedera-kaicho" data-start="2026-11-18" data-end="2026-12-18" hidden>
-    <p class="event-period"><span data-event-status></span>｜2026年 <time datetime="2026-11-18">11月18日</time>〜<time datetime="2026-12-18">12月18日</time></p>
-    <h3>長谷寺 十一面観音の全身総開帳</h3>
-    <p class="event-venue">12年に一度、ふだんは隠れている御足まで拝観。</p>
-    <p class="event-links"><a href="knowledge/g11.html#event-at-hasedera-kaicho">コースを見る</a><a href="https://www.hasedera.jp/2026/10/20867/">公式案内</a></p>
+  <article class="local-event local-event--brief" id="event-hasedera-kaicho" data-local-event="hasedera-kaicho" data-start="2026-11-18" data-end="2026-12-18" hidden>
+    <h3><a href="knowledge/g11.html#event-at-hasedera-kaicho">長谷寺 十一面観音の全身総開帳</a></h3>
+    <p class="event-period"><span data-event-status></span><br><time datetime="2026-12-18">12月18日まで</time></p>
   </article>
   <article class="local-event" id="event-kenchoji" data-local-event="kenchoji" data-start="2026-10-29" data-end="2026-12-06" hidden>
     <p class="event-period"><span data-event-status></span>｜2026年 <time datetime="2026-10-29">10月29日</time>〜<time datetime="2026-12-06">12月6日</time></p>

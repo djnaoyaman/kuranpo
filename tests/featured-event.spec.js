@@ -29,12 +29,13 @@ test('promotion hides at the midnight after the last day in Japan, even while op
   await page.clock.pauseAt(new Date(expires-1000));
   await page.goto(home);
   const section=page.locator('#local-events');
-  await expect(section).toBeVisible();
+  const amadera=section.locator('#event-amadera');
+  await expect(amadera).toBeVisible();
   await page.clock.runFor(1000);
-  await expect(section).toBeHidden();
-  expect(await section.evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
+  await expect(amadera).toBeHidden();
+  await expect(section.locator('#event-hasedera')).toBeVisible();
   await page.reload();
-  await expect(section).toBeHidden();
+  await expect(amadera).toBeHidden();
   await page.goto('/kuranpo/knowledge/g10.html#amadera-exhibition-2026');
   await expect(page.locator('#amadera-exhibition-2026')).toBeVisible();
 });
@@ -42,4 +43,61 @@ test('promotion does not show before the opening day in Japan', async ({page})=>
   await page.clock.setFixedTime(new Date(visibleFrom-1));
   await page.goto(home);
   await expect(page.locator('#local-events')).toBeHidden();
+});
+
+test('home advertises active and upcoming visits separately while remaining compact', async ({page})=>{
+  await page.setViewportSize({width:320,height:820});
+  await page.clock.setFixedTime(new Date('2026-11-24T12:00:00+09:00'));
+  await page.goto(home);
+  const section=page.locator('#local-events');
+  await expect(section.locator('article:visible')).toHaveCount(5);
+  for(const id of ['hasedera','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
+  for(const id of ['kakuonji','hokokuji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('開催予定');
+  expect(await section.evaluate(el=>{
+    const boxes=[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect());
+    return boxes.every(b=>b.left>=0&&b.right<=document.documentElement.clientWidth)
+      && el.getBoundingClientRect().height<720;
+  })).toBe(true);
+  await section.locator('#event-hasedera').getByRole('link',{name:'コースを見る'}).click();
+  await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera$/);
+  await expect(page.locator('#event-at-hasedera')).toBeVisible();
+  await expect(page.locator('#event-at-hasedera').locator('xpath=..')).toContainText('長谷寺');
+});
+
+test('JST independently switches temple notices and expiries on home and direct routes', async ({page})=>{
+  const freeze=date=>page.clock.setFixedTime(new Date(date+'+09:00'));
+  await freeze('2026-11-25T00:00:00');
+  await page.goto('/kuranpo/knowledge/ti9.html');
+  await expect(page.locator('#event-at-kakuonji [data-event-status]')).toHaveText('会期中');
+  await expect(page.locator('#event-at-hokokuji [data-event-status]')).toHaveText('開催予定');
+  await freeze('2026-12-06T23:59:59');
+  await page.goto(home);
+  for(const id of ['hasedera','kenchoji','kakuonji']) await expect(page.locator('#event-'+id)).toBeVisible();
+  await freeze('2026-12-07T00:00:00');
+  await page.reload();
+  for(const id of ['hasedera','kenchoji']) await expect(page.locator('#event-'+id)).toBeHidden();
+  await expect(page.locator('#event-kakuonji')).toBeVisible();
+  await page.goto('/kuranpo/knowledge/re2.html');
+  await expect(page.locator('#event-at-kenchoji')).toBeHidden();
+  await expect(page.locator('.spot-list')).toContainText('建長寺');
+  await freeze('2026-12-10T23:59:59');
+  await page.goto('/kuranpo/knowledge/ti9.html');
+  await expect(page.locator('#event-at-kakuonji')).toBeVisible();
+  await freeze('2026-12-11T00:00:00');
+  await page.reload();
+  await expect(page.locator('#event-at-kakuonji')).toBeHidden();
+  await expect(page.locator('#event-at-hokokuji [data-event-status]')).toHaveText('本日開催');
+  await freeze('2026-12-12T00:00:00');
+  await page.reload();
+  const hokokuji=page.locator('#event-at-hokokuji');
+  await expect(hokokuji.locator('[data-event-day="2026-12-11"]')).toBeHidden();
+  await expect(hokokuji.locator('[data-event-day="2026-12-19"]')).toBeVisible();
+  await expect(hokokuji.locator('[data-event-status]')).toHaveText('開催予定');
+  await freeze('2026-12-19T23:59:59');
+  await page.goto(home);
+  await expect(page.locator('#event-hokokuji [data-event-status]')).toHaveText('本日開催');
+  await freeze('2026-12-20T00:00:00');
+  await page.reload();
+  await expect(page.locator('#local-events')).toBeHidden();
+  expect(await page.locator('#local-events').evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
 });

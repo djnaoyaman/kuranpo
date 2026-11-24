@@ -54,5 +54,386 @@
     "before_offsets": [
       35443
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  /* 開催期限のある催し：既存のポスター面と朱・余白を継承 */\n  .local-events{max-width:1120px;margin:0 auto;padding:24px var(--gutter) 0;}\n  .local-events[hidden],.local-event[hidden]{display:none;}\n  .local-event{margin-top:8px;padding:14px clamp(14px,3vw,24px);border:1px solid var(--line);border-left:2px solid var(--vermilion);background:var(--card);}\n  .local-event .event-period{font-size:.82rem;color:var(--vermilion);margin:0 0 4px;}\n  .local-event h3{font-size:clamp(18px,3vw,23px);margin:0 0 4px;line-height:1.45;}\n  .local-event p{margin:0 0 6px;}\n  .local-event .event-venue{color:var(--ink-soft);font-size:.86rem;}\n  .local-event .event-links{display:flex;flex-wrap:wrap;gap:4px 18px;margin:4px 0 0;}\n  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}\n  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "after": "  /* 開催期限のある催し：既存のポスター面と朱・余白を継承 */\n  .local-events{max-width:1120px;margin:0 auto;padding:24px var(--gutter) 0;}\n  .local-events[hidden],.local-events [hidden]{display:none;}\n  .local-events-grid{display:grid;gap:8px;}\n  @media(min-width:760px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}\n  .local-event{padding:9px 12px 4px;border:1px solid var(--line);border-left:2px solid var(--vermilion);background:var(--card);}\n  .local-event .event-period{font-size:.82rem;color:var(--vermilion);margin:0;}\n  .local-event h3{font-size:clamp(16px,2.5vw,20px);margin:0;line-height:1.45;}\n  .local-event p{margin:0;}\n  .local-event .event-venue{color:var(--ink-soft);font-size:.82rem;line-height:1.5;}\n  @media(max-width:399px){.local-events{padding-top:16px;}.local-events-grid{gap:6px;grid-template-columns:minmax(0,1fr);}.local-event{min-width:0;padding:6px 10px 1px;overflow-wrap:anywhere;}.local-event .event-venue{display:none;}}\n  .local-event .event-links{display:flex;flex-wrap:wrap;gap:0 14px;margin:0;}\n  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;font-size:.85rem;}\n  .local-event [data-event-day]:not([hidden]) ~ [data-event-day]:not([hidden])::before{content:\"・\";}\n  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "reason": "Keep a multi-event list compact without altering the hero or course finder.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/",
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/",
+      "https://kamakura894do.com/whatsnew.html",
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56812
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<section class=\"local-events\" id=\"local-events\" aria-labelledby=\"local-events-heading\" hidden>\n  <h2 class=\"sec-label\" id=\"local-events-heading\">鎌倉の催し</h2>\n  <article class=\"local-event\" data-start=\"2026-09-19\" data-end=\"2026-11-28\" hidden>\n    <p class=\"event-period\">企画展｜<time datetime=\"2026-11-28\">2026年11月28日（土）まで</time></p>\n    <h3>鎌倉の尼寺</h3>\n    <p class=\"event-venue\">鎌倉歴史文化交流館</p>\n    <p>東慶寺に伝わった離縁状や、英勝寺の懐剣・化粧道具を通して、寺と女性たちの暮らしをたどります。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g10.html#amadera-exhibition-2026\">「尼寺と女性たちの鎌倉」を読む</a><a href=\"https://www.shonan-sh.jp/events/amadera/\">展示案内</a></p>\n  </article>\n<script id=\"local-events-visibility\">\n(() => {\n  const section = document.getElementById(\"local-events\");\n  // data-start is the first day the notice is shown, not necessarily the event opening day.\n  const entries = Array.from(section.querySelectorAll(\"[data-start][data-end]\"));\n  const day = 24 * 60 * 60 * 1000;\n  const midnightInJapan = date => /^\\d{4}-\\d{2}-\\d{2}$/.test(date)\n    ? Date.parse(date + \"T00:00:00+09:00\") : NaN;\n  let timer;\n  function refresh() {\n    clearTimeout(timer);\n    const now = Date.now();\n    let next = Infinity;\n    let any = false;\n    for (const entry of entries) {\n      const start = midnightInJapan(entry.dataset.start);\n      const end = midnightInJapan(entry.dataset.end) + day;\n      const valid = Number.isFinite(start) && Number.isFinite(end) && start < end;\n      const visible = valid && start <= now && now < end;\n      entry.hidden = !visible;\n      any ||= visible;\n      if (valid && now < start) next = Math.min(next, start);\n      if (visible) next = Math.min(next, end);\n    }\n    section.hidden = !any;\n    if (Number.isFinite(next)) timer = setTimeout(refresh, Math.min(day, next - now));\n  }\n  addEventListener(\"pageshow\", refresh);\n  document.addEventListener(\"visibilitychange\", refresh);\n  refresh();\n})();\n</script>\n</section>",
+    "after": "<section class=\"local-events\" id=\"local-events\" aria-labelledby=\"local-events-heading\" hidden>\n  <h2 class=\"sec-label\" id=\"local-events-heading\">鎌倉の催し</h2>\n  <div class=\"local-events-grid\">\n  <article class=\"local-event\" id=\"event-amadera\" data-local-event=\"amadera\" data-start=\"2026-09-19\" data-end=\"2026-11-28\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜企画展｜<time datetime=\"2026-11-28\">2026年11月28日（土）まで</time></p>\n    <h3>鎌倉の尼寺</h3>\n    <p class=\"event-venue\">鎌倉歴史文化交流館</p>\n    <p class=\"event-links\"><a href=\"knowledge/g10.html#amadera-exhibition-2026\">「尼寺と女性たちの鎌倉」を読む</a><a href=\"https://www.shonan-sh.jp/events/amadera/\">展示案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time></p>\n    <h3>長谷寺 秋の夜間特別拝観</h3>\n    <p class=\"event-venue\">日没〜19:00閉門（19:30閉山）</p>\n    <p class=\"event-links\"><a href=\"knowledge/g11.html#event-at-hasedera\">コースを見る</a><a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-kenchoji\" data-local-event=\"kenchoji\" data-start=\"2026-10-29\" data-end=\"2026-12-06\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-10-29\">10月29日</time>〜<time datetime=\"2026-12-06\">12月6日</time></p>\n    <h3>建長寺 ZEN NIGHT KAMAKURA</h3>\n    <p class=\"event-venue\">17:00〜20:00（最終受付19:30）</p>\n    <p class=\"event-links\"><a href=\"knowledge/g4.html#event-at-kenchoji\">コースを見る</a><a href=\"https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/\">公式案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-kakuonji\" data-local-event=\"kakuonji\" data-start=\"2026-11-25\" data-end=\"2026-12-10\" data-display-from=\"2026-11-24\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-25\">11月25日</time>〜<time datetime=\"2026-12-10\">12月10日</time></p>\n    <h3>覚園寺 紅葉特別拝観</h3>\n    <p class=\"event-venue\">9:00〜19:00（最終受付18:40、夕刻から点灯）</p>\n    <p class=\"event-links\"><a href=\"knowledge/g8.html#event-at-kakuonji\">コースを見る</a><a href=\"https://kamakura894do.com/whatsnew.html\">公式案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-hokokuji\" data-local-event=\"hokokuji\" data-start=\"2026-12-11\" data-end=\"2026-12-19\" data-display-from=\"2026-11-24\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <span data-event-day=\"2026-12-11\"><time datetime=\"2026-12-11\">12月11日（金）</time></span><span data-event-day=\"2026-12-19\"><time datetime=\"2026-12-19\">12月19日（土）</time></span>のみ</p>\n    <h3>報国寺 夜間特別拝観</h3>\n    <p class=\"event-venue\">18:00〜20:00・人数限定</p>\n    <p class=\"event-links\"><a href=\"knowledge/g9.html#event-at-hokokuji\">コースを見る</a><a href=\"https://www.trip-kamakura.com/subsite/topics.php?id=122\">公式案内</a></p>\n  </article>\n  </div>\n  <script defer src=\"assets/local-events.js?v=20261124a\"></script>\n</section>",
+    "reason": "Show source-verified events through their last JST day with course links and clear dates/status.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/",
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/",
+      "https://kamakura894do.com/whatsnew.html",
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      72672
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<li><span class=\"leg\">高徳院（鎌倉大仏）から 徒歩350m・約5分</span><div class=\"row\"><span class=\"sname\">長谷寺</span></div><span class=\"opt\">＋宝物館</span></li>",
+    "after": "<li><span class=\"leg\">高徳院（鎌倉大仏）から 徒歩350m・約5分</span><div class=\"row\"><span class=\"sname\">長谷寺</span></div><span class=\"opt\">＋宝物館</span><span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span></li>",
+    "reason": "Show 長谷寺 秋の夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43108
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56996
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<li><span class=\"leg\">高徳院から 徒歩350m・約5分</span><div class=\"row\"><span class=\"sname\">長谷寺</span></div><span class=\"opt\">＋宝物館</span></li>",
+    "after": "<li><span class=\"leg\">高徳院から 徒歩350m・約5分</span><div class=\"row\"><span class=\"sname\">長谷寺</span></div><span class=\"opt\">＋宝物館</span><span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span></li>",
+    "reason": "Show 長谷寺 秋の夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41947
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53904
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li>",
+    "after": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span><span class=\"snote stop-event\" id=\"event-at-kenchoji\" data-local-event=\"kenchoji\" data-start=\"2026-10-29\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜建長寺 ZEN NIGHT KAMAKURA</strong><br>2026年 <time datetime=\"2026-10-29\">10月29日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・17:00〜20:00（最終受付19:30）　<a href=\"https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/\">公式案内</a></span></li>",
+    "reason": "Show 建長寺 ZEN NIGHT KAMAKURA only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42497
+    ]
+  },
+  {
+    "path": "knowledge/g4.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56396
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li>",
+    "after": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span><span class=\"snote stop-event\" id=\"event-at-kenchoji\" data-local-event=\"kenchoji\" data-start=\"2026-10-29\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜建長寺 ZEN NIGHT KAMAKURA</strong><br>2026年 <time datetime=\"2026-10-29\">10月29日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・17:00〜20:00（最終受付19:30）　<a href=\"https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/\">公式案内</a></span></li>",
+    "reason": "Show 建長寺 ZEN NIGHT KAMAKURA only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41285
+    ]
+  },
+  {
+    "path": "knowledge/re2.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53520
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li>",
+    "after": "<li><span class=\"leg\">明月院から 徒歩900m・約13分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span><span class=\"snote stop-event\" id=\"event-at-kenchoji\" data-local-event=\"kenchoji\" data-start=\"2026-10-29\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜建長寺 ZEN NIGHT KAMAKURA</strong><br>2026年 <time datetime=\"2026-10-29\">10月29日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・17:00〜20:00（最終受付19:30）　<a href=\"https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/\">公式案内</a></span></li>",
+    "reason": "Show 建長寺 ZEN NIGHT KAMAKURA only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41355
+    ]
+  },
+  {
+    "path": "knowledge/pe4.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53685
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "<li><span class=\"leg\">北鎌倉駅から 徒歩1.2km・約17分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span></li>",
+    "after": "<li><span class=\"leg\">北鎌倉駅から 徒歩1.2km・約17分</span><div class=\"row\"><span class=\"sname\">建長寺</span></div><span class=\"snote\"><ruby class=\"o1\">塔頭<rt>たっちゅう</rt></ruby>含む。</span><span class=\"snote stop-event\" id=\"event-at-kenchoji\" data-local-event=\"kenchoji\" data-start=\"2026-10-29\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜建長寺 ZEN NIGHT KAMAKURA</strong><br>2026年 <time datetime=\"2026-10-29\">10月29日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・17:00〜20:00（最終受付19:30）　<a href=\"https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/\">公式案内</a></span></li>",
+    "reason": "Show 建長寺 ZEN NIGHT KAMAKURA only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41236
+    ]
+  },
+  {
+    "path": "knowledge/ti5.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53551
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "<li><span class=\"leg\">鎌倉宮から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\"><ruby class=\"o1\">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span></li>",
+    "after": "<li><span class=\"leg\">鎌倉宮から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\"><ruby class=\"o1\">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span><span class=\"snote stop-event\" id=\"event-at-kakuonji\" data-local-event=\"kakuonji\" data-start=\"2026-11-25\" data-end=\"2026-12-10\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜覚園寺 紅葉特別拝観</strong><br>2026年 <time datetime=\"2026-11-25\">11月25日</time>〜<time datetime=\"2026-12-10\">12月10日</time>・9:00〜19:00（最終受付18:40、夕刻から点灯）　<a href=\"https://kamakura894do.com/whatsnew.html\">公式案内</a></span></li>",
+    "reason": "Show 覚園寺 紅葉特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42951
+    ]
+  },
+  {
+    "path": "knowledge/g8.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56834
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "<li><span class=\"leg\">鎌倉駅東口から 徒歩1.3km・約19分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\">北条貞時建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span></li>",
+    "after": "<li><span class=\"leg\">鎌倉駅東口から 徒歩1.3km・約19分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\">北条貞時建立。足利尊氏の銘が残る。拝観は僧の案内付き。</span><span class=\"snote stop-event\" id=\"event-at-kakuonji\" data-local-event=\"kakuonji\" data-start=\"2026-11-25\" data-end=\"2026-12-10\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜覚園寺 紅葉特別拝観</strong><br>2026年 <time datetime=\"2026-11-25\">11月25日</time>〜<time datetime=\"2026-12-10\">12月10日</time>・9:00〜19:00（最終受付18:40、夕刻から点灯）　<a href=\"https://kamakura894do.com/whatsnew.html\">公式案内</a></span></li>",
+    "reason": "Show 覚園寺 紅葉特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41212
+    ]
+  },
+  {
+    "path": "knowledge/pe12.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53394
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "<li><span class=\"leg\">鎌倉宮から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\"><ruby class=\"o1\">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>の銘が残る。拝観は僧の案内付き。</span></li>",
+    "after": "<li><span class=\"leg\">鎌倉宮から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\"><ruby>覚園寺<rt>かくおんじ</rt></ruby></span></div><span class=\"snote\"><ruby class=\"o1\">北条貞時<rt>ほうじょうさだとき</rt></ruby>建立。<ruby>足利尊氏<rt>あしかがたかうじ</rt></ruby>の銘が残る。拝観は僧の案内付き。</span><span class=\"snote stop-event\" id=\"event-at-kakuonji\" data-local-event=\"kakuonji\" data-start=\"2026-11-25\" data-end=\"2026-12-10\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜覚園寺 紅葉特別拝観</strong><br>2026年 <time datetime=\"2026-11-25\">11月25日</time>〜<time datetime=\"2026-12-10\">12月10日</time>・9:00〜19:00（最終受付18:40、夕刻から点灯）　<a href=\"https://kamakura894do.com/whatsnew.html\">公式案内</a></span></li>",
+    "reason": "Show 覚園寺 紅葉特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41962
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span></li>",
+    "after": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span><span class=\"snote stop-event\" id=\"event-at-hokokuji\" data-local-event=\"hokokuji\" data-start=\"2026-12-11\" data-end=\"2026-12-19\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜報国寺 夜間特別拝観</strong><br>2026年 <span data-event-day=\"2026-12-11\"><time datetime=\"2026-12-11\">12月11日（金）</time></span> <span data-event-day=\"2026-12-19\"><time datetime=\"2026-12-19\">12月19日（土）</time></span>のみ・18:00〜20:00・人数限定　<a href=\"https://www.trip-kamakura.com/subsite/topics.php?id=122\">公式案内</a></span></li>",
+    "reason": "Show 報国寺 夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43014
+    ]
+  },
+  {
+    "path": "knowledge/ti9.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://kamakura894do.com/whatsnew.html",
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      55467
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\">足利家時。</span><span class=\"opt\">＋竹庭</span></li>",
+    "after": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\">足利家時。</span><span class=\"opt\">＋竹庭</span><span class=\"snote stop-event\" id=\"event-at-hokokuji\" data-local-event=\"hokokuji\" data-start=\"2026-12-11\" data-end=\"2026-12-19\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜報国寺 夜間特別拝観</strong><br>2026年 <span data-event-day=\"2026-12-11\"><time datetime=\"2026-12-11\">12月11日（金）</time></span> <span data-event-day=\"2026-12-19\"><time datetime=\"2026-12-19\">12月19日（土）</time></span>のみ・18:00〜20:00・人数限定　<a href=\"https://www.trip-kamakura.com/subsite/topics.php?id=122\">公式案内</a></span></li>",
+    "reason": "Show 報国寺 夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42440
+    ]
+  },
+  {
+    "path": "knowledge/g9.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      56415
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span></li>",
+    "after": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span><span class=\"snote stop-event\" id=\"event-at-hokokuji\" data-local-event=\"hokokuji\" data-start=\"2026-12-11\" data-end=\"2026-12-19\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜報国寺 夜間特別拝観</strong><br>2026年 <span data-event-day=\"2026-12-11\"><time datetime=\"2026-12-11\">12月11日（金）</time></span> <span data-event-day=\"2026-12-19\"><time datetime=\"2026-12-19\">12月19日（土）</time></span>のみ・18:00〜20:00・人数限定　<a href=\"https://www.trip-kamakura.com/subsite/topics.php?id=122\">公式案内</a></span></li>",
+    "reason": "Show 報国寺 夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41318
+    ]
+  },
+  {
+    "path": "knowledge/re3.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53961
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span></li>",
+    "after": "<li><span class=\"leg\">浄妙寺から 徒歩400m・約6分</span><div class=\"row\"><span class=\"sname\">報国寺</span></div><span class=\"snote\"><ruby>足利家時<rt>あしかがいえとき</rt></ruby>。</span><span class=\"opt\">＋竹庭</span><span class=\"snote stop-event\" id=\"event-at-hokokuji\" data-local-event=\"hokokuji\" data-start=\"2026-12-11\" data-end=\"2026-12-19\" data-display-from=\"2026-11-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜報国寺 夜間特別拝観</strong><br>2026年 <span data-event-day=\"2026-12-11\"><time datetime=\"2026-12-11\">12月11日（金）</time></span> <span data-event-day=\"2026-12-19\"><time datetime=\"2026-12-19\">12月19日（土）</time></span>のみ・18:00〜20:00・人数限定　<a href=\"https://www.trip-kamakura.com/subsite/topics.php?id=122\">公式案内</a></span></li>",
+    "reason": "Show 報国寺 夜間特別拝観 only at the actual course stop and until expiry.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41354
+    ]
+  },
+  {
+    "path": "knowledge/pe13.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Enable the shared JST notice window on this course page.",
+    "sources": [
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      53705
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<ol class=\"log-list\">",
+    "after": "<ol class=\"log-list\">\n    <li><span class=\"tag\">追加</span>長谷寺・建長寺・覚園寺・報国寺の特別拝観を、トップと実際に立ち寄るコースに追加しました。催しごとに最終日まで表示し、開催予定や日程限定の拝観は区別して案内します。（2026年11月24日）</li>",
+    "reason": "Record the route-specific, source-verified event update.",
+    "sources": [
+      "https://www.hasedera.jp/2026/11/24185/",
+      "https://www.viestyle.co.jp/news/vie-presents-zen-night-kamakura/",
+      "https://kamakura894do.com/whatsnew.html",
+      "https://www.trip-kamakura.com/subsite/topics.php?id=122",
+      "https://houkokuji.or.jp/news/id=373/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35443
+    ]
   }
 ]

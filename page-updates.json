@@ -11,7 +11,7 @@
     },
     "changelog.html": {
       "modified": "2026-11-24",
-      "source_sha256": "4623fd6afce2bfacd78d5781348ce197b4eb9c40098ed7528c80605f74b39a87"
+      "source_sha256": "f6f4506d7cb90273ee5c7a03de905e763a07e9e174e760c04e131a7971d7d5d2"
     },
     "history.html": {
       "modified": "2026-11-02",
@@ -19,7 +19,7 @@
     },
     "index.html": {
       "modified": "2026-11-24",
-      "source_sha256": "f78bc1654c8853c4ce9dd7ab239d376cc4fd23c3c4114c0811a57733da886e8a"
+      "source_sha256": "f53ea524e3404657a351542b0a98485eb5f605117bbc0ca03626f3f107ec05b9"
     },
     "knowledge/c1.html": {
       "modified": "2026-10-31",
@@ -94,8 +94,8 @@
       "source_sha256": "aad13e4c18c58132dcace9d3ee6311edafcbac363633d78a16e8f6e23538083a"
     },
     "knowledge/g11.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "a32c451a39e0d66b1f97d809af4fd8ecebecca70b6bc69e752a933429b30ebf4"
+      "modified": "2026-11-24",
+      "source_sha256": "657b5c4789f5577bb5245afe2cc7ee7c7282457b6984854a460032108b7f119e"
     },
     "knowledge/g12.html": {
       "modified": "2026-10-31",
@@ -118,8 +118,8 @@
       "source_sha256": "85b2bfde66d737307dcc3f9f1405da693fc9569887aa44b13d560c449d5476c6"
     },
     "knowledge/g4.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "cffa6485d9a0ee474375325377f62ba722535c35c4801affb0e66aab4b5c533a"
+      "modified": "2026-11-24",
+      "source_sha256": "2852f31607324bec4ddd442e363455a68374204957beaeb11249f9484515d4d4"
     },
     "knowledge/g5.html": {
       "modified": "2026-10-31",
@@ -134,12 +134,12 @@
       "source_sha256": "37b342824269646900f952f3366927ec7656461c18f150fdb4c750581a004db9"
     },
     "knowledge/g8.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "f360abcda4c907cc0dc32416127538c47a568b91bf0114973f42347323ae2e27"
+      "modified": "2026-11-24",
+      "source_sha256": "99267d7c71c2d1837a849f3e687889ce39f80ab1352b2900ac9c7fa2cf6c9cab"
     },
     "knowledge/g9.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "0f1c6d561712b6201fe908ff7b5c7dd0ea6017232de39212161ad0f96ee1ff53"
+      "modified": "2026-11-24",
+      "source_sha256": "1e78cec4daea07ce1b678ea9b9a4b0b874f3e42f818b22f32cd9c1cae845427e"
     },
     "knowledge/pe1.html": {
       "modified": "2026-10-31",
@@ -154,12 +154,12 @@
       "source_sha256": "051da6a34484d60823396981847d289bef363403bf38af61a16c8fd87e6e8d6a"
     },
     "knowledge/pe12.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "f0b64eabdac04d200d54aa3882509012210a4ed56aa7cc843919da8c1dcdd7b8"
+      "modified": "2026-11-24",
+      "source_sha256": "4153d9b119d68c2c0f8e77611acda36c6a21add6fb5865d01cd6edcdac3a2428"
     },
     "knowledge/pe13.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "07f3044d02ff3f6ae5a4b6b36b5d0cb1405ff8d98c0443a7adbc2015af5869fc"
+      "modified": "2026-11-24",
+      "source_sha256": "2824597ce4f699c6cd6fc1cc96a351f177d86ab1c027ea07afee9bbb50961c2a"
     },
     "knowledge/pe14.html": {
       "modified": "2026-10-31",
@@ -178,8 +178,8 @@
       "source_sha256": "42b70400558998ac2ac39979ca823210db6378fca321a0e012439cadeecc5a14"
     },
     "knowledge/pe4.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "e33f72bd93c93e3dfad6978614c85648e7322f6cac237c937df85314aa4cb4a4"
+      "modified": "2026-11-24",
+      "source_sha256": "69161dd2c286f39e8fd694c5b269d600e7fc4621ad5929d7b38767d19b82e8a3"
     },
     "knowledge/pe5.html": {
       "modified": "2026-10-31",
@@ -206,8 +206,8 @@
       "source_sha256": "b8d50e63fea210a3e3a986019098fa18e6ea12b20ff44c2f9d6791ac55d138db"
     },
     "knowledge/re10.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "839a113b6210bdf4933bc0403d80c99afea00e39cd70c579773a33d05fbb58a8"
+      "modified": "2026-11-24",
+      "source_sha256": "7af761c3dd05da32967e86fda18fc343b3da6c22dec7cb21e4db3aa889e2fb6e"
     },
     "knowledge/re11.html": {
       "modified": "2026-10-31",
@@ -218,12 +218,12 @@
       "source_sha256": "ad2f435c0028e7f8fbf93b6ec9119e176f9ceab92c925bdf0178028314ae70f2"
     },
     "knowledge/re2.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "b025c33d262c744759597e34cd424a0de1fa84fd88263caf25db0dcca3a3fbd6"
+      "modified": "2026-11-24",
+      "source_sha256": "a0a4833ab14fa0a6558daa2192bbddc383df2f11afe43b785e8dc8d335b3cf73"
     },
     "knowledge/re3.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "f1d9236e780f332ec461d815bb115e4fd8ea68fa2e87cee92a4237b9ef76dab2"
+      "modified": "2026-11-24",
+      "source_sha256": "ef532a6e527309651b1e818a20ca98026d97197a2d1cd6564b373e41688e3ed1"
     },
     "knowledge/re4.html": {
       "modified": "2026-10-31",
@@ -270,8 +270,8 @@
       "source_sha256": "1d7e1f89f7fb4716e0264b73826ee7b7ecfe9c293e68860cfdff3fb6ad4d189a"
     },
     "knowledge/ti5.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "2bf2dc0bfdd81b4c11690c9ed499ca77d14c7376fa7323b73bc91543d704d01c"
+      "modified": "2026-11-24",
+      "source_sha256": "d377a09ad7a9a761e0cde5aa60b83f4fbb050363541fd318e31e1537615c8184"
     },
     "knowledge/ti6.html": {
       "modified": "2026-10-31",
@@ -286,8 +286,8 @@
       "source_sha256": "e41de134303384c6ce487d489f704d63c209b10a554e40decd4bbcc5ff91aa21"
     },
     "knowledge/ti9.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "32dc5a121197f49f148ad679b35627ab9b3939d23b4a0aa528d65256ec4dd1ca"
+      "modified": "2026-11-24",
+      "source_sha256": "584ab649b47c8f49562e9e76bd497bb9693d3709b82a413345e446f8088c0d74"
     },
     "persons.html": {
       "modified": "2026-10-31",

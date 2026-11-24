@@ -57,7 +57,7 @@ test('home advertises active and upcoming visits separately while remaining comp
     width:document.documentElement.clientWidth,
     height:el.getBoundingClientRect().height,
     boxes:[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect().toJSON()),
-    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].map(a=>a.getBoundingClientRect().height))
+    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].filter(a=>a.getClientRects().length>0).map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
   expect(layout.height).toBeLessThan(720);
@@ -141,4 +141,48 @@ test('Hasedera full viewing is distinct and stays visible through its own JST la
     await expect(visible).toBeHidden();
     if(path===home) await expect(page.locator('#event-hokokuji [data-event-status]')).toHaveText('本日開催');
   }
+});
+
+
+test('Sugimoto-dera shows only the four official dates, in the four stopping routes and compact home', async ({page})=>{
+  const freeze=date=>page.clock.setFixedTime(new Date(date+'+09:00'));
+  const card=page.locator('#event-sugimotodera-kaicho');
+  const note=page.locator('#event-at-sugimotodera-kaicho');
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-11-24T23:59:59');
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await freeze('2026-11-25T00:00:00');
+  await page.reload();
+  await expect(card.locator('[data-event-day]:visible')).toHaveCount(4);
+  await expect(card.locator('[data-event-status]')).toHaveText('開催予定');
+  expect(await card.evaluate(el=>{const r=el.getBoundingClientRect();return r.left>=0&&r.right<=document.documentElement.clientWidth;})).toBe(true);
+  expect((await card.getByRole('link').boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await page.setViewportSize({width:768,height:820});
+  await page.evaluate(()=>document.documentElement.style.zoom='2');
+  const zoom=await page.evaluate(()=>({viewport:innerWidth,page:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('.local-events *')].filter(e=>e.getClientRects().length&&e.getBoundingClientRect().right>innerWidth+1).slice(0,12).map(e=>[e.className,e.textContent.trim().slice(0,35)])}));
+  expect(zoom.page,JSON.stringify(zoom)).toBeLessThanOrEqual(zoom.viewport+1);
+  await page.evaluate(()=>{document.documentElement.style.zoom='';});
+  await card.getByRole('link').click();
+  await expect(page).toHaveURL(/knowledge\/g1\.html#event-at-sugimotodera-kaicho$/);
+  for(const route of ['g1','re10','pe1','ti1']){
+    await page.goto('/kuranpo/knowledge/'+route+'.html');
+    await expect(note).toBeVisible();
+    await expect(note.locator('xpath=..').locator('.sname')).toHaveText('杉本寺');
+    await expect(note.getByRole('link',{name:'杉本寺の公式案内'})).toHaveAttribute('href',/^https:\/\/sugimotodera\.com\//);
+  }
+  for(const day of ['05','06','12','13']){
+    await freeze('2026-12-'+day+'T12:00:00');
+    await page.goto(home);
+    await expect(card.locator('[data-event-status]')).toHaveText('本日開催');
+  }
+  await freeze('2026-12-07T12:00:00');
+  await page.reload();
+  await expect(card.locator('[data-event-status]')).toHaveText('開催予定');
+  await expect(card.locator('[data-event-day]:visible')).toHaveCount(2);
+  await freeze('2026-12-14T00:00:00');
+  await page.reload();
+  await expect(card).toBeHidden();
+  await page.goto('/kuranpo/knowledge/g1.html');
+  await expect(note).toBeHidden();
 });

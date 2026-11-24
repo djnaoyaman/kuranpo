@@ -556,5 +556,148 @@
     "before_offsets": [
       58482
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\"",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-sugimotodera-kaicho\" data-local-event=\"sugimotodera-kaicho\" data-start=\"2026-12-05\" data-end=\"2026-12-13\" data-display-from=\"2026-11-25\" hidden>\n    <h3><a href=\"knowledge/g1.html#event-at-sugimotodera-kaicho\">杉本寺 午年特別開帳</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br>12月<time data-event-day=\"2026-12-05\" datetime=\"2026-12-05\">5</time><time data-event-day=\"2026-12-06\" datetime=\"2026-12-06\">6</time><time data-event-day=\"2026-12-12\" datetime=\"2026-12-12\">12</time><time data-event-day=\"2026-12-13\" datetime=\"2026-12-13\">13</time>日</p>\n  </article>\n  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\"",
+    "reason": "Show the four nonconsecutive public dates compactly, with a route link and JST expiry.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      74812
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、行基<ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span></li>",
+    "after": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、行基<ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span><span class=\"snote stop-event\" id=\"event-at-sugimotodera-kaicho\" data-local-event=\"sugimotodera-kaicho\" data-start=\"2026-12-05\" data-end=\"2026-12-13\" data-display-from=\"2026-11-25\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜杉本寺 午年特別開帳</strong><br>2026年 <time data-event-day=\"2026-12-05\" datetime=\"2026-12-05\">12月5日</time> <time data-event-day=\"2026-12-06\" datetime=\"2026-12-06\">12月6日</time> <time data-event-day=\"2026-12-12\" datetime=\"2026-12-12\">12月12日</time> <time data-event-day=\"2026-12-13\" datetime=\"2026-12-13\">12月13日</time>。本堂で秘仏の十一面観音三体を拝観できます。受付 9:00〜12:00／13:00〜15:30。特別開帳は入山料とは別に1,000円（小学生以下は特別開帳料無料）。工事により変更の可能性があります。<a href=\"https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/\">杉本寺の公式案内</a></span></li>",
+    "reason": "Place the official event hours and dates at the actual Sugimoto-dera stop.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42083
+    ]
+  },
+  {
+    "path": "knowledge/g1.html",
+    "before": "<script src=\"../assets/monochrome.js\" defer></script>",
+    "after": "<script src=\"../assets/monochrome.js\" defer></script>\n<script defer src=\"../assets/local-events.js?v=20261124a\"></script>",
+    "reason": "Use the existing JST local-event renderer for this route.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57907
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、<ruby>行基<rt>ぎょうき</rt></ruby><ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span></li>",
+    "after": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、<ruby>行基<rt>ぎょうき</rt></ruby><ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span><span class=\"snote stop-event\" id=\"event-at-sugimotodera-kaicho\" data-local-event=\"sugimotodera-kaicho\" data-start=\"2026-12-05\" data-end=\"2026-12-13\" data-display-from=\"2026-11-25\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜杉本寺 午年特別開帳</strong><br>2026年 <time data-event-day=\"2026-12-05\" datetime=\"2026-12-05\">12月5日</time> <time data-event-day=\"2026-12-06\" datetime=\"2026-12-06\">12月6日</time> <time data-event-day=\"2026-12-12\" datetime=\"2026-12-12\">12月12日</time> <time data-event-day=\"2026-12-13\" datetime=\"2026-12-13\">12月13日</time>。本堂で秘仏の十一面観音三体を拝観できます。受付 9:00〜12:00／13:00〜15:30。特別開帳は入山料とは別に1,000円（小学生以下は特別開帳料無料）。工事により変更の可能性があります。<a href=\"https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/\">杉本寺の公式案内</a></span></li>",
+    "reason": "Place the official event hours and dates at the actual Sugimoto-dera stop.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41618
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、<ruby>行基<rt>ぎょうき</rt></ruby><ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span></li>",
+    "after": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、<ruby>行基<rt>ぎょうき</rt></ruby><ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span><span class=\"snote stop-event\" id=\"event-at-sugimotodera-kaicho\" data-local-event=\"sugimotodera-kaicho\" data-start=\"2026-12-05\" data-end=\"2026-12-13\" data-display-from=\"2026-11-25\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜杉本寺 午年特別開帳</strong><br>2026年 <time data-event-day=\"2026-12-05\" datetime=\"2026-12-05\">12月5日</time> <time data-event-day=\"2026-12-06\" datetime=\"2026-12-06\">12月6日</time> <time data-event-day=\"2026-12-12\" datetime=\"2026-12-12\">12月12日</time> <time data-event-day=\"2026-12-13\" datetime=\"2026-12-13\">12月13日</time>。本堂で秘仏の十一面観音三体を拝観できます。受付 9:00〜12:00／13:00〜15:30。特別開帳は入山料とは別に1,000円（小学生以下は特別開帳料無料）。工事により変更の可能性があります。<a href=\"https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/\">杉本寺の公式案内</a></span></li>",
+    "reason": "Place the official event hours and dates at the actual Sugimoto-dera stop.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42009
+    ]
+  },
+  {
+    "path": "knowledge/pe1.html",
+    "before": "<script src=\"../assets/monochrome.js\" defer></script>",
+    "after": "<script src=\"../assets/monochrome.js\" defer></script>\n<script defer src=\"../assets/local-events.js?v=20261124a\"></script>",
+    "reason": "Use the existing JST local-event renderer for this route.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      54462
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、行基<ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span></li>",
+    "after": "<span class=\"sname\">杉本寺</span></div><span class=\"snote\">734年、行基<ruby>開山<rt>かいさん</rt></ruby>の伝承。坂東三十三観音第一番。</span><span class=\"snote stop-event\" id=\"event-at-sugimotodera-kaicho\" data-local-event=\"sugimotodera-kaicho\" data-start=\"2026-12-05\" data-end=\"2026-12-13\" data-display-from=\"2026-11-25\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜杉本寺 午年特別開帳</strong><br>2026年 <time data-event-day=\"2026-12-05\" datetime=\"2026-12-05\">12月5日</time> <time data-event-day=\"2026-12-06\" datetime=\"2026-12-06\">12月6日</time> <time data-event-day=\"2026-12-12\" datetime=\"2026-12-12\">12月12日</time> <time data-event-day=\"2026-12-13\" datetime=\"2026-12-13\">12月13日</time>。本堂で秘仏の十一面観音三体を拝観できます。受付 9:00〜12:00／13:00〜15:30。特別開帳は入山料とは別に1,000円（小学生以下は特別開帳料無料）。工事により変更の可能性があります。<a href=\"https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/\">杉本寺の公式案内</a></span></li>",
+    "reason": "Place the official event hours and dates at the actual Sugimoto-dera stop.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41672
+    ]
+  },
+  {
+    "path": "knowledge/ti1.html",
+    "before": "<script src=\"../assets/monochrome.js\" defer></script>",
+    "after": "<script src=\"../assets/monochrome.js\" defer></script>\n<script defer src=\"../assets/local-events.js?v=20261124a\"></script>",
+    "reason": "Use the existing JST local-event renderer for this route.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      55026
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<ol class=\"log-list\">",
+    "after": "<ol class=\"log-list\">\n    <li><span class=\"tag\">追加</span><a href=\"knowledge/g1.html\">杉本寺の午年特別開帳</a>を案内しました。2026年12月5日・6日・12日・13日の4日間のみです。（2026年11月25日）</li>",
+    "reason": "Keep the dated publication record after the current notice expires.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35443
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "after": "  #event-sugimotodera-kaicho{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7.5em);overflow-wrap:anywhere;}\n  #event-sugimotodera-kaicho h3,#event-sugimotodera-kaicho .event-period{grid-column:auto;grid-row:auto;min-width:0;}\n  .local-events:not([hidden]) + .picks{padding-top:28px;}",
+    "reason": "Contain the added event at 200% zoom without reducing the existing touch target.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      58993
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  @media(min-width:760px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}",
+    "after": "  .local-events{container-type:inline-size;}\n  @container (min-width:680px){.local-events-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}\n  .local-event{min-width:0;overflow-wrap:anywhere;}",
+    "reason": "Select columns from the actual available content width rather than the unzoomed viewport, preserving mobile and desktop flow at 200% zoom.",
+    "sources": [
+      "https://sugimotodera.com/2026/07/12/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E6%9C%AC%E5%A0%82%E5%A4%A7%E6%82%B2%E6%AE%BF%E6%94%B9%E4%BF%AE%E5%B7%A5%E4%BA%8B%E3%83%BB%E3%81%94%E6%9C%AC%E5%B0%8A%E5%8D%88%E5%B9%B4%E7%89%B9%E5%88%A5%E9%96%8B%E5%B8%B3/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57031
+    ]
   }
 ]

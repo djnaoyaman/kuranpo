@@ -186,3 +186,32 @@ test('Sugimoto-dera shows only the four official dates, in the four stopping rou
   await page.goto('/kuranpo/knowledge/g1.html');
   await expect(note).toBeHidden();
 });
+
+
+test('C2: Chōjuji dates, walking loop time and temple history agree across the public paths', async ({page})=>{
+  const freeze=d=>page.clock.setFixedTime(new Date(d+'+09:00'));
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-12-07T12:00:00');
+  await page.goto(home);
+  const card=page.locator('#event-chojuji-autumn');
+  await expect(card).toBeVisible();
+  await expect(card).toContainText('12月7日まで');
+  await card.getByRole('link').click();
+  await expect(page).toHaveURL(/knowledge\/c2\.html#event-at-chojuji-autumn$/);
+  const stop=page.locator('#event-at-chojuji-autumn');
+  await expect(stop).toContainText(/10:00〜15:00.*雨天中止/);
+  await expect(page.locator('.leg').last()).toContainText('徒歩約900m・約15分');
+  await expect(page.locator('article .dist')).toContainText('約2.8km');
+  await expect(page.locator('#c2 .story')).toContainText('古先印元');
+  await expect(page.locator('#c2 .story')).not.toContainText('蘭渓道隆');
+  await freeze('2026-12-08T00:00:00');
+  await page.reload();
+  await expect(stop).toBeHidden();
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await expect(page.locator('li.route a[href="knowledge/c2.html"]')).toContainText('徒歩約2.8km');
+  await page.goto('/kuranpo/history.html');
+  await expect(page.locator('a.card-link[href="knowledge/c2.html"]')).toContainText('徒歩約2.8km');
+  await page.goto('/kuranpo/knowledge/c1.html');
+  await expect(page.locator('a.pg-next[href="c2.html"]')).toContainText('徒歩約2.8km');
+});

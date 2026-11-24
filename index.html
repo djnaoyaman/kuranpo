@@ -940,6 +940,7 @@
 <script id="local-events-visibility">
 (() => {
   const section = document.getElementById("local-events");
+  // data-start is the first day the notice is shown, not necessarily the event opening day.
   const entries = Array.from(section.querySelectorAll("[data-start][data-end]"));
   const day = 24 * 60 * 60 * 1000;
   const midnightInJapan = date => /^\d{4}-\d{2}-\d{2}$/.test(date)
@@ -1235,7 +1236,7 @@
       <p class="co-en">Kamakura + Sanpo</p>
       <dl class="co-dl">
         <div class="co-credit"><dt>編集</dt><dd><a href="profile.html">クランポック</a></dd></div>
-        <div><dt>最終更新</dt><dd>2026年11月5日</dd></div>
+        <div><dt>最終更新</dt><dd>2026年11月24日</dd></div>
         <div><dt>所在</dt><dd>djnaoyaman.github.io/kuranpo</dd></div>
       </dl>
     </div>
@@ -1244,7 +1245,7 @@
 </footer>
 <section class="editor-mark-section">
   <a class="editor-mark" href="profile.html"><span class="em-label">編集：</span><span class="em-name">クランポック</span></a>
-  <p class="editor-mark-sub">最終更新：2026年11月5日</p>
+  <p class="editor-mark-sub">最終更新：2026年11月24日</p>
 </section>
 
 

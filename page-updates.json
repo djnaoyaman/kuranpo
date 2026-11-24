@@ -10,16 +10,16 @@
       "source_sha256": "9cae5740e9e018d78f7fb6ae438b0078a0427d4898428f45389ee0a7969033eb"
     },
     "changelog.html": {
-      "modified": "2026-11-05",
-      "source_sha256": "29f648844a09e161c85b87915c54c551e6ef238ebb34d6d9ba380af5160ddb05"
+      "modified": "2026-11-24",
+      "source_sha256": "4623fd6afce2bfacd78d5781348ce197b4eb9c40098ed7528c80605f74b39a87"
     },
     "history.html": {
       "modified": "2026-11-02",
       "source_sha256": "ef9fbc9f20a18d000aee8ed7b92ce534262776850505da01306a670c0b0901a4"
     },
     "index.html": {
-      "modified": "2026-11-05",
-      "source_sha256": "7e4a347a56d3c2fcc08e131dc23a555dc2c84ee79d130e246c8bcfffc812fc83"
+      "modified": "2026-11-24",
+      "source_sha256": "f78bc1654c8853c4ce9dd7ab239d376cc4fd23c3c4114c0811a57733da886e8a"
     },
     "knowledge/c1.html": {
       "modified": "2026-10-31",
@@ -90,8 +90,8 @@
       "source_sha256": "bbbb725d1949bd4c3c18625d704cf70835b05838dbfdf19cdbb6f62ba9be6d44"
     },
     "knowledge/g10.html": {
-      "modified": "2026-10-31",
-      "source_sha256": "174b57a9a9923277d316e3e480862e787c64970c1000755298622027dbf76e0f"
+      "modified": "2026-11-24",
+      "source_sha256": "aad13e4c18c58132dcace9d3ee6311edafcbac363633d78a16e8f6e23538083a"
     },
     "knowledge/g11.html": {
       "modified": "2026-10-31",

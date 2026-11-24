@@ -50,14 +50,14 @@ test('home advertises active and upcoming visits separately while remaining comp
   await page.clock.setFixedTime(new Date('2026-11-24T12:00:00+09:00'));
   await page.goto(home);
   const section=page.locator('#local-events');
-  await expect(section.locator('article:visible')).toHaveCount(5);
-  for(const id of ['hasedera','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
+  await expect(section.locator('article:visible')).toHaveCount(6);
+  for(const id of ['hasedera','hasedera-kaicho','kenchoji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('会期中');
   for(const id of ['kakuonji','hokokuji']) await expect(section.locator('#event-'+id+' [data-event-status]')).toHaveText('開催予定');
   const layout=await section.evaluate(el=>({
     width:document.documentElement.clientWidth,
     height:el.getBoundingClientRect().height,
     boxes:[...el.querySelectorAll('.local-event')].map(a=>a.getBoundingClientRect().toJSON()),
-    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a')].map(a=>a.getBoundingClientRect().height))
+    minLinkHeight:Math.min(...[...el.querySelectorAll('.event-links a,.local-event--brief h3 a')].map(a=>a.getBoundingClientRect().height))
   }));
   expect(layout.boxes.every(b=>b.left>=0&&b.right<=layout.width),JSON.stringify(layout)).toBe(true);
   expect(layout.height).toBeLessThan(720);
@@ -104,4 +104,41 @@ test('JST independently switches temple notices and expiries on home and direct 
   await page.reload();
   await expect(page.locator('#local-events')).toBeHidden();
   expect(await page.locator('#local-events').evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
+});
+
+test('Hasedera full viewing is distinct and stays visible through its own JST last day', async ({page})=>{
+  const freeze=date=>page.clock.setFixedTime(new Date(date+'+09:00'));
+  await page.setViewportSize({width:320,height:820});
+  const card=page.locator('#event-hasedera-kaicho');
+  const notice=page.locator('#event-at-hasedera-kaicho');
+  await freeze('2026-11-17T23:59:59');
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await freeze('2026-11-18T00:00:00');
+  await page.reload();
+  await expect(card).toBeVisible();
+  await expect(card.locator('[data-event-status]')).toHaveText('会期中');
+  await expect(card).toContainText('12月18日まで');
+  await freeze('2026-12-07T00:00:00');
+  await page.reload();
+  await expect(page.locator('#event-hasedera')).toBeHidden();
+  await expect(card).toBeVisible();
+  await card.getByRole('link',{name:'長谷寺 十一面観音の全身総開帳'}).click();
+  await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera-kaicho$/);
+  await expect(notice).toBeVisible();
+  await expect(notice.locator('xpath=..')).toContainText('長谷寺');
+  await expect(notice).toContainText('別の行事');
+  await expect(notice.getByRole('link',{name:'総開帳の公式案内'})).toHaveAttribute('href','https://www.hasedera.jp/2026/10/20867/');
+  await expect(notice).toContainText('駐車場は終日利用できません');
+  await expect(notice.getByRole('link',{name:'最終日の公式案内'})).toHaveAttribute('href','https://www.hasedera.jp/2026/11/14826/');
+  for(const path of [home,'/kuranpo/knowledge/g11.html','/kuranpo/knowledge/re10.html']){
+    const visible=path===home ? card : notice;
+    await freeze('2026-12-18T23:59:59');
+    await page.goto(path);
+    await expect(visible).toBeVisible();
+    await freeze('2026-12-19T00:00:00');
+    await page.reload();
+    await expect(visible).toBeHidden();
+    if(path===home) await expect(page.locator('#event-hokokuji [data-event-status]')).toHaveText('本日開催');
+  }
 });

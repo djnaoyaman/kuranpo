@@ -435,5 +435,126 @@
     "before_offsets": [
       35443
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event\" id=\"event-kenchoji\"",
+    "after": "  <article class=\"local-event\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time></p>\n    <h3>長谷寺 十一面観音の全身総開帳</h3>\n    <p class=\"event-venue\">12年に一度、ふだんは隠れている御足まで拝観。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">コースを見る</a><a href=\"https://www.hasedera.jp/2026/10/20867/\">公式案内</a></p>\n  </article>\n  <article class=\"local-event\" id=\"event-kenchoji\"",
+    "reason": "Promote the confirmed twelve-year full viewing, independently from the existing night visit.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      73871
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span>",
+    "reason": "Add exact dates, distinct final-day activities and parking closure at the actual Hasedera stop.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43241
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera\" data-local-event=\"hasedera\" data-start=\"2026-11-21\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 秋の夜間特別拝観</strong><br>2026年 <time datetime=\"2026-11-21\">11月21日</time>〜<time datetime=\"2026-12-06\">12月6日</time>・日没〜19:00閉門（19:30閉山）　<a href=\"https://www.hasedera.jp/2026/11/24185/\">公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span>",
+    "reason": "Add exact dates, distinct final-day activities and parking closure at the actual Hasedera stop.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42074
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">追加</span>長谷寺の十一面観音の全身総開帳（2026年12月18日まで）をトップと2つの長谷寺コースに掲載。最終日の法要中の一時休止、御足参り祈願と歳の市、駐車場の終日休止も案内しました。（2026年11月24日）</li>",
+    "reason": "Log the released event and distinguishing final-day information.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/",
+      "https://www.hasedera.jp/2026/11/14826/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;font-size:.85rem;}\n",
+    "after": "  .local-event .event-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;font-size:.85rem;}\n  @media(max-width:399px){\n    .local-event{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7.5em);column-gap:8px;align-items:start;}\n    .local-event .event-period,.local-event h3{grid-column:1;}\n    .local-event .event-links{display:grid;grid-column:2;grid-row:1 / span 2;gap:0;align-self:center;}\n    .local-event .event-links a{min-width:44px;}\n  }\n",
+    "reason": "Keep six overlapping notices within the existing narrow-phone height budget without reducing link touch targets.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57838
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "    .local-event{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7.5em);column-gap:8px;align-items:start;}\n    .local-event .event-period,.local-event h3{grid-column:1;}\n    .local-event .event-links{display:grid;grid-column:2;grid-row:1 / span 2;gap:0;align-self:center;}\n    .local-event .event-links a{min-width:44px;}",
+    "after": "    .local-event{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:6px;align-items:center;}\n    .local-event h3{grid-column:1 / -1;grid-row:1;}\n    .local-event .event-period{grid-column:1;grid-row:2;}\n    .local-event .event-links{display:flex;grid-column:2;grid-row:2;flex-wrap:nowrap;gap:6px;white-space:nowrap;}\n    .local-event .event-links a{min-width:44px;}",
+    "reason": "Give titles the full narrow width, with dates and both touch targets sharing one row.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57997
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "<a href=\"knowledge/g10.html#amadera-exhibition-2026\">「尼寺と女性たちの鎌倉」を読む</a>",
+    "after": "<a href=\"knowledge/g10.html#amadera-exhibition-2026\" aria-label=\"「尼寺と女性たちの鎌倉」を読む\">関連コース</a>",
+    "reason": "Keep the archive link accessible while providing a short visible mobile-friendly label.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      73611
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <p class=\"event-period\"><span data-event-status></span>｜2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time></p>\n    <h3>長谷寺 十一面観音の全身総開帳</h3>\n    <p class=\"event-venue\">12年に一度、ふだんは隠れている御足まで拝観。</p>\n    <p class=\"event-links\"><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">コースを見る</a><a href=\"https://www.hasedera.jp/2026/10/20867/\">公式案内</a></p>\n  </article>",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">長谷寺 十一面観音の全身総開帳</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-18\">12月18日まで</time></p>\n  </article>",
+    "reason": "Flag full viewing with one touch action on the homepage; detailed opening dates and both official sources remain one tap away.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      74301
+    ]
+  },
+  {
+    "path": "index.html",
+    "before": "  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "after": "  .local-event--brief{display:flex;align-items:center;justify-content:space-between;gap:6px;}\n  .local-event--brief h3 a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:.22em;}\n  .local-event--brief .event-period{flex:0 0 auto;text-align:end;}\n  @media(max-width:399px){\n    .local-event--brief{display:flex;align-items:center;min-height:44px;}\n    .local-event--brief h3{line-height:1.25;font-size:14px;}\n    .local-event--brief .event-period{font-size:12px;line-height:1.25;}\n  }\n  .local-events:not([hidden]) + .picks{padding-top:28px;}\n",
+    "reason": "Give the supplementary Hasedera event a single compact row without shrinking its link touch target.",
+    "sources": [
+      "https://www.hasedera.jp/2026/10/20867/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      58482
+    ]
   }
 ]

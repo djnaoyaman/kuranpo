@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const {Motion,releaseVelocity,DURATION}=require('../assets/walk-motion');
+const {Motion,releaseVelocity,depthPose,DURATION}=require('../assets/walk-motion');
 for(const hz of [30,60,120])for(const origin of [0,1,66])for(const direction of [-1,1])for(const speed of [.2,3,7,18,100]){
  const m=new Motion(origin);m.drag(origin+direction*.35);m.release(direction*speed,false,origin);
  assert.equal(m.target,origin+direction);let time=0,previous=m.position;
@@ -16,3 +16,13 @@ m.snap(2);m.step(1);assert.ok(m.elapsed<=.05);m.snap(66,true);assert.equal(m.pos
 assert.equal(releaseVelocity([{t:0,p:0},{t:25,p:.1},{t:50,p:.2},{t:75,p:.3}],75),4);
 assert.equal(releaseVelocity([{t:0,p:0},{t:25,p:1}],200),0);
 console.log('PASS: bounded one-card release, 30/60/120Hz, fast/slow/reverse, thresholds, interruption, long frames and reduced motion');
+
+assert.deepEqual(depthPose(0),{scale:1,y:0,opacity:1,layer:4});
+assert.ok(Math.abs(depthPose(.5).scale-.89)<1e-9);
+assert.equal(depthPose(.5).y,6);
+assert.equal(depthPose(1).scale,.78);
+assert.equal(depthPose(1).y,12);
+assert.equal(depthPose(3).opacity,0);
+for(const d of [0,.25,.5,1,2,3]){assert.deepEqual(depthPose(d),depthPose(-d));assert.deepEqual(depthPose(d,true),{scale:1,y:0,opacity:1,layer:1});}
+for(let i=0;i<100;i++){const near=depthPose(i/100),far=depthPose((i+1)/100);assert.ok(near.scale>=far.scale&&near.opacity>=far.opacity&&near.y<=far.y);}
+console.log('PASS: continuous depth, symmetric movement and reduced motion');

@@ -37,5 +37,11 @@
   let covariance=0,variance=0;for(const s of recent){covariance+=(s.t-mt)*(s.p-mp);variance+=(s.t-mt)**2;}
   return variance?clamp(covariance/variance*1000,-MAX_SPEED,MAX_SPEED):0;
  }
- return {Motion,releaseVelocity,DURATION,MAX_SPEED};
+ // Pure presentation geometry. Keep the one-card motion model independent of depth.
+ function depthPose(distance,reduced=false){
+  const d=Math.abs(distance),near=Math.max(0,1-d);
+  if(reduced)return {scale:1,y:0,opacity:1,layer:1};
+  return {scale:.78+.22*near,y:12*(1-near),opacity:Math.max(0,1-.42*d),layer:Math.round(3*near)+1};
+ }
+ return {Motion,releaseVelocity,depthPose,DURATION,MAX_SPEED};
 });

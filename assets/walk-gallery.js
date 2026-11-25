@@ -1,8 +1,8 @@
-/* One course per swipe, with quiet lateral motion and native vertical scrolling. */
+/* One course per swipe, with restrained depth and native vertical scrolling. */
 (()=>{
  'use strict';
  if(document.body.dataset.page!=='index'||!window.WalkMotion)return;
- const {Motion,releaseVelocity}=window.WalkMotion,key='kuranpo-walk-selection',reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const {Motion,releaseVelocity,depthPose}=window.WalkMotion,key='kuranpo-walk-selection',reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const plain=node=>{const copy=node?.cloneNode(true);copy?.querySelectorAll('rt,rp').forEach(n=>n.remove());return copy?.textContent.trim()||'';};
  const courses=[...document.querySelectorAll('#routes .route')].map(row=>{const href=row.querySelector('a').getAttribute('href');return {href,id:href.split('/').pop().replace('.html','').toUpperCase(),title:[plain(row.querySelector('.r-grp')),plain(row.querySelector('.r-title'))].filter(Boolean).join(' — '),meta:[...row.querySelectorAll('.r-meta span')].map(plain).join(' / ')};});
  if(!courses.length)return;
@@ -49,9 +49,10 @@
    for(let n=low;n<=high;n++)if(!pool.has(n))createCard(n);
    for(const [n,card] of pool){
     const distance=n-motion.position,current=n===center;
-    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,0,0)`;
-    card.style.opacity=current?'1':'.65';
-    card.style.zIndex=current?'2':'1';
+    const pose=depthPose(distance,reduced.matches);
+    card.style.transform=`translate3d(${distance*pitch-cardWidth/2}px,${pose.y}px,0) scale(${pose.scale})`;
+    card.style.opacity=reduced.matches?(current?'1':'.65'):String(pose.opacity);
+    card.style.zIndex=reduced.matches?(current?'2':'1'):String(current?4:pose.layer);
     card.classList.toggle('walk-current',current);card.classList.toggle('walk-preview',!current);
     card.inert=!current&&card!==gesture?.anchor;card.tabIndex=current?0:-1;if(current)card.removeAttribute('aria-hidden');else card.setAttribute('aria-hidden','true');
    }

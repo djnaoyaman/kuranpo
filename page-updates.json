@@ -11,7 +11,7 @@
     },
     "changelog.html": {
       "modified": "2026-11-25",
-      "source_sha256": "9498709c2db7480239e2ad2a6aa0a8584718a2831d80864c9bf0c83a7d15d54d"
+      "source_sha256": "099dc64efbbbd329c741ec45194164728ec8806ba808716311c79a485144330f"
     },
     "history.html": {
       "modified": "2026-11-25",
@@ -19,7 +19,7 @@
     },
     "index.html": {
       "modified": "2026-11-25",
-      "source_sha256": "2dd744fdd6f178e71901f277e1e76b5494cebe544e9f4f89bba69266dcb0be57"
+      "source_sha256": "9cd6266e006713a521f8dcb11ed1bdc666a701a06fcc171b4c07e9b0153c5010"
     },
     "knowledge/c1.html": {
       "modified": "2026-11-25",
@@ -94,8 +94,8 @@
       "source_sha256": "aad13e4c18c58132dcace9d3ee6311edafcbac363633d78a16e8f6e23538083a"
     },
     "knowledge/g11.html": {
-      "modified": "2026-11-24",
-      "source_sha256": "1baadfd3ca00ea206953a55283e0087f694cba3d9db2575e628fd5267f267174"
+      "modified": "2026-11-25",
+      "source_sha256": "837633b0a211622456baee04d62d21b17ac6c4b5eccf355246820b83a94fd711"
     },
     "knowledge/g12.html": {
       "modified": "2026-10-31",
@@ -207,7 +207,7 @@
     },
     "knowledge/re10.html": {
       "modified": "2026-11-25",
-      "source_sha256": "6878986739fb9146e414e964ece620ee58167c261ba157653ee7ad9ef39e6450"
+      "source_sha256": "f48a949231d4e9101623dcbb951130068570fa54f245dd9720cc252bf08ec134"
     },
     "knowledge/re11.html": {
       "modified": "2026-10-31",

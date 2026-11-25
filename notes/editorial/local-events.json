@@ -1033,5 +1033,65 @@
     "before_offsets": [
       35443
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">長谷寺 十一面観音の全身総開帳</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-18\">12月18日まで</time></p>\n  </article>\n",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-at-hasedera-kaicho\">長谷寺 十一面観音の全身総開帳</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-18\">12月18日まで</time></p>\n  </article>\n  <article class=\"local-event local-event--brief\" id=\"event-hasedera-kannon-pilgrimage\" data-local-event=\"hasedera-kannon-pilgrimage\" data-start=\"2026-08-29\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-at-hasedera-kannon-pilgrimage\">長谷寺 観音ミュージアム 大竹五洋の観音巡礼</a></h3>\n    <p class=\"event-period\"><span data-event-status></span><br><time datetime=\"2026-12-06\">12月6日まで</time></p>\n  </article>\n",
+    "reason": "Link the daytime museum exhibition separately from nighttime temple access and the full Kannon unveiling.",
+    "sources": [
+      "https://www.kannon-museum.jp/2026/07/2453/",
+      "https://www.kannon-museum.jp/",
+      "https://www.hasedera.jp/2026/10/24021/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      76714
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span></li>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kannon-pilgrimage\" data-local-event=\"hasedera-kannon-pilgrimage\" data-start=\"2026-08-29\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 観音ミュージアム 大竹五洋の観音巡礼</strong><br>2026年 <time datetime=\"2026-08-29\">8月29日</time>〜<time datetime=\"2026-12-06\">12月6日（日）</time>。大竹五洋が自ら巡った鎌倉三十三観音の札所を描いた連作33点。絵の中には、その札所の本堂と実際の御朱印が並びます。<br>9:00〜16:30（最終入館16:00）。入館料は中学生以上500円・小学生200円。長谷寺の拝観料（大人400円・小学生200円）は別途。夜間特別拝観とは別の催しです。<a href=\"https://www.kannon-museum.jp/2026/07/2453/\">展覧会の公式案内</a></span></li>",
+    "reason": "Add the exhibit at the actual Hasedera stop, with opening hours and separately charged admission.",
+    "sources": [
+      "https://www.kannon-museum.jp/2026/07/2453/",
+      "https://www.kannon-museum.jp/",
+      "https://www.hasedera.jp/2026/10/24021/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43658
+    ]
+  },
+  {
+    "path": "knowledge/re10.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span></li>",
+    "after": "<span class=\"snote stop-event\" id=\"event-at-hasedera-kaicho\" data-local-event=\"hasedera-kaicho\" data-start=\"2026-11-18\" data-end=\"2026-12-18\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 十一面観音の全身総開帳</strong><br>2026年 <time datetime=\"2026-11-18\">11月18日</time>〜<time datetime=\"2026-12-18\">12月18日</time>。12年に一度、ふだん仏具に隠れている御足まで拝観できます。<a href=\"https://www.hasedera.jp/2026/10/20867/\">総開帳の公式案内</a><br>最終日12月18日は午前の法要中、総開帳を一時休止。法要後の「御足参り祈願」は別の行事で、当日券は数量限定です。参道では「歳の市」（10:00頃〜20:00頃）が開かれ、駐車場は終日利用できません。<a href=\"https://www.hasedera.jp/2026/11/14826/\">最終日の公式案内</a></span><span class=\"snote stop-event\" id=\"event-at-hasedera-kannon-pilgrimage\" data-local-event=\"hasedera-kannon-pilgrimage\" data-start=\"2026-08-29\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong><span data-event-status></span>｜長谷寺 観音ミュージアム 大竹五洋の観音巡礼</strong><br>2026年 <time datetime=\"2026-08-29\">8月29日</time>〜<time datetime=\"2026-12-06\">12月6日（日）</time>。大竹五洋が自ら巡った鎌倉三十三観音の札所を描いた連作33点。絵の中には、その札所の本堂と実際の御朱印が並びます。<br>9:00〜16:30（最終入館16:00）。入館料は中学生以上500円・小学生200円。長谷寺の拝観料（大人400円・小学生200円）は別途。夜間特別拝観とは別の催しです。<a href=\"https://www.kannon-museum.jp/2026/07/2453/\">展覧会の公式案内</a></span></li>",
+    "reason": "Add the exhibit at the actual Hasedera stop, with opening hours and separately charged admission.",
+    "sources": [
+      "https://www.kannon-museum.jp/2026/07/2453/",
+      "https://www.kannon-museum.jp/",
+      "https://www.hasedera.jp/2026/10/24021/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43434
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">催し</span>長谷寺の観音ミュージアムで開かれる大竹五洋の観音巡礼展（2026年12月6日まで）を、トップと長谷寺を歩く2つのコースに追加しました。（2026年11月25日）</li>",
+    "reason": "Record this dated museum exhibit after the live listing expires.",
+    "sources": [
+      "https://www.kannon-museum.jp/2026/07/2453/",
+      "https://www.kannon-museum.jp/",
+      "https://www.hasedera.jp/2026/10/24021/"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
   }
 ]

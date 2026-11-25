@@ -949,5 +949,89 @@
     "before_offsets": [
       59332
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event\" id=\"event-hasedera\"",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-zuisenji700\" data-local-event=\"zuisenji700\" data-start=\"2026-10-24\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden>\n    <h3><a href=\"knowledge/g2.html#event-at-zuisenji700\">瑞泉寺七百年 <small>鎌倉国宝館</small></a></h3>\n    <p class=\"event-period\"><time datetime=\"2026-12-06\">12月6日まで</time></p>\n  </article>\n  <article class=\"local-event\" id=\"event-hasedera\"",
+    "reason": "Feature the imminent exhibit with its actual venue, linking to the Hachimangu route during the published dates.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      74821
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "<span class=\"opt\">＋宝物殿</span></li><li><div class=\"row\"><span class=\"sname\">段葛</span>",
+    "after": "<span class=\"opt\">＋宝物殿</span><span class=\"snote stop-event\" id=\"event-at-zuisenji700\" data-local-event=\"zuisenji700\" data-start=\"2026-10-24\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong>寄り道｜鎌倉国宝館 特別展「瑞泉寺七百年」</strong><br>八幡宮境内の鎌倉国宝館で、瑞泉寺を開いた<ruby>夢窓疎石<rt>むそうそせき</rt></ruby>の坐像や墨跡を紹介。<time datetime=\"2026-12-06\">2026年12月6日（日）まで</time>。9:00〜16:30（入館16:00まで）、11月30日（月）休館。一般1,000円・小中学生500円。11月28日（土）10:30に学芸員の展示解説（申込不要・要観覧料）。<br><a href=\"https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html\">展覧会の公式案内</a>｜<a href=\"pe11.html\">夢窓疎石の庭を歩く</a></span></li><li><div class=\"row\"><span class=\"sname\">段葛</span>",
+    "reason": "Place the museum as an optional detour at the shrine stop, not as a measured route change.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42550
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "<span class=\"snote\"><ruby>夢窓疎石<rt>むそうそせき</rt></ruby>。</span></li><li class=\"endleg\">",
+    "after": "<span class=\"snote\"><ruby>夢窓疎石<rt>むそうそせき</rt></ruby>。</span><span class=\"snote stop-event\" id=\"zuisenji700-separate-visit\" data-local-event=\"zuisenji700\" data-start=\"2026-10-24\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden style=\"display:none;scroll-margin-top:72px\"><strong>別の日や散策の前後に｜特別展「瑞泉寺七百年」</strong><br>庭を手がけた<ruby>夢窓疎石<rt>むそうそせき</rt></ruby>の坐像や墨跡を、鶴岡八幡宮境内の鎌倉国宝館で見られます。会場は瑞泉寺ではありません。<time datetime=\"2026-12-06\">2026年12月6日（日）まで</time>。<a href=\"g2.html#event-at-zuisenji700\">会場・開館時間を見る</a></span></li><li class=\"endleg\">",
+    "reason": "Connect the temple's garden and founder to the separately located museum exhibit without altering the walking route.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      41052
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Use the existing JST-only event expiration without editing any shared site script.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      57114
+    ]
+  },
+  {
+    "path": "knowledge/pe11.html",
+    "before": "</body>",
+    "after": "<script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n</body>",
+    "reason": "Use the existing JST-only event expiration without editing any shared site script.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      52741
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "<ol class=\"log-list\">",
+    "after": "<ol class=\"log-list\">\n    <li><span class=\"tag\">催し</span>鎌倉国宝館の特別展「瑞泉寺七百年」（2026年12月6日まで）を、<a href=\"knowledge/g2.html\">鶴岡八幡宮のコース</a>と<a href=\"knowledge/pe11.html\">瑞泉寺のコース</a>から案内しました。（2026年11月25日）</li>",
+    "reason": "Record the dated exhibit and both related walking routes after the notices expire.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/exhibition.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35443
+    ]
   }
 ]

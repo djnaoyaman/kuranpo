@@ -1093,5 +1093,44 @@
     "before_offsets": [
       35441
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  </div>\n  <script defer src=\"assets/local-events.js?v=20261124a\"></script>",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-koshinpo\" data-local-event=\"koshinpo\" data-start=\"2026-10-09\" data-display-from=\"2026-11-25\" data-end=\"2027-01-24\" hidden>\n    <h3><a href=\"knowledge/g2.html#event-at-koshinpo\">鶴岡八幡宮の古神宝展</a></h3>\n    <p class=\"event-period\"><time datetime=\"2027-01-24\">1月24日まで</time></p>\n  </article>\n  </div>\n  <script defer src=\"assets/local-events.js?v=20261124a\"></script>",
+    "reason": "Add a compact home listing for a confirmed exhibition at a G2 stop.",
+    "sources": [
+      "https://tsurugaokamuseum.jp/tanoshimu/index.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      79313
+    ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "</span></li><li><div class=\"row\"><span class=\"sname\">段葛</span>",
+    "after": "</span><span class=\"snote stop-event\" id=\"event-at-koshinpo\" data-local-event=\"koshinpo\" data-start=\"2026-10-09\" data-display-from=\"2026-11-25\" data-end=\"2027-01-24\" hidden style=\"display:none;scroll-margin-top:72px\"><strong>寄り道｜鎌倉文華館 鶴岡ミュージアム「鶴岡八幡宮の古神宝展」</strong><br>神に奉納された品々の意匠や細工を間近に見られます。源平池のそば、鎌倉国宝館とは別の会場です。<time datetime=\"2027-01-24\">2027年1月24日（日）まで</time>。10:00〜16:30（最終入館16:00）、一般800円・小中学生400円。<br>月曜休館（月曜が祝日の場合は翌平日）。<strong>2026年11月26日（木）は展示替えのため休館。12月28日（月）〜2027年1月5日（火）も休館。</strong><br><a href=\"https://tsurugaokamuseum.jp/tanoshimu/index.html\">展覧会の公式案内</a></span></li><li><div class=\"row\"><span class=\"sname\">段葛</span>",
+    "reason": "At Hachimangu distinguish the museum from the separate National Treasures Museum and give day-specific closures.",
+    "sources": [
+      "https://tsurugaokamuseum.jp/tanoshimu/index.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43165
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">催し</span>鎌倉文華館 鶴岡ミュージアムの「鶴岡八幡宮の古神宝展」（2027年1月24日まで）を、トップと八幡宮を歩くコースに掲載しました。（2026年11月25日）</li>",
+    "reason": "Keep a dated record after the listing expires.",
+    "sources": [
+      "https://tsurugaokamuseum.jp/tanoshimu/index.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
   }
 ]

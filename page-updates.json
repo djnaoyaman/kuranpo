@@ -11,7 +11,7 @@
     },
     "changelog.html": {
       "modified": "2026-11-25",
-      "source_sha256": "099dc64efbbbd329c741ec45194164728ec8806ba808716311c79a485144330f"
+      "source_sha256": "b4900e50e57f5d3bcf63c6ca5fa1f80d2553f4e206b17a1780413715ae0aed47"
     },
     "history.html": {
       "modified": "2026-11-25",
@@ -19,7 +19,7 @@
     },
     "index.html": {
       "modified": "2026-11-25",
-      "source_sha256": "9cd6266e006713a521f8dcb11ed1bdc666a701a06fcc171b4c07e9b0153c5010"
+      "source_sha256": "7a518e09bbb473fd5a6d19695af42c0b59613348e3d694e791228466fcd1125b"
     },
     "knowledge/c1.html": {
       "modified": "2026-11-25",
@@ -111,7 +111,7 @@
     },
     "knowledge/g2.html": {
       "modified": "2026-11-25",
-      "source_sha256": "2c6244b0813ecfbc92e36dbf809d4cd589dd1077b558f598ecc27a11a224bd3c"
+      "source_sha256": "d416deb46711c321d0064677c7bf0d29f301169c8578b9693333ede137737995"
     },
     "knowledge/g3.html": {
       "modified": "2026-10-31",

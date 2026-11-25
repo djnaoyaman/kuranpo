@@ -952,8 +952,8 @@
   },
   {
     "path": "index.html",
-    "before": "  <div class=\"local-events-grid\">\n",
-    "after": "  <div class=\"local-events-grid\">\n  <article class=\"local-event local-event--brief\" id=\"event-zuisenji700\" data-local-event=\"zuisenji700\" data-start=\"2026-10-24\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden>\n    <h3><a href=\"knowledge/g2.html#event-at-zuisenji700\">瑞泉寺七百年 <small>鎌倉国宝館</small></a></h3>\n    <p class=\"event-period\"><time datetime=\"2026-12-06\">12月6日まで</time></p>\n  </article>\n",
+    "before": "  <article class=\"local-event\" id=\"event-hasedera\"",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-zuisenji700\" data-local-event=\"zuisenji700\" data-start=\"2026-10-24\" data-display-from=\"2026-11-25\" data-end=\"2026-12-06\" hidden>\n    <h3><a href=\"knowledge/g2.html#event-at-zuisenji700\">瑞泉寺七百年 <small>鎌倉国宝館</small></a></h3>\n    <p class=\"event-period\"><time datetime=\"2026-12-06\">12月6日まで</time></p>\n  </article>\n  <article class=\"local-event\" id=\"event-hasedera\"",
     "reason": "Feature the imminent exhibit with its actual venue, linking to the Hachimangu route during the published dates.",
     "sources": [
       "https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html",
@@ -961,7 +961,7 @@
     ],
     "occurrences": 1,
     "before_offsets": [
-      74281
+      74821
     ]
   },
   {

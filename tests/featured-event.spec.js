@@ -216,3 +216,41 @@ test('C2: Chōjuji dates, walking loop time and temple history agree across the 
   await page.goto('/kuranpo/knowledge/c1.html');
   await expect(page.locator('a.pg-next[href="c2.html"]')).toContainText('徒歩約2.8km');
 });
+
+test('瑞泉寺七百年 links the exhibit venue to both walks through the last JST day', async ({page})=>{
+  const freeze=stamp=>page.clock.setFixedTime(new Date(stamp+'+09:00'));
+  const card=page.locator('#event-zuisenji700');
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-11-24T23:59:59');
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await freeze('2026-11-25T00:00:00');
+  await page.reload();
+  await expect(card).toBeVisible();
+  await expect(card).toContainText('鎌倉国宝館');
+  expect(await card.getByRole('link').evaluate(el=>{
+    const r=el.getBoundingClientRect();
+    return r.left>=0&&r.right<=document.documentElement.clientWidth&&r.height>=44;
+  })).toBe(true);
+  await card.getByRole('link').click();
+  await expect(page).toHaveURL(/knowledge\/g2\.html#event-at-zuisenji700$/);
+  const notice=page.locator('#event-at-zuisenji700');
+  await expect(notice).toBeVisible();
+  await expect(notice.locator('xpath=..').locator('.sname')).toHaveText('鶴岡八幡宮');
+  await expect(notice).toContainText('11月30日（月）休館');
+  await expect(notice).toContainText('11月28日（土）10:30');
+  await expect(notice.getByRole('link',{name:'展覧会の公式案内'})).toHaveAttribute('href','https://www.city.kamakura.kanagawa.jp/kokuhoukan/2026-zuisenji.html');
+  await notice.getByRole('link',{name:'夢窓疎石の庭を歩く'}).click();
+  const other=page.locator('#zuisenji700-separate-visit');
+  await expect(other).toBeVisible();
+  await expect(other).toContainText('会場は瑞泉寺ではありません');
+  for(const [path,node] of [[home,card],['/kuranpo/knowledge/g2.html',notice],['/kuranpo/knowledge/pe11.html',other]]){
+    await freeze('2026-12-06T23:59:59');
+    await page.goto(path);
+    await expect(node).toBeVisible();
+    await freeze('2026-12-07T00:00:00');
+    await page.reload();
+    await expect(node).toBeHidden();
+  }
+});
+

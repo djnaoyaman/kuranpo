@@ -103,8 +103,8 @@ test('JST independently switches temple notices and expiries on home and direct 
   await expect(page.locator('#event-hokokuji [data-event-status]')).toHaveText('本日開催');
   await freeze('2026-12-20T00:00:00');
   await page.reload();
-  await expect(page.locator('#local-events')).toBeHidden();
-  expect(await page.locator('#local-events').evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
+  await expect(page.locator('#local-events article:visible')).toHaveCount(1);
+  await expect(page.locator('#event-koshinpo')).toBeVisible();
 });
 
 test('Hasedera full viewing is distinct and stays visible through its own JST last day', async ({page})=>{
@@ -290,4 +290,40 @@ test('Hasedera museum exhibition is a separate daytime visit and expires after D
     await expect(target).toBeHidden();
     await expect(page.locator(path===home?'#event-hasedera-kaicho':'#event-at-hasedera-kaicho')).toBeVisible();
   }
+});
+
+test('Tsurugaoka sacred treasures listing links to G2, shows closures and lasts through Jan 24 JST', async ({page})=>{
+  const freeze=date=>page.clock.setFixedTime(new Date(date+'+09:00'));
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-11-24T23:59:59');
+  await page.goto(home);
+  const card=page.locator('#event-koshinpo');
+  await expect(card).toBeHidden();
+  await freeze('2026-11-26T10:00:00');
+  await page.reload();
+  const link=card.getByRole('link',{name:'鶴岡八幡宮の古神宝展'});
+  await expect(link).toBeVisible();
+  const box=await link.boundingBox();
+  expect(box.x).toBeGreaterThanOrEqual(0);
+  expect(box.x+box.width).toBeLessThanOrEqual(320);
+  expect(box.height).toBeGreaterThanOrEqual(44);
+  await link.click();
+  await expect(page).toHaveURL(/knowledge\/g2\.html#event-at-koshinpo$/);
+  const note=page.locator('#event-at-koshinpo');
+  await expect(note).toContainText('11月26日（木）は展示替えのため休館');
+  await expect(note).toContainText('12月28日（月）〜2027年1月5日（火）も休館');
+  await expect(note).toContainText('鎌倉国宝館とは別の会場');
+  await expect(note.getByRole('link',{name:'展覧会の公式案内'})).toHaveAttribute('href','https://tsurugaokamuseum.jp/tanoshimu/index.html');
+  await freeze('2027-01-24T23:59:59');
+  await page.reload();
+  await expect(note).toBeVisible();
+  await page.goto(home);
+  await expect(card).toBeVisible();
+  await freeze('2027-01-25T00:00:00');
+  await page.reload();
+  const section=page.locator('#local-events');
+  await expect(section).toBeHidden();
+  expect(await section.evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
+  await page.goto('/kuranpo/knowledge/g2.html#event-at-koshinpo');
+  await expect(note).toBeHidden();
 });

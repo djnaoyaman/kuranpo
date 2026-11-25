@@ -254,3 +254,40 @@ test('瑞泉寺七百年 links the exhibit venue to both walks through the last 
   }
 });
 
+
+test('Hasedera museum exhibition is a separate daytime visit and expires after December 6 JST', async ({page})=>{
+  const freeze=stamp=>page.clock.setFixedTime(new Date(stamp+'+09:00'));
+  const card=page.locator('#event-hasedera-kannon-pilgrimage');
+  const notice=page.locator('#event-at-hasedera-kannon-pilgrimage');
+  await page.setViewportSize({width:320,height:820});
+  await freeze('2026-11-24T23:59:59');
+  await page.goto(home);
+  await expect(card).toBeHidden();
+  await freeze('2026-11-25T00:00:00');
+  await page.reload();
+  await expect(card).toBeVisible();
+  await expect(card.locator('[data-event-status]')).toHaveText('会期中');
+  await expect(card).toContainText('12月6日まで');
+  expect(await card.getByRole('link').evaluate(el=>{
+    const {left,right,height}=el.getBoundingClientRect();
+    return left>=0&&right<=document.documentElement.clientWidth&&height>=44;
+  })).toBe(true);
+  await card.getByRole('link').click();
+  await expect(page).toHaveURL(/knowledge\/g11\.html#event-at-hasedera-kannon-pilgrimage$/);
+  await expect(notice).toBeVisible();
+  await expect(notice.locator('xpath=..').locator('.sname')).toHaveText('長谷寺');
+  await expect(notice).toContainText('最終入館16:00');
+  await expect(notice).toContainText('拝観料（大人400円・小学生200円）は別途');
+  await expect(notice).toContainText('御朱印');
+  await expect(notice.getByRole('link',{name:'展覧会の公式案内'})).toHaveAttribute('href','https://www.kannon-museum.jp/2026/07/2453/');
+  for(const path of ['/kuranpo/knowledge/g11.html','/kuranpo/knowledge/re10.html',home]){
+    const target=path===home?card:notice;
+    await freeze('2026-12-06T23:59:59');
+    await page.goto(path);
+    await expect(target).toBeVisible();
+    await freeze('2026-12-07T00:00:00');
+    await page.reload();
+    await expect(target).toBeHidden();
+    await expect(page.locator(path===home?'#event-hasedera-kaicho':'#event-at-hasedera-kaicho')).toBeVisible();
+  }
+});

@@ -11,7 +11,7 @@
     },
     "changelog.html": {
       "modified": "2026-11-26",
-      "source_sha256": "87139a295d9b04f1289465b67a8d1582809cc5a35949f13519d4ee2ac3981da9"
+      "source_sha256": "1ebd2883f09be8c9f8c9b988dc185883f5913d7c66b1aa59c310c6d59b8bef30"
     },
     "history.html": {
       "modified": "2026-11-25",
@@ -110,8 +110,8 @@
       "source_sha256": "f2efc58e2b2fcc6ab268bc08b91396badbe70cb232c33be171f729804b887674"
     },
     "knowledge/g2.html": {
-      "modified": "2026-11-25",
-      "source_sha256": "d416deb46711c321d0064677c7bf0d29f301169c8578b9693333ede137737995"
+      "modified": "2026-11-26",
+      "source_sha256": "320621b064bdb6bb184e3f6f0e9936b4c92c100bea330d09862aff405185cbd2"
     },
     "knowledge/g3.html": {
       "modified": "2026-10-31",

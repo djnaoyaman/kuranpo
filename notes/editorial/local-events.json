@@ -1184,5 +1184,31 @@
     "before_offsets": [
       35441
     ]
+  },
+  {
+    "path": "knowledge/g2.html",
+    "before": "<span class=\"snote stop-event\" id=\"event-at-koshinpo\"",
+    "after": "<span class=\"snote stop-event\" id=\"notice-kokuhoukan-closure-2026\" data-local-event=\"kokuhoukan-closure-2026\" data-start=\"2026-12-08\" data-display-from=\"2026-11-26\" data-end=\"2027-03-31\" hidden style=\"display:none;scroll-margin-top:72px\"><strong>鎌倉国宝館｜改修工事による臨時休館</strong><br><time datetime=\"2026-12-08\">2026年12月8日（火）</time>から<time datetime=\"2027-03-31\">2027年3月31日（水）</time>までの予定です。鶴岡八幡宮や鎌倉文華館 鶴岡ミュージアムの休館案内ではありません。<br><a href=\"https://www.city.kamakura.kanagawa.jp/kokuhoukan/documents/r8_schedule.pdf\">鎌倉国宝館の年間スケジュール（PDF）</a></span><span class=\"snote stop-event\" id=\"event-at-koshinpo\"",
+    "reason": "Show the planned winter renovation closure separately from the current exhibition and neighboring museum.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/documents/r8_schedule.pdf"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      43172
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">拝観情報</span><a href=\"knowledge/g2.html#notice-kokuhoukan-closure-2026\">鶴岡八幡宮を歩くコース</a>に、鎌倉国宝館の2026年12月8日から2027年3月31日までの改修休館予定を追記しました。（2026年11月26日）</li>",
+    "reason": "Record the museum access advisory in the reader-facing changelog.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/kokuhoukan/documents/r8_schedule.pdf"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
   }
 ]

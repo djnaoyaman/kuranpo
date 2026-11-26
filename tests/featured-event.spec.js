@@ -103,8 +103,8 @@ test('JST independently switches temple notices and expiries on home and direct 
   await expect(page.locator('#event-hokokuji [data-event-status]')).toHaveText('本日開催');
   await freeze('2026-12-20T00:00:00');
   await page.reload();
-  await expect(page.locator('#local-events article:visible')).toHaveCount(1);
-  await expect(page.locator('#event-koshinpo')).toBeVisible();
+  await expect(page.locator('#event-hokokuji')).toBeHidden();
+  await expect(page.locator('#local-events article:visible h3')).toHaveText(['生誕800年 無住がみた鎌倉','鶴岡八幡宮の古神宝展']);
 });
 
 test('Hasedera full viewing is distinct and stays visible through its own JST last day', async ({page})=>{
@@ -322,8 +322,42 @@ test('Tsurugaoka sacred treasures listing links to G2, shows closures and lasts 
   await freeze('2027-01-25T00:00:00');
   await page.reload();
   const section=page.locator('#local-events');
-  await expect(section).toBeHidden();
-  expect(await section.evaluate(el=>el.getBoundingClientRect().height)).toBe(0);
+  await expect(card).toBeHidden();
+  await expect(section.locator('article:visible h3')).toHaveText(['生誕800年 無住がみた鎌倉']);
   await page.goto('/kuranpo/knowledge/g2.html#event-at-koshinpo');
   await expect(note).toBeHidden();
+});
+
+test('Muju notice follows Amadera and expires after its own JST last day', async ({page})=>{
+  const freeze=date=>page.clock.setFixedTime(new Date(date+'+09:00'));
+  await page.setViewportSize({width:320,height:820});
+  const muju=page.locator('#event-muju');
+  const amadera=page.locator('#event-amadera');
+  await freeze('2026-11-28T23:59:59');
+  await page.goto(home);
+  await expect(amadera).toBeVisible();
+  await expect(muju).toBeHidden();
+  await freeze('2026-11-29T00:00:00');
+  await page.reload();
+  await expect(amadera).toBeHidden();
+  await expect(muju.locator('[data-event-status]')).toHaveText('開催予定');
+  const link=muju.getByRole('link',{name:'生誕800年 無住がみた鎌倉'});
+  const box=await link.boundingBox();
+  expect(box.height).toBeGreaterThanOrEqual(44);
+  expect(box.x+box.width).toBeLessThanOrEqual(320);
+  await link.click();
+  await expect(page).toHaveURL(/knowledge\/ti2\.html#event-muju-kamakura$/);
+  const note=page.locator('#event-muju-kamakura');
+  await expect(note).toContainText('12月29日〜1月3日は休館');
+  await expect(note).toContainText('会場は散策コースとは別');
+  await freeze('2026-12-12T00:00:00');
+  await page.goto(home);
+  await expect(muju.locator('[data-event-status]')).toHaveText('会期中');
+  await freeze('2027-02-27T23:59:59');
+  await page.reload();
+  await expect(muju).toBeVisible();
+  await freeze('2027-02-28T00:00:00');
+  await page.reload();
+  await expect(muju).toBeHidden();
+  await expect(page.locator('#local-events')).toBeHidden();
 });

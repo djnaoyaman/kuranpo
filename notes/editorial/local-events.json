@@ -1210,5 +1210,44 @@
     "before_offsets": [
       35441
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "  <article class=\"local-event local-event--brief\" id=\"event-zuisenji700\"",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-muju\" data-local-event=\"muju\" data-start=\"2026-12-12\" data-display-from=\"2026-11-29\" data-end=\"2027-02-27\" hidden>\n    <h3><a href=\"knowledge/ti2.html#event-muju-kamakura\">生誕800年 無住がみた鎌倉</a></h3>\n    <p class=\"event-period\"><span data-event-status></span>｜<time datetime=\"2026-12-12\">2026年12月12日</time>〜<time datetime=\"2027-02-27\">2027年2月27日</time></p>\n    <p class=\"event-venue\">鎌倉歴史文化交流館 別館</p>\n  </article>\n  <article class=\"local-event local-event--brief\" id=\"event-zuisenji700\"",
+    "reason": "Use the existing featured-event slot after the final day of the previous exhibition.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun/2026_12_muju.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      74821
+    ]
+  },
+  {
+    "path": "knowledge/ti2.html",
+    "before": "  <p class=\"section-divider\" data-i18n=\"kn.sectiondivider\">",
+    "after": "  <aside class=\"stop-event\" id=\"event-muju-kamakura\" aria-label=\"大倉幕府跡の出土品が見られる関連展\" style=\"scroll-margin-top:72px\">\n    <p><strong>大倉幕府跡から出土した鏡を見に行く</strong><br>鎌倉歴史文化交流館の企画展「生誕800年 無住がみた鎌倉」では、大倉幕府跡出土の雅楽器蝶鳥鏡と、米沢善本『沙石集』全12冊を展示予定です。会場は散策コースとは別の、鎌倉駅西口から徒歩約7分の交流館別館・考古展示室です。</p>\n    <p>会期：<time datetime=\"2026-12-12\">2026年12月12日（土）</time>〜<time datetime=\"2027-02-27\">2027年2月27日（土）</time>。10:00〜16:00（最終入館15:30）。日曜・祝日・休日と12月29日〜1月3日は休館。一般400円、小・中学生150円。<a href=\"https://www.city.kamakura.kanagawa.jp/rekibun/2026_12_muju.html\">鎌倉市の公式展覧会案内</a></p>\n  </aside>\n  <p class=\"section-divider\" data-i18n=\"kn.sectiondivider\">",
+    "reason": "Connect an actual course stop to its excavated exhibit and distinguish the venue from the route.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun/2026_12_muju.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      42162
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "  <ol class=\"log-list\">",
+    "after": "  <ol class=\"log-list\">\n    <li><span class=\"tag\">催し</span>企画展「無住がみた鎌倉」の案内を追加し、<a href=\"knowledge/ti2.html#event-muju-kamakura\">大倉幕府跡を歩くコース</a>から出土品の展示情報を読めるようにしました。（2026年11月27日）</li>",
+    "reason": "Preserve a dated reader-facing publication record.",
+    "sources": [
+      "https://www.city.kamakura.kanagawa.jp/rekibun/2026_12_muju.html"
+    ],
+    "occurrences": 1,
+    "before_offsets": [
+      35441
+    ]
   }
 ]

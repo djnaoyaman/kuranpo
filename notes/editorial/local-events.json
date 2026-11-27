@@ -1249,5 +1249,50 @@
     "before_offsets": [
       35441
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "",
+    "after": "reigenkaku\" data-local-event=\"reigenkaku\" data-start=\"2026-11-28\" data-end=\"2026-11-29\" hidden>\n    <h3><a href=\"knowledge/g11.html#event-near-reigenkaku\">霊源閣 特別公開 <small>長谷の寄り道</small></a></h3>\n    <p class=\"event-period\"><time datetime=\"2026-11-28\">11月28日（土）</time>・<time datetime=\"2026-11-29\">29日（日）</time>｜10:00〜16:00</p>\n  </article>\n  <article class=\"local-event local-event--brief\" id=\"event-",
+    "before_offsets": [
+      74881
+    ],
+    "occurrences": 1,
+    "reason": "Time-bounded optional site near Hase Station and the existing Hase walk; keeps official route unchanged.",
+    "sources": [
+      "https://storage.googleapis.com/studio-design-asset-files/projects/Nxqg699gO1/s-1x1_87617e2d-9dc5-45fa-bd39-5cc366d088e6.pdf",
+      "https://online.bunka.go.jp/heritages/detail/273432",
+      "https://www.trip-kamakura.com/facility/detail.php?id=242"
+    ]
+  },
+  {
+    "path": "knowledge/g11.html",
+    "before": "",
+    "after": "aside class=\"stop-event\" id=\"event-near-reigenkaku\" aria-label=\"長谷の寄り道：霊源閣の特別公開\" data-local-event=\"reigenkaku\" data-start=\"2026-11-28\" data-end=\"2026-11-29\" hidden style=\"display:none;scroll-margin-top:72px\">\n    <p><strong>長谷の寄り道｜<ruby>霊源閣<rt>れいげんかく</rt></ruby>の特別公開</strong><br>長谷駅近くで、大正7年（1918年）に建てられた旧山本条太郎別荘の一部が公開されます。通常は非公開の数寄屋建築です。コースの立ち寄り先とは別の、希望者向けの寄り道です。</p>\n    <p><time datetime=\"2026-11-28\">2026年11月28日（土）</time>・<time datetime=\"2026-11-29\">29日（日）</time>、10:00〜16:00（最終入館15:00）。入場料500円、各日先着100人。10人以上の団体は事前申込み。会場：鎌倉市長谷3-2-11。<a href=\"https://storage.googleapis.com/studio-design-asset-files/projects/Nxqg699gO1/s-1x1_87617e2d-9dc5-45fa-bd39-5cc366d088e6.pdf\">主催者ガイド（PDF）</a>／<a href=\"https://www.trip-kamakura.com/facility/detail.php?id=242\">観光協会の会場案内</a></p>\n  </aside>\n  <",
+    "before_offsets": [
+      45692
+    ],
+    "occurrences": 1,
+    "reason": "Time-bounded optional site near Hase Station and the existing Hase walk; keeps official route unchanged.",
+    "sources": [
+      "https://storage.googleapis.com/studio-design-asset-files/projects/Nxqg699gO1/s-1x1_87617e2d-9dc5-45fa-bd39-5cc366d088e6.pdf",
+      "https://online.bunka.go.jp/heritages/detail/273432",
+      "https://www.trip-kamakura.com/facility/detail.php?id=242"
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "",
+    "after": "11月28日・29日の旧山本条太郎別荘（霊源閣）特別公開を、長谷コース近くの寄り道として案内しました。（2026年11月28日）</li>\n    <li><span class=\"tag\">催し</span>",
+    "before_offsets": [
+      35500
+    ],
+    "occurrences": 1,
+    "reason": "Time-bounded optional site near Hase Station and the existing Hase walk; keeps official route unchanged.",
+    "sources": [
+      "https://storage.googleapis.com/studio-design-asset-files/projects/Nxqg699gO1/s-1x1_87617e2d-9dc5-45fa-bd39-5cc366d088e6.pdf",
+      "https://online.bunka.go.jp/heritages/detail/273432",
+      "https://www.trip-kamakura.com/facility/detail.php?id=242"
+    ]
   }
 ]

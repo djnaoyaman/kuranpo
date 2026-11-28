@@ -1294,5 +1294,44 @@
       "https://online.bunka.go.jp/heritages/detail/273432",
       "https://www.trip-kamakura.com/facility/detail.php?id=242"
     ]
+  },
+  {
+    "path": "index.html",
+    "before": "",
+    "after": "  <article class=\"local-event local-event--brief\" id=\"event-engakuji-zazen\" data-local-event=\"engakuji-zazen\" data-start=\"2026-12-09\" data-display-from=\"2026-11-30\" data-end=\"2026-12-09\" hidden>\n    <h3><a href=\"knowledge/re1.html#event-at-engakuji-zazen\">円覚寺 夜の初心者向け坐禅会</a></h3>\n    <p class=\"event-period\"><span data-event-status></span>｜<time data-event-day=\"2026-12-09\" datetime=\"2026-12-09\">12月9日（水）</time> 19:00〜20:30・要予約</p>\n  </article>\n",
+    "before_offsets": [
+      80182
+    ],
+    "occurrences": 1,
+    "reason": "Date-scoped beginner sitting session at the already-listed Engakuji stop, with reservation and chair guidance; preserve route and layout.",
+    "sources": [
+      "https://www.engakuji.or.jp/news/38648/"
+    ]
+  },
+  {
+    "path": "knowledge/re1.html",
+    "before": "",
+    "after": "  <aside class=\"note-item\" id=\"event-at-engakuji-zazen\" aria-label=\"円覚寺 夜の初心者向け坐禅会\" data-local-event=\"engakuji-zazen\" data-start=\"2026-12-09\" data-display-from=\"2026-11-30\" data-end=\"2026-12-09\" hidden style=\"display:none;scroll-margin-top:72px\">\n    <p><strong>円覚寺｜夜の初心者向け<ruby>坐禅<rt>ざぜん</rt></ruby>会</strong><br>からだをほぐして呼吸を整え、坐禅を体験します。椅子での参加もできます。通常の拝観とは別の、事前予約が必要な催しです。</p>\n    <p><time datetime=\"2026-12-09\">2026年12月9日（水）</time> 19:00〜20:30。円覚寺の<ruby>居士林<rt>こじりん</rt></ruby>で開催。定員30人。大人1,000円、学生・子ども500円。<a href=\"https://www.engakuji.or.jp/news/38648/\">円覚寺の公式案内・申込み方法</a></p>\n  </aside>\n  <script defer src=\"../assets/local-events.js?v=20261124a\"></script>\n",
+    "before_offsets": [
+      42028
+    ],
+    "occurrences": 1,
+    "reason": "Date-scoped beginner sitting session at the already-listed Engakuji stop, with reservation and chair guidance; preserve route and layout.",
+    "sources": [
+      "https://www.engakuji.or.jp/news/38648/"
+    ]
+  },
+  {
+    "path": "changelog.html",
+    "before": "",
+    "after": "    <li><span class=\"tag\">催し</span><a href=\"knowledge/re1.html#event-at-engakuji-zazen\">円覚寺の夜の初心者向け坐禅会</a>を案内しました。（2026年11月28日）</li>\n",
+    "before_offsets": [
+      35465
+    ],
+    "occurrences": 1,
+    "reason": "Date-scoped beginner sitting session at the already-listed Engakuji stop, with reservation and chair guidance; preserve route and layout.",
+    "sources": [
+      "https://www.engakuji.or.jp/news/38648/"
+    ]
   }
 ]

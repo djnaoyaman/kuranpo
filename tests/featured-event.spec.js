@@ -397,3 +397,23 @@ test('Reigenkaku is a dated Hase detour, not a course stop, and expires in JST',
   await expect(note).toBeHidden();
   await expect(page.locator('#event-at-hasedera')).toBeVisible();
 });
+
+test('Engakuji beginner zazen follows Japan dates and the existing route link',async({page})=>{
+ const freeze=t=>page.clock.setFixedTime(new Date(t+'+09:00'));
+ await page.setViewportSize({width:320,height:820});
+ const card=page.locator('#event-engakuji-zazen');
+ await freeze('2026-11-29T23:59:59'); await page.goto(home); await expect(card).toBeHidden();
+ await freeze('2026-11-30T00:00:00'); await page.reload();
+ await expect(card).toBeVisible(); await expect(card.locator('[data-event-status]')).toHaveText('開催予定');
+ expect(await card.evaluate(x=>{const r=x.getBoundingClientRect();return r.width>0&&r.left>=0&&r.right<=document.documentElement.clientWidth;})).toBe(true);
+ await card.getByRole('link').click();
+ await expect(page).toHaveURL(/knowledge\/re1\.html#event-at-engakuji-zazen$/);
+ const note=page.locator('#event-at-engakuji-zazen');
+ await expect(note).toBeVisible(); await expect(note).toContainText('椅子での参加');
+ await expect(note.getByRole('link')).toHaveAttribute('href','https://www.engakuji.or.jp/news/38648/');
+ await freeze('2026-12-09T23:59:59'); await page.goto(home);
+ await expect(card.locator('[data-event-status]')).toHaveText('本日開催');
+ await freeze('2026-12-10T00:00:00'); await page.reload(); await expect(card).toBeHidden();
+ await page.goto('/kuranpo/knowledge/re1.html'); await expect(note).toBeHidden();
+ await expect(page.locator('.spot-list')).toContainText('円覚寺');
+});
